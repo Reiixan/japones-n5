@@ -14,6 +14,7 @@ import { isRomajiOn, kanaToRomaji } from './romaji.js';
 //   getPromptSpeechText?: item => string | null  // texto a pronunciar con barra espaciadora (repetir prompt sin revelar respuesta)
 //   getAnswerSpeechText?: item => string | null  // texto a pronunciar automáticamente al fallar
 //   menuPath?: string  // si el bloque tiene submenú, ruta del menú (ej '/vocab')
+//   recordResult?: (item, correct) => void  // si está definido, sustituye al recordAnswer estándar (útil para SRS por grupo, ej Dokkai por texto)
 // }
 const KANA_RE = /[぀-ヿ]/;
 
@@ -102,7 +103,11 @@ export function startExercise(container, config) {
     detachSpaceRepeat();
     const item = items[idx];
     const correct = config.checkAnswer(item, answer);
-    recordAnswer(deck, config.getItemId(item), correct);
+    if (config.recordResult) {
+      config.recordResult(item, correct);
+    } else {
+      recordAnswer(deck, config.getItemId(item), correct);
+    }
     results.push({ item, correct, answer });
 
     if (correct) streak++;
