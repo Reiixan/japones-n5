@@ -1,0 +1,112 @@
+[
+  {
+    "id": "r_001",
+    "type": "short",
+    "title_es": "El fin de semana de Yamada",
+    "text_jp": "山田さんは土曜日に映画を見ました。日曜日は友達とレストランで昼ご飯を食べました。",
+    "text_ruby": [
+      {"base": "山田", "ruby": "やまだ"},
+      {"base": "さんは", "ruby": null},
+      {"base": "土曜日", "ruby": "どようび"},
+      {"base": "に", "ruby": null},
+      {"base": "映画", "ruby": "えいが"},
+      {"base": "を", "ruby": null},
+      {"base": "見", "ruby": "み"},
+      {"base": "ました。", "ruby": null},
+      {"base": "日曜日", "ruby": "にちようび"},
+      {"base": "は", "ruby": null},
+      {"base": "友達", "ruby": "ともだち"},
+      {"base": "と", "ruby": null},
+      {"base": "レストラン", "ruby": null},
+      {"base": "で", "ruby": null},
+      {"base": "昼", "ruby": "ひる"},
+      {"base": "ご飯", "ruby": "ごはん"},
+      {"base": "を", "ruby": null},
+      {"base": "食", "ruby": "た"},
+      {"base": "べました。", "ruby": null}
+    ],
+    "vocabulary_hints": [
+      {"jp": "映画", "kana": "えいが", "es": "película"},
+      {"jp": "昼ご飯", "kana": "ひるごはん", "es": "comida del mediodía"}
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué hizo Yamada el sábado?",
+        "options_es": ["Vio una película", "Cenó con amigos", "Estudió japonés", "Fue al parque"],
+        "answer_es": "Vio una película"
+      }
+    ]
+  },
+  {
+    "id": "r_002",
+    "type": "medium",
+    "title_es": "Mi familia",
+    "text_jp": "私の家族は四人です。父と母と妹と私です。父は会社員で、毎日電車で会社に行きます。母は先生です。妹はまだ学生です。私たちは日曜日にいっしょに公園へ行きます。",
+    "text_ruby": [
+      {"base": "私", "ruby": "わたし"},
+      {"base": "の", "ruby": null},
+      {"base": "家族", "ruby": "かぞく"},
+      {"base": "は", "ruby": null},
+      {"base": "四人", "ruby": "よにん"},
+      {"base": "です。", "ruby": null},
+      {"base": "父", "ruby": "ちち"},
+      {"base": "と", "ruby": null},
+      {"base": "母", "ruby": "はは"},
+      {"base": "と", "ruby": null},
+      {"base": "妹", "ruby": "いもうと"},
+      {"base": "と", "ruby": null},
+      {"base": "私", "ruby": "わたし"},
+      {"base": "です。", "ruby": null},
+      {"base": "父", "ruby": "ちち"},
+      {"base": "は", "ruby": null},
+      {"base": "会社員", "ruby": "かいしゃいん"},
+      {"base": "で、", "ruby": null},
+      {"base": "毎日", "ruby": "まいにち"},
+      {"base": "電車", "ruby": "でんしゃ"},
+      {"base": "で", "ruby": null},
+      {"base": "会社", "ruby": "かいしゃ"},
+      {"base": "に", "ruby": null},
+      {"base": "行", "ruby": "い"},
+      {"base": "きます。", "ruby": null},
+      {"base": "母", "ruby": "はは"},
+      {"base": "は", "ruby": null},
+      {"base": "先生", "ruby": "せんせい"},
+      {"base": "です。", "ruby": null},
+      {"base": "妹", "ruby": "いもうと"},
+      {"base": "は", "ruby": null},
+      {"base": "まだ", "ruby": null},
+      {"base": "学生", "ruby": "がくせい"},
+      {"base": "です。", "ruby": null},
+      {"base": "私", "ruby": "わたし"},
+      {"base": "たちは", "ruby": null},
+      {"base": "日曜日", "ruby": "にちようび"},
+      {"base": "に", "ruby": null},
+      {"base": "いっしょに", "ruby": null},
+      {"base": "公園", "ruby": "こうえん"},
+      {"base": "へ", "ruby": null},
+      {"base": "行", "ruby": "い"},
+      {"base": "きます。", "ruby": null}
+    ],
+    "vocabulary_hints": [
+      {"jp": "会社員", "kana": "かいしゃいん", "es": "empleado de empresa"},
+      {"jp": "公園", "kana": "こうえん", "es": "parque"}
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cuántas personas hay en la familia?",
+        "options_es": ["Tres", "Cuatro", "Cinco", "Seis"],
+        "answer_es": "Cuatro"
+      },
+      {
+        "q_es": "¿Cómo va el padre al trabajo?",
+        "options_es": ["En coche", "En tren", "En bicicleta", "Andando"],
+        "answer_es": "En tren"
+      },
+      {
+        "q_es": "¿Qué hace la familia los domingos?",
+        "options_es": ["Va al parque", "Ve películas", "Cena fuera", "Visita a los abuelos"],
+        "answer_es": "Va al parque"
+      }
+    ]
+  }
+]
