@@ -59,6 +59,8 @@ Cada fase es independiente y se planifica con su propio `writing-plans` cuando l
 
 ## Fase 0 — Quick wins
 
+**Estado**: ✅ Implementada el 2026-05-16 (tag `fase-0`). Incluye además los extras 0.5 (romaji toggle), 0.6 (audio MP3 pregrabado como fallback de Web Speech) y 0.7 (cancel-prev / auto-pronounce wrong / spacebar repeat / romaji en feedback / botón cambiar modo).
+
 ### 0.1 Audio TTS
 
 Utilidad nueva `js/tts.js` que envuelve `window.speechSynthesis`:
@@ -105,6 +107,8 @@ TTS asíncrono en algunos navegadores. Mitigado con wrapper que espera `voicesch
 ---
 
 ## Fase 1 — Choukai (comprensión auditiva)
+
+**Estado**: ✅ Implementada el 2026-05-16 (tag `fase-1`). 40 ítems totales (30 describe + 10 response), audio pregrabado para todos via el script `scripts/generate-audio.py`.
 
 ### Tipos de ejercicio (cubrimos 2 de los 4 del N5)
 
