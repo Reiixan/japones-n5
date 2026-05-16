@@ -8,6 +8,7 @@ import { start as startKanji } from './kanji.js';
 import { start as startParticles } from './particles.js';
 import { start as startGrammar } from './grammar.js';
 import { start as startListening } from './listening.js';
+import { start as startReading } from './reading.js';
 
 const container = document.getElementById('app');
 const dataCache = {};
@@ -68,6 +69,9 @@ async function route() {
     } else if (seg1 === 'listening') {
       const allItems = await loadData('listening-n5.json');
       await startListening(container, allItems);
+    } else if (seg1 === 'reading') {
+      const allItems = await loadData('reading-n5.json');
+      await startReading(container, allItems);
     } else {
       window.navigate('/');
     }

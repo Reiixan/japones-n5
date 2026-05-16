@@ -71,6 +71,16 @@ const BLOCKS = [
     color: 'var(--c-pink)',
     path: '/listening',
   },
+  {
+    id: 'reading',
+    label: 'Comprensión lectora',
+    jp: '読解',
+    emoji: '📚',
+    file: 'reading-n5.json',
+    desc: 'Textos cortos y medios con preguntas',
+    color: 'var(--c-orange)',
+    path: '/reading',
+  },
 ];
 
 const dataCache = {};

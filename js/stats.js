@@ -10,6 +10,7 @@ const DECKS = [
   { id: 'particles', label: 'Partículas', file: 'particles.json' },
   { id: 'grammar', label: 'Gramática', file: 'grammar-n5.json' },
   { id: 'listening', label: 'Comprensión auditiva', file: 'listening-n5.json' },
+  { id: 'reading', label: 'Comprensión lectora', file: 'reading-n5.json' },
 ];
 
 const dataCache = {};
