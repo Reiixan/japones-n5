@@ -11,6 +11,7 @@ let listenerAttached = false;
 
 let manifest = null;
 let manifestPromise = null;
+let currentAudio = null;
 
 const PREFERRED_NAMES = ['Google 日本語', 'Kyoko', 'Otoya', 'Hattori'];
 const MANIFEST_URL = 'audio/manifest.json';
@@ -66,8 +67,19 @@ function playRecording(text) {
     const audio = new Audio(`audio/${file}`);
     audio.playbackRate = 0.85;
     audio.preservesPitch = true;
+    currentAudio = audio;
     audio.play().catch(() => {});
   });
+}
+
+function cancelCurrent() {
+  if (window.speechSynthesis && window.speechSynthesis.cancel) {
+    window.speechSynthesis.cancel();
+  }
+  if (currentAudio) {
+    try { currentAudio.pause(); } catch {}
+    currentAudio = null;
+  }
 }
 
 export function isAvailable() {
@@ -79,6 +91,7 @@ export function isAvailable() {
 
 export function speak(text) {
   if (!text) return;
+  cancelCurrent();
   resolveVoice();
   if (cachedVoice) {
     const u = new window.SpeechSynthesisUtterance(text);
@@ -114,6 +127,7 @@ export function _resetForTests() {
   listenerAttached = false;
   manifest = null;
   manifestPromise = null;
+  currentAudio = null;
 }
 
 function escapeAttr(s) {
