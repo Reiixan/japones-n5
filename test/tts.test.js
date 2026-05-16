@@ -1,11 +1,17 @@
 // test/tts.test.js
 import { describe, it, assert, assertEqual } from './runner.js';
 
-// Mock helper: instala un speechSynthesis falso en window
+// Mock helper: instala un speechSynthesis falso en window.
+// window.speechSynthesis es getter-only en navegadores reales, así que usamos
+// Object.defineProperty con configurable:true para poder reemplazarlo en cada test.
+function defineOnWindow(name, value) {
+  Object.defineProperty(window, name, { value, configurable: true, writable: true });
+}
+
 function installMockSynthesis({ voices = [], firingVoicesChanged = false } = {}) {
   const utterances = [];
   let handler = null;
-  window.speechSynthesis = {
+  defineOnWindow('speechSynthesis', {
     getVoices: () => voices,
     speak: u => utterances.push(u),
     cancel: () => {},
@@ -13,8 +19,8 @@ function installMockSynthesis({ voices = [], firingVoicesChanged = false } = {})
     removeEventListener() { handler = null; },
     _fireVoicesChanged() { if (handler) handler(); },
     _utterances: utterances,
-  };
-  window.SpeechSynthesisUtterance = class { constructor(text) { this.text = text; } };
+  });
+  defineOnWindow('SpeechSynthesisUtterance', class { constructor(text) { this.text = text; } });
   if (firingVoicesChanged) queueMicrotask(() => window.speechSynthesis._fireVoicesChanged());
 }
 
@@ -82,13 +88,13 @@ describe('tts — voiceschanged async', () => {
   it('detecta voces tras el evento voiceschanged', async () => {
     let voices = [];
     let handler = null;
-    window.speechSynthesis = {
+    defineOnWindow('speechSynthesis', {
       getVoices: () => voices,
       speak: () => {},
       addEventListener(e, cb) { if (e === 'voiceschanged') handler = cb; },
       removeEventListener() { handler = null; },
-    };
-    window.SpeechSynthesisUtterance = class { constructor(t) { this.text = t; } };
+    });
+    defineOnWindow('SpeechSynthesisUtterance', class { constructor(t) { this.text = t; } });
 
     const { isAvailable, onReady, _resetForTests } = await import('../js/tts.js?cache=t3a');
     _resetForTests();
@@ -107,13 +113,13 @@ describe('tts — voiceschanged async', () => {
   });
 
   it('onReady resuelve cuando hay voz disponible inmediatamente', async () => {
-    window.speechSynthesis = {
+    defineOnWindow('speechSynthesis', {
       getVoices: () => [{ lang: 'ja-JP', name: 'Kyoko' }],
       speak: () => {},
       addEventListener() {},
       removeEventListener() {},
-    };
-    window.SpeechSynthesisUtterance = class { constructor(t) { this.text = t; } };
+    });
+    defineOnWindow('SpeechSynthesisUtterance', class { constructor(t) { this.text = t; } });
 
     const { onReady, _resetForTests } = await import('../js/tts.js?cache=t3b');
     _resetForTests();
@@ -126,13 +132,13 @@ describe('tts — voiceschanged async', () => {
   });
 
   it('onReady resuelve a false tras timeout si nunca hay voz', async () => {
-    window.speechSynthesis = {
+    defineOnWindow('speechSynthesis', {
       getVoices: () => [],
       speak: () => {},
       addEventListener() {},
       removeEventListener() {},
-    };
-    window.SpeechSynthesisUtterance = class { constructor(t) { this.text = t; } };
+    });
+    defineOnWindow('SpeechSynthesisUtterance', class { constructor(t) { this.text = t; } });
 
     const { onReady, _resetForTests } = await import('../js/tts.js?cache=t3c');
     _resetForTests();
