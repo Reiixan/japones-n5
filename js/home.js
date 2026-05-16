@@ -61,6 +61,16 @@ const BLOCKS = [
     color: 'var(--c-teal)',
     path: '/grammar',
   },
+  {
+    id: 'listening',
+    label: 'Comprensión auditiva',
+    jp: '聴解',
+    emoji: '🎧',
+    file: 'listening-n5.json',
+    desc: 'Mini-diálogos con audio',
+    color: 'var(--c-pink)',
+    path: '/listening',
+  },
 ];
 
 const dataCache = {};

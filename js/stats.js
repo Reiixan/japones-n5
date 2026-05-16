@@ -9,6 +9,7 @@ const DECKS = [
   { id: 'kanji', label: 'Kanji N5', file: 'kanji-n5.json' },
   { id: 'particles', label: 'Partículas', file: 'particles.json' },
   { id: 'grammar', label: 'Gramática', file: 'grammar-n5.json' },
+  { id: 'listening', label: 'Comprensión auditiva', file: 'listening-n5.json' },
 ];
 
 const dataCache = {};
