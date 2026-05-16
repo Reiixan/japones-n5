@@ -2,6 +2,16 @@
 
 Webapp personal de Hugo para preparar el JLPT N5. Vanilla JS sin build, servida con `python3 -m http.server`. Pensada para usarse en escritorio y móvil (en LAN). Sin backend ni cuentas: el progreso vive en `localStorage` del navegador.
 
+## Arquitectura en 30 segundos
+
+Tres capas, todas viven en el navegador:
+
+1. **Datos** — `data/*.json`: un fichero por bloque (hiragana, katakana, vocab, kanji, partículas, gramática, listening). IDs estables; el SRS y los stats dependen de ellos.
+2. **Módulo del bloque** — `js/<bloque>.js`: un módulo por bloque que expone `start(container, allItems)`. No implementa el motor; configura hooks y delega.
+3. **Motor compartido** — `js/exercise.js` (loop de pregunta/respuesta/feedback), `js/srs.js` (Leitner 5 cajas en `localStorage`), `js/tts.js` (audio japonés con fallback MP3). Lo reutilizan todos los bloques.
+
+Añadir un bloque = añadir un `data/*.json` + un `js/<bloque>.js` + 3 ediciones de integración (ver "Patrón canónico de un bloque" más abajo). No tocar el motor para casos particulares; usar los hooks de la config.
+
 ## Servir
 
 ```bash
@@ -136,6 +146,8 @@ Convenciones:
 - **Toda lógica que dependa de `window.*` / DOM / Web APIs debe verificarse en navegador real, no solo trazándola a mano** — un trace mental no detecta diferencias entre la especificación y la implementación de cada navegador.
 
 Estado actual: 43 tests pasando (14 de tts + 18 de romaji + 11 misc).
+
+**Cómo correr un test concreto**: el runner no soporta filtros desde la URL. Toda la suite se ejecuta al cargar `test/index.html`. Para enfocarte en uno, edita el `.test.js` correspondiente y comenta los `it(...)` o `describe(...)` que no quieres ejecutar (o renómbralos a `xit`/`xdescribe` — no existen como helpers nativos, así que comentar es lo más simple). Acuérdate de revertirlo antes de commitear.
 
 ## Estado de fases (roadmap completo en `docs/superpowers/specs/2026-05-16-mejoras-n5-design.md`)
 
