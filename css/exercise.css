@@ -301,3 +301,10 @@
   opacity: 0.75;
 }
 .particle-tts-hint { font-size: 0.85rem; color: var(--c-muted, #888); }
+
+.vocab-kana-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}

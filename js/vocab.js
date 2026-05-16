@@ -1,5 +1,6 @@
 import { startExercise, showSessionConfig } from './exercise.js';
 import { selectSession, pickWrong } from './srs.js';
+import { renderSpeakButton, attachSpeakHandler, isAutoOn, speak } from './tts.js';
 
 const DECK = 'vocab';
 
@@ -23,9 +24,14 @@ function runVocab(container, items, allItems) {
     renderPrompt(item, el) {
       el.innerHTML = `
         <div class="vocab-kanji">${item.kanji}</div>
-        <div class="vocab-kana">${item.kana}</div>
+        <div class="vocab-kana-row">
+          <span class="vocab-kana">${item.kana}</span>
+          ${renderSpeakButton(item.kana)}
+        </div>
         <div class="vocab-category">${item.category}</div>
       `;
+      attachSpeakHandler(el);
+      if (isAutoOn()) speak(item.kana);
     },
     renderInput(item, all, el, onAnswer) {
       const wrongs = pickWrong(all, item, it => it.meaning_es, 3);
