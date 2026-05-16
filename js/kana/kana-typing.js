@@ -1,5 +1,6 @@
 import { startExercise, showSessionConfig } from '../exercise.js';
 import { selectSession } from '../srs.js';
+import { renderSpeakButton, attachSpeakHandler, isAutoOn, speak } from '../tts.js';
 
 const GROUPS = [
   { value: 'base', label: 'Base (あ～ん)' },
@@ -29,7 +30,9 @@ function runTyping(container, deck, items, allItems) {
     allItems,
     getItemId: it => it.id,
     renderPrompt(item, el) {
-      el.innerHTML = `<div class="kana-display">${item.kana}</div>`;
+      el.innerHTML = `<div class="kana-display">${item.kana}</div>${renderSpeakButton(item.kana)}`;
+      attachSpeakHandler(el);
+      if (isAutoOn()) speak(item.kana);
     },
     renderInput(item, _all, el, onAnswer) {
       el.innerHTML = `
