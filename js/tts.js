@@ -64,7 +64,7 @@ function playRecording(text) {
     const file = m[text];
     if (!file) return;
     const audio = new Audio(`audio/${file}`);
-    audio.playbackRate = 0.8;
+    audio.playbackRate = 0.85;
     audio.preservesPitch = true;
     audio.play().catch(() => {});
   });
@@ -84,7 +84,7 @@ export function speak(text) {
     const u = new window.SpeechSynthesisUtterance(text);
     u.voice = cachedVoice;
     u.lang = 'ja-JP';
-    u.rate = 0.8;
+    u.rate = 0.85;
     window.speechSynthesis.speak(u);
     return;
   }
