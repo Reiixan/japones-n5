@@ -1,0 +1,52 @@
+[
+  {
+    "id": "l_001",
+    "type": "describe",
+    "audio_text": "毎朝、コーヒーを飲みます。",
+    "audio_kana": "まいあさ、コーヒーをのみます。",
+    "prompt_es": "¿Qué hace esta persona cada mañana?",
+    "options_es": ["Bebe café", "Bebe té", "Come pan", "Lee el periódico"],
+    "answer_es": "Bebe café",
+    "category": "rutina"
+  },
+  {
+    "id": "l_002",
+    "type": "describe",
+    "audio_text": "学校は9時に始まります。",
+    "audio_kana": "がっこうはくじにはじまります。",
+    "prompt_es": "¿A qué hora empieza la escuela?",
+    "options_es": ["A las 9", "A las 8", "A las 10", "A las 7"],
+    "answer_es": "A las 9",
+    "category": "tiempo"
+  },
+  {
+    "id": "l_003",
+    "type": "describe",
+    "audio_text": "あの人は私の兄です。",
+    "audio_kana": "あのひとはわたしのあにです。",
+    "prompt_es": "¿Quién es esa persona?",
+    "options_es": ["Mi hermano mayor", "Mi padre", "Mi amigo", "Mi profesor"],
+    "answer_es": "Mi hermano mayor",
+    "category": "familia"
+  },
+  {
+    "id": "l_010",
+    "type": "response",
+    "audio_text": "お元気ですか。",
+    "audio_kana": "おげんきですか。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["はい、元気です。", "はい、学生です。", "いいえ、本です。"],
+    "answer_jp": "はい、元気です。",
+    "category": "saludos"
+  },
+  {
+    "id": "l_011",
+    "type": "response",
+    "audio_text": "コーヒーを飲みますか。",
+    "audio_kana": "コーヒーをのみますか。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["はい、お願いします。", "はい、行きます。", "いいえ、土曜日です。"],
+    "answer_jp": "はい、お願いします。",
+    "category": "ofrecimientos"
+  }
+]
