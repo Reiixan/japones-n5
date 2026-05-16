@@ -228,3 +228,54 @@
   margin-left: auto;
 }
 .btn-next:hover { opacity: .85; }
+
+/* === TTS button === */
+.btn-tts {
+  background: none;
+  border: 1.5px solid var(--c-border, #ddd);
+  border-radius: 999px;
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-left: 0.5rem;
+  transition: background-color 0.15s, transform 0.1s;
+  vertical-align: middle;
+}
+.btn-tts:hover { background: var(--c-hover, #f0f0f0); }
+.btn-tts:active { transform: scale(0.92); }
+.btn-tts[disabled], .btn-tts.disabled { opacity: 0.35; cursor: not-allowed; }
+
+/* Inline pequeño dentro de listas largas (gramática, partículas) */
+.btn-tts-sm {
+  width: 26px;
+  height: 26px;
+  font-size: 0.85rem;
+  margin-left: 0.35rem;
+}
+
+/* Banner cuando no hay voz ja-JP disponible */
+.tts-banner {
+  background: var(--c-warning-bg, #fff5e0);
+  color: var(--c-warning-fg, #6b4a00);
+  border: 1px solid var(--c-warning-border, #e0c070);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.tts-banner button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0 0.25rem;
+}
