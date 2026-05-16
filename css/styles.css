@@ -281,3 +281,21 @@ ul { list-style: none; }
 }
 [data-theme="dark"] .wrong-tag { background: #450a0a; border-color: #7f1d1d; }
 .summary-actions { display: flex; gap: .75rem; flex-wrap: wrap; justify-content: center; }
+
+.stats-prefs {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--c-border, #ddd);
+  border-radius: 8px;
+}
+.stats-prefs h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+.pref-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.pref-row input[disabled] + span { opacity: 0.55; }

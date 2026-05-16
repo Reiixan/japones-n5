@@ -1,4 +1,5 @@
 import { getDeckStats, exportAll, importAll, resetDeck } from './storage.js';
+import { isAvailable, isAutoOn, setAutoOn } from './tts.js';
 
 const DECKS = [
   { id: 'hiragana', label: 'Hiragana', file: 'hiragana.json' },
@@ -19,6 +20,8 @@ async function loadData(file) {
 }
 
 export async function renderStats(container) {
+  const ttsAvailable = isAvailable();
+  const ttsAutoChecked = isAutoOn() ? 'checked' : '';
   container.innerHTML = `
     <div class="page">
       <header class="page-header">
@@ -27,6 +30,13 @@ export async function renderStats(container) {
       </header>
       <main class="stats-body">
         <div id="stats-table-wrap">Cargando...</div>
+        <section class="stats-prefs">
+          <h2>Preferencias</h2>
+          <label class="pref-row">
+            <input type="checkbox" id="pref-tts-auto" ${ttsAutoChecked} ${ttsAvailable ? '' : 'disabled'}>
+            <span>Auto-pronunciar al mostrar pregunta${ttsAvailable ? '' : ' (no hay voz japonesa disponible en este navegador)'}</span>
+          </label>
+        </section>
         <div class="stats-actions">
           <button class="btn-secondary" id="btn-export">Exportar progreso</button>
           <button class="btn-secondary" id="btn-import">Importar progreso</button>
@@ -37,6 +47,11 @@ export async function renderStats(container) {
   `;
 
   document.getElementById('stats-back').addEventListener('click', () => window.navigate('/'));
+
+  const prefTtsAuto = document.getElementById('pref-tts-auto');
+  if (prefTtsAuto) {
+    prefTtsAuto.addEventListener('change', () => setAutoOn(prefTtsAuto.checked));
+  }
 
   // Load all decks
   const rows = await Promise.all(DECKS.map(async deck => {
