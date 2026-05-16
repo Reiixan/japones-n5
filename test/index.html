@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tests japones-n5</title>
+  <style>
+    body { font-family: monospace; padding: 1rem; }
+    section { margin-bottom: 1rem; }
+    h2 { font-size: 1rem; margin: 0.5rem 0; }
+    div { white-space: pre; }
+  </style>
+</head>
+<body>
+  <h1>Tests japones-n5</h1>
+  <div id="results"></div>
+  <script type="module">
+    import { run } from './runner.js';
+    await import('./tts.test.js');
+    run();
+  </script>
+</body>
+</html>
