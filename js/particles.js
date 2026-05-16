@@ -1,5 +1,6 @@
 import { startExercise, showSessionConfig } from './exercise.js';
 import { selectSession } from './srs.js';
+import { renderSpeakButton, attachSpeakHandler, isAutoOn, speak } from './tts.js';
 
 const DECK = 'particles';
 
@@ -25,6 +26,10 @@ function buildSentence(parts, highlight) {
   }).join('');
 }
 
+function fullSentenceWithAnswer(item) {
+  return item.parts.map(p => p === '[  ]' ? item.answer : p).join('');
+}
+
 function runParticles(container, items, allItems) {
   startExercise(container, {
     deck: DECK,
@@ -32,9 +37,13 @@ function runParticles(container, items, allItems) {
     allItems,
     getItemId: it => it.id,
     renderPrompt(item, el) {
+      const fullText = fullSentenceWithAnswer(item);
       el.innerHTML = `
         <div class="particle-sentence">${buildSentence(item.parts, null)}</div>
+        <div class="particle-tts-row">${renderSpeakButton(fullText)}<span class="particle-tts-hint">Escuchar oración con respuesta</span></div>
       `;
+      attachSpeakHandler(el);
+      // NO auto-pronunciamos aquí: revelaría la respuesta correcta antes de responder.
     },
     renderInput(item, _all, el, onAnswer) {
       const options = shuffle([...item.options]);

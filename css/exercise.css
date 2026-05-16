@@ -291,3 +291,13 @@
 }
 .kanji-example-word { font-weight: 700; }
 .kanji-example-reading { font-style: italic; color: var(--c-muted, #888); }
+
+.particle-tts-row {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  opacity: 0.75;
+}
+.particle-tts-hint { font-size: 0.85rem; color: var(--c-muted, #888); }
