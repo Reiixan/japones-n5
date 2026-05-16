@@ -1,5 +1,6 @@
 import { startExercise, showSessionConfig } from './exercise.js';
 import { selectSession, pickWrong } from './srs.js';
+import { renderSpeakButton, attachSpeakHandler, isAutoOn, speak } from './tts.js';
 
 const DECK = 'kanji';
 
@@ -27,9 +28,17 @@ function runKanji(container, items, allItems) {
     allItems,
     getItemId: it => it.id,
     renderPrompt(item, el) {
+      const reading = item.example_reading;
       el.innerHTML = `
         <div class="kanji-display">${item.kanji}</div>
+        <div class="kanji-example">
+          <span class="kanji-example-word">${item.example_word}</span>
+          <span class="kanji-example-reading">${reading}</span>
+          ${renderSpeakButton(reading)}
+        </div>
       `;
+      attachSpeakHandler(el);
+      if (isAutoOn()) speak(reading);
     },
     renderInput(item, all, el, onAnswer) {
       const wrongs = pickWrong(all, item, it => it.id, 3);
