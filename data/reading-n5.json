@@ -5,107 +5,5008 @@
     "title_es": "El fin de semana de Yamada",
     "text_jp": "山田さんは土曜日に映画を見ました。日曜日は友達とレストランで昼ご飯を食べました。",
     "text_ruby": [
-      {"base": "山田", "ruby": "やまだ"},
-      {"base": "さんは", "ruby": null},
-      {"base": "土曜日", "ruby": "どようび"},
-      {"base": "に", "ruby": null},
-      {"base": "映画", "ruby": "えいが"},
-      {"base": "を", "ruby": null},
-      {"base": "見", "ruby": "み"},
-      {"base": "ました。", "ruby": null},
-      {"base": "日曜日", "ruby": "にちようび"},
-      {"base": "は", "ruby": null},
-      {"base": "友達", "ruby": "ともだち"},
-      {"base": "と", "ruby": null},
-      {"base": "レストラン", "ruby": null},
-      {"base": "で", "ruby": null},
-      {"base": "昼", "ruby": "ひる"},
-      {"base": "ご飯", "ruby": "ごはん"},
-      {"base": "を", "ruby": null},
-      {"base": "食", "ruby": "た"},
-      {"base": "べました。", "ruby": null}
+      {
+        "base": "山田",
+        "ruby": "やまだ"
+      },
+      {
+        "base": "さんは",
+        "ruby": null
+      },
+      {
+        "base": "土曜日",
+        "ruby": "どようび"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "映画",
+        "ruby": "えいが"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "見",
+        "ruby": "み"
+      },
+      {
+        "base": "ました。",
+        "ruby": null
+      },
+      {
+        "base": "日曜日",
+        "ruby": "にちようび"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "レストラン",
+        "ruby": null
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "昼",
+        "ruby": "ひる"
+      },
+      {
+        "base": "ご飯",
+        "ruby": "ごはん"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べました。",
+        "ruby": null
+      }
     ],
     "vocabulary_hints": [
-      {"jp": "映画", "kana": "えいが", "es": "película"},
-      {"jp": "昼ご飯", "kana": "ひるごはん", "es": "comida del mediodía"}
+      {
+        "jp": "映画",
+        "kana": "えいが",
+        "es": "película"
+      },
+      {
+        "jp": "昼ご飯",
+        "kana": "ひるごはん",
+        "es": "comida del mediodía"
+      }
     ],
     "questions": [
       {
         "q_es": "¿Qué hizo Yamada el sábado?",
-        "options_es": ["Vio una película", "Cenó con amigos", "Estudió japonés", "Fue al parque"],
+        "options_es": [
+          "Vio una película",
+          "Cenó con amigos",
+          "Estudió japonés",
+          "Fue al parque"
+        ],
         "answer_es": "Vio una película"
       }
     ]
   },
   {
     "id": "r_002",
-    "type": "medium",
-    "title_es": "Mi familia",
-    "text_jp": "私の家族は四人です。父と母と妹と私です。父は会社員で、毎日電車で会社に行きます。母は先生です。妹はまだ学生です。私たちは日曜日にいっしょに公園へ行きます。",
+    "type": "short",
+    "title_es": "La rutina matutina de Tanaka",
+    "text_jp": "田中さんは毎朝六時に起きます。シャワーをあびて、パンと牛乳を食べます。それから電車で学校へ行きます。",
     "text_ruby": [
-      {"base": "私", "ruby": "わたし"},
-      {"base": "の", "ruby": null},
-      {"base": "家族", "ruby": "かぞく"},
-      {"base": "は", "ruby": null},
-      {"base": "四人", "ruby": "よにん"},
-      {"base": "です。", "ruby": null},
-      {"base": "父", "ruby": "ちち"},
-      {"base": "と", "ruby": null},
-      {"base": "母", "ruby": "はは"},
-      {"base": "と", "ruby": null},
-      {"base": "妹", "ruby": "いもうと"},
-      {"base": "と", "ruby": null},
-      {"base": "私", "ruby": "わたし"},
-      {"base": "です。", "ruby": null},
-      {"base": "父", "ruby": "ちち"},
-      {"base": "は", "ruby": null},
-      {"base": "会社員", "ruby": "かいしゃいん"},
-      {"base": "で、", "ruby": null},
-      {"base": "毎日", "ruby": "まいにち"},
-      {"base": "電車", "ruby": "でんしゃ"},
-      {"base": "で", "ruby": null},
-      {"base": "会社", "ruby": "かいしゃ"},
-      {"base": "に", "ruby": null},
-      {"base": "行", "ruby": "い"},
-      {"base": "きます。", "ruby": null},
-      {"base": "母", "ruby": "はは"},
-      {"base": "は", "ruby": null},
-      {"base": "先生", "ruby": "せんせい"},
-      {"base": "です。", "ruby": null},
-      {"base": "妹", "ruby": "いもうと"},
-      {"base": "は", "ruby": null},
-      {"base": "まだ", "ruby": null},
-      {"base": "学生", "ruby": "がくせい"},
-      {"base": "です。", "ruby": null},
-      {"base": "私", "ruby": "わたし"},
-      {"base": "たちは", "ruby": null},
-      {"base": "日曜日", "ruby": "にちようび"},
-      {"base": "に", "ruby": null},
-      {"base": "いっしょに", "ruby": null},
-      {"base": "公園", "ruby": "こうえん"},
-      {"base": "へ", "ruby": null},
-      {"base": "行", "ruby": "い"},
-      {"base": "きます。", "ruby": null}
+      {
+        "base": "田中",
+        "ruby": "たなか"
+      },
+      {
+        "base": "さんは",
+        "ruby": null
+      },
+      {
+        "base": "毎",
+        "ruby": "まい"
+      },
+      {
+        "base": "朝",
+        "ruby": "あさ"
+      },
+      {
+        "base": "六",
+        "ruby": "ろく"
+      },
+      {
+        "base": "時",
+        "ruby": "じ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "起",
+        "ruby": "お"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "シャワーをあびて、",
+        "ruby": null
+      },
+      {
+        "base": "パン",
+        "ruby": null
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "牛乳",
+        "ruby": "ぎゅうにゅう"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べます。",
+        "ruby": null
+      },
+      {
+        "base": "それから",
+        "ruby": null
+      },
+      {
+        "base": "電車",
+        "ruby": "でんしゃ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "学校",
+        "ruby": "がっこう"
+      },
+      {
+        "base": "へ",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      }
     ],
     "vocabulary_hints": [
-      {"jp": "会社員", "kana": "かいしゃいん", "es": "empleado de empresa"},
-      {"jp": "公園", "kana": "こうえん", "es": "parque"}
+      {
+        "jp": "牛乳",
+        "kana": "ぎゅうにゅう",
+        "es": "leche"
+      },
+      {
+        "jp": "電車",
+        "kana": "でんしゃ",
+        "es": "tren"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿A qué hora se levanta Tanaka?",
+        "options_es": [
+          "A las cinco",
+          "A las seis",
+          "A las siete",
+          "A las ocho"
+        ],
+        "answer_es": "A las seis"
+      }
+    ]
+  },
+  {
+    "id": "r_003",
+    "type": "short",
+    "title_es": "El gato de Sato",
+    "text_jp": "佐藤さんの家に白い猫がいます。名前はしろです。しろは毎日よく寝ます。魚が大好きです。",
+    "text_ruby": [
+      {
+        "base": "佐藤",
+        "ruby": "さとう"
+      },
+      {
+        "base": "さんの",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "白",
+        "ruby": "しろ"
+      },
+      {
+        "base": "い",
+        "ruby": null
+      },
+      {
+        "base": "猫",
+        "ruby": "ねこ"
+      },
+      {
+        "base": "がいます。",
+        "ruby": null
+      },
+      {
+        "base": "名前",
+        "ruby": "なまえ"
+      },
+      {
+        "base": "はしろです。",
+        "ruby": null
+      },
+      {
+        "base": "しろは",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "よく",
+        "ruby": null
+      },
+      {
+        "base": "寝",
+        "ruby": "ね"
+      },
+      {
+        "base": "ます。",
+        "ruby": null
+      },
+      {
+        "base": "魚",
+        "ruby": "さかな"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "大好",
+        "ruby": "だいす"
+      },
+      {
+        "base": "きです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "名前",
+        "kana": "なまえ",
+        "es": "nombre"
+      },
+      {
+        "jp": "大好き",
+        "kana": "だいすき",
+        "es": "le encanta / favorito"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿De qué color es el gato de Sato?",
+        "options_es": [
+          "Negro",
+          "Blanco",
+          "Rojo",
+          "Marrón"
+        ],
+        "answer_es": "Blanco"
+      }
+    ]
+  },
+  {
+    "id": "r_004",
+    "type": "short",
+    "title_es": "El tiempo de hoy",
+    "text_jp": "今日は雨です。空には黒い雲があります。風も強くて寒いです。明日は天気がいいと思います。",
+    "text_ruby": [
+      {
+        "base": "今日",
+        "ruby": "きょう"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "雨",
+        "ruby": "あめ"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "空",
+        "ruby": "そら"
+      },
+      {
+        "base": "には",
+        "ruby": null
+      },
+      {
+        "base": "黒",
+        "ruby": "くろ"
+      },
+      {
+        "base": "い",
+        "ruby": null
+      },
+      {
+        "base": "雲",
+        "ruby": "くも"
+      },
+      {
+        "base": "があります。",
+        "ruby": null
+      },
+      {
+        "base": "風",
+        "ruby": "かぜ"
+      },
+      {
+        "base": "も",
+        "ruby": null
+      },
+      {
+        "base": "強",
+        "ruby": "つよ"
+      },
+      {
+        "base": "くて",
+        "ruby": null
+      },
+      {
+        "base": "寒",
+        "ruby": "さむ"
+      },
+      {
+        "base": "いです。",
+        "ruby": null
+      },
+      {
+        "base": "明日",
+        "ruby": "あした"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "天気",
+        "ruby": "てんき"
+      },
+      {
+        "base": "がいいと",
+        "ruby": null
+      },
+      {
+        "base": "思",
+        "ruby": "おも"
+      },
+      {
+        "base": "います。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "雲",
+        "kana": "くも",
+        "es": "nube"
+      },
+      {
+        "jp": "天気",
+        "kana": "てんき",
+        "es": "tiempo (meteorológico)"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cómo está el tiempo hoy?",
+        "options_es": [
+          "Está lloviendo",
+          "Hace sol",
+          "Hace frío",
+          "Nieva"
+        ],
+        "answer_es": "Está lloviendo"
+      }
+    ]
+  },
+  {
+    "id": "r_005",
+    "type": "short",
+    "title_es": "Compras en la tienda",
+    "text_jp": "昨日スーパーで野菜と果物を買いました。りんごは一つ百円でした。とても安かったです。",
+    "text_ruby": [
+      {
+        "base": "昨日",
+        "ruby": "きのう"
+      },
+      {
+        "base": "スーパーで",
+        "ruby": null
+      },
+      {
+        "base": "野菜",
+        "ruby": "やさい"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "果物",
+        "ruby": "くだもの"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "買",
+        "ruby": "か"
+      },
+      {
+        "base": "いました。",
+        "ruby": null
+      },
+      {
+        "base": "りんご",
+        "ruby": null
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "一",
+        "ruby": "ひと"
+      },
+      {
+        "base": "つ",
+        "ruby": null
+      },
+      {
+        "base": "百",
+        "ruby": "ひゃく"
+      },
+      {
+        "base": "円",
+        "ruby": "えん"
+      },
+      {
+        "base": "でした。",
+        "ruby": null
+      },
+      {
+        "base": "とても",
+        "ruby": null
+      },
+      {
+        "base": "安",
+        "ruby": "やす"
+      },
+      {
+        "base": "かったです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "野菜",
+        "kana": "やさい",
+        "es": "verduras"
+      },
+      {
+        "jp": "果物",
+        "kana": "くだもの",
+        "es": "fruta"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cuánto costaba cada manzana?",
+        "options_es": [
+          "Cien yenes",
+          "Doscientos yenes",
+          "Cincuenta yenes",
+          "Trescientos yenes"
+        ],
+        "answer_es": "Cien yenes"
+      }
+    ]
+  },
+  {
+    "id": "r_006",
+    "type": "short",
+    "title_es": "El parque cerca de la estación",
+    "text_jp": "駅の近くに大きい公園があります。公園に木がたくさんあります。子供たちが毎日そこで遊びます。",
+    "text_ruby": [
+      {
+        "base": "駅",
+        "ruby": "えき"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "近",
+        "ruby": "ちか"
+      },
+      {
+        "base": "くに",
+        "ruby": null
+      },
+      {
+        "base": "大",
+        "ruby": "おお"
+      },
+      {
+        "base": "きい",
+        "ruby": null
+      },
+      {
+        "base": "公園",
+        "ruby": "こうえん"
+      },
+      {
+        "base": "があります。",
+        "ruby": null
+      },
+      {
+        "base": "公園",
+        "ruby": "こうえん"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "木",
+        "ruby": "き"
+      },
+      {
+        "base": "がたくさんあります。",
+        "ruby": null
+      },
+      {
+        "base": "子供",
+        "ruby": "こども"
+      },
+      {
+        "base": "たちが",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "そこで",
+        "ruby": null
+      },
+      {
+        "base": "遊",
+        "ruby": "あそ"
+      },
+      {
+        "base": "びます。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "近く",
+        "kana": "ちかく",
+        "es": "cerca"
+      },
+      {
+        "jp": "たくさん",
+        "kana": "たくさん",
+        "es": "muchos / mucho"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Dónde está el parque?",
+        "options_es": [
+          "Cerca de la estación",
+          "Cerca de la escuela",
+          "Cerca del hospital",
+          "Cerca del banco"
+        ],
+        "answer_es": "Cerca de la estación"
+      }
+    ]
+  },
+  {
+    "id": "r_007",
+    "type": "short",
+    "title_es": "La clase de japonés",
+    "text_jp": "私は月曜日と水曜日に日本語を勉強します。先生はやさしくて、授業はとてもおもしろいです。",
+    "text_ruby": [
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "月曜日",
+        "ruby": "げつようび"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "水曜日",
+        "ruby": "すいようび"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "日本語",
+        "ruby": "にほんご"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "勉強",
+        "ruby": "べんきょう"
+      },
+      {
+        "base": "します。",
+        "ruby": null
+      },
+      {
+        "base": "先生",
+        "ruby": "せんせい"
+      },
+      {
+        "base": "はやさしくて、",
+        "ruby": null
+      },
+      {
+        "base": "授業",
+        "ruby": "じゅぎょう"
+      },
+      {
+        "base": "はとても",
+        "ruby": null
+      },
+      {
+        "base": "おもしろいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "授業",
+        "kana": "じゅぎょう",
+        "es": "clase / lección"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué días estudia japonés?",
+        "options_es": [
+          "Lunes y miércoles",
+          "Martes y jueves",
+          "Lunes y viernes",
+          "Miércoles y viernes"
+        ],
+        "answer_es": "Lunes y miércoles"
+      }
+    ]
+  },
+  {
+    "id": "r_008",
+    "type": "short",
+    "title_es": "Un día de descanso",
+    "text_jp": "今日は休みです。家でゆっくり本を読みました。夜は音楽を聞きました。とても気持ちよかったです。",
+    "text_ruby": [
+      {
+        "base": "今日",
+        "ruby": "きょう"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "休",
+        "ruby": "やす"
+      },
+      {
+        "base": "みです。",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "でゆっくり",
+        "ruby": null
+      },
+      {
+        "base": "本",
+        "ruby": "ほん"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "読",
+        "ruby": "よ"
+      },
+      {
+        "base": "みました。",
+        "ruby": null
+      },
+      {
+        "base": "夜",
+        "ruby": "よる"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "音楽",
+        "ruby": "おんがく"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "聞",
+        "ruby": "き"
+      },
+      {
+        "base": "きました。",
+        "ruby": null
+      },
+      {
+        "base": "とても",
+        "ruby": null
+      },
+      {
+        "base": "気持",
+        "ruby": "きも"
+      },
+      {
+        "base": "ちよかったです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "休み",
+        "kana": "やすみ",
+        "es": "día libre / descanso"
+      },
+      {
+        "jp": "気持ちよい",
+        "kana": "きもちよい",
+        "es": "agradable / placentero"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué hizo por la noche?",
+        "options_es": [
+          "Escuchó música",
+          "Leyó un libro",
+          "Vio una película",
+          "Salió a pasear"
+        ],
+        "answer_es": "Escuchó música"
+      }
+    ]
+  },
+  {
+    "id": "r_009",
+    "type": "short",
+    "title_es": "El restaurante nuevo",
+    "text_jp": "駅の前に新しいレストランがあります。魚料理がおいしいです。でも、少し高いので、たまに行きます。",
+    "text_ruby": [
+      {
+        "base": "駅",
+        "ruby": "えき"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "前",
+        "ruby": "まえ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "新",
+        "ruby": "あたら"
+      },
+      {
+        "base": "しい",
+        "ruby": null
+      },
+      {
+        "base": "レストラン",
+        "ruby": null
+      },
+      {
+        "base": "があります。",
+        "ruby": null
+      },
+      {
+        "base": "魚",
+        "ruby": "さかな"
+      },
+      {
+        "base": "料理",
+        "ruby": "りょうり"
+      },
+      {
+        "base": "がおいしいです。",
+        "ruby": null
+      },
+      {
+        "base": "でも、",
+        "ruby": null
+      },
+      {
+        "base": "少",
+        "ruby": "すこ"
+      },
+      {
+        "base": "し",
+        "ruby": null
+      },
+      {
+        "base": "高",
+        "ruby": "たか"
+      },
+      {
+        "base": "いので、たまに",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "料理",
+        "kana": "りょうり",
+        "es": "comida / plato / cocina"
+      },
+      {
+        "jp": "少し",
+        "kana": "すこし",
+        "es": "un poco"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué dice el texto sobre el restaurante?",
+        "options_es": [
+          "La comida de pescado está buena pero es cara",
+          "Es barato y está cerca del parque",
+          "Solo sirven carne",
+          "Está lejos de la estación"
+        ],
+        "answer_es": "La comida de pescado está buena pero es cara"
+      }
+    ]
+  },
+  {
+    "id": "r_010",
+    "type": "short",
+    "title_es": "El hermano mayor de Keiko",
+    "text_jp": "けいこさんの兄は二十五歳です。今、東京の会社で仕事をしています。毎週末、家に帰ります。",
+    "text_ruby": [
+      {
+        "base": "けいこさんの",
+        "ruby": null
+      },
+      {
+        "base": "兄",
+        "ruby": "あに"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "二十五",
+        "ruby": "にじゅうご"
+      },
+      {
+        "base": "歳",
+        "ruby": "さい"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "今",
+        "ruby": "いま"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "東京",
+        "ruby": "とうきょう"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "会社",
+        "ruby": "かいしゃ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "仕事",
+        "ruby": "しごと"
+      },
+      {
+        "base": "をしています。",
+        "ruby": null
+      },
+      {
+        "base": "毎",
+        "ruby": "まい"
+      },
+      {
+        "base": "週末",
+        "ruby": "しゅうまつ"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "帰",
+        "ruby": "かえ"
+      },
+      {
+        "base": "ります。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "歳",
+        "kana": "さい",
+        "es": "años (de edad)"
+      },
+      {
+        "jp": "週末",
+        "kana": "しゅうまつ",
+        "es": "fin de semana"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Dónde trabaja el hermano de Keiko?",
+        "options_es": [
+          "En una empresa en Tokio",
+          "En una escuela en Osaka",
+          "En un hospital en Kioto",
+          "En una tienda en Nagoya"
+        ],
+        "answer_es": "En una empresa en Tokio"
+      }
+    ]
+  },
+  {
+    "id": "r_011",
+    "type": "short",
+    "title_es": "Mi comida favorita",
+    "text_jp": "私はお茶とご飯が大好きです。肉より魚の方が好きです。毎日お昼にお弁当を食べます。",
+    "text_ruby": [
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "お茶",
+        "ruby": "おちゃ"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "ご飯",
+        "ruby": "ごはん"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "大好",
+        "ruby": "だいす"
+      },
+      {
+        "base": "きです。",
+        "ruby": null
+      },
+      {
+        "base": "肉",
+        "ruby": "にく"
+      },
+      {
+        "base": "より",
+        "ruby": null
+      },
+      {
+        "base": "魚",
+        "ruby": "さかな"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "方",
+        "ruby": "ほう"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "好",
+        "ruby": "す"
+      },
+      {
+        "base": "きです。",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "お",
+        "ruby": null
+      },
+      {
+        "base": "昼",
+        "ruby": "ひる"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "お弁当",
+        "ruby": "おべんとう"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べます。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "お弁当",
+        "kana": "おべんとう",
+        "es": "fiambrera / bento"
+      },
+      {
+        "jp": "〜の方が好き",
+        "kana": "〜のほうがすき",
+        "es": "prefiero ~ (más que)"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué prefiere entre la carne y el pescado?",
+        "options_es": [
+          "El pescado",
+          "La carne",
+          "Los dos por igual",
+          "No le gusta ninguno"
+        ],
+        "answer_es": "El pescado"
+      }
+    ]
+  },
+  {
+    "id": "r_012",
+    "type": "short",
+    "title_es": "Carta a mamá",
+    "text_jp": "はは、元気ですか。私は元気です。毎日日本語を勉強しています。来週、家に帰ります。",
+    "text_ruby": [
+      {
+        "base": "はは、",
+        "ruby": null
+      },
+      {
+        "base": "元気",
+        "ruby": "げんき"
+      },
+      {
+        "base": "ですか。",
+        "ruby": null
+      },
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "元気",
+        "ruby": "げんき"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "日本語",
+        "ruby": "にほんご"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "勉強",
+        "ruby": "べんきょう"
+      },
+      {
+        "base": "しています。",
+        "ruby": null
+      },
+      {
+        "base": "来週",
+        "ruby": "らいしゅう"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "帰",
+        "ruby": "かえ"
+      },
+      {
+        "base": "ります。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "元気",
+        "kana": "げんき",
+        "es": "estar bien / sano"
+      },
+      {
+        "jp": "来週",
+        "kana": "らいしゅう",
+        "es": "la semana que viene"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cuándo vuelve a casa la persona que escribe?",
+        "options_es": [
+          "La semana que viene",
+          "Ayer",
+          "Hoy",
+          "El mes que viene"
+        ],
+        "answer_es": "La semana que viene"
+      }
+    ]
+  },
+  {
+    "id": "r_013",
+    "type": "short",
+    "title_es": "La librería de la ciudad",
+    "text_jp": "市内に大きい本屋があります。古い本も新しい本もあります。私はそこで毎月本を買います。",
+    "text_ruby": [
+      {
+        "base": "市内",
+        "ruby": "しない"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "大",
+        "ruby": "おお"
+      },
+      {
+        "base": "きい",
+        "ruby": null
+      },
+      {
+        "base": "本屋",
+        "ruby": "ほんや"
+      },
+      {
+        "base": "があります。",
+        "ruby": null
+      },
+      {
+        "base": "古",
+        "ruby": "ふる"
+      },
+      {
+        "base": "い",
+        "ruby": null
+      },
+      {
+        "base": "本",
+        "ruby": "ほん"
+      },
+      {
+        "base": "も",
+        "ruby": null
+      },
+      {
+        "base": "新",
+        "ruby": "あたら"
+      },
+      {
+        "base": "しい",
+        "ruby": null
+      },
+      {
+        "base": "本",
+        "ruby": "ほん"
+      },
+      {
+        "base": "もあります。",
+        "ruby": null
+      },
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "はそこで",
+        "ruby": null
+      },
+      {
+        "base": "毎月",
+        "ruby": "まいつき"
+      },
+      {
+        "base": "本",
+        "ruby": "ほん"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "買",
+        "ruby": "か"
+      },
+      {
+        "base": "います。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "本屋",
+        "kana": "ほんや",
+        "es": "librería"
+      },
+      {
+        "jp": "毎月",
+        "kana": "まいつき",
+        "es": "cada mes / todos los meses"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Con qué frecuencia compra libros en esa tienda?",
+        "options_es": [
+          "Cada mes",
+          "Cada semana",
+          "Cada día",
+          "Una vez al año"
+        ],
+        "answer_es": "Cada mes"
+      }
+    ]
+  },
+  {
+    "id": "r_014",
+    "type": "short",
+    "title_es": "El perro de la vecina",
+    "text_jp": "となりの田中さんは黒い犬を一匹かっています。名前はくろです。毎朝公園で散歩します。",
+    "text_ruby": [
+      {
+        "base": "となりの",
+        "ruby": null
+      },
+      {
+        "base": "田中",
+        "ruby": "たなか"
+      },
+      {
+        "base": "さんは",
+        "ruby": null
+      },
+      {
+        "base": "黒",
+        "ruby": "くろ"
+      },
+      {
+        "base": "い",
+        "ruby": null
+      },
+      {
+        "base": "犬",
+        "ruby": "いぬ"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "一匹",
+        "ruby": "いっぴき"
+      },
+      {
+        "base": "かっています。",
+        "ruby": null
+      },
+      {
+        "base": "名前",
+        "ruby": "なまえ"
+      },
+      {
+        "base": "はくろです。",
+        "ruby": null
+      },
+      {
+        "base": "毎朝",
+        "ruby": "まいあさ"
+      },
+      {
+        "base": "公園",
+        "ruby": "こうえん"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "散歩",
+        "ruby": "さんぽ"
+      },
+      {
+        "base": "します。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "となり",
+        "kana": "となり",
+        "es": "vecino / de al lado"
+      },
+      {
+        "jp": "一匹",
+        "kana": "いっぴき",
+        "es": "un animal (contador)"
+      },
+      {
+        "jp": "散歩",
+        "kana": "さんぽ",
+        "es": "paseo"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cuántos perros tiene la vecina Tanaka?",
+        "options_es": [
+          "Uno",
+          "Dos",
+          "Tres",
+          "Ninguno"
+        ],
+        "answer_es": "Uno"
+      }
+    ]
+  },
+  {
+    "id": "r_015",
+    "type": "short",
+    "title_es": "Camino a la escuela",
+    "text_jp": "私の学校は駅から歩いて十分です。毎朝友達と一緒に行きます。学校は古いですが、大きいです。",
+    "text_ruby": [
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "学校",
+        "ruby": "がっこう"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "駅",
+        "ruby": "えき"
+      },
+      {
+        "base": "から",
+        "ruby": null
+      },
+      {
+        "base": "歩",
+        "ruby": "ある"
+      },
+      {
+        "base": "いて",
+        "ruby": null
+      },
+      {
+        "base": "十分",
+        "ruby": "じゅっぷん"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "毎朝",
+        "ruby": "まいあさ"
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "一緒",
+        "ruby": "いっしょ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "学校",
+        "ruby": "がっこう"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "古",
+        "ruby": "ふる"
+      },
+      {
+        "base": "いですが、",
+        "ruby": null
+      },
+      {
+        "base": "大",
+        "ruby": "おお"
+      },
+      {
+        "base": "きいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "歩いて",
+        "kana": "あるいて",
+        "es": "caminando / a pie"
+      },
+      {
+        "jp": "一緒に",
+        "kana": "いっしょに",
+        "es": "juntos"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cuánto se tarda a pie desde la estación hasta la escuela?",
+        "options_es": [
+          "Diez minutos",
+          "Cinco minutos",
+          "Veinte minutos",
+          "Media hora"
+        ],
+        "answer_es": "Diez minutos"
+      }
+    ]
+  },
+  {
+    "id": "r_016",
+    "type": "short",
+    "title_es": "Visita al hospital",
+    "text_jp": "先週、病院に行きました。頭が痛かったです。先生に薬をもらいました。今は元気です。",
+    "text_ruby": [
+      {
+        "base": "先週",
+        "ruby": "せんしゅう"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "病院",
+        "ruby": "びょういん"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きました。",
+        "ruby": null
+      },
+      {
+        "base": "頭",
+        "ruby": "あたま"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "痛",
+        "ruby": "いた"
+      },
+      {
+        "base": "かったです。",
+        "ruby": null
+      },
+      {
+        "base": "先生",
+        "ruby": "せんせい"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "薬",
+        "ruby": "くすり"
+      },
+      {
+        "base": "をもらいました。",
+        "ruby": null
+      },
+      {
+        "base": "今",
+        "ruby": "いま"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "元気",
+        "ruby": "げんき"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "頭が痛い",
+        "kana": "あたまがいたい",
+        "es": "dolor de cabeza"
+      },
+      {
+        "jp": "薬",
+        "kana": "くすり",
+        "es": "medicina / medicamento"
+      },
+      {
+        "jp": "もらう",
+        "kana": "もらう",
+        "es": "recibir"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Por qué fue al hospital?",
+        "options_es": [
+          "Tenía dolor de cabeza",
+          "Tenía fiebre",
+          "Se rompió el brazo",
+          "Tenía dolor de estómago"
+        ],
+        "answer_es": "Tenía dolor de cabeza"
+      }
+    ]
+  },
+  {
+    "id": "r_017",
+    "type": "short",
+    "title_es": "El verano en el mar",
+    "text_jp": "夏休みに海へ行きました。海は青くてきれいでした。魚をたくさん見ました。また行きたいです。",
+    "text_ruby": [
+      {
+        "base": "夏休",
+        "ruby": "なつやす"
+      },
+      {
+        "base": "みに",
+        "ruby": null
+      },
+      {
+        "base": "海",
+        "ruby": "うみ"
+      },
+      {
+        "base": "へ",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きました。",
+        "ruby": null
+      },
+      {
+        "base": "海",
+        "ruby": "うみ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "青",
+        "ruby": "あお"
+      },
+      {
+        "base": "くてきれいでした。",
+        "ruby": null
+      },
+      {
+        "base": "魚",
+        "ruby": "さかな"
+      },
+      {
+        "base": "をたくさん",
+        "ruby": null
+      },
+      {
+        "base": "見",
+        "ruby": "み"
+      },
+      {
+        "base": "ました。",
+        "ruby": null
+      },
+      {
+        "base": "また",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きたいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "夏休み",
+        "kana": "なつやすみ",
+        "es": "vacaciones de verano"
+      },
+      {
+        "jp": "また〜たい",
+        "kana": "また〜たい",
+        "es": "quiero volver a~"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cómo era el mar?",
+        "options_es": [
+          "Azul y bonito",
+          "Frío y oscuro",
+          "Grande y peligroso",
+          "Pequeño y tranquilo"
+        ],
+        "answer_es": "Azul y bonito"
+      }
+    ]
+  },
+  {
+    "id": "r_018",
+    "type": "short",
+    "title_es": "El trabajo de papá",
+    "text_jp": "父は毎朝八時に家を出ます。電車で会社に行きます。夜七時ごろ帰ります。仕事はとても忙しいです。",
+    "text_ruby": [
+      {
+        "base": "父",
+        "ruby": "ちち"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "毎朝",
+        "ruby": "まいあさ"
+      },
+      {
+        "base": "八",
+        "ruby": "はち"
+      },
+      {
+        "base": "時",
+        "ruby": "じ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "出",
+        "ruby": "で"
+      },
+      {
+        "base": "ます。",
+        "ruby": null
+      },
+      {
+        "base": "電車",
+        "ruby": "でんしゃ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "会社",
+        "ruby": "かいしゃ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "夜",
+        "ruby": "よる"
+      },
+      {
+        "base": "七",
+        "ruby": "しち"
+      },
+      {
+        "base": "時",
+        "ruby": "じ"
+      },
+      {
+        "base": "ごろ",
+        "ruby": null
+      },
+      {
+        "base": "帰",
+        "ruby": "かえ"
+      },
+      {
+        "base": "ります。",
+        "ruby": null
+      },
+      {
+        "base": "仕事",
+        "ruby": "しごと"
+      },
+      {
+        "base": "はとても",
+        "ruby": null
+      },
+      {
+        "base": "忙",
+        "ruby": "いそが"
+      },
+      {
+        "base": "しいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "〜ごろ",
+        "kana": "〜ごろ",
+        "es": "alrededor de (hora)"
+      },
+      {
+        "jp": "忙しい",
+        "kana": "いそがしい",
+        "es": "ocupado / ajetreado"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿A qué hora sale el padre de casa por la mañana?",
+        "options_es": [
+          "A las ocho",
+          "A las siete",
+          "A las nueve",
+          "A las seis"
+        ],
+        "answer_es": "A las ocho"
+      }
+    ]
+  },
+  {
+    "id": "r_019",
+    "type": "short",
+    "title_es": "Música favorita",
+    "text_jp": "私は音楽がとても好きです。毎日音楽を聞きます。友達と一緒にコンサートへも行きたいです。",
+    "text_ruby": [
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "音楽",
+        "ruby": "おんがく"
+      },
+      {
+        "base": "がとても",
+        "ruby": null
+      },
+      {
+        "base": "好",
+        "ruby": "す"
+      },
+      {
+        "base": "きです。",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "音楽",
+        "ruby": "おんがく"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "聞",
+        "ruby": "き"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "一緒",
+        "ruby": "いっしょ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "コンサートへも",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きたいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "コンサート",
+        "kana": "コンサート",
+        "es": "concierto"
+      },
+      {
+        "jp": "〜たい",
+        "kana": "〜たい",
+        "es": "querer hacer~"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué quiere hacer con sus amigos?",
+        "options_es": [
+          "Ir a un concierto",
+          "Ver una película",
+          "Comer en un restaurante",
+          "Estudiar japonés"
+        ],
+        "answer_es": "Ir a un concierto"
+      }
+    ]
+  },
+  {
+    "id": "r_020",
+    "type": "short",
+    "title_es": "Las estaciones del año",
+    "text_jp": "日本には四つの季節があります。春は花がきれいです。夏は暑くて、冬は寒いです。秋が一番好きです。",
+    "text_ruby": [
+      {
+        "base": "日本",
+        "ruby": "にほん"
+      },
+      {
+        "base": "には",
+        "ruby": null
+      },
+      {
+        "base": "四",
+        "ruby": "よっ"
+      },
+      {
+        "base": "つの",
+        "ruby": null
+      },
+      {
+        "base": "季節",
+        "ruby": "きせつ"
+      },
+      {
+        "base": "があります。",
+        "ruby": null
+      },
+      {
+        "base": "春",
+        "ruby": "はる"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "花",
+        "ruby": "はな"
+      },
+      {
+        "base": "がきれいです。",
+        "ruby": null
+      },
+      {
+        "base": "夏",
+        "ruby": "なつ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "暑",
+        "ruby": "あつ"
+      },
+      {
+        "base": "くて、",
+        "ruby": null
+      },
+      {
+        "base": "冬",
+        "ruby": "ふゆ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "寒",
+        "ruby": "さむ"
+      },
+      {
+        "base": "いです。",
+        "ruby": null
+      },
+      {
+        "base": "秋",
+        "ruby": "あき"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "一番",
+        "ruby": "いちばん"
+      },
+      {
+        "base": "好",
+        "ruby": "す"
+      },
+      {
+        "base": "きです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "季節",
+        "kana": "きせつ",
+        "es": "estación del año"
+      },
+      {
+        "jp": "春",
+        "kana": "はる",
+        "es": "primavera"
+      },
+      {
+        "jp": "秋",
+        "kana": "あき",
+        "es": "otoño"
+      },
+      {
+        "jp": "一番",
+        "kana": "いちばん",
+        "es": "el más / lo más"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cuál es la estación favorita de quien escribe?",
+        "options_es": [
+          "El otoño",
+          "La primavera",
+          "El verano",
+          "El invierno"
+        ],
+        "answer_es": "El otoño"
+      }
+    ]
+  },
+  {
+    "id": "r_021",
+    "type": "medium",
+    "title_es": "Mi familia",
+    "text_jp": "私の家族は四人です。父と母と妹と私です。父は会社員で、毎日電車で会社に行きます。母は学校の先生で、日本語を教えています。妹はまだ学生で、毎日よく勉強しています。私たちは日曜日にいっしょに公園へ行きます。公園は家の近くにあって、とても大きいです。",
+    "text_ruby": [
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "家族",
+        "ruby": "かぞく"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "四人",
+        "ruby": "よにん"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "父",
+        "ruby": "ちち"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "母",
+        "ruby": "はは"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "妹",
+        "ruby": "いもうと"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "父",
+        "ruby": "ちち"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "会社員",
+        "ruby": "かいしゃいん"
+      },
+      {
+        "base": "で、",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "電車",
+        "ruby": "でんしゃ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "会社",
+        "ruby": "かいしゃ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "母",
+        "ruby": "はは"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "学校",
+        "ruby": "がっこう"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "先生",
+        "ruby": "せんせい"
+      },
+      {
+        "base": "で、",
+        "ruby": null
+      },
+      {
+        "base": "日本語",
+        "ruby": "にほんご"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "教",
+        "ruby": "おし"
+      },
+      {
+        "base": "えています。",
+        "ruby": null
+      },
+      {
+        "base": "妹",
+        "ruby": "いもうと"
+      },
+      {
+        "base": "はまだ",
+        "ruby": null
+      },
+      {
+        "base": "学生",
+        "ruby": "がくせい"
+      },
+      {
+        "base": "で、",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "よく",
+        "ruby": null
+      },
+      {
+        "base": "勉強",
+        "ruby": "べんきょう"
+      },
+      {
+        "base": "しています。",
+        "ruby": null
+      },
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "たちは",
+        "ruby": null
+      },
+      {
+        "base": "日曜日",
+        "ruby": "にちようび"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "いっしょに",
+        "ruby": null
+      },
+      {
+        "base": "公園",
+        "ruby": "こうえん"
+      },
+      {
+        "base": "へ",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "公園",
+        "ruby": "こうえん"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "近",
+        "ruby": "ちか"
+      },
+      {
+        "base": "くにあって、とても",
+        "ruby": null
+      },
+      {
+        "base": "大",
+        "ruby": "おお"
+      },
+      {
+        "base": "きいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "会社員",
+        "kana": "かいしゃいん",
+        "es": "empleado de empresa"
+      },
+      {
+        "jp": "公園",
+        "kana": "こうえん",
+        "es": "parque"
+      }
     ],
     "questions": [
       {
         "q_es": "¿Cuántas personas hay en la familia?",
-        "options_es": ["Tres", "Cuatro", "Cinco", "Seis"],
+        "options_es": [
+          "Tres",
+          "Cuatro",
+          "Cinco",
+          "Seis"
+        ],
         "answer_es": "Cuatro"
       },
       {
         "q_es": "¿Cómo va el padre al trabajo?",
-        "options_es": ["En coche", "En tren", "En bicicleta", "Andando"],
+        "options_es": [
+          "En coche",
+          "En tren",
+          "En bicicleta",
+          "Andando"
+        ],
         "answer_es": "En tren"
       },
       {
         "q_es": "¿Qué hace la familia los domingos?",
-        "options_es": ["Va al parque", "Ve películas", "Cena fuera", "Visita a los abuelos"],
+        "options_es": [
+          "Va al parque",
+          "Ve películas",
+          "Cena fuera",
+          "Visita a los abuelos"
+        ],
         "answer_es": "Va al parque"
+      }
+    ]
+  },
+  {
+    "id": "r_022",
+    "type": "medium",
+    "title_es": "Un día en Tokio",
+    "text_jp": "先週、東京へ行きました。電車でいろいろな所を見ました。お昼に有名なレストランで魚料理を食べました。とてもおいしかったです。夕方、大きい公園で友達と長い時間話しました。夜は駅の近くで食事をしました。東京はとても便利な町だと思いました。とても楽しい一日でした。",
+    "text_ruby": [
+      {
+        "base": "先週",
+        "ruby": "せんしゅう"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "東京",
+        "ruby": "とうきょう"
+      },
+      {
+        "base": "へ",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きました。",
+        "ruby": null
+      },
+      {
+        "base": "電車",
+        "ruby": "でんしゃ"
+      },
+      {
+        "base": "でいろいろな",
+        "ruby": null
+      },
+      {
+        "base": "所",
+        "ruby": "ところ"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "見",
+        "ruby": "み"
+      },
+      {
+        "base": "ました。",
+        "ruby": null
+      },
+      {
+        "base": "お",
+        "ruby": null
+      },
+      {
+        "base": "昼",
+        "ruby": "ひる"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "有名",
+        "ruby": "ゆうめい"
+      },
+      {
+        "base": "な",
+        "ruby": null
+      },
+      {
+        "base": "レストラン",
+        "ruby": null
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "魚",
+        "ruby": "さかな"
+      },
+      {
+        "base": "料理",
+        "ruby": "りょうり"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べました。",
+        "ruby": null
+      },
+      {
+        "base": "とてもおいしかったです。",
+        "ruby": null
+      },
+      {
+        "base": "夕方",
+        "ruby": "ゆうがた"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "大",
+        "ruby": "おお"
+      },
+      {
+        "base": "きい",
+        "ruby": null
+      },
+      {
+        "base": "公園",
+        "ruby": "こうえん"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "長",
+        "ruby": "なが"
+      },
+      {
+        "base": "い",
+        "ruby": null
+      },
+      {
+        "base": "時間",
+        "ruby": "じかん"
+      },
+      {
+        "base": "話",
+        "ruby": "はな"
+      },
+      {
+        "base": "しました。",
+        "ruby": null
+      },
+      {
+        "base": "夜",
+        "ruby": "よる"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "駅",
+        "ruby": "えき"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "近",
+        "ruby": "ちか"
+      },
+      {
+        "base": "くで",
+        "ruby": null
+      },
+      {
+        "base": "食事",
+        "ruby": "しょくじ"
+      },
+      {
+        "base": "をしました。",
+        "ruby": null
+      },
+      {
+        "base": "東京",
+        "ruby": "とうきょう"
+      },
+      {
+        "base": "はとても",
+        "ruby": null
+      },
+      {
+        "base": "便利",
+        "ruby": "べんり"
+      },
+      {
+        "base": "な",
+        "ruby": null
+      },
+      {
+        "base": "町",
+        "ruby": "まち"
+      },
+      {
+        "base": "だと",
+        "ruby": null
+      },
+      {
+        "base": "思",
+        "ruby": "おも"
+      },
+      {
+        "base": "いました。",
+        "ruby": null
+      },
+      {
+        "base": "とても",
+        "ruby": null
+      },
+      {
+        "base": "楽",
+        "ruby": "たの"
+      },
+      {
+        "base": "しい",
+        "ruby": null
+      },
+      {
+        "base": "一日",
+        "ruby": "いちにち"
+      },
+      {
+        "base": "でした。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "いろいろ",
+        "kana": "いろいろ",
+        "es": "varios / diferentes"
+      },
+      {
+        "jp": "夕方",
+        "kana": "ゆうがた",
+        "es": "tarde (al anochecer)"
+      },
+      {
+        "jp": "便利",
+        "kana": "べんり",
+        "es": "conveniente / práctico"
+      },
+      {
+        "jp": "町",
+        "kana": "まち",
+        "es": "ciudad / pueblo"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué comió al mediodía?",
+        "options_es": [
+          "Comida de pescado",
+          "Comida de carne",
+          "Pan y leche",
+          "Arroz y verduras"
+        ],
+        "answer_es": "Comida de pescado"
+      },
+      {
+        "q_es": "¿Qué hizo por la tarde?",
+        "options_es": [
+          "Habló con amigos en el parque",
+          "Fue al hospital",
+          "Compró ropa en una tienda",
+          "Volvió a casa"
+        ],
+        "answer_es": "Habló con amigos en el parque"
+      },
+      {
+        "q_es": "¿Qué piensa sobre Tokio?",
+        "options_es": [
+          "Que es una ciudad muy conveniente",
+          "Que es una ciudad cara",
+          "Que es una ciudad pequeña",
+          "Que es difícil de usar el tren"
+        ],
+        "answer_es": "Que es una ciudad muy conveniente"
+      }
+    ]
+  },
+  {
+    "id": "r_023",
+    "type": "medium",
+    "title_es": "La tienda de la señora Yamamoto",
+    "text_jp": "山本さんは駅の近くに小さい店を持っています。毎日朝九時に店を開けます。野菜や果物を売っています。お客さんはとても多いです。山本さんは仕事が好きで、毎日元気に働いています。お客さんと話すことが一番楽しいと言っています。店は夜七時に閉まります。",
+    "text_ruby": [
+      {
+        "base": "山本",
+        "ruby": "やまもと"
+      },
+      {
+        "base": "さんは",
+        "ruby": null
+      },
+      {
+        "base": "駅",
+        "ruby": "えき"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "近",
+        "ruby": "ちか"
+      },
+      {
+        "base": "くに",
+        "ruby": null
+      },
+      {
+        "base": "小",
+        "ruby": "ちい"
+      },
+      {
+        "base": "さい",
+        "ruby": null
+      },
+      {
+        "base": "店",
+        "ruby": "みせ"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "持",
+        "ruby": "も"
+      },
+      {
+        "base": "っています。",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "朝",
+        "ruby": "あさ"
+      },
+      {
+        "base": "九",
+        "ruby": "く"
+      },
+      {
+        "base": "時",
+        "ruby": "じ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "店",
+        "ruby": "みせ"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "開",
+        "ruby": "あ"
+      },
+      {
+        "base": "けます。",
+        "ruby": null
+      },
+      {
+        "base": "野菜",
+        "ruby": "やさい"
+      },
+      {
+        "base": "や",
+        "ruby": null
+      },
+      {
+        "base": "果物",
+        "ruby": "くだもの"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "売",
+        "ruby": "う"
+      },
+      {
+        "base": "っています。",
+        "ruby": null
+      },
+      {
+        "base": "お客",
+        "ruby": "おきゃく"
+      },
+      {
+        "base": "さんはとても",
+        "ruby": null
+      },
+      {
+        "base": "多",
+        "ruby": "おお"
+      },
+      {
+        "base": "いです。",
+        "ruby": null
+      },
+      {
+        "base": "山本",
+        "ruby": "やまもと"
+      },
+      {
+        "base": "さんは",
+        "ruby": null
+      },
+      {
+        "base": "仕事",
+        "ruby": "しごと"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "好",
+        "ruby": "す"
+      },
+      {
+        "base": "きで、",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "元気",
+        "ruby": "げんき"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "働",
+        "ruby": "はたら"
+      },
+      {
+        "base": "いています。",
+        "ruby": null
+      },
+      {
+        "base": "お客",
+        "ruby": "おきゃく"
+      },
+      {
+        "base": "さんと",
+        "ruby": null
+      },
+      {
+        "base": "話",
+        "ruby": "はな"
+      },
+      {
+        "base": "すことが",
+        "ruby": null
+      },
+      {
+        "base": "一番",
+        "ruby": "いちばん"
+      },
+      {
+        "base": "楽",
+        "ruby": "たの"
+      },
+      {
+        "base": "しいと",
+        "ruby": null
+      },
+      {
+        "base": "言",
+        "ruby": "い"
+      },
+      {
+        "base": "っています。",
+        "ruby": null
+      },
+      {
+        "base": "店",
+        "ruby": "みせ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "夜",
+        "ruby": "よる"
+      },
+      {
+        "base": "七",
+        "ruby": "しち"
+      },
+      {
+        "base": "時",
+        "ruby": "じ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "閉",
+        "ruby": "し"
+      },
+      {
+        "base": "まります。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "開ける",
+        "kana": "あける",
+        "es": "abrir (la tienda)"
+      },
+      {
+        "jp": "お客さん",
+        "kana": "おきゃくさん",
+        "es": "clientes"
+      },
+      {
+        "jp": "働く",
+        "kana": "はたらく",
+        "es": "trabajar"
+      },
+      {
+        "jp": "閉まる",
+        "kana": "しまる",
+        "es": "cerrar (la tienda)"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué vende la señora Yamamoto?",
+        "options_es": [
+          "Verduras y frutas",
+          "Libros y revistas",
+          "Ropa y zapatos",
+          "Pescado y carne"
+        ],
+        "answer_es": "Verduras y frutas"
+      },
+      {
+        "q_es": "¿A qué hora cierra la tienda?",
+        "options_es": [
+          "A las siete de la noche",
+          "A las seis de la tarde",
+          "A las ocho de la noche",
+          "A las cinco de la tarde"
+        ],
+        "answer_es": "A las siete de la noche"
+      }
+    ]
+  },
+  {
+    "id": "r_024",
+    "type": "medium",
+    "title_es": "Carta de un estudiante extranjero",
+    "text_jp": "私はスペインから来ました。今、日本の大学で日本語を勉強しています。日本語はとても難しいですが、おもしろいです。先生はやさしいです。毎日漢字を十個練習します。友達もたくさんできました。日本の食べ物も大好きです。特にお茶とお弁当が好きです。これからも頑張ります。",
+    "text_ruby": [
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "はスペインから",
+        "ruby": null
+      },
+      {
+        "base": "来",
+        "ruby": "き"
+      },
+      {
+        "base": "ました。",
+        "ruby": null
+      },
+      {
+        "base": "今",
+        "ruby": "いま"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "日本",
+        "ruby": "にほん"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "大学",
+        "ruby": "だいがく"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "日本語",
+        "ruby": "にほんご"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "勉強",
+        "ruby": "べんきょう"
+      },
+      {
+        "base": "しています。",
+        "ruby": null
+      },
+      {
+        "base": "日本語",
+        "ruby": "にほんご"
+      },
+      {
+        "base": "はとても",
+        "ruby": null
+      },
+      {
+        "base": "難",
+        "ruby": "むずか"
+      },
+      {
+        "base": "しいですが、",
+        "ruby": null
+      },
+      {
+        "base": "おもしろいです。",
+        "ruby": null
+      },
+      {
+        "base": "先生",
+        "ruby": "せんせい"
+      },
+      {
+        "base": "はやさしいです。",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "漢字",
+        "ruby": "かんじ"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "十",
+        "ruby": "じゅっ"
+      },
+      {
+        "base": "個",
+        "ruby": "こ"
+      },
+      {
+        "base": "練習",
+        "ruby": "れんしゅう"
+      },
+      {
+        "base": "します。",
+        "ruby": null
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "もたくさんできました。",
+        "ruby": null
+      },
+      {
+        "base": "日本",
+        "ruby": "にほん"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べ",
+        "ruby": null
+      },
+      {
+        "base": "物",
+        "ruby": "もの"
+      },
+      {
+        "base": "も",
+        "ruby": null
+      },
+      {
+        "base": "大好",
+        "ruby": "だいす"
+      },
+      {
+        "base": "きです。",
+        "ruby": null
+      },
+      {
+        "base": "特",
+        "ruby": "とく"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "お茶",
+        "ruby": "おちゃ"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "お弁当",
+        "ruby": "おべんとう"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "好",
+        "ruby": "す"
+      },
+      {
+        "base": "きです。",
+        "ruby": null
+      },
+      {
+        "base": "これからも",
+        "ruby": null
+      },
+      {
+        "base": "頑張",
+        "ruby": "がんば"
+      },
+      {
+        "base": "ります。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "大学",
+        "kana": "だいがく",
+        "es": "universidad"
+      },
+      {
+        "jp": "漢字",
+        "kana": "かんじ",
+        "es": "caracteres chino-japoneses"
+      },
+      {
+        "jp": "練習",
+        "kana": "れんしゅう",
+        "es": "práctica / ejercicio"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿De dónde viene el estudiante?",
+        "options_es": [
+          "De España",
+          "De Francia",
+          "De China",
+          "De Brasil"
+        ],
+        "answer_es": "De España"
+      },
+      {
+        "q_es": "¿Cuántos kanji practica cada día?",
+        "options_es": [
+          "Diez",
+          "Cinco",
+          "Veinte",
+          "Tres"
+        ],
+        "answer_es": "Diez"
+      }
+    ]
+  },
+  {
+    "id": "r_025",
+    "type": "medium",
+    "title_es": "El viaje de la señora Kimura",
+    "text_jp": "木村さんは先月、北海道へ旅行しました。飛行機で行きました。北海道は寒かったですが、山や海がとてもきれいでした。魚や野菜がおいしかったです。ホテルはきれいで、部屋から山が見えました。お土産をたくさん買いました。また行きたいと思っています。北海道は本当にいい所でした。",
+    "text_ruby": [
+      {
+        "base": "木村",
+        "ruby": "きむら"
+      },
+      {
+        "base": "さんは",
+        "ruby": null
+      },
+      {
+        "base": "先月",
+        "ruby": "せんげつ"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "北海道",
+        "ruby": "ほっかいどう"
+      },
+      {
+        "base": "へ",
+        "ruby": null
+      },
+      {
+        "base": "旅行",
+        "ruby": "りょこう"
+      },
+      {
+        "base": "しました。",
+        "ruby": null
+      },
+      {
+        "base": "飛行機",
+        "ruby": "ひこうき"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きました。",
+        "ruby": null
+      },
+      {
+        "base": "北海道",
+        "ruby": "ほっかいどう"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "寒",
+        "ruby": "さむ"
+      },
+      {
+        "base": "かったですが、",
+        "ruby": null
+      },
+      {
+        "base": "山",
+        "ruby": "やま"
+      },
+      {
+        "base": "や",
+        "ruby": null
+      },
+      {
+        "base": "海",
+        "ruby": "うみ"
+      },
+      {
+        "base": "がとてもきれいでした。",
+        "ruby": null
+      },
+      {
+        "base": "魚",
+        "ruby": "さかな"
+      },
+      {
+        "base": "や",
+        "ruby": null
+      },
+      {
+        "base": "野菜",
+        "ruby": "やさい"
+      },
+      {
+        "base": "がおいしかったです。",
+        "ruby": null
+      },
+      {
+        "base": "ホテルはきれいで、",
+        "ruby": null
+      },
+      {
+        "base": "部屋",
+        "ruby": "へや"
+      },
+      {
+        "base": "から",
+        "ruby": null
+      },
+      {
+        "base": "山",
+        "ruby": "やま"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "見",
+        "ruby": "み"
+      },
+      {
+        "base": "えました。",
+        "ruby": null
+      },
+      {
+        "base": "お土産",
+        "ruby": "おみやげ"
+      },
+      {
+        "base": "をたくさん",
+        "ruby": null
+      },
+      {
+        "base": "買",
+        "ruby": "か"
+      },
+      {
+        "base": "いました。",
+        "ruby": null
+      },
+      {
+        "base": "また",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きたいと",
+        "ruby": null
+      },
+      {
+        "base": "思",
+        "ruby": "おも"
+      },
+      {
+        "base": "っています。",
+        "ruby": null
+      },
+      {
+        "base": "北海道",
+        "ruby": "ほっかいどう"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "本当",
+        "ruby": "ほんとう"
+      },
+      {
+        "base": "にいい",
+        "ruby": null
+      },
+      {
+        "base": "所",
+        "ruby": "ところ"
+      },
+      {
+        "base": "でした。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "先月",
+        "kana": "せんげつ",
+        "es": "el mes pasado"
+      },
+      {
+        "jp": "旅行",
+        "kana": "りょこう",
+        "es": "viaje"
+      },
+      {
+        "jp": "飛行機",
+        "kana": "ひこうき",
+        "es": "avión"
+      },
+      {
+        "jp": "お土産",
+        "kana": "おみやげ",
+        "es": "souvenir / regalo de viaje"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cómo fue la señora Kimura a Hokkaido?",
+        "options_es": [
+          "En avión",
+          "En tren",
+          "En coche",
+          "En barco"
+        ],
+        "answer_es": "En avión"
+      },
+      {
+        "q_es": "¿Cómo era el tiempo en Hokkaido?",
+        "options_es": [
+          "Hacía frío",
+          "Hacía calor",
+          "Llovía mucho",
+          "Había nieve"
+        ],
+        "answer_es": "Hacía frío"
+      },
+      {
+        "q_es": "¿Qué compró la señora Kimura?",
+        "options_es": [
+          "Muchos souvenirs",
+          "Ropa nueva",
+          "Libros de japonés",
+          "Un coche nuevo"
+        ],
+        "answer_es": "Muchos souvenirs"
+      }
+    ]
+  },
+  {
+    "id": "r_026",
+    "type": "medium",
+    "title_es": "El día a día de Yuki",
+    "text_jp": "ゆきさんは大学生です。毎朝七時に起きて、朝ごはんを食べます。それから電車で大学へ行きます。午後三時に授業が終わります。家に帰ってから、宿題をします。宿題は毎日たくさんあります。夜は友達と電話で話すことが多いです。十一時ごろ寝ます。毎日忙しいですが、楽しいです。",
+    "text_ruby": [
+      {
+        "base": "ゆきさんは",
+        "ruby": null
+      },
+      {
+        "base": "大学生",
+        "ruby": "だいがくせい"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "毎朝",
+        "ruby": "まいあさ"
+      },
+      {
+        "base": "七",
+        "ruby": "しち"
+      },
+      {
+        "base": "時",
+        "ruby": "じ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "起",
+        "ruby": "お"
+      },
+      {
+        "base": "きて、",
+        "ruby": null
+      },
+      {
+        "base": "朝",
+        "ruby": "あさ"
+      },
+      {
+        "base": "ごはんを",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べます。",
+        "ruby": null
+      },
+      {
+        "base": "それから",
+        "ruby": null
+      },
+      {
+        "base": "電車",
+        "ruby": "でんしゃ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "大学",
+        "ruby": "だいがく"
+      },
+      {
+        "base": "へ",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "午後",
+        "ruby": "ごご"
+      },
+      {
+        "base": "三",
+        "ruby": "さん"
+      },
+      {
+        "base": "時",
+        "ruby": "じ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "授業",
+        "ruby": "じゅぎょう"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "終",
+        "ruby": "お"
+      },
+      {
+        "base": "わります。",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "帰",
+        "ruby": "かえ"
+      },
+      {
+        "base": "ってから、",
+        "ruby": null
+      },
+      {
+        "base": "宿題",
+        "ruby": "しゅくだい"
+      },
+      {
+        "base": "をします。",
+        "ruby": null
+      },
+      {
+        "base": "宿題",
+        "ruby": "しゅくだい"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "たくさんあります。",
+        "ruby": null
+      },
+      {
+        "base": "夜",
+        "ruby": "よる"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "電話",
+        "ruby": "でんわ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "話",
+        "ruby": "はな"
+      },
+      {
+        "base": "すことが",
+        "ruby": null
+      },
+      {
+        "base": "多",
+        "ruby": "おお"
+      },
+      {
+        "base": "いです。",
+        "ruby": null
+      },
+      {
+        "base": "十一",
+        "ruby": "じゅういち"
+      },
+      {
+        "base": "時",
+        "ruby": "じ"
+      },
+      {
+        "base": "ごろ",
+        "ruby": null
+      },
+      {
+        "base": "寝",
+        "ruby": "ね"
+      },
+      {
+        "base": "ます。",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "忙",
+        "ruby": "いそが"
+      },
+      {
+        "base": "しいですが、",
+        "ruby": null
+      },
+      {
+        "base": "楽",
+        "ruby": "たの"
+      },
+      {
+        "base": "しいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "大学生",
+        "kana": "だいがくせい",
+        "es": "estudiante universitario"
+      },
+      {
+        "jp": "午後",
+        "kana": "ごご",
+        "es": "por la tarde / pm"
+      },
+      {
+        "jp": "授業が終わる",
+        "kana": "じゅぎょうがおわる",
+        "es": "terminar la clase"
+      },
+      {
+        "jp": "宿題",
+        "kana": "しゅくだい",
+        "es": "deberes / tarea"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿A qué hora se levanta Yuki?",
+        "options_es": [
+          "A las siete",
+          "A las seis",
+          "A las ocho",
+          "A las nueve"
+        ],
+        "answer_es": "A las siete"
+      },
+      {
+        "q_es": "¿Qué hace Yuki después de llegar a casa?",
+        "options_es": [
+          "Hace los deberes",
+          "Escucha música",
+          "Ve la televisión",
+          "Llama a sus amigos"
+        ],
+        "answer_es": "Hace los deberes"
+      }
+    ]
+  },
+  {
+    "id": "r_027",
+    "type": "medium",
+    "title_es": "El hospital del barrio",
+    "text_jp": "私の家の近くに古い病院があります。先生がとても親切で、有名です。病院は月曜日から土曜日まであいています。日曜日は休みです。先週、弟が病気になって、その病院へ行きました。先生に薬をもらって、今は元気になりました。この病院は近くてとても便利です。",
+    "text_ruby": [
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "近",
+        "ruby": "ちか"
+      },
+      {
+        "base": "くに",
+        "ruby": null
+      },
+      {
+        "base": "古",
+        "ruby": "ふる"
+      },
+      {
+        "base": "い",
+        "ruby": null
+      },
+      {
+        "base": "病院",
+        "ruby": "びょういん"
+      },
+      {
+        "base": "があります。",
+        "ruby": null
+      },
+      {
+        "base": "先生",
+        "ruby": "せんせい"
+      },
+      {
+        "base": "がとても",
+        "ruby": null
+      },
+      {
+        "base": "親切",
+        "ruby": "しんせつ"
+      },
+      {
+        "base": "で、",
+        "ruby": null
+      },
+      {
+        "base": "有名",
+        "ruby": "ゆうめい"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "病院",
+        "ruby": "びょういん"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "月曜日",
+        "ruby": "げつようび"
+      },
+      {
+        "base": "から",
+        "ruby": null
+      },
+      {
+        "base": "土曜日",
+        "ruby": "どようび"
+      },
+      {
+        "base": "まであいています。",
+        "ruby": null
+      },
+      {
+        "base": "日曜日",
+        "ruby": "にちようび"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "休",
+        "ruby": "やす"
+      },
+      {
+        "base": "みです。",
+        "ruby": null
+      },
+      {
+        "base": "先週",
+        "ruby": "せんしゅう"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "弟",
+        "ruby": "おとうと"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "病気",
+        "ruby": "びょうき"
+      },
+      {
+        "base": "になって、",
+        "ruby": null
+      },
+      {
+        "base": "その",
+        "ruby": null
+      },
+      {
+        "base": "病院",
+        "ruby": "びょういん"
+      },
+      {
+        "base": "へ",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きました。",
+        "ruby": null
+      },
+      {
+        "base": "先生",
+        "ruby": "せんせい"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "薬",
+        "ruby": "くすり"
+      },
+      {
+        "base": "をもらって、",
+        "ruby": null
+      },
+      {
+        "base": "今",
+        "ruby": "いま"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "元気",
+        "ruby": "げんき"
+      },
+      {
+        "base": "になりました。",
+        "ruby": null
+      },
+      {
+        "base": "この",
+        "ruby": null
+      },
+      {
+        "base": "病院",
+        "ruby": "びょういん"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "近",
+        "ruby": "ちか"
+      },
+      {
+        "base": "くて",
+        "ruby": null
+      },
+      {
+        "base": "とても",
+        "ruby": null
+      },
+      {
+        "base": "便利",
+        "ruby": "べんり"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "親切",
+        "kana": "しんせつ",
+        "es": "amable / atento"
+      },
+      {
+        "jp": "病気",
+        "kana": "びょうき",
+        "es": "enfermedad / estar enfermo"
+      },
+      {
+        "jp": "薬",
+        "kana": "くすり",
+        "es": "medicina / medicamento"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué días está abierto el hospital?",
+        "options_es": [
+          "De lunes a sábado",
+          "De lunes a viernes",
+          "Todos los días",
+          "Solo los fines de semana"
+        ],
+        "answer_es": "De lunes a sábado"
+      },
+      {
+        "q_es": "¿Por qué fue al hospital la semana pasada?",
+        "options_es": [
+          "Su hermano menor se puso enfermo",
+          "El narrador tenía fiebre",
+          "Su madre se cayó",
+          "Su amigo tuvo un accidente"
+        ],
+        "answer_es": "Su hermano menor se puso enfermo"
+      },
+      {
+        "q_es": "¿Cómo está el hermano ahora?",
+        "options_es": [
+          "Está bien",
+          "Sigue enfermo",
+          "Está en el hospital",
+          "Está descansando en casa"
+        ],
+        "answer_es": "Está bien"
+      }
+    ]
+  },
+  {
+    "id": "r_028",
+    "type": "medium",
+    "title_es": "Las flores de primavera",
+    "text_jp": "春になると、公園にきれいな花がたくさん咲きます。私は毎年友達と花見に行きます。今年も先週の日曜日に行きました。天気がよくて、空がとても青かったです。みんなでお弁当を食べながら、音楽を聞きました。友達は写真をたくさん撮りました。とても楽しかったです。",
+    "text_ruby": [
+      {
+        "base": "春",
+        "ruby": "はる"
+      },
+      {
+        "base": "になると、",
+        "ruby": null
+      },
+      {
+        "base": "公園",
+        "ruby": "こうえん"
+      },
+      {
+        "base": "にきれいな",
+        "ruby": null
+      },
+      {
+        "base": "花",
+        "ruby": "はな"
+      },
+      {
+        "base": "がたくさん",
+        "ruby": null
+      },
+      {
+        "base": "咲",
+        "ruby": "さ"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "毎年",
+        "ruby": "まいとし"
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "花見",
+        "ruby": "はなみ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "今年",
+        "ruby": "ことし"
+      },
+      {
+        "base": "も",
+        "ruby": null
+      },
+      {
+        "base": "先週",
+        "ruby": "せんしゅう"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "日曜日",
+        "ruby": "にちようび"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きました。",
+        "ruby": null
+      },
+      {
+        "base": "天気",
+        "ruby": "てんき"
+      },
+      {
+        "base": "がよくて、",
+        "ruby": null
+      },
+      {
+        "base": "空",
+        "ruby": "そら"
+      },
+      {
+        "base": "がとても",
+        "ruby": null
+      },
+      {
+        "base": "青",
+        "ruby": "あお"
+      },
+      {
+        "base": "かったです。",
+        "ruby": null
+      },
+      {
+        "base": "みんなで",
+        "ruby": null
+      },
+      {
+        "base": "お弁当",
+        "ruby": "おべんとう"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べながら、",
+        "ruby": null
+      },
+      {
+        "base": "音楽",
+        "ruby": "おんがく"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "聞",
+        "ruby": "き"
+      },
+      {
+        "base": "きました。",
+        "ruby": null
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "写真",
+        "ruby": "しゃしん"
+      },
+      {
+        "base": "をたくさん",
+        "ruby": null
+      },
+      {
+        "base": "撮",
+        "ruby": "と"
+      },
+      {
+        "base": "りました。",
+        "ruby": null
+      },
+      {
+        "base": "とても",
+        "ruby": null
+      },
+      {
+        "base": "楽",
+        "ruby": "たの"
+      },
+      {
+        "base": "しかったです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "花見",
+        "kana": "はなみ",
+        "es": "contemplación de las flores (de cerezo)"
+      },
+      {
+        "jp": "毎年",
+        "kana": "まいとし",
+        "es": "cada año / todos los años"
+      },
+      {
+        "jp": "〜ながら",
+        "kana": "〜ながら",
+        "es": "mientras ~ (al mismo tiempo)"
+      },
+      {
+        "jp": "楽しい",
+        "kana": "たのしい",
+        "es": "divertido / agradable"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Cuándo fue al hanami este año?",
+        "options_es": [
+          "El domingo de la semana pasada",
+          "El sábado de la semana pasada",
+          "Ayer",
+          "La semana que viene"
+        ],
+        "answer_es": "El domingo de la semana pasada"
+      },
+      {
+        "q_es": "¿Qué hicieron mientras comían el bento?",
+        "options_es": [
+          "Escucharon música",
+          "Vieron una película",
+          "Hablaron con desconocidos",
+          "Jugaron con sus perros"
+        ],
+        "answer_es": "Escucharon música"
+      }
+    ]
+  },
+  {
+    "id": "r_029",
+    "type": "medium",
+    "title_es": "El nuevo vecino",
+    "text_jp": "先月、となりに新しい人が来ました。名前は中村さんです。中村さんは大学の先生で、日本語と英語を教えています。毎朝早く起きて、公園で走ります。週末は図書館で本を読みます。とても静かで、親切な人です。先週、私たちは一緒にお茶を飲みました。また話したいです。",
+    "text_ruby": [
+      {
+        "base": "先月",
+        "ruby": "せんげつ"
+      },
+      {
+        "base": "、となりに",
+        "ruby": null
+      },
+      {
+        "base": "新",
+        "ruby": "あたら"
+      },
+      {
+        "base": "しい",
+        "ruby": null
+      },
+      {
+        "base": "人",
+        "ruby": "ひと"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "来",
+        "ruby": "き"
+      },
+      {
+        "base": "ました。",
+        "ruby": null
+      },
+      {
+        "base": "名前",
+        "ruby": "なまえ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "中村",
+        "ruby": "なかむら"
+      },
+      {
+        "base": "さんです。",
+        "ruby": null
+      },
+      {
+        "base": "中村",
+        "ruby": "なかむら"
+      },
+      {
+        "base": "さんは",
+        "ruby": null
+      },
+      {
+        "base": "大学",
+        "ruby": "だいがく"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "先生",
+        "ruby": "せんせい"
+      },
+      {
+        "base": "で、",
+        "ruby": null
+      },
+      {
+        "base": "日本語",
+        "ruby": "にほんご"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "英語",
+        "ruby": "えいご"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "教",
+        "ruby": "おし"
+      },
+      {
+        "base": "えています。",
+        "ruby": null
+      },
+      {
+        "base": "毎朝",
+        "ruby": "まいあさ"
+      },
+      {
+        "base": "早",
+        "ruby": "はや"
+      },
+      {
+        "base": "く",
+        "ruby": null
+      },
+      {
+        "base": "起",
+        "ruby": "お"
+      },
+      {
+        "base": "きて、",
+        "ruby": null
+      },
+      {
+        "base": "公園",
+        "ruby": "こうえん"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "走",
+        "ruby": "はし"
+      },
+      {
+        "base": "ります。",
+        "ruby": null
+      },
+      {
+        "base": "週末",
+        "ruby": "しゅうまつ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "図書館",
+        "ruby": "としょかん"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "本",
+        "ruby": "ほん"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "読",
+        "ruby": "よ"
+      },
+      {
+        "base": "みます。",
+        "ruby": null
+      },
+      {
+        "base": "とても",
+        "ruby": null
+      },
+      {
+        "base": "静",
+        "ruby": "しず"
+      },
+      {
+        "base": "かで、",
+        "ruby": null
+      },
+      {
+        "base": "親切",
+        "ruby": "しんせつ"
+      },
+      {
+        "base": "な",
+        "ruby": null
+      },
+      {
+        "base": "人",
+        "ruby": "ひと"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "先週",
+        "ruby": "せんしゅう"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "たちは",
+        "ruby": null
+      },
+      {
+        "base": "一緒",
+        "ruby": "いっしょ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "お茶",
+        "ruby": "おちゃ"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "飲",
+        "ruby": "の"
+      },
+      {
+        "base": "みました。",
+        "ruby": null
+      },
+      {
+        "base": "また",
+        "ruby": null
+      },
+      {
+        "base": "話",
+        "ruby": "はな"
+      },
+      {
+        "base": "したいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "英語",
+        "kana": "えいご",
+        "es": "inglés"
+      },
+      {
+        "jp": "図書館",
+        "kana": "としょかん",
+        "es": "biblioteca"
+      },
+      {
+        "jp": "早く",
+        "kana": "はやく",
+        "es": "temprano / rápido"
+      },
+      {
+        "jp": "静か",
+        "kana": "しずか",
+        "es": "tranquilo / silencioso"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Qué enseña el señor Nakamura?",
+        "options_es": [
+          "Japonés e inglés",
+          "Japonés y matemáticas",
+          "Inglés y francés",
+          "Historia y geografía"
+        ],
+        "answer_es": "Japonés e inglés"
+      },
+      {
+        "q_es": "¿Qué hace el señor Nakamura los fines de semana?",
+        "options_es": [
+          "Lee libros en la biblioteca",
+          "Corre en el parque",
+          "Va al hospital",
+          "Trabaja en la tienda"
+        ],
+        "answer_es": "Lee libros en la biblioteca"
+      }
+    ]
+  },
+  {
+    "id": "r_030",
+    "type": "medium",
+    "title_es": "El verano en casa de la abuela",
+    "text_jp": "毎年夏休みに、祖母の家へ行きます。祖母の家は山の近くにあります。朝は川で魚を見ます。昼は祖母が作った野菜料理を食べます。とてもおいしいです。夜は家族みんなで星を見ます。都会より静かで、空気がきれいです。毎年とても楽しみにしています。来年も行きたいです。",
+    "text_ruby": [
+      {
+        "base": "毎年",
+        "ruby": "まいとし"
+      },
+      {
+        "base": "夏休",
+        "ruby": "なつやす"
+      },
+      {
+        "base": "みに、",
+        "ruby": null
+      },
+      {
+        "base": "祖母",
+        "ruby": "そぼ"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "へ",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "祖母",
+        "ruby": "そぼ"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "山",
+        "ruby": "やま"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "近",
+        "ruby": "ちか"
+      },
+      {
+        "base": "くにあります。",
+        "ruby": null
+      },
+      {
+        "base": "朝",
+        "ruby": "あさ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "川",
+        "ruby": "かわ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "魚",
+        "ruby": "さかな"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "見",
+        "ruby": "み"
+      },
+      {
+        "base": "ます。",
+        "ruby": null
+      },
+      {
+        "base": "昼",
+        "ruby": "ひる"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "祖母",
+        "ruby": "そぼ"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "作",
+        "ruby": "つく"
+      },
+      {
+        "base": "った",
+        "ruby": null
+      },
+      {
+        "base": "野菜",
+        "ruby": "やさい"
+      },
+      {
+        "base": "料理",
+        "ruby": "りょうり"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べます。",
+        "ruby": null
+      },
+      {
+        "base": "とてもおいしいです。",
+        "ruby": null
+      },
+      {
+        "base": "夜",
+        "ruby": "よる"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "家族",
+        "ruby": "かぞく"
+      },
+      {
+        "base": "みんなで",
+        "ruby": null
+      },
+      {
+        "base": "星",
+        "ruby": "ほし"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "見",
+        "ruby": "み"
+      },
+      {
+        "base": "ます。",
+        "ruby": null
+      },
+      {
+        "base": "都会",
+        "ruby": "とかい"
+      },
+      {
+        "base": "より",
+        "ruby": null
+      },
+      {
+        "base": "静",
+        "ruby": "しず"
+      },
+      {
+        "base": "かで、",
+        "ruby": null
+      },
+      {
+        "base": "空気",
+        "ruby": "くうき"
+      },
+      {
+        "base": "がきれいです。",
+        "ruby": null
+      },
+      {
+        "base": "毎年",
+        "ruby": "まいとし"
+      },
+      {
+        "base": "とても",
+        "ruby": null
+      },
+      {
+        "base": "楽",
+        "ruby": "たの"
+      },
+      {
+        "base": "しみにしています。",
+        "ruby": null
+      },
+      {
+        "base": "来年",
+        "ruby": "らいねん"
+      },
+      {
+        "base": "も",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きたいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [
+      {
+        "jp": "祖母",
+        "kana": "そぼ",
+        "es": "abuela (mi abuela)"
+      },
+      {
+        "jp": "川",
+        "kana": "かわ",
+        "es": "río"
+      },
+      {
+        "jp": "星",
+        "kana": "ほし",
+        "es": "estrella"
+      },
+      {
+        "jp": "都会",
+        "kana": "とかい",
+        "es": "ciudad grande / zona urbana"
+      },
+      {
+        "jp": "空気",
+        "kana": "くうき",
+        "es": "aire"
+      },
+      {
+        "jp": "楽しみにする",
+        "kana": "たのしみにする",
+        "es": "tener ganas de / esperar con ilusión"
+      }
+    ],
+    "questions": [
+      {
+        "q_es": "¿Dónde está la casa de la abuela?",
+        "options_es": [
+          "Cerca de la montaña",
+          "Cerca del mar",
+          "Cerca de la ciudad",
+          "Cerca de la estación"
+        ],
+        "answer_es": "Cerca de la montaña"
+      },
+      {
+        "q_es": "¿Qué hace la familia por la noche?",
+        "options_es": [
+          "Mira las estrellas",
+          "Come en un restaurante",
+          "Escucha música",
+          "Ve una película"
+        ],
+        "answer_es": "Mira las estrellas"
+      },
+      {
+        "q_es": "¿Por qué es mejor que la ciudad?",
+        "options_es": [
+          "Es más tranquilo y el aire es limpio",
+          "Hay más restaurantes",
+          "Es más barato vivir allí",
+          "Hay más trenes"
+        ],
+        "answer_es": "Es más tranquilo y el aire es limpio"
       }
     ]
   }
