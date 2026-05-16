@@ -48,7 +48,13 @@ async function route() {
       }
     } else if (seg1 === 'vocab') {
       const allItems = await loadData('vocab-n5.json');
-      await startVocab(container, allItems);
+      if (!seg2) {
+        await startVocab(container, allItems, null);
+      } else if (seg2 === 'jp-es' || seg2 === 'es-jp') {
+        await startVocab(container, allItems, seg2);
+      } else {
+        window.navigate('/vocab');
+      }
     } else if (seg1 === 'kanji') {
       const allItems = await loadData('kanji-n5.json');
       await startKanji(container, allItems);

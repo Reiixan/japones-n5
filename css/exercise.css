@@ -308,3 +308,20 @@
   justify-content: center;
   gap: 0.5rem;
 }
+
+.vocab-meaning-prompt {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.vocab-grid-jp { grid-template-columns: 1fr 1fr; }
+.vocab-choice-jp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1rem;
+}
+.choice-jp-kana { font-size: 1.5rem; font-weight: 700; }
+.choice-jp-kanji { font-size: 1.1rem; opacity: 0.75; }
