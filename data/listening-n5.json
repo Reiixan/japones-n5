@@ -30,6 +30,66 @@
     "category": "familia"
   },
   {
+    "id": "l_004",
+    "type": "describe",
+    "audio_text": "毎日本を読みます。",
+    "audio_kana": "まいにちほんをよみます。",
+    "prompt_es": "¿Qué hace esta persona cada día?",
+    "options_es": ["Lee libros", "Ve películas", "Escucha música", "Bebe café"],
+    "answer_es": "Lee libros",
+    "category": "rutina"
+  },
+  {
+    "id": "l_005",
+    "type": "describe",
+    "audio_text": "朝6時に起きます。",
+    "audio_kana": "あさろくじにおきます。",
+    "prompt_es": "¿A qué hora se levanta?",
+    "options_es": ["A las 6", "A las 7", "A las 8", "A las 9"],
+    "answer_es": "A las 6",
+    "category": "rutina"
+  },
+  {
+    "id": "l_006",
+    "type": "describe",
+    "audio_text": "毎日11時に寝ます。",
+    "audio_kana": "まいにちじゅういちじにねます。",
+    "prompt_es": "¿A qué hora se acuesta cada día?",
+    "options_es": ["A las 11", "A las 10", "A las 12", "A las 9"],
+    "answer_es": "A las 11",
+    "category": "rutina"
+  },
+  {
+    "id": "l_007",
+    "type": "describe",
+    "audio_text": "5時に家へ帰ります。",
+    "audio_kana": "ごじにいえへかえります。",
+    "prompt_es": "¿A dónde vuelve a las 5?",
+    "options_es": ["A casa", "Al trabajo", "A la escuela", "Al banco"],
+    "answer_es": "A casa",
+    "category": "rutina"
+  },
+  {
+    "id": "l_008",
+    "type": "describe",
+    "audio_text": "今日は月曜日です。",
+    "audio_kana": "きょうはげつようびです。",
+    "prompt_es": "¿Qué día es hoy?",
+    "options_es": ["Lunes", "Martes", "Domingo", "Viernes"],
+    "answer_es": "Lunes",
+    "category": "tiempo"
+  },
+  {
+    "id": "l_009",
+    "type": "describe",
+    "audio_text": "来週、母と海へ行きます。",
+    "audio_kana": "らいしゅう、ははとうみへいきます。",
+    "prompt_es": "¿Cuándo va al mar?",
+    "options_es": ["La semana que viene", "Esta semana", "Ayer", "Hoy"],
+    "answer_es": "La semana que viene",
+    "category": "tiempo"
+  },
+  {
     "id": "l_010",
     "type": "response",
     "audio_text": "お元気ですか。",
@@ -48,5 +108,295 @@
     "options_jp": ["はい、お願いします。", "はい、行きます。", "いいえ、土曜日です。"],
     "answer_jp": "はい、お願いします。",
     "category": "ofrecimientos"
+  },
+  {
+    "id": "l_012",
+    "type": "describe",
+    "audio_text": "昨日は寒かったです。",
+    "audio_kana": "きのうはさむかったです。",
+    "prompt_es": "¿Qué tiempo hizo ayer?",
+    "options_es": ["Hacía frío", "Hacía calor", "Llovió", "Hizo sol"],
+    "answer_es": "Hacía frío",
+    "category": "tiempo"
+  },
+  {
+    "id": "l_013",
+    "type": "describe",
+    "audio_text": "今、10時です。",
+    "audio_kana": "いま、じゅうじです。",
+    "prompt_es": "¿Qué hora es ahora?",
+    "options_es": ["Las 10", "Las 9", "Las 11", "Las 8"],
+    "answer_es": "Las 10",
+    "category": "tiempo"
+  },
+  {
+    "id": "l_014",
+    "type": "describe",
+    "audio_text": "父は車を買いました。",
+    "audio_kana": "ちちはくるまをかいました。",
+    "prompt_es": "¿Qué compró el padre?",
+    "options_es": ["Un coche", "Una casa", "Un libro", "Un teléfono"],
+    "answer_es": "Un coche",
+    "category": "familia"
+  },
+  {
+    "id": "l_015",
+    "type": "describe",
+    "audio_text": "兄は学校で勉強します。",
+    "audio_kana": "あにはがっこうでべんきょうします。",
+    "prompt_es": "¿Dónde estudia el hermano mayor?",
+    "options_es": ["En la escuela", "En casa", "En el parque", "En la biblioteca"],
+    "answer_es": "En la escuela",
+    "category": "familia"
+  },
+  {
+    "id": "l_016",
+    "type": "describe",
+    "audio_text": "妹は犬が好きです。",
+    "audio_kana": "いもうとはいぬがすきです。",
+    "prompt_es": "¿Qué le gusta a la hermana menor?",
+    "options_es": ["Los perros", "Los gatos", "Las flores", "Las películas"],
+    "answer_es": "Los perros",
+    "category": "familia"
+  },
+  {
+    "id": "l_017",
+    "type": "describe",
+    "audio_text": "朝ご飯にパンを食べます。",
+    "audio_kana": "あさごはんにパンをたべます。",
+    "prompt_es": "¿Qué come en el desayuno?",
+    "options_es": ["Pan", "Arroz", "Pescado", "Fruta"],
+    "answer_es": "Pan",
+    "category": "comida"
+  },
+  {
+    "id": "l_018",
+    "type": "describe",
+    "audio_text": "野菜は嫌いです。",
+    "audio_kana": "やさいはきらいです。",
+    "prompt_es": "¿Qué piensa de las verduras?",
+    "options_es": ["Las detesta", "Le gustan mucho", "Las come a diario", "Las cocina bien"],
+    "answer_es": "Las detesta",
+    "category": "comida"
+  },
+  {
+    "id": "l_019",
+    "type": "describe",
+    "audio_text": "夜はお茶を飲みます。",
+    "audio_kana": "よるはおちゃをのみます。",
+    "prompt_es": "¿Qué bebe por la noche?",
+    "options_es": ["Té japonés", "Café", "Agua", "Leche"],
+    "answer_es": "Té japonés",
+    "category": "comida"
+  },
+  {
+    "id": "l_020",
+    "type": "describe",
+    "audio_text": "今日、病院へ行きます。",
+    "audio_kana": "きょう、びょういんへいきます。",
+    "prompt_es": "¿A dónde va hoy?",
+    "options_es": ["Al hospital", "Al banco", "A la escuela", "A la tienda"],
+    "answer_es": "Al hospital",
+    "category": "lugares"
+  },
+  {
+    "id": "l_021",
+    "type": "describe",
+    "audio_text": "友達と公園へ行きました。",
+    "audio_kana": "ともだちとこうえんへいきました。",
+    "prompt_es": "¿Con quién fue al parque?",
+    "options_es": ["Con un amigo", "Con la madre", "Con el hermano", "Solo"],
+    "answer_es": "Con un amigo",
+    "category": "lugares"
+  },
+  {
+    "id": "l_022",
+    "type": "describe",
+    "audio_text": "土曜日にレストランで魚を食べました。",
+    "audio_kana": "どようびにレストランでさかなをたべました。",
+    "prompt_es": "¿Qué comió el sábado en el restaurante?",
+    "options_es": ["Pescado", "Carne", "Pan", "Verduras"],
+    "answer_es": "Pescado",
+    "category": "lugares"
+  },
+  {
+    "id": "l_023",
+    "type": "describe",
+    "audio_text": "月曜日と火曜日と水曜日に学校へ行きます。",
+    "audio_kana": "げつようびとかようびとすいようびにがっこうへいきます。",
+    "prompt_es": "¿Cuántos días va a la escuela esos días?",
+    "options_es": ["3 días", "2 días", "4 días", "5 días"],
+    "answer_es": "3 días",
+    "category": "números"
+  },
+  {
+    "id": "l_024",
+    "type": "describe",
+    "audio_text": "8時に朝ご飯を食べます。",
+    "audio_kana": "はちじにあさごはんをたべます。",
+    "prompt_es": "¿A qué hora desayuna?",
+    "options_es": ["A las 8", "A las 7", "A las 9", "A las 6"],
+    "answer_es": "A las 8",
+    "category": "números"
+  },
+  {
+    "id": "l_025",
+    "type": "describe",
+    "audio_text": "学校で本を読みます。",
+    "audio_kana": "がっこうでほんをよみます。",
+    "prompt_es": "¿Qué hace en la escuela?",
+    "options_es": ["Lee libros", "Come", "Duerme", "Habla por teléfono"],
+    "answer_es": "Lee libros",
+    "category": "escuela"
+  },
+  {
+    "id": "l_026",
+    "type": "describe",
+    "audio_text": "宿題は難しいです。",
+    "audio_kana": "しゅくだいはむずかしいです。",
+    "prompt_es": "¿Cómo son los deberes?",
+    "options_es": ["Difíciles", "Fáciles", "Largos", "Cortos"],
+    "answer_es": "Difíciles",
+    "category": "escuela"
+  },
+  {
+    "id": "l_027",
+    "type": "describe",
+    "audio_text": "電車で学校へ行きます。",
+    "audio_kana": "でんしゃでがっこうへいきます。",
+    "prompt_es": "¿Cómo va a la escuela?",
+    "options_es": ["En tren", "En coche", "A pie", "En bicicleta"],
+    "answer_es": "En tren",
+    "category": "transporte"
+  },
+  {
+    "id": "l_028",
+    "type": "describe",
+    "audio_text": "私の車は新しいです。",
+    "audio_kana": "わたしのくるまはあたらしいです。",
+    "prompt_es": "¿Cómo es su coche?",
+    "options_es": ["Nuevo", "Viejo", "Grande", "Caro"],
+    "answer_es": "Nuevo",
+    "category": "transporte"
+  },
+  {
+    "id": "l_029",
+    "type": "describe",
+    "audio_text": "店で野菜と肉を買いました。",
+    "audio_kana": "みせでやさいとにくをかいました。",
+    "prompt_es": "¿Qué compró en la tienda?",
+    "options_es": ["Verduras y carne", "Pan y huevos", "Fruta y agua", "Pescado y arroz"],
+    "answer_es": "Verduras y carne",
+    "category": "compras"
+  },
+  {
+    "id": "l_030",
+    "type": "describe",
+    "audio_text": "今日の天気は良いです。",
+    "audio_kana": "きょうのてんきはいいです。",
+    "prompt_es": "¿Cómo es el tiempo hoy?",
+    "options_es": ["Bueno", "Malo", "Frío", "Caluroso"],
+    "answer_es": "Bueno",
+    "category": "clima"
+  },
+  {
+    "id": "l_031",
+    "type": "describe",
+    "audio_text": "音楽を聞くのが好きです。",
+    "audio_kana": "おんがくをきくのがすきです。",
+    "prompt_es": "¿Qué le gusta hacer?",
+    "options_es": ["Escuchar música", "Ver películas", "Leer libros", "Cocinar"],
+    "answer_es": "Escuchar música",
+    "category": "hobbies"
+  },
+  {
+    "id": "l_032",
+    "type": "describe",
+    "audio_text": "あの花は赤くてきれいです。",
+    "audio_kana": "あのはなはあかくてきれいです。",
+    "prompt_es": "¿Cómo es la flor?",
+    "options_es": ["Roja y bonita", "Blanca y pequeña", "Azul y grande", "Negra y vieja"],
+    "answer_es": "Roja y bonita",
+    "category": "descripción"
+  },
+  {
+    "id": "l_033",
+    "type": "response",
+    "audio_text": "今、何時ですか。",
+    "audio_kana": "いま、なんじですか。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["3時です。", "月曜日です。", "学校にいます。"],
+    "answer_jp": "3時です。",
+    "category": "preguntas-info"
+  },
+  {
+    "id": "l_034",
+    "type": "response",
+    "audio_text": "おはようございます。",
+    "audio_kana": "おはようございます。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["おはようございます。", "おやすみなさい。", "さようなら。"],
+    "answer_jp": "おはようございます。",
+    "category": "saludos"
+  },
+  {
+    "id": "l_035",
+    "type": "response",
+    "audio_text": "お茶を飲みますか。",
+    "audio_kana": "おちゃをのみますか。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["はい、お願いします。", "いいえ、学校です。", "はい、家にいます。"],
+    "answer_jp": "はい、お願いします。",
+    "category": "ofrecimientos"
+  },
+  {
+    "id": "l_036",
+    "type": "response",
+    "audio_text": "あなたの名前は何ですか。",
+    "audio_kana": "あなたのなまえはなんですか。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["田中です。", "明日です。", "学校です。"],
+    "answer_jp": "田中です。",
+    "category": "preguntas-info"
+  },
+  {
+    "id": "l_037",
+    "type": "response",
+    "audio_text": "学校はどこですか。",
+    "audio_kana": "がっこうはどこですか。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["あそこです。", "月曜日です。", "元気です。"],
+    "answer_jp": "あそこです。",
+    "category": "preguntas-info"
+  },
+  {
+    "id": "l_038",
+    "type": "response",
+    "audio_text": "また明日。",
+    "audio_kana": "またあした。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["また明日。", "はい、元気です。", "おはようございます。"],
+    "answer_jp": "また明日。",
+    "category": "despedidas"
+  },
+  {
+    "id": "l_039",
+    "type": "response",
+    "audio_text": "ありがとうございます。",
+    "audio_kana": "ありがとうございます。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["どういたしまして。", "さようなら。", "おやすみなさい。"],
+    "answer_jp": "どういたしまして。",
+    "category": "agradecimiento"
+  },
+  {
+    "id": "l_040",
+    "type": "response",
+    "audio_text": "はじめまして、私は山田です。",
+    "audio_kana": "はじめまして、わたしはやまだです。",
+    "prompt_es": "¿Cuál es la respuesta natural?",
+    "options_jp": ["よろしくお願いします。", "お元気ですか。", "ありがとうございます。"],
+    "answer_jp": "よろしくお願いします。",
+    "category": "presentación"
   }
 ]
