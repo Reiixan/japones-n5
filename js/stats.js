@@ -1,5 +1,6 @@
 import { getDeckStats, exportAll, importAll, resetDeck } from './storage.js';
 import { isAvailable, isAutoOn, setAutoOn } from './tts.js';
+import { isRomajiOn, setRomajiOn } from './romaji.js';
 
 const DECKS = [
   { id: 'hiragana', label: 'Hiragana', file: 'hiragana.json' },
@@ -22,6 +23,7 @@ async function loadData(file) {
 export async function renderStats(container) {
   const ttsAvailable = isAvailable();
   const ttsAutoChecked = isAutoOn() ? 'checked' : '';
+  const romajiChecked = isRomajiOn() ? 'checked' : '';
   container.innerHTML = `
     <div class="page">
       <header class="page-header">
@@ -35,6 +37,10 @@ export async function renderStats(container) {
           <label class="pref-row">
             <input type="checkbox" id="pref-tts-auto" ${ttsAutoChecked} ${ttsAvailable ? '' : 'disabled'}>
             <span>Auto-pronunciar al mostrar pregunta${ttsAvailable ? '' : ' (no hay voz japonesa disponible en este navegador)'}</span>
+          </label>
+          <label class="pref-row">
+            <input type="checkbox" id="pref-romaji" ${romajiChecked}>
+            <span>Mostrar romaji en vocabulario y kanji</span>
           </label>
         </section>
         <div class="stats-actions">
@@ -51,6 +57,11 @@ export async function renderStats(container) {
   const prefTtsAuto = document.getElementById('pref-tts-auto');
   if (prefTtsAuto) {
     prefTtsAuto.addEventListener('change', () => setAutoOn(prefTtsAuto.checked));
+  }
+
+  const prefRomaji = document.getElementById('pref-romaji');
+  if (prefRomaji) {
+    prefRomaji.addEventListener('change', () => setRomajiOn(prefRomaji.checked));
   }
 
   // Load all decks

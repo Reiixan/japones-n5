@@ -325,3 +325,22 @@
 }
 .choice-jp-kana { font-size: 1.5rem; font-weight: 700; }
 .choice-jp-kanji { font-size: 1.1rem; opacity: 0.75; }
+
+/* === Romaji toggle === */
+.vocab-romaji {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-muted);
+  letter-spacing: .04em;
+}
+.choice-jp-romaji {
+  font-size: .85rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+.kanji-example-romaji {
+  font-size: .95rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-left: .25rem;
+}

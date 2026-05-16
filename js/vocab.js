@@ -1,6 +1,7 @@
 import { startExercise, showSessionConfig } from './exercise.js';
 import { selectSession, pickWrong } from './srs.js';
 import { renderSpeakButton, attachSpeakHandler, isAutoOn, speak } from './tts.js';
+import { isRomajiOn } from './romaji.js';
 
 const DECK = 'vocab';
 
@@ -64,6 +65,7 @@ function runJpEs(container, items, allItems) {
           <span class="vocab-kana">${item.kana}</span>
           ${renderSpeakButton(item.kana)}
         </div>
+        ${isRomajiOn() ? `<div class="vocab-romaji">${item.romaji}</div>` : ''}
         <div class="vocab-category">${item.category}</div>
       `;
       attachSpeakHandler(el);
@@ -115,12 +117,14 @@ function runEsJp(container, items, allItems) {
     renderInput(item, all, el, onAnswer) {
       const wrongs = pickWrong(all, item, it => it.id, 3);
       const options = shuffle([item, ...wrongs]);
+      const romaji = isRomajiOn();
       el.innerHTML = `<div class="choice-grid vocab-grid-jp">
         ${options.map((opt, i) => `
           <button class="choice-btn vocab-choice-jp" data-val="${opt.id}" data-key="${i + 1}">
             <span class="choice-key">${i + 1}</span>
             <span class="choice-jp-kana">${opt.kana}</span>
             <span class="choice-jp-kanji">${opt.kanji}</span>
+            ${romaji ? `<span class="choice-jp-romaji">${opt.romaji}</span>` : ''}
           </button>
         `).join('')}
       </div>`;

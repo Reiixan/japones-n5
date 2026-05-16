@@ -1,6 +1,7 @@
 import { startExercise, showSessionConfig } from './exercise.js';
 import { selectSession, pickWrong } from './srs.js';
 import { renderSpeakButton, attachSpeakHandler, isAutoOn, speak } from './tts.js';
+import { kanaToRomaji, isRomajiOn } from './romaji.js';
 
 const DECK = 'kanji';
 
@@ -29,11 +30,13 @@ function runKanji(container, items, allItems) {
     getItemId: it => it.id,
     renderPrompt(item, el) {
       const reading = item.example_reading;
+      const romaji = isRomajiOn() ? `<span class="kanji-example-romaji">${kanaToRomaji(reading)}</span>` : '';
       el.innerHTML = `
         <div class="kanji-display">${item.kanji}</div>
         <div class="kanji-example">
           <span class="kanji-example-word">${item.example_word}</span>
           <span class="kanji-example-reading">${reading}</span>
+          ${romaji}
           ${renderSpeakButton(reading)}
         </div>
       `;
