@@ -1,5 +1,6 @@
 import { startExercise, showSessionConfig } from './exercise.js';
 import { selectSession } from './srs.js';
+import { renderSpeakButton, attachSpeakHandler, isAutoOn, speak } from './tts.js';
 
 const DECK = 'grammar';
 
@@ -21,9 +22,13 @@ function runGrammar(container, items, allItems) {
     allItems,
     getItemId: it => it.id,
     renderPrompt(item, el) {
-      const examples = item.examples.slice(0, 2).map(ex =>
-        `<li><span class="ex-jp">${ex.jp}</span><span class="ex-es">${ex.es}</span></li>`
-      ).join('');
+      const examples = item.examples.slice(0, 2).map(ex => `
+        <li>
+          <span class="ex-jp">${ex.jp}</span>
+          <button type="button" class="btn-tts btn-tts-sm" data-tts-text="${ex.jp.replace(/"/g, '&quot;')}" aria-label="Pronunciar" title="Pronunciar">🔊</button>
+          <span class="ex-es">${ex.es}</span>
+        </li>
+      `).join('');
 
       el.innerHTML = `
         <div class="grammar-pattern">${item.pattern}</div>
@@ -31,6 +36,8 @@ function runGrammar(container, items, allItems) {
         <ul class="grammar-examples">${examples}</ul>
         <div class="grammar-exercise-prompt">${item.exercise.prompt}</div>
       `;
+      attachSpeakHandler(el);
+      if (isAutoOn() && item.examples[0]) speak(item.examples[0].jp);
     },
     renderInput(item, _all, el, onAnswer) {
       const options = shuffle([...item.exercise.options]);
