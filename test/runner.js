@@ -29,7 +29,9 @@ export async function run() {
   let pass = 0, fail = 0;
   for (const suite of suites) {
     const s = document.createElement('section');
-    s.innerHTML = `<h2>${suite.name}</h2>`;
+    const h2 = document.createElement('h2');
+    h2.textContent = suite.name;
+    s.appendChild(h2);
     for (const t of suite.tests) {
       const line = document.createElement('div');
       try {
@@ -38,7 +40,10 @@ export async function run() {
         line.style.color = 'green';
         pass++;
       } catch (e) {
-        line.innerHTML = `  ✗ ${t.name} — <strong>${e.message}</strong>`;
+        line.textContent = `  ✗ ${t.name} — `;
+        const strong = document.createElement('strong');
+        strong.textContent = e.message;
+        line.appendChild(strong);
         line.style.color = 'red';
         fail++;
       }
