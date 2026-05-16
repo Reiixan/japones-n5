@@ -95,3 +95,47 @@ describe('reading.createTextSrsAggregator', () => {
     assertEqual(calls[1].correct, true);
   });
 });
+
+describe('reading.renderRubyHtml', () => {
+  it('devuelve texto plano si furigana off', async () => {
+    const { renderRubyHtml } = await import('../js/reading.js?cache=ui1');
+    const ruby = [
+      { base: '山田', ruby: 'やまだ' },
+      { base: 'さん', ruby: null },
+    ];
+    const html = renderRubyHtml(ruby, false);
+    assert(!html.includes('<ruby>'), 'no debe contener <ruby> con furigana off');
+    assert(html.includes('山田'), 'debe contener base');
+    assert(html.includes('さん'), 'debe contener base sin ruby');
+  });
+
+  it('devuelve HTML con <ruby><rt> si furigana on', async () => {
+    const { renderRubyHtml } = await import('../js/reading.js?cache=ui2');
+    const ruby = [
+      { base: '山田', ruby: 'やまだ' },
+      { base: 'さん', ruby: null },
+    ];
+    const html = renderRubyHtml(ruby, true);
+    assert(html.includes('<ruby>山田<rt>やまだ</rt></ruby>'), `esperaba <ruby>山田<rt>やまだ</rt></ruby>, html: ${html}`);
+    assert(html.includes('さん'), 'tokens sin ruby siguen apareciendo');
+    assert(!html.match(/<ruby>さん/), 'tokens sin ruby NO deben envolverse en <ruby>');
+  });
+});
+
+describe('reading.isFuriganaOn / setFuriganaOn', () => {
+  it('default off', async () => {
+    localStorage.removeItem('jp_n5_reading_furigana_on');
+    const { isFuriganaOn } = await import('../js/reading.js?cache=fur1');
+    assertEqual(isFuriganaOn(), false);
+  });
+
+  it('setFuriganaOn(true) persiste y isFuriganaOn lo lee', async () => {
+    const { isFuriganaOn, setFuriganaOn } = await import('../js/reading.js?cache=fur2');
+    setFuriganaOn(true);
+    assertEqual(isFuriganaOn(), true);
+    assertEqual(localStorage.getItem('jp_n5_reading_furigana_on'), '1');
+    setFuriganaOn(false);
+    assertEqual(isFuriganaOn(), false);
+    localStorage.removeItem('jp_n5_reading_furigana_on');
+  });
+});

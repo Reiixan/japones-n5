@@ -430,3 +430,67 @@
   font-family: var(--font-jp);
   font-size: 1.1rem;
 }
+
+/* ---- Dokkai (reading) ---- */
+.reading-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.reading-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.reading-furigana-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  user-select: none;
+}
+.reading-furigana-toggle input { margin: 0; }
+.reading-qcount { font-variant-numeric: tabular-nums; }
+.reading-text {
+  font-size: 1.15rem;
+  line-height: 2.0;
+  padding: 1rem;
+  background: var(--bg-hover);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-family: "Noto Sans JP", sans-serif;
+}
+.reading-text ruby rt {
+  font-size: 0.55em;
+  color: var(--text-muted);
+  font-weight: 400;
+  user-select: none;
+}
+.reading-vocab-hints {
+  font-size: 0.85rem;
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+}
+.reading-vocab-hints summary {
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 0.2rem 0;
+}
+.reading-vocab-hints ul {
+  margin: 0.4rem 0 0 0;
+  padding-left: 1.2rem;
+}
+.reading-vocab-hints li { margin: 0.15rem 0; }
+.reading-vocab-hints .hint-kana { color: var(--text-muted); }
+.reading-input { display: flex; flex-direction: column; gap: 0.75rem; }
+.reading-q {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
