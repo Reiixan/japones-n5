@@ -144,3 +144,49 @@ describe('tts — voiceschanged async', () => {
     delete window.SpeechSynthesisUtterance;
   });
 });
+
+describe('tts.renderSpeakButton', () => {
+  it('devuelve HTML de un botón con data-tts-text escapado', async () => {
+    const { renderSpeakButton } = await import('../js/tts.js?cache=t4a');
+    const html = renderSpeakButton('こんにちは');
+    assert(html.includes('class="btn-tts"'), 'falta class btn-tts');
+    assert(html.includes('data-tts-text="こんにちは"'), 'falta data-tts-text');
+    assert(html.includes('🔊'), 'falta icono 🔊');
+  });
+
+  it('escapa comillas dobles en el texto', async () => {
+    const { renderSpeakButton } = await import('../js/tts.js?cache=t4b');
+    const html = renderSpeakButton('a "b" c');
+    assert(html.includes('data-tts-text="a &quot;b&quot; c"'), 'comillas no escapadas: ' + html);
+  });
+});
+
+describe('tts auto flag', () => {
+  it('isAutoOn devuelve false por defecto', async () => {
+    localStorage.removeItem('jp_n5_tts_auto');
+    const { isAutoOn } = await import('../js/tts.js?cache=t4c');
+    assertEqual(isAutoOn(), false);
+  });
+
+  it('isAutoOn devuelve true cuando localStorage tiene "1"', async () => {
+    localStorage.setItem('jp_n5_tts_auto', '1');
+    const { isAutoOn } = await import('../js/tts.js?cache=t4d');
+    assertEqual(isAutoOn(), true);
+    localStorage.removeItem('jp_n5_tts_auto');
+  });
+
+  it('setAutoOn(true) escribe "1" en localStorage', async () => {
+    localStorage.removeItem('jp_n5_tts_auto');
+    const { setAutoOn } = await import('../js/tts.js?cache=t4e');
+    setAutoOn(true);
+    assertEqual(localStorage.getItem('jp_n5_tts_auto'), '1');
+    localStorage.removeItem('jp_n5_tts_auto');
+  });
+
+  it('setAutoOn(false) borra la clave', async () => {
+    localStorage.setItem('jp_n5_tts_auto', '1');
+    const { setAutoOn } = await import('../js/tts.js?cache=t4f');
+    setAutoOn(false);
+    assertEqual(localStorage.getItem('jp_n5_tts_auto'), null);
+  });
+});

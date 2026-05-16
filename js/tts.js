@@ -72,3 +72,36 @@ export function _resetForTests() {
   resolved = false;
   listenerAttached = false;
 }
+
+function escapeAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+export function renderSpeakButton(text) {
+  return `<button type="button" class="btn-tts" data-tts-text="${escapeAttr(text)}" aria-label="Pronunciar" title="Pronunciar">🔊</button>`;
+}
+
+// Adjunta un único delegated listener al elemento `root` (idempotente — usa flag en el propio elemento).
+// Cualquier clic en un .btn-tts dentro de root llama speak() con su data-tts-text.
+export function attachSpeakHandler(root) {
+  if (!root || root.__ttsHandlerAttached) return;
+  root.addEventListener('click', e => {
+    const btn = e.target.closest('.btn-tts');
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    speak(btn.dataset.ttsText);
+  });
+  root.__ttsHandlerAttached = true;
+}
+
+const AUTO_KEY = 'jp_n5_tts_auto';
+
+export function isAutoOn() {
+  return localStorage.getItem(AUTO_KEY) === '1';
+}
+
+export function setAutoOn(on) {
+  if (on) localStorage.setItem(AUTO_KEY, '1');
+  else localStorage.removeItem(AUTO_KEY);
+}
