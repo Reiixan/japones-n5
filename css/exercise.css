@@ -232,7 +232,7 @@
 /* === TTS button === */
 .btn-tts {
   background: none;
-  border: 1.5px solid var(--c-border, #ddd);
+  border: 1.5px solid var(--border, #ddd);
   border-radius: 999px;
   width: 36px;
   height: 36px;
@@ -246,7 +246,7 @@
   transition: background-color 0.15s, transform 0.1s;
   vertical-align: middle;
 }
-.btn-tts:hover { background: var(--c-hover, #f0f0f0); }
+.btn-tts:hover { background: var(--bg-hover, #f0f0f0); }
 .btn-tts:active { transform: scale(0.92); }
 .btn-tts[disabled], .btn-tts.disabled { opacity: 0.35; cursor: not-allowed; }
 
@@ -290,7 +290,7 @@
   opacity: 0.85;
 }
 .kanji-example-word { font-weight: 700; }
-.kanji-example-reading { font-style: italic; color: var(--c-muted, #888); }
+.kanji-example-reading { font-style: italic; color: var(--text-muted, #888); }
 
 .particle-tts-row {
   margin-top: 0.75rem;
@@ -300,7 +300,7 @@
   gap: 0.5rem;
   opacity: 0.75;
 }
-.particle-tts-hint { font-size: 0.85rem; color: var(--c-muted, #888); }
+.particle-tts-hint { font-size: 0.85rem; color: var(--text-muted, #888); }
 
 .vocab-kana-row {
   display: flex;
