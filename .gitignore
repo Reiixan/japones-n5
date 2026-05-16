@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs / temporales
+*.log
+.cache/
+
+# Exports de progreso de usuario (no versionar datos personales)
+japones-n5-progreso-*.json
