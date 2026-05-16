@@ -1,5 +1,5 @@
 import { getDeckStats, exportAll, importAll, resetDeck } from './storage.js';
-import { isAvailable, isAutoOn, setAutoOn } from './tts.js';
+import { isAutoOn, setAutoOn } from './tts.js';
 import { isRomajiOn, setRomajiOn } from './romaji.js';
 
 const DECKS = [
@@ -21,7 +21,6 @@ async function loadData(file) {
 }
 
 export async function renderStats(container) {
-  const ttsAvailable = isAvailable();
   const ttsAutoChecked = isAutoOn() ? 'checked' : '';
   const romajiChecked = isRomajiOn() ? 'checked' : '';
   container.innerHTML = `
@@ -35,8 +34,8 @@ export async function renderStats(container) {
         <section class="stats-prefs">
           <h2>Preferencias</h2>
           <label class="pref-row">
-            <input type="checkbox" id="pref-tts-auto" ${ttsAutoChecked} ${ttsAvailable ? '' : 'disabled'}>
-            <span>Auto-pronunciar al mostrar pregunta${ttsAvailable ? '' : ' (no hay voz japonesa disponible en este navegador)'}</span>
+            <input type="checkbox" id="pref-tts-auto" ${ttsAutoChecked}>
+            <span>Auto-pronunciar al mostrar pregunta</span>
           </label>
           <label class="pref-row">
             <input type="checkbox" id="pref-romaji" ${romajiChecked}>

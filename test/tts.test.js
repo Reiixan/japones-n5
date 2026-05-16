@@ -151,6 +151,79 @@ describe('tts — voiceschanged async', () => {
   });
 });
 
+describe('tts.speak — fallback a audio pregrabado', () => {
+  it('cuando no hay voz, carga manifest y reproduce Audio', async () => {
+    defineOnWindow('speechSynthesis', {
+      getVoices: () => [],
+      speak: () => {},
+      addEventListener() {},
+      removeEventListener() {},
+    });
+    defineOnWindow('SpeechSynthesisUtterance', class { constructor(t) { this.text = t; } });
+
+    const origFetch = window.fetch;
+    window.fetch = async () => ({
+      ok: true,
+      json: async () => ({ 'テスト': 'abc123.mp3' }),
+    });
+
+    const audioInstances = [];
+    const origAudio = window.Audio;
+    window.Audio = class {
+      constructor(src) { this.src = src; audioInstances.push(src); }
+      play() { return Promise.resolve(); }
+    };
+
+    const { speak, _resetForTests } = await import('../js/tts.js?cache=tfb1');
+    _resetForTests();
+
+    speak('テスト');
+    // playRecording dispara loadManifest (async). Esperamos a que resuelva.
+    await new Promise(r => setTimeout(r, 30));
+
+    assertEqual(audioInstances.length, 1, 'debería haber creado una instancia Audio');
+    assertEqual(audioInstances[0], 'audio/abc123.mp3');
+
+    window.fetch = origFetch;
+    window.Audio = origAudio;
+    delete window.speechSynthesis;
+    delete window.SpeechSynthesisUtterance;
+  });
+
+  it('no reproduce si el texto no está en el manifest', async () => {
+    defineOnWindow('speechSynthesis', {
+      getVoices: () => [],
+      speak: () => {},
+      addEventListener() {},
+      removeEventListener() {},
+    });
+    defineOnWindow('SpeechSynthesisUtterance', class { constructor(t) { this.text = t; } });
+
+    const origFetch = window.fetch;
+    window.fetch = async () => ({ ok: true, json: async () => ({ 'otra': 'xyz.mp3' }) });
+
+    const audioInstances = [];
+    const origAudio = window.Audio;
+    window.Audio = class {
+      constructor(src) { audioInstances.push(src); }
+      play() { return Promise.resolve(); }
+    };
+
+    const { speak, _resetForTests } = await import('../js/tts.js?cache=tfb2');
+    _resetForTests();
+
+    speak('テスト');
+    await new Promise(r => setTimeout(r, 30));
+
+    assertEqual(audioInstances.length, 0, 'no debería haber creado ningún Audio');
+
+    window.fetch = origFetch;
+    window.Audio = origAudio;
+    delete window.speechSynthesis;
+    delete window.SpeechSynthesisUtterance;
+  });
+});
+
 describe('tts.renderSpeakButton', () => {
   it('devuelve HTML de un botón con data-tts-text escapado', async () => {
     const { renderSpeakButton } = await import('../js/tts.js?cache=t4a');

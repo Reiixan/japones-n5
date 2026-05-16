@@ -1,9 +1,19 @@
 // js/tts.js
+// Pronunciación japonesa con dos backends:
+//   1. Web Speech API si el navegador tiene una voz ja-JP
+//   2. Audio MP3 pregrabado (audio/manifest.json) como fallback
+// El segundo se usa cuando no hay voz nativa; garantiza que el botón 🔊 suene
+// en cualquier dispositivo/navegador.
+
 let cachedVoice = null;
 let resolved = false;
 let listenerAttached = false;
 
+let manifest = null;
+let manifestPromise = null;
+
 const PREFERRED_NAMES = ['Google 日本語', 'Kyoko', 'Otoya', 'Hattori'];
+const MANIFEST_URL = 'audio/manifest.json';
 
 function pickVoice() {
   const synth = window.speechSynthesis;
@@ -35,20 +45,48 @@ function resolveVoice() {
   if (!resolved) attachListener();
 }
 
+function loadManifest() {
+  if (manifest !== null) return Promise.resolve(manifest);
+  if (manifestPromise) return manifestPromise;
+  manifestPromise = fetch(MANIFEST_URL)
+    .then(r => r.ok ? r.json() : {})
+    .catch(() => ({}))
+    .then(m => { manifest = m; return m; });
+  return manifestPromise;
+}
+
+// Inicia la carga del manifest en background al importar el módulo.
+// No bloquea — solo hace que esté listo cuando se llame a speak().
+loadManifest();
+
+function playRecording(text) {
+  loadManifest().then(m => {
+    const file = m[text];
+    if (!file) return;
+    const audio = new Audio(`audio/${file}`);
+    audio.play().catch(() => {});
+  });
+}
+
 export function isAvailable() {
   resolveVoice();
-  return !!cachedVoice;
+  if (cachedVoice) return true;
+  // Si el manifest ya cargó y tiene entradas, también está disponible.
+  return manifest !== null && Object.keys(manifest).length > 0;
 }
 
 export function speak(text) {
   if (!text) return;
   resolveVoice();
-  if (!cachedVoice) return;
-  const u = new window.SpeechSynthesisUtterance(text);
-  u.voice = cachedVoice;
-  u.lang = 'ja-JP';
-  u.rate = 0.95;
-  window.speechSynthesis.speak(u);
+  if (cachedVoice) {
+    const u = new window.SpeechSynthesisUtterance(text);
+    u.voice = cachedVoice;
+    u.lang = 'ja-JP';
+    u.rate = 0.95;
+    window.speechSynthesis.speak(u);
+    return;
+  }
+  playRecording(text);
 }
 
 export function onReady(timeoutMs = 2000) {
@@ -60,6 +98,7 @@ export function onReady(timeoutMs = 2000) {
       cachedVoice = pickVoice();
       resolved = !!cachedVoice;
       if (resolved) return resolve(true);
+      if (manifest !== null && Object.keys(manifest).length > 0) return resolve(true);
       if (Date.now() - start >= timeoutMs) return resolve(false);
       setTimeout(tick, 50);
     };
@@ -71,6 +110,8 @@ export function _resetForTests() {
   cachedVoice = null;
   resolved = false;
   listenerAttached = false;
+  manifest = null;
+  manifestPromise = null;
 }
 
 function escapeAttr(s) {
@@ -81,7 +122,7 @@ export function renderSpeakButton(text) {
   return `<button type="button" class="btn-tts" data-tts-text="${escapeAttr(text)}" aria-label="Pronunciar" title="Pronunciar">🔊</button>`;
 }
 
-// Adjunta un único delegated listener al elemento `root` (idempotente — usa flag en el propio elemento).
+// Adjunta un único delegated listener al elemento `root` (idempotente).
 // Cualquier clic en un .btn-tts dentro de root llama speak() con su data-tts-text.
 export function attachSpeakHandler(root) {
   if (!root || root.__ttsHandlerAttached) return;
