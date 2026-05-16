@@ -77,3 +77,70 @@ describe('tts.speak', () => {
     uninstallMockSynthesis();
   });
 });
+
+describe('tts — voiceschanged async', () => {
+  it('detecta voces tras el evento voiceschanged', async () => {
+    let voices = [];
+    let handler = null;
+    window.speechSynthesis = {
+      getVoices: () => voices,
+      speak: () => {},
+      addEventListener(e, cb) { if (e === 'voiceschanged') handler = cb; },
+      removeEventListener() { handler = null; },
+    };
+    window.SpeechSynthesisUtterance = class { constructor(t) { this.text = t; } };
+
+    const { isAvailable, onReady, _resetForTests } = await import('../js/tts.js?cache=t3a');
+    _resetForTests();
+
+    assertEqual(isAvailable(), false, 'al inicio no debe haber voz');
+
+    // Simular carga async de voces
+    voices = [{ lang: 'ja-JP', name: 'Kyoko' }];
+    handler();  // dispara voiceschanged
+
+    await new Promise(r => setTimeout(r, 0));
+    assertEqual(isAvailable(), true, 'tras voiceschanged la voz debe estar disponible');
+
+    delete window.speechSynthesis;
+    delete window.SpeechSynthesisUtterance;
+  });
+
+  it('onReady resuelve cuando hay voz disponible inmediatamente', async () => {
+    window.speechSynthesis = {
+      getVoices: () => [{ lang: 'ja-JP', name: 'Kyoko' }],
+      speak: () => {},
+      addEventListener() {},
+      removeEventListener() {},
+    };
+    window.SpeechSynthesisUtterance = class { constructor(t) { this.text = t; } };
+
+    const { onReady, _resetForTests } = await import('../js/tts.js?cache=t3b');
+    _resetForTests();
+
+    const ready = await onReady();
+    assertEqual(ready, true);
+
+    delete window.speechSynthesis;
+    delete window.SpeechSynthesisUtterance;
+  });
+
+  it('onReady resuelve a false tras timeout si nunca hay voz', async () => {
+    window.speechSynthesis = {
+      getVoices: () => [],
+      speak: () => {},
+      addEventListener() {},
+      removeEventListener() {},
+    };
+    window.SpeechSynthesisUtterance = class { constructor(t) { this.text = t; } };
+
+    const { onReady, _resetForTests } = await import('../js/tts.js?cache=t3c');
+    _resetForTests();
+
+    const ready = await onReady(50);  // timeout de 50ms
+    assertEqual(ready, false);
+
+    delete window.speechSynthesis;
+    delete window.SpeechSynthesisUtterance;
+  });
+});
