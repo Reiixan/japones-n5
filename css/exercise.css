@@ -344,3 +344,10 @@
   color: var(--text-muted);
   margin-left: .25rem;
 }
+
+.fb-romaji {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: .25rem;
+}

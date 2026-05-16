@@ -1,4 +1,6 @@
 import { recordAnswer } from './storage.js';
+import { speak } from './tts.js';
+import { isRomajiOn, kanaToRomaji } from './romaji.js';
 
 // config = {
 //   deck: string,
@@ -9,22 +11,59 @@ import { recordAnswer } from './storage.js';
 //   renderInput: (item, allItems, el, onAnswer) => void,
 //   checkAnswer: (item, answer) => boolean,
 //   getCorrectDisplay: item => string,
+//   getPromptSpeechText?: item => string | null  // texto a pronunciar con barra espaciadora (repetir prompt sin revelar respuesta)
+//   getAnswerSpeechText?: item => string | null  // texto a pronunciar automáticamente al fallar
+//   menuPath?: string  // si el bloque tiene submenú, ruta del menú (ej '/vocab')
 // }
+const KANA_RE = /[぀-ヿ]/;
+
+function withRomajiSuffix(text) {
+  if (!isRomajiOn() || !text || !KANA_RE.test(text)) return text;
+  const r = kanaToRomaji(text);
+  if (r === text) return text;
+  return `${text} <span class="fb-romaji">(${r})</span>`;
+}
+
 export function startExercise(container, config) {
   const { deck, items, allItems } = config;
   let idx = 0;
   let streak = 0;
   let results = [];
   let inputCleanup = null;
+  let answered = false;
+  let spaceRepeatHandler = null;
+
+  function detachSpaceRepeat() {
+    if (spaceRepeatHandler) {
+      document.removeEventListener('keydown', spaceRepeatHandler);
+      spaceRepeatHandler = null;
+    }
+  }
+
+  function attachSpaceRepeat(text) {
+    detachSpaceRepeat();
+    if (!text) return;
+    spaceRepeatHandler = e => {
+      if (e.key !== ' ') return;
+      if (answered) return;
+      const tag = e.target && e.target.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+      e.preventDefault();
+      speak(text);
+    };
+    document.addEventListener('keydown', spaceRepeatHandler);
+  }
 
   function render() {
     if (idx >= items.length) {
+      detachSpaceRepeat();
       showSummary();
       return;
     }
 
     const item = items[idx];
     const pct = Math.round((idx / items.length) * 100);
+    answered = false;
 
     container.innerHTML = `
       <div class="ex-wrap">
@@ -46,15 +85,21 @@ export function startExercise(container, config) {
 
     document.getElementById('ex-back').addEventListener('click', () => {
       if (inputCleanup) inputCleanup();
+      detachSpaceRepeat();
       window.navigate('/');
     });
 
     config.renderPrompt(item, document.getElementById('ex-prompt'));
     inputCleanup = config.renderInput(item, allItems, document.getElementById('ex-input'), handleAnswer);
+
+    const promptText = config.getPromptSpeechText ? config.getPromptSpeechText(item) : null;
+    attachSpaceRepeat(promptText);
   }
 
   function handleAnswer(answer) {
     if (inputCleanup) { inputCleanup(); inputCleanup = null; }
+    answered = true;
+    detachSpaceRepeat();
     const item = items[idx];
     const correct = config.checkAnswer(item, answer);
     recordAnswer(deck, config.getItemId(item), correct);
@@ -78,13 +123,20 @@ export function startExercise(container, config) {
       setTimeout(() => { idx++; render(); }, 800);
     } else {
       const correctText = config.getCorrectDisplay(item);
+      const displayHtml = withRomajiSuffix(correctText);
       fb.innerHTML = `
         <span class="fb-icon">✗</span>
-        <span>Respuesta: <strong>${correctText}</strong></span>
+        <span>Respuesta: <strong>${displayHtml}</strong></span>
         <button class="btn-next" id="btn-next">Continuar →</button>
       `;
       const input = document.getElementById('ex-input');
       if (input) input.querySelectorAll('button,input').forEach(el => el.disabled = true);
+
+      // Auto-pronunciar la respuesta correcta cuando se falla.
+      if (config.getAnswerSpeechText) {
+        const speechText = config.getAnswerSpeechText(item);
+        if (speechText) setTimeout(() => speak(speechText), 200);
+      }
 
       const next = document.getElementById('btn-next');
       const advance = () => { idx++; render(); };
@@ -108,6 +160,10 @@ export function startExercise(container, config) {
     if (pct >= 80) scoreClass = 'score-good';
     else if (pct >= 50) scoreClass = 'score-mid';
 
+    const menuBtn = config.menuPath
+      ? `<button class="btn-secondary" id="sum-menu">← Cambiar modo</button>`
+      : '';
+
     container.innerHTML = `
       <div class="summary">
         <h2 class="summary-title">Sesión completada</h2>
@@ -124,6 +180,7 @@ export function startExercise(container, config) {
         }
         <div class="summary-actions">
           <button class="btn-primary" id="sum-home">← Inicio</button>
+          ${menuBtn}
           <button class="btn-secondary" id="sum-retry">Otra ronda</button>
         </div>
       </div>
@@ -134,6 +191,9 @@ export function startExercise(container, config) {
       idx = 0; streak = 0; results = [];
       render();
     });
+    if (config.menuPath) {
+      document.getElementById('sum-menu').addEventListener('click', () => window.navigate(config.menuPath));
+    }
   }
 
   render();

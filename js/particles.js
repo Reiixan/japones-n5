@@ -77,6 +77,8 @@ function runParticles(container, items, allItems) {
     getCorrectDisplay(item) {
       return `${item.answer} — ${item.explanation}`;
     },
+    // Sin getPromptSpeechText: la frase completa contiene la respuesta — revelaría.
+    getAnswerSpeechText: item => fullSentenceWithAnswer(item),
   });
 }
 

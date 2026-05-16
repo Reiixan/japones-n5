@@ -98,6 +98,9 @@ function runJpEs(container, items, allItems) {
     },
     checkAnswer(item, answer) { return item.meaning_es === answer; },
     getCorrectDisplay(item) { return item.meaning_es; },
+    getPromptSpeechText: item => item.kana,
+    getAnswerSpeechText: item => item.kana,
+    menuPath: '/vocab',
   });
 }
 
@@ -144,6 +147,9 @@ function runEsJp(container, items, allItems) {
     },
     checkAnswer(item, answer) { return item.id === answer; },
     getCorrectDisplay(item) { return `${item.kana} (${item.kanji}) — ${item.meaning_es}`; },
+    // Sin getPromptSpeechText: el prompt es español, no hay JP que repetir.
+    getAnswerSpeechText: item => item.kana,
+    menuPath: '/vocab',
   });
 }
 

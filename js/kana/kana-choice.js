@@ -70,6 +70,9 @@ function runChoice(container, deck, items, allItems) {
     getCorrectDisplay(item) {
       return item.romaji;
     },
+    getPromptSpeechText: item => item.kana,
+    getAnswerSpeechText: item => item.kana,
+    menuPath: `/${deck}`,
   });
 }
 

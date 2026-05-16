@@ -67,6 +67,9 @@ function runReverse(container, deck, items, allItems) {
     getCorrectDisplay(item) {
       return `${item.kana} (${item.romaji})`;
     },
+    // Sin getPromptSpeechText: el prompt es romaji, reproducirlo revelaría el kana correcto.
+    getAnswerSpeechText: item => item.kana,
+    menuPath: `/${deck}`,
   });
 }
 

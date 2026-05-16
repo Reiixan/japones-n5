@@ -60,5 +60,8 @@ function runTyping(container, deck, items, allItems) {
     getCorrectDisplay(item) {
       return item.accepted[0];
     },
+    getPromptSpeechText: item => item.kana,
+    getAnswerSpeechText: item => item.kana,
+    menuPath: `/${deck}`,
   });
 }

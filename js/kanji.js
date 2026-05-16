@@ -77,6 +77,8 @@ function runKanji(container, items, allItems) {
     getCorrectDisplay(item) {
       return displayFor(item);
     },
+    getPromptSpeechText: item => item.example_reading,
+    getAnswerSpeechText: item => item.example_reading,
   });
 }
 

@@ -71,6 +71,8 @@ function runGrammar(container, items, allItems) {
     getCorrectDisplay(item) {
       return item.exercise.answer;
     },
+    getPromptSpeechText: item => item.examples[0] ? item.examples[0].jp : null,
+    getAnswerSpeechText: item => item.exercise.answer,
   });
 }
 
