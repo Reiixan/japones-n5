@@ -139,3 +139,47 @@ describe('reading.isFuriganaOn / setFuriganaOn', () => {
     localStorage.removeItem('jp_n5_reading_furigana_on');
   });
 });
+
+describe('reading SRS por texto - integración', () => {
+  it('3 preguntas todas correctas → box sube de 0 a 1', async () => {
+    const KEY = 'jp_n5_v1.reading.r_test_a';
+    localStorage.removeItem(KEY);
+    const { createTextSrsAggregator } = await import('../js/reading.js?cache=int1');
+    const { recordAnswer } = await import('../js/storage.js?cache=int1');
+    const items = [
+      { text: { id: 'r_test_a' }, q_idx: 0 },
+      { text: { id: 'r_test_a' }, q_idx: 1 },
+      { text: { id: 'r_test_a' }, q_idx: 2 },
+    ];
+    const agg = createTextSrsAggregator(items, (id, correct) => recordAnswer('reading', id, correct));
+    agg(items[0], true);
+    agg(items[1], true);
+    agg(items[2], true);
+    const stored = JSON.parse(localStorage.getItem(KEY));
+    assertEqual(stored.box, 1);
+    assertEqual(stored.correct, 1);
+    assertEqual(stored.wrong, 0);
+    localStorage.removeItem(KEY);
+  });
+
+  it('3 preguntas con 1 fallo → box queda en 0 y wrong=1', async () => {
+    const KEY = 'jp_n5_v1.reading.r_test_b';
+    localStorage.removeItem(KEY);
+    localStorage.setItem(KEY, JSON.stringify({ box: 2, lastSeen: null, correct: 5, wrong: 0 }));
+    const { createTextSrsAggregator } = await import('../js/reading.js?cache=int2');
+    const { recordAnswer } = await import('../js/storage.js?cache=int2');
+    const items = [
+      { text: { id: 'r_test_b' }, q_idx: 0 },
+      { text: { id: 'r_test_b' }, q_idx: 1 },
+      { text: { id: 'r_test_b' }, q_idx: 2 },
+    ];
+    const agg = createTextSrsAggregator(items, (id, correct) => recordAnswer('reading', id, correct));
+    agg(items[0], true);
+    agg(items[1], false);
+    agg(items[2], true);
+    const stored = JSON.parse(localStorage.getItem(KEY));
+    assertEqual(stored.box, 0);
+    assertEqual(stored.wrong, 1);
+    localStorage.removeItem(KEY);
+  });
+});
