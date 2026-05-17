@@ -1,8 +1,6 @@
 // Reglas de conjugación N5: godan, ichidan, irregular × 8 formas.
 // Función pura: (dict, group, form) → string. No depende del DOM ni de storage.
 
-const HIRA = 'あいうえおかきくけこがぎぐげごさしすせそざじずぜぞたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわをん';
-
 // Mapa: kana godan última sílaba (う段) → su contraparte en otras filas
 // Para cada terminación godan, almacenamos (i段, a段, e段, masu_suffix_full)
 const GODAN_MAP = {
@@ -36,7 +34,7 @@ const TA_MAP = Object.fromEntries(
 
 // Excepción 行く: usa って/った en vez de いて/いた
 function isIku(dict) {
-  return dict === '行く' || dict.endsWith('行く');
+  return dict === '行く';
 }
 
 function godanLast(dict) {
@@ -76,8 +74,8 @@ const SURU_FORMS = {
   te: 'して', ta: 'した', nai: 'しない', nakatta: 'しなかった',
 };
 const KURU_FORMS = {
-  masu: '来ます', masen: '来ません', mashita: '来ました', masen_deshita: '来ませんでした',
-  te: '来て', ta: '来た', nai: '来ない', nakatta: '来なかった',
+  masu: 'きます', masen: 'きません', mashita: 'きました', masen_deshita: 'きませんでした',
+  te: 'きて', ta: 'きた', nai: 'こない', nakatta: 'こなかった',
 };
 
 function isKuru(dict) {
@@ -106,6 +104,7 @@ export function conjugate(dict, group, form) {
       case 'ta': return stem + 'た';
       case 'nai': return stem + 'ない';
       case 'nakatta': return stem + 'なかった';
+      default: throw new Error(`Forma desconocida: ${form}`);
     }
   }
 
@@ -119,6 +118,7 @@ export function conjugate(dict, group, form) {
       case 'ta': return godanTa(dict);
       case 'nai': return godanAForm(dict) + 'ない';
       case 'nakatta': return godanAForm(dict) + 'なかった';
+      default: throw new Error(`Forma desconocida: ${form}`);
     }
   }
 
@@ -184,11 +184,24 @@ export function generateDistractors(dict, group, form, n = 3) {
 
   // Recoger en orden estable. Si faltan, completar con variantes mínimas.
   const arr = [...candidates];
-  while (arr.length < n) {
-    // catch-all: cambia última kana por otra
-    const variant = correct.slice(0, -1) + (correct.endsWith('す') ? 'る' : 'す');
+
+  // catch-all: family of mutations until we reach n
+  const fallbackSuffixes = ['ます', 'ません', 'ました', 'ない', 'なかった', 'て', 'た', 'します', 'して', 'した'];
+  let fbIdx = 0;
+  while (arr.length < n && fbIdx < fallbackSuffixes.length) {
+    const baseStem = correct.length > 2 ? correct.slice(0, -2) : correct.slice(0, -1);
+    const variant = baseStem + fallbackSuffixes[fbIdx];
+    fbIdx += 1;
     if (variant !== correct && !arr.includes(variant)) arr.push(variant);
-    else break;
   }
+  // safety: if still short, pad with stem + single-char variants
+  let safetyChar = 0;
+  const padChars = ['り', 'き', 'み', 'び', 'に', 'ち', 'し', 'い'];
+  while (arr.length < n && safetyChar < padChars.length) {
+    const variant = correct.slice(0, -1) + padChars[safetyChar] + 'ます';
+    safetyChar += 1;
+    if (variant !== correct && !arr.includes(variant)) arr.push(variant);
+  }
+
   return arr.slice(0, n);
 }

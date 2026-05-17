@@ -191,21 +191,21 @@ describe('conjugate irregular する', () => {
 });
 
 describe('conjugate irregular 来る', () => {
-  it('来る masu → 来ます', async () => {
+  it('来る masu → きます', async () => {
     const { conjugate } = await import('../js/conjugation.js?c=k1');
-    assertEqual(conjugate('来る', 'irregular', 'masu'), '来ます');
+    assertEqual(conjugate('来る', 'irregular', 'masu'), 'きます');
   });
-  it('来る te → 来て', async () => {
+  it('来る te → きて', async () => {
     const { conjugate } = await import('../js/conjugation.js?c=k2');
-    assertEqual(conjugate('来る', 'irregular', 'te'), '来て');
+    assertEqual(conjugate('来る', 'irregular', 'te'), 'きて');
   });
-  it('来る nai → 来ない', async () => {
+  it('来る nai → こない', async () => {
     const { conjugate } = await import('../js/conjugation.js?c=k3');
-    assertEqual(conjugate('来る', 'irregular', 'nai'), '来ない');
+    assertEqual(conjugate('来る', 'irregular', 'nai'), 'こない');
   });
-  it('来る nakatta → 来なかった', async () => {
+  it('来る nakatta → こなかった', async () => {
     const { conjugate } = await import('../js/conjugation.js?c=k4');
-    assertEqual(conjugate('来る', 'irregular', 'nakatta'), '来なかった');
+    assertEqual(conjugate('来る', 'irregular', 'nakatta'), 'こなかった');
   });
 });
 
