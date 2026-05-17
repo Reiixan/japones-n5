@@ -31,15 +31,15 @@ function runKanji(container, items, allItems) {
     renderPrompt(item, el) {
       const reading = item.example_reading;
       const romaji = isRomajiOn() ? `<span class="kanji-example-romaji">${kanaToRomaji(reading)}</span>` : '';
-      el.innerHTML = `
-        <div class="kanji-display">${item.kanji}</div>
-        <div class="kanji-example">
-          <span class="kanji-example-word">${item.example_word}</span>
-          <span class="kanji-example-reading">${reading}</span>
-          ${romaji}
-          ${renderSpeakButton(reading)}
-        </div>
-      `;
+      const exampleHtml = (item.example_word && item.example_reading)
+        ? `<div class="kanji-example">
+            <span class="kanji-example-word">${item.example_word}</span>
+            <span class="kanji-example-reading">(${reading})</span>
+            ${romaji}
+            ${renderSpeakButton(reading)}
+          </div>`
+        : '';
+      el.innerHTML = `<div class="kanji-prompt"><div class="kanji-display">${item.kanji}</div>${exampleHtml}</div>`;
       attachSpeakHandler(el);
       if (isAutoOn()) speak(reading);
     },
