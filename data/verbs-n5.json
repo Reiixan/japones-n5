@@ -1,0 +1,12 @@
+[
+  { "id": "vb_taberu", "dict": "食べる", "dict_kana": "たべる", "group": "ichidan", "meaning_es": "comer" },
+  { "id": "vb_miru", "dict": "見る", "dict_kana": "みる", "group": "ichidan", "meaning_es": "ver, mirar" },
+  { "id": "vb_kau", "dict": "買う", "dict_kana": "かう", "group": "godan", "meaning_es": "comprar" },
+  { "id": "vb_kaku", "dict": "書く", "dict_kana": "かく", "group": "godan", "meaning_es": "escribir" },
+  { "id": "vb_iku", "dict": "行く", "dict_kana": "いく", "group": "godan", "meaning_es": "ir" },
+  { "id": "vb_hanasu", "dict": "話す", "dict_kana": "はなす", "group": "godan", "meaning_es": "hablar" },
+  { "id": "vb_nomu", "dict": "飲む", "dict_kana": "のむ", "group": "godan", "meaning_es": "beber" },
+  { "id": "vb_kaeru", "dict": "帰る", "dict_kana": "かえる", "group": "godan", "meaning_es": "volver a casa" },
+  { "id": "vb_suru", "dict": "する", "dict_kana": "する", "group": "irregular", "meaning_es": "hacer" },
+  { "id": "vb_kuru", "dict": "来る", "dict_kana": "くる", "group": "irregular", "meaning_es": "venir" }
+]
