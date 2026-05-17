@@ -1,0 +1,12 @@
+[
+  { "id": "aj_takai", "jp": "高い", "kana": "たかい", "type": "i", "meaning_es": "caro / alto" },
+  { "id": "aj_yasui", "jp": "安い", "kana": "やすい", "type": "i", "meaning_es": "barato" },
+  { "id": "aj_ookii", "jp": "大きい", "kana": "おおきい", "type": "i", "meaning_es": "grande" },
+  { "id": "aj_chiisai", "jp": "小さい", "kana": "ちいさい", "type": "i", "meaning_es": "pequeño" },
+  { "id": "aj_atsui", "jp": "暑い", "kana": "あつい", "type": "i", "meaning_es": "caluroso" },
+  { "id": "aj_samui", "jp": "寒い", "kana": "さむい", "type": "i", "meaning_es": "frío (clima)" },
+  { "id": "aj_ii", "jp": "いい", "kana": "いい", "type": "i", "meaning_es": "bueno" },
+  { "id": "aj_kirei", "jp": "きれい", "kana": "きれい", "type": "na", "meaning_es": "bonito / limpio" },
+  { "id": "aj_genki", "jp": "元気", "kana": "げんき", "type": "na", "meaning_es": "saludable / con energía" },
+  { "id": "aj_shizuka", "jp": "静か", "kana": "しずか", "type": "na", "meaning_es": "tranquilo" }
+]
