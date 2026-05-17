@@ -6,32 +6,50 @@ function weightOf(box) {
   return 5 - box;
 }
 
-export function selectSession(deck, allItems, sessionSize) {
+export function selectSession(deck, allItems, sessionSize, now = Date.now()) {
   if (sessionSize === 'all') sessionSize = allItems.length;
-
-  const pool = allItems.map(item => ({
-    item,
-    progress: getProgress(deck, item.id),
-  }));
-
-  const selected = [];
-  const remaining = [...pool];
   const n = Math.min(sessionSize, allItems.length);
 
-  while (selected.length < n && remaining.length > 0) {
-    const totalWeight = remaining.reduce((s, e) => s + weightOf(e.progress.box), 0);
-    let rand = Math.random() * totalWeight;
-    for (let i = 0; i < remaining.length; i++) {
-      rand -= weightOf(remaining[i].progress.box);
-      if (rand <= 0) {
-        selected.push(remaining[i].item);
-        remaining.splice(i, 1);
-        break;
+  // Clasificar items en 3 grupos
+  const overdue = [];
+  const fresh = [];
+  const rest = [];
+  for (const item of allItems) {
+    const p = getProgress(deck, item.id);
+    if (p.dueAt != null && p.dueAt <= now) overdue.push({ item, p });
+    else if (p.lastSeen == null) fresh.push({ item, p });
+    else rest.push({ item, p });
+  }
+
+  const result = [];
+  // 1. Llenar con vencidos primero (los más vencidos primero)
+  overdue.sort((a, b) => (a.p.dueAt || 0) - (b.p.dueAt || 0));
+  for (const x of overdue) {
+    if (result.length >= n) break;
+    result.push(x.item);
+  }
+  // 2. Después nuevos
+  for (const x of shuffle(fresh)) {
+    if (result.length >= n) break;
+    result.push(x.item);
+  }
+  // 3. Si aún quedan plazas, llenar con resto mezclado por peso (menor caja → más peso)
+  if (result.length < n) {
+    const weighted = [...rest];
+    while (result.length < n && weighted.length > 0) {
+      const totalWeight = weighted.reduce((s, e) => s + (5 - e.p.box), 0);
+      let rand = Math.random() * totalWeight;
+      for (let i = 0; i < weighted.length; i++) {
+        rand -= (5 - weighted[i].p.box);
+        if (rand <= 0) {
+          result.push(weighted[i].item);
+          weighted.splice(i, 1);
+          break;
+        }
       }
     }
   }
-
-  return shuffle(selected);
+  return shuffle(result);
 }
 
 function shuffle(arr) {
