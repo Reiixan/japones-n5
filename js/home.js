@@ -81,6 +81,16 @@ const BLOCKS = [
     color: 'var(--c-orange)',
     path: '/reading',
   },
+  {
+    id: 'verbs',
+    label: 'Verbos',
+    jp: '動詞',
+    emoji: '🏃',
+    file: 'verbs-n5.json',
+    desc: 'Conjugación de los 8 tipos N5',
+    color: 'var(--c-violet)',
+    path: '/verbs',
+  },
 ];
 
 const dataCache = {};
