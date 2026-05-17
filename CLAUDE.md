@@ -6,7 +6,7 @@ Webapp personal de Hugo para preparar el JLPT N5. Vanilla JS sin build, servida 
 
 Tres capas, todas viven en el navegador:
 
-1. **Datos** — `data/*.json`: un fichero por bloque (hiragana, katakana, vocab, kanji, partículas, gramática, listening, reading). IDs estables; el SRS y los stats dependen de ellos.
+1. **Datos** — `data/*.json`: un fichero por bloque (hiragana, katakana, vocab, kanji, partículas, gramática, listening, reading, verbs). IDs estables; el SRS y los stats dependen de ellos.
 2. **Módulo del bloque** — `js/<bloque>.js`: un módulo por bloque que expone `start(container, allItems)`. No implementa el motor; configura hooks y delega.
 3. **Motor compartido** — `js/exercise.js` (loop de pregunta/respuesta/feedback), `js/srs.js` (Leitner 5 cajas en `localStorage`), `js/tts.js` (audio japonés con fallback MP3). Lo reutilizan todos los bloques.
 
@@ -145,7 +145,7 @@ Convenciones:
 - Para mockear globales como `window.speechSynthesis` (getter-only), usar `Object.defineProperty(window, 'speechSynthesis', { value: mock, configurable: true })`. La asignación directa `window.speechSynthesis = ...` falla en navegadores reales.
 - **Toda lógica que dependa de `window.*` / DOM / Web APIs debe verificarse en navegador real, no solo trazándola a mano** — un trace mental no detecta diferencias entre la especificación y la implementación de cada navegador.
 
-Estado actual: 57 tests pasando (14 de tts + 18 de romaji + 11 misc + 2 de exercise + 12 de reading).
+Estado actual: 109 tests pasando (14 tts + 18 romaji + 11 misc + 2 exercise + 12 reading + 49 conjugation + 3 verbs).
 
 **Cómo correr un test concreto**: el runner no soporta filtros desde la URL. Toda la suite se ejecuta al cargar `test/index.html`. Para enfocarte en uno, edita el `.test.js` correspondiente y comenta los `it(...)` o `describe(...)` que no quieres ejecutar (o renómbralos a `xit`/`xdescribe` — no existen como helpers nativos, así que comentar es lo más simple). Acuérdate de revertirlo antes de commitear.
 
@@ -159,7 +159,9 @@ Estado actual: 57 tests pasando (14 de tts + 18 de romaji + 11 misc + 2 de exerc
 | 0.7 — 5 pulidos finales (extra) | ✅ | (incluido en `fase-0`) |
 | 1 — Choukai (comprensión auditiva) | ✅ | `fase-1` |
 | 2 — Dokkai (lectura) | ✅ | `fase-2` |
-| 3 — Bunpou completo (verbos, adjetivos, kanji en contexto) | ⏳ | — |
+| 3-A — Bunpou: verbos | ✅ | `fase-3-verbos` |
+| 3-B — Bunpou: adjetivos | ⏳ | — |
+| 3-C — Bunpou: kanji-contexto | ⏳ | — |
 | 4 — Infraestructura (SRS v2, modo examen, daily goal, PWA) | ⏳ | — |
 
 Planes de implementación detallados en `docs/superpowers/plans/`.

@@ -232,6 +232,8 @@ Caja Leitner **por texto**, no por pregunta. Si fallas cualquier pregunta del te
 
 ## Fase 3 — Bunpou completo
 
+**Estado parcial**: ✅ 3.1 Verbos implementada el 2026-05-17 (tag `fase-3-verbos`). 60 verbos N5, 8 formas conjugadas, distractores algorítmicos via `js/conjugation.js` (49 tests). ⏳ 3.2 Adjetivos y 3.3 Kanji-contexto pendientes.
+
 ### 3.1 Verbos (bloque nuevo)
 
 **Datos** (`data/verbs-n5.json`):
