@@ -168,7 +168,7 @@ Estado actual: 145 tests pasando. Para ejecutar: servir y abrir `http://localhos
 | 3-C — Bunpou: kanji-contexto | ✅ | `fase-3-kanji` |
 | 4-A — Infra: SRS v2 con decaimiento | ✅ | `fase-4-srs-v2` |
 | 4-B — Infra: daily goal + racha | ✅ | `fase-4-daily` |
-| 4-C — Infra: métricas tiempo | ⏳ | — |
+| 4-C — Infra: métricas tiempo | ✅ | `fase-4-tiempo` |
 | 4 — Infraestructura (SRS v2, modo examen, daily goal, PWA) | ⏳ | — |
 
 Planes de implementación detallados en `docs/superpowers/plans/`.

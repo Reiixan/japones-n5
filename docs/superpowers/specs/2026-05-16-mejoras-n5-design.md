@@ -333,7 +333,7 @@ Para evitar colisión con vocab (`v_*`):
 
 ## Fase 4 — Infraestructura
 
-**Estado parcial**: ✅ 4.1 SRS v2 (tag `fase-4-srs-v2`) + ✅ 4.3 Daily goal + racha (tag `fase-4-daily`) implementadas el 2026-05-18. Widget en cabecera de home con barra de progreso y racha, meta configurable en stats (20/30/50). ⏳ 4.2 modo examen, 4.5 métricas tiempo pendientes. 🚫 4.4 PWA fuera de alcance (sesión aparte).
+**Estado**: ✅ 4.1 SRS v2 (`fase-4-srs-v2`) + ✅ 4.3 Daily goal + racha (`fase-4-daily`) + ✅ 4.5 Métricas tiempo (`fase-4-tiempo`) implementadas el 2026-05-18. Tiempo medio por respuesta se muestra en summary y media móvil de últimas 100 respuestas en stats. ⏳ 4.2 modo examen pendiente (se planificará por separado cuando se acerque examen). 🚫 4.4 PWA fuera de alcance (sesión aparte).
 
 ### 4.1 SRS v2 con decaimiento temporal
 
