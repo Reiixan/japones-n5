@@ -1,5 +1,6 @@
 import { getDeckStats } from './storage.js?v=2';
 import { collectDueItems } from './review-today.js';
+import { getDailyState } from './daily.js';
 
 const BLOCKS = [
   {
@@ -114,12 +115,20 @@ async function loadData(file) {
 }
 
 export async function renderHome(container) {
+  const ds = getDailyState();
+  const pct = ds.goal > 0 ? Math.min(100, Math.round((ds.todayCount / ds.goal) * 100)) : 0;
   container.innerHTML = `
     <div class="home-wrap">
       <header class="home-header">
         <div class="home-title">
           <span class="home-title-jp">日本語</span>
           <span class="home-title-es">Práctica N5</span>
+        </div>
+        <div class="daily-widget">
+          <div class="daily-progress" style="--pct:${pct}%">
+            <span class="daily-label">${ds.todayCount}/${ds.goal}</span>
+          </div>
+          <div class="daily-streak" title="Racha actual">🔥 ${ds.streak}</div>
         </div>
         <div class="home-actions">
           <button class="btn-icon" id="home-stats" title="Estadísticas">📊</button>

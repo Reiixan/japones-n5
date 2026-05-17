@@ -1,6 +1,7 @@
 import { getDeckStats, exportAll, importAll, resetDeck } from './storage.js?v=2';
 import { isAutoOn, setAutoOn } from './tts.js';
 import { isRomajiOn, setRomajiOn } from './romaji.js';
+import { getDailyState, setGoal } from './daily.js';
 
 const DECKS = [
   { id: 'hiragana', label: 'Hiragana', file: 'hiragana.json' },
@@ -25,6 +26,7 @@ async function loadData(file) {
 }
 
 export async function renderStats(container) {
+  const dailyState = getDailyState();
   const ttsAutoChecked = isAutoOn() ? 'checked' : '';
   const romajiChecked = isRomajiOn() ? 'checked' : '';
   container.innerHTML = `
@@ -45,6 +47,14 @@ export async function renderStats(container) {
             <input type="checkbox" id="pref-romaji" ${romajiChecked}>
             <span>Mostrar romaji en vocabulario y kanji</span>
           </label>
+          <div class="pref-row pref-row-col">
+            <label for="pref-goal">Meta diaria de respuestas</label>
+            <select id="pref-goal" class="pref-select">
+              <option value="20" ${dailyState.goal === 20 ? 'selected' : ''}>20</option>
+              <option value="30" ${dailyState.goal === 30 ? 'selected' : ''}>30</option>
+              <option value="50" ${dailyState.goal === 50 ? 'selected' : ''}>50</option>
+            </select>
+          </div>
         </section>
         <div class="stats-actions">
           <button class="btn-secondary" id="btn-export">Exportar progreso</button>
@@ -65,6 +75,11 @@ export async function renderStats(container) {
   const prefRomaji = document.getElementById('pref-romaji');
   if (prefRomaji) {
     prefRomaji.addEventListener('change', () => setRomajiOn(prefRomaji.checked));
+  }
+
+  const prefGoal = document.getElementById('pref-goal');
+  if (prefGoal) {
+    prefGoal.addEventListener('change', () => setGoal(parseInt(prefGoal.value)));
   }
 
   // Load all decks

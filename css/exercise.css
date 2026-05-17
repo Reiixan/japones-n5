@@ -633,3 +633,56 @@
 .review-note { color: var(--text-muted); margin-top: 1rem; }
 .review-upcoming { margin-top: 2rem; }
 .review-upcoming ul { padding-left: 1.2rem; }
+
+/* ---- Daily widget ---- */
+.daily-widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+.daily-progress {
+  position: relative;
+  width: 80px;
+  height: 22px;
+  background: var(--bg-hover);
+  border-radius: 999px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.daily-progress::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: var(--pct, 0%);
+  background: linear-gradient(90deg, var(--c-blue), var(--c-violet));
+  transition: width 0.3s ease;
+  z-index: 0;
+}
+.daily-label {
+  position: relative;
+  z-index: 1;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+.daily-streak {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.pref-row-col {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.pref-select {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+}
