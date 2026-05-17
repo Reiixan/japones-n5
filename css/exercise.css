@@ -686,3 +686,5 @@
   background: var(--bg);
   color: var(--text);
 }
+
+.summary-time { color: var(--text-muted); margin: 0.4rem 0 0.6rem; }

@@ -34,6 +34,7 @@ export function startExercise(container, config) {
   let inputCleanup = null;
   let answered = false;
   let spaceRepeatHandler = null;
+  let shownAt = 0;
 
   function detachSpaceRepeat() {
     if (spaceRepeatHandler) {
@@ -96,12 +97,14 @@ export function startExercise(container, config) {
 
     const promptText = config.getPromptSpeechText ? config.getPromptSpeechText(item) : null;
     attachSpaceRepeat(promptText);
+    shownAt = Date.now();
   }
 
   function handleAnswer(answer) {
     if (inputCleanup) { inputCleanup(); inputCleanup = null; }
     answered = true;
     detachSpaceRepeat();
+    const ms = Date.now() - shownAt;
     const item = items[idx];
     const correct = config.checkAnswer(item, answer);
     if (config.recordResult) {
@@ -109,7 +112,7 @@ export function startExercise(container, config) {
     } else {
       recordAnswer(deck, config.getItemId(item), correct);
     }
-    results.push({ item, correct, answer });
+    results.push({ item, correct, answer, ms });
     if (correct) recordPracticeTick();
 
     if (correct) streak++;
@@ -162,6 +165,9 @@ export function startExercise(container, config) {
     const correctCount = results.filter(r => r.correct).length;
     const wrongItems = results.filter(r => !r.correct);
     const pct = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+    const totalMs = results.reduce((s, r) => s + (r.ms || 0), 0);
+    const avgMs = total > 0 ? Math.round(totalMs / total) : 0;
+    const avgStr = (avgMs / 1000).toFixed(1) + ' s';
 
     let scoreClass = 'score-bad';
     if (pct >= 80) scoreClass = 'score-good';
@@ -176,6 +182,7 @@ export function startExercise(container, config) {
         <h2 class="summary-title">Sesión completada</h2>
         <div class="summary-score ${scoreClass}">${pct}%</div>
         <div class="summary-detail">${correctCount} / ${total} correctos</div>
+        <div class="summary-time">⏱ Tiempo medio: ${avgStr}</div>
         ${wrongItems.length === 0
           ? '<div class="summary-perfect">¡Perfecto! Sin errores 🎉</div>'
           : `<div class="summary-wrongs">
