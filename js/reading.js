@@ -1,6 +1,6 @@
 import { startExercise, showSessionConfig } from './exercise.js';
 import { selectSession } from './srs.js';
-import { recordAnswer } from './storage.js';
+import { recordAnswer } from './storage.js?v=2';
 
 const DECK = 'reading';
 

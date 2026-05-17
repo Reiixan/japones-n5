@@ -1,4 +1,4 @@
-import { getDeckStats } from './storage.js';
+import { getDeckStats } from './storage.js?v=2';
 import { collectDueItems } from './review-today.js';
 
 const BLOCKS = [

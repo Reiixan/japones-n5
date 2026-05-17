@@ -1,4 +1,4 @@
-import { getDeckStats, exportAll, importAll, resetDeck } from './storage.js';
+import { getDeckStats, exportAll, importAll, resetDeck } from './storage.js?v=2';
 import { isAutoOn, setAutoOn } from './tts.js';
 import { isRomajiOn, setRomajiOn } from './romaji.js';
 

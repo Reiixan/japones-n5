@@ -1,4 +1,4 @@
-import { recordAnswer } from './storage.js';
+import { recordAnswer } from './storage.js?v=2';
 import { speak } from './tts.js';
 import { isRomajiOn, kanaToRomaji } from './romaji.js';
 
