@@ -1,6 +1,7 @@
 import { recordAnswer } from './storage.js?v=2';
 import { speak } from './tts.js';
 import { isRomajiOn, kanaToRomaji } from './romaji.js';
+import { recordPracticeTick } from './daily.js';
 
 // config = {
 //   deck: string,
@@ -109,6 +110,7 @@ export function startExercise(container, config) {
       recordAnswer(deck, config.getItemId(item), correct);
     }
     results.push({ item, correct, answer });
+    if (correct) recordPracticeTick();
 
     if (correct) streak++;
     else streak = 0;
