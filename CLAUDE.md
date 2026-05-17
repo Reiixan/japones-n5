@@ -121,11 +121,15 @@ Función `kanaToRomaji(text)` (Hepburn) soporta hiragana, katakana, dakuten, han
 
 Toggle "Mostrar romaji" persistido en `localStorage['jp_n5_romaji_on']`. Aplica en vocab (campo `romaji` del JSON ya existente) y kanji (convierte `example_reading` que es kana puro). En gramática y partículas NO se aplica porque contienen kanji y la conversión parcial es peor que nada.
 
-### `js/srs.js` — Leitner 5 cajas
+### `js/srs.js` + `js/storage.js` — Leitner 5 cajas con decaimiento temporal (v2)
 
-`selectSession(deck, items, size)` devuelve N ítems del deck mezclando los "menos dominados" (cajas bajas) con peso mayor. Tras cada respuesta, `recordAnswer(deck, id, correct)` mueve la caja arriba (acierto) o a 0 (fallo). Clave en localStorage: `jp_n5_v1.<deck>.<id>`.
+Namespace **`jp_n5_v2.<deck>.<id>`** (migrado desde v1 al cargar la app vía `migrateV1ToV2()`, que preserva la caja y calcula `dueAt = lastSeen + intervalo`). Schema: `{box, lastSeen, correct, wrong, dueAt}`.
 
-Vocab JP→ES y vocab ES→JP comparten clave por palabra (acertar en cualquier modo sube la caja).
+Intervalos por caja: 10 min / 1 día / 3 días / 7 días / 21 días.
+
+`selectSession(deck, items, size, now?)` prioriza: (1) vencidos (`dueAt <= now`, los más viejos primero), (2) nuevos (`lastSeen == null`, shuffled), (3) resto por peso inverso a caja. Tras cada respuesta, `recordAnswer(deck, id, correct, now?)` actualiza caja, lastSeen y dueAt.
+
+Vocab JP→ES y vocab ES→JP comparten clave por palabra (acertar en cualquier modo sube la caja). Dokkai usa SRS por texto (`recordResult` en exercise.js).
 
 ### `js/exercise.js` — motor compartido
 
@@ -145,7 +149,7 @@ Convenciones:
 - Para mockear globales como `window.speechSynthesis` (getter-only), usar `Object.defineProperty(window, 'speechSynthesis', { value: mock, configurable: true })`. La asignación directa `window.speechSynthesis = ...` falla en navegadores reales.
 - **Toda lógica que dependa de `window.*` / DOM / Web APIs debe verificarse en navegador real, no solo trazándola a mano** — un trace mental no detecta diferencias entre la especificación y la implementación de cada navegador.
 
-Estado actual: 124 tests pasando (14 tts + 18 romaji + 11 misc + 2 exercise + 12 reading + 49 conjugation + 3 verbs + 12 adjective-forms + 3 adjectives).
+Estado actual: ~136 tests pasando (124 anteriores + 6 srs + 4 storage + 1 selectSession + 1 review-today). Para ejecutar: servir y abrir `http://localhost:8765/test/`.
 
 **Cómo correr un test concreto**: el runner no soporta filtros desde la URL. Toda la suite se ejecuta al cargar `test/index.html`. Para enfocarte en uno, edita el `.test.js` correspondiente y comenta los `it(...)` o `describe(...)` que no quieres ejecutar (o renómbralos a `xit`/`xdescribe` — no existen como helpers nativos, así que comentar es lo más simple). Acuérdate de revertirlo antes de commitear.
 
@@ -162,6 +166,9 @@ Estado actual: 124 tests pasando (14 tts + 18 romaji + 11 misc + 2 exercise + 12
 | 3-A — Bunpou: verbos | ✅ | `fase-3-verbos` |
 | 3-B — Bunpou: adjetivos | ✅ | `fase-3-adjetivos` |
 | 3-C — Bunpou: kanji-contexto | ✅ | `fase-3-kanji` |
+| 4-A — Infra: SRS v2 con decaimiento | ✅ | `fase-4-srs-v2` |
+| 4-B — Infra: daily goal + racha | ⏳ | — |
+| 4-C — Infra: métricas tiempo | ⏳ | — |
 | 4 — Infraestructura (SRS v2, modo examen, daily goal, PWA) | ⏳ | — |
 
 Planes de implementación detallados en `docs/superpowers/plans/`.

@@ -333,6 +333,8 @@ Para evitar colisión con vocab (`v_*`):
 
 ## Fase 4 — Infraestructura
 
+**Estado parcial**: ✅ 4.1 SRS v2 implementada el 2026-05-18 (tag `fase-4-srs-v2`) con **migración real** desde v1 (preserva caja, calcula dueAt desde lastSeen). Pantalla `/review` con resumen de vencidos por bloque. ⏳ 4.2 modo examen, 4.3 daily goal, 4.5 métricas tiempo pendientes. 🚫 4.4 PWA fuera de alcance (sesión aparte).
+
 ### 4.1 SRS v2 con decaimiento temporal
 
 **Cambios en `js/storage.js` y `js/srs.js`:**
