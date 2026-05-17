@@ -142,7 +142,7 @@ describe('reading.isFuriganaOn / setFuriganaOn', () => {
 
 describe('reading SRS por texto - integración', () => {
   it('3 preguntas todas correctas → box sube de 0 a 1', async () => {
-    const KEY = 'jp_n5_v1.reading.r_test_a';
+    const KEY = 'jp_n5_v2.reading.r_test_a';
     localStorage.removeItem(KEY);
     const { createTextSrsAggregator } = await import('../js/reading.js?cache=int1');
     const { recordAnswer } = await import('../js/storage.js?cache=int1');
@@ -163,7 +163,7 @@ describe('reading SRS por texto - integración', () => {
   });
 
   it('3 preguntas con 1 fallo → box queda en 0 y wrong=1', async () => {
-    const KEY = 'jp_n5_v1.reading.r_test_b';
+    const KEY = 'jp_n5_v2.reading.r_test_b';
     localStorage.removeItem(KEY);
     localStorage.setItem(KEY, JSON.stringify({ box: 2, lastSeen: null, correct: 5, wrong: 0 }));
     const { createTextSrsAggregator } = await import('../js/reading.js?cache=int2');
