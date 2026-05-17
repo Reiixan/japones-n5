@@ -11,6 +11,7 @@ import { start as startListening } from './listening.js';
 import { start as startReading } from './reading.js';
 import { start as startVerbs } from './verbs.js';
 import { start as startAdjectives } from './adjectives.js';
+import { migrateV1ToV2 } from './storage.js';
 
 const container = document.getElementById('app');
 const dataCache = {};
@@ -94,6 +95,9 @@ async function route() {
     `;
   }
 }
+
+// Run migration from v1 to v2 storage keys
+migrateV1ToV2();
 
 // Apply saved theme
 const savedTheme = localStorage.getItem('jp_n5_theme') || 'light';
