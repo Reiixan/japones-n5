@@ -149,7 +149,7 @@ Convenciones:
 - Para mockear globales como `window.speechSynthesis` (getter-only), usar `Object.defineProperty(window, 'speechSynthesis', { value: mock, configurable: true })`. La asignación directa `window.speechSynthesis = ...` falla en navegadores reales.
 - **Toda lógica que dependa de `window.*` / DOM / Web APIs debe verificarse en navegador real, no solo trazándola a mano** — un trace mental no detecta diferencias entre la especificación y la implementación de cada navegador.
 
-Estado actual: ~136 tests pasando (124 anteriores + 6 srs + 4 storage + 1 selectSession + 1 review-today). Para ejecutar: servir y abrir `http://localhost:8765/test/`.
+Estado actual: 145 tests pasando. Para ejecutar: servir y abrir `http://localhost:8765/test/`.
 
 **Cómo correr un test concreto**: el runner no soporta filtros desde la URL. Toda la suite se ejecuta al cargar `test/index.html`. Para enfocarte en uno, edita el `.test.js` correspondiente y comenta los `it(...)` o `describe(...)` que no quieres ejecutar (o renómbralos a `xit`/`xdescribe` — no existen como helpers nativos, así que comentar es lo más simple). Acuérdate de revertirlo antes de commitear.
 
@@ -167,7 +167,7 @@ Estado actual: ~136 tests pasando (124 anteriores + 6 srs + 4 storage + 1 select
 | 3-B — Bunpou: adjetivos | ✅ | `fase-3-adjetivos` |
 | 3-C — Bunpou: kanji-contexto | ✅ | `fase-3-kanji` |
 | 4-A — Infra: SRS v2 con decaimiento | ✅ | `fase-4-srs-v2` |
-| 4-B — Infra: daily goal + racha | ⏳ | — |
+| 4-B — Infra: daily goal + racha | ✅ | `fase-4-daily` |
 | 4-C — Infra: métricas tiempo | ⏳ | — |
 | 4 — Infraestructura (SRS v2, modo examen, daily goal, PWA) | ⏳ | — |
 
