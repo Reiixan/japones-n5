@@ -1,4 +1,4 @@
-import { getDeckStats, exportAll, importAll, resetDeck } from './storage.js?v=2';
+import { getDeckStats, exportAll, importAll, resetDeck, getAvgTiming } from './storage.js?v=2';
 import { isAutoOn, setAutoOn } from './tts.js';
 import { isRomajiOn, setRomajiOn } from './romaji.js';
 import { getDailyState, setGoal } from './daily.js';
@@ -98,11 +98,15 @@ export async function renderStats(container) {
           <th>Dominados</th>
           <th>Total</th>
           <th>Progreso</th>
+          <th>Tiempo medio</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        ${rows.map(({ deck, stats }) => `
+        ${rows.map(({ deck, stats }) => {
+          const avg = getAvgTiming(deck.id);
+          const avgCell = avg == null ? '—' : `${(avg / 1000).toFixed(1)} s`;
+          return `
           <tr>
             <td><strong>${deck.label}</strong></td>
             <td>${stats.dominados}</td>
@@ -113,11 +117,13 @@ export async function renderStats(container) {
               </div>
               <span class="mini-pct">${stats.pct}%</span>
             </td>
+            <td>${avgCell}</td>
             <td>
               <button class="btn-danger-sm" data-deck="${deck.id}" data-label="${deck.label}">Reset</button>
             </td>
           </tr>
-        `).join('')}
+        `;
+        }).join('')}
       </tbody>
     </table>
   `;
