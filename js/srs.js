@@ -68,18 +68,7 @@ export function pickWrong(allItems, correctItem, getKey, count = 3) {
   return shuffled.slice(0, count);
 }
 
-// SRS v2: intervalos de repaso por caja (en milisegundos).
-export const BOX_INTERVALS_MS = [
-  10 * 60 * 1000,             // box 0 → 10 min
-  24 * 60 * 60 * 1000,        // box 1 → 1 día
-  3 * 24 * 60 * 60 * 1000,    // box 2 → 3 días
-  7 * 24 * 60 * 60 * 1000,    // box 3 → 7 días
-  21 * 24 * 60 * 60 * 1000,   // box 4 → 21 días
-];
-
-export function dueAtFor(box, fromTime) {
-  if (typeof box !== 'number' || box < 0 || box >= BOX_INTERVALS_MS.length) {
-    throw new Error(`Box fuera de rango: ${box}`);
-  }
-  return fromTime + BOX_INTERVALS_MS[box];
-}
+// Re-export de intervals.js para mantener compatibilidad con tests existentes
+// que importan desde srs.js. La fuente de verdad está en intervals.js para
+// romper la dependencia circular con storage.js.
+export { BOX_INTERVALS_MS, dueAtFor } from './intervals.js';

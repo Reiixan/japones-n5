@@ -1,4 +1,4 @@
-import { dueAtFor } from './srs.js';
+import { dueAtFor } from './intervals.js';
 
 const NS = 'jp_n5_v2';
 const NS_V1 = 'jp_n5_v1';
