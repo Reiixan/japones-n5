@@ -7,7 +7,7 @@ describe('exercise.recordResult hook', () => {
     const storeWrites = [];
     const origSetItem = localStorage.setItem.bind(localStorage);
     localStorage.setItem = (k, v) => {
-      if (k.startsWith('jp_n5_v1.testdeck.')) storeWrites.push({ k, v });
+      if (k.startsWith('jp_n5_v2.testdeck.')) storeWrites.push({ k, v });
       origSetItem(k, v);
     };
 
@@ -54,7 +54,7 @@ describe('exercise.recordResult hook', () => {
     const storeWrites = [];
     const origSetItem = localStorage.setItem.bind(localStorage);
     localStorage.setItem = (k, v) => {
-      if (k.startsWith('jp_n5_v1.testdeck2.')) storeWrites.push({ k, v });
+      if (k.startsWith('jp_n5_v2.testdeck2.')) storeWrites.push({ k, v });
       origSetItem(k, v);
     };
 
@@ -84,10 +84,10 @@ describe('exercise.recordResult hook', () => {
       container.querySelector('.b').click();
 
       assert(storeWrites.length === 1, `recordAnswer debería escribir 1 entrada, hubo: ${storeWrites.length}`);
-      assert(storeWrites[0].k === 'jp_n5_v1.testdeck2.j1', `key esperada jp_n5_v1.testdeck2.j1, hubo: ${storeWrites[0].k}`);
+      assert(storeWrites[0].k === 'jp_n5_v2.testdeck2.j1', `key esperada jp_n5_v2.testdeck2.j1, hubo: ${storeWrites[0].k}`);
 
       container.remove();
-      localStorage.removeItem('jp_n5_v1.testdeck2.j1');
+      localStorage.removeItem('jp_n5_v2.testdeck2.j1');
     } finally {
       localStorage.setItem = origSetItem;
     }
