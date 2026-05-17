@@ -102,3 +102,21 @@ export function resetDeck(deck) {
   }
   toRemove.forEach(k => localStorage.removeItem(k));
 }
+
+const TIMING_PREFIX = `${NS}.timing.`;
+const TIMING_MAX = 100;
+
+export function recordTimings(deck, msArray) {
+  if (!msArray || msArray.length === 0) return;
+  const key = `${TIMING_PREFIX}${deck}`;
+  const existing = JSON.parse(localStorage.getItem(key) || '[]');
+  const combined = [...existing, ...msArray].slice(-TIMING_MAX);
+  localStorage.setItem(key, JSON.stringify(combined));
+}
+
+export function getAvgTiming(deck) {
+  const key = `${TIMING_PREFIX}${deck}`;
+  const arr = JSON.parse(localStorage.getItem(key) || '[]');
+  if (arr.length === 0) return null;
+  return Math.round(arr.reduce((s, x) => s + x, 0) / arr.length);
+}

@@ -1,4 +1,4 @@
-import { recordAnswer } from './storage.js?v=2';
+import { recordAnswer, recordTimings } from './storage.js?v=2';
 import { speak } from './tts.js';
 import { isRomajiOn, kanaToRomaji } from './romaji.js';
 import { recordPracticeTick } from './daily.js';
@@ -199,6 +199,9 @@ export function startExercise(container, config) {
         </div>
       </div>
     `;
+
+    const msArr = results.map(r => r.ms || 0).filter(x => x > 0);
+    recordTimings(deck, msArr);
 
     document.getElementById('sum-home').addEventListener('click', () => window.navigate('/'));
     document.getElementById('sum-retry').addEventListener('click', () => {
