@@ -11,6 +11,7 @@ import { start as startListening } from './listening.js';
 import { start as startReading } from './reading.js';
 import { start as startVerbs } from './verbs.js';
 import { start as startAdjectives } from './adjectives.js';
+import { start as startReviewToday } from './review-today.js';
 import { migrateV1ToV2 } from './storage.js';
 
 const container = document.getElementById('app');
@@ -81,6 +82,8 @@ async function route() {
     } else if (seg1 === 'adjectives') {
       const allItems = await loadData('adjectives-n5.json');
       await startAdjectives(container, allItems);
+    } else if (seg1 === 'review') {
+      await startReviewToday(container);
     } else {
       window.navigate('/');
     }

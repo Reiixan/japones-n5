@@ -1,4 +1,5 @@
 import { getDeckStats } from './storage.js';
+import { collectDueItems } from './review-today.js';
 
 const BLOCKS = [
   {
@@ -125,6 +126,14 @@ export async function renderHome(container) {
           <button class="btn-icon" id="home-theme" title="Tema">🌙</button>
         </div>
       </header>
+      <div class="review-card" data-path="/review">
+        <div class="review-card-icon">🌅</div>
+        <div class="review-card-text">
+          <div class="review-card-title">Repaso de hoy</div>
+          <div class="review-card-sub" id="review-card-sub">Calculando…</div>
+        </div>
+        <div class="review-card-arrow">→</div>
+      </div>
       <main class="home-grid" id="home-grid">
         ${BLOCKS.map(b => `
           <div class="block-card loading" data-path="${b.path}" style="--block-color:${b.color}">
@@ -149,6 +158,11 @@ export async function renderHome(container) {
   document.getElementById('home-stats').addEventListener('click', () => window.navigate('/stats'));
   document.getElementById('home-theme').addEventListener('click', toggleTheme);
 
+  const reviewCard = container.querySelector('.review-card');
+  if (reviewCard) {
+    reviewCard.addEventListener('click', () => window.navigate('/review'));
+  }
+
   container.querySelectorAll('.block-card').forEach(card => {
     card.addEventListener('click', () => window.navigate(card.dataset.path));
   });
@@ -162,6 +176,18 @@ export async function renderHome(container) {
     card.querySelector('.block-bar-fill').style.width = `${stats.pct}%`;
     card.querySelector('.block-pct').textContent = `${stats.pct}% (${stats.dominados}/${stats.total})`;
   }));
+
+  const now = Date.now();
+  let totalDue = 0;
+  await Promise.all(BLOCKS.map(async block => {
+    const items = await loadData(block.file);
+    const due = collectDueItems(block.id, items, now);
+    totalDue += due.length;
+  }));
+  const sub = document.getElementById('review-card-sub');
+  if (sub) {
+    sub.textContent = totalDue === 0 ? '¡Sin pendientes!' : `${totalDue} ítem${totalDue === 1 ? '' : 's'} vencido${totalDue === 1 ? '' : 's'}`;
+  }
 }
 
 export function renderKanaMenu(container, deck) {
