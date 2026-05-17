@@ -169,6 +169,8 @@ La voz TTS robotizada no transmite entonación humana real. Sigue siendo útil p
 
 ## Fase 2 — Dokkai (lectura)
 
+**Estado**: ✅ Implementada el 2026-05-17 (tag `fase-2`). 30 textos (20 short + 10 medium) con furigana opcional persistido en localStorage, vocabulario sugerido colapsable y SRS por texto (fallar cualquier pregunta del texto baja la caja a 0). Nuevo hook `recordResult` añadido a `js/exercise.js` para soportar agregación SRS por grupo.
+
 ### Tipos de ejercicio (cubrimos 2 de los 3 del N5)
 
 1. **Texto corto** (~50-80 caracteres JP, 1 pregunta).
