@@ -1,4 +1,4 @@
-import { getProgress } from './storage.js';
+import { getProgress } from './storage.js?v=2';
 
 // Leitner 5-box system: box 0 = new/failed, box 4 = mastered
 // Weight: box 0 → 5, box 1 → 4, ..., box 4 → 1

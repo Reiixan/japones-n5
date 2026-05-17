@@ -1,4 +1,4 @@
-import { getProgress } from './storage.js';
+import { getProgress } from './storage.js?v=2';
 
 const DATA_FILES = [
   { deck: 'vocab', file: 'vocab-n5.json' },
