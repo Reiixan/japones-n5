@@ -1,4 +1,8 @@
-const NS = 'jp_n5_v1';
+import { dueAtFor } from './srs.js';
+
+const NS = 'jp_n5_v2';
+const NS_V1 = 'jp_n5_v1';
+const MIGRATED_FLAG = 'jp_n5_v2_migrated';
 
 function key(deck, itemId) {
   return `${NS}.${deck}.${itemId}`;
@@ -6,20 +10,54 @@ function key(deck, itemId) {
 
 export function getProgress(deck, itemId) {
   const raw = localStorage.getItem(key(deck, itemId));
-  return raw ? JSON.parse(raw) : { box: 0, lastSeen: null, correct: 0, wrong: 0 };
+  return raw ? JSON.parse(raw) : { box: 0, lastSeen: null, correct: 0, wrong: 0, dueAt: null };
 }
 
-export function recordAnswer(deck, itemId, correct) {
+export function recordAnswer(deck, itemId, correct, now = Date.now()) {
   const p = getProgress(deck, itemId);
-  p.lastSeen = Date.now();
+  p.lastSeen = now;
   if (correct) {
-    p.correct++;
-    p.box = Math.min(p.box + 1, 4);
+    p.correct = (p.correct || 0) + 1;
+    p.box = Math.min((p.box || 0) + 1, 4);
   } else {
-    p.wrong++;
+    p.wrong = (p.wrong || 0) + 1;
     p.box = 0;
   }
+  p.dueAt = dueAtFor(p.box, now);
   localStorage.setItem(key(deck, itemId), JSON.stringify(p));
+}
+
+export function migrateV1ToV2(now = Date.now()) {
+  if (localStorage.getItem(MIGRATED_FLAG) === '1') return 0;
+  const v1Keys = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith(`${NS_V1}.`)) v1Keys.push(k);
+  }
+  let migrated = 0;
+  for (const v1k of v1Keys) {
+    const raw = localStorage.getItem(v1k);
+    if (!raw) continue;
+    try {
+      const data = JSON.parse(raw);
+      const fromTime = data.lastSeen != null ? data.lastSeen : now;
+      const newData = {
+        box: data.box || 0,
+        lastSeen: data.lastSeen,
+        correct: data.correct || 0,
+        wrong: data.wrong || 0,
+        dueAt: dueAtFor(data.box || 0, fromTime),
+      };
+      const suffix = v1k.slice(NS_V1.length + 1); // <deck>.<id>
+      localStorage.setItem(`${NS}.${suffix}`, JSON.stringify(newData));
+      localStorage.removeItem(v1k);
+      migrated += 1;
+    } catch (e) {
+      console.error('Error migrando', v1k, e);
+    }
+  }
+  localStorage.setItem(MIGRATED_FLAG, '1');
+  return migrated;
 }
 
 export function getDeckStats(deck, items) {
