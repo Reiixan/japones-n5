@@ -161,7 +161,7 @@ Estado actual: 124 tests pasando (14 tts + 18 romaji + 11 misc + 2 exercise + 12
 | 2 — Dokkai (lectura) | ✅ | `fase-2` |
 | 3-A — Bunpou: verbos | ✅ | `fase-3-verbos` |
 | 3-B — Bunpou: adjetivos | ✅ | `fase-3-adjetivos` |
-| 3-C — Bunpou: kanji-contexto | ⏳ | — |
+| 3-C — Bunpou: kanji-contexto | ✅ | `fase-3-kanji` |
 | 4 — Infraestructura (SRS v2, modo examen, daily goal, PWA) | ⏳ | — |
 
 Planes de implementación detallados en `docs/superpowers/plans/`.

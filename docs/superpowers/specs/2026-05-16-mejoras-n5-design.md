@@ -232,7 +232,7 @@ Caja Leitner **por texto**, no por pregunta. Si fallas cualquier pregunta del te
 
 ## Fase 3 — Bunpou completo
 
-**Estado parcial**: ✅ 3.1 Verbos (tag `fase-3-verbos`, 60 verbos × 8 formas, `js/conjugation.js`) y ✅ 3.2 Adjetivos (tag `fase-3-adjetivos`, 45 adjetivos i/な × 3-4 formas, `js/adjective-forms.js`) implementadas el 2026-05-17. ⏳ 3.3 Kanji-contexto pendiente.
+**Estado**: ✅ Implementada completa el 2026-05-17 (tags `fase-3-verbos`, `fase-3-adjetivos`, `fase-3-kanji`). 60 verbos × 8 formas con `js/conjugation.js`; 45 adjetivos i/な × 3-4 formas con `js/adjective-forms.js`; kanji en contexto muestra `example_word`/`example_reading` bajo el carácter.
 
 ### 3.1 Verbos (bloque nuevo)
 
