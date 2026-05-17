@@ -91,6 +91,16 @@ const BLOCKS = [
     color: 'var(--c-violet)',
     path: '/verbs',
   },
+  {
+    id: 'adjectives',
+    label: 'Adjetivos',
+    jp: '形容詞',
+    emoji: '🎨',
+    file: 'adjectives-n5.json',
+    desc: 'い/な adjetivos N5',
+    color: 'var(--c-pink)',
+    path: '/adjectives',
+  },
 ];
 
 const dataCache = {};

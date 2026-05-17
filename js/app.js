@@ -10,6 +10,7 @@ import { start as startGrammar } from './grammar.js';
 import { start as startListening } from './listening.js';
 import { start as startReading } from './reading.js';
 import { start as startVerbs } from './verbs.js';
+import { start as startAdjectives } from './adjectives.js';
 
 const container = document.getElementById('app');
 const dataCache = {};
@@ -76,6 +77,9 @@ async function route() {
     } else if (seg1 === 'verbs') {
       const allItems = await loadData('verbs-n5.json');
       await startVerbs(container, allItems);
+    } else if (seg1 === 'adjectives') {
+      const allItems = await loadData('adjectives-n5.json');
+      await startAdjectives(container, allItems);
     } else {
       window.navigate('/');
     }

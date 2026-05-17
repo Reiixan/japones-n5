@@ -12,6 +12,7 @@ const DECKS = [
   { id: 'listening', label: 'Comprensión auditiva', file: 'listening-n5.json' },
   { id: 'reading', label: 'Comprensión lectora', file: 'reading-n5.json' },
   { id: 'verbs', label: 'Verbos', file: 'verbs-n5.json' },
+  { id: 'adjectives', label: 'Adjetivos', file: 'adjectives-n5.json' },
 ];
 
 const dataCache = {};
