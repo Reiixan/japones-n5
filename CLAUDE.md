@@ -169,7 +169,7 @@ Estado actual: 145 tests pasando. Para ejecutar: servir y abrir `http://localhos
 | 4-A — Infra: SRS v2 con decaimiento | ✅ | `fase-4-srs-v2` |
 | 4-B — Infra: daily goal + racha | ✅ | `fase-4-daily` |
 | 4-C — Infra: métricas tiempo | ✅ | `fase-4-tiempo` |
-| 4 — Infraestructura (SRS v2, modo examen, daily goal, PWA) | ⏳ | — |
+| 4-D — Modo examen JLPT | ⏳ pendiente | — |
 
 Planes de implementación detallados en `docs/superpowers/plans/`.
 
@@ -182,5 +182,8 @@ Planes de implementación detallados en `docs/superpowers/plans/`.
 
 ## Pendientes conocidos
 
+- **Modo examen JLPT (4-D)**: planeado y diferido conscientemente. Plan completo en `docs/superpowers/plans/2026-05-17-fase-4-infraestructura.md` (sub-fase D marcada como fuera de alcance). Cuando se retome: extraer `renderItemAsQuestion(item, container, onAnswer)` de cada bloque (vocab/kanji/particles/grammar/listening/reading) para que `js/exam.js` los reuse en vez de un renderer genérico cutre. Estructura del examen ya definida en el spec (Moji-Goi 20', Bunpou-Dokkai 40', Choukai 30').
+- **PWA (4.4)**: fuera de alcance hasta nuevo aviso. Requeriría `manifest.webmanifest`, `service-worker.js` con cache-first, iconos 192/512, botón "Instalar app" en home tras `beforeinstallprompt`. Hugo prefiere usarla como webapp por LAN hasta valorar la inversión.
 - **Adaptación a móvil**: se intentó en sesión del 2026-05-16 con CSS media queries + `clamp(dvh)` + `:has()`, pero el kana se seguía cortando al abrir teclado en Brave/Chromium móvil. Se revirtió todo. Para retomar: usar Visual Viewport API + JS, no solo CSS dvh (en algunos Chromium móviles dvh no se actualiza con el teclado virtual).
 - **iOS Safari y bloqueo de audio automático**: la primera pregunta de listening puede no sonar sola hasta que el usuario interactúe una vez con la página. Limitación del navegador, no del código.
+- **Cache de módulos ES**: los imports usan `?v=2` en `storage.js` para forzar refresh cuando el namespace cambie. Si en el futuro hay otro cambio incompatible al schema de storage, subir a `?v=3` en todos los imports. Documentado el incidente: tras cambiar `jp_n5_v1` → `jp_n5_v2`, los módulos cacheados sin query seguían usando v1 hasta el version-tag fix.
