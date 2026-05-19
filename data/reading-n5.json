@@ -5009,5 +5009,1702 @@
         "answer_es": "Es más tranquilo y el aire es limpio"
       }
     ]
+  },
+  {
+    "id": "r_031",
+    "type": "short",
+    "title_es": "La rutina de Ana",
+    "text_jp": "アナさんは毎朝七時に起きます。朝ご飯を食べてから、電車で学校に行きます。",
+    "text_ruby": [
+      {
+        "base": "アナ",
+        "ruby": null
+      },
+      {
+        "base": "さんは",
+        "ruby": null
+      },
+      {
+        "base": "毎朝",
+        "ruby": "まいあさ"
+      },
+      {
+        "base": "七時",
+        "ruby": "しちじ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "起",
+        "ruby": "お"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "朝",
+        "ruby": "あさ"
+      },
+      {
+        "base": "ご飯",
+        "ruby": "ごはん"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べてから、",
+        "ruby": null
+      },
+      {
+        "base": "電車",
+        "ruby": "でんしゃ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "学校",
+        "ruby": "がっこう"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿A qué hora se levanta Ana?",
+        "options_es": [
+          "A las siete",
+          "A las seis",
+          "A las ocho",
+          "A las nueve"
+        ],
+        "answer_es": "A las siete"
+      },
+      {
+        "q_es": "¿Cómo va Ana al colegio?",
+        "options_es": [
+          "En tren",
+          "A pie",
+          "En autobús",
+          "En bicicleta"
+        ],
+        "answer_es": "En tren"
+      }
+    ]
+  },
+  {
+    "id": "r_032",
+    "type": "short",
+    "title_es": "El tiempo hoy",
+    "text_jp": "今日は雨が降っています。風も強いです。傘を持って出かけましょう。",
+    "text_ruby": [
+      {
+        "base": "今日",
+        "ruby": "きょう"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "雨",
+        "ruby": "あめ"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "降",
+        "ruby": "ふ"
+      },
+      {
+        "base": "っています。",
+        "ruby": null
+      },
+      {
+        "base": "風",
+        "ruby": "かぜ"
+      },
+      {
+        "base": "も",
+        "ruby": null
+      },
+      {
+        "base": "強",
+        "ruby": "つよ"
+      },
+      {
+        "base": "いです。",
+        "ruby": null
+      },
+      {
+        "base": "傘",
+        "ruby": "かさ"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "持",
+        "ruby": "も"
+      },
+      {
+        "base": "って",
+        "ruby": null
+      },
+      {
+        "base": "出",
+        "ruby": "で"
+      },
+      {
+        "base": "かけましょう。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Qué tiempo hace hoy?",
+        "options_es": [
+          "Llueve y hay viento",
+          "Hace sol",
+          "Nieva",
+          "Hace calor"
+        ],
+        "answer_es": "Llueve y hay viento"
+      },
+      {
+        "q_es": "¿Qué recomienda el texto?",
+        "options_es": [
+          "Llevar paraguas",
+          "Quedarse en casa",
+          "Llevar abrigo",
+          "Ir en coche"
+        ],
+        "answer_es": "Llevar paraguas"
+      }
+    ]
+  },
+  {
+    "id": "r_033",
+    "type": "short",
+    "title_es": "La tienda de Tanaka",
+    "text_jp": "田中さんのお店は駅の近くにあります。毎日朝九時から夜七時まで開いています。",
+    "text_ruby": [
+      {
+        "base": "田中",
+        "ruby": "たなか"
+      },
+      {
+        "base": "さんのお",
+        "ruby": null
+      },
+      {
+        "base": "店",
+        "ruby": "みせ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "駅",
+        "ruby": "えき"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "近",
+        "ruby": "ちか"
+      },
+      {
+        "base": "くにあります。",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "朝",
+        "ruby": "あさ"
+      },
+      {
+        "base": "九時",
+        "ruby": "くじ"
+      },
+      {
+        "base": "から",
+        "ruby": null
+      },
+      {
+        "base": "夜",
+        "ruby": "よる"
+      },
+      {
+        "base": "七時",
+        "ruby": "しちじ"
+      },
+      {
+        "base": "まで",
+        "ruby": null
+      },
+      {
+        "base": "開",
+        "ruby": "あ"
+      },
+      {
+        "base": "いています。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Dónde está la tienda de Tanaka?",
+        "options_es": [
+          "Cerca de la estación",
+          "Lejos de la estación",
+          "En el centro comercial",
+          "En el aeropuerto"
+        ],
+        "answer_es": "Cerca de la estación"
+      },
+      {
+        "q_es": "¿Hasta qué hora abre la tienda?",
+        "options_es": [
+          "Hasta las siete de la tarde",
+          "Hasta las nueve de la noche",
+          "Hasta las seis de la tarde",
+          "Hasta las ocho de la noche"
+        ],
+        "answer_es": "Hasta las siete de la tarde"
+      }
+    ]
+  },
+  {
+    "id": "r_034",
+    "type": "short",
+    "title_es": "El hobby de Keiko",
+    "text_jp": "けいこさんの趣味は音楽を聴くことです。特にクラシック音楽が好きです。",
+    "text_ruby": [
+      {
+        "base": "けいこさんの",
+        "ruby": null
+      },
+      {
+        "base": "趣味",
+        "ruby": "しゅみ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "音楽",
+        "ruby": "おんがく"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "聴",
+        "ruby": "き"
+      },
+      {
+        "base": "くことです。",
+        "ruby": null
+      },
+      {
+        "base": "特",
+        "ruby": "とく"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "クラシック",
+        "ruby": null
+      },
+      {
+        "base": "音楽",
+        "ruby": "おんがく"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "好",
+        "ruby": "す"
+      },
+      {
+        "base": "きです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Cuál es el hobby de Keiko?",
+        "options_es": [
+          "Escuchar música",
+          "Tocar el piano",
+          "Ver películas",
+          "Leer libros"
+        ],
+        "answer_es": "Escuchar música"
+      },
+      {
+        "q_es": "¿Qué tipo de música le gusta especialmente?",
+        "options_es": [
+          "Música clásica",
+          "Música pop",
+          "Jazz",
+          "Rock"
+        ],
+        "answer_es": "Música clásica"
+      }
+    ]
+  },
+  {
+    "id": "r_035",
+    "type": "short",
+    "title_es": "Carta a un amigo",
+    "text_jp": "お元気ですか。私は毎日日本語を勉強しています。来年日本に行きたいです。",
+    "text_ruby": [
+      {
+        "base": "お",
+        "ruby": null
+      },
+      {
+        "base": "元気",
+        "ruby": "げんき"
+      },
+      {
+        "base": "ですか。",
+        "ruby": null
+      },
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "日本語",
+        "ruby": "にほんご"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "勉強",
+        "ruby": "べんきょう"
+      },
+      {
+        "base": "しています。",
+        "ruby": null
+      },
+      {
+        "base": "来年",
+        "ruby": "らいねん"
+      },
+      {
+        "base": "日本",
+        "ruby": "にほん"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きたいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Qué hace esta persona cada día?",
+        "options_es": [
+          "Estudia japonés",
+          "Trabaja en Japón",
+          "Habla con amigos japoneses",
+          "Lee libros japoneses"
+        ],
+        "answer_es": "Estudia japonés"
+      },
+      {
+        "q_es": "¿Cuándo quiere ir a Japón?",
+        "options_es": [
+          "El año que viene",
+          "Este año",
+          "El mes que viene",
+          "La semana que viene"
+        ],
+        "answer_es": "El año que viene"
+      }
+    ]
+  },
+  {
+    "id": "r_036",
+    "type": "short",
+    "title_es": "La familia Suzuki",
+    "text_jp": "鈴木さんの家族は四人です。お父さんとお母さんと兄と鈴木さんです。",
+    "text_ruby": [
+      {
+        "base": "鈴木",
+        "ruby": "すずき"
+      },
+      {
+        "base": "さんの",
+        "ruby": null
+      },
+      {
+        "base": "家族",
+        "ruby": "かぞく"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "四人",
+        "ruby": "よにん"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "お",
+        "ruby": null
+      },
+      {
+        "base": "父",
+        "ruby": "とう"
+      },
+      {
+        "base": "さんとお",
+        "ruby": null
+      },
+      {
+        "base": "母",
+        "ruby": "かあ"
+      },
+      {
+        "base": "さんと",
+        "ruby": null
+      },
+      {
+        "base": "兄",
+        "ruby": "あに"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "鈴木",
+        "ruby": "すずき"
+      },
+      {
+        "base": "さんです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Cuántas personas hay en la familia Suzuki?",
+        "options_es": [
+          "Cuatro",
+          "Tres",
+          "Cinco",
+          "Dos"
+        ],
+        "answer_es": "Cuatro"
+      },
+      {
+        "q_es": "¿Qué miembros tiene la familia?",
+        "options_es": [
+          "Padre, madre, hermano mayor y Suzuki",
+          "Padre, madre, hermana y Suzuki",
+          "Abuelos, padre y Suzuki",
+          "Padre, madre e hijo"
+        ],
+        "answer_es": "Padre, madre, hermano mayor y Suzuki"
+      }
+    ]
+  },
+  {
+    "id": "r_037",
+    "type": "short",
+    "title_es": "El restaurante nuevo",
+    "text_jp": "駅の前に新しいレストランができました。イタリア料理のお店です。値段も安いです。",
+    "text_ruby": [
+      {
+        "base": "駅",
+        "ruby": "えき"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "前",
+        "ruby": "まえ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "新",
+        "ruby": "あたら"
+      },
+      {
+        "base": "しい",
+        "ruby": null
+      },
+      {
+        "base": "レストラン",
+        "ruby": null
+      },
+      {
+        "base": "ができました。",
+        "ruby": null
+      },
+      {
+        "base": "イタリア",
+        "ruby": null
+      },
+      {
+        "base": "料理",
+        "ruby": "りょうり"
+      },
+      {
+        "base": "のお",
+        "ruby": null
+      },
+      {
+        "base": "店",
+        "ruby": "みせ"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "値段",
+        "ruby": "ねだん"
+      },
+      {
+        "base": "も",
+        "ruby": null
+      },
+      {
+        "base": "安",
+        "ruby": "やす"
+      },
+      {
+        "base": "いです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Dónde está el nuevo restaurante?",
+        "options_es": [
+          "Delante de la estación",
+          "Detrás del supermercado",
+          "Al lado del banco",
+          "Dentro del centro comercial"
+        ],
+        "answer_es": "Delante de la estación"
+      },
+      {
+        "q_es": "¿Qué tipo de restaurante es?",
+        "options_es": [
+          "Italiano",
+          "Chino",
+          "Japonés",
+          "Francés"
+        ],
+        "answer_es": "Italiano"
+      }
+    ]
+  },
+  {
+    "id": "r_038",
+    "type": "medium",
+    "title_es": "Carta de presentación",
+    "text_jp": "はじめまして。私は山本けんじです。東京大学の学生です。日本語と英語が話せます。趣味は映画を見ることと音楽を聴くことです。どうぞよろしくお願いします。",
+    "text_ruby": [
+      {
+        "base": "はじめまして。",
+        "ruby": null
+      },
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "山本",
+        "ruby": "やまもと"
+      },
+      {
+        "base": "けんじです。",
+        "ruby": null
+      },
+      {
+        "base": "東京大学",
+        "ruby": "とうきょうだいがく"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "学生",
+        "ruby": "がくせい"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "日本語",
+        "ruby": "にほんご"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "英語",
+        "ruby": "えいご"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "話",
+        "ruby": "はな"
+      },
+      {
+        "base": "せます。",
+        "ruby": null
+      },
+      {
+        "base": "趣味",
+        "ruby": "しゅみ"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "映画",
+        "ruby": "えいが"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "見",
+        "ruby": "み"
+      },
+      {
+        "base": "ることと",
+        "ruby": null
+      },
+      {
+        "base": "音楽",
+        "ruby": "おんがく"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "聴",
+        "ruby": "き"
+      },
+      {
+        "base": "くことです。",
+        "ruby": null
+      },
+      {
+        "base": "どうぞよろしくお",
+        "ruby": null
+      },
+      {
+        "base": "願",
+        "ruby": "ねが"
+      },
+      {
+        "base": "いします。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Qué estudia Kenji Yamamoto?",
+        "options_es": [
+          "Es estudiante en la Universidad de Tokyo",
+          "Trabaja en una empresa",
+          "Estudia en una escuela de idiomas",
+          "Es profesor"
+        ],
+        "answer_es": "Es estudiante en la Universidad de Tokyo"
+      },
+      {
+        "q_es": "¿Qué idiomas habla?",
+        "options_es": [
+          "Japonés e inglés",
+          "Japonés y francés",
+          "Solo japonés",
+          "Japonés, inglés y chino"
+        ],
+        "answer_es": "Japonés e inglés"
+      },
+      {
+        "q_es": "¿Cuáles son sus hobbies?",
+        "options_es": [
+          "Ver películas y escuchar música",
+          "Leer libros y jugar videojuegos",
+          "Escuchar música y cocinar",
+          "Ver películas y hacer deporte"
+        ],
+        "answer_es": "Ver películas y escuchar música"
+      }
+    ]
+  },
+  {
+    "id": "r_039",
+    "type": "medium",
+    "title_es": "Un día en Tokio",
+    "text_jp": "先週の土曜日に東京へ行きました。午前中は浅草で買い物をしました。昼ご飯は有名なラーメン屋で食べました。午後は友達と映画を見ました。とても楽しい一日でした。",
+    "text_ruby": [
+      {
+        "base": "先週",
+        "ruby": "せんしゅう"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "土曜日",
+        "ruby": "どようび"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "東京",
+        "ruby": "とうきょう"
+      },
+      {
+        "base": "へ",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きました。",
+        "ruby": null
+      },
+      {
+        "base": "午前中",
+        "ruby": "ごぜんちゅう"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "浅草",
+        "ruby": "あさくさ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "買",
+        "ruby": "か"
+      },
+      {
+        "base": "い物",
+        "ruby": "いもの"
+      },
+      {
+        "base": "をしました。",
+        "ruby": null
+      },
+      {
+        "base": "昼",
+        "ruby": "ひる"
+      },
+      {
+        "base": "ご飯",
+        "ruby": "ごはん"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "有名",
+        "ruby": "ゆうめい"
+      },
+      {
+        "base": "な",
+        "ruby": null
+      },
+      {
+        "base": "ラーメン",
+        "ruby": null
+      },
+      {
+        "base": "屋",
+        "ruby": "や"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "食",
+        "ruby": "た"
+      },
+      {
+        "base": "べました。",
+        "ruby": null
+      },
+      {
+        "base": "午後",
+        "ruby": "ごご"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "映画",
+        "ruby": "えいが"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "見",
+        "ruby": "み"
+      },
+      {
+        "base": "ました。",
+        "ruby": null
+      },
+      {
+        "base": "とても",
+        "ruby": null
+      },
+      {
+        "base": "楽",
+        "ruby": "たの"
+      },
+      {
+        "base": "しい",
+        "ruby": null
+      },
+      {
+        "base": "一日",
+        "ruby": "いちにち"
+      },
+      {
+        "base": "でした。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Cuándo fue esta persona a Tokyo?",
+        "options_es": [
+          "El sábado de la semana pasada",
+          "El domingo de la semana pasada",
+          "Este sábado",
+          "Ayer"
+        ],
+        "answer_es": "El sábado de la semana pasada"
+      },
+      {
+        "q_es": "¿Qué hizo por la mañana?",
+        "options_es": [
+          "Fue de compras a Asakusa",
+          "Comió ramen",
+          "Vio una película",
+          "Fue al museo"
+        ],
+        "answer_es": "Fue de compras a Asakusa"
+      },
+      {
+        "q_es": "¿Qué hizo por la tarde?",
+        "options_es": [
+          "Vio una película con amigos",
+          "Fue de compras",
+          "Comió en un restaurante",
+          "Fue al museo"
+        ],
+        "answer_es": "Vio una película con amigos"
+      }
+    ]
+  },
+  {
+    "id": "r_040",
+    "type": "medium",
+    "title_es": "El trabajo de Sato",
+    "text_jp": "佐藤さんは大きな会社で働いています。毎朝八時に家を出て、電車で会社に行きます。仕事は大変ですが、同僚はみんな親切で、仕事が好きです。",
+    "text_ruby": [
+      {
+        "base": "佐藤",
+        "ruby": "さとう"
+      },
+      {
+        "base": "さんは",
+        "ruby": null
+      },
+      {
+        "base": "大",
+        "ruby": "おお"
+      },
+      {
+        "base": "きな",
+        "ruby": null
+      },
+      {
+        "base": "会社",
+        "ruby": "かいしゃ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "働",
+        "ruby": "はたら"
+      },
+      {
+        "base": "いています。",
+        "ruby": null
+      },
+      {
+        "base": "毎朝",
+        "ruby": "まいあさ"
+      },
+      {
+        "base": "八時",
+        "ruby": "はちじ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "出",
+        "ruby": "で"
+      },
+      {
+        "base": "て、",
+        "ruby": null
+      },
+      {
+        "base": "電車",
+        "ruby": "でんしゃ"
+      },
+      {
+        "base": "で",
+        "ruby": null
+      },
+      {
+        "base": "会社",
+        "ruby": "かいしゃ"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      },
+      {
+        "base": "仕事",
+        "ruby": "しごと"
+      },
+      {
+        "base": "は",
+        "ruby": null
+      },
+      {
+        "base": "大変",
+        "ruby": "たいへん"
+      },
+      {
+        "base": "ですが、",
+        "ruby": null
+      },
+      {
+        "base": "同僚",
+        "ruby": "どうりょう"
+      },
+      {
+        "base": "はみんな",
+        "ruby": null
+      },
+      {
+        "base": "親切",
+        "ruby": "しんせつ"
+      },
+      {
+        "base": "で、",
+        "ruby": null
+      },
+      {
+        "base": "仕事",
+        "ruby": "しごと"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "好",
+        "ruby": "す"
+      },
+      {
+        "base": "きです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿A qué hora sale Sato de casa?",
+        "options_es": [
+          "A las ocho",
+          "A las siete",
+          "A las nueve",
+          "A las ocho y media"
+        ],
+        "answer_es": "A las ocho"
+      },
+      {
+        "q_es": "¿Cómo va al trabajo?",
+        "options_es": [
+          "En tren",
+          "A pie",
+          "En coche",
+          "En autobús"
+        ],
+        "answer_es": "En tren"
+      },
+      {
+        "q_es": "¿Por qué le gusta el trabajo a pesar de ser duro?",
+        "options_es": [
+          "Sus compañeros son amables",
+          "El sueldo es bueno",
+          "La empresa es famosa",
+          "La oficina está cerca de casa"
+        ],
+        "answer_es": "Sus compañeros son amables"
+      }
+    ]
+  },
+  {
+    "id": "r_041",
+    "type": "short",
+    "title_es": "El mercado del barrio",
+    "text_jp": "私の家の近くに小さいスーパーがあります。野菜や果物が安くて新鮮です。毎日買い物に行きます。",
+    "text_ruby": [
+      {
+        "base": "私",
+        "ruby": "わたし"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "家",
+        "ruby": "いえ"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "近",
+        "ruby": "ちか"
+      },
+      {
+        "base": "くに",
+        "ruby": null
+      },
+      {
+        "base": "小",
+        "ruby": "ちい"
+      },
+      {
+        "base": "さいスーパーがあります。",
+        "ruby": null
+      },
+      {
+        "base": "野菜",
+        "ruby": "やさい"
+      },
+      {
+        "base": "や",
+        "ruby": null
+      },
+      {
+        "base": "果物",
+        "ruby": "くだもの"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "安",
+        "ruby": "やす"
+      },
+      {
+        "base": "くて",
+        "ruby": null
+      },
+      {
+        "base": "新鮮",
+        "ruby": "しんせん"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "買",
+        "ruby": "か"
+      },
+      {
+        "base": "い物",
+        "ruby": "いもの"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "きます。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Qué hay cerca de la casa?",
+        "options_es": [
+          "Un pequeño supermercado",
+          "Un gran centro comercial",
+          "Un mercado de pescado",
+          "Una tienda de ropa"
+        ],
+        "answer_es": "Un pequeño supermercado"
+      },
+      {
+        "q_es": "¿Qué tienen de especial las verduras y frutas?",
+        "options_es": [
+          "Son baratas y frescas",
+          "Son caras pero muy buenas",
+          "Son importadas de otros países",
+          "Solo hay en verano"
+        ],
+        "answer_es": "Son baratas y frescas"
+      }
+    ]
+  },
+  {
+    "id": "r_042",
+    "type": "short",
+    "title_es": "El plan del fin de semana",
+    "text_jp": "今週末、友達と山に行く予定です。天気がよければ、頂上まで登りたいです。",
+    "text_ruby": [
+      {
+        "base": "今週末",
+        "ruby": "こんしゅうまつ"
+      },
+      {
+        "base": "、",
+        "ruby": null
+      },
+      {
+        "base": "友達",
+        "ruby": "ともだち"
+      },
+      {
+        "base": "と",
+        "ruby": null
+      },
+      {
+        "base": "山",
+        "ruby": "やま"
+      },
+      {
+        "base": "に",
+        "ruby": null
+      },
+      {
+        "base": "行",
+        "ruby": "い"
+      },
+      {
+        "base": "く",
+        "ruby": null
+      },
+      {
+        "base": "予定",
+        "ruby": "よてい"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "天気",
+        "ruby": "てんき"
+      },
+      {
+        "base": "がよければ、",
+        "ruby": null
+      },
+      {
+        "base": "頂上",
+        "ruby": "ちょうじょう"
+      },
+      {
+        "base": "まで",
+        "ruby": null
+      },
+      {
+        "base": "登",
+        "ruby": "のぼ"
+      },
+      {
+        "base": "りたいです。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Qué plan tiene para este fin de semana?",
+        "options_es": [
+          "Ir a la montaña con amigos",
+          "Ir a la playa con la familia",
+          "Quedarse en casa",
+          "Ir de compras"
+        ],
+        "answer_es": "Ir a la montaña con amigos"
+      },
+      {
+        "q_es": "¿Qué quiere hacer si el tiempo es bueno?",
+        "options_es": [
+          "Subir hasta la cima",
+          "Hacer un picnic",
+          "Nadar en el río",
+          "Acampar en el bosque"
+        ],
+        "answer_es": "Subir hasta la cima"
+      }
+    ]
+  },
+  {
+    "id": "r_043",
+    "type": "short",
+    "title_es": "La abuela de Ken",
+    "text_jp": "けんさんのおばあさんは七十歳です。毎朝公園を散歩します。とても元気です。",
+    "text_ruby": [
+      {
+        "base": "けんさんの",
+        "ruby": null
+      },
+      {
+        "base": "おばあさんは",
+        "ruby": null
+      },
+      {
+        "base": "七十歳",
+        "ruby": "ななじゅっさい"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      },
+      {
+        "base": "毎朝",
+        "ruby": "まいあさ"
+      },
+      {
+        "base": "公園",
+        "ruby": "こうえん"
+      },
+      {
+        "base": "を",
+        "ruby": null
+      },
+      {
+        "base": "散歩",
+        "ruby": "さんぽ"
+      },
+      {
+        "base": "します。",
+        "ruby": null
+      },
+      {
+        "base": "とても",
+        "ruby": null
+      },
+      {
+        "base": "元気",
+        "ruby": "げんき"
+      },
+      {
+        "base": "です。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Cuántos años tiene la abuela de Ken?",
+        "options_es": [
+          "70 años",
+          "60 años",
+          "80 años",
+          "75 años"
+        ],
+        "answer_es": "70 años"
+      },
+      {
+        "q_es": "¿Qué hace cada mañana?",
+        "options_es": [
+          "Pasea por el parque",
+          "Hace ejercicio en casa",
+          "Va a la piscina",
+          "Lee el periódico"
+        ],
+        "answer_es": "Pasea por el parque"
+      }
+    ]
+  },
+  {
+    "id": "r_044",
+    "type": "short",
+    "title_es": "Preparación para el examen",
+    "text_jp": "来週テストがあります。毎日二時間勉強しています。難しいですが、がんばります。",
+    "text_ruby": [
+      {
+        "base": "来週",
+        "ruby": "らいしゅう"
+      },
+      {
+        "base": "テストがあります。",
+        "ruby": null
+      },
+      {
+        "base": "毎日",
+        "ruby": "まいにち"
+      },
+      {
+        "base": "二時間",
+        "ruby": "にじかん"
+      },
+      {
+        "base": "勉強",
+        "ruby": "べんきょう"
+      },
+      {
+        "base": "しています。",
+        "ruby": null
+      },
+      {
+        "base": "難",
+        "ruby": "むずか"
+      },
+      {
+        "base": "しいですが、がんばります。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Cuándo es el examen?",
+        "options_es": [
+          "La semana que viene",
+          "Mañana",
+          "Esta semana",
+          "El mes que viene"
+        ],
+        "answer_es": "La semana que viene"
+      },
+      {
+        "q_es": "¿Cuánto estudia cada día?",
+        "options_es": [
+          "Dos horas",
+          "Una hora",
+          "Tres horas",
+          "Treinta minutos"
+        ],
+        "answer_es": "Dos horas"
+      }
+    ]
+  },
+  {
+    "id": "r_045",
+    "type": "medium",
+    "title_es": "El invierno en Hokkaido",
+    "text_jp": "北海道の冬はとても寒いです。雪もたくさん降ります。でも、温泉がたくさんあって、体が温まります。冬でも旅行者が多く来ます。スキーも人気があります。",
+    "text_ruby": [
+      {
+        "base": "北海道",
+        "ruby": "ほっかいどう"
+      },
+      {
+        "base": "の",
+        "ruby": null
+      },
+      {
+        "base": "冬",
+        "ruby": "ふゆ"
+      },
+      {
+        "base": "はとても",
+        "ruby": null
+      },
+      {
+        "base": "寒",
+        "ruby": "さむ"
+      },
+      {
+        "base": "いです。",
+        "ruby": null
+      },
+      {
+        "base": "雪",
+        "ruby": "ゆき"
+      },
+      {
+        "base": "もたくさん",
+        "ruby": null
+      },
+      {
+        "base": "降",
+        "ruby": "ふ"
+      },
+      {
+        "base": "ります。",
+        "ruby": null
+      },
+      {
+        "base": "でも、",
+        "ruby": null
+      },
+      {
+        "base": "温泉",
+        "ruby": "おんせん"
+      },
+      {
+        "base": "がたくさんあって、",
+        "ruby": null
+      },
+      {
+        "base": "体",
+        "ruby": "からだ"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "温",
+        "ruby": "あたた"
+      },
+      {
+        "base": "まります。",
+        "ruby": null
+      },
+      {
+        "base": "冬",
+        "ruby": "ふゆ"
+      },
+      {
+        "base": "でも",
+        "ruby": null
+      },
+      {
+        "base": "旅行者",
+        "ruby": "りょこうしゃ"
+      },
+      {
+        "base": "が",
+        "ruby": null
+      },
+      {
+        "base": "多",
+        "ruby": "おお"
+      },
+      {
+        "base": "く",
+        "ruby": null
+      },
+      {
+        "base": "来",
+        "ruby": "き"
+      },
+      {
+        "base": "ます。",
+        "ruby": null
+      },
+      {
+        "base": "スキー",
+        "ruby": null
+      },
+      {
+        "base": "も",
+        "ruby": null
+      },
+      {
+        "base": "人気",
+        "ruby": "にんき"
+      },
+      {
+        "base": "があります。",
+        "ruby": null
+      }
+    ],
+    "vocabulary_hints": [],
+    "questions": [
+      {
+        "q_es": "¿Cómo es el invierno en Hokkaido?",
+        "options_es": [
+          "Muy frío con mucha nieve",
+          "Fresco y seco",
+          "Templado y lluvioso",
+          "Frío pero sin nieve"
+        ],
+        "answer_es": "Muy frío con mucha nieve"
+      },
+      {
+        "q_es": "¿Por qué se puede calentar el cuerpo en invierno?",
+        "options_es": [
+          "Hay muchas fuentes termales",
+          "Hay muchos restaurantes de comida caliente",
+          "Hay muchas tiendas con calefacción",
+          "Se puede esquiar"
+        ],
+        "answer_es": "Hay muchas fuentes termales"
+      },
+      {
+        "q_es": "¿Qué actividad de invierno es popular?",
+        "options_es": [
+          "El esquí",
+          "El patinaje sobre hielo",
+          "Las excursiones a la montaña",
+          "El snowboard"
+        ],
+        "answer_es": "El esquí"
+      }
+    ]
   }
 ]
