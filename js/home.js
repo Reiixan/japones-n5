@@ -7,7 +7,6 @@ const BLOCKS = [
     id: 'hiragana',
     label: 'Hiragana',
     jp: 'ひらがな',
-    emoji: '🇯🇵',
     file: 'hiragana.json',
     desc: '3 modos de práctica',
     color: 'var(--c-blue)',
@@ -17,7 +16,6 @@ const BLOCKS = [
     id: 'katakana',
     label: 'Katakana',
     jp: 'カタカナ',
-    emoji: '🔤',
     file: 'katakana.json',
     desc: '3 modos de práctica',
     color: 'var(--c-violet)',
@@ -27,7 +25,6 @@ const BLOCKS = [
     id: 'vocab',
     label: 'Vocabulario',
     jp: '語彙',
-    emoji: '📖',
     file: 'vocab-n5.json',
     desc: '~150 palabras N5',
     color: 'var(--c-green)',
@@ -37,7 +34,6 @@ const BLOCKS = [
     id: 'kanji',
     label: 'Kanji N5',
     jp: '漢字',
-    emoji: '🈳',
     file: 'kanji-n5.json',
     desc: '103 kanji oficiales',
     color: 'var(--c-orange)',
@@ -47,7 +43,6 @@ const BLOCKS = [
     id: 'particles',
     label: 'Partículas',
     jp: '助詞',
-    emoji: '🔗',
     file: 'particles.json',
     desc: 'は が を に で…',
     color: 'var(--c-red)',
@@ -57,7 +52,6 @@ const BLOCKS = [
     id: 'grammar',
     label: 'Gramática',
     jp: '文法',
-    emoji: '📝',
     file: 'grammar-n5.json',
     desc: '40 patrones N5',
     color: 'var(--c-teal)',
@@ -67,7 +61,6 @@ const BLOCKS = [
     id: 'listening',
     label: 'Comprensión auditiva',
     jp: '聴解',
-    emoji: '🎧',
     file: 'listening-n5.json',
     desc: 'Mini-diálogos con audio',
     color: 'var(--c-pink)',
@@ -77,7 +70,6 @@ const BLOCKS = [
     id: 'reading',
     label: 'Comprensión lectora',
     jp: '読解',
-    emoji: '📚',
     file: 'reading-n5.json',
     desc: 'Textos cortos y medios con preguntas',
     color: 'var(--c-orange)',
@@ -87,7 +79,6 @@ const BLOCKS = [
     id: 'verbs',
     label: 'Verbos',
     jp: '動詞',
-    emoji: '🏃',
     file: 'verbs-n5.json',
     desc: 'Conjugación de los 8 tipos N5',
     color: 'var(--c-violet)',
@@ -97,12 +88,18 @@ const BLOCKS = [
     id: 'adjectives',
     label: 'Adjetivos',
     jp: '形容詞',
-    emoji: '🎨',
     file: 'adjectives-n5.json',
     desc: 'い/な adjetivos N5',
     color: 'var(--c-pink)',
     path: '/adjectives',
   },
+];
+
+const SECTIONS = [
+  { label: 'Escritura',    ids: ['hiragana', 'katakana'] },
+  { label: 'Vocabulario',  ids: ['vocab', 'kanji'] },
+  { label: 'Gramática',    ids: ['particles', 'grammar', 'verbs', 'adjectives'] },
+  { label: 'Comprensión',  ids: ['listening', 'reading'] },
 ];
 
 const dataCache = {};
@@ -114,73 +111,97 @@ async function loadData(file) {
   return dataCache[file];
 }
 
+function blockById(id) {
+  return BLOCKS.find(b => b.id === id);
+}
+
+function renderCard(b, delay) {
+  return `
+    <div class="block-card loading" data-id="${b.id}" data-path="${b.path}"
+         style="--block-color:${b.color}; animation-delay:${delay.toFixed(2)}s">
+      <div class="block-jp">${b.jp}</div>
+      <div class="block-label">${b.label}</div>
+      <div class="block-desc">${b.desc}</div>
+      <div class="block-progress">
+        <div class="block-bar-track">
+          <div class="block-bar-fill" style="width:0%"></div>
+        </div>
+        <div class="block-pct">—</div>
+      </div>
+    </div>
+  `;
+}
+
 export async function renderHome(container) {
   const ds = getDailyState();
   const pct = ds.goal > 0 ? Math.min(100, Math.round((ds.todayCount / ds.goal) * 100)) : 0;
+
+  let cardIdx = 0;
+  const gridHTML = SECTIONS.map(section => {
+    const cardsHTML = section.ids.map(id => {
+      const block = blockById(id);
+      const delay = 0.15 + cardIdx * 0.06;
+      cardIdx++;
+      return renderCard(block, delay);
+    }).join('');
+    return `
+      <div class="home-col">
+        <div class="home-col-label">${section.label}</div>
+        <div class="home-col-cards">${cardsHTML}</div>
+      </div>
+    `;
+  }).join('');
+
   container.innerHTML = `
     <div class="home-wrap">
-      <header class="home-header">
-        <div class="home-title">
-          <span class="home-title-jp">日本語</span>
-          <span class="home-title-es">Práctica N5</span>
-        </div>
-        <div class="daily-widget">
-          <div class="daily-progress" style="--pct:${pct}%">
-            <span class="daily-label">${ds.todayCount}/${ds.goal}</span>
+      <div class="home-inner">
+        <header class="home-header">
+          <div class="home-title">
+            <span class="home-title-jp">日本語</span>
+            <span class="home-title-es">Práctica N5</span>
           </div>
-          <div class="daily-streak" title="Racha actual">🔥 ${ds.streak}</div>
+          <div class="daily-widget">
+            <div class="daily-progress" style="--pct:${pct}%">
+              <span class="daily-label">${ds.todayCount}/${ds.goal}</span>
+            </div>
+            <div class="daily-streak" title="Racha actual">🔥 ${ds.streak}</div>
+          </div>
+          <div class="home-actions">
+            <button class="btn-icon" id="home-stats" title="Estadísticas">📊</button>
+            <button class="btn-icon" id="home-theme" title="Tema">🌙</button>
+          </div>
+        </header>
+        <div class="review-card" data-path="/review" style="animation-delay:.08s">
+          <div class="review-card-icon">🌅</div>
+          <div class="review-card-text">
+            <div class="review-card-title">Repaso de hoy</div>
+            <div class="review-card-sub" id="review-card-sub">Calculando…</div>
+          </div>
+          <div class="review-card-arrow">→</div>
         </div>
-        <div class="home-actions">
-          <button class="btn-icon" id="home-stats" title="Estadísticas">📊</button>
-          <button class="btn-icon" id="home-theme" title="Tema">🌙</button>
-        </div>
-      </header>
-      <div class="review-card" data-path="/review">
-        <div class="review-card-icon">🌅</div>
-        <div class="review-card-text">
-          <div class="review-card-title">Repaso de hoy</div>
-          <div class="review-card-sub" id="review-card-sub">Calculando…</div>
-        </div>
-        <div class="review-card-arrow">→</div>
+        <main class="home-grid" id="home-grid">
+          ${gridHTML}
+        </main>
       </div>
-      <main class="home-grid" id="home-grid">
-        ${BLOCKS.map(b => `
-          <div class="block-card loading" data-path="${b.path}" style="--block-color:${b.color}">
-            <div class="block-emoji">${b.emoji}</div>
-            <div class="block-info">
-              <div class="block-label">${b.label}</div>
-              <div class="block-jp">${b.jp}</div>
-              <div class="block-desc">${b.desc}</div>
-            </div>
-            <div class="block-progress">
-              <div class="block-bar-track">
-                <div class="block-bar-fill" style="width:0%"></div>
-              </div>
-              <div class="block-pct">—</div>
-            </div>
-          </div>
-        `).join('')}
-      </main>
     </div>
   `;
 
   document.getElementById('home-stats').addEventListener('click', () => window.navigate('/stats'));
   document.getElementById('home-theme').addEventListener('click', toggleTheme);
 
-  const reviewCard = container.querySelector('.review-card');
-  if (reviewCard) {
-    reviewCard.addEventListener('click', () => window.navigate('/review'));
-  }
+  container.querySelector('.review-card')
+    ?.addEventListener('click', () => window.navigate('/review'));
 
   container.querySelectorAll('.block-card').forEach(card => {
     card.addEventListener('click', () => window.navigate(card.dataset.path));
   });
 
-  // Load stats async
-  await Promise.all(BLOCKS.map(async (block, i) => {
+  // Load stats keyed by data-id (order-independent)
+  await Promise.all(BLOCKS.map(async (block) => {
     const items = await loadData(block.file);
     const stats = getDeckStats(block.id, items);
-    const card = container.querySelectorAll('.block-card')[i];
+    const card = container.querySelector(`.block-card[data-id="${block.id}"]`);
+    if (!card) return;
     card.classList.remove('loading');
     card.querySelector('.block-bar-fill').style.width = `${stats.pct}%`;
     card.querySelector('.block-pct').textContent = `${stats.pct}% (${stats.dominados}/${stats.total})`;
@@ -195,16 +216,21 @@ export async function renderHome(container) {
   }));
   const sub = document.getElementById('review-card-sub');
   if (sub) {
-    sub.textContent = totalDue === 0 ? '¡Sin pendientes!' : `${totalDue} ítem${totalDue === 1 ? '' : 's'} vencido${totalDue === 1 ? '' : 's'}`;
+    sub.textContent = totalDue === 0
+      ? '¡Sin pendientes!'
+      : `${totalDue} ítem${totalDue === 1 ? '' : 's'} vencido${totalDue === 1 ? '' : 's'}`;
   }
 }
 
 export function renderKanaMenu(container, deck) {
   const deckLabel = deck === 'hiragana' ? 'Hiragana ひらがな' : 'Katakana カタカナ';
   const MODES = [
-    { mode: 'typing', icon: '⌨️', label: 'Escribir Romaji', desc: 'Ve el kana y escribe su romaji' },
-    { mode: 'choice', icon: '🔘', label: 'Opción Múltiple', desc: 'Ve el kana y elige 1 de 4 romaji' },
-    { mode: 'reverse', icon: '🔄', label: 'Modo Inverso', desc: 'Ve el romaji y elige el kana' },
+    { mode: 'typing',  icon: '⌨️', label: 'Escribir Romaji',  desc: 'Ve el kana y escribe su romaji' },
+    { mode: 'choice',  icon: '🔘', label: 'Opción Múltiple',  desc: 'Ve el kana y elige 1 de 4 romaji' },
+    { mode: 'reverse', icon: '🔄', label: 'Modo Inverso',     desc: 'Ve el romaji y elige el kana' },
+    { mode: 'audio',   icon: '🔊', label: 'Escuchar',         desc: 'Oye el sonido y elige el kana' },
+    { mode: 'words',   icon: '📖', label: 'Dictado palabras', desc: 'Ve una palabra y escribe su romaji' },
+    { mode: 'flash',   icon: '⚡', label: 'Flash rápido',     desc: 'Elige el romaji antes de que se acabe el tiempo' },
   ];
 
   container.innerHTML = `
@@ -217,8 +243,10 @@ export function renderKanaMenu(container, deck) {
         ${MODES.map(m => `
           <div class="mode-card" data-mode="${m.mode}">
             <div class="mode-icon">${m.icon}</div>
-            <div class="mode-label">${m.label}</div>
-            <div class="mode-desc">${m.desc}</div>
+            <div>
+              <div class="mode-label">${m.label}</div>
+              <div class="mode-desc">${m.desc}</div>
+            </div>
           </div>
         `).join('')}
       </main>

@@ -3,6 +3,9 @@ import { renderStats } from './stats.js';
 import { start as startKanaTyping } from './kana/kana-typing.js';
 import { start as startKanaChoice } from './kana/kana-choice.js';
 import { start as startKanaReverse } from './kana/kana-reverse.js';
+import { start as startKanaAudio } from './kana/kana-audio.js';
+import { start as startKanaWords } from './kana/kana-words.js';
+import { start as startKanaFlash } from './kana/kana-flash.js';
 import { start as startVocab } from './vocab.js';
 import { start as startKanji } from './kanji.js';
 import { start as startParticles } from './particles.js';
@@ -50,6 +53,12 @@ async function route() {
         if (seg2 === 'typing') await startKanaTyping(container, deck, allItems);
         else if (seg2 === 'choice') await startKanaChoice(container, deck, allItems);
         else if (seg2 === 'reverse') await startKanaReverse(container, deck, allItems);
+        else if (seg2 === 'audio') await startKanaAudio(container, deck, allItems);
+        else if (seg2 === 'flash') await startKanaFlash(container, deck, allItems);
+        else if (seg2 === 'words') {
+          const vocabItems = await loadData('vocab-n5.json');
+          await startKanaWords(container, deck, vocabItems);
+        }
         else window.navigate(`/${deck}`);
       }
     } else if (seg1 === 'vocab') {

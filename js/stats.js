@@ -6,6 +6,8 @@ import { getDailyState, setGoal } from './daily.js';
 const DECKS = [
   { id: 'hiragana', label: 'Hiragana', file: 'hiragana.json' },
   { id: 'katakana', label: 'Katakana', file: 'katakana.json' },
+  { id: 'hiragana-words', label: 'Hiragana palabras', file: 'vocab-n5.json' },
+  { id: 'katakana-words', label: 'Katakana palabras', file: 'vocab-n5.json' },
   { id: 'vocab', label: 'Vocabulario', file: 'vocab-n5.json' },
   { id: 'kanji', label: 'Kanji N5', file: 'kanji-n5.json' },
   { id: 'particles', label: 'Partículas', file: 'particles.json' },
