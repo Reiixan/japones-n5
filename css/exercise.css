@@ -1,7 +1,19 @@
+/* === Animations === */
+@keyframes promptEnter {
+  from { opacity: 0; transform: scale(.88) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ex-prompt, .review-card { animation: none !important; }
+}
+
 /* === Exercise wrapper === */
 .ex-wrap {
   display: flex; flex-direction: column;
   min-height: 100dvh;
+}
+@media (min-width: 900px) {
+  .ex-wrap { max-width: 640px; margin: 0 auto; }
 }
 
 .ex-header {
@@ -18,7 +30,8 @@
   background: var(--border); border-radius: 99px; overflow: hidden;
 }
 .ex-progress-fill {
-  height: 100%; background: var(--c-blue);
+  height: 100%;
+  background: linear-gradient(90deg, var(--c-blue), var(--c-violet));
   border-radius: 99px; transition: width .3s ease;
 }
 .ex-streak {
@@ -43,6 +56,7 @@
   width: 100%; display: flex; flex-direction: column;
   align-items: center; gap: .5rem; flex: 1;
   justify-content: center;
+  animation: promptEnter .35s cubic-bezier(.34,1.56,.64,1) both;
 }
 .kana-display {
   font-family: var(--font-jp);
@@ -599,16 +613,18 @@
   align-items: center;
   gap: 0.8rem;
   padding: 0.9rem 1.1rem;
-  background: linear-gradient(135deg, var(--c-blue), var(--c-violet));
+  background: linear-gradient(135deg, var(--c-vermillion), var(--c-violet));
   color: white;
   border-radius: 12px;
   margin: 0 0 1rem;
   cursor: pointer;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  transition: transform 0.15s ease;
+  box-shadow: 0 2px 16px rgba(181,25,15,.2);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  animation: cardEnter .4s ease both;
 }
 .review-card:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(181,25,15,.28);
 }
 .review-card-icon { font-size: 2rem; }
 .review-card-text { flex: 1; }
@@ -688,3 +704,54 @@
 }
 
 .summary-time { color: var(--text-muted); margin: 0.4rem 0 0.6rem; }
+
+/* === Kana words: traducción bajo la palabra === */
+.words-meaning {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-top: .4rem;
+  text-align: center;
+}
+
+/* === Kana audio: prompt de escucha === */
+.audio-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+.audio-prompt .prompt-hint {
+  font-size: .9rem;
+  color: var(--text-muted);
+}
+.audio-prompt .btn-tts {
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* === Kana flash: barra de countdown === */
+.flash-timer-track {
+  height: 4px;
+  background: var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+}
+.flash-timer-fill {
+  height: 100%;
+  background: var(--c-blue);
+  border-radius: 99px;
+  width: 100%;
+}
+.choice-btn.flash-correct {
+  background: var(--c-green);
+  color: #fff;
+  border-color: var(--c-green);
+}
+.choice-btn.flash-wrong {
+  background: var(--c-red);
+  color: #fff;
+  border-color: var(--c-red);
+}
