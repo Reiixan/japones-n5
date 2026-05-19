@@ -40,20 +40,22 @@ function runWords(container, deck, items, allItems) {
     },
     renderInput(item, _all, el, onAnswer) {
       el.innerHTML = `
-        <form class="typing-form" id="typing-form" autocomplete="off">
-          <input id="typing-input" class="typing-input" type="text"
+        <form class="typing-form" autocomplete="off">
+          <input class="typing-input" type="text"
             placeholder="romaji..." spellcheck="false" autocorrect="off" autocapitalize="off">
           <button type="submit" class="btn-primary">Comprobar</button>
         </form>
       `;
-      const input = document.getElementById('typing-input');
+      const form = el.querySelector('.typing-form');
+      const input = el.querySelector('.typing-input');
       input.focus();
-      document.getElementById('typing-form').addEventListener('submit', e => {
+      const handler = e => {
         e.preventDefault();
         const val = input.value.trim().toLowerCase();
         if (val) onAnswer(val);
-      });
-      return () => {};
+      };
+      form.addEventListener('submit', handler);
+      return () => form.removeEventListener('submit', handler);
     },
     checkAnswer(item, answer) {
       return item.romaji.toLowerCase() === answer;
