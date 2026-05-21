@@ -5,4 +5,5 @@ export function initViewport() {
   }
   update();
   (window.visualViewport ?? window).addEventListener('resize', update);
+  window.visualViewport?.addEventListener('scroll', update);
 }
