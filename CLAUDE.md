@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # Guía del proyecto japones-n5
 
 Webapp personal de Hugo para preparar el JLPT N5. Vanilla JS sin build, servida con `python3 -m http.server`. Pensada para usarse en escritorio y móvil (en LAN). Sin backend ni cuentas: el progreso vive en `localStorage` del navegador.
@@ -79,9 +83,9 @@ function runBlock(container, items, allItems) {
 
 Mira `js/listening.js` como referencia más reciente y completa, o `js/vocab.js` para el patrón de submenú de modos.
 
-Para integrar un bloque nuevo hay que tocar **3 archivos** además del nuevo módulo:
+Para integrar un bloque nuevo hay que tocar **4 archivos** además del nuevo módulo:
 - `js/app.js` → añadir ruta `else if (seg1 === '<deck>')`
-- `js/home.js` → añadir entry al array `BLOCKS`
+- `js/home.js` → añadir entry al array `BLOCKS` **y** añadir el `id` al array `SECTIONS` (que define las 4 columnas del home: Escritura / Vocabulario / Gramática / Comprensión)
 - `js/stats.js` → añadir entry al array `DECKS`
 
 ## Subsistemas
@@ -130,6 +134,18 @@ Intervalos por caja: 10 min / 1 día / 3 días / 7 días / 21 días.
 `selectSession(deck, items, size, now?)` prioriza: (1) vencidos (`dueAt <= now`, los más viejos primero), (2) nuevos (`lastSeen == null`, shuffled), (3) resto por peso inverso a caja. Tras cada respuesta, `recordAnswer(deck, id, correct, now?)` actualiza caja, lastSeen y dueAt.
 
 Vocab JP→ES y vocab ES→JP comparten clave por palabra (acertar en cualquier modo sube la caja). Dokkai usa SRS por texto (`recordResult` en exercise.js).
+
+### `js/daily.js` — meta diaria y racha
+
+`getDailyState()` → `{todayCount, goal, streak, lastDate}`. `recordExercise(n)` suma `n` respuestas al contador del día y actualiza la racha. Goal configurable (20/30/50) persistido en `localStorage['jp_n5_daily_goal']`. El motor `exercise.js` llama a `recordExercise` al final de cada sesión; el widget del home lo lee para mostrar el arco de progreso y el 🔥.
+
+### `js/review-today.js` — vencidos del día
+
+`collectDueItems(deck, items, now)` devuelve los ítems de un deck cuyo `dueAt <= now`. El home lo usa en paralelo sobre todos los decks para calcular el total de vencidos que muestra la review-card. La ruta `/review` usa `renderReviewToday(container)` para listar vencidos por bloque.
+
+### `js/intervals.js` — intervalos de caja
+
+Exporta `INTERVALS` (array de 5 ms: 10min/1d/3d/7d/21d). Módulo aislado para romper el ciclo de importación circular entre `srs.js` y `storage.js`. Si en el futuro se cambian los intervalos, tocar solo este archivo.
 
 ### `js/exercise.js` — motor compartido
 
