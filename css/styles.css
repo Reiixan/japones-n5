@@ -41,7 +41,7 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   background: var(--bg);
   color: var(--text);
-  min-height: 100dvh;
+  min-height: var(--viewport-height, 100dvh);
   transition: background .2s, color .2s;
 }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }
@@ -52,7 +52,7 @@ ul { list-style: none; }
 #app {
   max-width: 640px;
   margin: 0 auto;
-  min-height: 100dvh;
+  min-height: var(--viewport-height, 100dvh);
   padding: 0 0 env(safe-area-inset-bottom);
 }
 
