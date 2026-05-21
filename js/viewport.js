@@ -1,11 +1,11 @@
 export function initViewport() {
   const appEl = document.getElementById('app');
+  // visualViewport.height always reflects the area above the virtual keyboard.
+  // We set #app height directly so the flex layout shrinks correctly when the
+  // keyboard opens, regardless of whether dvh/interactive-widget is supported.
   function update() {
     const h = window.visualViewport?.height ?? window.innerHeight;
-    const kh = Math.max(0, window.innerHeight - h);
     if (appEl) appEl.style.height = h + 'px';
-    document.documentElement.style.setProperty('--keyboard-height', kh + 'px');
-    document.documentElement.style.setProperty('--viewport-height', h + 'px');
   }
   update();
   (window.visualViewport ?? window).addEventListener('resize', update);

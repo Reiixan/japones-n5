@@ -80,9 +80,9 @@ export function startExercise(container, config) {
         <main class="ex-body">
           <div class="ex-counter">${idx + 1} / ${items.length}</div>
           <div class="ex-prompt" id="ex-prompt"></div>
-          <div class="ex-input" id="ex-input"></div>
           <div class="ex-feedback" id="ex-feedback" hidden></div>
         </main>
+        <div class="ex-input" id="ex-input"></div>
       </div>
     `;
 
