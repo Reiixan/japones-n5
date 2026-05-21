@@ -10,7 +10,8 @@
 /* === Exercise wrapper === */
 .ex-wrap {
   display: flex; flex-direction: column;
-  min-height: var(--viewport-height, 100dvh);
+  height: var(--viewport-height, 100dvh);
+  overflow: hidden;
 }
 @media (min-width: 900px) {
   .ex-wrap { max-width: 640px; margin: 0 auto; }
@@ -44,6 +45,7 @@
   flex: 1; display: flex; flex-direction: column;
   align-items: center; padding: 2rem 1.25rem 1.5rem;
   gap: 1.5rem;
+  overflow-y: auto; min-height: 0;
 }
 .ex-counter {
   font-size: .8rem; color: var(--text-light);
