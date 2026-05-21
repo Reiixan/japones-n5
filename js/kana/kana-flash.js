@@ -17,21 +17,26 @@ const GROUPS = [
   { value: 'yoon', label: 'Yōon (きゃ…)' },
 ];
 
+const TIMER_STORAGE_KEY = 'jp_n5_flash_timer';
+
 export async function start(container, deck, allItems) {
   showSessionConfig(container, {
     title: 'Flash rápido',
-    subtitle: `Elige el romaji antes de que se acabe el tiempo.`,
+    subtitle: 'Reconocimiento rápido de kana. Activa el cronómetro para un reto mayor.',
     groups: GROUPS,
-    onStart: (size, groups) => {
+    toggles: [
+      { key: 'timer', label: 'Cronómetro (3 s por pregunta)', storageKey: TIMER_STORAGE_KEY, default: true },
+    ],
+    onStart: (size, groups, toggles) => {
       const filtered = groups ? allItems.filter(it => groups.includes(it.group)) : allItems;
       if (filtered.length === 0) { alert('Selecciona al menos un grupo.'); return; }
       const items = selectSession(deck, filtered, size);
-      runFlash(container, deck, items, allItems);
+      runFlash(container, deck, items, allItems, toggles?.timer ?? true);
     },
   });
 }
 
-function runFlash(container, deck, items, allItems) {
+function runFlash(container, deck, items, allItems, timerEnabled) {
   const sessionSize = items.length;
   let idx = 0;
   let correct = 0;
@@ -60,7 +65,7 @@ function runFlash(container, deck, items, allItems) {
           <div class="ex-streak">${idx + 1} / ${items.length}</div>
         </header>
         <main class="ex-body">
-          <div class="flash-timer-track"><div class="flash-timer-fill" id="flash-timer"></div></div>
+          ${timerEnabled ? `<div class="flash-timer-track"><div class="flash-timer-fill" id="flash-timer"></div></div>` : ''}
           <div class="kana-display">${item.kana}</div>
           <div class="choice-grid" id="choice-grid">
             ${options.map((opt, i) => `
@@ -73,12 +78,14 @@ function runFlash(container, deck, items, allItems) {
       </div>
     `;
 
-    const timerEl = document.getElementById('flash-timer');
-    timerEl.style.transition = 'none';
-    timerEl.style.width = '100%';
-    timerEl.offsetWidth;
-    timerEl.style.transition = `width ${TIMEOUT_MS}ms linear`;
-    timerEl.style.width = '0%';
+    if (timerEnabled) {
+      const timerEl = document.getElementById('flash-timer');
+      timerEl.style.transition = 'none';
+      timerEl.style.width = '100%';
+      timerEl.offsetWidth;
+      timerEl.style.transition = `width ${TIMEOUT_MS}ms linear`;
+      timerEl.style.width = '0%';
+    }
 
     const keyHandler = e => {
       const n = parseInt(e.key);
@@ -119,7 +126,7 @@ function runFlash(container, deck, items, allItems) {
       setTimeout(() => { idx++; render(); }, FEEDBACK_MS);
     }
 
-    timer = setTimeout(() => handleAnswer('__timeout__'), TIMEOUT_MS);
+    if (timerEnabled) timer = setTimeout(() => handleAnswer('__timeout__'), TIMEOUT_MS);
   }
 
   function showSummary() {

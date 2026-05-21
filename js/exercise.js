@@ -218,8 +218,17 @@ export function startExercise(container, config) {
 
 // Shared session config screen shown before exercise starts
 // onStart(size, filters) => void
-export function showSessionConfig(container, { title, subtitle, groups, onStart }) {
+export function showSessionConfig(container, { title, subtitle, groups, toggles, onStart }) {
   const hasGroups = groups && groups.length > 0;
+  const hasToggles = toggles && toggles.length > 0;
+
+  const toggleStates = {};
+  if (hasToggles) {
+    toggles.forEach(t => {
+      const stored = localStorage.getItem(t.storageKey);
+      toggleStates[t.key] = stored !== null ? stored === 'true' : t.default;
+    });
+  }
 
   container.innerHTML = `
     <div class="session-config">
@@ -240,6 +249,17 @@ export function showSessionConfig(container, { title, subtitle, groups, onStart 
                 </label>
               `).join('')}
             </div>
+          </div>
+        ` : ''}
+        ${hasToggles ? `
+          <div class="config-section">
+            <label class="config-label">Opciones</label>
+            ${toggles.map(t => `
+              <label class="pref-row">
+                <input type="checkbox" name="toggle" data-key="${t.key}" data-storage="${t.storageKey}"${toggleStates[t.key] ? ' checked' : ''}>
+                <span>${t.label}</span>
+              </label>
+            `).join('')}
           </div>
         ` : ''}
         <div class="config-section">
@@ -271,6 +291,13 @@ export function showSessionConfig(container, { title, subtitle, groups, onStart 
     const selectedGroups = hasGroups
       ? [...container.querySelectorAll('input[name="group"]:checked')].map(i => i.value)
       : null;
-    onStart(selectedSize, selectedGroups);
+    const selectedToggles = {};
+    if (hasToggles) {
+      container.querySelectorAll('input[name="toggle"]').forEach(input => {
+        selectedToggles[input.dataset.key] = input.checked;
+        localStorage.setItem(input.dataset.storage, input.checked);
+      });
+    }
+    onStart(selectedSize, selectedGroups, hasToggles ? selectedToggles : null);
   });
 }
