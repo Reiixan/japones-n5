@@ -60,17 +60,17 @@
 }
 .kana-display {
   font-family: var(--font-jp);
-  font-size: 7rem; line-height: 1; font-weight: 400;
+  font-size: clamp(4rem, 18vw, 7rem); line-height: 1; font-weight: 400;
   color: var(--text);
   text-align: center;
 }
 .kanji-display {
   font-family: var(--font-jp);
-  font-size: 6rem; line-height: 1; font-weight: 400;
+  font-size: clamp(3.5rem, 16vw, 6rem); line-height: 1; font-weight: 400;
   color: var(--text);
 }
 .romaji-display {
-  font-size: 3.5rem; font-weight: 700; letter-spacing: .04em;
+  font-size: clamp(2rem, 9vw, 3.5rem); font-weight: 700; letter-spacing: .04em;
   color: var(--text);
 }
 .prompt-hint {
@@ -80,7 +80,7 @@
 /* Vocab prompt */
 .vocab-kanji {
   font-family: var(--font-jp);
-  font-size: 3rem; font-weight: 700; color: var(--text);
+  font-size: clamp(2rem, 8vw, 3rem); font-weight: 700; color: var(--text);
 }
 .vocab-kana {
   font-family: var(--font-jp);
@@ -96,7 +96,7 @@
 /* Particle prompt */
 .particle-sentence {
   font-family: var(--font-jp);
-  font-size: 1.6rem; line-height: 1.6;
+  font-size: clamp(1.2rem, 4.5vw, 1.6rem); line-height: 1.6;
   text-align: center; color: var(--text);
 }
 .particle-blank {
@@ -160,6 +160,7 @@
   border: 2px solid var(--border);
   border-radius: var(--radius-sm);
   padding: .9rem .75rem;
+  min-height: 52px;
   font-size: 1rem; font-weight: 600;
   color: var(--text);
   transition: all .15s;
@@ -185,6 +186,7 @@
   font-family: var(--font-jp);
   font-size: 2rem; justify-content: center;
   padding: 1.2rem .5rem;
+  min-height: 64px;
   flex-direction: column; align-items: center; gap: .35rem;
 }
 .kana-choice-btn .choice-key { order: -1; }

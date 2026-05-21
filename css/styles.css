@@ -297,6 +297,7 @@ ul { list-style: none; }
   display: flex; align-items: center; gap: .4rem;
   background: var(--bg-card); border: 1.5px solid var(--border);
   border-radius: var(--radius-sm); padding: .4rem .75rem;
+  min-height: 44px;
   cursor: pointer; font-size: .85rem;
   transition: border-color .15s, background .15s;
 }
@@ -308,6 +309,7 @@ ul { list-style: none; }
 .size-btn {
   flex: 1;
   padding: .6rem;
+  min-height: 44px;
   background: var(--bg-card);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-sm);
@@ -386,6 +388,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-height: 44px;
   cursor: pointer;
 }
 .pref-row input[disabled] + span { opacity: 0.55; }
