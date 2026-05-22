@@ -218,7 +218,9 @@ function tick() {
 }
 
 function finishSection() {
-  if (timerId) { clearInterval(timerId); timerId = null; }
+  if (!timerId) return; // sección ya en proceso de cierre: evita doble transición
+  clearInterval(timerId);
+  timerId = null;
   if (state.sectionIdx + 1 < state.sections.length) {
     enterSection(state.sectionIdx + 1);
   } else {
