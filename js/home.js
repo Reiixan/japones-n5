@@ -118,6 +118,7 @@ function blockById(id) {
 function renderCard(b, delay) {
   return `
     <div class="block-card loading" data-id="${b.id}" data-path="${b.path}"
+         role="button" tabindex="0" aria-label="${b.label}"
          style="--block-color:${b.color}; animation-delay:${delay.toFixed(2)}s">
       <div class="block-jp">${b.jp}</div>
       <div class="block-label">${b.label}</div>
@@ -171,7 +172,7 @@ export async function renderHome(container) {
             <button class="btn-icon" id="home-theme" title="Tema">🌙</button>
           </div>
         </header>
-        <div class="review-card" data-path="/review" style="animation-delay:.08s">
+        <div class="review-card" data-path="/review" role="button" tabindex="0" aria-label="Repaso de hoy" style="animation-delay:.08s">
           <div class="review-card-icon">🌅</div>
           <div class="review-card-text">
             <div class="review-card-title">Repaso de hoy</div>
@@ -179,7 +180,7 @@ export async function renderHome(container) {
           </div>
           <div class="review-card-arrow">→</div>
         </div>
-        <div class="exam-card" data-path="/exam" style="animation-delay:.12s">
+        <div class="exam-card" data-path="/exam" role="button" tabindex="0" aria-label="Simulacro JLPT N5" style="animation-delay:.12s">
           <div class="exam-card-icon">📝</div>
           <div class="exam-card-text">
             <div class="exam-card-title">Simulacro JLPT N5</div>
@@ -197,14 +198,14 @@ export async function renderHome(container) {
   document.getElementById('home-stats').addEventListener('click', () => window.navigate('/stats'));
   document.getElementById('home-theme').addEventListener('click', toggleTheme);
 
-  container.querySelector('.review-card')
-    ?.addEventListener('click', () => window.navigate('/review'));
+  const reviewCard = container.querySelector('.review-card');
+  if (reviewCard) activate(reviewCard, () => window.navigate('/review'));
 
-  container.querySelector('.exam-card')
-    ?.addEventListener('click', () => window.navigate('/exam'));
+  const examCard = container.querySelector('.exam-card');
+  if (examCard) activate(examCard, () => window.navigate('/exam'));
 
   container.querySelectorAll('.block-card').forEach(card => {
-    card.addEventListener('click', () => window.navigate(card.dataset.path));
+    activate(card, () => window.navigate(card.dataset.path));
   });
 
   // Load stats keyed by data-id (order-independent)
@@ -252,7 +253,7 @@ export function renderKanaMenu(container, deck) {
       </header>
       <main class="mode-grid">
         ${MODES.map(m => `
-          <div class="mode-card" data-mode="${m.mode}">
+          <div class="mode-card" data-mode="${m.mode}" role="button" tabindex="0" aria-label="${m.label}">
             <div class="mode-icon">${m.icon}</div>
             <div>
               <div class="mode-label">${m.label}</div>
@@ -266,7 +267,15 @@ export function renderKanaMenu(container, deck) {
 
   document.getElementById('menu-back').addEventListener('click', () => window.navigate('/'));
   container.querySelectorAll('.mode-card').forEach(card => {
-    card.addEventListener('click', () => window.navigate(`/${deck}/${card.dataset.mode}`));
+    activate(card, () => window.navigate(`/${deck}/${card.dataset.mode}`));
+  });
+}
+
+// Hace un elemento clicable también activable por teclado (Enter/Espacio).
+function activate(el, fn) {
+  el.addEventListener('click', fn);
+  el.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fn(); }
   });
 }
 
