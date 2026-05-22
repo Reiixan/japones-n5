@@ -39,6 +39,7 @@ export function examRenderer() {
         <div class="particle-tts-row">${renderSpeakButton(fullText)}<span class="particle-tts-hint">Escuchar oración con respuesta</span></div>
       `;
       attachSpeakHandler(el);
+      // NO auto-pronunciamos aquí: revelaría la respuesta correcta antes de responder.
     },
     renderInput(item, _all, el, onAnswer) {
       const options = shuffle([...item.options]);
@@ -76,6 +77,7 @@ function runParticles(container, items, allItems) {
     allItems,
     getItemId: it => it.id,
     ...examRenderer(),
+    // Sin getPromptSpeechText: la frase completa contiene la respuesta — revelaría.
     getAnswerSpeechText: item => fullSentenceWithAnswer(item),
   });
 }
