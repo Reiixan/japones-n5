@@ -52,12 +52,8 @@ function renderModeMenu(container) {
   });
 }
 
-function runJpEs(container, items, allItems) {
-  startExercise(container, {
-    deck: DECK,
-    items,
-    allItems,
-    getItemId: it => it.id,
+export function examRenderer() {
+  return {
     renderPrompt(item, el) {
       el.innerHTML = `
         <div class="vocab-kanji">${item.kanji}</div>
@@ -98,6 +94,16 @@ function runJpEs(container, items, allItems) {
     },
     checkAnswer(item, answer) { return item.meaning_es === answer; },
     getCorrectDisplay(item) { return item.meaning_es; },
+  };
+}
+
+function runJpEs(container, items, allItems) {
+  startExercise(container, {
+    deck: DECK,
+    items,
+    allItems,
+    getItemId: it => it.id,
+    ...examRenderer(),
     getPromptSpeechText: item => item.kana,
     getAnswerSpeechText: item => item.kana,
     menuPath: '/vocab',

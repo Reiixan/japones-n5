@@ -30,12 +30,8 @@ function fullSentenceWithAnswer(item) {
   return item.parts.map(p => p === '[  ]' ? item.answer : p).join('');
 }
 
-function runParticles(container, items, allItems) {
-  startExercise(container, {
-    deck: DECK,
-    items,
-    allItems,
-    getItemId: it => it.id,
+export function examRenderer() {
+  return {
     renderPrompt(item, el) {
       const fullText = fullSentenceWithAnswer(item);
       el.innerHTML = `
@@ -43,11 +39,9 @@ function runParticles(container, items, allItems) {
         <div class="particle-tts-row">${renderSpeakButton(fullText)}<span class="particle-tts-hint">Escuchar oración con respuesta</span></div>
       `;
       attachSpeakHandler(el);
-      // NO auto-pronunciamos aquí: revelaría la respuesta correcta antes de responder.
     },
     renderInput(item, _all, el, onAnswer) {
       const options = shuffle([...item.options]);
-
       el.innerHTML = `<div class="choice-grid particle-grid">
         ${options.map((opt, i) => `
           <button class="choice-btn particle-btn" data-val="${opt}" data-key="${i + 1}">
@@ -56,7 +50,6 @@ function runParticles(container, items, allItems) {
           </button>
         `).join('')}
       </div>`;
-
       const keyHandler = e => {
         const n = parseInt(e.key);
         if (n >= 1 && n <= options.length) {
@@ -71,13 +64,18 @@ function runParticles(container, items, allItems) {
       });
       return () => document.removeEventListener('keydown', keyHandler);
     },
-    checkAnswer(item, answer) {
-      return item.answer === answer;
-    },
-    getCorrectDisplay(item) {
-      return `${item.answer} — ${item.explanation}`;
-    },
-    // Sin getPromptSpeechText: la frase completa contiene la respuesta — revelaría.
+    checkAnswer(item, answer) { return item.answer === answer; },
+    getCorrectDisplay(item) { return `${item.answer} — ${item.explanation}`; },
+  };
+}
+
+function runParticles(container, items, allItems) {
+  startExercise(container, {
+    deck: DECK,
+    items,
+    allItems,
+    getItemId: it => it.id,
+    ...examRenderer(),
     getAnswerSpeechText: item => fullSentenceWithAnswer(item),
   });
 }

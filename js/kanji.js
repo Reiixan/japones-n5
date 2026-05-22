@@ -22,12 +22,8 @@ function displayFor(item) {
   return `${item.meaning_es} (${kun} / ${on})`;
 }
 
-function runKanji(container, items, allItems) {
-  startExercise(container, {
-    deck: DECK,
-    items,
-    allItems,
-    getItemId: it => it.id,
+export function examRenderer() {
+  return {
     renderPrompt(item, el) {
       const reading = item.example_reading;
       const romaji = isRomajiOn() ? `<span class="kanji-example-romaji">${kanaToRomaji(reading)}</span>` : '';
@@ -46,7 +42,6 @@ function runKanji(container, items, allItems) {
     renderInput(item, all, el, onAnswer) {
       const wrongs = pickWrong(all, item, it => it.id, 3);
       const options = shuffle([item, ...wrongs]);
-
       el.innerHTML = `<div class="choice-grid kanji-grid">
         ${options.map((opt, i) => `
           <button class="choice-btn kanji-choice" data-val="${opt.id}" data-key="${i + 1}">
@@ -56,7 +51,6 @@ function runKanji(container, items, allItems) {
           </button>
         `).join('')}
       </div>`;
-
       const keyHandler = e => {
         const n = parseInt(e.key);
         if (n >= 1 && n <= options.length) {
@@ -71,12 +65,18 @@ function runKanji(container, items, allItems) {
       });
       return () => document.removeEventListener('keydown', keyHandler);
     },
-    checkAnswer(item, answer) {
-      return item.id === answer;
-    },
-    getCorrectDisplay(item) {
-      return displayFor(item);
-    },
+    checkAnswer(item, answer) { return item.id === answer; },
+    getCorrectDisplay(item) { return displayFor(item); },
+  };
+}
+
+function runKanji(container, items, allItems) {
+  startExercise(container, {
+    deck: DECK,
+    items,
+    allItems,
+    getItemId: it => it.id,
+    ...examRenderer(),
     getPromptSpeechText: item => item.example_reading,
     getAnswerSpeechText: item => item.example_reading,
   });

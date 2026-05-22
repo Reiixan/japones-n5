@@ -15,12 +15,8 @@ export async function start(container, allItems) {
   });
 }
 
-function runGrammar(container, items, allItems) {
-  startExercise(container, {
-    deck: DECK,
-    items,
-    allItems,
-    getItemId: it => it.id,
+export function examRenderer() {
+  return {
     renderPrompt(item, el) {
       const examples = item.examples.slice(0, 2).map(ex => `
         <li>
@@ -29,7 +25,6 @@ function runGrammar(container, items, allItems) {
           <span class="ex-es">${ex.es}</span>
         </li>
       `).join('');
-
       el.innerHTML = `
         <div class="grammar-pattern">${item.pattern}</div>
         <div class="grammar-meaning">${item.meaning_es}</div>
@@ -41,7 +36,6 @@ function runGrammar(container, items, allItems) {
     },
     renderInput(item, _all, el, onAnswer) {
       const options = shuffle([...item.exercise.options]);
-
       el.innerHTML = `<div class="choice-grid grammar-grid">
         ${options.map((opt, i) => `
           <button class="choice-btn grammar-btn" data-val="${opt}" data-key="${i + 1}">
@@ -50,7 +44,6 @@ function runGrammar(container, items, allItems) {
           </button>
         `).join('')}
       </div>`;
-
       const keyHandler = e => {
         const n = parseInt(e.key);
         if (n >= 1 && n <= options.length) {
@@ -65,12 +58,18 @@ function runGrammar(container, items, allItems) {
       });
       return () => document.removeEventListener('keydown', keyHandler);
     },
-    checkAnswer(item, answer) {
-      return item.exercise.answer === answer;
-    },
-    getCorrectDisplay(item) {
-      return item.exercise.answer;
-    },
+    checkAnswer(item, answer) { return item.exercise.answer === answer; },
+    getCorrectDisplay(item) { return item.exercise.answer; },
+  };
+}
+
+function runGrammar(container, items, allItems) {
+  startExercise(container, {
+    deck: DECK,
+    items,
+    allItems,
+    getItemId: it => it.id,
+    ...examRenderer(),
     getPromptSpeechText: item => item.examples[0] ? item.examples[0].jp : null,
     getAnswerSpeechText: item => item.exercise.answer,
   });
