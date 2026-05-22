@@ -208,12 +208,16 @@ function enterSection(idx) {
 }
 
 function tick() {
-  const remaining = state.deadlineAt - Date.now();
   const timerEl = container.querySelector('#exam-timer');
-  if (timerEl) {
-    timerEl.textContent = formatTime(remaining);
-    timerEl.classList.toggle('warning', remaining <= 30000);
+  if (!timerEl) {
+    // El usuario salió del examen (p.ej. atrás del navegador): detener el timer
+    // para no pisar luego la página actual con contenido del examen.
+    teardown();
+    return;
   }
+  const remaining = state.deadlineAt - Date.now();
+  timerEl.textContent = formatTime(remaining);
+  timerEl.classList.toggle('warning', remaining <= 30000);
   if (remaining <= 0) finishSection();
 }
 
