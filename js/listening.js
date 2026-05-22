@@ -28,12 +28,8 @@ function shuffle(arr) {
   return a;
 }
 
-function runListening(container, items, allItems) {
-  startExercise(container, {
-    deck: DECK,
-    items,
-    allItems,
-    getItemId: it => it.id,
+export function examRenderer({ maxPlays } = {}) {
+  return {
     renderPrompt(item, el) {
       el.innerHTML = `
         <div class="listen-prompt">
@@ -50,21 +46,31 @@ function runListening(container, items, allItems) {
         </details>
         <div class="listen-question">${item.prompt_es}</div>
       `;
+      let plays = 0;
+      const tryPlay = () => {
+        if (maxPlays != null && plays >= maxPlays) return;
+        plays++;
+        speak(item.audio_text);
+        if (maxPlays != null && plays >= maxPlays) {
+          el.querySelectorAll('.btn-listen, .btn-listen-repeat').forEach(b => {
+            b.disabled = true;
+            b.classList.add('disabled');
+          });
+        }
+      };
       el.addEventListener('click', e => {
         const btn = e.target.closest('[data-listen-text]');
-        if (!btn) return;
+        if (!btn || btn.disabled) return;
         e.preventDefault();
-        speak(btn.dataset.listenText);
+        tryPlay();
       });
-      // Auto-pronunciar la primera vez al mostrar la pregunta (sin esperar al usuario).
-      speak(item.audio_text);
+      // Auto-pronunciar la primera vez (cuenta hacia el tope si lo hay).
+      tryPlay();
     },
     renderInput(item, _all, el, onAnswer) {
       const isResponse = item.type === 'response';
       const opts = isResponse ? item.options_jp : item.options_es;
-      const answer = isResponse ? item.answer_jp : item.answer_es;
       const options = shuffle([...opts]);
-
       el.innerHTML = `<div class="choice-grid listen-grid ${isResponse ? 'listen-grid-jp' : ''}">
         ${options.map((opt, i) => `
           <button class="choice-btn listen-choice" data-val="${escapeAttr(opt)}" data-key="${i + 1}">
@@ -73,7 +79,6 @@ function runListening(container, items, allItems) {
           </button>
         `).join('')}
       </div>`;
-
       const keyHandler = e => {
         const tag = e.target && e.target.tagName;
         if (tag === 'INPUT' || tag === 'TEXTAREA') return;
@@ -98,6 +103,16 @@ function runListening(container, items, allItems) {
       const correct = item.type === 'response' ? item.answer_jp : item.answer_es;
       return `${correct}  ·  ${item.audio_text} (${item.audio_kana})`;
     },
+  };
+}
+
+function runListening(container, items, allItems) {
+  startExercise(container, {
+    deck: DECK,
+    items,
+    allItems,
+    getItemId: it => it.id,
+    ...examRenderer(),
     getPromptSpeechText: item => item.audio_text,
     getAnswerSpeechText: item => item.audio_text,
   });
