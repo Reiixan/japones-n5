@@ -79,16 +79,8 @@ export async function start(container, allTexts) {
   });
 }
 
-function runReading(container, items) {
-  const aggregate = createTextSrsAggregator(items, (textId, correct) => {
-    recordAnswer(DECK, textId, correct);
-  });
-
-  startExercise(container, {
-    deck: DECK,
-    items,
-    allItems: items,
-    getItemId: it => `${it.text.id}:${it.q_idx}`,
+export function examRenderer() {
+  return {
     renderPrompt(item, el) {
       const text = item.text;
       const total = text.questions.length;
@@ -154,6 +146,20 @@ function runReading(container, items) {
     getCorrectDisplay(item) {
       return item.text.questions[item.q_idx].answer_es;
     },
+  };
+}
+
+function runReading(container, items) {
+  const aggregate = createTextSrsAggregator(items, (textId, correct) => {
+    recordAnswer(DECK, textId, correct);
+  });
+
+  startExercise(container, {
+    deck: DECK,
+    items,
+    allItems: items,
+    getItemId: it => `${it.text.id}:${it.q_idx}`,
+    ...examRenderer(),
     recordResult(item, correct) {
       aggregate(item, correct);
     },
