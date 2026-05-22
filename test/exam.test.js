@@ -47,6 +47,25 @@ describe('exam.buildSections', () => {
     assertEqual(s[1].group, 1);
     assertEqual(s[2].group, 2);
   });
+
+  it('recorta dokkai a 7 preguntas con textos multi-pregunta', async () => {
+    const { buildSections } = await import('../js/exam.js?c=b3');
+    const decks = fakeDecks();
+    // Textos con 3 preguntas cada uno: expandir daría >7, debe recortar a 7.
+    decks.reading = Array.from({ length: 10 }, (_, i) => ({
+      id: `rt${i}`,
+      text_ruby: [],
+      questions: [
+        { q_es: 'q1', options_es: ['a'], answer_es: 'a' },
+        { q_es: 'q2', options_es: ['a'], answer_es: 'a' },
+        { q_es: 'q3', options_es: ['a'], answer_es: 'a' },
+      ],
+    }));
+    const s = buildSections(decks);
+    const readingQs = s[1].questions.filter(q => q.deck === 'reading');
+    assertEqual(readingQs.length, 7);
+    assertEqual(s[1].questions.length, 16);
+  });
 });
 
 describe('exam.scoreSections / diagnose', () => {

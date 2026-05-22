@@ -57,7 +57,7 @@ export function buildSections(decks) {
   ];
 
   // Hasta 7 textos -> expandir -> recortar a 7 preguntas dokkai.
-  const readingTexts = sample(decks.reading, Math.min(decks.reading.length, 7));
+  const readingTexts = sample(decks.reading, 7);
   const readingItems = expandTextsToItems(readingTexts).slice(0, 7);
   const bunpouDokkai = [
     ...sample(decks.particles, 5).map(it => q('particles', it, decks.particles, particlesR)),
