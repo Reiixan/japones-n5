@@ -28,6 +28,7 @@ function shuffle(arr) {
   return a;
 }
 
+// maxPlays: tope de reproducciones para el modo examen. Sin él, audio ilimitado (práctica).
 export function examRenderer({ maxPlays } = {}) {
   return {
     renderPrompt(item, el) {
