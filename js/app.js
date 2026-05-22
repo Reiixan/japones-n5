@@ -96,6 +96,8 @@ async function route() {
     } else if (seg1 === 'review') {
       await startReviewToday(container);
     } else if (seg1 === 'exam') {
+      // Solo los 6 bloques de las secciones del JLPT real. Verbos/adjetivos son
+      // práctica propia (en el examen se subsumen en gramática/vocabulario).
       const [vocab, kanji, particles, grammar, listening, reading] = await Promise.all([
         loadData('vocab-n5.json'),
         loadData('kanji-n5.json'),

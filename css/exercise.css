@@ -4,7 +4,7 @@
   to   { opacity: 1; transform: scale(1) translateY(0); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .ex-prompt, .review-card { animation: none !important; }
+  .ex-prompt, .review-card, .exam-card { animation: none !important; }
 }
 
 /* === Exercise wrapper === */
