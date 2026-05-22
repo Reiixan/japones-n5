@@ -64,7 +64,7 @@
 }
 .kana-display {
   font-family: var(--font-jp);
-  font-size: clamp(4rem, 18vw, 7rem); line-height: 1; font-weight: 400;
+  font-size: clamp(3.25rem, 13vw, 6rem); line-height: 1; font-weight: 400;
   color: var(--text);
   text-align: center;
 }
