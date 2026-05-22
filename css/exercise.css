@@ -840,3 +840,9 @@
   border-color: var(--c-blue); background: #eef2ff; color: var(--c-blue);
 }
 [data-theme="dark"] .exam-input .choice-btn.selected { background: #1e1b4b; }
+
+/* Móvil: que los 3 botones de navegación quepan sin partir "Terminar sección" */
+@media (max-width: 899px) {
+  .exam-nav { gap: .4rem; padding: .6rem .75rem; }
+  .exam-nav .btn-secondary { padding: .6rem .3rem; font-size: .82rem; }
+}
