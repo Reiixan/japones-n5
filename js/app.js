@@ -15,6 +15,7 @@ import { start as startReading } from './reading.js';
 import { start as startVerbs } from './verbs.js';
 import { start as startAdjectives } from './adjectives.js';
 import { start as startReviewToday } from './review-today.js';
+import { start as startExam } from './exam.js';
 import { migrateV1ToV2 } from './storage.js?v=2';
 import { initViewport } from './viewport.js';
 
@@ -94,6 +95,16 @@ async function route() {
       await startAdjectives(container, allItems);
     } else if (seg1 === 'review') {
       await startReviewToday(container);
+    } else if (seg1 === 'exam') {
+      const [vocab, kanji, particles, grammar, listening, reading] = await Promise.all([
+        loadData('vocab-n5.json'),
+        loadData('kanji-n5.json'),
+        loadData('particles.json'),
+        loadData('grammar-n5.json'),
+        loadData('listening-n5.json'),
+        loadData('reading-n5.json'),
+      ]);
+      await startExam(container, { vocab, kanji, particles, grammar, listening, reading });
     } else {
       window.navigate('/');
     }

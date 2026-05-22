@@ -179,6 +179,14 @@ export async function renderHome(container) {
           </div>
           <div class="review-card-arrow">→</div>
         </div>
+        <div class="exam-card" data-path="/exam" style="animation-delay:.12s">
+          <div class="exam-card-icon">📝</div>
+          <div class="exam-card-text">
+            <div class="exam-card-title">Simulacro JLPT N5</div>
+            <div class="exam-card-sub">90 min · 43 preguntas · cronometrado</div>
+          </div>
+          <div class="exam-card-arrow">→</div>
+        </div>
         <main class="home-grid" id="home-grid">
           ${gridHTML}
         </main>
@@ -191,6 +199,9 @@ export async function renderHome(container) {
 
   container.querySelector('.review-card')
     ?.addEventListener('click', () => window.navigate('/review'));
+
+  container.querySelector('.exam-card')
+    ?.addEventListener('click', () => window.navigate('/exam'));
 
   container.querySelectorAll('.block-card').forEach(card => {
     card.addEventListener('click', () => window.navigate(card.dataset.path));
