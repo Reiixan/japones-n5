@@ -333,7 +333,7 @@ Para evitar colisión con vocab (`v_*`):
 
 ## Fase 4 — Infraestructura
 
-**Estado**: ✅ 4.1 SRS v2 (`fase-4-srs-v2`) + ✅ 4.3 Daily goal + racha (`fase-4-daily`) + ✅ 4.5 Métricas tiempo (`fase-4-tiempo`) implementadas el 2026-05-18. Tiempo medio por respuesta se muestra en summary y media móvil de últimas 100 respuestas en stats. ⏳ 4.2 modo examen pendiente (se planificará por separado cuando se acerque examen). 🚫 4.4 PWA fuera de alcance (sesión aparte).
+**Estado**: ✅ 4.1 SRS v2 (`fase-4-srs-v2`) + ✅ 4.3 Daily goal + racha (`fase-4-daily`) + ✅ 4.5 Métricas tiempo (`fase-4-tiempo`) implementadas el 2026-05-18. Tiempo medio por respuesta se muestra en summary y media móvil de últimas 100 respuestas en stats. ✅ 4.2 modo examen JLPT (`fase-4-examen`) implementado el 2026-05-22: orquestador `js/exam.js` que reúsa el `examRenderer()` de cada bloque, 3 secciones cronometradas, scoring fiel (≥44% global + ≥32% por grupo). Spec propio en `2026-05-22-modo-examen-jlpt-design.md`. 🚫 4.4 PWA fuera de alcance (sesión aparte).
 
 ### 4.1 SRS v2 con decaimiento temporal
 
@@ -357,6 +357,8 @@ Para evitar colisión con vocab (`v_*`):
 **Pantalla nueva: "Repaso de hoy"** — accesible desde home. Recoge ítems vencidos (`dueAt <= now`) cruzando todos los bloques y los presenta en una sesión mezclada usando el motor `exercise.js`. Si no hay nada vencido: mensaje motivacional + opción "Ver lo siguiente que toca" (próximos 5 ítems por `dueAt`).
 
 ### 4.2 Modo examen JLPT cronometrado
+
+> ✅ **Implementado el 2026-05-22** (tag `fase-4-examen`). Diseño definitivo en `docs/superpowers/specs/2026-05-22-modo-examen-jlpt-design.md`. La descripción siguiente es la propuesta original; la implementación final usa el `examRenderer()` exportado por cada bloque (no un renderer genérico) y scoring por grupos (≥44% global + ≥32% por grupo) en vez de un único corte ~63%.
 
 **Botón "Simulacro N5"** en home. Estructura del examen real (versión post-2020):
 

@@ -185,7 +185,7 @@ Estado actual: 145 tests pasando. Para ejecutar: servir y abrir `http://localhos
 | 4-A — Infra: SRS v2 con decaimiento | ✅ | `fase-4-srs-v2` |
 | 4-B — Infra: daily goal + racha | ✅ | `fase-4-daily` |
 | 4-C — Infra: métricas tiempo | ✅ | `fase-4-tiempo` |
-| 4-D — Modo examen JLPT | ⏳ pendiente | — |
+| 4-D — Modo examen JLPT | ✅ | `fase-4-examen` |
 
 Planes de implementación detallados en `docs/superpowers/plans/`.
 
@@ -198,7 +198,7 @@ Planes de implementación detallados en `docs/superpowers/plans/`.
 
 ## Pendientes conocidos
 
-- **Modo examen JLPT (4-D)**: planeado y diferido conscientemente. Plan completo en `docs/superpowers/plans/2026-05-17-fase-4-infraestructura.md` (sub-fase D marcada como fuera de alcance). Cuando se retome: extraer `renderItemAsQuestion(item, container, onAnswer)` de cada bloque (vocab/kanji/particles/grammar/listening/reading) para que `js/exam.js` los reuse en vez de un renderer genérico cutre. Estructura del examen ya definida en el spec (Moji-Goi 20', Bunpou-Dokkai 40', Choukai 30').
+- **Modo examen JLPT (4-D)**: ✅ implementado (tag `fase-4-examen`). `js/exam.js` es un orquestador propio (no usa `startExercise`) que reúsa el `examRenderer()` exportado por cada bloque (vocab/kanji/particles/grammar/reading/listening; este último acepta `{maxPlays}` para el tope de audio). 3 secciones cronometradas (Moji-Goi 20', Bunpou-Dokkai 40', Choukai 30'), render perezoso con caché de nodos para prev/next, sin escritura SRS, y scoring fiel al N5 (≥44% global + ≥32% por grupo). Spec en `docs/superpowers/specs/2026-05-22-modo-examen-jlpt-design.md`, plan en `docs/superpowers/plans/2026-05-22-fase-4-examen.md`.
 - **PWA (4.4)**: fuera de alcance hasta nuevo aviso. Requeriría `manifest.webmanifest`, `service-worker.js` con cache-first, iconos 192/512, botón "Instalar app" en home tras `beforeinstallprompt`. Hugo prefiere usarla como webapp por LAN hasta valorar la inversión.
 - **Adaptación a móvil**: se intentó en sesión del 2026-05-16 con CSS media queries + `clamp(dvh)` + `:has()`, pero el kana se seguía cortando al abrir teclado en Brave/Chromium móvil. Se revirtió todo. Para retomar: usar Visual Viewport API + JS, no solo CSS dvh (en algunos Chromium móviles dvh no se actualiza con el teclado virtual).
 - **iOS Safari y bloqueo de audio automático**: la primera pregunta de listening puede no sonar sola hasta que el usuario interactúe una vez con la página. Limitación del navegador, no del código.
