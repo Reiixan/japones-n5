@@ -185,3 +185,130 @@ function attachOptionHandler(exerciseEl, correctAnswer, onAnswered) {
     });
   });
 }
+
+// ─── renderLessonIndex ────────────────────────────────────────────────────────
+
+export async function renderLessonIndex(container) {
+  const index = await fetch('./data/lessons/index.json').then(r => r.json());
+
+  container.innerHTML = `
+    <div class="lesson-index-wrap">
+      <div class="lesson-index-header">
+        <button class="btn-icon" id="lessons-back">←</button>
+        <h1>レッスン — Lecciones</h1>
+      </div>
+      <div class="lesson-index-list">
+        ${index.map((lesson, i) => {
+          const p = getLessonProgress(lesson.id);
+          const statusClass = p?.status === 'completed' ? 'completed'
+            : p?.status === 'started' ? 'started' : 'pending';
+          return `
+            <div class="lesson-index-card" data-id="${lesson.id}"
+                 role="button" tabindex="0" aria-label="${lesson.title}">
+              <div class="lesson-index-status ${statusClass}"></div>
+              <div class="lesson-index-info">
+                <div class="lesson-index-title">${i + 1}. ${lesson.title}</div>
+                <div class="lesson-index-meta">${lesson.topic} · ~${lesson.estimatedMin} min</div>
+              </div>
+              <div class="lesson-index-arrow">→</div>
+            </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+
+  document.getElementById('lessons-back').addEventListener('click', () => window.navigate('/'));
+
+  container.querySelectorAll('.lesson-index-card').forEach(card => {
+    const go = () => window.navigate(`/lessons/${card.dataset.id}`);
+    card.addEventListener('click', go);
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    });
+  });
+}
+
+// ─── renderLesson ─────────────────────────────────────────────────────────────
+
+export async function renderLesson(container, id) {
+  const [index, blocks] = await Promise.all([
+    fetch('./data/lessons/index.json').then(r => r.json()),
+    fetch(`./data/lessons/${id}.json`).then(r => r.json()),
+  ]);
+
+  const meta = index.find(l => l.id === id);
+  if (!meta) { window.navigate('/lessons'); return; }
+
+  const currentIdx = index.findIndex(l => l.id === id);
+  const nextLesson = index[currentIdx + 1] ?? null;
+
+  const contentBlocks = blocks.filter(b => !b.type.startsWith('exercise-'));
+  const exerciseBlocks = blocks.filter(b => b.type.startsWith('exercise-'));
+
+  container.innerHTML = `
+    <div class="lesson-wrap">
+      <div class="lesson-header">
+        <button class="btn-icon" id="lesson-back">←</button>
+        <h1>${meta.title}</h1>
+        <span class="lesson-topic-badge">${meta.topic}</span>
+      </div>
+      <div id="lesson-content">
+        ${contentBlocks.map(renderBlock).join('')}
+      </div>
+      <div id="lesson-exercises"></div>
+      <div class="lesson-completion" id="lesson-completion">
+        <div class="lesson-completion-score" id="lesson-score"></div>
+        <div class="lesson-completion-label">ejercicios completados</div>
+        <div class="lesson-completion-actions">
+          <button class="btn-primary" id="lesson-mark-done">Marcar como completada ✓</button>
+          ${nextLesson ? `<button class="btn-primary" id="lesson-next" style="background:var(--c-teal)">Siguiente lección →</button>` : ''}
+        </div>
+      </div>
+    </div>`;
+
+  document.getElementById('lesson-back').addEventListener('click', () => window.navigate('/lessons'));
+
+  setLessonStarted(id, 0);
+
+  const exerciseContainer = document.getElementById('lesson-exercises');
+  if (exerciseBlocks.length > 0) {
+    renderExercises(exerciseBlocks, exerciseContainer, (correct, total) => {
+      const scoreEl = document.getElementById('lesson-score');
+      scoreEl.textContent = `${correct} / ${total}`;
+      document.getElementById('lesson-completion').classList.add('visible');
+    });
+  } else {
+    document.getElementById('lesson-score').textContent = '—';
+    document.getElementById('lesson-completion').classList.add('visible');
+  }
+
+  document.getElementById('lesson-mark-done').addEventListener('click', () => {
+    setLessonCompleted(id);
+    document.getElementById('lesson-mark-done').textContent = '✓ Completada';
+    document.getElementById('lesson-mark-done').disabled = true;
+  });
+
+  const nextBtn = document.getElementById('lesson-next');
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => window.navigate(`/lessons/${nextLesson.id}`));
+  }
+
+  const progress = getLessonProgress(id);
+  if (progress?.lastBlock > 0) {
+    const allBlocks = container.querySelectorAll('.lesson-block');
+    const target = allBlocks[Math.min(progress.lastBlock, allBlocks.length - 1)];
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  const allBlocks = container.querySelectorAll('.lesson-block');
+  if (allBlocks.length > 0 && 'IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const idx = Array.from(allBlocks).indexOf(entry.target);
+          if (idx >= 0) setLessonStarted(id, idx);
+        }
+      });
+    }, { threshold: 0.3 });
+    allBlocks.forEach(b => obs.observe(b));
+  }
+}
