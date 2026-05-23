@@ -41,3 +41,44 @@ export function setLessonCompleted(id) {
   const entry = { status: 'completed', lastBlock: existing?.lastBlock ?? 0 };
   localStorage.setItem(KEY_PREFIX + id, JSON.stringify(entry));
 }
+
+// ─── Block renderers ──────────────────────────────────────────────────────────
+
+function renderBlock(block) {
+  switch (block.type) {
+    case 'text':
+      return `<div class="lesson-block lesson-text">${parseMd(block.md)}</div>`;
+
+    case 'example': {
+      const romaji = block.romaji
+        ? `<div class="lesson-example-romaji">${block.romaji}</div>`
+        : '';
+      return `
+        <div class="lesson-block lesson-example">
+          <div class="lesson-example-jp">${block.jp}</div>
+          <div class="lesson-example-es">${block.es}</div>
+          ${romaji}
+        </div>`;
+    }
+
+    case 'table': {
+      const headers = block.headers.map(h => `<th>${h}</th>`).join('');
+      const rows = block.rows.map(row =>
+        `<tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`
+      ).join('');
+      return `
+        <div class="lesson-block">
+          <table class="lesson-table">
+            <thead><tr>${headers}</tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>`;
+    }
+
+    case 'note':
+      return `<div class="lesson-block lesson-note">${parseMd(block.md)}</div>`;
+
+    default:
+      return '';
+  }
+}
