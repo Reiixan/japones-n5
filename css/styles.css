@@ -62,7 +62,7 @@ input { font-family: inherit; }
 ul { list-style: none; }
 
 /* Accesibilidad: indicador de foco visible para navegación por teclado */
-.block-card:focus-visible, .review-card:focus-visible, .exam-card:focus-visible,
+.block-card:focus-visible, .review-card:focus-visible, .exam-card:focus-visible, .lesson-home-card:focus-visible,
 .mode-card:focus-visible, .choice-btn:focus-visible, .btn-icon:focus-visible {
   outline: 2px solid var(--c-blue);
   outline-offset: 2px;

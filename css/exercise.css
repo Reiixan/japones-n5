@@ -794,6 +794,22 @@
 .exam-card-sub { font-size: 0.85rem; opacity: 0.9; }
 .exam-card-arrow { font-size: 1.4rem; opacity: 0.85; }
 
+.lesson-home-card {
+  display: flex; align-items: center; gap: 0.8rem;
+  padding: 0.9rem 1.1rem;
+  background: linear-gradient(135deg, var(--c-green), var(--c-teal));
+  color: #fff; border-radius: 12px; margin: 0 0 1rem;
+  cursor: pointer; box-shadow: 0 2px 16px rgba(34,197,94,.2);
+  transition: transform .15s ease, box-shadow .15s ease;
+  animation: cardEnter .4s ease both;
+}
+.lesson-home-card:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(34,197,94,.28); }
+.lesson-home-card-icon { font-size: 2rem; }
+.lesson-home-card-text { flex: 1; }
+.lesson-home-card-title { font-weight: 700; font-size: 1.05rem; }
+.lesson-home-card-sub { font-size: 0.85rem; opacity: 0.9; }
+.lesson-home-card-arrow { font-size: 1.4rem; opacity: 0.85; }
+
 .exam-intro main { padding: 0 .25rem; display: flex; flex-direction: column; gap: 1rem; }
 .exam-intro-text { color: var(--text-muted); font-size: .95rem; line-height: 1.5; }
 .exam-intro-note { font-size: .85rem; color: var(--text-muted); }

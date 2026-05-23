@@ -229,6 +229,19 @@ export async function renderLessonIndex(container) {
   });
 }
 
+const PRACTICE_PATH = {
+  hiragana:   { path: '/hiragana',           label: 'hiragana' },
+  katakana:   { path: '/katakana',           label: 'katakana' },
+  vocab:      { path: '/vocab/jp-es',        label: 'vocabulario' },
+  kanji:      { path: '/kanji/practice',     label: 'kanji' },
+  particles:  { path: '/particles/practice', label: 'partículas' },
+  grammar:    { path: '/grammar/practice',   label: 'gramática' },
+  verbs:      { path: '/verbs/practice',     label: 'verbos' },
+  adjectives: { path: '/adjectives/practice',label: 'adjetivos' },
+  listening:  { path: '/listening',          label: 'escucha' },
+  reading:    { path: '/reading',            label: 'lectura' },
+};
+
 // ─── renderLesson ─────────────────────────────────────────────────────────────
 
 export async function renderLesson(container, id) {
@@ -263,6 +276,7 @@ export async function renderLesson(container, id) {
         <div class="lesson-completion-label">ejercicios completados</div>
         <div class="lesson-completion-actions">
           <button class="btn-primary" id="lesson-mark-done">Marcar como completada ✓</button>
+          ${PRACTICE_PATH[meta.blockId] ? `<button class="btn-secondary" id="lesson-practice">Practicar ${PRACTICE_PATH[meta.blockId].label} →</button>` : ''}
           ${nextLesson ? `<button class="btn-primary" id="lesson-next" style="background:var(--c-teal)">Siguiente lección →</button>` : ''}
         </div>
       </div>
@@ -297,6 +311,11 @@ export async function renderLesson(container, id) {
     const btn = document.getElementById('lesson-mark-done');
     btn.textContent = '✓ Completada';
     btn.disabled = true;
+  }
+
+  const practiceBtn = document.getElementById('lesson-practice');
+  if (practiceBtn) {
+    practiceBtn.addEventListener('click', () => window.navigate(PRACTICE_PATH[meta.blockId].path));
   }
 
   const nextBtn = document.getElementById('lesson-next');

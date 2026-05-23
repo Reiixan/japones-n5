@@ -180,7 +180,15 @@ export async function renderHome(container) {
           </div>
           <div class="review-card-arrow">→</div>
         </div>
-        <div class="exam-card" data-path="/exam" role="button" tabindex="0" aria-label="Simulacro JLPT N5" style="animation-delay:.12s">
+        <div class="lesson-home-card" id="lesson-home-card" role="button" tabindex="0" aria-label="Lecciones" style="animation-delay:.12s">
+          <div class="lesson-home-card-icon">📚</div>
+          <div class="lesson-home-card-text">
+            <div class="lesson-home-card-title">Lecciones</div>
+            <div class="lesson-home-card-sub" id="lesson-home-sub">Calculando…</div>
+          </div>
+          <div class="lesson-home-card-arrow">→</div>
+        </div>
+        <div class="exam-card" data-path="/exam" role="button" tabindex="0" aria-label="Simulacro JLPT N5" style="animation-delay:.16s">
           <div class="exam-card-icon">📝</div>
           <div class="exam-card-text">
             <div class="exam-card-title">Simulacro JLPT N5</div>
@@ -203,6 +211,28 @@ export async function renderHome(container) {
 
   const examCard = container.querySelector('.exam-card');
   if (examCard) activate(examCard, () => window.navigate('/exam'));
+
+  // Lesson card: async load progress, then wire click
+  (async () => {
+    const index = await fetch('./data/lessons/index.json').then(r => r.json());
+    const completed = index.filter(l => {
+      const raw = localStorage.getItem('jp_n5_lesson.' + l.id);
+      return raw && JSON.parse(raw).status === 'completed';
+    });
+    const next = index.find(l => {
+      const raw = localStorage.getItem('jp_n5_lesson.' + l.id);
+      return !raw || JSON.parse(raw).status !== 'completed';
+    }) ?? index[index.length - 1];
+
+    const sub = document.getElementById('lesson-home-sub');
+    if (sub) {
+      sub.textContent = completed.length === index.length
+        ? `¡Todas completadas! (${index.length}/${index.length})`
+        : `${completed.length}/${index.length} completadas · Siguiente: ${next.title}`;
+    }
+    const card = document.getElementById('lesson-home-card');
+    if (card) activate(card, () => window.navigate('/lessons/' + next.id));
+  })();
 
   container.querySelectorAll('.block-card').forEach(card => {
     activate(card, () => window.navigate(card.dataset.path));
