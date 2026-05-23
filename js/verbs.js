@@ -47,7 +47,11 @@ function escapeAttr(s) {
   return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-export async function start(container, allVerbs) {
+export async function start(container, allVerbs, mode) {
+  if (!mode) {
+    renderModeMenu(container);
+    return;
+  }
   showSessionConfig(container, {
     title: 'Verbos 動詞',
     subtitle: 'Mira el verbo en diccionario, su grupo y la forma pedida. Elige la conjugación correcta.',
@@ -56,6 +60,33 @@ export async function start(container, allVerbs) {
       const items = verbs.map(v => buildItem(v, pickRandomForm()));
       runVerbs(container, items, allVerbs);
     },
+  });
+}
+
+function renderModeMenu(container) {
+  container.innerHTML = `
+    <div class="page">
+      <header class="page-header">
+        <button class="btn-icon" id="verbs-menu-back">←</button>
+        <h1>Verbos 動詞</h1>
+      </header>
+      <main class="mode-grid">
+        <div class="mode-card" data-path="/lessons/l07-verbos-masu">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección</div>
+          <div class="mode-desc">Verbos en forma ます · ~10 min</div>
+        </div>
+        <div class="mode-card" data-path="/verbs/practice">
+          <div class="mode-icon">📝</div>
+          <div class="mode-label">Practicar</div>
+          <div class="mode-desc">Conjugación de los 8 tipos N5</div>
+        </div>
+      </main>
+    </div>
+  `;
+  document.getElementById('verbs-menu-back').addEventListener('click', () => window.navigate('/'));
+  container.querySelectorAll('.mode-card').forEach(card => {
+    card.addEventListener('click', () => window.navigate(card.dataset.path));
   });
 }
 

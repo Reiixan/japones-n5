@@ -4,7 +4,11 @@ import { renderSpeakButton, attachSpeakHandler, isAutoOn, speak } from './tts.js
 
 const DECK = 'particles';
 
-export async function start(container, allItems) {
+export async function start(container, allItems, mode) {
+  if (!mode) {
+    renderModeMenu(container);
+    return;
+  }
   showSessionConfig(container, {
     title: 'Partículas',
     subtitle: 'Completa la oración con la partícula correcta.',
@@ -12,6 +16,33 @@ export async function start(container, allItems) {
       const items = selectSession(DECK, allItems, size);
       runParticles(container, items, allItems);
     },
+  });
+}
+
+function renderModeMenu(container) {
+  container.innerHTML = `
+    <div class="page">
+      <header class="page-header">
+        <button class="btn-icon" id="particles-menu-back">←</button>
+        <h1>Partículas</h1>
+      </header>
+      <main class="mode-grid">
+        <div class="mode-card" data-path="/lessons/l06-particulas">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección</div>
+          <div class="mode-desc">は、が、を、に、で · ~12 min</div>
+        </div>
+        <div class="mode-card" data-path="/particles/practice">
+          <div class="mode-icon">📝</div>
+          <div class="mode-label">Practicar</div>
+          <div class="mode-desc">Completa oraciones con la partícula correcta</div>
+        </div>
+      </main>
+    </div>
+  `;
+  document.getElementById('particles-menu-back').addEventListener('click', () => window.navigate('/'));
+  container.querySelectorAll('.mode-card').forEach(card => {
+    card.addEventListener('click', () => window.navigate(card.dataset.path));
   });
 }
 

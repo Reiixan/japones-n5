@@ -16,7 +16,7 @@ import { start as startVerbs } from './verbs.js';
 import { start as startAdjectives } from './adjectives.js';
 import { start as startReviewToday } from './review-today.js';
 import { start as startExam } from './exam.js';
-import { renderLessonIndex, renderLesson } from './lessons.js';
+import { renderLesson } from './lessons.js';
 import { migrateV1ToV2 } from './storage.js?v=2';
 import { initViewport } from './viewport.js';
 
@@ -78,10 +78,14 @@ async function route() {
       await startKanji(container, allItems);
     } else if (seg1 === 'particles') {
       const allItems = await loadData('particles.json');
-      await startParticles(container, allItems);
+      if (!seg2) await startParticles(container, allItems, null);
+      else if (seg2 === 'practice') await startParticles(container, allItems, 'practice');
+      else window.navigate('/particles');
     } else if (seg1 === 'grammar') {
       const allItems = await loadData('grammar-n5.json');
-      await startGrammar(container, allItems);
+      if (!seg2) await startGrammar(container, allItems, null);
+      else if (seg2 === 'practice') await startGrammar(container, allItems, 'practice');
+      else window.navigate('/grammar');
     } else if (seg1 === 'listening') {
       const allItems = await loadData('listening-n5.json');
       await startListening(container, allItems);
@@ -90,16 +94,17 @@ async function route() {
       await startReading(container, allItems);
     } else if (seg1 === 'verbs') {
       const allItems = await loadData('verbs-n5.json');
-      await startVerbs(container, allItems);
+      if (!seg2) await startVerbs(container, allItems, null);
+      else if (seg2 === 'practice') await startVerbs(container, allItems, 'practice');
+      else window.navigate('/verbs');
     } else if (seg1 === 'adjectives') {
       const allItems = await loadData('adjectives-n5.json');
-      await startAdjectives(container, allItems);
+      if (!seg2) await startAdjectives(container, allItems, null);
+      else if (seg2 === 'practice') await startAdjectives(container, allItems, 'practice');
+      else window.navigate('/adjectives');
     } else if (seg1 === 'lessons') {
-      if (!seg2) {
-        await renderLessonIndex(container);
-      } else {
-        await renderLesson(container, seg2);
-      }
+      if (seg2) await renderLesson(container, seg2);
+      else window.navigate('/');
     } else if (seg1 === 'review') {
       await startReviewToday(container);
     } else if (seg1 === 'exam') {

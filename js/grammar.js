@@ -4,7 +4,11 @@ import { renderSpeakButton, attachSpeakHandler, isAutoOn, speak } from './tts.js
 
 const DECK = 'grammar';
 
-export async function start(container, allItems) {
+export async function start(container, allItems, mode) {
+  if (!mode) {
+    renderModeMenu(container);
+    return;
+  }
   showSessionConfig(container, {
     title: 'Gramática N5',
     subtitle: 'Aprende los patrones y pon a prueba tu comprensión.',
@@ -12,6 +16,33 @@ export async function start(container, allItems) {
       const items = selectSession(DECK, allItems, size);
       runGrammar(container, items, allItems);
     },
+  });
+}
+
+function renderModeMenu(container) {
+  container.innerHTML = `
+    <div class="page">
+      <header class="page-header">
+        <button class="btn-icon" id="grammar-menu-back">←</button>
+        <h1>Gramática N5</h1>
+      </header>
+      <main class="mode-grid">
+        <div class="mode-card" data-path="/lessons/l05-copula">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección</div>
+          <div class="mode-desc">La cópula: です y ではありません · ~9 min</div>
+        </div>
+        <div class="mode-card" data-path="/grammar/practice">
+          <div class="mode-icon">📝</div>
+          <div class="mode-label">Practicar</div>
+          <div class="mode-desc">40 patrones N5 con SRS</div>
+        </div>
+      </main>
+    </div>
+  `;
+  document.getElementById('grammar-menu-back').addEventListener('click', () => window.navigate('/'));
+  container.querySelectorAll('.mode-card').forEach(card => {
+    card.addEventListener('click', () => window.navigate(card.dataset.path));
   });
 }
 

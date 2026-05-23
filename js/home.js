@@ -93,19 +93,9 @@ const BLOCKS = [
     color: 'var(--c-pink)',
     path: '/adjectives',
   },
-  {
-    id: 'lessons',
-    label: 'Lecciones',
-    jp: 'レッスン',
-    file: null,
-    desc: 'Cargando…',
-    color: 'var(--c-teal)',
-    path: '/lessons',
-  },
 ];
 
 const SECTIONS = [
-  { label: 'Libro',        ids: ['lessons'] },
   { label: 'Escritura',    ids: ['hiragana', 'katakana'] },
   { label: 'Vocabulario',  ids: ['vocab', 'kanji'] },
   { label: 'Gramática',    ids: ['particles', 'grammar', 'verbs', 'adjectives'] },
@@ -245,28 +235,14 @@ export async function renderHome(container) {
       : `${totalDue} ítem${totalDue === 1 ? '' : 's'} vencido${totalDue === 1 ? '' : 's'}`;
   }
 
-  // Actualizar tarjeta Lecciones con progreso real
-  const lessonsCard = container.querySelector('.block-card[data-id="lessons"]');
-  if (lessonsCard) {
-    try {
-      const lessonIndex = await loadData('lessons/index.json');
-      const completed = lessonIndex.filter(l => {
-        const raw = localStorage.getItem('jp_n5_lesson.' + l.id);
-        return raw && JSON.parse(raw).status === 'completed';
-      }).length;
-      lessonsCard.classList.remove('loading');
-      lessonsCard.querySelector('.block-desc').textContent =
-        `${completed} / ${lessonIndex.length} completadas`;
-      lessonsCard.querySelector('.block-progress').style.display = 'none';
-    } catch (_) {
-      lessonsCard.classList.remove('loading');
-      lessonsCard.querySelector('.block-desc').textContent = '8 lecciones';
-    }
-  }
 }
 
 export function renderKanaMenu(container, deck) {
   const deckLabel = deck === 'hiragana' ? 'Hiragana ひらがな' : 'Katakana カタカナ';
+  const lessonId  = deck === 'hiragana' ? 'l01-hiragana' : 'l02-katakana';
+  const lessonDesc = deck === 'hiragana'
+    ? 'Vocales y primeros sonidos · ~10 min'
+    : 'Para palabras extranjeras · ~8 min';
   const MODES = [
     { mode: 'typing',  icon: '⌨️', label: 'Escribir Romaji',  desc: 'Ve el kana y escribe su romaji' },
     { mode: 'choice',  icon: '🔘', label: 'Opción Múltiple',  desc: 'Ve el kana y elige 1 de 4 romaji' },
@@ -283,6 +259,13 @@ export function renderKanaMenu(container, deck) {
         <h1>${deckLabel}</h1>
       </header>
       <main class="mode-grid">
+        <div class="mode-card" data-path="/lessons/${lessonId}" role="button" tabindex="0" aria-label="Lección">
+          <div class="mode-icon">📖</div>
+          <div>
+            <div class="mode-label">Lección</div>
+            <div class="mode-desc">${lessonDesc}</div>
+          </div>
+        </div>
         ${MODES.map(m => `
           <div class="mode-card" data-mode="${m.mode}" role="button" tabindex="0" aria-label="${m.label}">
             <div class="mode-icon">${m.icon}</div>
@@ -298,7 +281,8 @@ export function renderKanaMenu(container, deck) {
 
   document.getElementById('menu-back').addEventListener('click', () => window.navigate('/'));
   container.querySelectorAll('.mode-card').forEach(card => {
-    activate(card, () => window.navigate(`/${deck}/${card.dataset.mode}`));
+    const path = card.dataset.path ?? `/${deck}/${card.dataset.mode}`;
+    activate(card, () => window.navigate(path));
   });
 }
 

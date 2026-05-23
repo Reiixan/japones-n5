@@ -41,7 +41,11 @@ function escapeAttr(s) {
   return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-export async function start(container, allAdj) {
+export async function start(container, allAdj, mode) {
+  if (!mode) {
+    renderModeMenu(container);
+    return;
+  }
   showSessionConfig(container, {
     title: 'Adjetivos 形容詞',
     subtitle: 'Mira el adjetivo, su tipo y la forma pedida. Elige la conjugación correcta.',
@@ -50,6 +54,33 @@ export async function start(container, allAdj) {
       const items = adjs.map(a => buildItem(a, pickRandomForm(a.type)));
       runAdjectives(container, items, allAdj);
     },
+  });
+}
+
+function renderModeMenu(container) {
+  container.innerHTML = `
+    <div class="page">
+      <header class="page-header">
+        <button class="btn-icon" id="adjectives-menu-back">←</button>
+        <h1>Adjetivos 形容詞</h1>
+      </header>
+      <main class="mode-grid">
+        <div class="mode-card" data-path="/lessons/l08-adjetivos">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección</div>
+          <div class="mode-desc">Adjetivos い y な · ~9 min</div>
+        </div>
+        <div class="mode-card" data-path="/adjectives/practice">
+          <div class="mode-icon">📝</div>
+          <div class="mode-label">Practicar</div>
+          <div class="mode-desc">い/な adjetivos N5 con SRS</div>
+        </div>
+      </main>
+    </div>
+  `;
+  document.getElementById('adjectives-menu-back').addEventListener('click', () => window.navigate('/'));
+  container.querySelectorAll('.mode-card').forEach(card => {
+    card.addEventListener('click', () => window.navigate(card.dataset.path));
   });
 }
 

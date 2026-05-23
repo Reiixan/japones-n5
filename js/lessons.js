@@ -268,7 +268,7 @@ export async function renderLesson(container, id) {
       </div>
     </div>`;
 
-  document.getElementById('lesson-back').addEventListener('click', () => window.navigate('/lessons'));
+  document.getElementById('lesson-back').addEventListener('click', () => window.navigate('/' + meta.blockId));
   document.getElementById('lesson-kana-btn').addEventListener('click', showKanaModal);
 
   // Read progress BEFORE setLessonStarted overwrites lastBlock

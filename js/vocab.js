@@ -25,6 +25,10 @@ export async function start(container, allItems, mode) {
 }
 
 function renderModeMenu(container) {
+  const LESSONS = [
+    { id: 'l03-saludos', label: 'Saludos y presentaciones', desc: '~7 min' },
+    { id: 'l04-numeros', label: 'Números del 1 al 100',     desc: '~8 min' },
+  ];
   const MODES = [
     { mode: 'jp-es', icon: '🇯🇵→🇪🇸', label: 'JP → ES', desc: 'Lees la palabra japonesa y eliges el significado' },
     { mode: 'es-jp', icon: '🇪🇸→🇯🇵', label: 'ES → JP', desc: 'Lees el significado y eliges la palabra japonesa' },
@@ -36,6 +40,13 @@ function renderModeMenu(container) {
         <h1>Vocabulario N5</h1>
       </header>
       <main class="mode-grid">
+        ${LESSONS.map(l => `
+          <div class="mode-card" data-path="/lessons/${l.id}">
+            <div class="mode-icon">📖</div>
+            <div class="mode-label">${l.label}</div>
+            <div class="mode-desc">${l.desc}</div>
+          </div>
+        `).join('')}
         ${MODES.map(m => `
           <div class="mode-card" data-mode="${m.mode}">
             <div class="mode-icon">${m.icon}</div>
@@ -48,7 +59,8 @@ function renderModeMenu(container) {
   `;
   document.getElementById('vocab-menu-back').addEventListener('click', () => window.navigate('/'));
   container.querySelectorAll('.mode-card').forEach(card => {
-    card.addEventListener('click', () => window.navigate(`/vocab/${card.dataset.mode}`));
+    const path = card.dataset.path ?? `/vocab/${card.dataset.mode}`;
+    card.addEventListener('click', () => window.navigate(path));
   });
 }
 
