@@ -43,3 +43,43 @@ describe('parseMd — listas', () => {
     assertEqual(result, '<ul><li>alfa</li><li>beta</li></ul>');
   });
 });
+
+describe('getLessonProgress — sin datos', () => {
+  it('devuelve null si no hay entrada en localStorage', async () => {
+    localStorage.removeItem('jp_n5_lesson.l01-hiragana');
+    const { getLessonProgress } = await import('../js/lessons.js?c=lp1');
+    assertEqual(getLessonProgress('l01-hiragana'), null);
+  });
+});
+
+describe('setLessonStarted / getLessonProgress', () => {
+  it('graba status=started y lastBlock', async () => {
+    localStorage.removeItem('jp_n5_lesson.test-abc');
+    const { setLessonStarted, getLessonProgress } = await import('../js/lessons.js?c=lp2');
+    setLessonStarted('test-abc', 3);
+    const p = getLessonProgress('test-abc');
+    assertEqual(p.status, 'started');
+    assertEqual(p.lastBlock, 3);
+    localStorage.removeItem('jp_n5_lesson.test-abc');
+  });
+});
+
+describe('setLessonCompleted / getLessonProgress', () => {
+  it('graba status=completed', async () => {
+    localStorage.removeItem('jp_n5_lesson.test-xyz');
+    const { setLessonCompleted, getLessonProgress } = await import('../js/lessons.js?c=lp3');
+    setLessonCompleted('test-xyz');
+    const p = getLessonProgress('test-xyz');
+    assertEqual(p.status, 'completed');
+    localStorage.removeItem('jp_n5_lesson.test-xyz');
+  });
+  it('setLessonCompleted preserva lastBlock si ya existía', async () => {
+    localStorage.setItem('jp_n5_lesson.test-xyz2', JSON.stringify({ status: 'started', lastBlock: 5 }));
+    const { setLessonCompleted, getLessonProgress } = await import('../js/lessons.js?c=lp4');
+    setLessonCompleted('test-xyz2');
+    const p = getLessonProgress('test-xyz2');
+    assertEqual(p.status, 'completed');
+    assertEqual(p.lastBlock, 5);
+    localStorage.removeItem('jp_n5_lesson.test-xyz2');
+  });
+});
