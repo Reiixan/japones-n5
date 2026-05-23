@@ -1,0 +1,12 @@
+[
+  {"type":"text","md":"Los verbos japoneses en registro formal usan la terminación **ます** (presente/futuro). La negación es **ません**, el pasado **ました** y el pasado negativo **ませんでした**."},
+  {"type":"table","headers":["Forma","Terminación","Ejemplo (食べる = comer)"],"rows":[["Presente/futuro afirmativo","～ます","食べます (como)"],["Presente/futuro negativo","～ません","食べません (no como)"],["Pasado afirmativo","～ました","食べました (comí)"],["Pasado negativo","～ませんでした","食べませんでした (no comí)"]]},
+  {"type":"example","jp":"毎日日本語を勉強します。","es":"Estudio japonés todos los días.","romaji":"Mainichi nihongo wo benkyō shimasu."},
+  {"type":"example","jp":"昨日、映画を見ませんでした。","es":"Ayer no vi ninguna película.","romaji":"Kinō, eiga wo mimasendeshita."},
+  {"type":"note","md":"La forma ます siempre va al **final** de la oración. El objeto directo va antes del verbo, marcado con を."},
+  {"type":"exercise-mc","prompt":"¿Cómo se dice 'no como' en japonés (presente, formal)?","options":["食べません","食べます","食べました","食べませんでした"],"answer":"食べません"},
+  {"type":"exercise-mc","prompt":"¿Qué terminación indica pasado afirmativo en forma ます?","options":["～ました","～ます","～ません","～ませんでした"],"answer":"～ました"},
+  {"type":"exercise-mc","prompt":"毎日日本語を___ します。¿Qué verbo completa 'Estudio japonés todos los días'?","options":["勉強","食べ","見","行き"],"answer":"勉強"},
+  {"type":"exercise-gap","prompt":"昨日、映画を見___ 。(Ayer vi una película)","options":["ました","ます","ません","ませんでした"],"answer":"ました","hint":"pasado afirmativo"},
+  {"type":"exercise-gap","prompt":"明日、学校に行___ 。(Mañana iré a la escuela)","options":["きます","きました","きません","きませんでした"],"answer":"きます","hint":"presente/futuro afirmativo"}
+]

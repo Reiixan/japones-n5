@@ -1,0 +1,12 @@
+[
+  {"type":"text","md":"La **cópula** es el equivalente japonés del verbo 'ser/estar'. La forma formal es **です** y su negación es **ではありません** (o **じゃないです** en registro informal)."},
+  {"type":"example","jp":"私は学生です。","es":"Soy estudiante.","romaji":"Watashi wa gakusei desu."},
+  {"type":"example","jp":"これは本です。","es":"Esto es un libro.","romaji":"Kore wa hon desu."},
+  {"type":"example","jp":"田中さんは先生ではありません。","es":"El señor Tanaka no es profesor.","romaji":"Tanaka-san wa sensei dewa arimasen."},
+  {"type":"table","headers":["Forma","Japonés","Uso"],"rows":[["Presente afirmativo","～です","Es / soy / eres"],["Presente negativo","～ではありません","No es / no soy"],["Pasado afirmativo","～でした","Era / fue"],["Pasado negativo","～ではありませんでした","No era / no fue"]]},
+  {"type":"note","md":"La partícula **は** (se lee 'wa') marca el tema de la oración. No es el sonido 'ha' en este contexto — es una excepción ortográfica del japonés."},
+  {"type":"exercise-mc","prompt":"¿Cómo se dice 'No soy médico' en japonés?","options":["医者ではありません","医者です","医者でした","医者がありません"],"answer":"医者ではありません"},
+  {"type":"exercise-mc","prompt":"¿Cuál es el pasado afirmativo de です?","options":["でした","ではありません","です","じゃないです"],"answer":"でした"},
+  {"type":"exercise-gap","prompt":"これは ___ です。 (Esto es un libro.)","options":["本","水","山","川"],"answer":"本","hint":"hon = libro"},
+  {"type":"exercise-gap","prompt":"私は学生 ___。 (Soy estudiante, formal)","options":["です","でした","ではありません","じゃない"],"answer":"です","hint":"presente afirmativo formal"}
+]

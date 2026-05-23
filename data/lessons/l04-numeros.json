@@ -1,0 +1,13 @@
+[
+  {"type":"text","md":"El japonés usa un sistema decimal estándar. Los números del 1 al 10 se memorizan individualmente; del 11 en adelante se combinan (じゅういち = 10+1 = 11)."},
+  {"type":"table","headers":["Número","Kanji","Lectura"],"rows":[["1","一","いち"],["2","二","に"],["3","三","さん"],["4","四","し / よん"],["5","五","ご"],["6","六","ろく"],["7","七","しち / なな"],["8","八","はち"],["9","九","く / きゅう"],["10","十","じゅう"]]},
+  {"type":"note","md":"4 y 7 tienen dos lecturas. **よん** y **なな** son más comunes en el habla cotidiana porque し y しち pueden confundirse."},
+  {"type":"example","jp":"じゅうに","es":"12 (10+2)","romaji":"jūni"},
+  {"type":"example","jp":"にじゅうご","es":"25 (2×10+5)","romaji":"nijūgo"},
+  {"type":"example","jp":"ひゃく","es":"100","romaji":"hyaku"},
+  {"type":"exercise-mc","prompt":"¿Cómo se dice '7' en japonés (forma más común)?","options":["なな","し","ご","はち"],"answer":"なな"},
+  {"type":"exercise-mc","prompt":"¿Qué número es じゅうご?","options":["15","50","5","51"],"answer":"15"},
+  {"type":"exercise-mc","prompt":"¿Cómo se escribe 3 en kanji?","options":["三","二","四","五"],"answer":"三"},
+  {"type":"exercise-gap","prompt":"8 en japonés: ___","options":["はち","ろく","く","さん"],"answer":"はち","hint":"suena a 'hachi'"},
+  {"type":"exercise-gap","prompt":"にじゅう significa: ___","options":["20","12","2","200"],"answer":"20","hint":"に=2, じゅう=10"}
+]

@@ -1,0 +1,13 @@
+[
+  {"type":"text","md":"El **katakana** (カタカナ) tiene los mismos sonidos que el hiragana, pero se usa para palabras de origen extranjero (préstamos), nombres extranjeros y onomatopeyas.\n\nLos caracteres son más angulares que los del hiragana."},
+  {"type":"table","headers":["Hiragana","Katakana","Romaji"],"rows":[["あ","ア","a"],["い","イ","i"],["う","ウ","u"],["え","エ","e"],["お","オ","o"]]},
+  {"type":"example","jp":"テレビ","es":"televisión","romaji":"terebi"},
+  {"type":"example","jp":"コーヒー","es":"café","romaji":"kōhī"},
+  {"type":"example","jp":"アイスクリーム","es":"helado","romaji":"aisu kurīmu"},
+  {"type":"note","md":"La raya larga **ー** (chōonpu) alarga la vocal anterior. コーヒー → kōhī (no kōhi)."},
+  {"type":"exercise-mc","prompt":"¿Para qué se usa principalmente el katakana?","options":["Palabras extranjeras","Partículas gramaticales","Verbos conjugados","Kanji antiguos"],"answer":"Palabras extranjeras"},
+  {"type":"exercise-mc","prompt":"¿Cómo se escribe 'terebi' (televisión) en katakana?","options":["テレビ","てれび","テレベ","トレビ"],"answer":"テレビ"},
+  {"type":"exercise-mc","prompt":"El katakana ア equivale al hiragana…","options":["あ","お","え","い"],"answer":"あ"},
+  {"type":"exercise-tf","statement":"El katakana se usa para escribir palabras de origen extranjero.","answer":true},
+  {"type":"exercise-tf","statement":"コーヒー se pronuncia 'kohi' sin alargar vocales.","answer":false}
+]

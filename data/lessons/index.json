@@ -1,0 +1,10 @@
+[
+  { "id": "l01-hiragana",    "title": "Hiragana: vocales y primeros sonidos", "topic": "escritura",    "estimatedMin": 10 },
+  { "id": "l02-katakana",    "title": "Katakana: para palabras extranjeras",  "topic": "escritura",    "estimatedMin": 8  },
+  { "id": "l03-saludos",     "title": "Saludos y presentaciones",             "topic": "vocabulario",  "estimatedMin": 7  },
+  { "id": "l04-numeros",     "title": "Números del 1 al 100",                 "topic": "vocabulario",  "estimatedMin": 8  },
+  { "id": "l05-copula",      "title": "La cópula: です y ではありません",       "topic": "gramática",    "estimatedMin": 9  },
+  { "id": "l06-particulas",  "title": "Partículas は、が、を、に、で",           "topic": "gramática",    "estimatedMin": 12 },
+  { "id": "l07-verbos-masu", "title": "Verbos en forma ます",                 "topic": "gramática",    "estimatedMin": 10 },
+  { "id": "l08-adjetivos",   "title": "Adjetivos い y な",                    "topic": "gramática",    "estimatedMin": 9  }
+]

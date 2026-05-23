@@ -1,0 +1,14 @@
+[
+  {"type":"text","md":"Los **saludos** son las primeras palabras que aprendes en japonés. El japonés formal usa ございます para mayor cortesía."},
+  {"type":"example","jp":"おはようございます。","es":"Buenos días. (formal)","romaji":"Ohayō gozaimasu."},
+  {"type":"example","jp":"こんにちは。","es":"Hola / Buenas tardes.","romaji":"Konnichiwa."},
+  {"type":"example","jp":"こんばんは。","es":"Buenas noches.","romaji":"Konbanwa."},
+  {"type":"example","jp":"ありがとうございます。","es":"Muchas gracias. (formal)","romaji":"Arigatō gozaimasu."},
+  {"type":"example","jp":"すみません。","es":"Perdón / Disculpe.","romaji":"Sumimasen."},
+  {"type":"example","jp":"はじめまして。","es":"Mucho gusto. (primer encuentro)","romaji":"Hajimemashite."},
+  {"type":"note","md":"**おはよう** (sin ございます) es la versión informal, para amigos y familia. Con desconocidos siempre se usa la forma formal."},
+  {"type":"exercise-mc","prompt":"¿Cómo se dice 'buenas noches' en japonés?","options":["こんばんは","こんにちは","おはようございます","さようなら"],"answer":"こんばんは"},
+  {"type":"exercise-mc","prompt":"¿Cuál de estas expresiones significa 'mucho gusto' (primer encuentro)?","options":["はじめまして","ありがとう","すみません","おはよう"],"answer":"はじめまして"},
+  {"type":"exercise-gap","prompt":"___ (Buenos días, formal)","options":["おはようございます","こんにちは","こんばんは","ありがとう"],"answer":"おはようございます","hint":"empieza por おはよう"},
+  {"type":"exercise-gap","prompt":"___ (Muchas gracias, formal)","options":["ありがとうございます","すみません","はじめまして","おはようございます"],"answer":"ありがとうございます","hint":"empieza por ありがとう"}
+]

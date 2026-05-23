@@ -1,0 +1,14 @@
+[
+  {"type":"text","md":"Las **partículas** son pequeñas palabras que indican la función gramatical de cada elemento en la oración. No tienen equivalente directo en español."},
+  {"type":"example","jp":"私は学生です。","es":"(Yo) soy estudiante. [は = tema]","romaji":"Watashi wa gakusei desu."},
+  {"type":"example","jp":"猫がいます。","es":"Hay un gato. [が = sujeto]","romaji":"Neko ga imasu."},
+  {"type":"example","jp":"本を読みます。","es":"Leo un libro. [を = objeto directo]","romaji":"Hon wo yomimasu."},
+  {"type":"example","jp":"学校に行きます。","es":"Voy a la escuela. [に = destino]","romaji":"Gakkō ni ikimasu."},
+  {"type":"example","jp":"公園で遊びます。","es":"Juego en el parque. [で = lugar de acción]","romaji":"Kōen de asobimasu."},
+  {"type":"note","md":"**は vs が**: は marca el *tema* (lo que ya conocemos); が marca el *sujeto* nuevo o contrastado. Esta distinción es sutil y se adquiere con la práctica."},
+  {"type":"exercise-mc","prompt":"¿Qué partícula marca el objeto directo de la acción?","options":["を","は","が","で"],"answer":"を"},
+  {"type":"exercise-mc","prompt":"学校___ 行きます。(Voy a la escuela) — ¿qué partícula?","options":["に","を","は","で"],"answer":"に"},
+  {"type":"exercise-mc","prompt":"¿Qué partícula indica el lugar donde ocurre una acción?","options":["で","に","を","が"],"answer":"で"},
+  {"type":"exercise-gap","prompt":"本___ 読みます。(Leo un libro)","options":["を","は","が","で"],"answer":"を","hint":"objeto directo"},
+  {"type":"exercise-gap","prompt":"私___ 学生です。(Soy estudiante — hablo de mí)","options":["は","が","を","に"],"answer":"は","hint":"partícula de tema"}
+]

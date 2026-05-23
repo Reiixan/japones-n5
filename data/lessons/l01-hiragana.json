@@ -1,0 +1,13 @@
+[
+  {"type":"text","md":"El **hiragana** (ひらがな) es el sistema de escritura más básico del japonés. Se usa para palabras nativas, partículas gramaticales y conjugaciones verbales.\n\nTiene 46 caracteres base. Cada carácter representa una sílaba (mora)."},
+  {"type":"table","headers":["Kana","Romaji","Ejemplo"],"rows":[["あ","a","あめ (lluvia)"],["い","i","いぬ (perro)"],["う","u","うた (canción)"],["え","e","えき (estación)"],["お","o","おかし (dulce)"]]},
+  {"type":"note","md":"En japonés, cada sílaba tiene la misma duración. No hay acento de intensidad como en español."},
+  {"type":"table","headers":["Kana","Romaji","Ejemplo"],"rows":[["か","ka","かさ (paraguas)"],["き","ki","きって (sello)"],["く","ku","くつ (zapato)"],["け","ke","けさ (esta mañana)"],["こ","ko","こども (niño)"]]},
+  {"type":"example","jp":"これはいぬです。","es":"Esto es un perro.","romaji":"Kore wa inu desu."},
+  {"type":"example","jp":"あめがふります。","es":"Llueve.","romaji":"Ame ga furimasu."},
+  {"type":"exercise-mc","prompt":"¿Cómo se escribe la sílaba 'ka' en hiragana?","options":["か","カ","が","こ"],"answer":"か"},
+  {"type":"exercise-mc","prompt":"¿Qué significa いぬ?","options":["perro","gato","libro","lluvia"],"answer":"perro"},
+  {"type":"exercise-mc","prompt":"¿Cuál de estos es el hiragana para 'e'?","options":["え","エ","お","あ"],"answer":"え"},
+  {"type":"exercise-tf","statement":"El hiragana あ se pronuncia 'a'.","answer":true},
+  {"type":"exercise-tf","statement":"El hiragana こ representa la sílaba 'go'.","answer":false}
+]

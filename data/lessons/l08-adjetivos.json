@@ -1,0 +1,12 @@
+[
+  {"type":"text","md":"El japonés tiene dos tipos de adjetivos:\n\n- **Adjetivos い**: terminan en い. Se conjugan directamente.\n- **Adjetivos な**: se comportan como sustantivos. Necesitan な antes del nombre que modifican."},
+  {"type":"table","headers":["Tipo","Ejemplo","Significado","Negativo"],"rows":[["い","たかい","caro","たかくない"],["い","おおきい","grande","おおきくない"],["な","しずか(な)","tranquilo","しずかではない"],["な","きれい(な)","bonito","きれいではない"]]},
+  {"type":"example","jp":"この本はたかいです。","es":"Este libro es caro.","romaji":"Kono hon wa takai desu."},
+  {"type":"example","jp":"しずかな部屋です。","es":"Es una habitación tranquila.","romaji":"Shizuka na heya desu."},
+  {"type":"note","md":"**きれい** termina en い pero es adjetivo **な**, no い. Es una excepción frecuente que hay que memorizar."},
+  {"type":"exercise-mc","prompt":"¿Cuál es el negativo de たかい (caro)?","options":["たかくない","たかじゃない","たかない","たかくないです"],"answer":"たかくない"},
+  {"type":"exercise-mc","prompt":"¿Qué tipo de adjetivo es しずか?","options":["Adjetivo な","Adjetivo い","Verbo","Sustantivo"],"answer":"Adjetivo な"},
+  {"type":"exercise-tf","statement":"Los adjetivos い forman la negación terminando en くない.","answer":true},
+  {"type":"exercise-tf","statement":"きれい es un adjetivo い porque termina en い.","answer":false},
+  {"type":"exercise-gap","prompt":"___ 部屋です。(Es una habitación tranquila)","options":["しずかな","しずかの","しずかが","しずかを"],"answer":"しずかな","hint":"adjetivo な antes de sustantivo"}
+]
