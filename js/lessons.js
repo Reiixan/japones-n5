@@ -109,7 +109,7 @@ function renderExercises(exercises, container, onAllAnswered) {
       attachOptionHandler(el, ex.answer, (isCorrect) => {
         answered++;
         if (isCorrect) correct++;
-        recordPracticeTick();
+        if (isCorrect) recordPracticeTick();
         if (answered === total) onAllAnswered(correct, total);
       });
     }
@@ -126,7 +126,7 @@ function renderExercises(exercises, container, onAllAnswered) {
       attachOptionHandler(el, strAnswer, (isCorrect) => {
         answered++;
         if (isCorrect) correct++;
-        recordPracticeTick();
+        if (isCorrect) recordPracticeTick();
         if (answered === total) onAllAnswered(correct, total);
       });
     }
@@ -142,7 +142,7 @@ function renderExercises(exercises, container, onAllAnswered) {
       attachOptionHandler(el, ex.answer, (isCorrect) => {
         answered++;
         if (isCorrect) correct++;
-        recordPracticeTick();
+        if (isCorrect) recordPracticeTick();
         if (answered === total) onAllAnswered(correct, total);
       });
     }
@@ -267,6 +267,8 @@ export async function renderLesson(container, id) {
 
   document.getElementById('lesson-back').addEventListener('click', () => window.navigate('/lessons'));
 
+  // Read progress BEFORE setLessonStarted overwrites lastBlock
+  const progress = getLessonProgress(id);
   setLessonStarted(id, 0);
 
   const exerciseContainer = document.getElementById('lesson-exercises');
@@ -287,12 +289,17 @@ export async function renderLesson(container, id) {
     document.getElementById('lesson-mark-done').disabled = true;
   });
 
+  if (progress?.status === 'completed') {
+    const btn = document.getElementById('lesson-mark-done');
+    btn.textContent = '✓ Completada';
+    btn.disabled = true;
+  }
+
   const nextBtn = document.getElementById('lesson-next');
   if (nextBtn) {
     nextBtn.addEventListener('click', () => window.navigate(`/lessons/${nextLesson.id}`));
   }
 
-  const progress = getLessonProgress(id);
   if (progress?.lastBlock > 0) {
     const allBlocks = container.querySelectorAll('.lesson-block');
     const target = allBlocks[Math.min(progress.lastBlock, allBlocks.length - 1)];
