@@ -82,3 +82,106 @@ function renderBlock(block) {
       return '';
   }
 }
+
+// ─── Exercise renderers ───────────────────────────────────────────────────────
+
+function renderExercises(exercises, container, onAllAnswered) {
+  let answered = 0;
+  let correct = 0;
+  const total = exercises.length;
+
+  const wrapEl = document.createElement('div');
+  wrapEl.innerHTML = `<div class="lesson-exercises-title">Ejercicios</div>`;
+
+  exercises.forEach((ex, i) => {
+    const el = document.createElement('div');
+    el.className = 'lesson-exercise';
+    el.dataset.index = i;
+
+    if (ex.type === 'exercise-mc') {
+      const hint = ex.hint ? `<div class="lesson-exercise-hint">${ex.hint}</div>` : '';
+      el.innerHTML = `
+        <div class="lesson-exercise-prompt">${ex.prompt}${hint}</div>
+        <div class="lesson-exercise-options">
+          ${ex.options.map(o => `<button class="lesson-exercise-btn" data-value="${o}">${o}</button>`).join('')}
+        </div>
+        <div class="lesson-exercise-feedback"></div>`;
+      attachOptionHandler(el, ex.answer, (isCorrect) => {
+        answered++;
+        if (isCorrect) correct++;
+        recordPracticeTick();
+        if (answered === total) onAllAnswered(correct, total);
+      });
+    }
+
+    if (ex.type === 'exercise-tf') {
+      el.innerHTML = `
+        <div class="lesson-exercise-prompt">${ex.statement}</div>
+        <div class="lesson-exercise-options">
+          <button class="lesson-exercise-btn" data-value="true">Verdadero</button>
+          <button class="lesson-exercise-btn" data-value="false">Falso</button>
+        </div>
+        <div class="lesson-exercise-feedback"></div>`;
+      const strAnswer = String(ex.answer);
+      attachOptionHandler(el, strAnswer, (isCorrect) => {
+        answered++;
+        if (isCorrect) correct++;
+        recordPracticeTick();
+        if (answered === total) onAllAnswered(correct, total);
+      });
+    }
+
+    if (ex.type === 'exercise-gap') {
+      const hint = ex.hint ? `<div class="lesson-exercise-hint">Pista: ${ex.hint}</div>` : '';
+      el.innerHTML = `
+        <div class="lesson-exercise-prompt">${ex.prompt}${hint}</div>
+        <div class="lesson-exercise-options">
+          ${ex.options.map(o => `<button class="lesson-exercise-btn" data-value="${o}">${o}</button>`).join('')}
+        </div>
+        <div class="lesson-exercise-feedback"></div>`;
+      attachOptionHandler(el, ex.answer, (isCorrect) => {
+        answered++;
+        if (isCorrect) correct++;
+        recordPracticeTick();
+        if (answered === total) onAllAnswered(correct, total);
+      });
+    }
+
+    wrapEl.appendChild(el);
+  });
+
+  container.appendChild(wrapEl);
+}
+
+function attachOptionHandler(exerciseEl, correctAnswer, onAnswered) {
+  const btns = exerciseEl.querySelectorAll('.lesson-exercise-btn');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (exerciseEl.dataset.answered) return;
+      exerciseEl.dataset.answered = '1';
+      btns.forEach(b => b.disabled = true);
+
+      const chosen = btn.dataset.value;
+      const isCorrect = chosen === correctAnswer;
+
+      btns.forEach(b => {
+        if (b.dataset.value === correctAnswer) b.classList.add('reveal-correct');
+      });
+      if (!isCorrect) btn.classList.add('selected-incorrect');
+      else btn.classList.add('selected-correct');
+
+      const feedback = exerciseEl.querySelector('.lesson-exercise-feedback');
+      if (isCorrect) {
+        feedback.textContent = '✓ Correcto';
+        feedback.className = 'lesson-exercise-feedback ok';
+        exerciseEl.classList.add('correct');
+      } else {
+        feedback.textContent = '✗ Incorrecto';
+        feedback.className = 'lesson-exercise-feedback ko';
+        exerciseEl.classList.add('incorrect');
+      }
+
+      onAnswered(isCorrect);
+    });
+  });
+}
