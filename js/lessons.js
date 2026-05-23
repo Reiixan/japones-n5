@@ -252,6 +252,7 @@ export async function renderLesson(container, id) {
         <button class="btn-icon" id="lesson-back">←</button>
         <h1>${meta.title}</h1>
         <span class="lesson-topic-badge">${meta.topic}</span>
+        <button class="btn-icon lesson-kana-btn" id="lesson-kana-btn" title="Ver tabla kana">あ</button>
       </div>
       <div id="lesson-content">
         ${contentBlocks.map(renderBlock).join('')}
@@ -268,6 +269,7 @@ export async function renderLesson(container, id) {
     </div>`;
 
   document.getElementById('lesson-back').addEventListener('click', () => window.navigate('/lessons'));
+  document.getElementById('lesson-kana-btn').addEventListener('click', showKanaModal);
 
   // Read progress BEFORE setLessonStarted overwrites lastBlock
   const progress = getLessonProgress(id);
@@ -320,4 +322,163 @@ export async function renderLesson(container, id) {
     }, { threshold: 0.3 });
     allBlocks.forEach(b => obs.observe(b));
   }
+}
+
+// ─── Kana modal ───────────────────────────────────────────────────────────────
+
+const HIRAGANA = [
+  ['あ','い','う','え','お'],
+  ['か','き','く','け','こ'],
+  ['さ','し','す','せ','そ'],
+  ['た','ち','つ','て','と'],
+  ['な','に','ぬ','ね','の'],
+  ['は','ひ','ふ','へ','ほ'],
+  ['ま','み','む','め','も'],
+  ['や','','ゆ','','よ'],
+  ['ら','り','る','れ','ろ'],
+  ['わ','','','','を'],
+  ['ん','','','',''],
+];
+
+const KATAKANA = [
+  ['ア','イ','ウ','エ','オ'],
+  ['カ','キ','ク','ケ','コ'],
+  ['サ','シ','ス','セ','ソ'],
+  ['タ','チ','ツ','テ','ト'],
+  ['ナ','ニ','ヌ','ネ','ノ'],
+  ['ハ','ヒ','フ','ヘ','ホ'],
+  ['マ','ミ','ム','メ','モ'],
+  ['ヤ','','ユ','','ヨ'],
+  ['ラ','リ','ル','レ','ロ'],
+  ['ワ','','','','ヲ'],
+  ['ン','','','',''],
+];
+
+const ROMAJI = [
+  ['a','i','u','e','o'],
+  ['ka','ki','ku','ke','ko'],
+  ['sa','shi','su','se','so'],
+  ['ta','chi','tsu','te','to'],
+  ['na','ni','nu','ne','no'],
+  ['ha','hi','fu','he','ho'],
+  ['ma','mi','mu','me','mo'],
+  ['ya','','yu','','yo'],
+  ['ra','ri','ru','re','ro'],
+  ['wa','','','','wo'],
+  ['n','','','',''],
+];
+
+function showKanaModal() {
+  if (document.getElementById('kana-modal')) return;
+
+  let activeTab = 'hiragana';
+
+  function buildTable(kanaRows) {
+    return kanaRows.map((row, ri) =>
+      `<tr>${row.map((k, ci) => k
+        ? `<td><span class="kana-modal-char">${k}</span><span class="kana-modal-rom">${ROMAJI[ri][ci]}</span></td>`
+        : '<td></td>'
+      ).join('')}</tr>`
+    ).join('');
+  }
+
+  function html(tab) {
+    const rows = tab === 'hiragana' ? HIRAGANA : KATAKANA;
+    return `
+      <div class="kana-modal-overlay" id="kana-modal">
+        <div class="kana-modal-panel" role="dialog" aria-modal="true" aria-label="Tabla kana">
+          <div class="kana-modal-header">
+            <div class="kana-modal-tabs">
+              <button class="kana-tab${tab === 'hiragana' ? ' active' : ''}" data-tab="hiragana">Hiragana ひ</button>
+              <button class="kana-tab${tab === 'katakana' ? ' active' : ''}" data-tab="katakana">Katakana カ</button>
+            </div>
+            <button class="btn-icon" id="kana-modal-close">✕</button>
+          </div>
+          <div class="kana-modal-body">
+            <table class="kana-modal-table">
+              <thead><tr><th>a</th><th>i</th><th>u</th><th>e</th><th>o</th></tr></thead>
+              <tbody>${buildTable(rows)}</tbody>
+            </table>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  document.body.insertAdjacentHTML('beforeend', html(activeTab));
+
+  function close() {
+    document.getElementById('kana-modal')?.remove();
+    document.removeEventListener('keydown', onKey);
+  }
+
+  function onKey(e) { if (e.key === 'Escape') close(); }
+  document.addEventListener('keydown', onKey);
+
+  document.getElementById('kana-modal-close').addEventListener('click', close);
+  document.getElementById('kana-modal').addEventListener('click', e => {
+    if (e.target.id === 'kana-modal') close();
+  });
+
+  document.querySelectorAll('.kana-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeTab = btn.dataset.tab;
+      document.getElementById('kana-modal').remove();
+      document.body.insertAdjacentHTML('beforeend', html(activeTab));
+      document.getElementById('kana-modal-close').addEventListener('click', close);
+      document.getElementById('kana-modal').addEventListener('click', e => {
+        if (e.target.id === 'kana-modal') close();
+      });
+      document.querySelectorAll('.kana-tab').forEach(b2 => {
+        b2.addEventListener('click', () => {
+          activeTab = b2.dataset.tab;
+          document.getElementById('kana-modal').remove();
+          document.body.insertAdjacentHTML('beforeend', html(activeTab));
+          // Re-attach all handlers by re-calling showKanaModal logic inline
+          attachKanaModalHandlers(close, onKey);
+        });
+      });
+    });
+  });
+}
+
+function attachKanaModalHandlers(close, onKey) {
+  document.getElementById('kana-modal-close').addEventListener('click', close);
+  document.getElementById('kana-modal').addEventListener('click', e => {
+    if (e.target.id === 'kana-modal') close();
+  });
+  document.querySelectorAll('.kana-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.dataset.tab;
+      const ROWS = tab === 'hiragana' ? HIRAGANA : KATAKANA;
+      function buildTable(kanaRows) {
+        return kanaRows.map((row, ri) =>
+          `<tr>${row.map((k, ci) => k
+            ? `<td><span class="kana-modal-char">${k}</span><span class="kana-modal-rom">${ROMAJI[ri][ci]}</span></td>`
+            : '<td></td>'
+          ).join('')}</tr>`
+        ).join('');
+      }
+      const newHtml = `
+        <div class="kana-modal-overlay" id="kana-modal">
+          <div class="kana-modal-panel" role="dialog" aria-modal="true" aria-label="Tabla kana">
+            <div class="kana-modal-header">
+              <div class="kana-modal-tabs">
+                <button class="kana-tab${tab === 'hiragana' ? ' active' : ''}" data-tab="hiragana">Hiragana ひ</button>
+                <button class="kana-tab${tab === 'katakana' ? ' active' : ''}" data-tab="katakana">Katakana カ</button>
+              </div>
+              <button class="btn-icon" id="kana-modal-close">✕</button>
+            </div>
+            <div class="kana-modal-body">
+              <table class="kana-modal-table">
+                <thead><tr><th>a</th><th>i</th><th>u</th><th>e</th><th>o</th></tr></thead>
+                <tbody>${buildTable(ROWS)}</tbody>
+              </table>
+            </div>
+          </div>
+        </div>`;
+      document.getElementById('kana-modal').remove();
+      document.body.insertAdjacentHTML('beforeend', newHtml);
+      attachKanaModalHandlers(close, onKey);
+    });
+  });
 }
