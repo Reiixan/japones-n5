@@ -1,239 +1,3490 @@
 [
-  {"id":"v_ichi","kanji":"一","kana":"いち","romaji":"ichi","meaning_es":"uno (1)","category":"números"},
-  {"id":"v_ni","kanji":"二","kana":"に","romaji":"ni","meaning_es":"dos (2)","category":"números"},
-  {"id":"v_san","kanji":"三","kana":"さん","romaji":"san","meaning_es":"tres (3)","category":"números"},
-  {"id":"v_shi","kanji":"四","kana":"し／よん","romaji":"shi/yon","meaning_es":"cuatro (4)","category":"números"},
-  {"id":"v_go","kanji":"五","kana":"ご","romaji":"go","meaning_es":"cinco (5)","category":"números"},
-  {"id":"v_roku","kanji":"六","kana":"ろく","romaji":"roku","meaning_es":"seis (6)","category":"números"},
-  {"id":"v_nana","kanji":"七","kana":"なな／しち","romaji":"nana/shichi","meaning_es":"siete (7)","category":"números"},
-  {"id":"v_hachi","kanji":"八","kana":"はち","romaji":"hachi","meaning_es":"ocho (8)","category":"números"},
-  {"id":"v_kyuu","kanji":"九","kana":"きゅう／く","romaji":"kyuu/ku","meaning_es":"nueve (9)","category":"números"},
-  {"id":"v_juu","kanji":"十","kana":"じゅう","romaji":"juu","meaning_es":"diez (10)","category":"números"},
-  {"id":"v_hyaku","kanji":"百","kana":"ひゃく","romaji":"hyaku","meaning_es":"cien (100)","category":"números"},
-  {"id":"v_sen","kanji":"千","kana":"せん","romaji":"sen","meaning_es":"mil (1000)","category":"números"},
-  {"id":"v_man","kanji":"万","kana":"まん","romaji":"man","meaning_es":"diez mil (10.000)","category":"números"},
-  {"id":"v_getsuyoubi","kanji":"月曜日","kana":"げつようび","romaji":"getsuyoubi","meaning_es":"lunes","category":"días"},
-  {"id":"v_kayoubi","kanji":"火曜日","kana":"かようび","romaji":"kayoubi","meaning_es":"martes","category":"días"},
-  {"id":"v_suiyoubi","kanji":"水曜日","kana":"すいようび","romaji":"suiyoubi","meaning_es":"miércoles","category":"días"},
-  {"id":"v_mokuyoubi","kanji":"木曜日","kana":"もくようび","romaji":"mokuyoubi","meaning_es":"jueves","category":"días"},
-  {"id":"v_kin_youbi","kanji":"金曜日","kana":"きんようび","romaji":"kin'youbi","meaning_es":"viernes","category":"días"},
-  {"id":"v_doyoubi","kanji":"土曜日","kana":"どようび","romaji":"doyoubi","meaning_es":"sábado","category":"días"},
-  {"id":"v_nichiyoubi","kanji":"日曜日","kana":"にちようび","romaji":"nichiyoubi","meaning_es":"domingo","category":"días"},
-  {"id":"v_kyou","kanji":"今日","kana":"きょう","romaji":"kyou","meaning_es":"hoy","category":"tiempo"},
-  {"id":"v_ashita","kanji":"明日","kana":"あした","romaji":"ashita","meaning_es":"mañana","category":"tiempo"},
-  {"id":"v_kinou","kanji":"昨日","kana":"きのう","romaji":"kinou","meaning_es":"ayer","category":"tiempo"},
-  {"id":"v_ima","kanji":"今","kana":"いま","romaji":"ima","meaning_es":"ahora","category":"tiempo"},
-  {"id":"v_asa","kanji":"朝","kana":"あさ","romaji":"asa","meaning_es":"mañana (hora del día)","category":"tiempo"},
-  {"id":"v_hiru","kanji":"昼","kana":"ひる","romaji":"hiru","meaning_es":"mediodía / tarde","category":"tiempo"},
-  {"id":"v_yoru","kanji":"夜","kana":"よる","romaji":"yoru","meaning_es":"noche","category":"tiempo"},
-  {"id":"v_mainichi","kanji":"毎日","kana":"まいにち","romaji":"mainichi","meaning_es":"cada día / todos los días","category":"tiempo"},
-  {"id":"v_senshuu","kanji":"先週","kana":"せんしゅう","romaji":"senshuu","meaning_es":"la semana pasada","category":"tiempo"},
-  {"id":"v_raishuu","kanji":"来週","kana":"らいしゅう","romaji":"raishuu","meaning_es":"la semana que viene","category":"tiempo"},
-  {"id":"v_chichi","kanji":"父","kana":"ちち","romaji":"chichi","meaning_es":"padre (mi padre)","category":"familia"},
-  {"id":"v_haha","kanji":"母","kana":"はは","romaji":"haha","meaning_es":"madre (mi madre)","category":"familia"},
-  {"id":"v_ani","kanji":"兄","kana":"あに","romaji":"ani","meaning_es":"hermano mayor (mi hermano)","category":"familia"},
-  {"id":"v_ane","kanji":"姉","kana":"あね","romaji":"ane","meaning_es":"hermana mayor (mi hermana)","category":"familia"},
-  {"id":"v_otouto","kanji":"弟","kana":"おとうと","romaji":"otouto","meaning_es":"hermano menor","category":"familia"},
-  {"id":"v_imouto","kanji":"妹","kana":"いもうと","romaji":"imouto","meaning_es":"hermana menor","category":"familia"},
-  {"id":"v_kazoku","kanji":"家族","kana":"かぞく","romaji":"kazoku","meaning_es":"familia","category":"familia"},
-  {"id":"v_kodomo","kanji":"子供","kana":"こども","romaji":"kodomo","meaning_es":"niño / hijo","category":"familia"},
-  {"id":"v_tomodachi","kanji":"友達","kana":"ともだち","romaji":"tomodachi","meaning_es":"amigo / amiga","category":"familia"},
-  {"id":"v_mizu","kanji":"水","kana":"みず","romaji":"mizu","meaning_es":"agua","category":"comida"},
-  {"id":"v_gohan","kanji":"ご飯","kana":"ごはん","romaji":"gohan","meaning_es":"arroz / comida","category":"comida"},
-  {"id":"v_pan","kanji":"パン","kana":"パン","romaji":"pan","meaning_es":"pan","category":"comida"},
-  {"id":"v_niku","kanji":"肉","kana":"にく","romaji":"niku","meaning_es":"carne","category":"comida"},
-  {"id":"v_sakana","kanji":"魚","kana":"さかな","romaji":"sakana","meaning_es":"pescado","category":"comida"},
-  {"id":"v_yasai","kanji":"野菜","kana":"やさい","romaji":"yasai","meaning_es":"verdura / verduras","category":"comida"},
-  {"id":"v_kudamono","kanji":"果物","kana":"くだもの","romaji":"kudamono","meaning_es":"fruta","category":"comida"},
-  {"id":"v_ocha","kanji":"お茶","kana":"おちゃ","romaji":"ocha","meaning_es":"té japonés","category":"comida"},
-  {"id":"v_koohii","kanji":"コーヒー","kana":"コーヒー","romaji":"koohii","meaning_es":"café","category":"comida"},
-  {"id":"v_gyuunyuu","kanji":"牛乳","kana":"ぎゅうにゅう","romaji":"gyuunyuu","meaning_es":"leche","category":"comida"},
-  {"id":"v_tamago","kanji":"卵","kana":"たまご","romaji":"tamago","meaning_es":"huevo","category":"comida"},
-  {"id":"v_ringo","kanji":"りんご","kana":"りんご","romaji":"ringo","meaning_es":"manzana","category":"comida"},
-  {"id":"v_gakkou","kanji":"学校","kana":"がっこう","romaji":"gakkou","meaning_es":"escuela / colegio","category":"lugares"},
-  {"id":"v_ie","kanji":"家","kana":"いえ","romaji":"ie","meaning_es":"casa / hogar","category":"lugares"},
-  {"id":"v_eki","kanji":"駅","kana":"えき","romaji":"eki","meaning_es":"estación de tren","category":"lugares"},
-  {"id":"v_byouin","kanji":"病院","kana":"びょういん","romaji":"byouin","meaning_es":"hospital","category":"lugares"},
-  {"id":"v_ginkou","kanji":"銀行","kana":"ぎんこう","romaji":"ginkou","meaning_es":"banco","category":"lugares"},
-  {"id":"v_resutoran","kanji":"レストラン","kana":"レストラン","romaji":"resutoran","meaning_es":"restaurante","category":"lugares"},
-  {"id":"v_kouen","kanji":"公園","kana":"こうえん","romaji":"kouen","meaning_es":"parque","category":"lugares"},
-  {"id":"v_mise","kanji":"店","kana":"みせ","romaji":"mise","meaning_es":"tienda","category":"lugares"},
-  {"id":"v_taberu","kanji":"食べる","kana":"たべる","romaji":"taberu","meaning_es":"comer","category":"verbos"},
-  {"id":"v_nomu","kanji":"飲む","kana":"のむ","romaji":"nomu","meaning_es":"beber","category":"verbos"},
-  {"id":"v_iku","kanji":"行く","kana":"いく","romaji":"iku","meaning_es":"ir","category":"verbos"},
-  {"id":"v_kuru","kanji":"来る","kana":"くる","romaji":"kuru","meaning_es":"venir","category":"verbos"},
-  {"id":"v_miru","kanji":"見る","kana":"みる","romaji":"miru","meaning_es":"ver / mirar","category":"verbos"},
-  {"id":"v_kiku","kanji":"聞く","kana":"きく","romaji":"kiku","meaning_es":"escuchar / preguntar","category":"verbos"},
-  {"id":"v_hanasu","kanji":"話す","kana":"はなす","romaji":"hanasu","meaning_es":"hablar","category":"verbos"},
-  {"id":"v_kaku","kanji":"書く","kana":"かく","romaji":"kaku","meaning_es":"escribir","category":"verbos"},
-  {"id":"v_yomu","kanji":"読む","kana":"よむ","romaji":"yomu","meaning_es":"leer","category":"verbos"},
-  {"id":"v_kau","kanji":"買う","kana":"かう","romaji":"kau","meaning_es":"comprar","category":"verbos"},
-  {"id":"v_suru","kanji":"する","kana":"する","romaji":"suru","meaning_es":"hacer","category":"verbos"},
-  {"id":"v_wakaru","kanji":"分かる","kana":"わかる","romaji":"wakaru","meaning_es":"entender / comprender","category":"verbos"},
-  {"id":"v_okiru","kanji":"起きる","kana":"おきる","romaji":"okiru","meaning_es":"levantarse / despertarse","category":"verbos"},
-  {"id":"v_neru","kanji":"寝る","kana":"ねる","romaji":"neru","meaning_es":"dormir / acostarse","category":"verbos"},
-  {"id":"v_kaeru","kanji":"帰る","kana":"かえる","romaji":"kaeru","meaning_es":"volver a casa","category":"verbos"},
-  {"id":"v_tsukau","kanji":"使う","kana":"つかう","romaji":"tsukau","meaning_es":"usar / utilizar","category":"verbos"},
-  {"id":"v_oshieru","kanji":"教える","kana":"おしえる","romaji":"oshieru","meaning_es":"enseñar / decir","category":"verbos"},
-  {"id":"v_benkyousuru","kanji":"勉強する","kana":"べんきょうする","romaji":"benkyou suru","meaning_es":"estudiar","category":"verbos"},
-  {"id":"v_ookii","kanji":"大きい","kana":"おおきい","romaji":"ookii","meaning_es":"grande","category":"adjetivos-i"},
-  {"id":"v_chiisai","kanji":"小さい","kana":"ちいさい","romaji":"chiisai","meaning_es":"pequeño","category":"adjetivos-i"},
-  {"id":"v_takai","kanji":"高い","kana":"たかい","romaji":"takai","meaning_es":"alto / caro","category":"adjetivos-i"},
-  {"id":"v_yasui","kanji":"安い","kana":"やすい","romaji":"yasui","meaning_es":"barato","category":"adjetivos-i"},
-  {"id":"v_atarashii","kanji":"新しい","kana":"あたらしい","romaji":"atarashii","meaning_es":"nuevo","category":"adjetivos-i"},
-  {"id":"v_furui","kanji":"古い","kana":"ふるい","romaji":"furui","meaning_es":"viejo / antiguo","category":"adjetivos-i"},
-  {"id":"v_ii","kanji":"良い","kana":"いい／よい","romaji":"ii/yoi","meaning_es":"bueno","category":"adjetivos-i"},
-  {"id":"v_warui","kanji":"悪い","kana":"わるい","romaji":"warui","meaning_es":"malo","category":"adjetivos-i"},
-  {"id":"v_atsui","kanji":"暑い","kana":"あつい","romaji":"atsui","meaning_es":"caluroso (tiempo)","category":"adjetivos-i"},
-  {"id":"v_samui","kanji":"寒い","kana":"さむい","romaji":"samui","meaning_es":"frío (tiempo)","category":"adjetivos-i"},
-  {"id":"v_muzukashii","kanji":"難しい","kana":"むずかしい","romaji":"muzukashii","meaning_es":"difícil","category":"adjetivos-i"},
-  {"id":"v_yasashii","kanji":"易しい","kana":"やさしい","romaji":"yasashii","meaning_es":"fácil / amable","category":"adjetivos-i"},
-  {"id":"v_nagai","kanji":"長い","kana":"ながい","romaji":"nagai","meaning_es":"largo","category":"adjetivos-i"},
-  {"id":"v_mijikai","kanji":"短い","kana":"みじかい","romaji":"mijikai","meaning_es":"corto","category":"adjetivos-i"},
-  {"id":"v_shiroi","kanji":"白い","kana":"しろい","romaji":"shiroi","meaning_es":"blanco","category":"adjetivos-i"},
-  {"id":"v_kuroi","kanji":"黒い","kana":"くろい","romaji":"kuroi","meaning_es":"negro","category":"adjetivos-i"},
-  {"id":"v_akai","kanji":"赤い","kana":"あかい","romaji":"akai","meaning_es":"rojo","category":"adjetivos-i"},
-  {"id":"v_aoi","kanji":"青い","kana":"あおい","romaji":"aoi","meaning_es":"azul / verde (naturaleza)","category":"adjetivos-i"},
-  {"id":"v_kirei","kanji":"きれい","kana":"きれい","romaji":"kirei","meaning_es":"bonito / limpio","category":"adjetivos-na"},
-  {"id":"v_yuumei","kanji":"有名","kana":"ゆうめい","romaji":"yuumei","meaning_es":"famoso","category":"adjetivos-na"},
-  {"id":"v_benri","kanji":"便利","kana":"べんり","romaji":"benri","meaning_es":"conveniente / útil","category":"adjetivos-na"},
-  {"id":"v_genki","kanji":"元気","kana":"げんき","romaji":"genki","meaning_es":"enérgico / sano","category":"adjetivos-na"},
-  {"id":"v_shizuka","kanji":"静か","kana":"しずか","romaji":"shizuka","meaning_es":"tranquilo / silencioso","category":"adjetivos-na"},
-  {"id":"v_suki","kanji":"好き","kana":"すき","romaji":"suki","meaning_es":"gustar / querer","category":"adjetivos-na"},
-  {"id":"v_kirai","kanji":"嫌い","kana":"きらい","romaji":"kirai","meaning_es":"detestar / no gustar","category":"adjetivos-na"},
-  {"id":"v_jouzu","kanji":"上手","kana":"じょうず","romaji":"jouzu","meaning_es":"hábil / bueno en algo","category":"adjetivos-na"},
-  {"id":"v_heta","kanji":"下手","kana":"へた","romaji":"heta","meaning_es":"torpe / malo en algo","category":"adjetivos-na"},
-  {"id":"v_watashi","kanji":"私","kana":"わたし","romaji":"watashi","meaning_es":"yo","category":"pronombres"},
-  {"id":"v_anata","kanji":"あなた","kana":"あなた","romaji":"anata","meaning_es":"tú / usted","category":"pronombres"},
-  {"id":"v_kore","kanji":"これ","kana":"これ","romaji":"kore","meaning_es":"esto (cerca del hablante)","category":"pronombres"},
-  {"id":"v_sore","kanji":"それ","kana":"それ","romaji":"sore","meaning_es":"eso (cerca del oyente)","category":"pronombres"},
-  {"id":"v_are","kanji":"あれ","kana":"あれ","romaji":"are","meaning_es":"aquello (lejos de ambos)","category":"pronombres"},
-  {"id":"v_koko","kanji":"ここ","kana":"ここ","romaji":"koko","meaning_es":"aquí","category":"pronombres"},
-  {"id":"v_soko","kanji":"そこ","kana":"そこ","romaji":"soko","meaning_es":"ahí","category":"pronombres"},
-  {"id":"v_asoko","kanji":"あそこ","kana":"あそこ","romaji":"asoko","meaning_es":"allí / allá","category":"pronombres"},
-  {"id":"v_nani","kanji":"何","kana":"なに","romaji":"nani","meaning_es":"¿qué?","category":"interrogativos"},
-  {"id":"v_dare","kanji":"誰","kana":"だれ","romaji":"dare","meaning_es":"¿quién?","category":"interrogativos"},
-  {"id":"v_doko","kanji":"どこ","kana":"どこ","romaji":"doko","meaning_es":"¿dónde?","category":"interrogativos"},
-  {"id":"v_itsu","kanji":"いつ","kana":"いつ","romaji":"itsu","meaning_es":"¿cuándo?","category":"interrogativos"},
-  {"id":"v_dou","kanji":"どう","kana":"どう","romaji":"dou","meaning_es":"¿cómo? / ¿qué tal?","category":"interrogativos"},
-  {"id":"v_ikura","kanji":"いくら","kana":"いくら","romaji":"ikura","meaning_es":"¿cuánto? (precio)","category":"interrogativos"},
-  {"id":"v_namae","kanji":"名前","kana":"なまえ","romaji":"namae","meaning_es":"nombre","category":"otras"},
-  {"id":"v_denwa","kanji":"電話","kana":"でんわ","romaji":"denwa","meaning_es":"teléfono","category":"otras"},
-  {"id":"v_hon","kanji":"本","kana":"ほん","romaji":"hon","meaning_es":"libro","category":"otras"},
-  {"id":"v_eiga","kanji":"映画","kana":"えいが","romaji":"eiga","meaning_es":"película / cine","category":"otras"},
-  {"id":"v_ongaku","kanji":"音楽","kana":"おんがく","romaji":"ongaku","meaning_es":"música","category":"otras"},
-  {"id":"v_shigoto","kanji":"仕事","kana":"しごと","romaji":"shigoto","meaning_es":"trabajo","category":"otras"},
-  {"id":"v_tenki","kanji":"天気","kana":"てんき","romaji":"tenki","meaning_es":"tiempo (meteorológico)","category":"otras"},
-  {"id":"v_sora","kanji":"空","kana":"そら","romaji":"sora","meaning_es":"cielo","category":"otras"},
-  {"id":"v_umi","kanji":"海","kana":"うみ","romaji":"umi","meaning_es":"mar","category":"otras"},
-  {"id":"v_yama","kanji":"山","kana":"やま","romaji":"yama","meaning_es":"montaña","category":"otras"},
-  {"id":"v_hana","kanji":"花","kana":"はな","romaji":"hana","meaning_es":"flor","category":"otras"},
-  {"id":"v_inu","kanji":"犬","kana":"いぬ","romaji":"inu","meaning_es":"perro","category":"otras"},
-  {"id":"v_neko","kanji":"猫","kana":"ねこ","romaji":"neko","meaning_es":"gato","category":"otras"},
-  {"id":"v_kuruma","kanji":"車","kana":"くるま","romaji":"kuruma","meaning_es":"coche / automóvil","category":"otras"},
-  {"id":"v_densha","kanji":"電車","kana":"でんしゃ","romaji":"densha","meaning_es":"tren eléctrico","category":"otras"},
-  {"id":"v_shukudai","kanji":"宿題","kana":"しゅくだい","romaji":"shukudai","meaning_es":"deberes / tarea","category":"otras"},
-  {"id":"v_terebi","kanji":"テレビ","kana":"テレビ","romaji":"terebi","meaning_es":"televisión","category":"objetos"},
-  {"id":"v_nyuusu","kanji":"ニュース","kana":"ニュース","romaji":"nyuusu","meaning_es":"noticias","category":"objetos"},
-  {"id":"v_hoteru","kanji":"ホテル","kana":"ホテル","romaji":"hoteru","meaning_es":"hotel","category":"lugares"},
-  {"id":"v_basu","kanji":"バス","kana":"バス","romaji":"basu","meaning_es":"autobús","category":"transporte"},
-  {"id":"v_takushii","kanji":"タクシー","kana":"タクシー","romaji":"takushii","meaning_es":"taxi","category":"transporte"},
-  {"id":"v_kamera","kanji":"カメラ","kana":"カメラ","romaji":"kamera","meaning_es":"cámara","category":"objetos"},
-  {"id":"v_biiru","kanji":"ビール","kana":"ビール","romaji":"biiru","meaning_es":"cerveza","category":"comida"},
-  {"id":"v_juusu","kanji":"ジュース","kana":"ジュース","romaji":"juusu","meaning_es":"zumo / jugo","category":"comida"},
-  {"id":"v_aisukuriimu","kanji":"アイスクリーム","kana":"アイスクリーム","romaji":"aisukuriimu","meaning_es":"helado","category":"comida"},
-  {"id":"v_teeburu","kanji":"テーブル","kana":"テーブル","romaji":"teeburu","meaning_es":"mesa","category":"objetos"},
-  {"id":"v_doa","kanji":"ドア","kana":"ドア","romaji":"doa","meaning_es":"puerta","category":"objetos"},
-  {"id":"v_nooto","kanji":"ノート","kana":"ノート","romaji":"nooto","meaning_es":"cuaderno","category":"objetos"},
-  {"id":"v_pen","kanji":"ペン","kana":"ペン","romaji":"pen","meaning_es":"bolígrafo","category":"objetos"},
-  {"id":"v_baggu","kanji":"バッグ","kana":"バッグ","romaji":"baggu","meaning_es":"bolso","category":"objetos"},
-  {"id":"v_suupaa","kanji":"スーパー","kana":"スーパー","romaji":"suupaa","meaning_es":"supermercado","category":"lugares"},
-  {"id":"v_depaato","kanji":"デパート","kana":"デパート","romaji":"depaato","meaning_es":"grandes almacenes","category":"lugares"},
-  {"id":"v_apaato","kanji":"アパート","kana":"アパート","romaji":"apaato","meaning_es":"apartamento","category":"lugares"},
-  {"id":"v_erebeetaa","kanji":"エレベーター","kana":"エレベーター","romaji":"erebeetaa","meaning_es":"ascensor","category":"objetos"},
-  {"id":"v_eakon","kanji":"エアコン","kana":"エアコン","romaji":"eakon","meaning_es":"aire acondicionado","category":"objetos"},
-  {"id":"v_shawaa","kanji":"シャワー","kana":"シャワー","romaji":"shawaa","meaning_es":"ducha","category":"objetos"},
-  {"id":"v_toire","kanji":"トイレ","kana":"トイレ","romaji":"toire","meaning_es":"servicio / aseo","category":"lugares"},
-  {"id":"v_pasokon","kanji":"パソコン","kana":"パソコン","romaji":"pasokon","meaning_es":"ordenador personal","category":"objetos"},
-  {"id":"v_meeru","kanji":"メール","kana":"メール","romaji":"meeru","meaning_es":"correo electrónico","category":"otras"},
-  {"id":"v_geemu","kanji":"ゲーム","kana":"ゲーム","romaji":"geemu","meaning_es":"videojuego","category":"otras"},
-  {"id":"v_supootsu","kanji":"スポーツ","kana":"スポーツ","romaji":"supootsu","meaning_es":"deporte","category":"otras"},
-  {"id":"v_rajio","kanji":"ラジオ","kana":"ラジオ","romaji":"rajio","meaning_es":"radio","category":"objetos"},
-  {"id":"v_puuru","kanji":"プール","kana":"プール","romaji":"puuru","meaning_es":"piscina","category":"lugares"},
-  {"id":"v_tesuto","kanji":"テスト","kana":"テスト","romaji":"tesuto","meaning_es":"examen / test","category":"otras"},
-  {"id":"v_kiru","kanji":"着る","kana":"きる","romaji":"kiru","meaning_es":"ponerse (ropa)","category":"verbos"},
-  {"id":"v_nugu","kanji":"脱ぐ","kana":"ぬぐ","romaji":"nugu","meaning_es":"quitarse (ropa)","category":"verbos"},
-  {"id":"v_arau","kanji":"洗う","kana":"あらう","romaji":"arau","meaning_es":"lavar","category":"verbos"},
-  {"id":"v_soujisuru","kanji":"掃除する","kana":"そうじする","romaji":"souji suru","meaning_es":"limpiar","category":"verbos"},
-  {"id":"v_ryourisuru","kanji":"料理する","kana":"りょうりする","romaji":"ryouri suru","meaning_es":"cocinar","category":"verbos"},
-  {"id":"v_oyogu","kanji":"泳ぐ","kana":"およぐ","romaji":"oyogu","meaning_es":"nadar","category":"verbos"},
-  {"id":"v_hashiru","kanji":"走る","kana":"はしる","romaji":"hashiru","meaning_es":"correr","category":"verbos"},
-  {"id":"v_aruku","kanji":"歩く","kana":"あるく","romaji":"aruku","meaning_es":"caminar","category":"verbos"},
-  {"id":"v_tomaru","kanji":"止まる","kana":"とまる","romaji":"tomaru","meaning_es":"parar / detenerse","category":"verbos"},
-  {"id":"v_hajimaru","kanji":"始まる","kana":"はじまる","romaji":"hajimaru","meaning_es":"empezar","category":"verbos"},
-  {"id":"v_owaru","kanji":"終わる","kana":"おわる","romaji":"owaru","meaning_es":"terminar","category":"verbos"},
-  {"id":"v_akeru","kanji":"開ける","kana":"あける","romaji":"akeru","meaning_es":"abrir","category":"verbos"},
-  {"id":"v_shimeru","kanji":"閉める","kana":"しめる","romaji":"shimeru","meaning_es":"cerrar","category":"verbos"},
-  {"id":"v_kasu","kanji":"貸す","kana":"かす","romaji":"kasu","meaning_es":"prestar","category":"verbos"},
-  {"id":"v_kariru","kanji":"借りる","kana":"かりる","romaji":"kariru","meaning_es":"pedir prestado","category":"verbos"},
-  {"id":"v_narau","kanji":"習う","kana":"ならう","romaji":"narau","meaning_es":"aprender / estudiar","category":"verbos"},
-  {"id":"v_hataraku","kanji":"働く","kana":"はたらく","romaji":"hataraku","meaning_es":"trabajar","category":"verbos"},
-  {"id":"v_yasumu","kanji":"休む","kana":"やすむ","romaji":"yasumu","meaning_es":"descansar / faltar","category":"verbos"},
-  {"id":"v_asobu","kanji":"遊ぶ","kana":"あそぶ","romaji":"asobu","meaning_es":"jugar / divertirse","category":"verbos"},
-  {"id":"v_matsu","kanji":"待つ","kana":"まつ","romaji":"matsu","meaning_es":"esperar","category":"verbos"},
-  {"id":"v_au","kanji":"会う","kana":"あう","romaji":"au","meaning_es":"encontrarse con","category":"verbos"},
-  {"id":"v_noru","kanji":"乗る","kana":"のる","romaji":"noru","meaning_es":"montarse / subir a","category":"verbos"},
-  {"id":"v_oriru","kanji":"降りる","kana":"おりる","romaji":"oriru","meaning_es":"bajarse de","category":"verbos"},
-  {"id":"v_hairu","kanji":"入る","kana":"はいる","romaji":"hairu","meaning_es":"entrar","category":"verbos"},
-  {"id":"v_deru","kanji":"出る","kana":"でる","romaji":"deru","meaning_es":"salir","category":"verbos"},
-  {"id":"v_hiroi","kanji":"広い","kana":"ひろい","romaji":"hiroi","meaning_es":"amplio / espacioso","category":"adjetivos-i"},
-  {"id":"v_semai","kanji":"狭い","kana":"せまい","romaji":"semai","meaning_es":"estrecho / pequeño","category":"adjetivos-i"},
-  {"id":"v_omoi","kanji":"重い","kana":"おもい","romaji":"omoi","meaning_es":"pesado","category":"adjetivos-i"},
-  {"id":"v_karui","kanji":"軽い","kana":"かるい","romaji":"karui","meaning_es":"ligero","category":"adjetivos-i"},
-  {"id":"v_oishii","kanji":"おいしい","kana":"おいしい","romaji":"oishii","meaning_es":"delicioso","category":"adjetivos-i"},
-  {"id":"v_mazui","kanji":"まずい","kana":"まずい","romaji":"mazui","meaning_es":"malo (de sabor)","category":"adjetivos-i"},
-  {"id":"v_isogashii","kanji":"忙しい","kana":"いそがしい","romaji":"isogashii","meaning_es":"ocupado","category":"adjetivos-i"},
-  {"id":"v_ureshii","kanji":"嬉しい","kana":"うれしい","romaji":"ureshii","meaning_es":"contento / feliz","category":"adjetivos-i"},
-  {"id":"v_kanashii","kanji":"悲しい","kana":"かなしい","romaji":"kanashii","meaning_es":"triste","category":"adjetivos-i"},
-  {"id":"v_kowai","kanji":"怖い","kana":"こわい","romaji":"kowai","meaning_es":"aterrador / da miedo","category":"adjetivos-i"},
-  {"id":"v_taisetsu","kanji":"大切な","kana":"たいせつな","romaji":"taisetsu na","meaning_es":"importante / valioso","category":"adjetivos-na"},
-  {"id":"v_taihen","kanji":"大変な","kana":"たいへんな","romaji":"taihen na","meaning_es":"grave / muy difícil","category":"adjetivos-na"},
-  {"id":"v_hima","kanji":"暇な","kana":"ひまな","romaji":"hima na","meaning_es":"libre / sin nada que hacer","category":"adjetivos-na"},
-  {"id":"v_shinsetsu","kanji":"親切な","kana":"しんせつな","romaji":"shinsetsu na","meaning_es":"amable","category":"adjetivos-na"},
-  {"id":"v_tokubetsu","kanji":"特別な","kana":"とくべつな","romaji":"tokubetsu na","meaning_es":"especial","category":"adjetivos-na"},
-  {"id":"v_hitsuyou","kanji":"必要な","kana":"ひつような","romaji":"hitsuyou na","meaning_es":"necesario","category":"adjetivos-na"},
-  {"id":"v_kyonen","kanji":"去年","kana":"きょねん","romaji":"kyonen","meaning_es":"el año pasado","category":"tiempo"},
-  {"id":"v_rainen","kanji":"来年","kana":"らいねん","romaji":"rainen","meaning_es":"el año que viene","category":"tiempo"},
-  {"id":"v_sengetsu","kanji":"先月","kana":"せんげつ","romaji":"sengetsu","meaning_es":"el mes pasado","category":"tiempo"},
-  {"id":"v_raigetsu","kanji":"来月","kana":"らいげつ","romaji":"raigetsu","meaning_es":"el mes que viene","category":"tiempo"},
-  {"id":"v_kesa","kanji":"今朝","kana":"けさ","romaji":"kesa","meaning_es":"esta mañana","category":"tiempo"},
-  {"id":"v_konya","kanji":"今夜","kana":"こんや","romaji":"konya","meaning_es":"esta noche","category":"tiempo"},
-  {"id":"v_maishuu","kanji":"毎週","kana":"まいしゅう","romaji":"maishuu","meaning_es":"cada semana","category":"tiempo"},
-  {"id":"v_maitoshi","kanji":"毎年","kana":"まいとし","romaji":"maitoshi","meaning_es":"cada año","category":"tiempo"},
-  {"id":"v_kuukou","kanji":"空港","kana":"くうこう","romaji":"kuukou","meaning_es":"aeropuerto","category":"transporte"},
-  {"id":"v_chikatetsu","kanji":"地下鉄","kana":"ちかてつ","romaji":"chikatetsu","meaning_es":"metro / subterráneo","category":"transporte"},
-  {"id":"v_michi","kanji":"道","kana":"みち","romaji":"michi","meaning_es":"camino / calle","category":"transporte"},
-  {"id":"v_kawa","kanji":"川","kana":"かわ","romaji":"kawa","meaning_es":"río","category":"lugares"},
-  {"id":"v_toshokan","kanji":"図書館","kana":"としょかん","romaji":"toshokan","meaning_es":"biblioteca","category":"lugares"},
-  {"id":"v_yuubinkyoku","kanji":"郵便局","kana":"ゆうびんきょく","romaji":"yuubinkyoku","meaning_es":"oficina de correos","category":"lugares"},
-  {"id":"v_karada","kanji":"体","kana":"からだ","romaji":"karada","meaning_es":"cuerpo","category":"otras"},
-  {"id":"v_atama","kanji":"頭","kana":"あたま","romaji":"atama","meaning_es":"cabeza","category":"otras"},
-  {"id":"v_me","kanji":"目","kana":"め","romaji":"me","meaning_es":"ojo / ojos","category":"otras"},
-  {"id":"v_te","kanji":"手","kana":"て","romaji":"te","meaning_es":"mano","category":"otras"},
-  {"id":"v_ashi","kanji":"足","kana":"あし","romaji":"ashi","meaning_es":"pie / pierna","category":"otras"},
-  {"id":"v_byouki","kanji":"病気","kana":"びょうき","romaji":"byouki","meaning_es":"enfermedad","category":"otras"},
-  {"id":"v_kusuri","kanji":"薬","kana":"くすり","romaji":"kusuri","meaning_es":"medicina / medicamento","category":"otras"},
-  {"id":"v_sensei","kanji":"先生","kana":"せんせい","romaji":"sensei","meaning_es":"profesor / médico (tratamiento)","category":"otras"},
-  {"id":"v_gakusei","kanji":"学生","kana":"がくせい","romaji":"gakusei","meaning_es":"estudiante","category":"otras"},
-  {"id":"v_kaisha","kanji":"会社","kana":"かいしゃ","romaji":"kaisha","meaning_es":"empresa","category":"otras"},
-  {"id":"v_kotoba","kanji":"言葉","kana":"ことば","romaji":"kotoba","meaning_es":"palabra / idioma","category":"otras"},
-  {"id":"v_kimochi","kanji":"気持ち","kana":"きもち","romaji":"kimochi","meaning_es":"sentimiento / sensación","category":"otras"},
-  {"id":"v_okane","kanji":"お金","kana":"おかね","romaji":"okane","meaning_es":"dinero","category":"otras"},
-  {"id":"v_tokei","kanji":"時計","kana":"とけい","romaji":"tokei","meaning_es":"reloj","category":"objetos"},
-  {"id":"v_kaban","kanji":"鞄","kana":"かばん","romaji":"kaban","meaning_es":"bolso / maletín","category":"objetos"},
-  {"id":"v_kasa","kanji":"傘","kana":"かさ","romaji":"kasa","meaning_es":"paraguas","category":"objetos"},
-  {"id":"v_boushi","kanji":"帽子","kana":"ぼうし","romaji":"boushi","meaning_es":"sombrero / gorra","category":"objetos"},
-  {"id":"v_fuku","kanji":"服","kana":"ふく","romaji":"fuku","meaning_es":"ropa","category":"objetos"},
-  {"id":"v_kutsu","kanji":"靴","kana":"くつ","romaji":"kutsu","meaning_es":"zapatos","category":"objetos"},
-  {"id":"v_megane","kanji":"眼鏡","kana":"めがね","romaji":"megane","meaning_es":"gafas","category":"objetos"}
+  {
+    "id": "v_ichi",
+    "kanji": "一",
+    "kana": "いち",
+    "romaji": "ichi",
+    "meaning_es": "uno (1)",
+    "category": "números"
+  },
+  {
+    "id": "v_ni",
+    "kanji": "二",
+    "kana": "に",
+    "romaji": "ni",
+    "meaning_es": "dos (2)",
+    "category": "números"
+  },
+  {
+    "id": "v_san",
+    "kanji": "三",
+    "kana": "さん",
+    "romaji": "san",
+    "meaning_es": "tres (3)",
+    "category": "números"
+  },
+  {
+    "id": "v_shi",
+    "kanji": "四",
+    "kana": "し／よん",
+    "romaji": "shi/yon",
+    "meaning_es": "cuatro (4)",
+    "category": "números"
+  },
+  {
+    "id": "v_go",
+    "kanji": "五",
+    "kana": "ご",
+    "romaji": "go",
+    "meaning_es": "cinco (5)",
+    "category": "números"
+  },
+  {
+    "id": "v_roku",
+    "kanji": "六",
+    "kana": "ろく",
+    "romaji": "roku",
+    "meaning_es": "seis (6)",
+    "category": "números"
+  },
+  {
+    "id": "v_nana",
+    "kanji": "七",
+    "kana": "なな／しち",
+    "romaji": "nana/shichi",
+    "meaning_es": "siete (7)",
+    "category": "números"
+  },
+  {
+    "id": "v_hachi",
+    "kanji": "八",
+    "kana": "はち",
+    "romaji": "hachi",
+    "meaning_es": "ocho (8)",
+    "category": "números"
+  },
+  {
+    "id": "v_kyuu",
+    "kanji": "九",
+    "kana": "きゅう／く",
+    "romaji": "kyuu/ku",
+    "meaning_es": "nueve (9)",
+    "category": "números"
+  },
+  {
+    "id": "v_juu",
+    "kanji": "十",
+    "kana": "じゅう",
+    "romaji": "juu",
+    "meaning_es": "diez (10)",
+    "category": "números"
+  },
+  {
+    "id": "v_hyaku",
+    "kanji": "百",
+    "kana": "ひゃく",
+    "romaji": "hyaku",
+    "meaning_es": "cien (100)",
+    "category": "números"
+  },
+  {
+    "id": "v_sen",
+    "kanji": "千",
+    "kana": "せん",
+    "romaji": "sen",
+    "meaning_es": "mil (1000)",
+    "category": "números"
+  },
+  {
+    "id": "v_man",
+    "kanji": "万",
+    "kana": "まん",
+    "romaji": "man",
+    "meaning_es": "diez mil (10.000)",
+    "category": "números"
+  },
+  {
+    "id": "v_getsuyoubi",
+    "kanji": "月曜日",
+    "kana": "げつようび",
+    "romaji": "getsuyoubi",
+    "meaning_es": "lunes",
+    "category": "días"
+  },
+  {
+    "id": "v_kayoubi",
+    "kanji": "火曜日",
+    "kana": "かようび",
+    "romaji": "kayoubi",
+    "meaning_es": "martes",
+    "category": "días"
+  },
+  {
+    "id": "v_suiyoubi",
+    "kanji": "水曜日",
+    "kana": "すいようび",
+    "romaji": "suiyoubi",
+    "meaning_es": "miércoles",
+    "category": "días"
+  },
+  {
+    "id": "v_mokuyoubi",
+    "kanji": "木曜日",
+    "kana": "もくようび",
+    "romaji": "mokuyoubi",
+    "meaning_es": "jueves",
+    "category": "días"
+  },
+  {
+    "id": "v_kin_youbi",
+    "kanji": "金曜日",
+    "kana": "きんようび",
+    "romaji": "kin'youbi",
+    "meaning_es": "viernes",
+    "category": "días"
+  },
+  {
+    "id": "v_doyoubi",
+    "kanji": "土曜日",
+    "kana": "どようび",
+    "romaji": "doyoubi",
+    "meaning_es": "sábado",
+    "category": "días"
+  },
+  {
+    "id": "v_nichiyoubi",
+    "kanji": "日曜日",
+    "kana": "にちようび",
+    "romaji": "nichiyoubi",
+    "meaning_es": "domingo",
+    "category": "días"
+  },
+  {
+    "id": "v_kyou",
+    "kanji": "今日",
+    "kana": "きょう",
+    "romaji": "kyou",
+    "meaning_es": "hoy",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_ashita",
+    "kanji": "明日",
+    "kana": "あした",
+    "romaji": "ashita",
+    "meaning_es": "mañana",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_kinou",
+    "kanji": "昨日",
+    "kana": "きのう",
+    "romaji": "kinou",
+    "meaning_es": "ayer",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_ima",
+    "kanji": "今",
+    "kana": "いま",
+    "romaji": "ima",
+    "meaning_es": "ahora",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_asa",
+    "kanji": "朝",
+    "kana": "あさ",
+    "romaji": "asa",
+    "meaning_es": "mañana (hora del día)",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_hiru",
+    "kanji": "昼",
+    "kana": "ひる",
+    "romaji": "hiru",
+    "meaning_es": "mediodía / tarde",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_yoru",
+    "kanji": "夜",
+    "kana": "よる",
+    "romaji": "yoru",
+    "meaning_es": "noche",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_mainichi",
+    "kanji": "毎日",
+    "kana": "まいにち",
+    "romaji": "mainichi",
+    "meaning_es": "cada día / todos los días",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_senshuu",
+    "kanji": "先週",
+    "kana": "せんしゅう",
+    "romaji": "senshuu",
+    "meaning_es": "la semana pasada",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_raishuu",
+    "kanji": "来週",
+    "kana": "らいしゅう",
+    "romaji": "raishuu",
+    "meaning_es": "la semana que viene",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_chichi",
+    "kanji": "父",
+    "kana": "ちち",
+    "romaji": "chichi",
+    "meaning_es": "padre (mi padre)",
+    "category": "familia"
+  },
+  {
+    "id": "v_haha",
+    "kanji": "母",
+    "kana": "はは",
+    "romaji": "haha",
+    "meaning_es": "madre (mi madre)",
+    "category": "familia"
+  },
+  {
+    "id": "v_ani",
+    "kanji": "兄",
+    "kana": "あに",
+    "romaji": "ani",
+    "meaning_es": "hermano mayor (mi hermano)",
+    "category": "familia"
+  },
+  {
+    "id": "v_ane",
+    "kanji": "姉",
+    "kana": "あね",
+    "romaji": "ane",
+    "meaning_es": "hermana mayor (mi hermana)",
+    "category": "familia"
+  },
+  {
+    "id": "v_otouto",
+    "kanji": "弟",
+    "kana": "おとうと",
+    "romaji": "otouto",
+    "meaning_es": "hermano menor",
+    "category": "familia"
+  },
+  {
+    "id": "v_imouto",
+    "kanji": "妹",
+    "kana": "いもうと",
+    "romaji": "imouto",
+    "meaning_es": "hermana menor",
+    "category": "familia"
+  },
+  {
+    "id": "v_kazoku",
+    "kanji": "家族",
+    "kana": "かぞく",
+    "romaji": "kazoku",
+    "meaning_es": "familia",
+    "category": "familia"
+  },
+  {
+    "id": "v_kodomo",
+    "kanji": "子供",
+    "kana": "こども",
+    "romaji": "kodomo",
+    "meaning_es": "niño / hijo",
+    "category": "familia"
+  },
+  {
+    "id": "v_tomodachi",
+    "kanji": "友達",
+    "kana": "ともだち",
+    "romaji": "tomodachi",
+    "meaning_es": "amigo / amiga",
+    "category": "familia"
+  },
+  {
+    "id": "v_mizu",
+    "kanji": "水",
+    "kana": "みず",
+    "romaji": "mizu",
+    "meaning_es": "agua",
+    "category": "comida"
+  },
+  {
+    "id": "v_gohan",
+    "kanji": "ご飯",
+    "kana": "ごはん",
+    "romaji": "gohan",
+    "meaning_es": "arroz / comida",
+    "category": "comida"
+  },
+  {
+    "id": "v_pan",
+    "kanji": "パン",
+    "kana": "パン",
+    "romaji": "pan",
+    "meaning_es": "pan",
+    "category": "comida"
+  },
+  {
+    "id": "v_niku",
+    "kanji": "肉",
+    "kana": "にく",
+    "romaji": "niku",
+    "meaning_es": "carne",
+    "category": "comida"
+  },
+  {
+    "id": "v_sakana",
+    "kanji": "魚",
+    "kana": "さかな",
+    "romaji": "sakana",
+    "meaning_es": "pescado",
+    "category": "comida"
+  },
+  {
+    "id": "v_yasai",
+    "kanji": "野菜",
+    "kana": "やさい",
+    "romaji": "yasai",
+    "meaning_es": "verdura / verduras",
+    "category": "comida"
+  },
+  {
+    "id": "v_kudamono",
+    "kanji": "果物",
+    "kana": "くだもの",
+    "romaji": "kudamono",
+    "meaning_es": "fruta",
+    "category": "comida"
+  },
+  {
+    "id": "v_ocha",
+    "kanji": "お茶",
+    "kana": "おちゃ",
+    "romaji": "ocha",
+    "meaning_es": "té japonés",
+    "category": "comida"
+  },
+  {
+    "id": "v_koohii",
+    "kanji": "コーヒー",
+    "kana": "コーヒー",
+    "romaji": "koohii",
+    "meaning_es": "café",
+    "category": "comida"
+  },
+  {
+    "id": "v_gyuunyuu",
+    "kanji": "牛乳",
+    "kana": "ぎゅうにゅう",
+    "romaji": "gyuunyuu",
+    "meaning_es": "leche",
+    "category": "comida"
+  },
+  {
+    "id": "v_tamago",
+    "kanji": "卵",
+    "kana": "たまご",
+    "romaji": "tamago",
+    "meaning_es": "huevo",
+    "category": "comida"
+  },
+  {
+    "id": "v_ringo",
+    "kanji": "りんご",
+    "kana": "りんご",
+    "romaji": "ringo",
+    "meaning_es": "manzana",
+    "category": "comida"
+  },
+  {
+    "id": "v_gakkou",
+    "kanji": "学校",
+    "kana": "がっこう",
+    "romaji": "gakkou",
+    "meaning_es": "escuela / colegio",
+    "category": "lugares"
+  },
+  {
+    "id": "v_ie",
+    "kanji": "家",
+    "kana": "いえ",
+    "romaji": "ie",
+    "meaning_es": "casa / hogar",
+    "category": "lugares"
+  },
+  {
+    "id": "v_eki",
+    "kanji": "駅",
+    "kana": "えき",
+    "romaji": "eki",
+    "meaning_es": "estación de tren",
+    "category": "lugares"
+  },
+  {
+    "id": "v_byouin",
+    "kanji": "病院",
+    "kana": "びょういん",
+    "romaji": "byouin",
+    "meaning_es": "hospital",
+    "category": "lugares"
+  },
+  {
+    "id": "v_ginkou",
+    "kanji": "銀行",
+    "kana": "ぎんこう",
+    "romaji": "ginkou",
+    "meaning_es": "banco",
+    "category": "lugares"
+  },
+  {
+    "id": "v_resutoran",
+    "kanji": "レストラン",
+    "kana": "レストラン",
+    "romaji": "resutoran",
+    "meaning_es": "restaurante",
+    "category": "lugares"
+  },
+  {
+    "id": "v_kouen",
+    "kanji": "公園",
+    "kana": "こうえん",
+    "romaji": "kouen",
+    "meaning_es": "parque",
+    "category": "lugares"
+  },
+  {
+    "id": "v_mise",
+    "kanji": "店",
+    "kana": "みせ",
+    "romaji": "mise",
+    "meaning_es": "tienda",
+    "category": "lugares"
+  },
+  {
+    "id": "v_taberu",
+    "kanji": "食べる",
+    "kana": "たべる",
+    "romaji": "taberu",
+    "meaning_es": "comer",
+    "category": "verbos"
+  },
+  {
+    "id": "v_nomu",
+    "kanji": "飲む",
+    "kana": "のむ",
+    "romaji": "nomu",
+    "meaning_es": "beber",
+    "category": "verbos"
+  },
+  {
+    "id": "v_iku",
+    "kanji": "行く",
+    "kana": "いく",
+    "romaji": "iku",
+    "meaning_es": "ir",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kuru",
+    "kanji": "来る",
+    "kana": "くる",
+    "romaji": "kuru",
+    "meaning_es": "venir",
+    "category": "verbos"
+  },
+  {
+    "id": "v_miru",
+    "kanji": "見る",
+    "kana": "みる",
+    "romaji": "miru",
+    "meaning_es": "ver / mirar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kiku",
+    "kanji": "聞く",
+    "kana": "きく",
+    "romaji": "kiku",
+    "meaning_es": "escuchar / preguntar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_hanasu",
+    "kanji": "話す",
+    "kana": "はなす",
+    "romaji": "hanasu",
+    "meaning_es": "hablar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kaku",
+    "kanji": "書く",
+    "kana": "かく",
+    "romaji": "kaku",
+    "meaning_es": "escribir",
+    "category": "verbos"
+  },
+  {
+    "id": "v_yomu",
+    "kanji": "読む",
+    "kana": "よむ",
+    "romaji": "yomu",
+    "meaning_es": "leer",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kau",
+    "kanji": "買う",
+    "kana": "かう",
+    "romaji": "kau",
+    "meaning_es": "comprar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_suru",
+    "kanji": "する",
+    "kana": "する",
+    "romaji": "suru",
+    "meaning_es": "hacer",
+    "category": "verbos"
+  },
+  {
+    "id": "v_wakaru",
+    "kanji": "分かる",
+    "kana": "わかる",
+    "romaji": "wakaru",
+    "meaning_es": "entender / comprender",
+    "category": "verbos"
+  },
+  {
+    "id": "v_okiru",
+    "kanji": "起きる",
+    "kana": "おきる",
+    "romaji": "okiru",
+    "meaning_es": "levantarse / despertarse",
+    "category": "verbos"
+  },
+  {
+    "id": "v_neru",
+    "kanji": "寝る",
+    "kana": "ねる",
+    "romaji": "neru",
+    "meaning_es": "dormir / acostarse",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kaeru",
+    "kanji": "帰る",
+    "kana": "かえる",
+    "romaji": "kaeru",
+    "meaning_es": "volver a casa",
+    "category": "verbos"
+  },
+  {
+    "id": "v_tsukau",
+    "kanji": "使う",
+    "kana": "つかう",
+    "romaji": "tsukau",
+    "meaning_es": "usar / utilizar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_oshieru",
+    "kanji": "教える",
+    "kana": "おしえる",
+    "romaji": "oshieru",
+    "meaning_es": "enseñar / decir",
+    "category": "verbos"
+  },
+  {
+    "id": "v_benkyousuru",
+    "kanji": "勉強する",
+    "kana": "べんきょうする",
+    "romaji": "benkyou suru",
+    "meaning_es": "estudiar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_ookii",
+    "kanji": "大きい",
+    "kana": "おおきい",
+    "romaji": "ookii",
+    "meaning_es": "grande",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_chiisai",
+    "kanji": "小さい",
+    "kana": "ちいさい",
+    "romaji": "chiisai",
+    "meaning_es": "pequeño",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_takai",
+    "kanji": "高い",
+    "kana": "たかい",
+    "romaji": "takai",
+    "meaning_es": "alto / caro",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_yasui",
+    "kanji": "安い",
+    "kana": "やすい",
+    "romaji": "yasui",
+    "meaning_es": "barato",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_atarashii",
+    "kanji": "新しい",
+    "kana": "あたらしい",
+    "romaji": "atarashii",
+    "meaning_es": "nuevo",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_furui",
+    "kanji": "古い",
+    "kana": "ふるい",
+    "romaji": "furui",
+    "meaning_es": "viejo / antiguo",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_ii",
+    "kanji": "良い",
+    "kana": "いい／よい",
+    "romaji": "ii/yoi",
+    "meaning_es": "bueno",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_warui",
+    "kanji": "悪い",
+    "kana": "わるい",
+    "romaji": "warui",
+    "meaning_es": "malo",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_atsui",
+    "kanji": "暑い",
+    "kana": "あつい",
+    "romaji": "atsui",
+    "meaning_es": "caluroso (tiempo)",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_samui",
+    "kanji": "寒い",
+    "kana": "さむい",
+    "romaji": "samui",
+    "meaning_es": "frío (tiempo)",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_muzukashii",
+    "kanji": "難しい",
+    "kana": "むずかしい",
+    "romaji": "muzukashii",
+    "meaning_es": "difícil",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_yasashii",
+    "kanji": "易しい",
+    "kana": "やさしい",
+    "romaji": "yasashii",
+    "meaning_es": "fácil / amable",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_nagai",
+    "kanji": "長い",
+    "kana": "ながい",
+    "romaji": "nagai",
+    "meaning_es": "largo",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_mijikai",
+    "kanji": "短い",
+    "kana": "みじかい",
+    "romaji": "mijikai",
+    "meaning_es": "corto",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_shiroi",
+    "kanji": "白い",
+    "kana": "しろい",
+    "romaji": "shiroi",
+    "meaning_es": "blanco",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_kuroi",
+    "kanji": "黒い",
+    "kana": "くろい",
+    "romaji": "kuroi",
+    "meaning_es": "negro",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_akai",
+    "kanji": "赤い",
+    "kana": "あかい",
+    "romaji": "akai",
+    "meaning_es": "rojo",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_aoi",
+    "kanji": "青い",
+    "kana": "あおい",
+    "romaji": "aoi",
+    "meaning_es": "azul / verde (naturaleza)",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_kirei",
+    "kanji": "きれい",
+    "kana": "きれい",
+    "romaji": "kirei",
+    "meaning_es": "bonito / limpio",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_yuumei",
+    "kanji": "有名",
+    "kana": "ゆうめい",
+    "romaji": "yuumei",
+    "meaning_es": "famoso",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_benri",
+    "kanji": "便利",
+    "kana": "べんり",
+    "romaji": "benri",
+    "meaning_es": "conveniente / útil",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_genki",
+    "kanji": "元気",
+    "kana": "げんき",
+    "romaji": "genki",
+    "meaning_es": "enérgico / sano",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_shizuka",
+    "kanji": "静か",
+    "kana": "しずか",
+    "romaji": "shizuka",
+    "meaning_es": "tranquilo / silencioso",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_suki",
+    "kanji": "好き",
+    "kana": "すき",
+    "romaji": "suki",
+    "meaning_es": "gustar / querer",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_kirai",
+    "kanji": "嫌い",
+    "kana": "きらい",
+    "romaji": "kirai",
+    "meaning_es": "detestar / no gustar",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_jouzu",
+    "kanji": "上手",
+    "kana": "じょうず",
+    "romaji": "jouzu",
+    "meaning_es": "hábil / bueno en algo",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_heta",
+    "kanji": "下手",
+    "kana": "へた",
+    "romaji": "heta",
+    "meaning_es": "torpe / malo en algo",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_watashi",
+    "kanji": "私",
+    "kana": "わたし",
+    "romaji": "watashi",
+    "meaning_es": "yo",
+    "category": "pronombres"
+  },
+  {
+    "id": "v_anata",
+    "kanji": "あなた",
+    "kana": "あなた",
+    "romaji": "anata",
+    "meaning_es": "tú / usted",
+    "category": "pronombres"
+  },
+  {
+    "id": "v_kore",
+    "kanji": "これ",
+    "kana": "これ",
+    "romaji": "kore",
+    "meaning_es": "esto (cerca del hablante)",
+    "category": "pronombres"
+  },
+  {
+    "id": "v_sore",
+    "kanji": "それ",
+    "kana": "それ",
+    "romaji": "sore",
+    "meaning_es": "eso (cerca del oyente)",
+    "category": "pronombres"
+  },
+  {
+    "id": "v_are",
+    "kanji": "あれ",
+    "kana": "あれ",
+    "romaji": "are",
+    "meaning_es": "aquello (lejos de ambos)",
+    "category": "pronombres"
+  },
+  {
+    "id": "v_koko",
+    "kanji": "ここ",
+    "kana": "ここ",
+    "romaji": "koko",
+    "meaning_es": "aquí",
+    "category": "pronombres"
+  },
+  {
+    "id": "v_soko",
+    "kanji": "そこ",
+    "kana": "そこ",
+    "romaji": "soko",
+    "meaning_es": "ahí",
+    "category": "pronombres"
+  },
+  {
+    "id": "v_asoko",
+    "kanji": "あそこ",
+    "kana": "あそこ",
+    "romaji": "asoko",
+    "meaning_es": "allí / allá",
+    "category": "pronombres"
+  },
+  {
+    "id": "v_nani",
+    "kanji": "何",
+    "kana": "なに",
+    "romaji": "nani",
+    "meaning_es": "¿qué?",
+    "category": "interrogativos"
+  },
+  {
+    "id": "v_dare",
+    "kanji": "誰",
+    "kana": "だれ",
+    "romaji": "dare",
+    "meaning_es": "¿quién?",
+    "category": "interrogativos"
+  },
+  {
+    "id": "v_doko",
+    "kanji": "どこ",
+    "kana": "どこ",
+    "romaji": "doko",
+    "meaning_es": "¿dónde?",
+    "category": "interrogativos"
+  },
+  {
+    "id": "v_itsu",
+    "kanji": "いつ",
+    "kana": "いつ",
+    "romaji": "itsu",
+    "meaning_es": "¿cuándo?",
+    "category": "interrogativos"
+  },
+  {
+    "id": "v_dou",
+    "kanji": "どう",
+    "kana": "どう",
+    "romaji": "dou",
+    "meaning_es": "¿cómo? / ¿qué tal?",
+    "category": "interrogativos"
+  },
+  {
+    "id": "v_ikura",
+    "kanji": "いくら",
+    "kana": "いくら",
+    "romaji": "ikura",
+    "meaning_es": "¿cuánto? (precio)",
+    "category": "interrogativos"
+  },
+  {
+    "id": "v_namae",
+    "kanji": "名前",
+    "kana": "なまえ",
+    "romaji": "namae",
+    "meaning_es": "nombre",
+    "category": "otras"
+  },
+  {
+    "id": "v_denwa",
+    "kanji": "電話",
+    "kana": "でんわ",
+    "romaji": "denwa",
+    "meaning_es": "teléfono",
+    "category": "otras"
+  },
+  {
+    "id": "v_hon",
+    "kanji": "本",
+    "kana": "ほん",
+    "romaji": "hon",
+    "meaning_es": "libro",
+    "category": "otras"
+  },
+  {
+    "id": "v_eiga",
+    "kanji": "映画",
+    "kana": "えいが",
+    "romaji": "eiga",
+    "meaning_es": "película / cine",
+    "category": "otras"
+  },
+  {
+    "id": "v_ongaku",
+    "kanji": "音楽",
+    "kana": "おんがく",
+    "romaji": "ongaku",
+    "meaning_es": "música",
+    "category": "otras"
+  },
+  {
+    "id": "v_shigoto",
+    "kanji": "仕事",
+    "kana": "しごと",
+    "romaji": "shigoto",
+    "meaning_es": "trabajo",
+    "category": "otras"
+  },
+  {
+    "id": "v_tenki",
+    "kanji": "天気",
+    "kana": "てんき",
+    "romaji": "tenki",
+    "meaning_es": "tiempo (meteorológico)",
+    "category": "otras"
+  },
+  {
+    "id": "v_sora",
+    "kanji": "空",
+    "kana": "そら",
+    "romaji": "sora",
+    "meaning_es": "cielo",
+    "category": "otras"
+  },
+  {
+    "id": "v_umi",
+    "kanji": "海",
+    "kana": "うみ",
+    "romaji": "umi",
+    "meaning_es": "mar",
+    "category": "otras"
+  },
+  {
+    "id": "v_yama",
+    "kanji": "山",
+    "kana": "やま",
+    "romaji": "yama",
+    "meaning_es": "montaña",
+    "category": "otras"
+  },
+  {
+    "id": "v_hana",
+    "kanji": "花",
+    "kana": "はな",
+    "romaji": "hana",
+    "meaning_es": "flor",
+    "category": "otras"
+  },
+  {
+    "id": "v_inu",
+    "kanji": "犬",
+    "kana": "いぬ",
+    "romaji": "inu",
+    "meaning_es": "perro",
+    "category": "otras"
+  },
+  {
+    "id": "v_neko",
+    "kanji": "猫",
+    "kana": "ねこ",
+    "romaji": "neko",
+    "meaning_es": "gato",
+    "category": "otras"
+  },
+  {
+    "id": "v_kuruma",
+    "kanji": "車",
+    "kana": "くるま",
+    "romaji": "kuruma",
+    "meaning_es": "coche / automóvil",
+    "category": "otras"
+  },
+  {
+    "id": "v_densha",
+    "kanji": "電車",
+    "kana": "でんしゃ",
+    "romaji": "densha",
+    "meaning_es": "tren eléctrico",
+    "category": "otras"
+  },
+  {
+    "id": "v_shukudai",
+    "kanji": "宿題",
+    "kana": "しゅくだい",
+    "romaji": "shukudai",
+    "meaning_es": "deberes / tarea",
+    "category": "otras"
+  },
+  {
+    "id": "v_terebi",
+    "kanji": "テレビ",
+    "kana": "テレビ",
+    "romaji": "terebi",
+    "meaning_es": "televisión",
+    "category": "objetos"
+  },
+  {
+    "id": "v_nyuusu",
+    "kanji": "ニュース",
+    "kana": "ニュース",
+    "romaji": "nyuusu",
+    "meaning_es": "noticias",
+    "category": "objetos"
+  },
+  {
+    "id": "v_hoteru",
+    "kanji": "ホテル",
+    "kana": "ホテル",
+    "romaji": "hoteru",
+    "meaning_es": "hotel",
+    "category": "lugares"
+  },
+  {
+    "id": "v_basu",
+    "kanji": "バス",
+    "kana": "バス",
+    "romaji": "basu",
+    "meaning_es": "autobús",
+    "category": "transporte"
+  },
+  {
+    "id": "v_takushii",
+    "kanji": "タクシー",
+    "kana": "タクシー",
+    "romaji": "takushii",
+    "meaning_es": "taxi",
+    "category": "transporte"
+  },
+  {
+    "id": "v_kamera",
+    "kanji": "カメラ",
+    "kana": "カメラ",
+    "romaji": "kamera",
+    "meaning_es": "cámara",
+    "category": "objetos"
+  },
+  {
+    "id": "v_biiru",
+    "kanji": "ビール",
+    "kana": "ビール",
+    "romaji": "biiru",
+    "meaning_es": "cerveza",
+    "category": "comida"
+  },
+  {
+    "id": "v_juusu",
+    "kanji": "ジュース",
+    "kana": "ジュース",
+    "romaji": "juusu",
+    "meaning_es": "zumo / jugo",
+    "category": "comida"
+  },
+  {
+    "id": "v_aisukuriimu",
+    "kanji": "アイスクリーム",
+    "kana": "アイスクリーム",
+    "romaji": "aisukuriimu",
+    "meaning_es": "helado",
+    "category": "comida"
+  },
+  {
+    "id": "v_teeburu",
+    "kanji": "テーブル",
+    "kana": "テーブル",
+    "romaji": "teeburu",
+    "meaning_es": "mesa",
+    "category": "objetos"
+  },
+  {
+    "id": "v_doa",
+    "kanji": "ドア",
+    "kana": "ドア",
+    "romaji": "doa",
+    "meaning_es": "puerta",
+    "category": "objetos"
+  },
+  {
+    "id": "v_nooto",
+    "kanji": "ノート",
+    "kana": "ノート",
+    "romaji": "nooto",
+    "meaning_es": "cuaderno",
+    "category": "objetos"
+  },
+  {
+    "id": "v_pen",
+    "kanji": "ペン",
+    "kana": "ペン",
+    "romaji": "pen",
+    "meaning_es": "bolígrafo",
+    "category": "objetos"
+  },
+  {
+    "id": "v_baggu",
+    "kanji": "バッグ",
+    "kana": "バッグ",
+    "romaji": "baggu",
+    "meaning_es": "bolso",
+    "category": "objetos"
+  },
+  {
+    "id": "v_suupaa",
+    "kanji": "スーパー",
+    "kana": "スーパー",
+    "romaji": "suupaa",
+    "meaning_es": "supermercado",
+    "category": "lugares"
+  },
+  {
+    "id": "v_depaato",
+    "kanji": "デパート",
+    "kana": "デパート",
+    "romaji": "depaato",
+    "meaning_es": "grandes almacenes",
+    "category": "lugares"
+  },
+  {
+    "id": "v_apaato",
+    "kanji": "アパート",
+    "kana": "アパート",
+    "romaji": "apaato",
+    "meaning_es": "apartamento",
+    "category": "lugares"
+  },
+  {
+    "id": "v_erebeetaa",
+    "kanji": "エレベーター",
+    "kana": "エレベーター",
+    "romaji": "erebeetaa",
+    "meaning_es": "ascensor",
+    "category": "objetos"
+  },
+  {
+    "id": "v_eakon",
+    "kanji": "エアコン",
+    "kana": "エアコン",
+    "romaji": "eakon",
+    "meaning_es": "aire acondicionado",
+    "category": "objetos"
+  },
+  {
+    "id": "v_shawaa",
+    "kanji": "シャワー",
+    "kana": "シャワー",
+    "romaji": "shawaa",
+    "meaning_es": "ducha",
+    "category": "objetos"
+  },
+  {
+    "id": "v_toire",
+    "kanji": "トイレ",
+    "kana": "トイレ",
+    "romaji": "toire",
+    "meaning_es": "servicio / aseo",
+    "category": "lugares"
+  },
+  {
+    "id": "v_pasokon",
+    "kanji": "パソコン",
+    "kana": "パソコン",
+    "romaji": "pasokon",
+    "meaning_es": "ordenador personal",
+    "category": "objetos"
+  },
+  {
+    "id": "v_meeru",
+    "kanji": "メール",
+    "kana": "メール",
+    "romaji": "meeru",
+    "meaning_es": "correo electrónico",
+    "category": "otras"
+  },
+  {
+    "id": "v_geemu",
+    "kanji": "ゲーム",
+    "kana": "ゲーム",
+    "romaji": "geemu",
+    "meaning_es": "videojuego",
+    "category": "otras"
+  },
+  {
+    "id": "v_supootsu",
+    "kanji": "スポーツ",
+    "kana": "スポーツ",
+    "romaji": "supootsu",
+    "meaning_es": "deporte",
+    "category": "otras"
+  },
+  {
+    "id": "v_rajio",
+    "kanji": "ラジオ",
+    "kana": "ラジオ",
+    "romaji": "rajio",
+    "meaning_es": "radio",
+    "category": "objetos"
+  },
+  {
+    "id": "v_puuru",
+    "kanji": "プール",
+    "kana": "プール",
+    "romaji": "puuru",
+    "meaning_es": "piscina",
+    "category": "lugares"
+  },
+  {
+    "id": "v_tesuto",
+    "kanji": "テスト",
+    "kana": "テスト",
+    "romaji": "tesuto",
+    "meaning_es": "examen / test",
+    "category": "otras"
+  },
+  {
+    "id": "v_kiru",
+    "kanji": "着る",
+    "kana": "きる",
+    "romaji": "kiru",
+    "meaning_es": "ponerse (ropa)",
+    "category": "verbos"
+  },
+  {
+    "id": "v_nugu",
+    "kanji": "脱ぐ",
+    "kana": "ぬぐ",
+    "romaji": "nugu",
+    "meaning_es": "quitarse (ropa)",
+    "category": "verbos"
+  },
+  {
+    "id": "v_arau",
+    "kanji": "洗う",
+    "kana": "あらう",
+    "romaji": "arau",
+    "meaning_es": "lavar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_soujisuru",
+    "kanji": "掃除する",
+    "kana": "そうじする",
+    "romaji": "souji suru",
+    "meaning_es": "limpiar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_ryourisuru",
+    "kanji": "料理する",
+    "kana": "りょうりする",
+    "romaji": "ryouri suru",
+    "meaning_es": "cocinar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_oyogu",
+    "kanji": "泳ぐ",
+    "kana": "およぐ",
+    "romaji": "oyogu",
+    "meaning_es": "nadar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_hashiru",
+    "kanji": "走る",
+    "kana": "はしる",
+    "romaji": "hashiru",
+    "meaning_es": "correr",
+    "category": "verbos"
+  },
+  {
+    "id": "v_aruku",
+    "kanji": "歩く",
+    "kana": "あるく",
+    "romaji": "aruku",
+    "meaning_es": "caminar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_tomaru",
+    "kanji": "止まる",
+    "kana": "とまる",
+    "romaji": "tomaru",
+    "meaning_es": "parar / detenerse",
+    "category": "verbos"
+  },
+  {
+    "id": "v_hajimaru",
+    "kanji": "始まる",
+    "kana": "はじまる",
+    "romaji": "hajimaru",
+    "meaning_es": "empezar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_owaru",
+    "kanji": "終わる",
+    "kana": "おわる",
+    "romaji": "owaru",
+    "meaning_es": "terminar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_akeru",
+    "kanji": "開ける",
+    "kana": "あける",
+    "romaji": "akeru",
+    "meaning_es": "abrir",
+    "category": "verbos"
+  },
+  {
+    "id": "v_shimeru",
+    "kanji": "閉める",
+    "kana": "しめる",
+    "romaji": "shimeru",
+    "meaning_es": "cerrar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kasu",
+    "kanji": "貸す",
+    "kana": "かす",
+    "romaji": "kasu",
+    "meaning_es": "prestar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kariru",
+    "kanji": "借りる",
+    "kana": "かりる",
+    "romaji": "kariru",
+    "meaning_es": "pedir prestado",
+    "category": "verbos"
+  },
+  {
+    "id": "v_narau",
+    "kanji": "習う",
+    "kana": "ならう",
+    "romaji": "narau",
+    "meaning_es": "aprender / estudiar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_hataraku",
+    "kanji": "働く",
+    "kana": "はたらく",
+    "romaji": "hataraku",
+    "meaning_es": "trabajar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_yasumu",
+    "kanji": "休む",
+    "kana": "やすむ",
+    "romaji": "yasumu",
+    "meaning_es": "descansar / faltar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_asobu",
+    "kanji": "遊ぶ",
+    "kana": "あそぶ",
+    "romaji": "asobu",
+    "meaning_es": "jugar / divertirse",
+    "category": "verbos"
+  },
+  {
+    "id": "v_matsu",
+    "kanji": "待つ",
+    "kana": "まつ",
+    "romaji": "matsu",
+    "meaning_es": "esperar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_au",
+    "kanji": "会う",
+    "kana": "あう",
+    "romaji": "au",
+    "meaning_es": "encontrarse con",
+    "category": "verbos"
+  },
+  {
+    "id": "v_noru",
+    "kanji": "乗る",
+    "kana": "のる",
+    "romaji": "noru",
+    "meaning_es": "montarse / subir a",
+    "category": "verbos"
+  },
+  {
+    "id": "v_oriru",
+    "kanji": "降りる",
+    "kana": "おりる",
+    "romaji": "oriru",
+    "meaning_es": "bajarse de",
+    "category": "verbos"
+  },
+  {
+    "id": "v_hairu",
+    "kanji": "入る",
+    "kana": "はいる",
+    "romaji": "hairu",
+    "meaning_es": "entrar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_deru",
+    "kanji": "出る",
+    "kana": "でる",
+    "romaji": "deru",
+    "meaning_es": "salir",
+    "category": "verbos"
+  },
+  {
+    "id": "v_hiroi",
+    "kanji": "広い",
+    "kana": "ひろい",
+    "romaji": "hiroi",
+    "meaning_es": "amplio / espacioso",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_semai",
+    "kanji": "狭い",
+    "kana": "せまい",
+    "romaji": "semai",
+    "meaning_es": "estrecho / pequeño",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_omoi",
+    "kanji": "重い",
+    "kana": "おもい",
+    "romaji": "omoi",
+    "meaning_es": "pesado",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_karui",
+    "kanji": "軽い",
+    "kana": "かるい",
+    "romaji": "karui",
+    "meaning_es": "ligero",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_oishii",
+    "kanji": "おいしい",
+    "kana": "おいしい",
+    "romaji": "oishii",
+    "meaning_es": "delicioso",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_mazui",
+    "kanji": "まずい",
+    "kana": "まずい",
+    "romaji": "mazui",
+    "meaning_es": "malo (de sabor)",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_isogashii",
+    "kanji": "忙しい",
+    "kana": "いそがしい",
+    "romaji": "isogashii",
+    "meaning_es": "ocupado",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_ureshii",
+    "kanji": "嬉しい",
+    "kana": "うれしい",
+    "romaji": "ureshii",
+    "meaning_es": "contento / feliz",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_kanashii",
+    "kanji": "悲しい",
+    "kana": "かなしい",
+    "romaji": "kanashii",
+    "meaning_es": "triste",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_kowai",
+    "kanji": "怖い",
+    "kana": "こわい",
+    "romaji": "kowai",
+    "meaning_es": "aterrador / da miedo",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_taisetsu",
+    "kanji": "大切な",
+    "kana": "たいせつな",
+    "romaji": "taisetsu na",
+    "meaning_es": "importante / valioso",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_taihen",
+    "kanji": "大変な",
+    "kana": "たいへんな",
+    "romaji": "taihen na",
+    "meaning_es": "grave / muy difícil",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_hima",
+    "kanji": "暇な",
+    "kana": "ひまな",
+    "romaji": "hima na",
+    "meaning_es": "libre / sin nada que hacer",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_shinsetsu",
+    "kanji": "親切な",
+    "kana": "しんせつな",
+    "romaji": "shinsetsu na",
+    "meaning_es": "amable",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_tokubetsu",
+    "kanji": "特別な",
+    "kana": "とくべつな",
+    "romaji": "tokubetsu na",
+    "meaning_es": "especial",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_hitsuyou",
+    "kanji": "必要な",
+    "kana": "ひつような",
+    "romaji": "hitsuyou na",
+    "meaning_es": "necesario",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_kyonen",
+    "kanji": "去年",
+    "kana": "きょねん",
+    "romaji": "kyonen",
+    "meaning_es": "el año pasado",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_rainen",
+    "kanji": "来年",
+    "kana": "らいねん",
+    "romaji": "rainen",
+    "meaning_es": "el año que viene",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_sengetsu",
+    "kanji": "先月",
+    "kana": "せんげつ",
+    "romaji": "sengetsu",
+    "meaning_es": "el mes pasado",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_raigetsu",
+    "kanji": "来月",
+    "kana": "らいげつ",
+    "romaji": "raigetsu",
+    "meaning_es": "el mes que viene",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_kesa",
+    "kanji": "今朝",
+    "kana": "けさ",
+    "romaji": "kesa",
+    "meaning_es": "esta mañana",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_konya",
+    "kanji": "今夜",
+    "kana": "こんや",
+    "romaji": "konya",
+    "meaning_es": "esta noche",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_maishuu",
+    "kanji": "毎週",
+    "kana": "まいしゅう",
+    "romaji": "maishuu",
+    "meaning_es": "cada semana",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_maitoshi",
+    "kanji": "毎年",
+    "kana": "まいとし",
+    "romaji": "maitoshi",
+    "meaning_es": "cada año",
+    "category": "tiempo"
+  },
+  {
+    "id": "v_kuukou",
+    "kanji": "空港",
+    "kana": "くうこう",
+    "romaji": "kuukou",
+    "meaning_es": "aeropuerto",
+    "category": "transporte"
+  },
+  {
+    "id": "v_chikatetsu",
+    "kanji": "地下鉄",
+    "kana": "ちかてつ",
+    "romaji": "chikatetsu",
+    "meaning_es": "metro / subterráneo",
+    "category": "transporte"
+  },
+  {
+    "id": "v_michi",
+    "kanji": "道",
+    "kana": "みち",
+    "romaji": "michi",
+    "meaning_es": "camino / calle",
+    "category": "transporte"
+  },
+  {
+    "id": "v_kawa",
+    "kanji": "川",
+    "kana": "かわ",
+    "romaji": "kawa",
+    "meaning_es": "río",
+    "category": "lugares"
+  },
+  {
+    "id": "v_toshokan",
+    "kanji": "図書館",
+    "kana": "としょかん",
+    "romaji": "toshokan",
+    "meaning_es": "biblioteca",
+    "category": "lugares"
+  },
+  {
+    "id": "v_yuubinkyoku",
+    "kanji": "郵便局",
+    "kana": "ゆうびんきょく",
+    "romaji": "yuubinkyoku",
+    "meaning_es": "oficina de correos",
+    "category": "lugares"
+  },
+  {
+    "id": "v_karada",
+    "kanji": "体",
+    "kana": "からだ",
+    "romaji": "karada",
+    "meaning_es": "cuerpo",
+    "category": "otras"
+  },
+  {
+    "id": "v_atama",
+    "kanji": "頭",
+    "kana": "あたま",
+    "romaji": "atama",
+    "meaning_es": "cabeza",
+    "category": "otras"
+  },
+  {
+    "id": "v_me",
+    "kanji": "目",
+    "kana": "め",
+    "romaji": "me",
+    "meaning_es": "ojo / ojos",
+    "category": "otras"
+  },
+  {
+    "id": "v_te",
+    "kanji": "手",
+    "kana": "て",
+    "romaji": "te",
+    "meaning_es": "mano",
+    "category": "otras"
+  },
+  {
+    "id": "v_ashi",
+    "kanji": "足",
+    "kana": "あし",
+    "romaji": "ashi",
+    "meaning_es": "pie / pierna",
+    "category": "otras"
+  },
+  {
+    "id": "v_byouki",
+    "kanji": "病気",
+    "kana": "びょうき",
+    "romaji": "byouki",
+    "meaning_es": "enfermedad",
+    "category": "otras"
+  },
+  {
+    "id": "v_kusuri",
+    "kanji": "薬",
+    "kana": "くすり",
+    "romaji": "kusuri",
+    "meaning_es": "medicina / medicamento",
+    "category": "otras"
+  },
+  {
+    "id": "v_sensei",
+    "kanji": "先生",
+    "kana": "せんせい",
+    "romaji": "sensei",
+    "meaning_es": "profesor / médico (tratamiento)",
+    "category": "otras"
+  },
+  {
+    "id": "v_gakusei",
+    "kanji": "学生",
+    "kana": "がくせい",
+    "romaji": "gakusei",
+    "meaning_es": "estudiante",
+    "category": "otras"
+  },
+  {
+    "id": "v_kaisha",
+    "kanji": "会社",
+    "kana": "かいしゃ",
+    "romaji": "kaisha",
+    "meaning_es": "empresa",
+    "category": "otras"
+  },
+  {
+    "id": "v_kotoba",
+    "kanji": "言葉",
+    "kana": "ことば",
+    "romaji": "kotoba",
+    "meaning_es": "palabra / idioma",
+    "category": "otras"
+  },
+  {
+    "id": "v_kimochi",
+    "kanji": "気持ち",
+    "kana": "きもち",
+    "romaji": "kimochi",
+    "meaning_es": "sentimiento / sensación",
+    "category": "otras"
+  },
+  {
+    "id": "v_okane",
+    "kanji": "お金",
+    "kana": "おかね",
+    "romaji": "okane",
+    "meaning_es": "dinero",
+    "category": "otras"
+  },
+  {
+    "id": "v_tokei",
+    "kanji": "時計",
+    "kana": "とけい",
+    "romaji": "tokei",
+    "meaning_es": "reloj",
+    "category": "objetos"
+  },
+  {
+    "id": "v_kaban",
+    "kanji": "鞄",
+    "kana": "かばん",
+    "romaji": "kaban",
+    "meaning_es": "bolso / maletín",
+    "category": "objetos"
+  },
+  {
+    "id": "v_kasa",
+    "kanji": "傘",
+    "kana": "かさ",
+    "romaji": "kasa",
+    "meaning_es": "paraguas",
+    "category": "objetos"
+  },
+  {
+    "id": "v_boushi",
+    "kanji": "帽子",
+    "kana": "ぼうし",
+    "romaji": "boushi",
+    "meaning_es": "sombrero / gorra",
+    "category": "objetos"
+  },
+  {
+    "id": "v_fuku",
+    "kanji": "服",
+    "kana": "ふく",
+    "romaji": "fuku",
+    "meaning_es": "ropa",
+    "category": "objetos"
+  },
+  {
+    "id": "v_kutsu",
+    "kanji": "靴",
+    "kana": "くつ",
+    "romaji": "kutsu",
+    "meaning_es": "zapatos",
+    "category": "objetos"
+  },
+  {
+    "id": "v_megane",
+    "kanji": "眼鏡",
+    "kana": "めがね",
+    "romaji": "megane",
+    "meaning_es": "gafas",
+    "category": "objetos"
+  },
+  {
+    "id": "v_aka",
+    "kanji": "赤",
+    "kana": "あか",
+    "romaji": "aka",
+    "meaning_es": "rojo (color)",
+    "category": "colores"
+  },
+  {
+    "id": "v_ao",
+    "kanji": "青",
+    "kana": "あお",
+    "romaji": "ao",
+    "meaning_es": "azul (color)",
+    "category": "colores"
+  },
+  {
+    "id": "v_kiiro",
+    "kanji": "黄色",
+    "kana": "きいろ",
+    "romaji": "kiiro",
+    "meaning_es": "amarillo",
+    "category": "colores"
+  },
+  {
+    "id": "v_shiro",
+    "kanji": "白",
+    "kana": "しろ",
+    "romaji": "shiro",
+    "meaning_es": "blanco (color)",
+    "category": "colores"
+  },
+  {
+    "id": "v_kuro",
+    "kanji": "黒",
+    "kana": "くろ",
+    "romaji": "kuro",
+    "meaning_es": "negro (color)",
+    "category": "colores"
+  },
+  {
+    "id": "v_midori",
+    "kanji": "緑",
+    "kana": "みどり",
+    "romaji": "midori",
+    "meaning_es": "verde",
+    "category": "colores"
+  },
+  {
+    "id": "v_chairo",
+    "kanji": "茶色",
+    "kana": "ちゃいろ",
+    "romaji": "chairo",
+    "meaning_es": "marrón",
+    "category": "colores"
+  },
+  {
+    "id": "v_pinku",
+    "kanji": "ピンク",
+    "kana": "ピンク",
+    "romaji": "pinku",
+    "meaning_es": "rosa",
+    "category": "colores"
+  },
+  {
+    "id": "v_orenji",
+    "kanji": "オレンジ",
+    "kana": "オレンジ",
+    "romaji": "orenji",
+    "meaning_es": "naranja",
+    "category": "colores"
+  },
+  {
+    "id": "v_murasaki",
+    "kanji": "紫",
+    "kana": "むらさき",
+    "romaji": "murasaki",
+    "meaning_es": "morado / púrpura",
+    "category": "colores"
+  },
+  {
+    "id": "v_kao",
+    "kanji": "顔",
+    "kana": "かお",
+    "romaji": "kao",
+    "meaning_es": "cara",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_mimi",
+    "kanji": "耳",
+    "kana": "みみ",
+    "romaji": "mimi",
+    "meaning_es": "oreja / oídos",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_kuchi",
+    "kanji": "口",
+    "kana": "くち",
+    "romaji": "kuchi",
+    "meaning_es": "boca",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_ha",
+    "kanji": "歯",
+    "kana": "は",
+    "romaji": "ha",
+    "meaning_es": "diente / dientes",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_kubi",
+    "kanji": "首",
+    "kana": "くび",
+    "romaji": "kubi",
+    "meaning_es": "cuello",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_kata",
+    "kanji": "肩",
+    "kana": "かた",
+    "romaji": "kata",
+    "meaning_es": "hombro",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_senaka",
+    "kanji": "背中",
+    "kana": "せなか",
+    "romaji": "senaka",
+    "meaning_es": "espalda",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_onaka",
+    "kanji": "お腹",
+    "kana": "おなか",
+    "romaji": "onaka",
+    "meaning_es": "barriga / estómago",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_ude",
+    "kanji": "腕",
+    "kana": "うで",
+    "romaji": "ude",
+    "meaning_es": "brazo",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_yubi",
+    "kanji": "指",
+    "kana": "ゆび",
+    "romaji": "yubi",
+    "meaning_es": "dedo",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_hiza",
+    "kanji": "膝",
+    "kana": "ひざ",
+    "romaji": "hiza",
+    "meaning_es": "rodilla",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_shinzou",
+    "kanji": "心臓",
+    "kana": "しんぞう",
+    "romaji": "shinzou",
+    "meaning_es": "corazón",
+    "category": "cuerpo"
+  },
+  {
+    "id": "v_shatsu",
+    "kanji": "シャツ",
+    "kana": "シャツ",
+    "romaji": "shatsu",
+    "meaning_es": "camiseta",
+    "category": "ropa"
+  },
+  {
+    "id": "v_zubon",
+    "kanji": "ズボン",
+    "kana": "ズボン",
+    "romaji": "zubon",
+    "meaning_es": "pantalón",
+    "category": "ropa"
+  },
+  {
+    "id": "v_sukaato",
+    "kanji": "スカート",
+    "kana": "スカート",
+    "romaji": "sukaato",
+    "meaning_es": "falda",
+    "category": "ropa"
+  },
+  {
+    "id": "v_kooto",
+    "kanji": "コート",
+    "kana": "コート",
+    "romaji": "kooto",
+    "meaning_es": "abrigo",
+    "category": "ropa"
+  },
+  {
+    "id": "v_jaketto",
+    "kanji": "ジャケット",
+    "kana": "ジャケット",
+    "romaji": "jaketto",
+    "meaning_es": "chaqueta",
+    "category": "ropa"
+  },
+  {
+    "id": "v_seetaa",
+    "kanji": "セーター",
+    "kana": "セーター",
+    "romaji": "seetaa",
+    "meaning_es": "jersey / suéter",
+    "category": "ropa"
+  },
+  {
+    "id": "v_wanpiisu",
+    "kanji": "ワンピース",
+    "kana": "ワンピース",
+    "romaji": "wanpiisu",
+    "meaning_es": "vestido",
+    "category": "ropa"
+  },
+  {
+    "id": "v_kutsushita",
+    "kanji": "靴下",
+    "kana": "くつした",
+    "romaji": "kutsushita",
+    "meaning_es": "calcetines",
+    "category": "ropa"
+  },
+  {
+    "id": "v_shitagi",
+    "kanji": "下着",
+    "kana": "したぎ",
+    "romaji": "shitagi",
+    "meaning_es": "ropa interior",
+    "category": "ropa"
+  },
+  {
+    "id": "v_saifu",
+    "kanji": "財布",
+    "kana": "さいふ",
+    "romaji": "saifu",
+    "meaning_es": "cartera / billetera",
+    "category": "ropa"
+  },
+  {
+    "id": "v_kaban_ropa",
+    "kanji": "カバン",
+    "kana": "カバン",
+    "romaji": "kaban",
+    "meaning_es": "bolso / mochila",
+    "category": "ropa"
+  },
+  {
+    "id": "v_ame",
+    "kanji": "雨",
+    "kana": "あめ",
+    "romaji": "ame",
+    "meaning_es": "lluvia",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_yuki",
+    "kanji": "雪",
+    "kana": "ゆき",
+    "romaji": "yuki",
+    "meaning_es": "nieve",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_kaze",
+    "kanji": "風",
+    "kana": "かぜ",
+    "romaji": "kaze",
+    "meaning_es": "viento",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_kumo",
+    "kanji": "雲",
+    "kana": "くも",
+    "romaji": "kumo",
+    "meaning_es": "nube",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_taiyou",
+    "kanji": "太陽",
+    "kana": "たいよう",
+    "romaji": "taiyou",
+    "meaning_es": "sol",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_tsuki",
+    "kanji": "月",
+    "kana": "つき",
+    "romaji": "tsuki",
+    "meaning_es": "luna",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_hoshi",
+    "kanji": "星",
+    "kana": "ほし",
+    "romaji": "hoshi",
+    "meaning_es": "estrella",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_ike",
+    "kanji": "池",
+    "kana": "いけ",
+    "romaji": "ike",
+    "meaning_es": "estanque",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_ki",
+    "kanji": "木",
+    "kana": "き",
+    "romaji": "ki",
+    "meaning_es": "árbol",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_kusa",
+    "kanji": "草",
+    "kana": "くさ",
+    "romaji": "kusa",
+    "meaning_es": "hierba",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_tsuchi",
+    "kanji": "土",
+    "kana": "つち",
+    "romaji": "tsuchi",
+    "meaning_es": "tierra / suelo",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_ishi",
+    "kanji": "石",
+    "kana": "いし",
+    "romaji": "ishi",
+    "meaning_es": "piedra",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_kuuki",
+    "kanji": "空気",
+    "kana": "くうき",
+    "romaji": "kuuki",
+    "meaning_es": "aire",
+    "category": "naturaleza"
+  },
+  {
+    "id": "v_otousan",
+    "kanji": "お父さん",
+    "kana": "おとうさん",
+    "romaji": "otousan",
+    "meaning_es": "padre (su padre / tratamiento)",
+    "category": "familia"
+  },
+  {
+    "id": "v_okaasan",
+    "kanji": "お母さん",
+    "kana": "おかあさん",
+    "romaji": "okaasan",
+    "meaning_es": "madre (su madre / tratamiento)",
+    "category": "familia"
+  },
+  {
+    "id": "v_oniisan",
+    "kanji": "お兄さん",
+    "kana": "おにいさん",
+    "romaji": "oniisan",
+    "meaning_es": "hermano mayor (su hermano)",
+    "category": "familia"
+  },
+  {
+    "id": "v_oneesan",
+    "kanji": "お姉さん",
+    "kana": "おねえさん",
+    "romaji": "oneesan",
+    "meaning_es": "hermana mayor (su hermana)",
+    "category": "familia"
+  },
+  {
+    "id": "v_otoutosan",
+    "kanji": "弟さん",
+    "kana": "おとうとさん",
+    "romaji": "otoutosan",
+    "meaning_es": "hermano menor (su hermano)",
+    "category": "familia"
+  },
+  {
+    "id": "v_imoutosan",
+    "kanji": "妹さん",
+    "kana": "いもうとさん",
+    "romaji": "imoutosan",
+    "meaning_es": "hermana menor (su hermana)",
+    "category": "familia"
+  },
+  {
+    "id": "v_otto",
+    "kanji": "夫",
+    "kana": "おっと",
+    "romaji": "otto",
+    "meaning_es": "marido",
+    "category": "familia"
+  },
+  {
+    "id": "v_tsuma",
+    "kanji": "妻",
+    "kana": "つま",
+    "romaji": "tsuma",
+    "meaning_es": "esposa",
+    "category": "familia"
+  },
+  {
+    "id": "v_sofu",
+    "kanji": "祖父",
+    "kana": "そふ",
+    "romaji": "sofu",
+    "meaning_es": "abuelo (mi abuelo)",
+    "category": "familia"
+  },
+  {
+    "id": "v_sobo",
+    "kanji": "祖母",
+    "kana": "そぼ",
+    "romaji": "sobo",
+    "meaning_es": "abuela (mi abuela)",
+    "category": "familia"
+  },
+  {
+    "id": "v_akachan",
+    "kanji": "赤ちゃん",
+    "kana": "あかちゃん",
+    "romaji": "akachan",
+    "meaning_es": "bebé",
+    "category": "familia"
+  },
+  {
+    "id": "v_jitensha",
+    "kanji": "自転車",
+    "kana": "じてんしゃ",
+    "romaji": "jitensha",
+    "meaning_es": "bicicleta",
+    "category": "transporte"
+  },
+  {
+    "id": "v_hikouki",
+    "kanji": "飛行機",
+    "kana": "ひこうき",
+    "romaji": "hikouki",
+    "meaning_es": "avión",
+    "category": "transporte"
+  },
+  {
+    "id": "v_fune",
+    "kanji": "船",
+    "kana": "ふね",
+    "romaji": "fune",
+    "meaning_es": "barco",
+    "category": "transporte"
+  },
+  {
+    "id": "v_shinkansen",
+    "kanji": "新幹線",
+    "kana": "しんかんせん",
+    "romaji": "shinkansen",
+    "meaning_es": "tren bala",
+    "category": "transporte"
+  },
+  {
+    "id": "v_jidousha",
+    "kanji": "自動車",
+    "kana": "じどうしゃ",
+    "romaji": "jidousha",
+    "meaning_es": "automóvil",
+    "category": "transporte"
+  },
+  {
+    "id": "v_daidokoro",
+    "kanji": "台所",
+    "kana": "だいどころ",
+    "romaji": "daidokoro",
+    "meaning_es": "cocina",
+    "category": "lugares"
+  },
+  {
+    "id": "v_ofuro",
+    "kanji": "お風呂",
+    "kana": "おふろ",
+    "romaji": "ofuro",
+    "meaning_es": "baño (bañera)",
+    "category": "lugares"
+  },
+  {
+    "id": "v_genkan",
+    "kanji": "玄関",
+    "kana": "げんかん",
+    "romaji": "genkan",
+    "meaning_es": "entrada (de casa)",
+    "category": "lugares"
+  },
+  {
+    "id": "v_mado",
+    "kanji": "窓",
+    "kana": "まど",
+    "romaji": "mado",
+    "meaning_es": "ventana",
+    "category": "lugares"
+  },
+  {
+    "id": "v_kabe",
+    "kanji": "壁",
+    "kana": "かべ",
+    "romaji": "kabe",
+    "meaning_es": "pared",
+    "category": "lugares"
+  },
+  {
+    "id": "v_kaidan",
+    "kanji": "階段",
+    "kana": "かいだん",
+    "romaji": "kaidan",
+    "meaning_es": "escalera",
+    "category": "lugares"
+  },
+  {
+    "id": "v_chuushajou",
+    "kanji": "駐車場",
+    "kana": "ちゅうしゃじょう",
+    "romaji": "chuushajou",
+    "meaning_es": "aparcamiento",
+    "category": "lugares"
+  },
+  {
+    "id": "v_kousaten",
+    "kanji": "交差点",
+    "kana": "こうさてん",
+    "romaji": "kousaten",
+    "meaning_es": "cruce / intersección",
+    "category": "lugares"
+  },
+  {
+    "id": "v_koushuu_denwa",
+    "kanji": "公衆電話",
+    "kana": "こうしゅうでんわ",
+    "romaji": "koushuu denwa",
+    "meaning_es": "teléfono público",
+    "category": "lugares"
+  },
+  {
+    "id": "v_shingou",
+    "kanji": "信号",
+    "kana": "しんごう",
+    "romaji": "shingou",
+    "meaning_es": "semáforo",
+    "category": "lugares"
+  },
+  {
+    "id": "v_hashi",
+    "kanji": "橋",
+    "kana": "はし",
+    "romaji": "hashi",
+    "meaning_es": "puente",
+    "category": "lugares"
+  },
+  {
+    "id": "v_jinja",
+    "kanji": "神社",
+    "kana": "じんじゃ",
+    "romaji": "jinja",
+    "meaning_es": "santuario sintoísta",
+    "category": "lugares"
+  },
+  {
+    "id": "v_tera",
+    "kanji": "寺",
+    "kana": "てら",
+    "romaji": "tera",
+    "meaning_es": "templo budista",
+    "category": "lugares"
+  },
+  {
+    "id": "v_daigaku",
+    "kanji": "大学",
+    "kana": "だいがく",
+    "romaji": "daigaku",
+    "meaning_es": "universidad",
+    "category": "lugares"
+  },
+  {
+    "id": "v_kissaten",
+    "kanji": "喫茶店",
+    "kana": "きっさてん",
+    "romaji": "kissaten",
+    "meaning_es": "café / cafetería",
+    "category": "lugares"
+  },
+  {
+    "id": "v_kagi",
+    "kanji": "鍵",
+    "kana": "かぎ",
+    "romaji": "kagi",
+    "meaning_es": "llave",
+    "category": "objetos"
+  },
+  {
+    "id": "v_tsukue",
+    "kanji": "机",
+    "kana": "つくえ",
+    "romaji": "tsukue",
+    "meaning_es": "escritorio",
+    "category": "objetos"
+  },
+  {
+    "id": "v_isu",
+    "kanji": "椅子",
+    "kana": "いす",
+    "romaji": "isu",
+    "meaning_es": "silla",
+    "category": "objetos"
+  },
+  {
+    "id": "v_denki",
+    "kanji": "電気",
+    "kana": "でんき",
+    "romaji": "denki",
+    "meaning_es": "electricidad / luz eléctrica",
+    "category": "objetos"
+  },
+  {
+    "id": "v_shashin",
+    "kanji": "写真",
+    "kana": "しゃしん",
+    "romaji": "shashin",
+    "meaning_es": "fotografía / foto",
+    "category": "objetos"
+  },
+  {
+    "id": "v_chizu",
+    "kanji": "地図",
+    "kana": "ちず",
+    "romaji": "chizu",
+    "meaning_es": "mapa",
+    "category": "objetos"
+  },
+  {
+    "id": "v_shinbun",
+    "kanji": "新聞",
+    "kana": "しんぶん",
+    "romaji": "shinbun",
+    "meaning_es": "periódico",
+    "category": "objetos"
+  },
+  {
+    "id": "v_zasshi",
+    "kanji": "雑誌",
+    "kana": "ざっし",
+    "romaji": "zasshi",
+    "meaning_es": "revista",
+    "category": "objetos"
+  },
+  {
+    "id": "v_tegami",
+    "kanji": "手紙",
+    "kana": "てがみ",
+    "romaji": "tegami",
+    "meaning_es": "carta",
+    "category": "objetos"
+  },
+  {
+    "id": "v_fuutou",
+    "kanji": "封筒",
+    "kana": "ふうとう",
+    "romaji": "fuutou",
+    "meaning_es": "sobre (de carta)",
+    "category": "objetos"
+  },
+  {
+    "id": "v_kitte",
+    "kanji": "切手",
+    "kana": "きって",
+    "romaji": "kitte",
+    "meaning_es": "sello (de correos)",
+    "category": "objetos"
+  },
+  {
+    "id": "v_enpitsu",
+    "kanji": "鉛筆",
+    "kana": "えんぴつ",
+    "romaji": "enpitsu",
+    "meaning_es": "lápiz",
+    "category": "objetos"
+  },
+  {
+    "id": "v_boorupen",
+    "kanji": "ボールペン",
+    "kana": "ボールペン",
+    "romaji": "boorupen",
+    "meaning_es": "bolígrafo (boli)",
+    "category": "objetos"
+  },
+  {
+    "id": "v_keshigomu",
+    "kanji": "消しゴム",
+    "kana": "けしゴム",
+    "romaji": "keshigomu",
+    "meaning_es": "goma de borrar",
+    "category": "objetos"
+  },
+  {
+    "id": "v_jisho",
+    "kanji": "辞書",
+    "kana": "じしょ",
+    "romaji": "jisho",
+    "meaning_es": "diccionario",
+    "category": "objetos"
+  },
+  {
+    "id": "v_kyoukasho",
+    "kanji": "教科書",
+    "kana": "きょうかしょ",
+    "romaji": "kyoukasho",
+    "meaning_es": "libro de texto",
+    "category": "objetos"
+  },
+  {
+    "id": "v_konpyuuta",
+    "kanji": "コンピュータ",
+    "kana": "コンピュータ",
+    "romaji": "konpyuuta",
+    "meaning_es": "ordenador",
+    "category": "objetos"
+  },
+  {
+    "id": "v_sumaho",
+    "kanji": "スマホ",
+    "kana": "スマホ",
+    "romaji": "sumaho",
+    "meaning_es": "smartphone",
+    "category": "objetos"
+  },
+  {
+    "id": "v_sushi",
+    "kanji": "すし",
+    "kana": "すし",
+    "romaji": "sushi",
+    "meaning_es": "sushi",
+    "category": "comida"
+  },
+  {
+    "id": "v_raamen",
+    "kanji": "ラーメン",
+    "kana": "ラーメン",
+    "romaji": "raamen",
+    "meaning_es": "ramen",
+    "category": "comida"
+  },
+  {
+    "id": "v_udon",
+    "kanji": "うどん",
+    "kana": "うどん",
+    "romaji": "udon",
+    "meaning_es": "udon (fideos gruesos)",
+    "category": "comida"
+  },
+  {
+    "id": "v_soba",
+    "kanji": "そば",
+    "kana": "そば",
+    "romaji": "soba",
+    "meaning_es": "soba (fideos de trigo sarraceno)",
+    "category": "comida"
+  },
+  {
+    "id": "v_tenpura",
+    "kanji": "てんぷら",
+    "kana": "てんぷら",
+    "romaji": "tenpura",
+    "meaning_es": "tempura",
+    "category": "comida"
+  },
+  {
+    "id": "v_onigiri",
+    "kanji": "おにぎり",
+    "kana": "おにぎり",
+    "romaji": "onigiri",
+    "meaning_es": "onigiri (bola de arroz)",
+    "category": "comida"
+  },
+  {
+    "id": "v_misoshiru",
+    "kanji": "味噌汁",
+    "kana": "みそしる",
+    "romaji": "misoshiru",
+    "meaning_es": "sopa de miso",
+    "category": "comida"
+  },
+  {
+    "id": "v_toufu",
+    "kanji": "豆腐",
+    "kana": "とうふ",
+    "romaji": "toufu",
+    "meaning_es": "tofu",
+    "category": "comida"
+  },
+  {
+    "id": "v_nattou",
+    "kanji": "納豆",
+    "kana": "なっとう",
+    "romaji": "nattou",
+    "meaning_es": "natto",
+    "category": "comida"
+  },
+  {
+    "id": "v_sashimi",
+    "kanji": "刺身",
+    "kana": "さしみ",
+    "romaji": "sashimi",
+    "meaning_es": "sashimi",
+    "category": "comida"
+  },
+  {
+    "id": "v_chiizu",
+    "kanji": "チーズ",
+    "kana": "チーズ",
+    "romaji": "chiizu",
+    "meaning_es": "queso",
+    "category": "comida"
+  },
+  {
+    "id": "v_pasuta",
+    "kanji": "パスタ",
+    "kana": "パスタ",
+    "romaji": "pasuta",
+    "meaning_es": "pasta",
+    "category": "comida"
+  },
+  {
+    "id": "v_keeki",
+    "kanji": "ケーキ",
+    "kana": "ケーキ",
+    "romaji": "keeki",
+    "meaning_es": "tarta / pastel",
+    "category": "comida"
+  },
+  {
+    "id": "v_chokoreeto",
+    "kanji": "チョコレート",
+    "kana": "チョコレート",
+    "romaji": "chokoreeto",
+    "meaning_es": "chocolate",
+    "category": "comida"
+  },
+  {
+    "id": "v_okashi",
+    "kanji": "お菓子",
+    "kana": "おかし",
+    "romaji": "okashi",
+    "meaning_es": "dulces / golosinas",
+    "category": "comida"
+  },
+  {
+    "id": "v_shio",
+    "kanji": "塩",
+    "kana": "しお",
+    "romaji": "shio",
+    "meaning_es": "sal",
+    "category": "comida"
+  },
+  {
+    "id": "v_satou",
+    "kanji": "砂糖",
+    "kana": "さとう",
+    "romaji": "satou",
+    "meaning_es": "azúcar",
+    "category": "comida"
+  },
+  {
+    "id": "v_shouyu",
+    "kanji": "醤油",
+    "kana": "しょうゆ",
+    "romaji": "shouyu",
+    "meaning_es": "salsa de soja",
+    "category": "comida"
+  },
+  {
+    "id": "v_abura",
+    "kanji": "油",
+    "kana": "あぶら",
+    "romaji": "abura",
+    "meaning_es": "aceite",
+    "category": "comida"
+  },
+  {
+    "id": "v_sake",
+    "kanji": "酒",
+    "kana": "さけ",
+    "romaji": "sake",
+    "meaning_es": "sake / alcohol",
+    "category": "comida"
+  },
+  {
+    "id": "v_banana",
+    "kanji": "バナナ",
+    "kana": "バナナ",
+    "romaji": "banana",
+    "meaning_es": "plátano",
+    "category": "comida"
+  },
+  {
+    "id": "v_mikan",
+    "kanji": "みかん",
+    "kana": "みかん",
+    "romaji": "mikan",
+    "meaning_es": "mandarina",
+    "category": "comida"
+  },
+  {
+    "id": "v_omou",
+    "kanji": "思う",
+    "kana": "おもう",
+    "romaji": "omou",
+    "meaning_es": "pensar / creer",
+    "category": "verbos"
+  },
+  {
+    "id": "v_shiru",
+    "kanji": "知る",
+    "kana": "しる",
+    "romaji": "shiru",
+    "meaning_es": "saber / conocer",
+    "category": "verbos"
+  },
+  {
+    "id": "v_iu",
+    "kanji": "言う",
+    "kana": "いう",
+    "romaji": "iu",
+    "meaning_es": "decir",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kikoeru",
+    "kanji": "聞こえる",
+    "kana": "きこえる",
+    "romaji": "kikoeru",
+    "meaning_es": "oírse / poder oír",
+    "category": "verbos"
+  },
+  {
+    "id": "v_mieru",
+    "kanji": "見える",
+    "kana": "みえる",
+    "romaji": "mieru",
+    "meaning_es": "verse / poder ver",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kanjiru",
+    "kanji": "感じる",
+    "kana": "かんじる",
+    "romaji": "kanjiru",
+    "meaning_es": "sentir",
+    "category": "verbos"
+  },
+  {
+    "id": "v_komaru",
+    "kanji": "困る",
+    "kana": "こまる",
+    "romaji": "komaru",
+    "meaning_es": "estar en apuros",
+    "category": "verbos"
+  },
+  {
+    "id": "v_utau",
+    "kanji": "歌う",
+    "kana": "うたう",
+    "romaji": "utau",
+    "meaning_es": "cantar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_warau",
+    "kanji": "笑う",
+    "kana": "わらう",
+    "romaji": "warau",
+    "meaning_es": "reír",
+    "category": "verbos"
+  },
+  {
+    "id": "v_naku",
+    "kanji": "泣く",
+    "kana": "なく",
+    "romaji": "naku",
+    "meaning_es": "llorar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_okoru",
+    "kanji": "怒る",
+    "kana": "おこる",
+    "romaji": "okoru",
+    "meaning_es": "enfadarse",
+    "category": "verbos"
+  },
+  {
+    "id": "v_shinpaisuru",
+    "kanji": "心配する",
+    "kana": "しんぱいする",
+    "romaji": "shinpai suru",
+    "meaning_es": "preocuparse",
+    "category": "verbos"
+  },
+  {
+    "id": "v_renshuusuru",
+    "kanji": "練習する",
+    "kana": "れんしゅうする",
+    "romaji": "renshuu suru",
+    "meaning_es": "practicar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_ryokousuru",
+    "kanji": "旅行する",
+    "kana": "りょこうする",
+    "romaji": "ryokou suru",
+    "meaning_es": "viajar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kekkonsuru",
+    "kanji": "結婚する",
+    "kana": "けっこんする",
+    "romaji": "kekkon suru",
+    "meaning_es": "casarse",
+    "category": "verbos"
+  },
+  {
+    "id": "v_untensuru",
+    "kanji": "運転する",
+    "kana": "うんてんする",
+    "romaji": "unten suru",
+    "meaning_es": "conducir",
+    "category": "verbos"
+  },
+  {
+    "id": "v_setsumeisuru",
+    "kanji": "説明する",
+    "kana": "せつめいする",
+    "romaji": "setsumei suru",
+    "meaning_es": "explicar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_shitsumonsuru",
+    "kanji": "質問する",
+    "kana": "しつもんする",
+    "romaji": "shitsumon suru",
+    "meaning_es": "preguntar / hacer una pregunta",
+    "category": "verbos"
+  },
+  {
+    "id": "v_soudansuru",
+    "kanji": "相談する",
+    "kana": "そうだんする",
+    "romaji": "soudan suru",
+    "meaning_es": "consultar / hablar con alguien",
+    "category": "verbos"
+  },
+  {
+    "id": "v_denwasuru",
+    "kanji": "電話する",
+    "kana": "でんわする",
+    "romaji": "denwa suru",
+    "meaning_es": "llamar por teléfono",
+    "category": "verbos"
+  },
+  {
+    "id": "v_sanposuru",
+    "kanji": "散歩する",
+    "kana": "さんぽする",
+    "romaji": "sanpo suru",
+    "meaning_es": "pasear",
+    "category": "verbos"
+  },
+  {
+    "id": "v_junbisuru",
+    "kanji": "準備する",
+    "kana": "じゅんびする",
+    "romaji": "junbi suru",
+    "meaning_es": "preparar",
+    "category": "verbos"
+  },
+  {
+    "id": "v_kurai",
+    "kanji": "暗い",
+    "kana": "くらい",
+    "romaji": "kurai",
+    "meaning_es": "oscuro",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_akarui",
+    "kanji": "明るい",
+    "kana": "あかるい",
+    "romaji": "akarui",
+    "meaning_es": "brillante / alegre",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_urusai",
+    "kanji": "うるさい",
+    "kana": "うるさい",
+    "romaji": "urusai",
+    "meaning_es": "ruidoso",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_itai",
+    "kanji": "痛い",
+    "kana": "いたい",
+    "romaji": "itai",
+    "meaning_es": "doloroso",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_nemui",
+    "kanji": "眠い",
+    "kana": "ねむい",
+    "romaji": "nemui",
+    "meaning_es": "soñoliento",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_hazukashii",
+    "kanji": "恥ずかしい",
+    "kana": "はずかしい",
+    "romaji": "hazukashii",
+    "meaning_es": "vergonzoso",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_atatakai",
+    "kanji": "暖かい",
+    "kana": "あたたかい",
+    "romaji": "atatakai",
+    "meaning_es": "tibio / templado",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_suzushii",
+    "kanji": "涼しい",
+    "kana": "すずしい",
+    "romaji": "suzushii",
+    "meaning_es": "fresco (temperatura)",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_hosoi",
+    "kanji": "細い",
+    "kana": "ほそい",
+    "romaji": "hosoi",
+    "meaning_es": "delgado / fino",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_futoi",
+    "kanji": "太い",
+    "kana": "ふとい",
+    "romaji": "futoi",
+    "meaning_es": "grueso / gordo",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_marui",
+    "kanji": "丸い",
+    "kana": "まるい",
+    "romaji": "marui",
+    "meaning_es": "redondo",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_shikakui",
+    "kanji": "四角い",
+    "kana": "しかくい",
+    "romaji": "shikakui",
+    "meaning_es": "cuadrado",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_wakai",
+    "kanji": "若い",
+    "kana": "わかい",
+    "romaji": "wakai",
+    "meaning_es": "joven",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_tanoshii",
+    "kanji": "楽しい",
+    "kana": "たのしい",
+    "romaji": "tanoshii",
+    "meaning_es": "divertido / agradable",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_omoshiroi",
+    "kanji": "面白い",
+    "kana": "おもしろい",
+    "romaji": "omoshiroi",
+    "meaning_es": "interesante / divertido",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_tsumaranai",
+    "kanji": "つまらない",
+    "kana": "つまらない",
+    "romaji": "tsumaranai",
+    "meaning_es": "aburrido",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_ooi",
+    "kanji": "多い",
+    "kana": "おおい",
+    "romaji": "ooi",
+    "meaning_es": "mucho / muchos",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_sukunai",
+    "kanji": "少ない",
+    "kana": "すくない",
+    "romaji": "sukunai",
+    "meaning_es": "poco / pocos",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_hayai",
+    "kanji": "速い",
+    "kana": "はやい",
+    "romaji": "hayai",
+    "meaning_es": "rápido",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_osoi",
+    "kanji": "遅い",
+    "kana": "おそい",
+    "romaji": "osoi",
+    "meaning_es": "lento / tarde",
+    "category": "adjetivos-i"
+  },
+  {
+    "id": "v_suteki",
+    "kanji": "素敵",
+    "kana": "すてき",
+    "romaji": "suteki",
+    "meaning_es": "estupendo / bonito",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_teinei",
+    "kanji": "丁寧",
+    "kana": "ていねい",
+    "romaji": "teinei",
+    "meaning_es": "educado / cuidadoso",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_majime",
+    "kanji": "真面目",
+    "kana": "まじめ",
+    "romaji": "majime",
+    "meaning_es": "serio / responsable",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_jiyuu",
+    "kanji": "自由",
+    "kana": "じゆう",
+    "romaji": "jiyuu",
+    "meaning_es": "libre / libertad",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_muri",
+    "kanji": "無理",
+    "kana": "むり",
+    "romaji": "muri",
+    "meaning_es": "imposible / forzado",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_iya",
+    "kanji": "嫌",
+    "kana": "いや",
+    "romaji": "iya",
+    "meaning_es": "desagradable / ¡qué asco!",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_hen",
+    "kanji": "変",
+    "kana": "へん",
+    "romaji": "hen",
+    "meaning_es": "raro / extraño",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_daisuki",
+    "kanji": "大好き",
+    "kana": "だいすき",
+    "romaji": "daisuki",
+    "meaning_es": "encantar / me encanta",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_daikirai",
+    "kanji": "大嫌い",
+    "kana": "だいきらい",
+    "romaji": "daikirai",
+    "meaning_es": "odiar / no soportar",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_fuben",
+    "kanji": "不便",
+    "kana": "ふべん",
+    "romaji": "fuben",
+    "meaning_es": "inconveniente / incómodo",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_joubu",
+    "kanji": "丈夫",
+    "kana": "じょうぶ",
+    "romaji": "joubu",
+    "meaning_es": "resistente / robusto",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_kantan",
+    "kanji": "簡単",
+    "kana": "かんたん",
+    "romaji": "kantan",
+    "meaning_es": "sencillo / fácil",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_fukuzatsu",
+    "kanji": "複雑",
+    "kana": "ふくざつ",
+    "romaji": "fukuzatsu",
+    "meaning_es": "complicado / complejo",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_anzen",
+    "kanji": "安全",
+    "kana": "あんぜん",
+    "romaji": "anzen",
+    "meaning_es": "seguro / sin peligro",
+    "category": "adjetivos-na"
+  },
+  {
+    "id": "v_koe",
+    "kanji": "声",
+    "kana": "こえ",
+    "romaji": "koe",
+    "meaning_es": "voz",
+    "category": "otras"
+  },
+  {
+    "id": "v_oto",
+    "kanji": "音",
+    "kana": "おと",
+    "romaji": "oto",
+    "meaning_es": "sonido / ruido",
+    "category": "otras"
+  },
+  {
+    "id": "v_iro",
+    "kanji": "色",
+    "kana": "いろ",
+    "romaji": "iro",
+    "meaning_es": "color",
+    "category": "otras"
+  },
+  {
+    "id": "v_katachi",
+    "kanji": "形",
+    "kana": "かたち",
+    "romaji": "katachi",
+    "meaning_es": "forma",
+    "category": "otras"
+  },
+  {
+    "id": "v_ookisa",
+    "kanji": "大きさ",
+    "kana": "おおきさ",
+    "romaji": "ookisa",
+    "meaning_es": "tamaño",
+    "category": "otras"
+  },
+  {
+    "id": "v_omosa",
+    "kanji": "重さ",
+    "kana": "おもさ",
+    "romaji": "omosa",
+    "meaning_es": "peso",
+    "category": "otras"
+  },
+  {
+    "id": "v_hayasa",
+    "kanji": "速さ",
+    "kana": "はやさ",
+    "romaji": "hayasa",
+    "meaning_es": "velocidad",
+    "category": "otras"
+  },
+  {
+    "id": "v_jikan",
+    "kanji": "時間",
+    "kana": "じかん",
+    "romaji": "jikan",
+    "meaning_es": "tiempo (duración) / hora",
+    "category": "otras"
+  },
+  {
+    "id": "v_kikan",
+    "kanji": "期間",
+    "kana": "きかん",
+    "romaji": "kikan",
+    "meaning_es": "periodo / duración",
+    "category": "otras"
+  },
+  {
+    "id": "v_basho",
+    "kanji": "場所",
+    "kana": "ばしょ",
+    "romaji": "basho",
+    "meaning_es": "lugar / sitio",
+    "category": "otras"
+  },
+  {
+    "id": "v_houhou",
+    "kanji": "方法",
+    "kana": "ほうほう",
+    "romaji": "houhou",
+    "meaning_es": "método / manera",
+    "category": "otras"
+  },
+  {
+    "id": "v_riyuu",
+    "kanji": "理由",
+    "kana": "りゆう",
+    "romaji": "riyuu",
+    "meaning_es": "razón / motivo",
+    "category": "otras"
+  },
+  {
+    "id": "v_mondai",
+    "kanji": "問題",
+    "kana": "もんだい",
+    "romaji": "mondai",
+    "meaning_es": "problema / pregunta",
+    "category": "otras"
+  },
+  {
+    "id": "v_kotae",
+    "kanji": "答え",
+    "kana": "こたえ",
+    "romaji": "kotae",
+    "meaning_es": "respuesta",
+    "category": "otras"
+  },
+  {
+    "id": "v_imi",
+    "kanji": "意味",
+    "kana": "いみ",
+    "romaji": "imi",
+    "meaning_es": "significado",
+    "category": "otras"
+  },
+  {
+    "id": "v_renshuu",
+    "kanji": "練習",
+    "kana": "れんしゅう",
+    "romaji": "renshuu",
+    "meaning_es": "práctica / entrenamiento",
+    "category": "otras"
+  },
+  {
+    "id": "v_benkyou",
+    "kanji": "勉強",
+    "kana": "べんきょう",
+    "romaji": "benkyou",
+    "meaning_es": "estudio",
+    "category": "otras"
+  },
+  {
+    "id": "v_jugyou",
+    "kanji": "授業",
+    "kana": "じゅぎょう",
+    "romaji": "jugyou",
+    "meaning_es": "clase",
+    "category": "otras"
+  },
+  {
+    "id": "v_shiken",
+    "kanji": "試験",
+    "kana": "しけん",
+    "romaji": "shiken",
+    "meaning_es": "examen",
+    "category": "otras"
+  },
+  {
+    "id": "v_seiseki",
+    "kanji": "成績",
+    "kana": "せいせき",
+    "romaji": "seiseki",
+    "meaning_es": "notas / resultados",
+    "category": "otras"
+  },
+  {
+    "id": "v_gengo",
+    "kanji": "言語",
+    "kana": "げんご",
+    "romaji": "gengo",
+    "meaning_es": "idioma / lengua",
+    "category": "otras"
+  },
+  {
+    "id": "v_bunka",
+    "kanji": "文化",
+    "kana": "ぶんか",
+    "romaji": "bunka",
+    "meaning_es": "cultura",
+    "category": "otras"
+  },
+  {
+    "id": "v_shuukan",
+    "kanji": "習慣",
+    "kana": "しゅうかん",
+    "romaji": "shuukan",
+    "meaning_es": "costumbre / hábito",
+    "category": "otras"
+  },
+  {
+    "id": "v_hito",
+    "kanji": "人",
+    "kana": "ひと",
+    "romaji": "hito",
+    "meaning_es": "persona / gente",
+    "category": "otras"
+  },
+  {
+    "id": "v_otoko",
+    "kanji": "男",
+    "kana": "おとこ",
+    "romaji": "otoko",
+    "meaning_es": "hombre / masculino",
+    "category": "otras"
+  },
+  {
+    "id": "v_onna",
+    "kanji": "女",
+    "kana": "おんな",
+    "romaji": "onna",
+    "meaning_es": "mujer / femenino",
+    "category": "otras"
+  }
 ]
