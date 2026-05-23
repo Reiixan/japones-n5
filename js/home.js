@@ -258,7 +258,10 @@ export async function renderHome(container) {
       lessonsCard.querySelector('.block-desc').textContent =
         `${completed} / ${lessonIndex.length} completadas`;
       lessonsCard.querySelector('.block-progress').style.display = 'none';
-    } catch (_) { /* index.json still doesn't exist */ }
+    } catch (_) {
+      lessonsCard.classList.remove('loading');
+      lessonsCard.querySelector('.block-desc').textContent = '8 lecciones';
+    }
   }
 }
 

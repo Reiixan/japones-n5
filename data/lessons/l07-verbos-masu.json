@@ -6,7 +6,7 @@
   {"type":"note","md":"La forma ます siempre va al **final** de la oración. El objeto directo va antes del verbo, marcado con を."},
   {"type":"exercise-mc","prompt":"¿Cómo se dice 'no como' en japonés (presente, formal)?","options":["食べません","食べます","食べました","食べませんでした"],"answer":"食べません"},
   {"type":"exercise-mc","prompt":"¿Qué terminación indica pasado afirmativo en forma ます?","options":["～ました","～ます","～ません","～ませんでした"],"answer":"～ました"},
-  {"type":"exercise-mc","prompt":"毎日日本語を___ します。¿Qué verbo completa 'Estudio japonés todos los días'?","options":["勉強","食べ","見","行き"],"answer":"勉強"},
+  {"type":"exercise-mc","prompt":"毎日日本語を___ します。¿Qué verbo completa 'Estudio japonés todos los días'?","options":["勉強","運動","料理","掃除"],"answer":"勉強"},
   {"type":"exercise-gap","prompt":"昨日、映画を見___ 。(Ayer vi una película)","options":["ました","ます","ません","ませんでした"],"answer":"ました","hint":"pasado afirmativo"},
-  {"type":"exercise-gap","prompt":"明日、学校に行___ 。(Mañana iré a la escuela)","options":["きます","きました","きません","きませんでした"],"answer":"きます","hint":"presente/futuro afirmativo"}
+  {"type":"exercise-gap","prompt":"明日、学校に行き___ 。(Mañana iré a la escuela)","options":["ます","ました","ません","ませんでした"],"answer":"ます","hint":"presente/futuro afirmativo"}
 ]
