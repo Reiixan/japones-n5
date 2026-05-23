@@ -100,10 +100,11 @@ function renderExercises(exercises, container, onAllAnswered) {
 
     if (ex.type === 'exercise-mc') {
       const hint = ex.hint ? `<div class="lesson-exercise-hint">${ex.hint}</div>` : '';
+      const opts = [...ex.options].sort(() => Math.random() - 0.5);
       el.innerHTML = `
         <div class="lesson-exercise-prompt">${ex.prompt}${hint}</div>
         <div class="lesson-exercise-options">
-          ${ex.options.map(o => `<button class="lesson-exercise-btn" data-value="${o}">${o}</button>`).join('')}
+          ${opts.map(o => `<button class="lesson-exercise-btn" data-value="${o}">${o}</button>`).join('')}
         </div>
         <div class="lesson-exercise-feedback"></div>`;
       attachOptionHandler(el, ex.answer, (isCorrect) => {
@@ -133,10 +134,11 @@ function renderExercises(exercises, container, onAllAnswered) {
 
     if (ex.type === 'exercise-gap') {
       const hint = ex.hint ? `<div class="lesson-exercise-hint">Pista: ${ex.hint}</div>` : '';
+      const opts = [...ex.options].sort(() => Math.random() - 0.5);
       el.innerHTML = `
         <div class="lesson-exercise-prompt">${ex.prompt}${hint}</div>
         <div class="lesson-exercise-options">
-          ${ex.options.map(o => `<button class="lesson-exercise-btn" data-value="${o}">${o}</button>`).join('')}
+          ${opts.map(o => `<button class="lesson-exercise-btn" data-value="${o}">${o}</button>`).join('')}
         </div>
         <div class="lesson-exercise-feedback"></div>`;
       attachOptionHandler(el, ex.answer, (isCorrect) => {
