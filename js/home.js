@@ -93,9 +93,19 @@ const BLOCKS = [
     color: 'var(--c-pink)',
     path: '/adjectives',
   },
+  {
+    id: 'lessons',
+    label: 'Lecciones',
+    jp: 'レッスン',
+    file: null,
+    desc: 'Cargando…',
+    color: 'var(--c-teal)',
+    path: '/lessons',
+  },
 ];
 
 const SECTIONS = [
+  { label: 'Libro',        ids: ['lessons'] },
   { label: 'Escritura',    ids: ['hiragana', 'katakana'] },
   { label: 'Vocabulario',  ids: ['vocab', 'kanji'] },
   { label: 'Gramática',    ids: ['particles', 'grammar', 'verbs', 'adjectives'] },
@@ -210,6 +220,7 @@ export async function renderHome(container) {
 
   // Load stats keyed by data-id (order-independent)
   await Promise.all(BLOCKS.map(async (block) => {
+    if (!block.file) return;
     const items = await loadData(block.file);
     const stats = getDeckStats(block.id, items);
     const card = container.querySelector(`.block-card[data-id="${block.id}"]`);
@@ -222,6 +233,7 @@ export async function renderHome(container) {
   const now = Date.now();
   let totalDue = 0;
   await Promise.all(BLOCKS.map(async block => {
+    if (!block.file) return;
     const items = await loadData(block.file);
     const due = collectDueItems(block.id, items, now);
     totalDue += due.length;
@@ -231,6 +243,22 @@ export async function renderHome(container) {
     sub.textContent = totalDue === 0
       ? '¡Sin pendientes!'
       : `${totalDue} ítem${totalDue === 1 ? '' : 's'} vencido${totalDue === 1 ? '' : 's'}`;
+  }
+
+  // Actualizar tarjeta Lecciones con progreso real
+  const lessonsCard = container.querySelector('.block-card[data-id="lessons"]');
+  if (lessonsCard) {
+    try {
+      const lessonIndex = await loadData('lessons/index.json');
+      const completed = lessonIndex.filter(l => {
+        const raw = localStorage.getItem('jp_n5_lesson.' + l.id);
+        return raw && JSON.parse(raw).status === 'completed';
+      }).length;
+      lessonsCard.classList.remove('loading');
+      lessonsCard.querySelector('.block-desc').textContent =
+        `${completed} / ${lessonIndex.length} completadas`;
+      lessonsCard.querySelector('.block-progress').style.display = 'none';
+    } catch (_) { /* index.json still doesn't exist */ }
   }
 }
 

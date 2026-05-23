@@ -16,6 +16,7 @@ import { start as startVerbs } from './verbs.js';
 import { start as startAdjectives } from './adjectives.js';
 import { start as startReviewToday } from './review-today.js';
 import { start as startExam } from './exam.js';
+import { renderLessonIndex, renderLesson } from './lessons.js';
 import { migrateV1ToV2 } from './storage.js?v=2';
 import { initViewport } from './viewport.js';
 
@@ -93,6 +94,12 @@ async function route() {
     } else if (seg1 === 'adjectives') {
       const allItems = await loadData('adjectives-n5.json');
       await startAdjectives(container, allItems);
+    } else if (seg1 === 'lessons') {
+      if (!seg2) {
+        await renderLessonIndex(container);
+      } else {
+        await renderLesson(container, seg2);
+      }
     } else if (seg1 === 'review') {
       await startReviewToday(container);
     } else if (seg1 === 'exam') {
