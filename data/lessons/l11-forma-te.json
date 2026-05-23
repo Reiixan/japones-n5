@@ -1,0 +1,119 @@
+[
+  {"type":"text","md":"## La forma て: la «pieza de LEGO» del japonés\n\nLa **forma て** (て形, てけい) es una de las formas verbales más versátiles del japonés. Por sí sola no completa una oración: siempre se conecta a otro elemento que le da su significado final.\n\nPiénsala como una **pieza de LEGO**: encaja con otras piezas (ください, います, もいいですか, はいけません…) para construir significados muy distintos. Dominar la forma て desbloquea de golpe cinco estructuras fundamentales:\n\n- Enlazar acciones: «hago A **y después** hago B»\n- Petición educada: **～てください** — «por favor haz…»\n- Pedir permiso: **～てもいいですか** — «¿puedo hacer…?»\n- Prohibición: **～てはいけません** — «no está permitido hacer…»\n- Acción en curso o estado: **～ています** — «estoy haciendo… / estoy en el estado de…»"},
+
+  {"type":"note","md":"La forma て **no indica tiempo** por sí sola. El tiempo (presente, pasado) lo marca el verbo al final de la oración. Ejemplo: 食べて、寝ます (como y después duermo) vs 食べて、寝ました (comí y después dormí)."},
+
+  {"type":"text","md":"## Cómo se forma: verbos ichidan (grupo 2)\n\nLos verbos **ichidan** son los más sencillos. La regla es invariable:\n\n> **Quitar る → añadir て**\n\nNo hay excepciones en este grupo."},
+
+  {"type":"table","headers":["Forma diccionario","Operación","Forma て","Significado"],"rows":[
+    ["食べる","食べ**る** → 食べ + て","食べて","comer"],
+    ["見る","見**る** → 見 + て","見て","ver"],
+    ["起きる","起き**る** → 起き + て","起きて","levantarse"],
+    ["寝る","寝**る** → 寝 + て","寝て","dormir"],
+    ["教える","教え**る** → 教え + て","教えて","enseñar"],
+    ["開ける","開け**る** → 開け + て","開けて","abrir"],
+    ["閉める","閉め**る** → 閉め + て","閉めて","cerrar"],
+    ["借りる","借り**る** → 借り + て","借りて","pedir prestado"],
+    ["覚える","覚え**る** → 覚え + て","覚えて","memorizar"]
+  ]},
+
+  {"type":"text","md":"## Cómo se forma: verbos godan (grupo 1)\n\nLos verbos **godan** siguen reglas distintas según su terminación en forma diccionario. Hay tres grupos de terminaciones:"},
+
+  {"type":"table","headers":["Terminación","→ forma て","Regla mnemónica","Ejemplo"],"rows":[
+    ["く","いて","く → いて","書く → 書いて"],
+    ["ぐ","いで","ぐ → いで (con voz)","急ぐ → 急いで"],
+    ["す","して","す → して","話す → 話して"],
+    ["つ","って","つ/る/う → って","待つ → 待って"],
+    ["る (godan)","って","つ/る/う → って","取る → 取って"],
+    ["う","って","つ/る/う → って","買う → 買って"],
+    ["む","んで","む/ぶ/ぬ → んで","飲む → 飲んで"],
+    ["ぶ","んで","む/ぶ/ぬ → んで","遊ぶ → 遊んで"],
+    ["ぬ","んで","む/ぶ/ぬ → んで","(poco frecuente en N5)"]
+  ]},
+
+  {"type":"note","md":"**Excepción imprescindible — memorizar**: 行く → **行って** (NO 行いて). Aunque 行く termina en く y la regla daría いて, esta es la única excepción al patrón く→いて. Todos los demás verbos en く siguen la regla normal."},
+
+  {"type":"text","md":"## Resumen compacto de los tres patrones godan\n\nUna forma de recordarlo con tres grupos fonéticos:\n\n1. **いて / いで** → く、ぐ\n2. **って** → つ、る (godan)、う\n3. **んで** → む、ぶ、ぬ"},
+
+  {"type":"table","headers":["Grupo","Terminaciones","Sufijo て","Ejemplo dict.","Forma て"],"rows":[
+    ["I","く","いて","書く","書いて"],
+    ["I","ぐ","いで","急ぐ","急いで"],
+    ["II","す","して","話す","話して"],
+    ["III","つ","って","待つ","待って"],
+    ["III","る (godan)","って","取る","取って"],
+    ["III","う","って","使う","使って"],
+    ["IV","む","んで","飲む","飲んで"],
+    ["IV","ぶ","んで","遊ぶ","遊んで"]
+  ]},
+
+  {"type":"text","md":"## Verbos irregulares: する y くる\n\nSolo hay dos verbos completamente irregulares. Se memorizan directamente:"},
+
+  {"type":"table","headers":["Forma diccionario","Forma て","Significado"],"rows":[
+    ["する","して","hacer"],
+    ["来る (くる)","来て (きて)","venir"]
+  ]},
+
+  {"type":"example","jp":"勉強してください。","es":"Por favor, estudia.","romaji":"Benkyō shite kudasai."},
+  {"type":"example","jp":"早く来てください。","es":"Por favor, ven pronto.","romaji":"Hayaku kite kudasai."},
+
+  {"type":"text","md":"## Uso 1: enlazar acciones (Vて V)\n\nLa forma て enlaza dos verbos indicando que la primera acción ocurre **antes** de la segunda. Es como una «y después» en español. El tiempo de toda la secuencia lo marca el verbo final.\n\n> [Verbo 1 て] + [Verbo 2 ます/ました]"},
+
+  {"type":"example","jp":"起きて、朝ごはんを食べます。","es":"Me levanto y (después) desayuno.","romaji":"Okite, asagohan wo tabemasu."},
+  {"type":"example","jp":"シャワーを浴びて、学校に行きました。","es":"Me duché y fui a la escuela.","romaji":"Shawā wo abite, gakkō ni ikimashita."},
+  {"type":"example","jp":"宿題をして、テレビを見ます。","es":"Hago los deberes y después veo la tele.","romaji":"Shukudai wo shite, terebi wo mimasu."},
+
+  {"type":"note","md":"Cuando se encadenan más de dos verbos, se ponen todos en forma て excepto el último: 起きて、食べて、学校に行きます (me levanto, desayuno y voy a la escuela)."},
+
+  {"type":"text","md":"## Uso 2: ～てください — petición educada\n\nAntes de **ください** va la forma て del verbo. Es la manera más neutra y frecuente de hacer una petición o dar una instrucción en japonés (equivale a «por favor + verbo»)."},
+
+  {"type":"example","jp":"日本語で話してください。","es":"Por favor, habla en japonés.","romaji":"Nihongo de hanashite kudasai."},
+  {"type":"example","jp":"ゆっくり読んでください。","es":"Por favor, léalo despacio.","romaji":"Yukkuri yonde kudasai."},
+  {"type":"example","jp":"窓を開けてください。","es":"Por favor, abre la ventana.","romaji":"Mado wo akete kudasai."},
+  {"type":"example","jp":"ここに名前を書いてください。","es":"Por favor, escribe tu nombre aquí.","romaji":"Koko ni namae wo kaite kudasai."},
+
+  {"type":"text","md":"## Uso 3: ～てもいいですか — pedir permiso\n\nEsta estructura pregunta si está permitido hacer algo. Literalmente: «¿está bien aunque haga ~?». Respuestas habituales:\n\n- **はい、どうぞ。** — Sí, adelante.\n- **すみません、ちょっと…** — Lo siento, es que… (rechazo suave, sin decir «no» directamente)."},
+
+  {"type":"example","jp":"ここに座ってもいいですか。","es":"¿Puedo sentarme aquí?","romaji":"Koko ni suwatte mo ii desu ka."},
+  {"type":"example","jp":"写真を撮ってもいいですか。","es":"¿Puedo sacar una foto?","romaji":"Shashin wo totte mo ii desu ka."},
+  {"type":"example","jp":"辞書を使ってもいいですか。","es":"¿Puedo usar el diccionario?","romaji":"Jisho wo tsukatte mo ii desu ka."},
+
+  {"type":"text","md":"## Uso 4: ～てはいけません — prohibición\n\nExactamente lo contrario de てもいいです: está **prohibido** o no está permitido hacer algo. Literalmente: «no está bien si haces ~».\n\nEn el habla cotidiana se abrevia a **～てはだめです** (más informal)."},
+
+  {"type":"example","jp":"ここで食べてはいけません。","es":"Está prohibido comer aquí.","romaji":"Koko de tabete wa ikemasen."},
+  {"type":"example","jp":"授業中にスマホを使ってはいけません。","es":"No se puede usar el móvil durante la clase.","romaji":"Jugyōchū ni sumaho wo tsukatte wa ikemasen."},
+  {"type":"example","jp":"図書館で騒いではいけません。","es":"No está permitido hacer ruido en la biblioteca.","romaji":"Toshokan de sawaide wa ikemasen."},
+
+  {"type":"text","md":"## Uso 5: ～ています — acción en curso y estado resultante\n\nEsta es la estructura más versátil de la forma て y tiene **dos lecturas** bien distintas:"},
+
+  {"type":"text","md":"### 5-A: Acción en progreso (en este momento)\n\nEquivalente al presente continuo del español: «estoy haciendo ~»."},
+
+  {"type":"example","jp":"今、ご飯を食べています。","es":"Ahora estoy comiendo.","romaji":"Ima, gohan wo tabete imasu."},
+  {"type":"example","jp":"友だちは音楽を聞いています。","es":"Mi amigo está escuchando música.","romaji":"Tomodachi wa ongaku wo kiite imasu."},
+  {"type":"example","jp":"子どもたちが公園で遊んでいます。","es":"Los niños están jugando en el parque.","romaji":"Kodomotachi ga kōen de asonde imasu."},
+
+  {"type":"text","md":"### 5-B: Estado resultante de una acción pasada\n\nDescribe un **estado presente** que es consecuencia de algo que ya ocurrió. El español no tiene una traducción única: a veces es «estar + participio», a veces «tener + participio».\n\nEjemplos para distinguir los dos usos:\n- 窓を**開けています** = La ventana **está abierta** (estado ahora) — resultado de haberla abierto.\n- 結婚**しています** = **Está casado/a** — resultado de haberse casado."},
+
+  {"type":"example","jp":"結婚しています。","es":"Estoy casado/a.","romaji":"Kekkon shite imasu."},
+  {"type":"example","jp":"窓が開いています。","es":"La ventana está abierta.","romaji":"Mado ga aite imasu."},
+  {"type":"example","jp":"田中さんは東京に住んでいます。","es":"La señora Tanaka vive en Tokio.","romaji":"Tanaka-san wa Tōkyō ni sunde imasu."},
+
+  {"type":"note","md":"住む (すむ, vivir) suele usarse en ～ています porque describe un **estado** (vivir en un lugar) más que una acción puntual. Lo mismo ocurre con 知る (しる): 知っています significa «sé / lo sé» (estado de conocimiento), no «estoy sabiendo»."},
+
+  {"type":"text","md":"## Tabla resumen de los 5 usos"},
+
+  {"type":"table","headers":["Estructura","Significado","Ejemplo"],"rows":[
+    ["Vて + V","A y después B","起きて、食べます"],
+    ["～てください","por favor haz…","話してください"],
+    ["～てもいいですか","¿puedo hacer…?","座ってもいいですか"],
+    ["～てはいけません","no está permitido…","食べてはいけません"],
+    ["～ています","estoy haciendo… / estoy en el estado…","食べています / 住んでいます"]
+  ]},
+
+  {"type":"exercise-mc","prompt":"¿Cuál es la forma て de 飲む (のむ)?","options":["飲んで","飲いて","飲して","飲って"],"answer":"飲んで"},
+  {"type":"exercise-mc","prompt":"¿Cuál es la forma て de 行く (いく)?","options":["行って","行いて","行きて","行んで"],"answer":"行って"},
+  {"type":"exercise-mc","prompt":"¿Cuál es la forma て de 話す (はなす)?","options":["話して","話いて","話って","話んで"],"answer":"話して"},
+  {"type":"exercise-gap","prompt":"ここに座っても＿＿か。(¿Puedo sentarme aquí?)","options":["いいです","いけません","ください","います"],"answer":"いいです","hint":"Permiso = てもいいですか"},
+  {"type":"exercise-gap","prompt":"図書館で騒いで＿＿。(No está permitido hacer ruido en la biblioteca.)","options":["はいけません","もいいですか","ください","います"],"answer":"はいけません","hint":"Prohibición = てはいけません"},
+  {"type":"exercise-tf","statement":"La forma て de 書く es 書いて.","answer":true},
+  {"type":"exercise-tf","statement":"～てはいけません expresa permiso para hacer algo.","answer":false}
+]

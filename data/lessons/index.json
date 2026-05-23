@@ -1,10 +1,18 @@
 [
-  { "id": "l01-hiragana",    "blockId": "hiragana",   "title": "Hiragana: vocales y primeros sonidos", "topic": "escritura",   "estimatedMin": 10 },
-  { "id": "l02-katakana",    "blockId": "katakana",   "title": "Katakana: para palabras extranjeras",  "topic": "escritura",   "estimatedMin": 8  },
-  { "id": "l03-saludos",     "blockId": "vocab",      "title": "Saludos y presentaciones",             "topic": "vocabulario", "estimatedMin": 7  },
-  { "id": "l04-numeros",     "blockId": "vocab",      "title": "Números del 1 al 100",                 "topic": "vocabulario", "estimatedMin": 8  },
-  { "id": "l05-copula",      "blockId": "grammar",    "title": "La cópula: です y ではありません",       "topic": "gramática",   "estimatedMin": 9  },
-  { "id": "l06-particulas",  "blockId": "particles",  "title": "Partículas は、が、を、に、で",           "topic": "gramática",   "estimatedMin": 12 },
-  { "id": "l07-verbos-masu", "blockId": "verbs",      "title": "Verbos en forma ます",                 "topic": "gramática",   "estimatedMin": 10 },
-  { "id": "l08-adjetivos",   "blockId": "adjectives", "title": "Adjetivos い y な",                    "topic": "gramática",   "estimatedMin": 9  }
+  { "id": "l01-hiragana",       "blockId": "hiragana",   "title": "Hiragana: vocales y primeros sonidos",   "topic": "escritura",   "estimatedMin": 10 },
+  { "id": "l02-katakana",       "blockId": "katakana",   "title": "Katakana: para palabras extranjeras",    "topic": "escritura",   "estimatedMin": 8  },
+  { "id": "l03-saludos",        "blockId": "vocab",      "title": "Saludos y presentaciones",               "topic": "vocabulario", "estimatedMin": 7  },
+  { "id": "l04-numeros",        "blockId": "vocab",      "title": "Números del 1 al 100",                   "topic": "vocabulario", "estimatedMin": 8  },
+  { "id": "l15-contadores",     "blockId": "vocab",      "title": "Contadores: ~つ, 人, 枚, 本 y más",       "topic": "vocabulario", "estimatedMin": 10 },
+  { "id": "l05-copula",         "blockId": "grammar",    "title": "La cópula: です y ではありません",          "topic": "gramática",   "estimatedMin": 9  },
+  { "id": "l09-demostrativos",  "blockId": "grammar",    "title": "Demostrativos: こ/そ/あ/ど y posesivos",  "topic": "gramática",   "estimatedMin": 10 },
+  { "id": "l10-existencia",     "blockId": "grammar",    "title": "Existencia: あります e います",              "topic": "gramática",   "estimatedMin": 9  },
+  { "id": "l14-interrogativos", "blockId": "grammar",    "title": "Interrogativos: qué, quién, dónde…",     "topic": "gramática",   "estimatedMin": 10 },
+  { "id": "l06-particulas",     "blockId": "particles",  "title": "Partículas は、が、を、に、で",              "topic": "gramática",   "estimatedMin": 12 },
+  { "id": "l13-particulas-extra","blockId": "particles", "title": "Partículas も、と、から、まで、で、へ",     "topic": "gramática",   "estimatedMin": 10 },
+  { "id": "l07-verbos-masu",    "blockId": "verbs",      "title": "Verbos en forma ます",                   "topic": "gramática",   "estimatedMin": 10 },
+  { "id": "l11-forma-te",       "blockId": "verbs",      "title": "La forma て: enlazar y pedir",           "topic": "gramática",   "estimatedMin": 11 },
+  { "id": "l12-deseos-negacion","blockId": "verbs",      "title": "Deseos (~たい) y negación informal",     "topic": "gramática",   "estimatedMin": 10 },
+  { "id": "l08-adjetivos",      "blockId": "adjectives", "title": "Adjetivos い y な",                      "topic": "gramática",   "estimatedMin": 9  },
+  { "id": "l16-kanji",          "blockId": "kanji",      "title": "Introducción a los kanji N5",           "topic": "escritura",   "estimatedMin": 12 }
 ]

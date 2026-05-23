@@ -1,14 +1,109 @@
 [
-  {"type":"text","md":"Los **saludos** son las primeras palabras que aprendes en japonés. El japonés formal usa ございます para mayor cortesía."},
-  {"type":"example","jp":"おはようございます。","es":"Buenos días. (formal)","romaji":"Ohayō gozaimasu."},
-  {"type":"example","jp":"こんにちは。","es":"Hola / Buenas tardes.","romaji":"Konnichiwa."},
-  {"type":"example","jp":"こんばんは。","es":"Buenas noches.","romaji":"Konbanwa."},
-  {"type":"example","jp":"ありがとうございます。","es":"Muchas gracias. (formal)","romaji":"Arigatō gozaimasu."},
-  {"type":"example","jp":"すみません。","es":"Perdón / Disculpe.","romaji":"Sumimasen."},
-  {"type":"example","jp":"はじめまして。","es":"Mucho gusto. (primer encuentro)","romaji":"Hajimemashite."},
-  {"type":"note","md":"**おはよう** (sin ございます) es la versión informal, para amigos y familia. Con desconocidos siempre se usa la forma formal."},
-  {"type":"exercise-mc","prompt":"¿Cómo se dice 'buenas noches' en japonés?","options":["こんばんは","こんにちは","おはようございます","さようなら"],"answer":"こんばんは"},
-  {"type":"exercise-mc","prompt":"¿Cuál de estas expresiones significa 'mucho gusto' (primer encuentro)?","options":["はじめまして","ありがとう","すみません","おはよう"],"answer":"はじめまして"},
-  {"type":"exercise-gap","prompt":"___ (Buenos días, formal)","options":["おはようございます","こんにちは","こんばんは","ありがとう"],"answer":"おはようございます","hint":"empieza por おはよう"},
-  {"type":"exercise-gap","prompt":"___ (Muchas gracias, formal)","options":["ありがとうございます","すみません","はじめまして","おはようございます"],"answer":"ありがとうございます","hint":"empieza por ありがとう"}
+  {"type":"text","md":"# Saludos y expresiones cotidianas\n\nEn Japón los saludos tienen un peso cultural enorme. Usar la expresión correcta en el momento correcto muestra respeto y conciencia del contexto. Las reverencias (お辞儀, *ojigi*) acompañan casi siempre a las palabras: a mayor formalidad, mayor inclinación."},
+
+  {"type":"text","md":"## Saludos según la hora del día\n\nCada momento del día tiene su saludo. Usarlos bien es la primera señal de cortesía."},
+
+  {"type":"table","headers":["Japonés","Romaji","Cuándo usarlo"],"rows":[
+    ["おはようございます","ohayō gozaimasu","Mañana temprano hasta ~11h (formal)"],
+    ["おはよう","ohayō","Mañana temprano, con amigos y familia (informal)"],
+    ["こんにちは","konnichiwa","~11h a ~18h — equivale a 'hola' o 'buenas tardes'"],
+    ["こんばんは","konbanwa","Desde ~18h — 'buenas noches' como saludo"]
+  ]},
+
+  {"type":"note","md":"**こんにちは** se escribe con は (*ha*) aunque se pronuncia *wa*. Es una reliquia histórica de la partícula は. Lo mismo ocurre con **こんばんは**."},
+
+  {"type":"example","jp":"おはようございます。今日もよろしくお願いします。","es":"Buenos días. Hoy también cuente conmigo.","romaji":"Ohayō gozaimasu. Kyō mo yoroshiku onegaishimasu."},
+  {"type":"example","jp":"こんにちは！元気ですか？","es":"¡Hola! ¿Cómo estás?","romaji":"Konnichiwa! Genki desu ka?"},
+
+  {"type":"text","md":"## Despedidas\n\nExisten varias formas de despedirse según la situación y si volverás a ver a la persona pronto."},
+
+  {"type":"table","headers":["Japonés","Romaji","Uso"],"rows":[
+    ["さようなら","sayōnara","Adiós formal o definitivo; suena distante entre amigos"],
+    ["またね","mata ne","Hasta luego (muy informal, entre amigos)"],
+    ["じゃね / じゃ、また","ja ne / ja, mata","Hasta luego (informal, igual que またね)"],
+    ["おやすみなさい","oyasumi nasai","Buenas noches al irse a dormir (formal)"],
+    ["おやすみ","oyasumi","Buenas noches al irse a dormir (informal)"]
+  ]},
+
+  {"type":"note","md":"**おやすみなさい** es una *despedida nocturna*, no un saludo. Se usa justo antes de dormir, no para saludar a alguien por la noche al llegar."},
+
+  {"type":"text","md":"## Al salir y volver a casa\n\nEstas cuatro expresiones forman un mini-ritual familiar muy arraigado en la cultura japonesa. Se usan en casa, pero también se escuchan en tiendas y oficinas."},
+
+  {"type":"table","headers":["Japonés","Romaji","Quién lo dice y cuándo"],"rows":[
+    ["いってきます","itte kimasu","Quien sale de casa: 'Me voy (y vuelvo)'"],
+    ["いってらっしゃい","itte rasshai","Quien se queda: 'Que te vaya bien'"],
+    ["ただいま","tadaima","Quien vuelve a casa: 'Ya estoy aquí'"],
+    ["おかえり(なさい)","okaeri(nasai)","Quien estaba en casa: 'Bienvenido/a'"]
+  ]},
+
+  {"type":"example","jp":"いってきます！","es":"¡Me voy!","romaji":"Itte kimasu!"},
+  {"type":"example","jp":"いってらっしゃい。","es":"Que te vaya bien.","romaji":"Itte rasshai."},
+  {"type":"example","jp":"ただいま！","es":"¡Ya llegué!","romaji":"Tadaima!"},
+  {"type":"example","jp":"おかえり！","es":"¡Bienvenido!","romaji":"Okaeri!"},
+
+  {"type":"text","md":"## Gratitud y disculpas\n\nJapón es una sociedad donde agradecer y pedir disculpas es frecuente. Hay matices importantes entre las expresiones."},
+
+  {"type":"table","headers":["Japonés","Romaji","Significado"],"rows":[
+    ["ありがとうございます","arigatō gozaimasu","Muchas gracias (formal)"],
+    ["ありがとう","arigatō","Gracias (informal)"],
+    ["どういたしまして","dō itashimashite","De nada"],
+    ["すみません","sumimasen","Disculpe / perdona / oiga (para llamar la atención también)"],
+    ["ごめんなさい","gomen nasai","Lo siento (disculpa sincera, formal)"],
+    ["ごめん","gomen","Lo siento (informal, entre amigos)"]
+  ]},
+
+  {"type":"note","md":"**すみません** es muy versátil: sirve para disculparse por molestar a alguien (*perdona*), para llamar la atención de un camarero (*oiga*), y para agradecer un favor que causó molestia. Es la expresión de cortesía más útil del japonés cotidiano."},
+
+  {"type":"example","jp":"ありがとうございます！どういたしまして。","es":"¡Muchas gracias! — De nada.","romaji":"Arigatō gozaimasu! — Dō itashimashite."},
+  {"type":"example","jp":"すみません、水をください。","es":"Disculpe, me pone un agua.","romaji":"Sumimasen, mizu o kudasai."},
+
+  {"type":"text","md":"## Presentación personal\n\nCuando conoces a alguien por primera vez, estas expresiones son imprescindibles."},
+
+  {"type":"table","headers":["Japonés","Romaji","Significado"],"rows":[
+    ["はじめまして","hajimemashite","Encantado/a de conocerle (primera vez)"],
+    ["～といいます","~ to iimasu","Me llamo ~ (informal/estándar)"],
+    ["～と申します","~ to mōshimasu","Me llamo ~ (muy formal)"],
+    ["よろしくおねがいします","yoroshiku onegaishimasu","Mucho gusto / encantado / cuídame (cierra la presentación)"]
+  ]},
+
+  {"type":"example","jp":"はじめまして。田中といいます。よろしくおねがいします。","es":"Encantado de conocerle. Me llamo Tanaka. Mucho gusto.","romaji":"Hajimemashite. Tanaka to iimasu. Yoroshiku onegaishimasu."},
+
+  {"type":"text","md":"## Preguntar y decir el nombre\n\nPara preguntar el nombre de alguien de forma cortés se usa **おなまえは？** (¿Cómo se llama?). La respuesta más natural es **～です** o **～といいます**."},
+
+  {"type":"example","jp":"おなまえは？","es":"¿Cómo se llama?","romaji":"Onamae wa?"},
+  {"type":"example","jp":"マリアといいます。","es":"Me llamo María.","romaji":"Maria to iimasu."},
+  {"type":"example","jp":"マリアです。","es":"Soy María.","romaji":"Maria desu."},
+
+  {"type":"text","md":"## Preguntar cómo estás\n\n**おげんきですか？** es el equivalente formal de '¿Cómo estás?'. Se usa más con personas que no ves hace tiempo. Entre amigos es más natural simplemente saludar."},
+
+  {"type":"example","jp":"おげんきですか？","es":"¿Cómo está usted?","romaji":"Ogenki desu ka?"},
+  {"type":"example","jp":"はい、おかげさまで。","es":"Sí, bien gracias (a usted).","romaji":"Hai, okagesama de."},
+  {"type":"example","jp":"ええ、元気です。","es":"Sí, estoy bien.","romaji":"Ee, genki desu."},
+
+  {"type":"note","md":"**おかげさまで** (lit. 'gracias a su sombra/influencia') es la respuesta formal más educada. Implica que el bienestar propio es gracias al apoyo de los demás — un valor muy japonés."},
+
+  {"type":"text","md":"## En tiendas y restaurantes\n\nAl entrar a cualquier tienda o restaurante en Japón escucharás **いらっしゃいませ** como bienvenida. Para pedir algo se usa **～をください**."},
+
+  {"type":"example","jp":"いらっしゃいませ！","es":"¡Bienvenido/a! (lo dice el empleado)","romaji":"Irasshaimase!"},
+  {"type":"example","jp":"コーヒーをください。","es":"Un café, por favor. / Me pone un café.","romaji":"Kōhī o kudasai."},
+  {"type":"example","jp":"ありがとうございました。","es":"Muchas gracias (por su compra).","romaji":"Arigatō gozaimashita."},
+
+  {"type":"note","md":"**ありがとうございました** (pasado) lo dicen los empleados al despedirte. El pasado indica que la acción (la compra, la visita) ya terminó. Como cliente, puedes responder también con **ありがとうございます**."},
+
+  {"type":"text","md":"## En clase\n\nEn las aulas japonesas existe un ritual de inicio muy reconocible. El delegado da las órdenes y la clase saluda al profesor en conjunto."},
+
+  {"type":"table","headers":["Japonés","Romaji","Significado"],"rows":[
+    ["きりつ","kiritsu","¡De pie!"],
+    ["れい","rei","¡Reverencia!"],
+    ["ちゃくせき","chakuseki","¡Siéntense!"],
+    ["せんせい、しつもんがあります","sensei, shitsumon ga arimasu","Profesor/a, tengo una pregunta"]
+  ]},
+
+  {"type":"exercise-mc","prompt":"¿Qué dices tú al llegar a casa?","options":["ただいま","いってきます","おかえり","おやすみ"],"answer":"ただいま"},
+  {"type":"exercise-mc","prompt":"¿Cuál es el saludo apropiado al mediodía (entre ~11h y ~18h)?","options":["こんにちは","おはようございます","こんばんは","さようなら"],"answer":"こんにちは"},
+  {"type":"exercise-mc","prompt":"Para decir 'Encantado de conocerle' (primera vez que se conocen):","options":["はじめまして","よろしく","ありがとう","ただいま"],"answer":"はじめまして"},
+  {"type":"exercise-tf","statement":"おやすみなさい se usa como despedida nocturna antes de dormir, no como saludo.","answer":true},
+  {"type":"exercise-tf","statement":"どういたしまして significa 'muchas gracias'.","answer":false},
+  {"type":"exercise-gap","prompt":"___ 、田中といいます。よろしくおねがいします。","options":["はじめまして","こんにちは","ありがとう","すみません"],"answer":"はじめまして","hint":"primera vez que se conocen"},
+  {"type":"exercise-gap","prompt":"コーヒーを___ 。(Un café, por favor.)","options":["ください","います","あります","できます"],"answer":"ください","hint":"pedir algo en una tienda o restaurante"}
 ]

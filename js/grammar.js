@@ -29,13 +29,28 @@ function renderModeMenu(container) {
       <main class="mode-grid">
         <div class="mode-card" data-path="/lessons/l05-copula">
           <div class="mode-icon">📖</div>
-          <div class="mode-label">Lección</div>
-          <div class="mode-desc">La cópula: です y ではありません · ~9 min</div>
+          <div class="mode-label">Lección: Cópula です</div>
+          <div class="mode-desc">です · ではありません · だ · ~9 min</div>
+        </div>
+        <div class="mode-card" data-path="/lessons/l09-demostrativos">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección: Demostrativos</div>
+          <div class="mode-desc">こ/そ/あ/ど · の posesivo · ~10 min</div>
+        </div>
+        <div class="mode-card" data-path="/lessons/l10-existencia">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección: Existencia</div>
+          <div class="mode-desc">あります · います · posición · ~9 min</div>
+        </div>
+        <div class="mode-card" data-path="/lessons/l14-interrogativos">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección: Interrogativos</div>
+          <div class="mode-desc">何・誰・どこ・いつ・いくら · ~10 min</div>
         </div>
         <div class="mode-card" data-path="/grammar/practice">
           <div class="mode-icon">📝</div>
           <div class="mode-label">Practicar</div>
-          <div class="mode-desc">40 patrones N5 con SRS</div>
+          <div class="mode-desc">51 patrones N5 con SRS</div>
         </div>
       </main>
     </div>

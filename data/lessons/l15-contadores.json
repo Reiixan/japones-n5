@@ -1,0 +1,167 @@
+[
+  {"type":"text","md":"# Contadores en japonés\n\nEn español decimos 'una **hoja** de papel', 'dos **cabezas** de ganado' o 'tres **copas** de vino' — usamos palabras especiales según la forma o tipo del objeto. El japonés hace esto de forma sistemática: casi todo lo que se cuenta necesita un **contador** específico."},
+
+  {"type":"note","md":"Los contadores se colocan **después del número** y a veces cambian la pronunciación del número que los precede (asimilación fonética). Aprender los más frecuentes te permitirá hablar de casi cualquier cosa."},
+
+  {"type":"text","md":"## ~つ: contador general (wago)\n\nCuando no conoces el contador específico de algo, o el objeto no tiene categoría clara, usa **~つ**. Funciona para objetos del 1 al 10; a partir de 11 se usa el número sino-japonés directamente."},
+
+  {"type":"table","headers":["Número","~つ","Romaji"],"rows":[
+    ["1","ひとつ","hitotsu"],
+    ["2","ふたつ","futatsu"],
+    ["3","みっつ","mittsu"],
+    ["4","よっつ","yottsu"],
+    ["5","いつつ","itsutsu"],
+    ["6","むっつ","muttsu"],
+    ["7","ななつ","nanatsu"],
+    ["8","やっつ","yattsu"],
+    ["9","ここのつ","kokonotsu"],
+    ["10","とお","tō"]
+  ]},
+
+  {"type":"example","jp":"りんごをみっつください。","es":"Deme tres manzanas.","romaji":"Ringo o mittsu kudasai."},
+  {"type":"example","jp":"たまごがふたつあります。","es":"Hay dos huevos.","romaji":"Tamago ga futatsu arimasu."},
+
+  {"type":"text","md":"## ~人 (にん / り): personas\n\nPara contar personas. Los dos primeros números son **irregulares** y provienen del japonés nativo; a partir de 3 el sistema es regular."},
+
+  {"type":"table","headers":["Personas","Lectura","Nota"],"rows":[
+    ["1","ひとり","⚠ irregular"],
+    ["2","ふたり","⚠ irregular"],
+    ["3","さんにん","regular"],
+    ["4","よにん","regular"],
+    ["5","ごにん","regular"],
+    ["6","ろくにん","regular"],
+    ["7","しちにん","regular"],
+    ["8","はちにん","regular"],
+    ["9","きゅうにん","regular"],
+    ["10","じゅうにん","regular"]
+  ]},
+
+  {"type":"example","jp":"かぞくはよにんです。","es":"Mi familia son cuatro personas.","romaji":"Kazoku wa yonin desu."},
+  {"type":"example","jp":"レストランにふたりできました。","es":"Vinimos al restaurante dos personas.","romaji":"Resutoran ni futari de kimashita."},
+
+  {"type":"text","md":"## ~枚 (まい): objetos planos\n\n**まい** se usa para objetos finos y planos: papel, billetes, fotografías, tickets, ropa plana (camisetas, faldas). Es completamente **regular** — solo cambia el número delante."},
+
+  {"type":"table","headers":["Número","~枚","Número","~枚"],"rows":[
+    ["1","いちまい","6","ろくまい"],
+    ["2","にまい","7","ななまい"],
+    ["3","さんまい","8","はちまい"],
+    ["4","よんまい","9","きゅうまい"],
+    ["5","ごまい","10","じゅうまい"]
+  ]},
+
+  {"type":"example","jp":"ふくを3枚かいました。","es":"Compré tres prendas de ropa.","romaji":"Fuku o sanmai kaimashita."},
+  {"type":"example","jp":"おかねが2枚あります。","es":"Tengo dos billetes.","romaji":"Okane ga nimai arimasu."},
+
+  {"type":"text","md":"## ~本 (ほん / ぽん / ぼん): objetos largos y delgados\n\n**本** se usa para botellas, bolígrafos, lápices, árboles, cintas, barras, ríos — cualquier cosa larga y estrecha. Tiene **varias irregularidades fonéticas** en 1, 3, 6, 8 y 10."},
+
+  {"type":"table","headers":["Número","~本","Nota"],"rows":[
+    ["1","いっぽん","⚠ ぽん"],
+    ["2","にほん","regular"],
+    ["3","さんぼん","⚠ ぼん"],
+    ["4","よんほん","regular"],
+    ["5","ごほん","regular"],
+    ["6","ろっぽん","⚠ ろっぽん"],
+    ["7","ななほん","regular"],
+    ["8","はっぽん","⚠ はっぽん"],
+    ["9","きゅうほん","regular"],
+    ["10","じゅっぽん","⚠ じゅっぽん"]
+  ]},
+
+  {"type":"note","md":"La regla fonética de **~本**: los números que acaban en oclusiva sorda (1→いっ, 6→ろっ, 8→はっ, 10→じゅっ) hacen que ほん se vuelva **ぽん**. El 3 es especial: さんぼん (ぼん sonoro)."},
+
+  {"type":"example","jp":"ペンが2本あります。","es":"Hay dos bolígrafos.","romaji":"Pen ga nihon arimasu."},
+  {"type":"example","jp":"みずを1本かいました。","es":"Compré una botella de agua.","romaji":"Mizu o ippon kaimashita."},
+
+  {"type":"text","md":"## ~冊 (さつ): libros y revistas\n\n**さつ** se usa exclusivamente para libros, revistas, cuadernos — objetos encuadernados. Los cambios fonéticos afectan a 1, 8 y 10."},
+
+  {"type":"table","headers":["Número","~冊","Nota"],"rows":[
+    ["1","いっさつ","⚠ いっさつ"],
+    ["2","にさつ","regular"],
+    ["3","さんさつ","regular"],
+    ["4","よんさつ","regular"],
+    ["5","ごさつ","regular"],
+    ["6","ろくさつ","regular"],
+    ["7","ななさつ","regular"],
+    ["8","はっさつ","⚠ はっさつ"],
+    ["9","きゅうさつ","regular"],
+    ["10","じゅっさつ","⚠ じゅっさつ"]
+  ]},
+
+  {"type":"example","jp":"本を5冊読みました。","es":"Leí cinco libros.","romaji":"Hon o gosatsu yomimashita."},
+  {"type":"example","jp":"としょかんに本がたくさんあります。","es":"En la biblioteca hay muchos libros.","romaji":"Toshokan ni hon ga takusan arimasu."},
+
+  {"type":"text","md":"## ~匹 (ひき / ぴき / びき): animales pequeños y medianos\n\n**ひき** se usa para perros, gatos, peces, insectos — animales en general excepto los grandes (elefantes, caballos usan ~頭 *tō*) y los pájaros (~羽 *wa*)."},
+
+  {"type":"table","headers":["Número","~匹","Nota"],"rows":[
+    ["1","いっぴき","⚠ ぴき"],
+    ["2","にひき","regular"],
+    ["3","さんびき","⚠ びき"],
+    ["4","よんひき","regular"],
+    ["5","ごひき","regular"],
+    ["6","ろっぴき","⚠ ろっぴき"],
+    ["7","ななひき","regular"],
+    ["8","はっぴき","⚠ はっぴき"],
+    ["9","きゅうひき","regular"],
+    ["10","じゅっぴき","⚠ じゅっぴき"]
+  ]},
+
+  {"type":"example","jp":"ねこが3匹います。","es":"Hay tres gatos.","romaji":"Neko ga sanbiki imasu."},
+  {"type":"example","jp":"いぬを1匹かっています。","es":"Tengo un perro.","romaji":"Inu o ippiki katte imasu."},
+
+  {"type":"text","md":"## ~台 (だい): máquinas y vehículos\n\n**だい** se usa para coches, motos, bicicletas, ordenadores, televisores, lavadoras — cualquier máquina o vehículo. Es **completamente regular**."},
+
+  {"type":"table","headers":["Número","~台"],"rows":[
+    ["1","いちだい"],
+    ["2","にだい"],
+    ["3","さんだい"],
+    ["4","よんだい"],
+    ["5","ごだい"],
+    ["10","じゅうだい"]
+  ]},
+
+  {"type":"example","jp":"くるまが2台あります。","es":"Hay dos coches.","romaji":"Kuruma ga nidai arimasu."},
+  {"type":"example","jp":"でんしゃが3台きました。","es":"Llegaron tres trenes.","romaji":"Densha ga sandai kimashita."},
+
+  {"type":"text","md":"## ~杯 (はい / ぱい / ばい): bebidas y alimentos en recipiente\n\n**はい** se usa para tazas de café, vasos de agua, cuencos de arroz, copas — cualquier bebida o comida servida en un recipiente."},
+
+  {"type":"table","headers":["Número","~杯","Nota"],"rows":[
+    ["1","いっぱい","⚠ ぱい"],
+    ["2","にはい","regular"],
+    ["3","さんばい","⚠ ばい"],
+    ["4","よんはい","regular"],
+    ["5","ごはい","regular"],
+    ["6","ろっぱい","⚠ ろっぱい"],
+    ["7","ななはい","regular"],
+    ["8","はっぱい","⚠ はっぱい"],
+    ["9","きゅうはい","regular"],
+    ["10","じゅっぱい","⚠ じゅっぱい"]
+  ]},
+
+  {"type":"note","md":"**いっぱい** tiene doble vida: como contador significa 'una copa/taza', pero como adverbio significa 'lleno/mucho' (お腹いっぱい = 'lleno de comida'). El contexto lo aclara siempre."},
+
+  {"type":"example","jp":"コーヒーを1杯のみます。","es":"Voy a tomar una taza de café.","romaji":"Kōhī o ippai nomimasu."},
+  {"type":"example","jp":"みずを2はいください。","es":"Deme dos vasos de agua.","romaji":"Mizu o nihai kudasai."},
+
+  {"type":"text","md":"## Tabla resumen de contadores\n\nUna guía rápida para elegir el contador correcto:"},
+
+  {"type":"table","headers":["Contador","Para qué sirve","Ejemplo"],"rows":[
+    ["~つ","objetos en general (sin categoría)","りんごみっつ (3 manzanas)"],
+    ["~人 (にん/り)","personas","さんにん (3 personas)"],
+    ["~枚 (まい)","objetos planos: papel, ropa, billetes","にまい (2 hojas)"],
+    ["~本 (ほん/ぽん)","objetos largos: bolígrafos, botellas","いっぽん (1 bolígrafo)"],
+    ["~冊 (さつ)","libros y revistas","ごさつ (5 libros)"],
+    ["~匹 (ひき/ぴき)","animales pequeños: gatos, perros","いっぴき (1 gato)"],
+    ["~台 (だい)","máquinas y vehículos","にだい (2 coches)"],
+    ["~杯 (はい/ぱい)","bebidas en recipiente","いっぱい (1 taza)"]
+  ]},
+
+  {"type":"note","md":"Para preguntar cuántos hay, se usa **何** + contador + **ですか**. Por ejemplo: 何人ですか？(¿Cuántas personas?), 何枚ですか？(¿Cuántas hojas?), 何匹いますか？(¿Cuántos animales hay?)"},
+
+  {"type":"exercise-mc","prompt":"¿Cuál es el contador correcto para 3 libros?","options":["さんさつ","さんぼん","さんまい","さんだい"],"answer":"さんさつ"},
+  {"type":"exercise-mc","prompt":"¿Cómo se dice correctamente '2 gatos'?","options":["ねこが2匹います","ねこが2本います","ねこが2冊います","ねこが2枚います"],"answer":"ねこが2匹います"},
+  {"type":"exercise-mc","prompt":"¿Cuál es el contador para botellas y bolígrafos?","options":["~本","~枚","~冊","~杯"],"answer":"~本"},
+  {"type":"exercise-tf","statement":"ひとり y ふたり son formas irregulares de contar personas.","answer":true},
+  {"type":"exercise-tf","statement":"~台 se usa para contar animales.","answer":false},
+  {"type":"exercise-gap","prompt":"ペンを___かいました。(Compré 3 bolígrafos.)","options":["さんぼん","さんまい","さんにん","さんさつ"],"answer":"さんぼん","hint":"los bolígrafos son objetos largos → 本"},
+  {"type":"exercise-gap","prompt":"コーヒーを___のみました。(Bebí 2 tazas de café.)","options":["にはい","にまい","にほん","にひき"],"answer":"にはい","hint":"bebidas en recipiente → 杯"}
+]

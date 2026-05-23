@@ -26,8 +26,9 @@ export async function start(container, allItems, mode) {
 
 function renderModeMenu(container) {
   const LESSONS = [
-    { id: 'l03-saludos', label: 'Saludos y presentaciones', desc: '~7 min' },
-    { id: 'l04-numeros', label: 'Números del 1 al 100',     desc: '~8 min' },
+    { id: 'l03-saludos',    label: 'Saludos y presentaciones', desc: '~7 min' },
+    { id: 'l04-numeros',    label: 'Números del 1 al 100',     desc: '~8 min' },
+    { id: 'l15-contadores', label: 'Contadores: ~つ, 人, 枚…',  desc: '~10 min' },
   ];
   const MODES = [
     { mode: 'jp-es', icon: '🇯🇵→🇪🇸', label: 'JP → ES', desc: 'Lees la palabra japonesa y eliges el significado' },

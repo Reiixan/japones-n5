@@ -5,7 +5,11 @@ import { kanaToRomaji, isRomajiOn } from './romaji.js';
 
 const DECK = 'kanji';
 
-export async function start(container, allItems) {
+export async function start(container, allItems, mode) {
+  if (!mode) {
+    renderModeMenu(container);
+    return;
+  }
   showSessionConfig(container, {
     title: 'Kanji N5',
     subtitle: 'Ve el kanji y elige su significado y lectura correctos.',
@@ -13,6 +17,33 @@ export async function start(container, allItems) {
       const items = selectSession(DECK, allItems, size);
       runKanji(container, items, allItems);
     },
+  });
+}
+
+function renderModeMenu(container) {
+  container.innerHTML = `
+    <div class="page">
+      <header class="page-header">
+        <button class="btn-icon" id="kanji-menu-back">←</button>
+        <h1>Kanji N5</h1>
+      </header>
+      <main class="mode-grid">
+        <div class="mode-card" data-path="/lessons/l16-kanji">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección: Kanji N5</div>
+          <div class="mode-desc">Los 100 kanji del N5 · ~12 min</div>
+        </div>
+        <div class="mode-card" data-path="/kanji/practice">
+          <div class="mode-icon">📝</div>
+          <div class="mode-label">Practicar</div>
+          <div class="mode-desc">100 kanji N5 con SRS</div>
+        </div>
+      </main>
+    </div>
+  `;
+  document.getElementById('kanji-menu-back').addEventListener('click', () => window.navigate('/'));
+  container.querySelectorAll('.mode-card').forEach(card => {
+    card.addEventListener('click', () => window.navigate(card.dataset.path));
   });
 }
 

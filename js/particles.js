@@ -29,8 +29,13 @@ function renderModeMenu(container) {
       <main class="mode-grid">
         <div class="mode-card" data-path="/lessons/l06-particulas">
           <div class="mode-icon">📖</div>
-          <div class="mode-label">Lección</div>
-          <div class="mode-desc">は、が、を、に、で · ~12 min</div>
+          <div class="mode-label">Lección: は・が・を・に・で</div>
+          <div class="mode-desc">Las 5 partículas esenciales · ~12 min</div>
+        </div>
+        <div class="mode-card" data-path="/lessons/l13-particulas-extra">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección: も・と・から・まで</div>
+          <div class="mode-desc">Partículas adicionales N5 · ~10 min</div>
         </div>
         <div class="mode-card" data-path="/particles/practice">
           <div class="mode-icon">📝</div>

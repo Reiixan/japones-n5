@@ -1,13 +1,199 @@
 [
-  {"type":"text","md":"El japonés usa un sistema decimal estándar. Los números del 1 al 10 se memorizan individualmente; del 11 en adelante se combinan (じゅういち = 10+1 = 11)."},
-  {"type":"table","headers":["Número","Kanji","Lectura"],"rows":[["1","一","いち"],["2","二","に"],["3","三","さん"],["4","四","し / よん"],["5","五","ご"],["6","六","ろく"],["7","七","しち / なな"],["8","八","はち"],["9","九","く / きゅう"],["10","十","じゅう"]]},
-  {"type":"note","md":"4 y 7 tienen dos lecturas. **よん** y **なな** son más comunes en el habla cotidiana porque し y しち pueden confundirse."},
-  {"type":"example","jp":"じゅうに","es":"12 (10+2)","romaji":"jūni"},
-  {"type":"example","jp":"にじゅうご","es":"25 (2×10+5)","romaji":"nijūgo"},
-  {"type":"example","jp":"ひゃく","es":"100","romaji":"hyaku"},
-  {"type":"exercise-mc","prompt":"¿Cómo se dice '7' en japonés (forma más común)?","options":["なな","し","ご","はち"],"answer":"なな"},
-  {"type":"exercise-mc","prompt":"¿Qué número es じゅうご?","options":["15","50","5","51"],"answer":"15"},
-  {"type":"exercise-mc","prompt":"¿Cómo se escribe 3 en kanji?","options":["三","二","四","五"],"answer":"三"},
-  {"type":"exercise-gap","prompt":"8 en japonés: ___","options":["はち","ろく","く","さん"],"answer":"はち","hint":"suena a 'hachi'"},
-  {"type":"exercise-gap","prompt":"にじゅう significa: ___","options":["20","12","2","200"],"answer":"20","hint":"に=2, じゅう=10"}
+  {"type":"text","md":"# Números en japonés\n\nEl japonés usa un sistema decimal estándar, pero tiene dos tipos de números: los de origen **chino** (sino-japonés, 音読み) que son los más comunes para contar, y los de origen **japonés nativo** (和語, *wago*) que se usan para objetos generales hasta 10. En esta lección cubrimos el sistema sino-japonés completo."},
+
+  {"type":"text","md":"## 0 a 10: los números base\n\nEstos diez números son la clave de todo. Varios tienen **dos lecturas**: aprende las más comunes primero."},
+
+  {"type":"table","headers":["Número","Kanji","Lectura principal","Lectura alternativa"],"rows":[
+    ["0","零","ゼロ (zero)","れい (rei)"],
+    ["1","一","いち","—"],
+    ["2","二","に","—"],
+    ["3","三","さん","—"],
+    ["4","四","よん","し (evitar en contextos formales)"],
+    ["5","五","ご","—"],
+    ["6","六","ろく","—"],
+    ["7","七","なな","しち"],
+    ["8","八","はち","—"],
+    ["9","九","きゅう","く"],
+    ["10","十","じゅう","—"]
+  ]},
+
+  {"type":"note","md":"**よん** se prefiere sobre **し** porque し suena igual que 死 (*muerte*). **なな** se prefiere sobre **しち** porque al hablar rápido しち e いち se confunden. Aprende よん y なな como default."},
+
+  {"type":"text","md":"## 11 a 99: el sistema decimal\n\nA partir del 11, los números se forman combinando decenas y unidades. La lógica es **multiplicativa**: 20 = 2×10 = にじゅう, 35 = 3×10+5 = さんじゅうご."},
+
+  {"type":"table","headers":["Número","Lectura","Estructura"],"rows":[
+    ["11","じゅういち","10+1"],
+    ["12","じゅうに","10+2"],
+    ["19","じゅうきゅう","10+9"],
+    ["20","にじゅう","2×10"],
+    ["21","にじゅういち","2×10+1"],
+    ["30","さんじゅう","3×10"],
+    ["45","よんじゅうご","4×10+5"],
+    ["77","ななじゅうなな","7×10+7"],
+    ["99","きゅうじゅうきゅう","9×10+9"]
+  ]},
+
+  {"type":"example","jp":"ここのまどは十二あります。","es":"Hay doce ventanas aquí.","romaji":"Koko no mado wa jūni arimasu."},
+
+  {"type":"text","md":"## 100 a 999: centenas\n\n100 es **ひゃく**. Para las demás centenas se dice la cifra + ひゃく, pero hay **tres irregulares** que debes memorizar."},
+
+  {"type":"table","headers":["Número","Lectura","¿Regular?"],"rows":[
+    ["100","ひゃく","—"],
+    ["200","にひゃく","regular"],
+    ["300","さんびゃく","⚠ irregular (びゃく)"],
+    ["400","よんひゃく","regular"],
+    ["500","ごひゃく","regular"],
+    ["600","ろっぴゃく","⚠ irregular (ろっぴゃく)"],
+    ["700","ななひゃく","regular"],
+    ["800","はっぴゃく","⚠ irregular (はっぴゃく)"],
+    ["900","きゅうひゃく","regular"]
+  ]},
+
+  {"type":"note","md":"Los irregulares en centenas son **さんびゃく** (300), **ろっぴゃく** (600) y **はっぴゃく** (800). La regla fonética: ひゃく se sonoriza o aspira al unirse a さん, ろく y はち."},
+
+  {"type":"example","jp":"このくつはさんびゃくえんです。","es":"Estos zapatos cuestan 300 yenes.","romaji":"Kono kutsu wa sanbyaku en desu."},
+
+  {"type":"text","md":"## 1.000 a 9.999: millares\n\n1.000 es **せん**. Igual que con las centenas, hay dos formas irregulares importantes."},
+
+  {"type":"table","headers":["Número","Lectura","¿Regular?"],"rows":[
+    ["1.000","せん","—"],
+    ["2.000","にせん","regular"],
+    ["3.000","さんぜん","⚠ irregular (ぜん)"],
+    ["4.000","よんせん","regular"],
+    ["5.000","ごせん","regular"],
+    ["6.000","ろくせん","regular"],
+    ["7.000","ななせん","regular"],
+    ["8.000","はっせん","⚠ irregular (はっせん)"],
+    ["9.000","きゅうせん","regular"]
+  ]},
+
+  {"type":"note","md":"Los irregulares en millares son **さんぜん** (3.000) y **はっせん** (8.000). Con いち (1.000) se dice directamente **せん** sin anteponer いち."},
+
+  {"type":"example","jp":"このかばんはさんぜんえんです。","es":"Esta bolsa cuesta 3.000 yenes.","romaji":"Kono kaban wa sanzen en desu."},
+
+  {"type":"text","md":"## 10.000 y más: まん\n\nEl japonés tiene una unidad especial para 10.000: **まん (万)**. Esto es diferente al español, donde contamos en miles. A partir de aquí el sistema cambia de agrupación."},
+
+  {"type":"table","headers":["Número","Lectura"],"rows":[
+    ["10.000","いちまん"],
+    ["50.000","ごまん"],
+    ["100.000","じゅうまん"],
+    ["1.000.000","ひゃくまん"]
+  ]},
+
+  {"type":"text","md":"## Contador general: ~つ (wago)\n\nEl japonés nativo tiene un conjunto de palabras para contar objetos del 1 al 10 sin necesidad de especificar su tipo. Son irregulares y hay que memorizarlas. A partir de 11 se usa el número sino-japonés sin つ."},
+
+  {"type":"table","headers":["Número","Contador ~つ","Romaji"],"rows":[
+    ["1","ひとつ","hitotsu"],
+    ["2","ふたつ","futatsu"],
+    ["3","みっつ","mittsu"],
+    ["4","よっつ","yottsu"],
+    ["5","いつつ","itsutsu"],
+    ["6","むっつ","muttsu"],
+    ["7","ななつ","nanatsu"],
+    ["8","やっつ","yattsu"],
+    ["9","ここのつ","kokonotsu"],
+    ["10","とお","tō"]
+  ]},
+
+  {"type":"example","jp":"りんごをみっつください。","es":"Deme tres manzanas.","romaji":"Ringo o mittsu kudasai."},
+
+  {"type":"text","md":"## Contar personas: ~人 (nin / ri)\n\nPara contar personas se usa el contador **人**. Los dos primeros números son irregulares."},
+
+  {"type":"table","headers":["Personas","Lectura","Nota"],"rows":[
+    ["1","ひとり","⚠ irregular"],
+    ["2","ふたり","⚠ irregular"],
+    ["3","さんにん","regular a partir de aquí"],
+    ["4","よにん","—"],
+    ["5","ごにん","—"],
+    ["10","じゅうにん","—"]
+  ]},
+
+  {"type":"example","jp":"かぞくはよにんです。","es":"Mi familia son cuatro personas.","romaji":"Kazoku wa yonin desu."},
+
+  {"type":"text","md":"## Precios: ~円 (en)\n\nLos precios en japonés son muy fáciles: número + **えん**. Para preguntar el precio se usa **いくらですか？**"},
+
+  {"type":"example","jp":"これはいくらですか？","es":"¿Cuánto cuesta esto?","romaji":"Kore wa ikura desu ka?"},
+  {"type":"example","jp":"ごひゃくえんです。","es":"Son 500 yenes.","romaji":"Gohyaku en desu."},
+
+  {"type":"text","md":"## Las horas: ~時 (ji)\n\nPara decir la hora se añade **じ (時)** al número. No hay irregularidades destacables."},
+
+  {"type":"table","headers":["Hora","Lectura"],"rows":[
+    ["1:00","いちじ"],
+    ["2:00","にじ"],
+    ["3:00","さんじ"],
+    ["9:00","くじ"],
+    ["10:00","じゅうじ"],
+    ["12:00","じゅうにじ"]
+  ]},
+
+  {"type":"note","md":"**くじ** (9:00) usa la lectura く, no きゅう. Es una de las pocas excepciones en las horas."},
+
+  {"type":"text","md":"## Los minutos: ~分 (fun / pun)\n\nLos minutos tienen bastantes cambios fonéticos. La terminación **ふん** se convierte en **ぷん** en varios casos."},
+
+  {"type":"table","headers":["Minutos","Lectura"],"rows":[
+    ["1 min","いっぷん"],
+    ["2 min","にふん"],
+    ["3 min","さんぷん"],
+    ["4 min","よんふん"],
+    ["5 min","ごふん"],
+    ["6 min","ろっぷん"],
+    ["7 min","ななふん"],
+    ["8 min","はっぷん"],
+    ["9 min","きゅうふん"],
+    ["10 min","じゅっぷん"],
+    ["30 min","さんじゅっぷん"],
+    ["半 (y media)","はん"]
+  ]},
+
+  {"type":"example","jp":"いまなんじですか？","es":"¿Qué hora es ahora?","romaji":"Ima nanji desu ka?"},
+  {"type":"example","jp":"さんじじゅっぷんです。","es":"Son las tres y diez.","romaji":"Sanji juppun desu."},
+  {"type":"example","jp":"にじはんです。","es":"Son las dos y media.","romaji":"Niji han desu."},
+
+  {"type":"text","md":"## Los meses: ~月 (gatsu)\n\nLos meses se forman con número + **がつ**. No hay nombres especiales como en español: enero = mes 1, febrero = mes 2, etc."},
+
+  {"type":"table","headers":["Mes","Japonés"],"rows":[
+    ["Enero","いちがつ"],
+    ["Febrero","にがつ"],
+    ["Marzo","さんがつ"],
+    ["Abril","しがつ"],
+    ["Mayo","ごがつ"],
+    ["Junio","ろくがつ"],
+    ["Julio","しちがつ"],
+    ["Agosto","はちがつ"],
+    ["Septiembre","くがつ"],
+    ["Octubre","じゅうがつ"],
+    ["Noviembre","じゅういちがつ"],
+    ["Diciembre","じゅうにがつ"]
+  ]},
+
+  {"type":"note","md":"En los meses sí se usa **し** (abril = しがつ) y **しち** (julio = しちがつ) en lugar de よん y なな. Son convenciones fijas para los meses."},
+
+  {"type":"text","md":"## Los días del mes: ~日 (nichi / ka)\n\nLos primeros 10 días del mes son mayoritariamente irregulares (origen wago). A partir del 11 la mayoría sigue el patrón número + にち."},
+
+  {"type":"table","headers":["Día","Lectura"],"rows":[
+    ["1","ついたち"],
+    ["2","ふつか"],
+    ["3","みっか"],
+    ["4","よっか"],
+    ["5","いつか"],
+    ["6","むいか"],
+    ["7","なのか"],
+    ["8","ようか"],
+    ["9","ここのか"],
+    ["10","とおか"],
+    ["11","じゅういちにち"],
+    ["14","じゅうよっか"],
+    ["20","はつか"],
+    ["24","にじゅうよっか"]
+  ]},
+
+  {"type":"note","md":"**ついたち** (día 1), **はつか** (día 20) y las fechas con 4 (**よっか**, **じゅうよっか**, **にじゅうよっか**) son los más irregulares. El día 1 no tiene alternativa regular."},
+
+  {"type":"exercise-mc","prompt":"¿Cómo se dice 300 en japonés?","options":["さんびゃく","さんひゃく","みびゃく","みっぴゃく"],"answer":"さんびゃく"},
+  {"type":"exercise-mc","prompt":"¿Cuántas personas indica ふたり?","options":["2","3","1","4"],"answer":"2"},
+  {"type":"exercise-mc","prompt":"¿Cómo se dice '6:30' en japonés?","options":["ろくじさんじゅっぷん","ろくじさんぷん","むじさんじゅっぷん","ろくじはんじゅっぷん"],"answer":"ろくじさんじゅっぷん"},
+  {"type":"exercise-tf","statement":"ひとつ es el contador general (wago) para 1 objeto.","answer":true},
+  {"type":"exercise-tf","statement":"さんぜん es la forma irregular de 3.000.","answer":true},
+  {"type":"exercise-gap","prompt":"これは ___えんです。(Esto cuesta 500 yenes.)","options":["ごひゃく","いつつ","ごじゅう","ごせん"],"answer":"ごひゃく","hint":"500 = 5 × 100 = ご + ひゃく"},
+  {"type":"exercise-gap","prompt":"きょうは___がつです。(Hoy es el tercer mes — marzo.)","options":["さん","み","みっ","さんつ"],"answer":"さん","hint":"los meses usan el número sino-japonés + がつ"}
 ]

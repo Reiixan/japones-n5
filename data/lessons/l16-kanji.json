@@ -1,0 +1,846 @@
+[
+  {
+    "type": "text",
+    "md": "## Introducción a los kanji\n\nLos **kanji** (漢字) son caracteres ideográficos de origen chino adaptados al japonés. No representan sonidos como el hiragana o el katakana — representan **significados**.\n\nEl N5 requiere conocer **100 kanji**. No es necesario saber escribirlos todos, pero sí reconocerlos y leerlos en palabras comunes."
+  },
+  {
+    "type": "note",
+    "md": "En japonés estándar los kanji, hiragana y katakana se mezclan en la misma oración: 私は日本語を勉強しています。Las partículas y conjugaciones van en hiragana; las palabras de contenido suelen usar kanji."
+  },
+  {
+    "type": "text",
+    "md": "## On'yomi y Kun'yomi\n\nCada kanji suele tener **dos tipos de lecturas**:\n\n- **On'yomi** (音読み): lectura de origen chino. Suele usarse en **palabras compuestas** (dos o más kanji juntos).\n- **Kun'yomi** (訓読み): lectura japonesa nativa. Suele usarse cuando el kanji aparece **solo** o con hiragana.\n\nEn los diccionarios el on'yomi se escribe en KATAKANA y el kun'yomi en hiragana."
+  },
+  {
+    "type": "example",
+    "jp": "山 → やま (kun, sola)",
+    "es": "montaña (cuando aparece sola)",
+    "romaji": "yama"
+  },
+  {
+    "type": "example",
+    "jp": "富士山 → ふじさん (on, en compuesto)",
+    "es": "monte Fuji",
+    "romaji": "Fujisan"
+  },
+  {
+    "type": "example",
+    "jp": "日 → ひ (kun, sola) / ニチ (on, compuesto)",
+    "es": "sol/día",
+    "romaji": "hi / nichi"
+  },
+  {
+    "type": "example",
+    "jp": "毎日 → まいにち (on+on)",
+    "es": "todos los días",
+    "romaji": "mainichi"
+  },
+  {
+    "type": "note",
+    "md": "Regla práctica: cuando ves **dos kanji juntos**, suelen leerse en on'yomi. Cuando un kanji aparece solo o seguido de hiragana (okurigana), probablemente es kun'yomi."
+  },
+  {
+    "type": "text",
+    "md": "## Kanji de números\n\nLos kanji numéricos son esenciales: aparecen en precios, fechas, horas y todo tipo de textos."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Kanji",
+      "On'yomi",
+      "Kun'yomi",
+      "Ejemplo",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "一",
+        "イチ",
+        "ひと",
+        "一月 (いちがつ)",
+        "enero"
+      ],
+      [
+        "二",
+        "ニ",
+        "ふた",
+        "二人 (ふたり)",
+        "dos personas"
+      ],
+      [
+        "三",
+        "サン",
+        "み",
+        "三時 (さんじ)",
+        "las tres"
+      ],
+      [
+        "四",
+        "シ",
+        "よ/よん",
+        "四月 (しがつ)",
+        "abril"
+      ],
+      [
+        "五",
+        "ゴ",
+        "いつ",
+        "五人 (ごにん)",
+        "cinco personas"
+      ],
+      [
+        "六",
+        "ロク",
+        "む",
+        "六月 (ろくがつ)",
+        "junio"
+      ],
+      [
+        "七",
+        "シチ",
+        "なな",
+        "七時 (しちじ)",
+        "las siete"
+      ],
+      [
+        "八",
+        "ハチ",
+        "や",
+        "八月 (はちがつ)",
+        "agosto"
+      ],
+      [
+        "九",
+        "ク/キュウ",
+        "ここの",
+        "九時 (くじ)",
+        "las nueve"
+      ],
+      [
+        "十",
+        "ジュウ",
+        "とお",
+        "十月 (じゅうがつ)",
+        "octubre"
+      ],
+      [
+        "百",
+        "ヒャク",
+        "—",
+        "三百 (さんびゃく)",
+        "trescientos"
+      ],
+      [
+        "千",
+        "セン",
+        "—",
+        "千円 (せんえん)",
+        "mil yenes"
+      ],
+      [
+        "万",
+        "マン",
+        "—",
+        "一万円 (いちまんえん)",
+        "diez mil yenes"
+      ],
+      [
+        "円",
+        "エン",
+        "まる",
+        "五百円 (ごひゃくえん)",
+        "quinientos yenes"
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "md": "Irregularidades fonéticas frecuentes: **三百→さんびゃく**, **六百→ろっぴゃく**, **八百→はっぴゃく**; **三千→さんぜん**, **八千→はっせん**. Apréndalas de memoria."
+  },
+  {
+    "type": "text",
+    "md": "## Kanji de tiempo\n\nIndispensables para leer fechas, horarios y calendarios."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Kanji",
+      "Lectura principal",
+      "Uso típico",
+      "Ejemplo"
+    ],
+    "rows": [
+      [
+        "年",
+        "ネン (on) / とし (kun)",
+        "años",
+        "今年 (ことし) = este año"
+      ],
+      [
+        "月",
+        "ガツ/ゲツ (on) / つき (kun)",
+        "meses / luna",
+        "来月 (らいげつ) = el mes que viene"
+      ],
+      [
+        "日",
+        "ニチ (on) / ひ/か (kun)",
+        "días / sol",
+        "毎日 (まいにち) = todos los días"
+      ],
+      [
+        "曜",
+        "ヨウ",
+        "días de la semana",
+        "月曜日 (げつようび) = lunes"
+      ],
+      [
+        "時",
+        "ジ (on) / とき (kun)",
+        "horas",
+        "何時 (なんじ) = ¿qué hora?"
+      ],
+      [
+        "分",
+        "フン/ブン (on)",
+        "minutos",
+        "三十分 (さんじゅっぷん) = treinta minutos"
+      ],
+      [
+        "今",
+        "コン (on) / いま (kun)",
+        "ahora / este",
+        "今日 (きょう) = hoy"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "今日は何月何日ですか。",
+    "es": "¿A qué fecha estamos hoy?",
+    "romaji": "Kyō wa nangatsu nannichi desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "三時十五分に来てください。",
+    "es": "Por favor ven a las tres y cuarto.",
+    "romaji": "Sanji jūgofun ni kite kudasai."
+  },
+  {
+    "type": "text",
+    "md": "## Días de la semana\n\nLos siete días combinan un kanji de la naturaleza con 曜日 (ようび)."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Día",
+      "Kanji",
+      "Lectura",
+      "Significado del kanji"
+    ],
+    "rows": [
+      [
+        "Lunes",
+        "月曜日",
+        "げつようび",
+        "luna/mes"
+      ],
+      [
+        "Martes",
+        "火曜日",
+        "かようび",
+        "fuego"
+      ],
+      [
+        "Miércoles",
+        "水曜日",
+        "すいようび",
+        "agua"
+      ],
+      [
+        "Jueves",
+        "木曜日",
+        "もくようび",
+        "árbol/madera"
+      ],
+      [
+        "Viernes",
+        "金曜日",
+        "きんようび",
+        "oro/metal"
+      ],
+      [
+        "Sábado",
+        "土曜日",
+        "どようび",
+        "tierra"
+      ],
+      [
+        "Domingo",
+        "日曜日",
+        "にちようび",
+        "sol/día"
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "md": "Truco: los días siguen el orden de los cinco elementos chinos más luna y sol: 月火水木金土日. ¡La misma secuencia que en muchos sistemas astrológicos europeos!"
+  },
+  {
+    "type": "text",
+    "md": "## Kanji de personas\n\nKanji para hablar de personas en la vida cotidiana."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Kanji",
+      "On'yomi",
+      "Kun'yomi",
+      "Ejemplo",
+      "Traducción"
+    ],
+    "rows": [
+      [
+        "人",
+        "ジン/ニン",
+        "ひと",
+        "外国人 (がいこくじん)",
+        "extranjero"
+      ],
+      [
+        "女",
+        "ジョ/ニョ",
+        "おんな",
+        "女の子 (おんなのこ)",
+        "niña"
+      ],
+      [
+        "男",
+        "ダン/ナン",
+        "おとこ",
+        "男の子 (おとこのこ)",
+        "niño"
+      ],
+      [
+        "子",
+        "シ",
+        "こ",
+        "子供 (こども)",
+        "niño/a"
+      ],
+      [
+        "口",
+        "コウ",
+        "くち",
+        "入口 (いりぐち)",
+        "entrada"
+      ],
+      [
+        "目",
+        "モク",
+        "め",
+        "目 (め)",
+        "ojo"
+      ],
+      [
+        "手",
+        "シュ",
+        "て",
+        "手紙 (てがみ)",
+        "carta"
+      ],
+      [
+        "足",
+        "ソク",
+        "あし",
+        "足 (あし)",
+        "pie/pierna"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "あの人は先生ですか。",
+    "es": "¿Esa persona es profesora?",
+    "romaji": "Ano hito wa sensei desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "入口はどこですか。",
+    "es": "¿Dónde está la entrada?",
+    "romaji": "Iriguchi wa doko desu ka."
+  },
+  {
+    "type": "text",
+    "md": "## Kanji de naturaleza y elementos\n\nMuchos de estos kanji forman los días de la semana y palabras cotidianas."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Kanji",
+      "On",
+      "Kun",
+      "Ejemplo",
+      "Traducción"
+    ],
+    "rows": [
+      [
+        "山",
+        "サン",
+        "やま",
+        "富士山 (ふじさん)",
+        "monte Fuji"
+      ],
+      [
+        "川",
+        "セン",
+        "かわ",
+        "川 (かわ)",
+        "río"
+      ],
+      [
+        "海",
+        "カイ",
+        "うみ",
+        "海外 (かいがい)",
+        "extranjero (lit. más allá del mar)"
+      ],
+      [
+        "空",
+        "クウ",
+        "そら",
+        "空港 (くうこう)",
+        "aeropuerto"
+      ],
+      [
+        "雨",
+        "ウ",
+        "あめ",
+        "大雨 (おおあめ)",
+        "lluvia fuerte"
+      ],
+      [
+        "天",
+        "テン",
+        "あま",
+        "天気 (てんき)",
+        "tiempo meteorológico"
+      ],
+      [
+        "気",
+        "キ/ケ",
+        "—",
+        "元気 (げんき)",
+        "con energía / saludable"
+      ],
+      [
+        "水",
+        "スイ",
+        "みず",
+        "水曜日 (すいようび)",
+        "miércoles"
+      ],
+      [
+        "火",
+        "カ",
+        "ひ",
+        "火曜日 (かようび)",
+        "martes"
+      ],
+      [
+        "木",
+        "モク",
+        "き",
+        "木曜日 (もくようび)",
+        "jueves"
+      ],
+      [
+        "金",
+        "キン",
+        "かね",
+        "お金 (おかね)",
+        "dinero"
+      ],
+      [
+        "土",
+        "ド",
+        "つち",
+        "土曜日 (どようび)",
+        "sábado"
+      ]
+    ]
+  },
+  {
+    "type": "text",
+    "md": "## Kanji de dirección y tamaño\n\nMuy frecuentes en señalética, mapas y descripciones cotidianas."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Kanji",
+      "Kun'yomi",
+      "On'yomi",
+      "Ejemplo",
+      "Traducción"
+    ],
+    "rows": [
+      [
+        "大",
+        "おお",
+        "ダイ/タイ",
+        "大学 (だいがく)",
+        "universidad"
+      ],
+      [
+        "小",
+        "ちい/こ",
+        "ショウ",
+        "小学校 (しょうがっこう)",
+        "escuela primaria"
+      ],
+      [
+        "中",
+        "なか",
+        "チュウ",
+        "中学校 (ちゅうがっこう)",
+        "escuela secundaria"
+      ],
+      [
+        "上",
+        "うえ",
+        "ジョウ",
+        "上手 (じょうず)",
+        "habilidoso"
+      ],
+      [
+        "下",
+        "した",
+        "カ/ゲ",
+        "地下 (ちか)",
+        "subterráneo"
+      ],
+      [
+        "左",
+        "ひだり",
+        "サ",
+        "左手 (ひだりて)",
+        "mano izquierda"
+      ],
+      [
+        "右",
+        "みぎ",
+        "ウ",
+        "右側 (みぎがわ)",
+        "lado derecho"
+      ],
+      [
+        "北",
+        "きた",
+        "ホク",
+        "北口 (きたぐち)",
+        "salida norte"
+      ],
+      [
+        "南",
+        "みなみ",
+        "ナン",
+        "南口 (みなみぐち)",
+        "salida sur"
+      ],
+      [
+        "東",
+        "ひがし",
+        "トウ",
+        "東京 (とうきょう)",
+        "Tokio"
+      ],
+      [
+        "西",
+        "にし",
+        "セイ",
+        "関西 (かんさい)",
+        "región Kansai"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "駅の北口で待っています。",
+    "es": "Estoy esperando en la salida norte de la estación.",
+    "romaji": "Eki no kitaguchi de matte imasu."
+  },
+  {
+    "type": "example",
+    "jp": "上手に日本語を話しますね。",
+    "es": "Hablas japonés muy bien, ¿eh?",
+    "romaji": "Jōzu ni nihongo wo hanashimasu ne."
+  },
+  {
+    "type": "text",
+    "md": "## Kanji de estudio y vida cotidiana\n\nKanji fundamentales para la vida estudiantil y las actividades diarias."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Kanji",
+      "Lectura",
+      "Ejemplo",
+      "Traducción"
+    ],
+    "rows": [
+      [
+        "国",
+        "くに / コク",
+        "外国 (がいこく)",
+        "país extranjero"
+      ],
+      [
+        "学",
+        "まな / ガク",
+        "学生 (がくせい)",
+        "estudiante"
+      ],
+      [
+        "校",
+        "コウ",
+        "学校 (がっこう)",
+        "escuela"
+      ],
+      [
+        "先",
+        "さき / セン",
+        "先生 (せんせい)",
+        "profesor"
+      ],
+      [
+        "生",
+        "い / セイ",
+        "先生 (せんせい) / 学生",
+        "profesor / estudiante"
+      ],
+      [
+        "本",
+        "もと / ホン",
+        "日本 (にほん)",
+        "Japón"
+      ],
+      [
+        "語",
+        "かた / ゴ",
+        "日本語 (にほんご)",
+        "japonés (idioma)"
+      ],
+      [
+        "話",
+        "はなし / ワ",
+        "電話 (でんわ)",
+        "teléfono"
+      ],
+      [
+        "聞",
+        "き / ブン",
+        "新聞 (しんぶん)",
+        "periódico"
+      ],
+      [
+        "書",
+        "か / ショ",
+        "図書館 (としょかん)",
+        "biblioteca"
+      ],
+      [
+        "読",
+        "よ / ドク",
+        "読書 (どくしょ)",
+        "lectura"
+      ],
+      [
+        "食",
+        "た / ショク",
+        "食べ物 (たべもの)",
+        "comida"
+      ],
+      [
+        "飲",
+        "の / イン",
+        "飲み物 (のみもの)",
+        "bebida"
+      ],
+      [
+        "行",
+        "い / コウ",
+        "銀行 (ぎんこう)",
+        "banco"
+      ],
+      [
+        "来",
+        "く / ライ",
+        "来年 (らいねん)",
+        "el año que viene"
+      ],
+      [
+        "見",
+        "み / ケン",
+        "見物 (けんぶつ)",
+        "turismo / visita"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "図書館で日本語の本を読みます。",
+    "es": "Leo libros en japonés en la biblioteca.",
+    "romaji": "Toshokan de nihongo no hon wo yomimasu."
+  },
+  {
+    "type": "example",
+    "jp": "先生は外国人ですか。",
+    "es": "¿El/la profesor/a es extranjero/a?",
+    "romaji": "Sensei wa gaikokujin desu ka."
+  },
+  {
+    "type": "text",
+    "md": "## Estrategia para aprender los 100 kanji N5\n\n1. **Aprende en compuestos**: es más fácil recordar 日本語 (nihongo) que 語 por separado.\n2. **Agrupa por tema**: números, tiempo, personas... como en esta lección.\n3. **Fíjate en los radicales**: 口 (boca) aparece en 言, 語, 話... los kanji de comunicación.\n4. **Usa el furigana como apoyo**: los textos N5 suelen tener furigana (lectura en hiragana encima del kanji). Úsalo para confirmar, no para depender.\n5. **Practica con frases reales**: en las tarjetas de vocab y kanji de esta app tienes los 100 en contexto."
+  },
+  {
+    "type": "note",
+    "md": "**Furigana**: las pequeñas letras en hiragana sobre los kanji. En materiales para principiantes y niños es habitual verlas. Al pasar a nivel intermedio irán desapareciendo — por eso es importante aprender las lecturas."
+  },
+  {
+    "type": "text",
+    "md": "## Kanji de lugar y transporte\n\nKanji muy comunes para orientarse en Japón."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Kanji",
+      "Lectura",
+      "Ejemplo",
+      "Traducción"
+    ],
+    "rows": [
+      [
+        "出",
+        "で / シュツ",
+        "出口 (でぐち)",
+        "salida"
+      ],
+      [
+        "入",
+        "い / ニュウ",
+        "入口 (いりぐち)",
+        "entrada"
+      ],
+      [
+        "駅",
+        "エキ",
+        "駅 (えき)",
+        "estación"
+      ],
+      [
+        "道",
+        "みち / ドウ",
+        "道 (みち)",
+        "camino / calle"
+      ],
+      [
+        "電",
+        "デン",
+        "電車 (でんしゃ)",
+        "tren eléctrico"
+      ],
+      [
+        "車",
+        "くるま / シャ",
+        "電車 (でんしゃ)",
+        "vehículo / tren"
+      ],
+      [
+        "白",
+        "しろ / ハク",
+        "白い (しろい)",
+        "blanco"
+      ],
+      [
+        "力",
+        "ちから / リョク",
+        "電力 (でんりょく)",
+        "energía eléctrica"
+      ]
+    ]
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la lectura correcta de 月曜日?",
+    "options": [
+      "げつようび",
+      "にちようび",
+      "かようび",
+      "すいようび"
+    ],
+    "answer": "げつようび"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué significa 外国人?",
+    "options": [
+      "extranjero/a",
+      "estudiante extranjero",
+      "turista",
+      "persona mayor"
+    ],
+    "answer": "extranjero/a"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "図_館で本を読みます。",
+    "options": [
+      "書",
+      "語",
+      "学",
+      "話"
+    ],
+    "answer": "書",
+    "hint": "biblioteca = 図書館"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se escribe 'el año que viene' en kanji?",
+    "options": [
+      "来年",
+      "今年",
+      "去年",
+      "毎年"
+    ],
+    "answer": "来年"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "El on'yomi de un kanji suele usarse cuando el kanji aparece solo, sin otros kanji ni hiragana.",
+    "answer": false
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál de estas palabras usa kun'yomi?",
+    "options": [
+      "山 (やま)",
+      "東京 (とうきょう)",
+      "学生 (がくせい)",
+      "日本語 (にほんご)"
+    ],
+    "answer": "山 (やま)"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "駅の_口で待ってください。",
+    "options": [
+      "北",
+      "火",
+      "水",
+      "金"
+    ],
+    "answer": "北",
+    "hint": "salida norte = 北口"
+  }
+]

@@ -73,8 +73,18 @@ function renderModeMenu(container) {
       <main class="mode-grid">
         <div class="mode-card" data-path="/lessons/l07-verbos-masu">
           <div class="mode-icon">📖</div>
-          <div class="mode-label">Lección</div>
-          <div class="mode-desc">Verbos en forma ます · ~10 min</div>
+          <div class="mode-label">Lección: Forma ます</div>
+          <div class="mode-desc">Presente · pasado · negación formal · ~10 min</div>
+        </div>
+        <div class="mode-card" data-path="/lessons/l11-forma-te">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección: Forma て</div>
+          <div class="mode-desc">Enlazar · ~てください · ~ている · ~11 min</div>
+        </div>
+        <div class="mode-card" data-path="/lessons/l12-deseos-negacion">
+          <div class="mode-icon">📖</div>
+          <div class="mode-label">Lección: Deseos y negación</div>
+          <div class="mode-desc">~たい · ~ない · ~ましょう · ~10 min</div>
         </div>
         <div class="mode-card" data-path="/verbs/practice">
           <div class="mode-icon">📝</div>

@@ -75,7 +75,9 @@ async function route() {
       }
     } else if (seg1 === 'kanji') {
       const allItems = await loadData('kanji-n5.json');
-      await startKanji(container, allItems);
+      if (!seg2) await startKanji(container, allItems, null);
+      else if (seg2 === 'practice') await startKanji(container, allItems, 'practice');
+      else window.navigate('/kanji');
     } else if (seg1 === 'particles') {
       const allItems = await loadData('particles.json');
       if (!seg2) await startParticles(container, allItems, null);
