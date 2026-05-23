@@ -29,6 +29,16 @@
   background: var(--bg-hover);
   color: var(--text-muted);
 }
+.lesson-progress-badge {
+  font-size: .75rem; font-weight: 600;
+  padding: .2rem .55rem;
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--c-teal) 15%, var(--bg));
+  color: var(--c-teal);
+  white-space: nowrap;
+  min-width: 3.5rem;
+  text-align: center;
+}
 
 /* === Content blocks === */
 .lesson-block { margin-bottom: 1.25rem; }
@@ -59,7 +69,9 @@
   font-size: 1.35rem;
   line-height: 1.5;
   color: var(--text);
+  display: flex; align-items: center; gap: .5rem;
 }
+.lesson-example-jp .btn-tts { font-size: .85rem; flex-shrink: 0; }
 .lesson-example-es { font-size: .9rem; color: var(--text-muted); }
 .lesson-example-romaji { font-size: .8rem; color: var(--text-light); font-style: italic; }
 

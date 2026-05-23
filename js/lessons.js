@@ -1,4 +1,5 @@
 import { recordPracticeTick } from './daily.js';
+import { renderSpeakButton, attachSpeakHandler } from './tts.js';
 
 // ─── parseMd ──────────────────────────────────────────────────────────────────
 // Markdown básico: **negrita**, *cursiva*, `código`, párrafos, listas con "- "
@@ -55,7 +56,10 @@ function renderBlock(block) {
         : '';
       return `
         <div class="lesson-block lesson-example">
-          <div class="lesson-example-jp">${block.jp}</div>
+          <div class="lesson-example-jp">
+            ${block.jp}
+            ${renderSpeakButton(block.jp)}
+          </div>
           <div class="lesson-example-es">${block.es}</div>
           ${romaji}
         </div>`;
@@ -265,6 +269,7 @@ export async function renderLesson(container, id) {
         <button class="btn-icon" id="lesson-back">←</button>
         <h1>${meta.title}</h1>
         <span class="lesson-topic-badge">${meta.topic}</span>
+        <span class="lesson-progress-badge" id="lesson-progress"></span>
         <button class="btn-icon lesson-kana-btn" id="lesson-kana-btn" title="Ver tabla kana">あ</button>
       </div>
       <div id="lesson-content">
@@ -284,6 +289,7 @@ export async function renderLesson(container, id) {
 
   document.getElementById('lesson-back').addEventListener('click', () => window.navigate('/' + meta.blockId));
   document.getElementById('lesson-kana-btn').addEventListener('click', showKanaModal);
+  attachSpeakHandler(document.getElementById('lesson-content'));
 
   // Read progress BEFORE setLessonStarted overwrites lastBlock
   const progress = getLessonProgress(id);
@@ -330,12 +336,19 @@ export async function renderLesson(container, id) {
   }
 
   const allBlocks = container.querySelectorAll('.lesson-block');
+  const progressEl = document.getElementById('lesson-progress');
+  if (progressEl && allBlocks.length > 0) {
+    progressEl.textContent = `1 / ${allBlocks.length}`;
+  }
   if (allBlocks.length > 0 && 'IntersectionObserver' in window) {
     const obs = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const idx = Array.from(allBlocks).indexOf(entry.target);
-          if (idx >= 0) setLessonStarted(id, idx);
+          if (idx >= 0) {
+            setLessonStarted(id, idx);
+            if (progressEl) progressEl.textContent = `${idx + 1} / ${allBlocks.length}`;
+          }
         }
       });
     }, { threshold: 0.3 });
