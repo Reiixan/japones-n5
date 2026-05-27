@@ -1,6 +1,6 @@
 [
   {
-    "id":"g_desu","pattern":"～です","meaning_es":"es / soy / estoy (cópula formal presente)","category":"cópula",
+    "id":"g_desu","pattern":"～です","meaning_es":"es / soy / estoy (cópula formal presente)","category":"cópula","level":"n5",
     "examples":[
       {"jp":"私は学生です。","es":"Soy estudiante."},
       {"jp":"これは本です。","es":"Esto es un libro."},
@@ -9,7 +9,7 @@
     "exercise":{"prompt":"'Este libro es caro.' → _____ 。","answer":"この本は高いです","options":["この本は高いです","この本が高くです","この本を高いです","この本で高いです"]}
   },
   {
-    "id":"g_dewa_nai","pattern":"～ではありません / ～じゃないです","meaning_es":"no es / no soy (negación formal)","category":"cópula",
+    "id":"g_dewa_nai","pattern":"～ではありません / ～じゃないです","meaning_es":"no es / no soy (negación formal)","category":"cópula","level":"n5",
     "examples":[
       {"jp":"私は医者ではありません。","es":"No soy médico."},
       {"jp":"これは本じゃないです。","es":"Esto no es un libro."}
@@ -17,7 +17,7 @@
     "exercise":{"prompt":"'No soy japonés (formal)' → _____。","answer":"日本人ではありません","options":["日本人ではありません","日本人じゃです","日本人ではです","日本人がありません"]}
   },
   {
-    "id":"g_deshita","pattern":"～でした / ～ではありませんでした","meaning_es":"era / fue (pasado formal)","category":"cópula",
+    "id":"g_deshita","pattern":"～でした / ～ではありませんでした","meaning_es":"era / fue (pasado formal)","category":"cópula","level":"n5",
     "examples":[
       {"jp":"昨日は雨でした。","es":"Ayer llovió (fue lluvia)."},
       {"jp":"田中さんは学生ではありませんでした。","es":"El señor Tanaka no era estudiante."}
@@ -25,7 +25,7 @@
     "exercise":{"prompt":"'Ayer hacía calor.' → 昨日は_____。","answer":"暑かったです","options":["暑かったです","暑いでした","暑かったでした","暑いです"]}
   },
   {
-    "id":"g_masu","pattern":"～ます / ～ません","meaning_es":"forma polite del verbo (presente/futuro / negativo)","category":"verbos",
+    "id":"g_masu","pattern":"～ます / ～ません","meaning_es":"forma polite del verbo (presente/futuro / negativo)","category":"verbos","level":"n5",
     "examples":[
       {"jp":"毎日日本語を勉強します。","es":"Estudio japonés todos los días."},
       {"jp":"お酒は飲みません。","es":"No bebo alcohol."}
@@ -33,7 +33,7 @@
     "exercise":{"prompt":"'Como arroz todos los días.' → 毎日ご飯を_____。","answer":"食べます","options":["食べます","食べません","食べました","食べて"]}
   },
   {
-    "id":"g_mashita","pattern":"～ました / ～ませんでした","meaning_es":"forma polite pasado (hice / no hice)","category":"verbos",
+    "id":"g_mashita","pattern":"～ました / ～ませんでした","meaning_es":"forma polite pasado (hice / no hice)","category":"verbos","level":"n5",
     "examples":[
       {"jp":"昨日映画を見ました。","es":"Ayer vi una película."},
       {"jp":"今朝朝ごはんを食べませんでした。","es":"Esta mañana no desayuné."}
@@ -41,7 +41,7 @@
     "exercise":{"prompt":"'Ayer fui a la escuela.' → 昨日学校へ_____。","answer":"行きました","options":["行きました","行きます","行きませんでした","行って"]}
   },
   {
-    "id":"g_mashou","pattern":"～ましょう / ～ましょうか","meaning_es":"¡vamos a...! / ¿hacemos...? (propuesta)","category":"verbos",
+    "id":"g_mashou","pattern":"～ましょう / ～ましょうか","meaning_es":"¡vamos a...! / ¿hacemos...? (propuesta)","category":"verbos","level":"n5",
     "examples":[
       {"jp":"一緒に食べましょう。","es":"¡Comamos juntos!"},
       {"jp":"映画を見ましょうか。","es":"¿Vemos una película?"}
@@ -49,7 +49,7 @@
     "exercise":{"prompt":"'¡Vamos al parque!' → 公園へ_____。","answer":"行きましょう","options":["行きましょう","行きます","行きますか","行って"]}
   },
   {
-    "id":"g_aru_iru","pattern":"あります / います","meaning_es":"hay / existe / está (あります = cosas; います = seres vivos)","category":"existencia",
+    "id":"g_aru_iru","pattern":"あります / います","meaning_es":"hay / existe / está (あります = cosas; います = seres vivos)","category":"existencia","level":"n5",
     "examples":[
       {"jp":"机の上に本があります。","es":"Hay un libro encima de la mesa."},
       {"jp":"公園に犬がいます。","es":"Hay un perro en el parque."},
@@ -58,7 +58,7 @@
     "exercise":{"prompt":"'Hay un gato en la habitación.' → 部屋に猫が_____。","answer":"います","options":["います","あります","いません","ありません"]}
   },
   {
-    "id":"g_nai_nai","pattern":"ありません / いません","meaning_es":"no hay / no está (negación de あります/います)","category":"existencia",
+    "id":"g_nai_nai","pattern":"ありません / いません","meaning_es":"no hay / no está (negación de あります/います)","category":"existencia","level":"n5",
     "examples":[
       {"jp":"お金がありません。","es":"No tengo dinero. (No hay dinero.)"},
       {"jp":"先生はいません。","es":"El profesor no está."}
@@ -66,7 +66,7 @@
     "exercise":{"prompt":"'No hay libro encima de la mesa.' → 机の上に本が_____。","answer":"ありません","options":["ありません","いません","あります","います"]}
   },
   {
-    "id":"g_te_form","pattern":"て形 (forma -te)","meaning_es":"forma conector para enlazar acciones o pedir/dar permiso","category":"te-form",
+    "id":"g_te_form","pattern":"て形 (forma -te)","meaning_es":"forma conector para enlazar acciones o pedir/dar permiso","category":"te-form","level":"n5",
     "examples":[
       {"jp":"朝起きて、歯を磨きます。","es":"Me levanto y me cepillo los dientes."},
       {"jp":"食べてから、勉強します。","es":"Después de comer, estudio."}
@@ -74,7 +74,7 @@
     "exercise":{"prompt":"'Me ducho y luego desayuno.' → シャワーを浴び___、朝ごはんを食べます。","answer":"て","options":["て","た","で","に"]}
   },
   {
-    "id":"g_te_kudasai","pattern":"～てください","meaning_es":"por favor haz... (petición educada)","category":"te-form",
+    "id":"g_te_kudasai","pattern":"～てください","meaning_es":"por favor haz... (petición educada)","category":"te-form","level":"n5",
     "examples":[
       {"jp":"ここに名前を書いてください。","es":"Por favor escribe tu nombre aquí."},
       {"jp":"ゆっくり話してください。","es":"Por favor habla despacio."}
@@ -82,7 +82,7 @@
     "exercise":{"prompt":"'Por favor espera aquí.' → ここで___。","answer":"待ってください","options":["待ってください","待ちください","待つください","待てください"]}
   },
   {
-    "id":"g_te_imasu","pattern":"～ています","meaning_es":"estar + gerundio (acción en progreso o estado resultante)","category":"te-form",
+    "id":"g_te_imasu","pattern":"～ています","meaning_es":"estar + gerundio (acción en progreso o estado resultante)","category":"te-form","level":"n5",
     "examples":[
       {"jp":"今テレビを見ています。","es":"Ahora estoy viendo la televisión."},
       {"jp":"田中さんは結婚しています。","es":"El señor Tanaka está casado."}
@@ -90,7 +90,7 @@
     "exercise":{"prompt":"'Estoy estudiando japonés.' → 日本語を___。","answer":"勉強しています","options":["勉強しています","勉強します","勉強しました","勉強している"]}
   },
   {
-    "id":"g_mo_ii","pattern":"～てもいいです","meaning_es":"está bien si... / puedes... (permiso)","category":"te-form",
+    "id":"g_mo_ii","pattern":"～てもいいです","meaning_es":"está bien si... / puedes... (permiso)","category":"te-form","level":"n5",
     "examples":[
       {"jp":"ここで写真を撮ってもいいですか。","es":"¿Puedo sacar fotos aquí?"},
       {"jp":"窓を開けてもいいです。","es":"Puedes abrir la ventana."}
@@ -98,7 +98,7 @@
     "exercise":{"prompt":"'¿Puedo sentarme aquí?' → ここに___か。","answer":"座ってもいいです","options":["座ってもいいです","座ってはいけません","座りますか","座るですか"]}
   },
   {
-    "id":"g_wa_ikemasen","pattern":"～てはいけません","meaning_es":"no se puede / está prohibido...","category":"te-form",
+    "id":"g_wa_ikemasen","pattern":"～てはいけません","meaning_es":"no se puede / está prohibido...","category":"te-form","level":"n5",
     "examples":[
       {"jp":"ここでタバコを吸ってはいけません。","es":"Está prohibido fumar aquí."},
       {"jp":"授業中に寝てはいけません。","es":"No se puede dormir durante clase."}
@@ -106,7 +106,7 @@
     "exercise":{"prompt":"'No se puede correr aquí.' → ここで___。","answer":"走ってはいけません","options":["走ってはいけません","走ってもいいです","走りません","走らないでください"]}
   },
   {
-    "id":"g_nai_form","pattern":"ない形 (negativo informal)","meaning_es":"no hacer... (forma diccionario → negativa)","category":"negación",
+    "id":"g_nai_form","pattern":"ない形 (negativo informal)","meaning_es":"no hacer... (forma diccionario → negativa)","category":"negación","level":"n5",
     "examples":[
       {"jp":"今日は学校に行かない。","es":"Hoy no voy a la escuela."},
       {"jp":"肉は食べない。","es":"No como carne."}
@@ -114,7 +114,7 @@
     "exercise":{"prompt":"'No leo libros' (informal) → 本を___。","answer":"読まない","options":["読まない","読まない","読みない","読まないです"]}
   },
   {
-    "id":"g_tai","pattern":"～たい","meaning_es":"quiero hacer... (deseo personal)","category":"deseo",
+    "id":"g_tai","pattern":"～たい","meaning_es":"quiero hacer... (deseo personal)","category":"deseo","level":"n5",
     "examples":[
       {"jp":"日本に行きたいです。","es":"Quiero ir a Japón."},
       {"jp":"ラーメンが食べたい。","es":"Quiero comer ramen."},
@@ -123,7 +123,7 @@
     "exercise":{"prompt":"'Quiero ver esa película.' → あの映画が___。","answer":"見たいです","options":["見たいです","見てほしいです","見たくないです","見ましたい"]}
   },
   {
-    "id":"g_tai_neg","pattern":"～たくない","meaning_es":"no quiero hacer...","category":"deseo",
+    "id":"g_tai_neg","pattern":"～たくない","meaning_es":"no quiero hacer...","category":"deseo","level":"n5",
     "examples":[
       {"jp":"今日は外に出たくない。","es":"Hoy no quiero salir fuera."},
       {"jp":"野菜は食べたくないです。","es":"No quiero comer verdura."}
@@ -131,7 +131,7 @@
     "exercise":{"prompt":"'No quiero levantarme.' → 起き___。","answer":"たくない","options":["たくない","たくないです","ません","ないです"]}
   },
   {
-    "id":"g_koto_ga_dekiru","pattern":"～ことができます","meaning_es":"puedo hacer... (capacidad/habilidad)","category":"capacidad",
+    "id":"g_koto_ga_dekiru","pattern":"～ことができます","meaning_es":"puedo hacer... (capacidad/habilidad)","category":"capacidad","level":"n5",
     "examples":[
       {"jp":"私は日本語を話すことができます。","es":"Puedo hablar japonés."},
       {"jp":"車を運転することができません。","es":"No puedo conducir."}
@@ -139,7 +139,7 @@
     "exercise":{"prompt":"'¿Puedes nadar?' → 泳ぐ___か。","answer":"ことができます","options":["ことができます","ことができない","ができます","ことします"]}
   },
   {
-    "id":"g_koto_ga_aru","pattern":"～たことがあります","meaning_es":"he hecho... alguna vez (experiencia pasada)","category":"experiencia",
+    "id":"g_koto_ga_aru","pattern":"～たことがあります","meaning_es":"he hecho... alguna vez (experiencia pasada)","category":"experiencia","level":"n5",
     "examples":[
       {"jp":"富士山に登ったことがあります。","es":"He subido al Monte Fuji alguna vez."},
       {"jp":"刺身を食べたことがありません。","es":"Nunca he comido sashimi."}
@@ -147,7 +147,7 @@
     "exercise":{"prompt":"'¿Has estado en Japón alguna vez?' → 日本に行った___か。","answer":"ことがあります","options":["ことがあります","ことがありません","ことができます","ことがいます"]}
   },
   {
-    "id":"g_node","pattern":"～ので","meaning_es":"porque... / ya que... (causa natural, formal)","category":"causa",
+    "id":"g_node","pattern":"～ので","meaning_es":"porque... / ya que... (causa natural, formal)","category":"causa","level":"n4",
     "examples":[
       {"jp":"雨なので、家にいます。","es":"Porque llueve, me quedo en casa."},
       {"jp":"忙しいので、行けません。","es":"Ya que estoy ocupado, no puedo ir."}
@@ -155,7 +155,7 @@
     "exercise":{"prompt":"'Porque estoy cansado, me voy a dormir.' → 疲れた___、寝ます。","answer":"ので","options":["ので","から","が","けど"]}
   },
   {
-    "id":"g_kara","pattern":"～から","meaning_es":"porque... (razón, más subjetivo/conversacional)","category":"causa",
+    "id":"g_kara","pattern":"～から","meaning_es":"porque... (razón, más subjetivo/conversacional)","category":"causa","level":"n5",
     "examples":[
       {"jp":"お腹が空いたから、何か食べたい。","es":"Tengo hambre, así que quiero comer algo."},
       {"jp":"明日テストがあるから、勉強します。","es":"Mañana tengo examen, así que estudio."}
@@ -163,7 +163,7 @@
     "exercise":{"prompt":"'Porque tengo frío, cierro la ventana.' → 寒い___、窓を閉めます。","answer":"から","options":["から","ので","が","けれど"]}
   },
   {
-    "id":"g_ga_contr","pattern":"～が (pero)","meaning_es":"pero / aunque (contraste entre oraciones)","category":"conjunciones",
+    "id":"g_ga_contr","pattern":"～が (pero)","meaning_es":"pero / aunque (contraste entre oraciones)","category":"conjunciones","level":"n5",
     "examples":[
       {"jp":"日本語は難しいですが、おもしろいです。","es":"El japonés es difícil, pero interesante."},
       {"jp":"行きたいですが、時間がありません。","es":"Quiero ir, pero no tengo tiempo."}
@@ -171,7 +171,7 @@
     "exercise":{"prompt":"'Es caro, pero lo compro.' → 高い___、買います。","answer":"が","options":["が","から","ので","て"]}
   },
   {
-    "id":"g_demo","pattern":"でも","meaning_es":"pero / sin embargo (al inicio de oración)","category":"conjunciones",
+    "id":"g_demo","pattern":"でも","meaning_es":"pero / sin embargo (al inicio de oración)","category":"conjunciones","level":"n5",
     "examples":[
       {"jp":"雨が降っています。でも、行きます。","es":"Está lloviendo. Pero, voy."},
       {"jp":"高いです。でも、おいしいです。","es":"Es caro. Pero es delicioso."}
@@ -179,7 +179,7 @@
     "exercise":{"prompt":"'Estaba cansado. Pero lo hice.' → 疲れていました。___、しました。","answer":"でも","options":["でも","から","ので","そして"]}
   },
   {
-    "id":"g_soshite","pattern":"そして / それから","meaning_es":"y luego / y entonces (secuencia de acciones)","category":"conjunciones",
+    "id":"g_soshite","pattern":"そして / それから","meaning_es":"y luego / y entonces (secuencia de acciones)","category":"conjunciones","level":"n5",
     "examples":[
       {"jp":"朝ごはんを食べました。そして、学校に行きました。","es":"Desayuné. Y luego fui a la escuela."},
       {"jp":"シャワーを浴びて、それから寝ました。","es":"Me duché, y entonces me fui a dormir."}
@@ -187,7 +187,7 @@
     "exercise":{"prompt":"'Leí un libro. Y luego dormí.' → 本を読みました。___、寝ました。","answer":"そして","options":["そして","でも","から","ので"]}
   },
   {
-    "id":"g_to_omou","pattern":"～と思います","meaning_es":"creo que... / pienso que... (opinión)","category":"opinión",
+    "id":"g_to_omou","pattern":"～と思います","meaning_es":"creo que... / pienso que... (opinión)","category":"opinión","level":"n5",
     "examples":[
       {"jp":"明日は雨だと思います。","es":"Creo que mañana lloverá."},
       {"jp":"あの映画はおもしろいと思います。","es":"Creo que esa película es interesante."}
@@ -195,7 +195,7 @@
     "exercise":{"prompt":"'Creo que el japonés es difícil.' → 日本語は難しい___。","answer":"と思います","options":["と思います","と言います","と見ます","と聞きます"]}
   },
   {
-    "id":"g_no_desuka","pattern":"～んですか / ～のですか","meaning_es":"¿es que...? (pedir explicación / mostrar interés)","category":"explicación",
+    "id":"g_no_desuka","pattern":"～んですか / ～のですか","meaning_es":"¿es que...? (pedir explicación / mostrar interés)","category":"explicación","level":"n4",
     "examples":[
       {"jp":"どうして休んだんですか。","es":"¿Por qué no fuiste (me lo explicas)?"},
       {"jp":"日本語を勉強しているんですか。","es":"¿Estás estudiando japonés (de verdad)?"}
@@ -203,7 +203,7 @@
     "exercise":{"prompt":"'¿Es que estás ocupado?' → 忙しい___か。","answer":"んです","options":["んです","ですか","んですか","のです"]}
   },
   {
-    "id":"g_mae_ni","pattern":"～前に","meaning_es":"antes de hacer...","category":"tiempo",
+    "id":"g_mae_ni","pattern":"～前に","meaning_es":"antes de hacer...","category":"tiempo","level":"n5",
     "examples":[
       {"jp":"寝る前に、歯を磨きます。","es":"Antes de dormir, me cepillo los dientes."},
       {"jp":"食べる前に手を洗います。","es":"Antes de comer, me lavo las manos."}
@@ -211,7 +211,7 @@
     "exercise":{"prompt":"'Antes de salir, cierra la ventana.' → 出かける___、窓を閉めてください。","answer":"前に","options":["前に","後で","時に","ために"]}
   },
   {
-    "id":"g_ato_de","pattern":"～後で / ～てから","meaning_es":"después de hacer...","category":"tiempo",
+    "id":"g_ato_de","pattern":"～後で / ～てから","meaning_es":"después de hacer...","category":"tiempo","level":"n5",
     "examples":[
       {"jp":"ご飯を食べた後で、散歩します。","es":"Después de comer, doy un paseo."},
       {"jp":"宿題をしてから、テレビを見ます。","es":"Después de hacer los deberes, veo la tele."}
@@ -219,7 +219,7 @@
     "exercise":{"prompt":"'Después de la clase estudia.' → 授業の___、勉強します。","answer":"後で","options":["後で","前に","時に","間に"]}
   },
   {
-    "id":"g_toki","pattern":"～時","meaning_es":"cuando... / en el momento de...","category":"tiempo",
+    "id":"g_toki","pattern":"～時","meaning_es":"cuando... / en el momento de...","category":"tiempo","level":"n5",
     "examples":[
       {"jp":"子供の時、よく公園で遊びました。","es":"Cuando era niño, jugaba mucho en el parque."},
       {"jp":"困った時は言ってください。","es":"Cuando tengas un problema, dímelo."}
@@ -227,7 +227,7 @@
     "exercise":{"prompt":"'Cuando llueve, cojo el paraguas.' → 雨が降る___、傘を持ちます。","answer":"時","options":["時","前に","後で","から"]}
   },
   {
-    "id":"g_nagara","pattern":"～ながら","meaning_es":"mientras hace... / haciendo... al mismo tiempo","category":"simultáneo",
+    "id":"g_nagara","pattern":"～ながら","meaning_es":"mientras hace... / haciendo... al mismo tiempo","category":"simultáneo","level":"n4",
     "examples":[
       {"jp":"音楽を聞きながら、勉強します。","es":"Estudio mientras escucho música."},
       {"jp":"歩きながら、電話します。","es":"Hablo por teléfono mientras camino."}
@@ -235,7 +235,7 @@
     "exercise":{"prompt":"'Como mientras veo la televisión.' → テレビを見___、ご飯を食べます。","answer":"ながら","options":["ながら","てから","前に","ために"]}
   },
   {
-    "id":"g_dake","pattern":"だけ","meaning_es":"solo / únicamente","category":"cantidad",
+    "id":"g_dake","pattern":"だけ","meaning_es":"solo / únicamente","category":"cantidad","level":"n4",
     "examples":[
       {"jp":"水だけ飲みます。","es":"Solo bebo agua."},
       {"jp":"ひとつだけください。","es":"Deme solo uno."}
@@ -243,7 +243,7 @@
     "exercise":{"prompt":"'Solo estudio japonés.' → 日本語___勉強します。","answer":"だけ","options":["だけ","しか","も","まで"]}
   },
   {
-    "id":"g_shika","pattern":"しか～ない","meaning_es":"solo... (con énfasis exclusivo, siempre con negación)","category":"cantidad",
+    "id":"g_shika","pattern":"しか～ない","meaning_es":"solo... (con énfasis exclusivo, siempre con negación)","category":"cantidad","level":"n4",
     "examples":[
       {"jp":"百円しかありません。","es":"Solo tengo cien yenes (y nada más)."},
       {"jp":"ひとつしか食べませんでした。","es":"Solo comí uno (me quedé con solo eso)."}
@@ -251,7 +251,7 @@
     "exercise":{"prompt":"'Solo sé una palabra.' (con énfasis) → 一つ___知りません。","answer":"しか","options":["しか","だけ","も","まで"]}
   },
   {
-    "id":"g_adjective_te","pattern":"い-adj → -くて / な-adj → -で (enlace)","meaning_es":"adjetivo + y... (enlazar adjetivos u oraciones)","category":"adjetivos",
+    "id":"g_adjective_te","pattern":"い-adj → -くて / な-adj → -で (enlace)","meaning_es":"adjetivo + y... (enlazar adjetivos u oraciones)","category":"adjetivos","level":"n5",
     "examples":[
       {"jp":"この部屋は広くて、きれいです。","es":"Esta habitación es amplia y bonita."},
       {"jp":"田中さんは親切で、有名な先生です。","es":"El señor Tanaka es amable y un profesor famoso."}
@@ -259,7 +259,7 @@
     "exercise":{"prompt":"'Este libro es barato y nuevo.' → この本は安___、新しいです。","answer":"くて","options":["くて","で","て","くて"]}
   },
   {
-    "id":"g_adjective_past","pattern":"い-adj pasado: ～かった / ～くなかった","meaning_es":"era... / no era... (adjetivo-i en pasado)","category":"adjetivos",
+    "id":"g_adjective_past","pattern":"い-adj pasado: ～かった / ～くなかった","meaning_es":"era... / no era... (adjetivo-i en pasado)","category":"adjetivos","level":"n5",
     "examples":[
       {"jp":"昨日は暑かったです。","es":"Ayer hacía calor."},
       {"jp":"試験は難しくなかったです。","es":"El examen no era difícil."}
@@ -267,7 +267,7 @@
     "exercise":{"prompt":"'La comida estaba rica.' → ご飯はおいし___。","answer":"かったです","options":["かったです","くなかった","いでした","かったた"]}
   },
   {
-    "id":"g_na_adj_ni","pattern":"な-adj + に (adverbio)","meaning_es":"adjetivo-na → adverbio: de manera... (+ に)","category":"adjetivos",
+    "id":"g_na_adj_ni","pattern":"な-adj + に (adverbio)","meaning_es":"adjetivo-na → adverbio: de manera... (+ に)","category":"adjetivos","level":"n5",
     "examples":[
       {"jp":"きれいに書いてください。","es":"Escribe de forma limpia / pulcra."},
       {"jp":"上手に日本語を話します。","es":"Habla japonés de forma habilidosa."}
@@ -275,7 +275,7 @@
     "exercise":{"prompt":"'Escribe de forma ordenada.' → 丁寧___書いてください。","answer":"に","options":["に","な","で","く"]}
   },
   {
-    "id":"g_ikura","pattern":"いくら / いくつ / 何人 (contador básico)","meaning_es":"¿cuánto cuesta? / ¿cuántos? / ¿cuántas personas?","category":"interrogativos",
+    "id":"g_ikura","pattern":"いくら / いくつ / 何人 (contador básico)","meaning_es":"¿cuánto cuesta? / ¿cuántos? / ¿cuántas personas?","category":"interrogativos","level":"n5",
     "examples":[
       {"jp":"これはいくらですか。","es":"¿Cuánto cuesta esto?"},
       {"jp":"りんごをいくつ買いましたか。","es":"¿Cuántas manzanas compraste?"},
@@ -284,7 +284,7 @@
     "exercise":{"prompt":"'¿Cuánto cuesta esa camisa?' → あのシャツは___ですか。","answer":"いくら","options":["いくら","いくつ","何人","どれ"]}
   },
   {
-    "id":"g_counter_hon","pattern":"Contadores: 本・枚・匹・台・冊","meaning_es":"contadores para objetos largos / planos / animales pequeños / máquinas / libros","category":"contadores",
+    "id":"g_counter_hon","pattern":"Contadores: 本・枚・匹・台・冊","meaning_es":"contadores para objetos largos / planos / animales pequeños / máquinas / libros","category":"contadores","level":"n5",
     "examples":[
       {"jp":"ペンを2本ください。","es":"Deme 2 bolígrafos."},
       {"jp":"猫が3匹います。","es":"Hay 3 gatos."},
@@ -293,7 +293,7 @@
     "exercise":{"prompt":"'Deme 3 lápices.' → えんぴつを3___ください。","answer":"本","options":["本","枚","冊","匹"]}
   },
   {
-    "id":"g_noni_ga","pattern":"A は B が (preferencia / habilidad)","meaning_es":"estructura para expresar gustos, habilidades, necesidades","category":"estructura",
+    "id":"g_noni_ga","pattern":"A は B が (preferencia / habilidad)","meaning_es":"estructura para expresar gustos, habilidades, necesidades","category":"estructura","level":"n5",
     "examples":[
       {"jp":"私はすしが好きです。","es":"Me gusta el sushi."},
       {"jp":"田中さんはピアノが上手です。","es":"El señor Tanaka es bueno tocando el piano."},
@@ -302,7 +302,7 @@
     "exercise":{"prompt":"'Me gusta el café.' → 私はコーヒー___好きです。","answer":"が","options":["が","は","を","に"]}
   },
   {
-    "id":"g_formal_req","pattern":"～てもらえますか / ～ていただけますか","meaning_es":"¿podría...? (petición educada formal)","category":"cortesía",
+    "id":"g_formal_req","pattern":"～てもらえますか / ～ていただけますか","meaning_es":"¿podría...? (petición educada formal)","category":"cortesía","level":"n4",
     "examples":[
       {"jp":"手伝ってもらえますか。","es":"¿Me podrías ayudar?"},
       {"jp":"もう一度言っていただけますか。","es":"¿Podría repetirlo una vez más?"}
@@ -310,7 +310,7 @@
     "exercise":{"prompt":"'¿Podrías esperar un momento?' → ちょっと待って___か。","answer":"もらえます","options":["もらえます","います","あります","くれます"]}
   },
   {
-    "id":"g_deshou","pattern":"～でしょう / ～だろう","meaning_es":"probablemente... / supongo que... (conjetura)","category":"modalidad",
+    "id":"g_deshou","pattern":"～でしょう / ～だろう","meaning_es":"probablemente... / supongo que... (conjetura)","category":"modalidad","level":"n5",
     "examples":[
       {"jp":"明日は晴れでしょう。","es":"Mañana probablemente estará despejado."},
       {"jp":"彼は学生でしょう。","es":"Supongo que él es estudiante."}
@@ -318,22 +318,116 @@
     "exercise":{"prompt":"'Probablemente mañana lloverá.' → 明日は雨___。","answer":"でしょう","options":["でしょう","でした","ですか","です"]}
   },
   {
-    "id":"g_ka_question","pattern":"～か (pregunta)","meaning_es":"marca interrogativa al final de la oración","category":"preguntas",
+    "id":"g_ka_question","pattern":"～か (pregunta)","meaning_es":"marca interrogativa al final de la oración","category":"preguntas","level":"n5",
     "examples":[
       {"jp":"日本人ですか。","es":"¿Es usted japonés?"},
       {"jp":"昨日どこへ行きましたか。","es":"¿Adónde fuiste ayer?"}
     ],
     "exercise":{"prompt":"'¿Qué comes?' → 何を食べ___。","answer":"ますか","options":["ますか","ません","ました","ましょう"]}
   },
-  {"id":"g_te_kara","pattern":"～てから","meaning_es":"después de hacer ～","category":"secuencia","examples":[{"jp":"ご飯を食べてから、勉強します。","es":"Después de comer, estudiaré."},{"jp":"シャワーを浴びてから、寝ます。","es":"Después de ducharme, me acostaré."}],"exercise":{"prompt":"'Después de lavar la ropa, salgo.' → 服を___、出かけます。","answer":"洗ってから","options":["洗ってから","洗いながら","洗うために","洗ったので"]}},
-  {"id":"g_hou_ga_ii","pattern":"～ほうがいい","meaning_es":"es mejor hacer ～ / debería hacer ～","category":"consejo","examples":[{"jp":"早く寝たほうがいいです。","es":"Es mejor que duermas pronto."},{"jp":"もっと野菜を食べたほうがいいです。","es":"Es mejor que comas más verduras."}],"exercise":{"prompt":"'Es mejor que vayas al médico.' → 病院に___ほうがいいです。","answer":"行った","options":["行った","行く","行って","行き"]}},
-  {"id":"g_nakereba_naranai","pattern":"～なければならない","meaning_es":"tener que hacer ～ / hay que","category":"obligación","examples":[{"jp":"明日早く起きなければなりません。","es":"Mañana tengo que levantarme temprano."},{"jp":"毎日薬を飲まなければなりません。","es":"Tengo que tomar la medicina cada día."}],"exercise":{"prompt":"'Tengo que estudiar japonés.' → 日本語を___なければなりません。","answer":"勉強し","options":["勉強し","勉強する","勉強して","勉強した"]}},
-  {"id":"g_kamo_shirenai","pattern":"～かもしれない","meaning_es":"quizás / puede que ～","category":"posibilidad","examples":[{"jp":"明日は雨が降るかもしれません。","es":"Quizás llueva mañana."},{"jp":"彼は来ないかもしれません。","es":"Puede que él no venga."}],"exercise":{"prompt":"'Quizás esté en casa.' → 家にいる___。","answer":"かもしれません","options":["かもしれません","でしょう","はずです","らしいです"]}},
-  {"id":"g_tame_ni","pattern":"～ために","meaning_es":"para (con el fin de) ～","category":"propósito","examples":[{"jp":"日本語を覚えるために、毎日練習します。","es":"Para aprender japonés, practico cada día."},{"jp":"健康のために、野菜を食べています。","es":"Para la salud, como verduras."}],"exercise":{"prompt":"'Para ahorrar dinero, no compro cosas innecesarias.' → お金を___ために、必要のない物は買いません。","answer":"貯める","options":["貯める","貯めて","貯めた","貯めます"]}},
-  {"id":"g_you_ni","pattern":"～ように","meaning_es":"para que ～ / de modo que ～","category":"propósito","examples":[{"jp":"遅れないように、早く出発しました。","es":"Para no llegar tarde, salí pronto."},{"jp":"忘れないように、メモしました。","es":"Para no olvidarlo, tomé nota."}],"exercise":{"prompt":"'Para no enfermar, me lavo las manos.' → 病気に___ように、手を洗います。","answer":"ならない","options":["ならない","なる","なって","ならなくて"]}},
-  {"id":"g_sou_da_hearsay","pattern":"～そうだ (伝聞)","meaning_es":"se dice que ～ / he oído que ～","category":"transmisión","examples":[{"jp":"明日は雪が降るそうです。","es":"Se dice que mañana nevará."},{"jp":"あの店はおいしいそうです。","es":"He oído que ese restaurante está bueno."}],"exercise":{"prompt":"'He oído que él se va a casar.' → 彼は結婚する___。","answer":"そうです","options":["そうです","らしいです","でしょう","はずです"]}},
-  {"id":"g_rashii","pattern":"～らしい","meaning_es":"parece que ～ / al parecer","category":"apariencia","examples":[{"jp":"田中さんは来ないらしいです。","es":"Parece que Tanaka-san no viene."},{"jp":"あの映画はとても面白いらしいです。","es":"Al parecer, esa película es muy interesante."}],"exercise":{"prompt":"'Parece que mañana hace buen tiempo.' → 明日は天気がいい___。","answer":"らしいです","options":["らしいです","そうです","でしょう","はずです"]}},
-  {"id":"g_hazu_da","pattern":"～はずだ","meaning_es":"debería ser ～ / se supone que ～","category":"expectativa","examples":[{"jp":"彼はもう来るはずです。","es":"Se supone que él ya debería llegar."},{"jp":"この薬を飲めば、よくなるはずです。","es":"Si toma esta medicina, debería mejorar."}],"exercise":{"prompt":"'Se supone que la tienda está abierta.' → お店は開いている___。","answer":"はずです","options":["はずです","らしいです","そうです","でしょう"]}},
-  {"id":"g_te_miru","pattern":"～てみる","meaning_es":"intentar hacer ～ / probar a hacer","category":"intento","examples":[{"jp":"この料理を食べてみてください。","es":"Por favor, pruebe esta comida."},{"jp":"日本語で話してみました。","es":"Intenté hablar en japonés."}],"exercise":{"prompt":"'Prueba a escribir en japonés.' → 日本語で___みてください。","answer":"書いて","options":["書いて","書き","書く","書いた"]}},
-  {"id":"g_te_ageru","pattern":"～てあげる／もらう／くれる","meaning_es":"hacer algo para alguien / recibir que alguien haga algo","category":"dar-recibir","examples":[{"jp":"友達に本を貸してあげました。","es":"Le presté un libro a mi amigo (por su bien)."},{"jp":"先生に日本語を教えてもらいました。","es":"Recibí clases de japonés del profesor."},{"jp":"母が夕食を作ってくれました。","es":"Mi madre me hizo la cena."}],"exercise":{"prompt":"'Le enseñé a mi amigo (por su bien).' → 友達に___あげました。","answer":"教えて","options":["教えて","教えた","教え","教えに"]}}
+  {
+    "id":"g_te_kara","pattern":"～てから","meaning_es":"después de hacer ～","category":"secuencia","level":"n5",
+    "examples":[
+      {"jp":"ご飯を食べてから、勉強します。","es":"Después de comer, estudiaré."},
+      {"jp":"シャワーを浴びてから、寝ます。","es":"Después de ducharme, me acostaré."}
+    ],
+    "exercise":{"prompt":"'Después de lavar la ropa, salgo.' → 服を___、出かけます。","answer":"洗ってから","options":["洗ってから","洗いながら","洗うために","洗ったので"]}
+  },
+  {
+    "id":"g_hou_ga_ii","pattern":"～ほうがいい","meaning_es":"es mejor hacer ～ / debería hacer ～","category":"consejo","level":"n4",
+    "examples":[
+      {"jp":"早く寝たほうがいいです。","es":"Es mejor que duermas pronto."},
+      {"jp":"もっと野菜を食べたほうがいいです。","es":"Es mejor que comas más verduras."}
+    ],
+    "exercise":{"prompt":"'Es mejor que vayas al médico.' → 病院に___ほうがいいです。","answer":"行った","options":["行った","行く","行って","行き"]}
+  },
+  {
+    "id":"g_nakereba_naranai","pattern":"～なければならない","meaning_es":"tener que hacer ～ / hay que","category":"obligación","level":"n5",
+    "examples":[
+      {"jp":"明日早く起きなければなりません。","es":"Mañana tengo que levantarme temprano."},
+      {"jp":"毎日薬を飲まなければなりません。","es":"Tengo que tomar la medicina cada día."}
+    ],
+    "exercise":{"prompt":"'Tengo que estudiar japonés.' → 日本語を___なければなりません。","answer":"勉強し","options":["勉強し","勉強する","勉強して","勉強した"]}
+  },
+  {
+    "id":"g_kamo_shirenai","pattern":"～かもしれない","meaning_es":"quizás / puede que ～","category":"posibilidad","level":"n4",
+    "examples":[
+      {"jp":"明日は雨が降るかもしれません。","es":"Quizás llueva mañana."},
+      {"jp":"彼は来ないかもしれません。","es":"Puede que él no venga."}
+    ],
+    "exercise":{"prompt":"'Quizás esté en casa.' → 家にいる___。","answer":"かもしれません","options":["かもしれません","でしょう","はずです","らしいです"]}
+  },
+  {
+    "id":"g_tame_ni","pattern":"～ために","meaning_es":"para (con el fin de) ～","category":"propósito","level":"n4",
+    "examples":[
+      {"jp":"日本語を覚えるために、毎日練習します。","es":"Para aprender japonés, practico cada día."},
+      {"jp":"健康のために、野菜を食べています。","es":"Para la salud, como verduras."}
+    ],
+    "exercise":{"prompt":"'Para ahorrar dinero, no compro cosas innecesarias.' → お金を___ために、必要のない物は買いません。","answer":"貯める","options":["貯める","貯めて","貯めた","貯めます"]}
+  },
+  {
+    "id":"g_you_ni","pattern":"～ように","meaning_es":"para que ～ / de modo que ～","category":"propósito","level":"n4",
+    "examples":[
+      {"jp":"遅れないように、早く出発しました。","es":"Para no llegar tarde, salí pronto."},
+      {"jp":"忘れないように、メモしました。","es":"Para no olvidarlo, tomé nota."}
+    ],
+    "exercise":{"prompt":"'Para no enfermar, me lavo las manos.' → 病気に___ように、手を洗います。","answer":"ならない","options":["ならない","なる","なって","ならなくて"]}
+  },
+  {
+    "id":"g_sou_da_hearsay","pattern":"～そうだ (伝聞)","meaning_es":"se dice que ～ / he oído que ～","category":"transmisión","level":"n4",
+    "examples":[
+      {"jp":"明日は雪が降るそうです。","es":"Se dice que mañana nevará."},
+      {"jp":"あの店はおいしいそうです。","es":"He oído que ese restaurante está bueno."}
+    ],
+    "exercise":{"prompt":"'He oído que él se va a casar.' → 彼は結婚する___。","answer":"そうです","options":["そうです","らしいです","でしょう","はずです"]}
+  },
+  {
+    "id":"g_rashii","pattern":"～らしい","meaning_es":"parece que ～ / al parecer","category":"apariencia","level":"n3",
+    "examples":[
+      {"jp":"田中さんは来ないらしいです。","es":"Parece que Tanaka-san no viene."},
+      {"jp":"あの映画はとても面白いらしいです。","es":"Al parecer, esa película es muy interesante."}
+    ],
+    "exercise":{"prompt":"'Parece que mañana hace buen tiempo.' → 明日は天気がいい___。","answer":"らしいです","options":["らしいです","そうです","でしょう","はずです"]}
+  },
+  {
+    "id":"g_hazu_da","pattern":"～はずだ","meaning_es":"debería ser ～ / se supone que ～","category":"expectativa","level":"n4",
+    "examples":[
+      {"jp":"彼はもう来るはずです。","es":"Se supone que él ya debería llegar."},
+      {"jp":"この薬を飲めば、よくなるはずです。","es":"Si toma esta medicina, debería mejorar."}
+    ],
+    "exercise":{"prompt":"'Se supone que la tienda está abierta.' → お店は開いている___。","answer":"はずです","options":["はずです","らしいです","そうです","でしょう"]}
+  },
+  {
+    "id":"g_te_miru","pattern":"～てみる","meaning_es":"intentar hacer ～ / probar a hacer","category":"intento","level":"n4",
+    "examples":[
+      {"jp":"この料理を食べてみてください。","es":"Por favor, pruebe esta comida."},
+      {"jp":"日本語で話してみました。","es":"Intenté hablar en japonés."}
+    ],
+    "exercise":{"prompt":"'Prueba a escribir en japonés.' → 日本語で___みてください。","answer":"書いて","options":["書いて","書き","書く","書いた"]}
+  },
+  {
+    "id":"g_te_ageru","pattern":"～てあげる／もらう／くれる","meaning_es":"hacer algo para alguien / recibir que alguien haga algo","category":"dar-recibir","level":"n5",
+    "examples":[
+      {"jp":"友達に本を貸してあげました。","es":"Le presté un libro a mi amigo (por su bien)."},
+      {"jp":"先生に日本語を教えてもらいました。","es":"Recibí clases de japonés del profesor."},
+      {"jp":"母が夕食を作ってくれました。","es":"Mi madre me hizo la cena."}
+    ],
+    "exercise":{"prompt":"'Le enseñé a mi amigo (por su bien).' → 友達に___あげました。","answer":"教えて","options":["教えて","教えた","教え","教えに"]}
+  },
+  {
+    "id":"g_ageru_morau","pattern":"あげます / もらいます","meaning_es":"dar (yo→otro) / recibir (yo←otro)","category":"dar-recibir","level":"n5",
+    "examples":[
+      {"jp":"友達にプレゼントをあげます。","es":"Le doy un regalo a mi amigo."},
+      {"jp":"母にお金をもらいました。","es":"Recibí dinero de mi madre."}
+    ],
+    "exercise":{"prompt":"'Recibí una carta de un amigo.' → 友達に手紙を_____。","answer":"もらいました","options":["もらいました","あげました","くれました","ありました"]}
+  },
+  {
+    "id":"g_ichiban","pattern":"～がいちばん～ (superlativo)","meaning_es":"el/la que más ~ (superlativo)","category":"comparación","level":"n5",
+    "examples":[
+      {"jp":"日本でいちばん高い山は富士山です。","es":"La montaña más alta de Japón es el Fuji."},
+      {"jp":"くだものの中でりんごがいちばん好きです。","es":"De las frutas, la que más me gusta es la manzana."}
+    ],
+    "exercise":{"prompt":"'De los deportes, el que más me gusta es el fútbol.' → スポーツの中でサッカーが_____好きです。","answer":"いちばん","options":["いちばん","とても","あまり","もっと"]}
+  }
 ]

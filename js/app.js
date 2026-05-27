@@ -84,7 +84,8 @@ async function route() {
       else if (seg2 === 'practice') await startParticles(container, allItems, 'practice');
       else window.navigate('/particles');
     } else if (seg1 === 'grammar') {
-      const allItems = await loadData('grammar-n5.json');
+      // Solo puntos de nivel N5; los n4/n3 quedan en el JSON para un futuro modo N4.
+      const allItems = (await loadData('grammar-n5.json')).filter(g => g.level === 'n5');
       if (!seg2) await startGrammar(container, allItems, null);
       else if (seg2 === 'practice') await startGrammar(container, allItems, 'practice');
       else window.navigate('/grammar');
@@ -120,7 +121,7 @@ async function route() {
         loadData('listening-n5.json'),
         loadData('reading-n5.json'),
       ]);
-      await startExam(container, { vocab, kanji, particles, grammar, listening, reading });
+      await startExam(container, { vocab, kanji, particles, grammar: grammar.filter(g => g.level === 'n5'), listening, reading });
     } else {
       window.navigate('/');
     }

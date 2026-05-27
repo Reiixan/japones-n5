@@ -86,7 +86,8 @@ export async function renderStats(container) {
 
   // Load all decks
   const rows = await Promise.all(DECKS.map(async deck => {
-    const items = await loadData(deck.file);
+    let items = await loadData(deck.file);
+    if (deck.id === 'grammar') items = items.filter(g => g.level === 'n5');
     const stats = getDeckStats(deck.id, items);
     return { deck, stats };
   }));

@@ -49,7 +49,7 @@ function renderModeMenu(container) {
         <div class="mode-card" data-path="/grammar/practice">
           <div class="mode-icon">📝</div>
           <div class="mode-label">Practicar</div>
-          <div class="mode-desc">51 patrones N5 con SRS</div>
+          <div class="mode-desc">39 patrones N5 con SRS</div>
         </div>
       </main>
     </div>
