@@ -1,91 +1,769 @@
 [
-  {"type":"text","md":"## Adjetivos en japonés\n\nEl japonés tiene dos clases de adjetivos con comportamientos distintos:\n\n- **Adjetivos い**: terminan en い. Se conjugan ellos mismos (pasado, negativo…).\n- **Adjetivos な**: funcionan como sustantivos. Usan な solo cuando modifican a un nombre; en predicado van directamente con です."},
-
-  {"type":"table","headers":["Tipo","Ejemplo","Significado"],"rows":[["い","大きい (おおきい)","grande"],["い","高い (たかい)","caro / alto"],["い","楽しい (たのしい)","divertido"],["な","静か (しずか)","tranquilo"],["な","有名 (ゆうめい)","famoso"],["な","元気 (げんき)","con energía / sano"]]},
-
-  {"type":"note","md":"**きれい** termina en い pero es adjetivo **な**. Hay que memorizarlo. Lo mismo ocurre con 嫌い (きらい) y 有名 (ゆうめい)."},
-
-  {"type":"text","md":"---\n## Adjetivos い: uso como predicado\n\nEstructura: **N は い-adj です**\n\nEl adjetivo va al final de la oración seguido de です (forma educada)."},
-
-  {"type":"example","jp":"この本は面白いです。","es":"Este libro es interesante.","romaji":"Kono hon wa omoshiroi desu."},
-  {"type":"example","jp":"その映画は長いです。","es":"Esa película es larga.","romaji":"Sono eiga wa nagai desu."},
-  {"type":"example","jp":"日本語は難しいです。","es":"El japonés es difícil.","romaji":"Nihongo wa muzukashii desu."},
-
-  {"type":"text","md":"## Adjetivos い: uso como modificador\n\nEstructura: **い-adj + N** (el adjetivo va justo antes del sustantivo, sin partícula)"},
-
-  {"type":"example","jp":"大きい犬がいます。","es":"Hay un perro grande.","romaji":"Ookii inu ga imasu."},
-  {"type":"example","jp":"冷たい水を飲みます。","es":"Bebo agua fría.","romaji":"Tsumetai mizu wo nomimasu."},
-  {"type":"example","jp":"速い電車に乗ります。","es":"Subo al tren rápido.","romaji":"Hayai densha ni norimasu."},
-
-  {"type":"text","md":"---\n## Conjugación de adjetivos い\n\nLos adjetivos い se conjugan quitando la い final y añadiendo el sufijo."},
-
-  {"type":"table","headers":["Tiempo","Forma","Forma educada (desu)"],"rows":[["Presente positivo","おもしろい","おもしろいです"],["Presente negativo","おもしろくない","おもしろくないです / おもしろくありません"],["Pasado positivo","おもしろかった","おもしろかったです"],["Pasado negativo","おもしろくなかった","おもしろくなかったです / おもしろくありませんでした"]]},
-
-  {"type":"example","jp":"昨日の映画は面白くなかったです。","es":"La película de ayer no fue interesante.","romaji":"Kinō no eiga wa omoshirokunakatta desu."},
-  {"type":"example","jp":"子供のころ、野菜がおいしくなかったです。","es":"Cuando era niño, las verduras no eran sabrosas.","romaji":"Kodomo no koro, yasai ga oishikunakatta desu."},
-  {"type":"example","jp":"昨日は寒くなかったです。","es":"Ayer no hacía frío.","romaji":"Kinō wa samukunakatta desu."},
-
-  {"type":"note","md":"**Excepción crítica — いい (bueno)**\n\nいい se conjuga a partir de la forma antigua **よい**:\n- Negativo: **よくない** (nunca いくない)\n- Pasado: **よかった** (nunca いかった)\n- Pasado negativo: **よくなかった**\n\nEjemplo: 天気がよかったです。(El tiempo fue bueno.)"},
-
-  {"type":"example","jp":"今日の天気はよくないです。","es":"El tiempo de hoy no es bueno.","romaji":"Kyō no tenki wa yokunai desu."},
-  {"type":"example","jp":"先週の旅行はよかったです。","es":"El viaje de la semana pasada fue bueno.","romaji":"Senshū no ryokō wa yokatta desu."},
-
-  {"type":"text","md":"## Adjetivos い: forma adverbial\n\nPara modificar un verbo, sustituye い final por **く**.\n\nEjemplo: 速い → 速く (rápidamente), 早い → 早く (temprano)"},
-
-  {"type":"example","jp":"速く走ります。","es":"Corro rápido.","romaji":"Hayaku hashirimasu."},
-  {"type":"example","jp":"早く起きてください。","es":"Por favor, levántate temprano.","romaji":"Hayaku okite kudasai."},
-
-  {"type":"text","md":"---\n## Adjetivos な: uso como predicado\n\nEstructura: **N は な-adj です**\n\nImportante: cuando el adjetivo な va en predicado (al final), **no** lleva な. La な solo aparece cuando modifica a un sustantivo."},
-
-  {"type":"example","jp":"この部屋は静かです。","es":"Esta habitación es tranquila.","romaji":"Kono heya wa shizuka desu."},
-  {"type":"example","jp":"田中さんは親切です。","es":"La señora Tanaka es amable.","romaji":"Tanaka-san wa shinsetsu desu."},
-  {"type":"example","jp":"あの歌手は有名です。","es":"Ese cantante es famoso.","romaji":"Ano kashu wa yūmei desu."},
-
-  {"type":"text","md":"## Adjetivos な: uso como modificador\n\nEstructura: **な-adj + な + N**\n\nAquí sí aparece la partícula な entre el adjetivo y el sustantivo."},
-
-  {"type":"example","jp":"静かな部屋が好きです。","es":"Me gustan las habitaciones tranquilas.","romaji":"Shizuka na heya ga suki desu."},
-  {"type":"example","jp":"有名な映画を見ました。","es":"Vi una película famosa.","romaji":"Yūmei na eiga wo mimashita."},
-  {"type":"example","jp":"きれいな花ですね。","es":"Es una flor bonita, ¿verdad?","romaji":"Kirei na hana desu ne."},
-
-  {"type":"text","md":"## Conjugación de adjetivos な\n\nLos adjetivos な usan la misma conjugación que la cópula です:"},
-
-  {"type":"table","headers":["Tiempo","Educado","Informal"],"rows":[["Presente positivo","静かです","静かだ"],["Presente negativo","静かじゃないです / 静かではありません","静かじゃない"],["Pasado positivo","静かでした","静かだった"],["Pasado negativo","静かじゃなかったです","静かじゃなかった"]]},
-
-  {"type":"example","jp":"昨日、図書館は静かじゃなかったです。","es":"Ayer la biblioteca no estaba tranquila.","romaji":"Kinō, toshokan wa shizuka ja nakatta desu."},
-
-  {"type":"text","md":"---\n## Grado de intensidad\n\nPara matizar la intensidad de un adjetivo se usan adverbios delante:"},
-
-  {"type":"table","headers":["Adverbio","Uso","Ejemplo"],"rows":[["とても","muy (afirmativo)","とても面白いです"],["あまり","no muy... (con negativo)","あまり面白くないです"],["ぜんぜん","nada (con negativo)","ぜんぜん面白くないです"],["すこし","un poco","すこし難しいです"]]},
-
-  {"type":"example","jp":"この問題はあまり難しくないです。","es":"Este problema no es muy difícil.","romaji":"Kono mondai wa amari muzukashikunai desu."},
-  {"type":"example","jp":"そのレストランはぜんぜんおいしくなかったです。","es":"Ese restaurante no estaba nada bueno.","romaji":"Sono resutoran wa zenzen oishikunakatta desu."},
-
-  {"type":"text","md":"---\n## Comparaciones\n\nPara comparar dos cosas se usa **より** (que) y la pregunta con **どちら** (cuál de los dos)."},
-
-  {"type":"table","headers":["Estructura","Significado"],"rows":[["A は B より ～です","A es más ~ que B"],["A と B と どちらが ～ですか","¿Cuál es más ~ entre A y B?"],["A の ほうが ～です","A es el más ~ (de los dos)"]]},
-
-  {"type":"example","jp":"東京は大阪より大きいです。","es":"Tokio es más grande que Osaka.","romaji":"Tōkyō wa Ōsaka yori ookii desu."},
-  {"type":"example","jp":"バスと電車とどちらが速いですか。","es":"¿Cuál es más rápido, el autobús o el tren?","romaji":"Basu to densha to dochira ga hayai desu ka."},
-  {"type":"example","jp":"電車のほうが速いです。","es":"El tren es más rápido (de los dos).","romaji":"Densha no hō ga hayai desu."},
-
-  {"type":"text","md":"---\n## Preguntar sobre cualidades: ～はどうですか\n\n**どうですか** pregunta la opinión o valoración de algo."},
-
-  {"type":"example","jp":"日本の食べ物はどうですか。","es":"¿Qué tal la comida japonesa?","romaji":"Nihon no tabemono wa dō desu ka."},
-  {"type":"example","jp":"とてもおいしいです！","es":"¡Está muy rica!","romaji":"Totemo oishii desu!"},
-
-  {"type":"text","md":"---\n## Gustos: ～が好きです / ～が嫌いです\n\n好き (suki) y 嫌い (kirai) son adjetivos な. El objeto que gusta va marcado con **が**."},
-
-  {"type":"example","jp":"私は音楽が好きです。","es":"Me gusta la música.","romaji":"Watashi wa ongaku ga suki desu."},
-  {"type":"example","jp":"彼女は魚が嫌いです。","es":"A ella no le gusta el pescado.","romaji":"Kanojo wa sakana ga kirai desu."},
-  {"type":"example","jp":"どんな食べ物が好きですか。","es":"¿Qué tipo de comida te gusta?","romaji":"Donna tabemono ga suki desu ka."},
-
-  {"type":"note","md":"好き y 嫌い funcionan como predicados な: **～が好きです** (con が, no を). No confundir con verbos como 食べる que sí usan を."},
-
-  {"type":"exercise-mc","prompt":"¿Cuál es el negativo de 高い (caro)?","options":["高くない","高じゃない","高ない","高くないです"],"answer":"高くない"},
-  {"type":"exercise-mc","prompt":"¿Cuál es el pasado de いい (bueno)?","options":["よかった","いかった","いかったです","いいかった"],"answer":"よかった"},
-  {"type":"exercise-mc","prompt":"¿Cómo se usa 静か antes de un sustantivo?","options":["静かな部屋","静か部屋","静かの部屋","静かい部屋"],"answer":"静かな部屋"},
-  {"type":"exercise-mc","prompt":"Completa: この映画はあまり___。(no es muy interesante)","options":["面白くないです","面白くです","面白いじゃない","面白なかったです"],"answer":"面白くないです"},
-  {"type":"exercise-tf","statement":"Los adjetivos な llevan な cuando van en predicado (al final de la oración con です).","answer":false},
-  {"type":"exercise-tf","statement":"La forma adverbial de 速い (rápido) es 速く.","answer":true},
-  {"type":"exercise-gap","prompt":"東京は大阪___ 大きいです。(Tokio es más grande que Osaka)","options":["より","ほど","だけ","でも"],"answer":"より","hint":"partícula de comparación 'que'"}
+  {
+    "type": "text",
+    "md": "## Adjetivos en japonés\n\nEl japonés tiene dos clases de adjetivos con comportamientos distintos:\n\n- **Adjetivos い**: terminan en い. Se conjugan ellos mismos (pasado, negativo…).\n- **Adjetivos な**: funcionan como sustantivos. Usan な solo cuando modifican a un nombre; en predicado van directamente con です."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Tipo",
+      "Ejemplo",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "い",
+        "大きい (おおきい)",
+        "grande"
+      ],
+      [
+        "い",
+        "高い (たかい)",
+        "caro / alto"
+      ],
+      [
+        "い",
+        "楽しい (たのしい)",
+        "divertido"
+      ],
+      [
+        "な",
+        "静か (しずか)",
+        "tranquilo"
+      ],
+      [
+        "な",
+        "有名 (ゆうめい)",
+        "famoso"
+      ],
+      [
+        "な",
+        "元気 (げんき)",
+        "con energía / sano"
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "md": "**きれい** termina en い pero es adjetivo **な**. Hay que memorizarlo. Lo mismo ocurre con 嫌い (きらい) y 有名 (ゆうめい)."
+  },
+  {
+    "type": "text",
+    "md": "---\n## Adjetivos い: uso como predicado\n\nEstructura: **N は い-adj です**\n\nEl adjetivo va al final de la oración seguido de です (forma educada)."
+  },
+  {
+    "type": "example",
+    "jp": "この本は面白いです。",
+    "es": "Este libro es interesante.",
+    "romaji": "Kono hon wa omoshiroi desu."
+  },
+  {
+    "type": "example",
+    "jp": "その映画は長いです。",
+    "es": "Esa película es larga.",
+    "romaji": "Sono eiga wa nagai desu."
+  },
+  {
+    "type": "example",
+    "jp": "日本語は難しいです。",
+    "es": "El japonés es difícil.",
+    "romaji": "Nihongo wa muzukashii desu."
+  },
+  {
+    "type": "text",
+    "md": "## Adjetivos い: uso como modificador\n\nEstructura: **い-adj + N** (el adjetivo va justo antes del sustantivo, sin partícula)"
+  },
+  {
+    "type": "example",
+    "jp": "大きい犬がいます。",
+    "es": "Hay un perro grande.",
+    "romaji": "Ookii inu ga imasu."
+  },
+  {
+    "type": "example",
+    "jp": "冷たい水を飲みます。",
+    "es": "Bebo agua fría.",
+    "romaji": "Tsumetai mizu wo nomimasu."
+  },
+  {
+    "type": "example",
+    "jp": "速い電車に乗ります。",
+    "es": "Subo al tren rápido.",
+    "romaji": "Hayai densha ni norimasu."
+  },
+  {
+    "type": "text",
+    "md": "---\n## Conjugación de adjetivos い\n\nLos adjetivos い se conjugan quitando la い final y añadiendo el sufijo."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Tiempo",
+      "Forma",
+      "Forma educada (desu)"
+    ],
+    "rows": [
+      [
+        "Presente positivo",
+        "おもしろい",
+        "おもしろいです"
+      ],
+      [
+        "Presente negativo",
+        "おもしろくない",
+        "おもしろくないです / おもしろくありません"
+      ],
+      [
+        "Pasado positivo",
+        "おもしろかった",
+        "おもしろかったです"
+      ],
+      [
+        "Pasado negativo",
+        "おもしろくなかった",
+        "おもしろくなかったです / おもしろくありませんでした"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "昨日の映画は面白くなかったです。",
+    "es": "La película de ayer no fue interesante.",
+    "romaji": "Kinō no eiga wa omoshirokunakatta desu."
+  },
+  {
+    "type": "example",
+    "jp": "子供のころ、野菜がおいしくなかったです。",
+    "es": "Cuando era niño, las verduras no eran sabrosas.",
+    "romaji": "Kodomo no koro, yasai ga oishikunakatta desu."
+  },
+  {
+    "type": "example",
+    "jp": "昨日は寒くなかったです。",
+    "es": "Ayer no hacía frío.",
+    "romaji": "Kinō wa samukunakatta desu."
+  },
+  {
+    "type": "note",
+    "md": "**Excepción crítica — いい (bueno)**\n\nいい se conjuga a partir de la forma antigua **よい**:\n- Negativo: **よくない** (nunca いくない)\n- Pasado: **よかった** (nunca いかった)\n- Pasado negativo: **よくなかった**\n\nEjemplo: 天気がよかったです。(El tiempo fue bueno.)"
+  },
+  {
+    "type": "example",
+    "jp": "今日の天気はよくないです。",
+    "es": "El tiempo de hoy no es bueno.",
+    "romaji": "Kyō no tenki wa yokunai desu."
+  },
+  {
+    "type": "example",
+    "jp": "先週の旅行はよかったです。",
+    "es": "El viaje de la semana pasada fue bueno.",
+    "romaji": "Senshū no ryokō wa yokatta desu."
+  },
+  {
+    "type": "text",
+    "md": "## Adjetivos い: forma adverbial\n\nPara modificar un verbo, sustituye い final por **く**.\n\nEjemplo: 速い → 速く (rápidamente), 早い → 早く (temprano)"
+  },
+  {
+    "type": "example",
+    "jp": "速く走ります。",
+    "es": "Corro rápido.",
+    "romaji": "Hayaku hashirimasu."
+  },
+  {
+    "type": "example",
+    "jp": "早く起きてください。",
+    "es": "Por favor, levántate temprano.",
+    "romaji": "Hayaku okite kudasai."
+  },
+  {
+    "type": "text",
+    "md": "---\n## Adjetivos な: uso como predicado\n\nEstructura: **N は な-adj です**\n\nImportante: cuando el adjetivo な va en predicado (al final), **no** lleva な. La な solo aparece cuando modifica a un sustantivo."
+  },
+  {
+    "type": "example",
+    "jp": "この部屋は静かです。",
+    "es": "Esta habitación es tranquila.",
+    "romaji": "Kono heya wa shizuka desu."
+  },
+  {
+    "type": "example",
+    "jp": "田中さんは親切です。",
+    "es": "La señora Tanaka es amable.",
+    "romaji": "Tanaka-san wa shinsetsu desu."
+  },
+  {
+    "type": "example",
+    "jp": "あの歌手は有名です。",
+    "es": "Ese cantante es famoso.",
+    "romaji": "Ano kashu wa yūmei desu."
+  },
+  {
+    "type": "text",
+    "md": "## Adjetivos な: uso como modificador\n\nEstructura: **な-adj + な + N**\n\nAquí sí aparece la partícula な entre el adjetivo y el sustantivo."
+  },
+  {
+    "type": "example",
+    "jp": "静かな部屋が好きです。",
+    "es": "Me gustan las habitaciones tranquilas.",
+    "romaji": "Shizuka na heya ga suki desu."
+  },
+  {
+    "type": "example",
+    "jp": "有名な映画を見ました。",
+    "es": "Vi una película famosa.",
+    "romaji": "Yūmei na eiga wo mimashita."
+  },
+  {
+    "type": "example",
+    "jp": "きれいな花ですね。",
+    "es": "Es una flor bonita, ¿verdad?",
+    "romaji": "Kirei na hana desu ne."
+  },
+  {
+    "type": "text",
+    "md": "## Conjugación de adjetivos な\n\nLos adjetivos な usan la misma conjugación que la cópula です:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Tiempo",
+      "Educado",
+      "Informal"
+    ],
+    "rows": [
+      [
+        "Presente positivo",
+        "静かです",
+        "静かだ"
+      ],
+      [
+        "Presente negativo",
+        "静かじゃないです / 静かではありません",
+        "静かじゃない"
+      ],
+      [
+        "Pasado positivo",
+        "静かでした",
+        "静かだった"
+      ],
+      [
+        "Pasado negativo",
+        "静かじゃなかったです",
+        "静かじゃなかった"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "昨日、図書館は静かじゃなかったです。",
+    "es": "Ayer la biblioteca no estaba tranquila.",
+    "romaji": "Kinō, toshokan wa shizuka ja nakatta desu."
+  },
+  {
+    "type": "text",
+    "md": "---\n## Grado de intensidad\n\nPara matizar la intensidad de un adjetivo se usan adverbios delante:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Adverbio",
+      "Uso",
+      "Ejemplo"
+    ],
+    "rows": [
+      [
+        "とても",
+        "muy (afirmativo)",
+        "とても面白いです"
+      ],
+      [
+        "あまり",
+        "no muy... (con negativo)",
+        "あまり面白くないです"
+      ],
+      [
+        "ぜんぜん",
+        "nada (con negativo)",
+        "ぜんぜん面白くないです"
+      ],
+      [
+        "すこし",
+        "un poco",
+        "すこし難しいです"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "この問題はあまり難しくないです。",
+    "es": "Este problema no es muy difícil.",
+    "romaji": "Kono mondai wa amari muzukashikunai desu."
+  },
+  {
+    "type": "example",
+    "jp": "そのレストランはぜんぜんおいしくなかったです。",
+    "es": "Ese restaurante no estaba nada bueno.",
+    "romaji": "Sono resutoran wa zenzen oishikunakatta desu."
+  },
+  {
+    "type": "text",
+    "md": "---\n## Comparaciones\n\nPara comparar dos cosas se usa **より** (que) y la pregunta con **どちら** (cuál de los dos)."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Estructura",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "A は B より ～です",
+        "A es más ~ que B"
+      ],
+      [
+        "A と B と どちらが ～ですか",
+        "¿Cuál es más ~ entre A y B?"
+      ],
+      [
+        "A の ほうが ～です",
+        "A es el más ~ (de los dos)"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "東京は大阪より大きいです。",
+    "es": "Tokio es más grande que Osaka.",
+    "romaji": "Tōkyō wa Ōsaka yori ookii desu."
+  },
+  {
+    "type": "example",
+    "jp": "バスと電車とどちらが速いですか。",
+    "es": "¿Cuál es más rápido, el autobús o el tren?",
+    "romaji": "Basu to densha to dochira ga hayai desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "電車のほうが速いです。",
+    "es": "El tren es más rápido (de los dos).",
+    "romaji": "Densha no hō ga hayai desu."
+  },
+  {
+    "type": "text",
+    "md": "---\n## Preguntar sobre cualidades: ～はどうですか\n\n**どうですか** pregunta la opinión o valoración de algo."
+  },
+  {
+    "type": "example",
+    "jp": "日本の食べ物はどうですか。",
+    "es": "¿Qué tal la comida japonesa?",
+    "romaji": "Nihon no tabemono wa dō desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "とてもおいしいです！",
+    "es": "¡Está muy rica!",
+    "romaji": "Totemo oishii desu!"
+  },
+  {
+    "type": "text",
+    "md": "---\n## Gustos: ～が好きです / ～が嫌いです\n\n好き (suki) y 嫌い (kirai) son adjetivos な. El objeto que gusta va marcado con **が**."
+  },
+  {
+    "type": "example",
+    "jp": "私は音楽が好きです。",
+    "es": "Me gusta la música.",
+    "romaji": "Watashi wa ongaku ga suki desu."
+  },
+  {
+    "type": "example",
+    "jp": "彼女は魚が嫌いです。",
+    "es": "A ella no le gusta el pescado.",
+    "romaji": "Kanojo wa sakana ga kirai desu."
+  },
+  {
+    "type": "example",
+    "jp": "どんな食べ物が好きですか。",
+    "es": "¿Qué tipo de comida te gusta?",
+    "romaji": "Donna tabemono ga suki desu ka."
+  },
+  {
+    "type": "note",
+    "md": "好き y 嫌い funcionan como predicados な: **～が好きです** (con が, no を). No confundir con verbos como 食べる que sí usan を."
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el negativo de 高い (caro)?",
+    "options": [
+      "高くない",
+      "高じゃない",
+      "高ない",
+      "高くないです"
+    ],
+    "answer": "高くない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el pasado de いい (bueno)?",
+    "options": [
+      "よかった",
+      "いかった",
+      "いかったです",
+      "いいかった"
+    ],
+    "answer": "よかった"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se usa 静か antes de un sustantivo?",
+    "options": [
+      "静かな部屋",
+      "静か部屋",
+      "静かの部屋",
+      "静かい部屋"
+    ],
+    "answer": "静かな部屋"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "Completa: この映画はあまり___。(no es muy interesante)",
+    "options": [
+      "面白くないです",
+      "面白くです",
+      "面白いじゃない",
+      "面白なかったです"
+    ],
+    "answer": "面白くないです"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "Los adjetivos な llevan な cuando van en predicado (al final de la oración con です).",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "La forma adverbial de 速い (rápido) es 速く.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "東京は大阪___ 大きいです。(Tokio es más grande que Osaka)",
+    "options": [
+      "より",
+      "ほど",
+      "だけ",
+      "でも"
+    ],
+    "answer": "より",
+    "hint": "partícula de comparación 'que'"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'no es caro' (adj-い negativo, informal)?",
+    "options": [
+      "たかくない",
+      "たかじゃない",
+      "たかいじゃない",
+      "たかくありません"
+    ],
+    "answer": "たかくない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'era grande' (adj-い pasado)?",
+    "options": [
+      "おおきかった",
+      "おおきくた",
+      "おおきだった",
+      "おおきいた"
+    ],
+    "answer": "おおきかった"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'no era divertido' (adj-い pasado negativo)?",
+    "options": [
+      "たのしくなかった",
+      "たのしかったじゃない",
+      "たのしじゃなかった",
+      "たのしいじゃなかった"
+    ],
+    "answer": "たのしくなかった"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo modifica 静か (しずか) a un sustantivo?",
+    "options": [
+      "しずかなまち",
+      "しずかまち",
+      "しずかいまち",
+      "しずかのまち"
+    ],
+    "answer": "しずかなまち"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'no es tranquilo/a' (adj-な negativo formal)?",
+    "options": [
+      "しずかではありません",
+      "しずかじゃあります",
+      "しずかくありません",
+      "しずかじゃない"
+    ],
+    "answer": "しずかではありません"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál de estos es adjetivo な, aunque termine en い?",
+    "options": [
+      "きれい",
+      "たかい",
+      "おおきい",
+      "あつい"
+    ],
+    "answer": "きれい"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se forma el negativo informal de un adj-い?",
+    "options": [
+      "Quitar い y añadir くない",
+      "Quitar い y añadir じゃない",
+      "Añadir ではない al final",
+      "Añadir くありません"
+    ],
+    "answer": "Quitar い y añadir くない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma pasada formal de たのしい es:",
+    "options": [
+      "たのしかったです",
+      "たのしくなりました",
+      "たのしいでした",
+      "たのしくでした"
+    ],
+    "answer": "たのしかったです"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el negativo formal (polite) de adj-い 大きい?",
+    "options": [
+      "大きくありません",
+      "大きじゃありません",
+      "大きくないです",
+      "大きいではありません"
+    ],
+    "answer": "大きくありません"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「あのレストランは___です。」(Ese restaurante es famoso.)",
+    "options": [
+      "有名",
+      "有名な",
+      "有名い",
+      "有名く"
+    ],
+    "answer": "有名"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'una habitación tranquila' (modificador)?",
+    "options": [
+      "しずかなへや",
+      "しずかへや",
+      "しずかいへや",
+      "しずかくへや"
+    ],
+    "answer": "しずかなへや"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'una película interesante' (modificador)?",
+    "options": [
+      "おもしろいえいが",
+      "おもしろなえいが",
+      "おもしろくえいが",
+      "おもしろのえいが"
+    ],
+    "answer": "おもしろいえいが"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuántas clases principales de adjetivos hay en japonés?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "answer": "2"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "El adj-い 高い puede significar:",
+    "options": [
+      "caro y alto",
+      "solo caro",
+      "solo alto",
+      "solo difícil"
+    ],
+    "answer": "caro y alto"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma て del adj-い (para enlazar) se forma:",
+    "options": [
+      "Quitar い y añadir くて",
+      "Quitar い y añadir して",
+      "Añadir て directamente",
+      "Añadir にて"
+    ],
+    "answer": "Quitar い y añadir くて"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma て del adj-な (para enlazar) se forma:",
+    "options": [
+      "Añadir で",
+      "Añadir くて",
+      "Añadir にて",
+      "Añadir して"
+    ],
+    "answer": "Añadir で"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「この問題は___。」(Este problema es difícil.)",
+    "options": [
+      "むずかしいです",
+      "むずかしいなです",
+      "むずかしくです",
+      "むずかしなです"
+    ],
+    "answer": "むずかしいです"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál de estas NO es adj-い?",
+    "options": [
+      "元気（げんき）",
+      "寒い（さむい）",
+      "新しい（あたらしい）",
+      "古い（ふるい）"
+    ],
+    "answer": "元気（げんき）"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "Los adjetivos い se conjugan directamente sin です en el pasado.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "きれい es un adjetivo い porque termina en い.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "Los adjetivos な usan な cuando modifican a un sustantivo.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "El pasado de おいしい (delicioso) es おいしかった.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "El negativo de adj-な 静か es 静かくない.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "大きい y 大きな tienen significados completamente distintos.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「たのしくない」puede usarse sin です en lenguaje informal.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "Los adj-な pueden funcionar como sustantivos.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "この料理は___です。(Esta comida es deliciosa.)",
+    "options": [
+      "おいしい",
+      "おいしな",
+      "おいしく",
+      "おいしの"
+    ],
+    "answer": "おいしい",
+    "hint": "adj-い predicativo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "あのひとは___ですね。(Esa persona es guapa, ¿verdad?)",
+    "options": [
+      "きれい",
+      "きれいい",
+      "きれいく",
+      "きれいな"
+    ],
+    "answer": "きれい",
+    "hint": "adj-な predicativo sin な"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___うみに行きたいです。(Quiero ir al mar bonito.)",
+    "options": [
+      "きれいな",
+      "きれい",
+      "きれいい",
+      "きれいく"
+    ],
+    "answer": "きれいな",
+    "hint": "adj-な + sustantivo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "きのうのテストは___。(El examen de ayer era difícil — informal past)",
+    "options": [
+      "むずかしかった",
+      "むずかしいだった",
+      "むずかしくだった",
+      "むずかしかったじゃない"
+    ],
+    "answer": "むずかしかった",
+    "hint": "adj-い pasado informal"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "このへやは___じゃないです。(Esta habitación no es tranquila.)",
+    "options": [
+      "しずか",
+      "しずかな",
+      "しずかく",
+      "しずかい"
+    ],
+    "answer": "しずか",
+    "hint": "adj-な negativo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "たかくて、___レストランです。(Es un restaurante caro pero bueno.)",
+    "options": [
+      "いい",
+      "よく",
+      "よい",
+      "いいな"
+    ],
+    "answer": "いい",
+    "hint": "いい = bueno"
+  }
 ]

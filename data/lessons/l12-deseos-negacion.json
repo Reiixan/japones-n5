@@ -1,98 +1,887 @@
 [
-  {"type":"text","md":"## Deseos, propuestas y negación informal\n\nEn esta lección aprendemos a expresar lo que queremos hacer, a proponer actividades y a usar la forma negativa informal de los verbos. Estas formas son fundamentales para hablar de manera natural en japonés."},
-
-  {"type":"text","md":"---\n## ～たい: querer hacer algo\n\nPara expresar el deseo de hacer algo en primera persona se usa **raíz verbal + たい**.\n\nFormación: quitar ます de la forma ～ます y añadir **たい**.\n\nたい se conjuga exactamente igual que un adjetivo い."},
-
-  {"type":"table","headers":["Verbo (ます)","Raíz","Forma たい","Significado"],"rows":[["食べます","食べ","食べたい","quiero comer"],["飲みます","飲み","飲みたい","quiero beber"],["行きます","行き","行きたい","quiero ir"],["見ます","見","見たい","quiero ver"],["読みます","読み","読みたい","quiero leer"],["話します","話し","話したい","quiero hablar"],["買います","買い","買いたい","quiero comprar"]]},
-
-  {"type":"example","jp":"寿司を食べたいです。","es":"Quiero comer sushi.","romaji":"Sushi wo tabetai desu."},
-  {"type":"example","jp":"日本に行きたいです。","es":"Quiero ir a Japón.","romaji":"Nihon ni ikitai desu."},
-  {"type":"example","jp":"その映画を見たいです。","es":"Quiero ver esa película.","romaji":"Sono eiga wo mitai desu."},
-
-  {"type":"note","md":"Con ～たい, el objeto puede ir con **が** o con **を**. が es ligeramente más natural al expresar deseo, pero を también es correcto:\n- 寿司**が**食べたい（más coloquial）\n- 寿司**を**食べたい（también correcto）"},
-
-  {"type":"text","md":"## Conjugación de ～たい\n\nComo たい se conjuga como adjetivo い:"},
-
-  {"type":"table","headers":["Tiempo","Forma","Ejemplo"],"rows":[["Presente positivo","～たいです","行きたいです"],["Presente negativo","～たくないです","行きたくないです"],["Pasado positivo","～たかったです","行きたかったです"],["Pasado negativo","～たくなかったです","行きたくなかったです"]]},
-
-  {"type":"example","jp":"今日はあまり食べたくないです。","es":"Hoy no tengo muchas ganas de comer.","romaji":"Kyō wa amari tabetakunai desu."},
-  {"type":"example","jp":"子供のころ、学校に行きたくなかったです。","es":"Cuando era niño, no quería ir al colegio.","romaji":"Kodomo no koro, gakkō ni ikitakunakatta desu."},
-
-  {"type":"text","md":"## ～たいと思います: deseo expresado con más suavidad\n\n**～たいと思います** (pienso que quiero…) suaviza la afirmación y suena más modesto y natural en japonés formal."},
-
-  {"type":"example","jp":"来年、日本に行きたいと思います。","es":"Estoy pensando en ir a Japón el año que viene.","romaji":"Rainen, Nihon ni ikitai to omoimasu."},
-  {"type":"example","jp":"日本語をもっと話したいと思います。","es":"Pienso que quiero hablar más japonés.","romaji":"Nihongo wo motto hanashitai to omoimasu."},
-
-  {"type":"text","md":"---\n## ～たがる: lo que quieren otros (tercera persona)\n\nたい solo se usa para la primera persona (yo). Para hablar de lo que otra persona quiere, se usa **raíz + たがっています** (está mostrando que quiere…)."},
-
-  {"type":"example","jp":"妹はアイスを食べたがっています。","es":"Mi hermana menor quiere comer helado.","romaji":"Imōto wa aisu wo tabetagatte imasu."},
-
-  {"type":"note","md":"たがる se usa principalmente para observar el comportamiento de otros. Con la primera persona sigue siendo たい. Con la segunda persona (tú) es más natural preguntar directamente: 何が食べたいですか。"},
-
-  {"type":"text","md":"---\n## ～ましょう: propuesta «vamos a…»\n\nSe forma sustituyendo ます por **ましょう**. El hablante propone la acción incluyendo al interlocutor."},
-
-  {"type":"table","headers":["Verbo (ます)","Forma ましょう","Significado"],"rows":[["食べます","食べましょう","¡Comamos! / Vamos a comer"],["行きます","行きましょう","¡Vayamos! / Vamos a ir"],["飲みます","飲みましょう","¡Bebamos!"],["待ちます","待ちましょう","¡Esperemos!"]]},
-
-  {"type":"example","jp":"一緒に食べましょう！","es":"¡Comamos juntos!","romaji":"Issho ni tabemashō!"},
-  {"type":"example","jp":"ここで待ちましょう。","es":"Esperemos aquí.","romaji":"Koko de machimashō."},
-
-  {"type":"text","md":"## ～ましょうか: ofrecimiento o propuesta con pregunta\n\nAñadir か convierte la propuesta en una pregunta, buscando la opinión del interlocutor."},
-
-  {"type":"example","jp":"そろそろ行きましょうか。","es":"¿Nos vamos ya?","romaji":"Sorosoro ikimashō ka."},
-  {"type":"example","jp":"コーヒーを飲みましょうか。","es":"¿Tomamos un café?","romaji":"Kōhī wo nomimashō ka."},
-
-  {"type":"text","md":"---\n## ～ませんか: invitación cortés\n\n**ませんか** es una invitación educada. Es más suave que ましょう porque deja la decisión al otro.\n\nEstructura: raíz + **ませんか**"},
-
-  {"type":"example","jp":"一緒に映画を見ませんか。","es":"¿No quieres ver una película juntos?","romaji":"Issho ni eiga wo mimasen ka."},
-  {"type":"example","jp":"明日、公園に行きませんか。","es":"¿No queréis ir al parque mañana?","romaji":"Ashita, kōen ni ikimasen ka."},
-
-  {"type":"table","headers":["Forma","Matiz","Ejemplo"],"rows":[["～ましょう","Propuesta directa (decidida)","食べましょう！"],["～ましょうか","Propuesta con consulta","食べましょうか？"],["～ませんか","Invitación suave (más cortés)","食べませんか？"]]},
-
-  {"type":"text","md":"---\n## Forma ない (negativo plain/informal)\n\nLa forma ない es el negativo en estilo informal. Se usa en conversación cotidiana, en frases subordinadas y como base de otras formas.\n\n### Verbos Ichidan (grupo 2: terminan en ～る con vocal i/e antes)\n\nQuitar る y añadir **ない**."},
-
-  {"type":"table","headers":["Verbo (diccionario)","Raíz","Forma ない"],"rows":[["食べる","食べ","食べない"],["見る","見","見ない"],["起きる","起き","起きない"],["います","い","いない"]]},
-
-  {"type":"text","md":"### Verbos Godan (grupo 1: terminan en consonante + u)\n\nCambiar la vocal final de **う段 → あ段** y añadir **ない**."},
-
-  {"type":"table","headers":["Verbo (dict.)","Cambio","Forma ない"],"rows":[["書く (ku)","か","書かない"],["飲む (mu)","ま","飲まない"],["話す (su)","さ","話さない"],["待つ (tsu)","た","待たない"],["読む (mu)","ま","読まない"],["行く (ku)","か","行かない"]]},
-
-  {"type":"note","md":"**Excepción Godan: verbos en う**\n\nCuando el verbo termina en う, la vocal cambia a **わ** (no あ):\n- 買う → 買**わ**ない (no 買あない)\n- 言う → 言**わ**ない\n- 思う → 思**わ**ない"},
-
-  {"type":"example","jp":"今日はお酒を飲まない。","es":"Hoy no bebo alcohol.","romaji":"Kyō wa osake wo nomanai."},
-  {"type":"example","jp":"彼女は野菜を食べない。","es":"Ella no come verduras.","romaji":"Kanojo wa yasai wo tabenai."},
-
-  {"type":"text","md":"### Verbos irregulares\n\nSolo hay dos verbos completamente irregulares en japonés:"},
-
-  {"type":"table","headers":["Verbo","Forma ない","Nota"],"rows":[["する (hacer)","しない","irregular"],["くる (venir)","こない","irregular"],["ある (existir - inanimado)","ない","no あらない — forma especial"]]},
-
-  {"type":"example","jp":"今日は勉強しない。","es":"Hoy no estudio.","romaji":"Kyō wa benkyō shinai."},
-  {"type":"example","jp":"田中さんは来ない。","es":"Tanaka no viene.","romaji":"Tanaka-san wa konai."},
-  {"type":"example","jp":"お金がない。","es":"No hay dinero. / No tengo dinero.","romaji":"Okane ga nai."},
-
-  {"type":"text","md":"---\n## ません vs ない: formal vs informal\n\nAmbas formas son negativo presente, pero el registro es muy diferente:"},
-
-  {"type":"table","headers":["Estilo","Forma","Uso"],"rows":[["Formal (polite)","食べません","Con desconocidos, en trabajo, en clase"],["Informal (plain)","食べない","Con amigos, familia, monólogo interior"]]},
-
-  {"type":"example","jp":"すみません、日本語を話しません。","es":"Lo siento, no hablo japonés.","romaji":"Sumimasen, nihongo wo hanashimasen."},
-  {"type":"example","jp":"ちょっと待って、今は行かない。","es":"Espera un poco, ahora no voy.","romaji":"Chotto matte, ima wa ikanai."},
-
-  {"type":"text","md":"---\n## ～ないでください: petición de no hacer algo\n\nEstructura: **forma ない + でください**\n\nEquivale a «por favor, no hagas…»."},
-
-  {"type":"example","jp":"ここで写真を撮らないでください。","es":"Por favor, no saque fotos aquí.","romaji":"Koko de shashin wo toranai de kudasai."},
-  {"type":"example","jp":"遅くならないでください。","es":"Por favor, no llegues tarde.","romaji":"Osokunara nai de kudasai."},
-  {"type":"example","jp":"心配しないでください。","es":"Por favor, no se preocupe.","romaji":"Shinpai shinai de kudasai."},
-
-  {"type":"text","md":"---\n## ～なければなりません: tener que hacer algo\n\nIntroducción: esta forma expresa obligación («debo / tengo que…»).\n\nEstructura: **forma ない → cambiar ない por なければなりません**\n\nEjemplo: 食べない → 食べ**なければなりません** (tengo que comer)"},
-
-  {"type":"example","jp":"明日、早く起きなければなりません。","es":"Mañana tengo que levantarme temprano.","romaji":"Ashita, hayaku okinakereba narimasen."},
-  {"type":"example","jp":"薬を飲まなければなりません。","es":"Tengo que tomar la medicina.","romaji":"Kusuri wo nomanakere ba narimasen."},
-
-  {"type":"note","md":"Una alternativa más corta y coloquial es **～なきゃ** o **～なきゃいけない**:\n- 行かなきゃ。(Tengo que ir.)\n\nEsta forma es muy común en conversación informal."},
-
-  {"type":"exercise-mc","prompt":"¿Cómo se dice «quiero beber agua»?","options":["水を飲みたいです","水を飲みましょう","水を飲まないです","水を飲みません"],"answer":"水を飲みたいです"},
-  {"type":"exercise-mc","prompt":"¿Cuál es la forma ない de 買う (comprar)?","options":["買わない","買あない","買なない","買いない"],"answer":"買わない"},
-  {"type":"exercise-mc","prompt":"¿Qué expresa ～ませんか?","options":["Una invitación cortés","Una propuesta decidida","Una obligación","Un deseo en pasado"],"answer":"Una invitación cortés"},
-  {"type":"exercise-mc","prompt":"¿Cuál es la forma ない de くる (venir)?","options":["こない","くない","くるない","きない"],"answer":"こない"},
-  {"type":"exercise-tf","statement":"La forma ない de する (hacer) es しない.","answer":true},
-  {"type":"exercise-gap","prompt":"ここで話さ___ください。(Por favor, no hable aquí)","options":["ないで","なくて","ません","ないに"],"answer":"ないで","hint":"forma ないで + ください = petición de no hacer"}
+  {
+    "type": "text",
+    "md": "## Deseos, propuestas y negación informal\n\nEn esta lección aprendemos a expresar lo que queremos hacer, a proponer actividades y a usar la forma negativa informal de los verbos. Estas formas son fundamentales para hablar de manera natural en japonés."
+  },
+  {
+    "type": "text",
+    "md": "---\n## ～たい: querer hacer algo\n\nPara expresar el deseo de hacer algo en primera persona se usa **raíz verbal + たい**.\n\nFormación: quitar ます de la forma ～ます y añadir **たい**.\n\nたい se conjuga exactamente igual que un adjetivo い."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Verbo (ます)",
+      "Raíz",
+      "Forma たい",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "食べます",
+        "食べ",
+        "食べたい",
+        "quiero comer"
+      ],
+      [
+        "飲みます",
+        "飲み",
+        "飲みたい",
+        "quiero beber"
+      ],
+      [
+        "行きます",
+        "行き",
+        "行きたい",
+        "quiero ir"
+      ],
+      [
+        "見ます",
+        "見",
+        "見たい",
+        "quiero ver"
+      ],
+      [
+        "読みます",
+        "読み",
+        "読みたい",
+        "quiero leer"
+      ],
+      [
+        "話します",
+        "話し",
+        "話したい",
+        "quiero hablar"
+      ],
+      [
+        "買います",
+        "買い",
+        "買いたい",
+        "quiero comprar"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "寿司を食べたいです。",
+    "es": "Quiero comer sushi.",
+    "romaji": "Sushi wo tabetai desu."
+  },
+  {
+    "type": "example",
+    "jp": "日本に行きたいです。",
+    "es": "Quiero ir a Japón.",
+    "romaji": "Nihon ni ikitai desu."
+  },
+  {
+    "type": "example",
+    "jp": "その映画を見たいです。",
+    "es": "Quiero ver esa película.",
+    "romaji": "Sono eiga wo mitai desu."
+  },
+  {
+    "type": "note",
+    "md": "Con ～たい, el objeto puede ir con **が** o con **を**. が es ligeramente más natural al expresar deseo, pero を también es correcto:\n- 寿司**が**食べたい（más coloquial）\n- 寿司**を**食べたい（también correcto）"
+  },
+  {
+    "type": "text",
+    "md": "## Conjugación de ～たい\n\nComo たい se conjuga como adjetivo い:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Tiempo",
+      "Forma",
+      "Ejemplo"
+    ],
+    "rows": [
+      [
+        "Presente positivo",
+        "～たいです",
+        "行きたいです"
+      ],
+      [
+        "Presente negativo",
+        "～たくないです",
+        "行きたくないです"
+      ],
+      [
+        "Pasado positivo",
+        "～たかったです",
+        "行きたかったです"
+      ],
+      [
+        "Pasado negativo",
+        "～たくなかったです",
+        "行きたくなかったです"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "今日はあまり食べたくないです。",
+    "es": "Hoy no tengo muchas ganas de comer.",
+    "romaji": "Kyō wa amari tabetakunai desu."
+  },
+  {
+    "type": "example",
+    "jp": "子供のころ、学校に行きたくなかったです。",
+    "es": "Cuando era niño, no quería ir al colegio.",
+    "romaji": "Kodomo no koro, gakkō ni ikitakunakatta desu."
+  },
+  {
+    "type": "text",
+    "md": "## ～たいと思います: deseo expresado con más suavidad\n\n**～たいと思います** (pienso que quiero…) suaviza la afirmación y suena más modesto y natural en japonés formal."
+  },
+  {
+    "type": "example",
+    "jp": "来年、日本に行きたいと思います。",
+    "es": "Estoy pensando en ir a Japón el año que viene.",
+    "romaji": "Rainen, Nihon ni ikitai to omoimasu."
+  },
+  {
+    "type": "example",
+    "jp": "日本語をもっと話したいと思います。",
+    "es": "Pienso que quiero hablar más japonés.",
+    "romaji": "Nihongo wo motto hanashitai to omoimasu."
+  },
+  {
+    "type": "text",
+    "md": "---\n## ～たがる: lo que quieren otros (tercera persona)\n\nたい solo se usa para la primera persona (yo). Para hablar de lo que otra persona quiere, se usa **raíz + たがっています** (está mostrando que quiere…)."
+  },
+  {
+    "type": "example",
+    "jp": "妹はアイスを食べたがっています。",
+    "es": "Mi hermana menor quiere comer helado.",
+    "romaji": "Imōto wa aisu wo tabetagatte imasu."
+  },
+  {
+    "type": "note",
+    "md": "たがる se usa principalmente para observar el comportamiento de otros. Con la primera persona sigue siendo たい. Con la segunda persona (tú) es más natural preguntar directamente: 何が食べたいですか。"
+  },
+  {
+    "type": "text",
+    "md": "---\n## ～ましょう: propuesta «vamos a…»\n\nSe forma sustituyendo ます por **ましょう**. El hablante propone la acción incluyendo al interlocutor."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Verbo (ます)",
+      "Forma ましょう",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "食べます",
+        "食べましょう",
+        "¡Comamos! / Vamos a comer"
+      ],
+      [
+        "行きます",
+        "行きましょう",
+        "¡Vayamos! / Vamos a ir"
+      ],
+      [
+        "飲みます",
+        "飲みましょう",
+        "¡Bebamos!"
+      ],
+      [
+        "待ちます",
+        "待ちましょう",
+        "¡Esperemos!"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "一緒に食べましょう！",
+    "es": "¡Comamos juntos!",
+    "romaji": "Issho ni tabemashō!"
+  },
+  {
+    "type": "example",
+    "jp": "ここで待ちましょう。",
+    "es": "Esperemos aquí.",
+    "romaji": "Koko de machimashō."
+  },
+  {
+    "type": "text",
+    "md": "## ～ましょうか: ofrecimiento o propuesta con pregunta\n\nAñadir か convierte la propuesta en una pregunta, buscando la opinión del interlocutor."
+  },
+  {
+    "type": "example",
+    "jp": "そろそろ行きましょうか。",
+    "es": "¿Nos vamos ya?",
+    "romaji": "Sorosoro ikimashō ka."
+  },
+  {
+    "type": "example",
+    "jp": "コーヒーを飲みましょうか。",
+    "es": "¿Tomamos un café?",
+    "romaji": "Kōhī wo nomimashō ka."
+  },
+  {
+    "type": "text",
+    "md": "---\n## ～ませんか: invitación cortés\n\n**ませんか** es una invitación educada. Es más suave que ましょう porque deja la decisión al otro.\n\nEstructura: raíz + **ませんか**"
+  },
+  {
+    "type": "example",
+    "jp": "一緒に映画を見ませんか。",
+    "es": "¿No quieres ver una película juntos?",
+    "romaji": "Issho ni eiga wo mimasen ka."
+  },
+  {
+    "type": "example",
+    "jp": "明日、公園に行きませんか。",
+    "es": "¿No queréis ir al parque mañana?",
+    "romaji": "Ashita, kōen ni ikimasen ka."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Forma",
+      "Matiz",
+      "Ejemplo"
+    ],
+    "rows": [
+      [
+        "～ましょう",
+        "Propuesta directa (decidida)",
+        "食べましょう！"
+      ],
+      [
+        "～ましょうか",
+        "Propuesta con consulta",
+        "食べましょうか？"
+      ],
+      [
+        "～ませんか",
+        "Invitación suave (más cortés)",
+        "食べませんか？"
+      ]
+    ]
+  },
+  {
+    "type": "text",
+    "md": "---\n## Forma ない (negativo plain/informal)\n\nLa forma ない es el negativo en estilo informal. Se usa en conversación cotidiana, en frases subordinadas y como base de otras formas.\n\n### Verbos Ichidan (grupo 2: terminan en ～る con vocal i/e antes)\n\nQuitar る y añadir **ない**."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Verbo (diccionario)",
+      "Raíz",
+      "Forma ない"
+    ],
+    "rows": [
+      [
+        "食べる",
+        "食べ",
+        "食べない"
+      ],
+      [
+        "見る",
+        "見",
+        "見ない"
+      ],
+      [
+        "起きる",
+        "起き",
+        "起きない"
+      ],
+      [
+        "います",
+        "い",
+        "いない"
+      ]
+    ]
+  },
+  {
+    "type": "text",
+    "md": "### Verbos Godan (grupo 1: terminan en consonante + u)\n\nCambiar la vocal final de **う段 → あ段** y añadir **ない**."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Verbo (dict.)",
+      "Cambio",
+      "Forma ない"
+    ],
+    "rows": [
+      [
+        "書く (ku)",
+        "か",
+        "書かない"
+      ],
+      [
+        "飲む (mu)",
+        "ま",
+        "飲まない"
+      ],
+      [
+        "話す (su)",
+        "さ",
+        "話さない"
+      ],
+      [
+        "待つ (tsu)",
+        "た",
+        "待たない"
+      ],
+      [
+        "読む (mu)",
+        "ま",
+        "読まない"
+      ],
+      [
+        "行く (ku)",
+        "か",
+        "行かない"
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "md": "**Excepción Godan: verbos en う**\n\nCuando el verbo termina en う, la vocal cambia a **わ** (no あ):\n- 買う → 買**わ**ない (no 買あない)\n- 言う → 言**わ**ない\n- 思う → 思**わ**ない"
+  },
+  {
+    "type": "example",
+    "jp": "今日はお酒を飲まない。",
+    "es": "Hoy no bebo alcohol.",
+    "romaji": "Kyō wa osake wo nomanai."
+  },
+  {
+    "type": "example",
+    "jp": "彼女は野菜を食べない。",
+    "es": "Ella no come verduras.",
+    "romaji": "Kanojo wa yasai wo tabenai."
+  },
+  {
+    "type": "text",
+    "md": "### Verbos irregulares\n\nSolo hay dos verbos completamente irregulares en japonés:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Verbo",
+      "Forma ない",
+      "Nota"
+    ],
+    "rows": [
+      [
+        "する (hacer)",
+        "しない",
+        "irregular"
+      ],
+      [
+        "くる (venir)",
+        "こない",
+        "irregular"
+      ],
+      [
+        "ある (existir - inanimado)",
+        "ない",
+        "no あらない — forma especial"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "今日は勉強しない。",
+    "es": "Hoy no estudio.",
+    "romaji": "Kyō wa benkyō shinai."
+  },
+  {
+    "type": "example",
+    "jp": "田中さんは来ない。",
+    "es": "Tanaka no viene.",
+    "romaji": "Tanaka-san wa konai."
+  },
+  {
+    "type": "example",
+    "jp": "お金がない。",
+    "es": "No hay dinero. / No tengo dinero.",
+    "romaji": "Okane ga nai."
+  },
+  {
+    "type": "text",
+    "md": "---\n## ません vs ない: formal vs informal\n\nAmbas formas son negativo presente, pero el registro es muy diferente:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Estilo",
+      "Forma",
+      "Uso"
+    ],
+    "rows": [
+      [
+        "Formal (polite)",
+        "食べません",
+        "Con desconocidos, en trabajo, en clase"
+      ],
+      [
+        "Informal (plain)",
+        "食べない",
+        "Con amigos, familia, monólogo interior"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "すみません、日本語を話しません。",
+    "es": "Lo siento, no hablo japonés.",
+    "romaji": "Sumimasen, nihongo wo hanashimasen."
+  },
+  {
+    "type": "example",
+    "jp": "ちょっと待って、今は行かない。",
+    "es": "Espera un poco, ahora no voy.",
+    "romaji": "Chotto matte, ima wa ikanai."
+  },
+  {
+    "type": "text",
+    "md": "---\n## ～ないでください: petición de no hacer algo\n\nEstructura: **forma ない + でください**\n\nEquivale a «por favor, no hagas…»."
+  },
+  {
+    "type": "example",
+    "jp": "ここで写真を撮らないでください。",
+    "es": "Por favor, no saque fotos aquí.",
+    "romaji": "Koko de shashin wo toranai de kudasai."
+  },
+  {
+    "type": "example",
+    "jp": "遅くならないでください。",
+    "es": "Por favor, no llegues tarde.",
+    "romaji": "Osokunara nai de kudasai."
+  },
+  {
+    "type": "example",
+    "jp": "心配しないでください。",
+    "es": "Por favor, no se preocupe.",
+    "romaji": "Shinpai shinai de kudasai."
+  },
+  {
+    "type": "text",
+    "md": "---\n## ～なければなりません: tener que hacer algo\n\nIntroducción: esta forma expresa obligación («debo / tengo que…»).\n\nEstructura: **forma ない → cambiar ない por なければなりません**\n\nEjemplo: 食べない → 食べ**なければなりません** (tengo que comer)"
+  },
+  {
+    "type": "example",
+    "jp": "明日、早く起きなければなりません。",
+    "es": "Mañana tengo que levantarme temprano.",
+    "romaji": "Ashita, hayaku okinakereba narimasen."
+  },
+  {
+    "type": "example",
+    "jp": "薬を飲まなければなりません。",
+    "es": "Tengo que tomar la medicina.",
+    "romaji": "Kusuri wo nomanakere ba narimasen."
+  },
+  {
+    "type": "note",
+    "md": "Una alternativa más corta y coloquial es **～なきゃ** o **～なきゃいけない**:\n- 行かなきゃ。(Tengo que ir.)\n\nEsta forma es muy común en conversación informal."
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice «quiero beber agua»?",
+    "options": [
+      "水を飲みたいです",
+      "水を飲みましょう",
+      "水を飲まないです",
+      "水を飲みません"
+    ],
+    "answer": "水を飲みたいです"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la forma ない de 買う (comprar)?",
+    "options": [
+      "買わない",
+      "買あない",
+      "買なない",
+      "買いない"
+    ],
+    "answer": "買わない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué expresa ～ませんか?",
+    "options": [
+      "Una invitación cortés",
+      "Una propuesta decidida",
+      "Una obligación",
+      "Un deseo en pasado"
+    ],
+    "answer": "Una invitación cortés"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la forma ない de くる (venir)?",
+    "options": [
+      "こない",
+      "くない",
+      "くるない",
+      "きない"
+    ],
+    "answer": "こない"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "La forma ない de する (hacer) es しない.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "ここで話さ___ください。(Por favor, no hable aquí)",
+    "options": [
+      "ないで",
+      "なくて",
+      "ません",
+      "ないに"
+    ],
+    "answer": "ないで",
+    "hint": "forma ないで + ください = petición de no hacer"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se forma ~たい (querer hacer)?",
+    "options": [
+      "Raíz ます + たい",
+      "Diccionario + たい",
+      "Forma て + たい",
+      "Forma た + い"
+    ],
+    "answer": "Raíz ます + たい"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「日本に行きたいです。」significa:",
+    "options": [
+      "Quiero ir a Japón",
+      "Fui a Japón",
+      "Iré a Japón",
+      "No quiero ir a Japón"
+    ],
+    "answer": "Quiero ir a Japón"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se forma el negativo plain de un verbo godan?",
+    "options": [
+      "Cambiar última vocal a あ + ない",
+      "Añadir ない al diccionario",
+      "Añadir くない al diccionario",
+      "Cambiar ます por ない"
+    ],
+    "answer": "Cambiar última vocal a あ + ない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ない de 飲む (のむ) es:",
+    "options": [
+      "飲まない",
+      "飲みない",
+      "飲んない",
+      "飲むない"
+    ],
+    "answer": "飲まない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ない de 食べる (たべる) es:",
+    "options": [
+      "食べない",
+      "食べまない",
+      "食べあない",
+      "食べくない"
+    ],
+    "answer": "食べない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ない de する es:",
+    "options": [
+      "しない",
+      "すない",
+      "せない",
+      "さない"
+    ],
+    "answer": "しない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ない de 来る (くる) es:",
+    "options": [
+      "こない",
+      "きない",
+      "くない",
+      "かない"
+    ],
+    "answer": "こない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué indica ~ましょう?",
+    "options": [
+      "Propuesta ('vamos a…')",
+      "Deseo personal",
+      "Negación plain",
+      "Orden directa"
+    ],
+    "answer": "Propuesta ('vamos a…')"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué indica ~ましょうか?",
+    "options": [
+      "Oferta o sugerencia ('¿hacemos…?')",
+      "Propuesta directa",
+      "Deseo personal",
+      "Negación"
+    ],
+    "answer": "Oferta o sugerencia ('¿hacemos…?')"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「手伝いましょうか。」significa:",
+    "options": [
+      "¿Te ayudo?",
+      "¡Ayudemos!",
+      "No te ayudaré",
+      "Quiero ayudar"
+    ],
+    "answer": "¿Te ayudo?"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「一緒に食べましょう。」significa:",
+    "options": [
+      "¡Comamos juntos!",
+      "¿Comemos juntos?",
+      "Quiero comer",
+      "No como"
+    ],
+    "answer": "¡Comamos juntos!"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "~たい solo se puede usar para hablar de:",
+    "options": [
+      "Los deseos del propio hablante",
+      "Los deseos de cualquier persona",
+      "Acciones pasadas",
+      "Acciones futuras obligatorias"
+    ],
+    "answer": "Los deseos del propio hablante"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'quiero beber agua'?",
+    "options": [
+      "水を飲みたいです",
+      "水が飲みたいです",
+      "水に飲みたいです",
+      "水で飲みたいです"
+    ],
+    "answer": "水を飲みたいです"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "El negativo de ~たい es:",
+    "options": [
+      "~たくない",
+      "~たくありません (formal)",
+      "Ambas son correctas",
+      "~ないたい"
+    ],
+    "answer": "Ambas son correctas"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ない de 書く (かく) es:",
+    "options": [
+      "書かない",
+      "書きない",
+      "書くない",
+      "書いない"
+    ],
+    "answer": "書かない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ない de 行く (いく) es:",
+    "options": [
+      "行かない",
+      "行きない",
+      "行くない",
+      "行いない"
+    ],
+    "answer": "行かない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ない de 話す (はなす) es:",
+    "options": [
+      "話さない",
+      "話しない",
+      "話すない",
+      "話せない"
+    ],
+    "answer": "話さない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ない de 帰る (かえる, godan) es:",
+    "options": [
+      "帰らない",
+      "帰りない",
+      "帰るない",
+      "帰れない"
+    ],
+    "answer": "帰らない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ない de 買う (かう) es:",
+    "options": [
+      "買わない",
+      "買いない",
+      "買うない",
+      "買えない"
+    ],
+    "answer": "買わない"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se expresa 'no quiero comer sushi'?",
+    "options": [
+      "すしを食べたくないです",
+      "すしを食べないたいです",
+      "すしを食べたいないです",
+      "すしが食べたくないです"
+    ],
+    "answer": "すしを食べたくないです"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「もう少し___ましょうか。」(¿Esperamos un poco más?)",
+    "options": [
+      "まち",
+      "まつ",
+      "まて",
+      "まき"
+    ],
+    "answer": "まち"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "~たい se forma añadiéndolo a la forma diccionario del verbo.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "La forma ない de する es しない.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "~ましょうか es una forma de ofrecer ayuda.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「行かない」es el negativo plain de 行きます.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "~たい puede usarse para expresar deseos de otra persona en japonés estándar.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "El negativo de ~たい es ~たくない.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「食べましょう」y「食べませんか」tienen el mismo significado exacto.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "La forma ない de un verbo ichidan se forma quitando る y añadiendo ない.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "今日は出かけ___。(Hoy no salgo — plain negativo)",
+    "options": [
+      "ない",
+      "ません",
+      "なかった",
+      "ないです"
+    ],
+    "answer": "ない",
+    "hint": "negativo plain"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "日本語が上手に___たいです。(Quiero hablar bien el japonés.)",
+    "options": [
+      "なり",
+      "なる",
+      "なって",
+      "なら"
+    ],
+    "answer": "なり",
+    "hint": "raíz ます de なる"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "バッグを持ち___か。(¿Llevo yo el bolso? — oferta)",
+    "options": [
+      "ましょう",
+      "ませんか",
+      "たいです",
+      "ません"
+    ],
+    "answer": "ましょう",
+    "hint": "oferta con ましょうか"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "すしを食べ___です。(Quiero comer sushi.)",
+    "options": [
+      "たい",
+      "ない",
+      "ます",
+      "ました"
+    ],
+    "answer": "たい",
+    "hint": "deseo: raíz ます + たい"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "今日は何も食べ___。(Hoy no como nada — plain negativo)",
+    "options": [
+      "ない",
+      "ません",
+      "なかった",
+      "ないです"
+    ],
+    "answer": "ない",
+    "hint": "plain negativo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "一緒に公園を散歩し___。(Paseemos juntos por el parque.)",
+    "options": [
+      "ましょう",
+      "ましょうか",
+      "ませんか",
+      "ません"
+    ],
+    "answer": "ましょう",
+    "hint": "propuesta ましょう"
+  }
 ]

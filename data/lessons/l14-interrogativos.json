@@ -1,122 +1,953 @@
 [
-  {"type":"text","md":"# Interrogativos — Cómo hacer preguntas en japonés\n\nEn japonés, las preguntas se forman añadiendo la partícula **か** al final de cualquier oración afirmativa. El tono de voz **no sube** al final como en español; se mantiene plano o incluso baja ligeramente. La entonación ascendente suena extraña en japonés.\n\n`田中さんは学生です。` → Tanaka es estudiante.\n`田中さんは学生ですか。` → ¿Tanaka es estudiante?"},
-  {"type":"note","md":"En japonés coloquial se puede omitir か y sustituirlo por una entonación ascendente, pero en el nivel N5 siempre usa か al final para las preguntas formales."},
-  {"type":"text","md":"## Tabla de interrogativos del N5\n\nA continuación tienes todos los interrogativos que necesitas para el JLPT N5. Memoriza su función y sus partículas compañeras más frecuentes."},
-  {"type":"table","headers":["Interrogativo","Lectura","Significado","Partículas típicas"],"rows":[
-    ["何","なに / なん","qué","を、が、の、ですか"],
-    ["誰","だれ","quién (informal)","が、の、に"],
-    ["どなた","どなた","quién (formal)","が、の、に"],
-    ["どこ","どこ","dónde","へ、に、で、から"],
-    ["いつ","いつ","cuándo","から、まで、に"],
-    ["どれ","どれ","cuál (de varios)","が"],
-    ["どの + N","どの","qué / cuál (modificador)","— (precede al sustantivo)"],
-    ["どんな + N","どんな","qué tipo de, cómo es","— (precede al sustantivo)"],
-    ["どう","どう","cómo (estado / manera)","です、ですか"],
-    ["どうして","どうして","por qué (coloquial)","— (al inicio)"],
-    ["なぜ","なぜ","por qué (formal)","— (al inicio)"],
-    ["いくら","いくら","cuánto (precio)","ですか"],
-    ["いくつ","いくつ","cuántos (cantidad / edad)","— / ありますか"],
-    ["何時","なんじ","qué hora","ですか、に、から、まで"],
-    ["何分","なんぷん","qué minuto","ですか、に"],
-    ["何人","なんにん","cuántas personas","ですか、いますか"]
-  ]},
-  {"type":"note","md":"Los interrogativos en japonés **no van obligatoriamente al inicio** de la oración. Ocupan la misma posición que ocuparía la información que preguntan. Esto es una diferencia clave respecto al español."},
-
-  {"type":"text","md":"## 何 (なに / なん) — qué\n\n**なに** se usa cuando 何 funciona como objeto directo de un verbo, en posición libre.\n**なん** se usa delante de un **contador** (何時、何分、何人) o delante de **です** (¿Qué es esto?)."},
-  {"type":"example","jp":"これは何ですか。","es":"¿Qué es esto?","romaji":"Kore wa nan desu ka."},
-  {"type":"example","jp":"何を食べますか。","es":"¿Qué comes?","romaji":"Nani wo tabemasu ka."},
-  {"type":"example","jp":"今、何時ですか。","es":"¿Qué hora es ahora?","romaji":"Ima, nanji desu ka."},
-  {"type":"example","jp":"何を読んでいますか。","es":"¿Qué estás leyendo?","romaji":"Nani wo yonde imasu ka."},
-  {"type":"note","md":"**Regla fácil**: si 何 va seguido directamente de un contador o de です, usa **なん**. En todos los demás casos, **なに**."},
-
-  {"type":"text","md":"## 誰 (だれ) / どなた — quién\n\n**誰** (だれ) es la forma cotidiana. **どなた** es la forma respetuosa y se usa con desconocidos o personas de mayor rango."},
-  {"type":"example","jp":"誰が来ましたか。","es":"¿Quién vino?","romaji":"Dare ga kimashita ka."},
-  {"type":"example","jp":"あの人は誰ですか。","es":"¿Quién es aquella persona?","romaji":"Ano hito wa dare desu ka."},
-  {"type":"example","jp":"これは誰の本ですか。","es":"¿De quién es este libro?","romaji":"Kore wa dare no hon desu ka."},
-  {"type":"example","jp":"どなたですか。","es":"¿Quién es usted? (formal, al abrir la puerta)","romaji":"Donata desu ka."},
-  {"type":"note","md":"**誰が vs 誰は**: cuando preguntas por información nueva (el sujeto es desconocido), usa **が**. Ejemplo: 誰が来ましたか → la respuesta da un nombre nuevo. Si ya sabes de quién hablas, usa は."},
-
-  {"type":"text","md":"## どこ — dónde\n\nどこ se combina con distintas partículas según el tipo de ubicación o movimiento:\n- **どこに** → lugar de existencia o destino de llegada\n- **どこへ** → dirección hacia un lugar\n- **どこで** → lugar donde ocurre la acción\n- **どこから** → punto de origen"},
-  {"type":"example","jp":"どこへ行きますか。","es":"¿A dónde vas?","romaji":"Doko e ikimasu ka."},
-  {"type":"example","jp":"学校はどこにありますか。","es":"¿Dónde está la escuela?","romaji":"Gakkou wa doko ni arimasu ka."},
-  {"type":"example","jp":"どこで食べますか。","es":"¿Dónde comes?","romaji":"Doko de tabemasu ka."},
-  {"type":"example","jp":"どこから来ましたか。","es":"¿De dónde viniste?","romaji":"Doko kara kimashita ka."},
-
-  {"type":"text","md":"## いつ — cuándo\n\n**いつ** puede ir solo (sin partícula) o combinarse con **から** (desde cuándo) y **まで** (hasta cuándo). También acepta la partícula に cuando se indica un momento específico de referencia."},
-  {"type":"example","jp":"いつ来ますか。","es":"¿Cuándo vienes?","romaji":"Itsu kimasu ka."},
-  {"type":"example","jp":"いつから勉強していますか。","es":"¿Desde cuándo estudias?","romaji":"Itsu kara benkyou shite imasu ka."},
-  {"type":"example","jp":"いつまで待ちますか。","es":"¿Hasta cuándo esperas?","romaji":"Itsu made machimasu ka."},
-
-  {"type":"text","md":"## どれ / どの — cuál\n\n**どれ** (¿cuál?) se usa solo, sin sustantivo detrás. Sirve para elegir entre varias opciones visibles.\n**どの** siempre precede a un sustantivo y equivale a «qué... / cuál de los...»."},
-  {"type":"example","jp":"どれがいいですか。","es":"¿Cuál es bueno? / ¿Cuál te gusta?","romaji":"Dore ga ii desu ka."},
-  {"type":"example","jp":"どの本を読みますか。","es":"¿Qué libro vas a leer?","romaji":"Dono hon wo yomimasu ka."},
-  {"type":"example","jp":"どの電車に乗りますか。","es":"¿En qué tren subes?","romaji":"Dono densha ni norimasu ka."},
-  {"type":"note","md":"**どれ vs どの**: どれ es pronombre (va solo), どの es adjetivo (va antes de un sustantivo). No se puede decir ~~どれ本~~ ni ~~どの is good~~."},
-
-  {"type":"text","md":"## どんな — qué tipo de\n\n**どんな** precede siempre a un sustantivo y pregunta por las **características o tipo** de algo. Equivale a «qué tipo de», «cómo es» o «qué clase de»."},
-  {"type":"example","jp":"どんな音楽が好きですか。","es":"¿Qué tipo de música te gusta?","romaji":"Donna ongaku ga suki desu ka."},
-  {"type":"example","jp":"どんな人ですか。","es":"¿Cómo es esa persona? / ¿Qué tipo de persona es?","romaji":"Donna hito desu ka."},
-
-  {"type":"text","md":"## どう — cómo (estado / manera)\n\n**どう** pregunta por el **estado o la manera** de algo. No se usa para preguntar cómo ir a un lugar (eso es どやって o cómo concreto); どう es más general y evalúa estados."},
-  {"type":"example","jp":"日本語はどうですか。","es":"¿Cómo es el japonés? / ¿Qué tal el japonés?","romaji":"Nihongo wa dou desu ka."},
-  {"type":"example","jp":"お茶はどうですか。","es":"¿Qué tal un té? (ofrecimiento)","romaji":"Ocha wa dou desu ka."},
-  {"type":"example","jp":"今日はどうでしたか。","es":"¿Cómo estuvo hoy?","romaji":"Kyou wa dou deshita ka."},
-
-  {"type":"text","md":"## どうして / なぜ — por qué\n\n**どうして** es la forma coloquial y es la más frecuente en conversación. **なぜ** es más formal, más usada en textos escritos o discurso formal."},
-  {"type":"example","jp":"どうして来ませんでしたか。","es":"¿Por qué no viniste?","romaji":"Doushite kimasen deshita ka."},
-  {"type":"example","jp":"どうして日本語を勉強していますか。","es":"¿Por qué estudias japonés?","romaji":"Doushite nihongo wo benkyou shite imasu ka."},
-  {"type":"example","jp":"なぜ学校に行きませんか。","es":"¿Por qué no vas a la escuela? (formal)","romaji":"Naze gakkou ni ikimasen ka."},
-
-  {"type":"text","md":"## いくら — cuánto (precio)\n\n**いくら** pregunta exclusivamente por **precios o cantidades de dinero**. Siempre se usa con ですか o equivalentes."},
-  {"type":"example","jp":"この本はいくらですか。","es":"¿Cuánto cuesta este libro?","romaji":"Kono hon wa ikura desu ka."},
-  {"type":"example","jp":"コーヒーはいくらですか。","es":"¿Cuánto cuesta el café?","romaji":"Koohii wa ikura desu ka."},
-  {"type":"example","jp":"全部でいくらですか。","es":"¿Cuánto es en total?","romaji":"Zenbu de ikura desu ka."},
-
-  {"type":"text","md":"## いくつ — cuántos (cantidad / edad)\n\n**いくつ** pregunta por **cantidades de objetos** (cuando no hay contador específico) o por **la edad** de una persona. Es la forma nativa (和語) de contar."},
-  {"type":"example","jp":"りんごをいくつ買いますか。","es":"¿Cuántas manzanas compras?","romaji":"Ringo wo ikutsu kaimasu ka."},
-  {"type":"example","jp":"おいくつですか。","es":"¿Cuántos años tiene usted? (respetuoso)","romaji":"Oikutsu desu ka."},
-  {"type":"example","jp":"本はいくつありますか。","es":"¿Cuántos libros hay?","romaji":"Hon wa ikutsu arimasu ka."},
-  {"type":"note","md":"Para preguntar la edad también se puede usar **何歳(なんさい)ですか**, que es más directo y usa el contador 歳. おいくつですか es más respetuoso y se prefiere con personas mayores."},
-
-  {"type":"text","md":"## 何時 / 何分 / 何人 — interrogativos con contador\n\nEstos interrogativos combinan **何(なん)** con un contador específico. Se usan igual que cualquier expresión de tiempo o cantidad."},
-  {"type":"example","jp":"今、何時ですか。","es":"¿Qué hora es ahora?","romaji":"Ima, nanji desu ka."},
-  {"type":"example","jp":"何時に起きますか。","es":"¿A qué hora te levantas?","romaji":"Nanji ni okimasu ka."},
-  {"type":"example","jp":"何分かかりますか。","es":"¿Cuántos minutos tarda?","romaji":"Nanpun kakarimasu ka."},
-  {"type":"example","jp":"何人いますか。","es":"¿Cuántas personas hay?","romaji":"Nannin imasu ka."},
-
-  {"type":"text","md":"## Partículas con interrogativos\n\nLas preguntas en japonés usan las mismas partículas que las oraciones afirmativas. Lo único que cambia es que la palabra desconocida (el «hueco») se rellena con el interrogativo correcto.\n\n**が vs は en preguntas**: cuando la respuesta esperada es **información nueva** (el sujeto es desconocido), se usa **が**. Si el sujeto ya está en el contexto y preguntamos sobre él, se usa は."},
-  {"type":"example","jp":"誰が来ましたか。— 田中さんが来ました。","es":"¿Quién vino? — Tanaka vino. (sujeto nuevo → が)","romaji":"Dare ga kimashita ka. — Tanaka-san ga kimashita."},
-  {"type":"example","jp":"田中さんはどこへ行きましたか。","es":"¿A dónde fue Tanaka? (Tanaka ya es el tema → は)","romaji":"Tanaka-san wa doko e ikimashita ka."},
-  {"type":"note","md":"**Resumen partículas con interrogativos frecuentes**:\n- どこ**に** / どこ**へ** → destino o existencia\n- どこ**で** → lugar de acción\n- どこ**から** → origen\n- いつ**から** / いつ**まで** → inicio / fin temporal\n- 誰**の** → posesión\n- 誰**に** → destinatario"},
-
-  {"type":"text","md":"## Respuestas negativas con も\n\nEn preguntas negativas o para decir «nadie», «nada», «a ningún lugar», se combina el interrogativo con **も** en la forma negativa del verbo. Nunca se usa に en estas expresiones."},
-  {"type":"table","headers":["Interrogativo + も","Significado","Ejemplo"],"rows":[
-    ["誰も + neg","nadie","誰も来ません (nadie viene)"],
-    ["何も + neg","nada","何も食べません (no como nada)"],
-    ["どこも + neg","a ningún lado / en ningún lado","どこも行きません (no voy a ningún lado)"],
-    ["いつも + afirm","siempre","いつも勉強します (siempre estudio)"],
-    ["どれも + neg","ninguno","どれもよくないです (ninguno es bueno)"]
-  ]},
-  {"type":"example","jp":"昨日は誰も来ませんでした。","es":"Ayer no vino nadie.","romaji":"Kinou wa dare mo kimasen deshita."},
-  {"type":"example","jp":"何も飲みません。","es":"No bebo nada.","romaji":"Nani mo nomimasen."},
-  {"type":"example","jp":"どこも行きませんでした。","es":"No fui a ningún sitio.","romaji":"Doko mo ikimasen deshita."},
-  {"type":"note","md":"**いつも** es una excepción: significa **siempre** (afirmativo). En negativo: **全然(ぜんぜん)～ない** o **あまり～ない** para «nunca» o «casi nunca»."},
-
-  {"type":"text","md":"## Preguntas alternativas con ～か～か\n\nPara ofrecer opciones y pedir que el interlocutor elija una, se usa la estructura **A ですか、B ですか**. Equivale a «¿es A o B?»."},
-  {"type":"example","jp":"コーヒーですか、お茶ですか。","es":"¿Café o té?","romaji":"Koohii desu ka, ocha desu ka."},
-  {"type":"example","jp":"今日来ますか、明日来ますか。","es":"¿Vienes hoy o mañana?","romaji":"Kyou kimasu ka, ashita kimasu ka."},
-  {"type":"example","jp":"電車で行きますか、自転車で行きますか。","es":"¿Vas en tren o en bici?","romaji":"Densha de ikimasu ka, jitensha de ikimasu ka."},
-
-  {"type":"text","md":"## Posición flexible de los interrogativos\n\nA diferencia del español, en japonés los interrogativos **no tienen que ir al inicio**. Ocupan la misma posición gramatical que la información que preguntan. El verbo siempre va al final."},
-  {"type":"example","jp":"あなたは何を食べますか。","es":"¿Qué comes tú?  (何を = objeto, va donde iría el objeto)","romaji":"Anata wa nani wo tabemasu ka."},
-  {"type":"example","jp":"田中さんはどこに住んでいますか。","es":"¿Dónde vive Tanaka? (どこに = ubicación, va donde iría la ubicación)","romaji":"Tanaka-san wa doko ni sunde imasu ka."},
-  {"type":"example","jp":"あの人は誰ですか。","es":"¿Quién es aquella persona? (誰 = predicado nominal, va al final antes de です)","romaji":"Ano hito wa dare desu ka."},
-
-  {"type":"exercise-mc","prompt":"¿Cuál es la forma correcta de preguntar '¿Qué hora es?'?","options":["何時ですか。","何時いますか。","どこですか。","いつですか。"],"answer":"何時ですか。"},
-  {"type":"exercise-mc","prompt":"Quieres preguntar el precio de un libro. ¿Qué interrogativo usas?","options":["いくら","いくつ","どう","どれ"],"answer":"いくら"},
-  {"type":"exercise-gap","prompt":"___ へ行きますか。(¿A dónde vas?)","options":["どこ","いつ","だれ","なに"],"answer":"どこ","hint":"Pregunta por un lugar"},
-  {"type":"exercise-mc","prompt":"¿Qué significa '誰も来ませんでした'?","options":["No vino nadie.","Alguien vino.","¿Quién vino?","Todos vinieron."],"answer":"No vino nadie."},
-  {"type":"exercise-tf","statement":"'どの' puede usarse solo, sin sustantivo después, igual que 'どれ'.","answer":false},
-  {"type":"exercise-gap","prompt":"___ を食べますか。(¿Qué comes?)","options":["なに","なん","どこ","いつ"],"answer":"なに","hint":"Objeto directo del verbo comer"},
-  {"type":"exercise-mc","prompt":"¿Cuál es la forma respetuosa de preguntar '¿De dónde eres?'?","options":["どちらから いらっしゃいましたか。","どこから きましたか。","だれから きましたか。","いつから いましたか。"],"answer":"どこから きましたか。"}
+  {
+    "type": "text",
+    "md": "# Interrogativos — Cómo hacer preguntas en japonés\n\nEn japonés, las preguntas se forman añadiendo la partícula **か** al final de cualquier oración afirmativa. El tono de voz **no sube** al final como en español; se mantiene plano o incluso baja ligeramente. La entonación ascendente suena extraña en japonés.\n\n`田中さんは学生です。` → Tanaka es estudiante.\n`田中さんは学生ですか。` → ¿Tanaka es estudiante?"
+  },
+  {
+    "type": "note",
+    "md": "En japonés coloquial se puede omitir か y sustituirlo por una entonación ascendente, pero en el nivel N5 siempre usa か al final para las preguntas formales."
+  },
+  {
+    "type": "text",
+    "md": "## Tabla de interrogativos del N5\n\nA continuación tienes todos los interrogativos que necesitas para el JLPT N5. Memoriza su función y sus partículas compañeras más frecuentes."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Interrogativo",
+      "Lectura",
+      "Significado",
+      "Partículas típicas"
+    ],
+    "rows": [
+      [
+        "何",
+        "なに / なん",
+        "qué",
+        "を、が、の、ですか"
+      ],
+      [
+        "誰",
+        "だれ",
+        "quién (informal)",
+        "が、の、に"
+      ],
+      [
+        "どなた",
+        "どなた",
+        "quién (formal)",
+        "が、の、に"
+      ],
+      [
+        "どこ",
+        "どこ",
+        "dónde",
+        "へ、に、で、から"
+      ],
+      [
+        "いつ",
+        "いつ",
+        "cuándo",
+        "から、まで、に"
+      ],
+      [
+        "どれ",
+        "どれ",
+        "cuál (de varios)",
+        "が"
+      ],
+      [
+        "どの + N",
+        "どの",
+        "qué / cuál (modificador)",
+        "— (precede al sustantivo)"
+      ],
+      [
+        "どんな + N",
+        "どんな",
+        "qué tipo de, cómo es",
+        "— (precede al sustantivo)"
+      ],
+      [
+        "どう",
+        "どう",
+        "cómo (estado / manera)",
+        "です、ですか"
+      ],
+      [
+        "どうして",
+        "どうして",
+        "por qué (coloquial)",
+        "— (al inicio)"
+      ],
+      [
+        "なぜ",
+        "なぜ",
+        "por qué (formal)",
+        "— (al inicio)"
+      ],
+      [
+        "いくら",
+        "いくら",
+        "cuánto (precio)",
+        "ですか"
+      ],
+      [
+        "いくつ",
+        "いくつ",
+        "cuántos (cantidad / edad)",
+        "— / ありますか"
+      ],
+      [
+        "何時",
+        "なんじ",
+        "qué hora",
+        "ですか、に、から、まで"
+      ],
+      [
+        "何分",
+        "なんぷん",
+        "qué minuto",
+        "ですか、に"
+      ],
+      [
+        "何人",
+        "なんにん",
+        "cuántas personas",
+        "ですか、いますか"
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "md": "Los interrogativos en japonés **no van obligatoriamente al inicio** de la oración. Ocupan la misma posición que ocuparía la información que preguntan. Esto es una diferencia clave respecto al español."
+  },
+  {
+    "type": "text",
+    "md": "## 何 (なに / なん) — qué\n\n**なに** se usa cuando 何 funciona como objeto directo de un verbo, en posición libre.\n**なん** se usa delante de un **contador** (何時、何分、何人) o delante de **です** (¿Qué es esto?)."
+  },
+  {
+    "type": "example",
+    "jp": "これは何ですか。",
+    "es": "¿Qué es esto?",
+    "romaji": "Kore wa nan desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "何を食べますか。",
+    "es": "¿Qué comes?",
+    "romaji": "Nani wo tabemasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "今、何時ですか。",
+    "es": "¿Qué hora es ahora?",
+    "romaji": "Ima, nanji desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "何を読んでいますか。",
+    "es": "¿Qué estás leyendo?",
+    "romaji": "Nani wo yonde imasu ka."
+  },
+  {
+    "type": "note",
+    "md": "**Regla fácil**: si 何 va seguido directamente de un contador o de です, usa **なん**. En todos los demás casos, **なに**."
+  },
+  {
+    "type": "text",
+    "md": "## 誰 (だれ) / どなた — quién\n\n**誰** (だれ) es la forma cotidiana. **どなた** es la forma respetuosa y se usa con desconocidos o personas de mayor rango."
+  },
+  {
+    "type": "example",
+    "jp": "誰が来ましたか。",
+    "es": "¿Quién vino?",
+    "romaji": "Dare ga kimashita ka."
+  },
+  {
+    "type": "example",
+    "jp": "あの人は誰ですか。",
+    "es": "¿Quién es aquella persona?",
+    "romaji": "Ano hito wa dare desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "これは誰の本ですか。",
+    "es": "¿De quién es este libro?",
+    "romaji": "Kore wa dare no hon desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "どなたですか。",
+    "es": "¿Quién es usted? (formal, al abrir la puerta)",
+    "romaji": "Donata desu ka."
+  },
+  {
+    "type": "note",
+    "md": "**誰が vs 誰は**: cuando preguntas por información nueva (el sujeto es desconocido), usa **が**. Ejemplo: 誰が来ましたか → la respuesta da un nombre nuevo. Si ya sabes de quién hablas, usa は."
+  },
+  {
+    "type": "text",
+    "md": "## どこ — dónde\n\nどこ se combina con distintas partículas según el tipo de ubicación o movimiento:\n- **どこに** → lugar de existencia o destino de llegada\n- **どこへ** → dirección hacia un lugar\n- **どこで** → lugar donde ocurre la acción\n- **どこから** → punto de origen"
+  },
+  {
+    "type": "example",
+    "jp": "どこへ行きますか。",
+    "es": "¿A dónde vas?",
+    "romaji": "Doko e ikimasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "学校はどこにありますか。",
+    "es": "¿Dónde está la escuela?",
+    "romaji": "Gakkou wa doko ni arimasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "どこで食べますか。",
+    "es": "¿Dónde comes?",
+    "romaji": "Doko de tabemasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "どこから来ましたか。",
+    "es": "¿De dónde viniste?",
+    "romaji": "Doko kara kimashita ka."
+  },
+  {
+    "type": "text",
+    "md": "## いつ — cuándo\n\n**いつ** puede ir solo (sin partícula) o combinarse con **から** (desde cuándo) y **まで** (hasta cuándo). También acepta la partícula に cuando se indica un momento específico de referencia."
+  },
+  {
+    "type": "example",
+    "jp": "いつ来ますか。",
+    "es": "¿Cuándo vienes?",
+    "romaji": "Itsu kimasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "いつから勉強していますか。",
+    "es": "¿Desde cuándo estudias?",
+    "romaji": "Itsu kara benkyou shite imasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "いつまで待ちますか。",
+    "es": "¿Hasta cuándo esperas?",
+    "romaji": "Itsu made machimasu ka."
+  },
+  {
+    "type": "text",
+    "md": "## どれ / どの — cuál\n\n**どれ** (¿cuál?) se usa solo, sin sustantivo detrás. Sirve para elegir entre varias opciones visibles.\n**どの** siempre precede a un sustantivo y equivale a «qué... / cuál de los...»."
+  },
+  {
+    "type": "example",
+    "jp": "どれがいいですか。",
+    "es": "¿Cuál es bueno? / ¿Cuál te gusta?",
+    "romaji": "Dore ga ii desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "どの本を読みますか。",
+    "es": "¿Qué libro vas a leer?",
+    "romaji": "Dono hon wo yomimasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "どの電車に乗りますか。",
+    "es": "¿En qué tren subes?",
+    "romaji": "Dono densha ni norimasu ka."
+  },
+  {
+    "type": "note",
+    "md": "**どれ vs どの**: どれ es pronombre (va solo), どの es adjetivo (va antes de un sustantivo). No se puede decir ~~どれ本~~ ni ~~どの is good~~."
+  },
+  {
+    "type": "text",
+    "md": "## どんな — qué tipo de\n\n**どんな** precede siempre a un sustantivo y pregunta por las **características o tipo** de algo. Equivale a «qué tipo de», «cómo es» o «qué clase de»."
+  },
+  {
+    "type": "example",
+    "jp": "どんな音楽が好きですか。",
+    "es": "¿Qué tipo de música te gusta?",
+    "romaji": "Donna ongaku ga suki desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "どんな人ですか。",
+    "es": "¿Cómo es esa persona? / ¿Qué tipo de persona es?",
+    "romaji": "Donna hito desu ka."
+  },
+  {
+    "type": "text",
+    "md": "## どう — cómo (estado / manera)\n\n**どう** pregunta por el **estado o la manera** de algo. No se usa para preguntar cómo ir a un lugar (eso es どやって o cómo concreto); どう es más general y evalúa estados."
+  },
+  {
+    "type": "example",
+    "jp": "日本語はどうですか。",
+    "es": "¿Cómo es el japonés? / ¿Qué tal el japonés?",
+    "romaji": "Nihongo wa dou desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "お茶はどうですか。",
+    "es": "¿Qué tal un té? (ofrecimiento)",
+    "romaji": "Ocha wa dou desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "今日はどうでしたか。",
+    "es": "¿Cómo estuvo hoy?",
+    "romaji": "Kyou wa dou deshita ka."
+  },
+  {
+    "type": "text",
+    "md": "## どうして / なぜ — por qué\n\n**どうして** es la forma coloquial y es la más frecuente en conversación. **なぜ** es más formal, más usada en textos escritos o discurso formal."
+  },
+  {
+    "type": "example",
+    "jp": "どうして来ませんでしたか。",
+    "es": "¿Por qué no viniste?",
+    "romaji": "Doushite kimasen deshita ka."
+  },
+  {
+    "type": "example",
+    "jp": "どうして日本語を勉強していますか。",
+    "es": "¿Por qué estudias japonés?",
+    "romaji": "Doushite nihongo wo benkyou shite imasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "なぜ学校に行きませんか。",
+    "es": "¿Por qué no vas a la escuela? (formal)",
+    "romaji": "Naze gakkou ni ikimasen ka."
+  },
+  {
+    "type": "text",
+    "md": "## いくら — cuánto (precio)\n\n**いくら** pregunta exclusivamente por **precios o cantidades de dinero**. Siempre se usa con ですか o equivalentes."
+  },
+  {
+    "type": "example",
+    "jp": "この本はいくらですか。",
+    "es": "¿Cuánto cuesta este libro?",
+    "romaji": "Kono hon wa ikura desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "コーヒーはいくらですか。",
+    "es": "¿Cuánto cuesta el café?",
+    "romaji": "Koohii wa ikura desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "全部でいくらですか。",
+    "es": "¿Cuánto es en total?",
+    "romaji": "Zenbu de ikura desu ka."
+  },
+  {
+    "type": "text",
+    "md": "## いくつ — cuántos (cantidad / edad)\n\n**いくつ** pregunta por **cantidades de objetos** (cuando no hay contador específico) o por **la edad** de una persona. Es la forma nativa (和語) de contar."
+  },
+  {
+    "type": "example",
+    "jp": "りんごをいくつ買いますか。",
+    "es": "¿Cuántas manzanas compras?",
+    "romaji": "Ringo wo ikutsu kaimasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "おいくつですか。",
+    "es": "¿Cuántos años tiene usted? (respetuoso)",
+    "romaji": "Oikutsu desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "本はいくつありますか。",
+    "es": "¿Cuántos libros hay?",
+    "romaji": "Hon wa ikutsu arimasu ka."
+  },
+  {
+    "type": "note",
+    "md": "Para preguntar la edad también se puede usar **何歳(なんさい)ですか**, que es más directo y usa el contador 歳. おいくつですか es más respetuoso y se prefiere con personas mayores."
+  },
+  {
+    "type": "text",
+    "md": "## 何時 / 何分 / 何人 — interrogativos con contador\n\nEstos interrogativos combinan **何(なん)** con un contador específico. Se usan igual que cualquier expresión de tiempo o cantidad."
+  },
+  {
+    "type": "example",
+    "jp": "今、何時ですか。",
+    "es": "¿Qué hora es ahora?",
+    "romaji": "Ima, nanji desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "何時に起きますか。",
+    "es": "¿A qué hora te levantas?",
+    "romaji": "Nanji ni okimasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "何分かかりますか。",
+    "es": "¿Cuántos minutos tarda?",
+    "romaji": "Nanpun kakarimasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "何人いますか。",
+    "es": "¿Cuántas personas hay?",
+    "romaji": "Nannin imasu ka."
+  },
+  {
+    "type": "text",
+    "md": "## Partículas con interrogativos\n\nLas preguntas en japonés usan las mismas partículas que las oraciones afirmativas. Lo único que cambia es que la palabra desconocida (el «hueco») se rellena con el interrogativo correcto.\n\n**が vs は en preguntas**: cuando la respuesta esperada es **información nueva** (el sujeto es desconocido), se usa **が**. Si el sujeto ya está en el contexto y preguntamos sobre él, se usa は."
+  },
+  {
+    "type": "example",
+    "jp": "誰が来ましたか。— 田中さんが来ました。",
+    "es": "¿Quién vino? — Tanaka vino. (sujeto nuevo → が)",
+    "romaji": "Dare ga kimashita ka. — Tanaka-san ga kimashita."
+  },
+  {
+    "type": "example",
+    "jp": "田中さんはどこへ行きましたか。",
+    "es": "¿A dónde fue Tanaka? (Tanaka ya es el tema → は)",
+    "romaji": "Tanaka-san wa doko e ikimashita ka."
+  },
+  {
+    "type": "note",
+    "md": "**Resumen partículas con interrogativos frecuentes**:\n- どこ**に** / どこ**へ** → destino o existencia\n- どこ**で** → lugar de acción\n- どこ**から** → origen\n- いつ**から** / いつ**まで** → inicio / fin temporal\n- 誰**の** → posesión\n- 誰**に** → destinatario"
+  },
+  {
+    "type": "text",
+    "md": "## Respuestas negativas con も\n\nEn preguntas negativas o para decir «nadie», «nada», «a ningún lugar», se combina el interrogativo con **も** en la forma negativa del verbo. Nunca se usa に en estas expresiones."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Interrogativo + も",
+      "Significado",
+      "Ejemplo"
+    ],
+    "rows": [
+      [
+        "誰も + neg",
+        "nadie",
+        "誰も来ません (nadie viene)"
+      ],
+      [
+        "何も + neg",
+        "nada",
+        "何も食べません (no como nada)"
+      ],
+      [
+        "どこも + neg",
+        "a ningún lado / en ningún lado",
+        "どこも行きません (no voy a ningún lado)"
+      ],
+      [
+        "いつも + afirm",
+        "siempre",
+        "いつも勉強します (siempre estudio)"
+      ],
+      [
+        "どれも + neg",
+        "ninguno",
+        "どれもよくないです (ninguno es bueno)"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "昨日は誰も来ませんでした。",
+    "es": "Ayer no vino nadie.",
+    "romaji": "Kinou wa dare mo kimasen deshita."
+  },
+  {
+    "type": "example",
+    "jp": "何も飲みません。",
+    "es": "No bebo nada.",
+    "romaji": "Nani mo nomimasen."
+  },
+  {
+    "type": "example",
+    "jp": "どこも行きませんでした。",
+    "es": "No fui a ningún sitio.",
+    "romaji": "Doko mo ikimasen deshita."
+  },
+  {
+    "type": "note",
+    "md": "**いつも** es una excepción: significa **siempre** (afirmativo). En negativo: **全然(ぜんぜん)～ない** o **あまり～ない** para «nunca» o «casi nunca»."
+  },
+  {
+    "type": "text",
+    "md": "## Preguntas alternativas con ～か～か\n\nPara ofrecer opciones y pedir que el interlocutor elija una, se usa la estructura **A ですか、B ですか**. Equivale a «¿es A o B?»."
+  },
+  {
+    "type": "example",
+    "jp": "コーヒーですか、お茶ですか。",
+    "es": "¿Café o té?",
+    "romaji": "Koohii desu ka, ocha desu ka."
+  },
+  {
+    "type": "example",
+    "jp": "今日来ますか、明日来ますか。",
+    "es": "¿Vienes hoy o mañana?",
+    "romaji": "Kyou kimasu ka, ashita kimasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "電車で行きますか、自転車で行きますか。",
+    "es": "¿Vas en tren o en bici?",
+    "romaji": "Densha de ikimasu ka, jitensha de ikimasu ka."
+  },
+  {
+    "type": "text",
+    "md": "## Posición flexible de los interrogativos\n\nA diferencia del español, en japonés los interrogativos **no tienen que ir al inicio**. Ocupan la misma posición gramatical que la información que preguntan. El verbo siempre va al final."
+  },
+  {
+    "type": "example",
+    "jp": "あなたは何を食べますか。",
+    "es": "¿Qué comes tú?  (何を = objeto, va donde iría el objeto)",
+    "romaji": "Anata wa nani wo tabemasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "田中さんはどこに住んでいますか。",
+    "es": "¿Dónde vive Tanaka? (どこに = ubicación, va donde iría la ubicación)",
+    "romaji": "Tanaka-san wa doko ni sunde imasu ka."
+  },
+  {
+    "type": "example",
+    "jp": "あの人は誰ですか。",
+    "es": "¿Quién es aquella persona? (誰 = predicado nominal, va al final antes de です)",
+    "romaji": "Ano hito wa dare desu ka."
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la forma correcta de preguntar '¿Qué hora es?'?",
+    "options": [
+      "何時ですか。",
+      "何時いますか。",
+      "どこですか。",
+      "いつですか。"
+    ],
+    "answer": "何時ですか。"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "Quieres preguntar el precio de un libro. ¿Qué interrogativo usas?",
+    "options": [
+      "いくら",
+      "いくつ",
+      "どう",
+      "どれ"
+    ],
+    "answer": "いくら"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___ へ行きますか。(¿A dónde vas?)",
+    "options": [
+      "どこ",
+      "いつ",
+      "だれ",
+      "なに"
+    ],
+    "answer": "どこ",
+    "hint": "Pregunta por un lugar"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué significa '誰も来ませんでした'?",
+    "options": [
+      "No vino nadie.",
+      "Alguien vino.",
+      "¿Quién vino?",
+      "Todos vinieron."
+    ],
+    "answer": "No vino nadie."
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "'どの' puede usarse solo, sin sustantivo después, igual que 'どれ'.",
+    "answer": false
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___ を食べますか。(¿Qué comes?)",
+    "options": [
+      "なに",
+      "なん",
+      "どこ",
+      "いつ"
+    ],
+    "answer": "なに",
+    "hint": "Objeto directo del verbo comer"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la forma respetuosa de preguntar '¿De dónde eres?'?",
+    "options": [
+      "どちらから いらっしゃいましたか。",
+      "どこから きましたか。",
+      "だれから きましたか。",
+      "いつから いましたか。"
+    ],
+    "answer": "どこから きましたか。"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué interrogativo pregunta por cosas u objetos?",
+    "options": [
+      "なに / なん",
+      "だれ",
+      "どこ",
+      "いつ"
+    ],
+    "answer": "なに / なん"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué interrogativo pregunta por personas?",
+    "options": [
+      "だれ",
+      "なに",
+      "どこ",
+      "いつ"
+    ],
+    "answer": "だれ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué interrogativo pregunta por lugares?",
+    "options": [
+      "どこ",
+      "いつ",
+      "だれ",
+      "なに"
+    ],
+    "answer": "どこ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué interrogativo pregunta por el tiempo?",
+    "options": [
+      "いつ",
+      "どこ",
+      "だれ",
+      "なに"
+    ],
+    "answer": "いつ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué interrogativo pregunta por el precio?",
+    "options": [
+      "いくら",
+      "いくつ",
+      "なに",
+      "どう"
+    ],
+    "answer": "いくら"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué interrogativo pregunta por la cantidad (cosas)?",
+    "options": [
+      "いくつ",
+      "いくら",
+      "なに",
+      "どう"
+    ],
+    "answer": "いくつ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué interrogativo pregunta por el modo o estado ('¿cómo?')?",
+    "options": [
+      "どう",
+      "どこ",
+      "だれ",
+      "いつ"
+    ],
+    "answer": "どう"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué interrogativo pregunta por la razón ('¿por qué?')?",
+    "options": [
+      "どうして / なぜ",
+      "どう",
+      "いつ",
+      "なに"
+    ],
+    "answer": "どうして / なぜ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuándo se usa なん en vez de なに?",
+    "options": [
+      "Antes de contador o cuando sigue una consonante",
+      "Siempre",
+      "Nunca",
+      "Solo en preguntas formales"
+    ],
+    "answer": "Antes de contador o cuando sigue una consonante"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「___時に来ますか。」(¿A qué hora vienes?) ¿Qué interrogativo?",
+    "options": [
+      "なん",
+      "いつ",
+      "どこ",
+      "だれ"
+    ],
+    "answer": "なん"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「これは___ですか。」(¿Qué es esto?)",
+    "options": [
+      "なに",
+      "だれ",
+      "どこ",
+      "いつ"
+    ],
+    "answer": "なに"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「あの人は___ですか。」(¿Quién es esa persona?)",
+    "options": [
+      "だれ",
+      "なに",
+      "どこ",
+      "いつ"
+    ],
+    "answer": "だれ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「誕生日は___ですか。」(¿Cuándo es tu cumpleaños?)",
+    "options": [
+      "いつ",
+      "どこ",
+      "だれ",
+      "なに"
+    ],
+    "answer": "いつ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「このかばんは___ですか。」(¿Cuánto cuesta este bolso?)",
+    "options": [
+      "いくら",
+      "いくつ",
+      "なに",
+      "どう"
+    ],
+    "answer": "いくら"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「りんごを___買いますか。」(¿Cuántas manzanas compras?)",
+    "options": [
+      "いくつ",
+      "いくら",
+      "なに",
+      "どこ"
+    ],
+    "answer": "いくつ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「日本語は___ですか。」(¿Cómo es el japonés — tu opinión?)",
+    "options": [
+      "どう",
+      "どこ",
+      "なに",
+      "だれ"
+    ],
+    "answer": "どう"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「___行きたいですか。」(¿A dónde quieres ir?)",
+    "options": [
+      "どこに",
+      "なにに",
+      "だれに",
+      "いつに"
+    ],
+    "answer": "どこに"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「___から来ましたか。」(¿De dónde viniste?)",
+    "options": [
+      "どこ",
+      "いつ",
+      "だれ",
+      "なに"
+    ],
+    "answer": "どこ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「お名前は___ですか。」(¿Cómo se llama usted?)",
+    "options": [
+      "なん",
+      "なに",
+      "だれ",
+      "どう"
+    ],
+    "answer": "なん"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「___日本語を勉強しますか。」(¿Por qué estudias japonés?)",
+    "options": [
+      "どうして",
+      "いつ",
+      "どこ",
+      "なに"
+    ],
+    "answer": "どうして"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「電話番号は___ですか。」(¿Cuál es tu número de teléfono?) — ¿qué interrogativo?",
+    "options": [
+      "なん",
+      "なに",
+      "いくら",
+      "どう"
+    ],
+    "answer": "なん"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la diferencia entre どうして y なぜ?",
+    "options": [
+      "なぜ es más formal/escrito",
+      "Son idénticos siempre",
+      "どうして es más formal",
+      "Solo どうして puede ser pregunta"
+    ],
+    "answer": "なぜ es más formal/escrito"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "なに y なん siempre son intercambiables.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "いくら pregunta por cantidades de objetos.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "いつ pregunta por tiempo o fecha.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "どうして puede usarse para preguntar por qué.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「だれ」puede usarse para objetos inanimados.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「なん時」(¿qué hora?) usa なん porque sigue un contador.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "どう pregunta por el modo o estado de algo.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "どこ solo se usa para lugares físicos, nunca para lugares abstractos.",
+    "answer": false
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "これは___ですか。(¿Qué es esto?)",
+    "options": [
+      "なに",
+      "だれ",
+      "どこ",
+      "いつ"
+    ],
+    "answer": "なに",
+    "hint": "pregunta por objeto"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___が好きですか。(¿Qué te gusta?) [antes de が]",
+    "options": [
+      "なに",
+      "なん",
+      "だれ",
+      "どう"
+    ],
+    "answer": "なに",
+    "hint": "なに antes de が"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "お誕生日は___ですか。(¿Cuándo es tu cumpleaños?)",
+    "options": [
+      "いつ",
+      "どこ",
+      "だれ",
+      "なに"
+    ],
+    "answer": "いつ",
+    "hint": "tiempo/fecha"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___枚ありますか。(¿Cuántas láminas / hojas hay?) [contador]",
+    "options": [
+      "なん",
+      "なに",
+      "いくつ",
+      "いくら"
+    ],
+    "answer": "なん",
+    "hint": "なん antes de contador"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___から来ましたか。(¿De dónde eres?)",
+    "options": [
+      "どこ",
+      "いつ",
+      "だれ",
+      "なに"
+    ],
+    "answer": "どこ",
+    "hint": "lugar de origen"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "このりんごは___ですか。(¿Cuánto cuestan estas manzanas?)",
+    "options": [
+      "いくら",
+      "いくつ",
+      "なに",
+      "どう"
+    ],
+    "answer": "いくら",
+    "hint": "precio"
+  }
 ]

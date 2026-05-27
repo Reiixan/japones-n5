@@ -1,140 +1,967 @@
 [
-  {"type":"text","md":"## El registro formal: 丁寧語 (ていねいご)\n\nEl japonés tiene varios registros de cortesía. En el día a día —con desconocidos, en el trabajo, en clase— se usa el **registro formal o polite**, llamado 丁寧語. Su marca más visible en los verbos es la terminación **ます** (masu).\n\nAprender desde el principio con ます tiene una ventaja clara: puedes hablar con cualquier persona sin sonar brusco. El registro informal (forma diccionario o forma corta) se estudiará más adelante."},
-
-  {"type":"note","md":"En esta lección todos los verbos están en **forma ます**. Es el punto de partida recomendado para hablar con personas que no conoces."},
-
-  {"type":"text","md":"## Los tres grupos verbales\n\nTodos los verbos japoneses pertenecen a uno de tres grupos. El grupo determina cómo se forma la raíz y, por tanto, cómo se conjuga.\n\n- **Grupo 1 — Godan (五段)**: terminan en consonante + る, o en く、ぐ、す、つ、ぬ、む、ぶ、う.\n- **Grupo 2 — Ichidan (一段)**: terminan siempre en **る** precedido de vocal *e* o *i* (iru/eru).\n- **Grupo 3 — Irregulares**: solo dos verbos: **する** (hacer) y **来る/くる** (venir)."},
-
-  {"type":"table","headers":["Grupo","Ejemplo","Significado","Pista"],"rows":[
-    ["Godan","書く (かく)","escribir","termina en く"],
-    ["Godan","飲む (のむ)","beber","termina en む"],
-    ["Godan","買う (かう)","comprar","termina en う"],
-    ["Ichidan","食べる (たべる)","comer","た + べ**る** → vocal e antes de る"],
-    ["Ichidan","見る (みる)","ver","み**る** → vocal i antes de る"],
-    ["Irregular","する","hacer","solo este verbo"],
-    ["Irregular","来る (くる)","venir","solo este verbo"]
-  ]},
-
-  {"type":"note","md":"Atención: algunos verbos terminan en **る** pero son godan, porque la vocal antes de る es *a*, *o* o *u*. Ejemplos: 帰る (かえる, volver — godan), 走る (はしる, correr — godan). Hay que memorizarlos."},
-
-  {"type":"text","md":"## Cómo obtener la raíz verbal (ます-stem)\n\nPara conjugar con ます necesitas la **raíz** del verbo:\n\n**Ichidan**: se quita la terminación **る** directamente.\n- 食べ**る** → raíz: 食べ\n- 見**る** → raíz: 見\n\n**Godan**: la última consonante cambia de vocalizacion *u* a *i* (columna う → columna い en hiragana).\n- 書**く** → raíz: 書**き**\n- 飲**む** → raíz: 飲**み**\n- 買**う** → raíz: 買**い**"},
-
-  {"type":"table","headers":["Terminación godan","→ raíz ます","Ejemplo dict.","Ejemplo raíz"],"rows":[
-    ["く","き","書く (かく)","書き (かき)"],
-    ["ぐ","ぎ","急ぐ (いそぐ)","急ぎ (いそぎ)"],
-    ["す","し","話す (はなす)","話し (はなし)"],
-    ["つ","ち","待つ (まつ)","待ち (まち)"],
-    ["ぬ","に","—","—"],
-    ["む","み","飲む (のむ)","飲み (のみ)"],
-    ["ぶ","び","遊ぶ (あそぶ)","遊び (あそび)"],
-    ["る (godan)","り","帰る (かえる)","帰り (かえり)"],
-    ["う","い","買う (かう)","買い (かい)"]
-  ]},
-
-  {"type":"note","md":"Los verbos en ぬ son rarísimos en japonés moderno N5. La fila está para completar la tabla, no para memorizar ahora."},
-
-  {"type":"text","md":"## Los cuatro tiempos formales\n\nCon la raíz formada, añadir el sufijo correcto es mecánico:\n\n| Tiempo | Sufijo | Se usa para |\n|---|---|---|\n| Presente / futuro afirmativo | **ます** | acciones habituales o futuras |\n| Presente / futuro negativo | **ません** | negar acciones habituales o futuras |\n| Pasado afirmativo | **ました** | acciones terminadas |\n| Pasado negativo | **ませんでした** | negar acciones pasadas |"},
-
-  {"type":"table","headers":["Verbo","ます (pres.)","ません (neg.)","ました (pas.)","ませんでした (pas. neg.)"],"rows":[
-    ["食べる","食べます","食べません","食べました","食べませんでした"],
-    ["見る","見ます","見ません","見ました","見ませんでした"],
-    ["書く","書きます","書きません","書きました","書きませんでした"],
-    ["飲む","飲みます","飲みません","飲みました","飲みませんでした"],
-    ["話す","話します","話しません","話しました","話しませんでした"],
-    ["待つ","待ちます","待ちません","待ちました","待ちませんでした"],
-    ["帰る","帰ります","帰りません","帰りました","帰りませんでした"],
-    ["買う","買います","買いません","買いました","買いませんでした"]
-  ]},
-
-  {"type":"text","md":"## Verbos irregulares: する y くる\n\nEstos dos verbos no siguen ninguna regla de raíz. Se memorizan como excepción:"},
-
-  {"type":"table","headers":["Diccionario","ます","ません","ました","ませんでした"],"rows":[
-    ["する (hacer)","します","しません","しました","しませんでした"],
-    ["来る・くる (venir)","きます","きません","きました","きませんでした"]
-  ]},
-
-  {"type":"example","jp":"毎日、日本語を勉強します。","es":"Estudio japonés todos los días.","romaji":"Mainichi, nihongo wo benkyō shimasu."},
-  {"type":"example","jp":"友だちが来ます。","es":"Viene un amigo / vendrá un amigo.","romaji":"Tomodachi ga kimasu."},
-
-  {"type":"text","md":"## Verbos compuestos con する\n\nMuchos sustantivos de origen chino o extranjero se convierten en verbos añadiendo **する**. Su conjugación sigue exactamente la de します:"},
-
-  {"type":"table","headers":["Sustantivo","+ する","Significado"],"rows":[
-    ["勉強 (べんきょう)","勉強する","estudiar"],
-    ["旅行 (りょこう)","旅行する","viajar"],
-    ["運転 (うんてん)","運転する","conducir"],
-    ["練習 (れんしゅう)","練習する","practicar"]
-  ]},
-
-  {"type":"example","jp":"週末、友だちと料理します。","es":"El fin de semana cocino con un amigo.","romaji":"Shūmatsu, tomodachi to ryōri shimasu."},
-
-  {"type":"text","md":"## Negación de existencia: ありません / いません\n\nLos verbos **ある** (existir — cosas) e **いる** (existir — seres vivos) tienen su propio patrón negativo en forma ます:\n\n- ある → **あります** / **ありません** (no hay / no existe — cosas)\n- いる → **います** / **いません** (no hay / no existe — personas/animales)\n\nEl pasado sigue el patrón normal: ありました / ありませんでした."},
-
-  {"type":"example","jp":"机の上に本があります。","es":"Hay un libro encima de la mesa.","romaji":"Tsukue no ue ni hon ga arimasu."},
-  {"type":"example","jp":"今日、時間がありません。","es":"Hoy no tengo tiempo.","romaji":"Kyō, jikan ga arimasen."},
-  {"type":"example","jp":"教室に先生がいます。","es":"Hay un profesor en el aula.","romaji":"Kyōshitsu ni sensei ga imasu."},
-
-  {"type":"text","md":"## Orden de palabras SOV\n\nEl japonés es una lengua **SOV** (Sujeto – Objeto – Verbo). El verbo va **siempre al final** de la oración. Los complementos (tiempo, lugar, objeto) van antes del verbo, en el orden que prefieras, marcados con partículas.\n\nEsquema habitual:\n> [Tiempo] + [Sujeto が/は] + [Lugar に/で] + [Objeto を] + **Verbo-ます**"},
-
-  {"type":"example","jp":"明日、私はスーパーで食べ物を買います。","es":"Mañana compraré comida en el supermercado.","romaji":"Ashita, watashi wa sūpā de tabemono wo kaimasu."},
-  {"type":"example","jp":"昨日、図書館で本を読みました。","es":"Ayer leí un libro en la biblioteca.","romaji":"Kinō, toshokan de hon wo yomimashita."},
-
-  {"type":"text","md":"## La partícula を con verbos transitivos\n\nLos verbos **transitivos** (que tienen objeto directo) llevan la partícula **を** (wo) después del objeto. Ejemplos de verbos transitivos N5: 食べる, 飲む, 書く, 読む, 見る, 買う, 聞く, 使う, 教える, 覚える."},
-
-  {"type":"example","jp":"水を飲みます。","es":"Bebo agua.","romaji":"Mizu wo nomimasu."},
-  {"type":"example","jp":"手紙を書きました。","es":"Escribí una carta.","romaji":"Tegami wo kakimashita."},
-  {"type":"example","jp":"音楽を聞きます。","es":"Escucho música.","romaji":"Ongaku wo kikimasu."},
-
-  {"type":"text","md":"## Preguntas con verbos: ～ますか\n\nPara hacer una pregunta, añade la partícula **か** al final de la forma ます. La entonación sube ligeramente.\n\n- Respuesta afirmativa: **はい、～ます。**\n- Respuesta negativa: **いいえ、～ません。**"},
-
-  {"type":"example","jp":"日本語を話しますか。\nはい、少し話します。","es":"¿Habla usted japonés?\nSí, hablo un poco.","romaji":"Nihongo wo hanashimasu ka.\nHai, sukoshi hanashimasu."},
-  {"type":"example","jp":"昨日、学校に来ましたか。\nいいえ、来ませんでした。","es":"¿Vino a la escuela ayer?\nNo, no vine.","romaji":"Kinō, gakkō ni kimashita ka.\nIie, kimasendeshita."},
-
-  {"type":"text","md":"## Verbos de movimiento con に / へ\n\nLos verbos de desplazamiento (行く, 来る, 帰る) toman la partícula **に** o **へ** para marcar el destino. Ambas partículas son intercambiables en este contexto (に es más común en habla).\n\nPregunta de destino: **どこに/へ 行きますか** — ¿A dónde vas?"},
-
-  {"type":"example","jp":"学校に行きます。","es":"Voy a la escuela.","romaji":"Gakkō ni ikimasu."},
-  {"type":"example","jp":"週末、家に帰りました。","es":"El fin de semana volví a casa.","romaji":"Shūmatsu, ie ni kaerimashita."},
-  {"type":"example","jp":"どこに行きますか。\n公園に行きます。","es":"¿A dónde vas?\nVoy al parque.","romaji":"Doko ni ikimasu ka.\nKōen ni ikimasu."},
-
-  {"type":"text","md":"## Forma propuesta: ましょう / ましょうか\n\nCambiando ます por **ましょう** se propone hacer algo juntos: «vamos a…».\nCon la partícula **か** al final, se convierte en una propuesta más suave o una pregunta de confirmación: «¿hacemos…?»"},
-
-  {"type":"example","jp":"一緒に食べましょう！","es":"¡Comamos juntos!","romaji":"Issho ni tabemashō!"},
-  {"type":"example","jp":"少し休みましょうか。","es":"¿Descansamos un poco?","romaji":"Sukoshi yasumimashō ka."},
-  {"type":"example","jp":"図書館で勉強しましょう。","es":"Estudiemos en la biblioteca.","romaji":"Toshokan de benkyō shimashō."},
-
-  {"type":"text","md":"## Adverbios de frecuencia\n\nEstos adverbios van normalmente **al inicio de la oración** o justo antes del verbo. Los negativos (あまり、ぜんぜん) se combinan obligatoriamente con la forma negativa **ません**."},
-
-  {"type":"table","headers":["Adverbio","Romaji","Significado","Uso con ます"],"rows":[
-    ["いつも","itsumo","siempre","ます (afirmativo)"],
-    ["よく","yoku","a menudo","ます (afirmativo)"],
-    ["ときどき","tokidoki","a veces","ます (afirmativo)"],
-    ["あまり","amari","no mucho","ません (negativo)"],
-    ["ぜんぜん","zenzen","nada / en absoluto","ません (negativo)"]
-  ]},
-
-  {"type":"example","jp":"いつも朝ごはんを食べます。","es":"Siempre desayuno.","romaji":"Itsumo asagohan wo tabemasu."},
-  {"type":"example","jp":"あまりテレビを見ません。","es":"No veo mucho la televisión.","romaji":"Amari terebi wo mimasen."},
-  {"type":"example","jp":"ぜんぜん分かりません。","es":"No entiendo nada.","romaji":"Zenzen wakarimasen."},
-  {"type":"example","jp":"ときどき公園を走ります。","es":"A veces corro en el parque.","romaji":"Tokidoki kōen wo hashirimasu."},
-
-  {"type":"note","md":"**Trampa frecuente**: あまり y ぜんぜん SIEMPRE van con negativo ません. Si dices あまり食べます suena agramatical."},
-
-  {"type":"text","md":"## Resumen visual de conjugación\n\nCon un verbo godan y uno ichidan como referencia:"},
-
-  {"type":"table","headers":["","Ichidan: 食べる","Godan: 書く"],"rows":[
-    ["Raíz ます","食べ","書き"],
-    ["Presente/futuro","食べます","書きます"],
-    ["Presente neg.","食べません","書きません"],
-    ["Pasado","食べました","書きました"],
-    ["Pasado neg.","食べませんでした","書きませんでした"],
-    ["Propuesta","食べましょう","書きましょう"],
-    ["Pregunta pres.","食べますか","書きますか"]
-  ]},
-
-  {"type":"exercise-mc","prompt":"¿Cuál es la raíz ます del verbo 飲む (のむ)?","options":["飲み","飲き","飲し","飲ち"],"answer":"飲み"},
-  {"type":"exercise-mc","prompt":"¿Cómo se conjuga 来る (くる) en forma ます presente?","options":["きます","くます","こます","かます"],"answer":"きます"},
-  {"type":"exercise-mc","prompt":"¿Qué adverbio de frecuencia exige siempre la forma ～ません?","options":["ぜんぜん","いつも","よく","ときどき"],"answer":"ぜんぜん"},
-  {"type":"exercise-gap","prompt":"昨日、友だちと映画を見___ 。(Ayer vi una película con un amigo)","options":["ました","ます","ません","ませんでした"],"answer":"ました","hint":"pasado afirmativo"},
-  {"type":"exercise-gap","prompt":"一緒に公園を走り___ ！(¡Corramos juntos en el parque!)","options":["ましょう","ます","ました","ませんでした"],"answer":"ましょう","hint":"forma propuesta"},
-  {"type":"exercise-tf","statement":"El adverbio よく (a menudo) siempre va acompañado de la forma negativa ません.","answer":false},
-  {"type":"exercise-mc","prompt":"¿Cuál de estas oraciones tiene el orden de palabras correcto en japonés?","options":["私は毎日日本語を勉強します。","私は勉強します毎日日本語を。","毎日を勉強日本語私はします。","します私は毎日日本語を。"],"answer":"私は毎日日本語を勉強します。"}
+  {
+    "type": "text",
+    "md": "## El registro formal: 丁寧語 (ていねいご)\n\nEl japonés tiene varios registros de cortesía. En el día a día —con desconocidos, en el trabajo, en clase— se usa el **registro formal o polite**, llamado 丁寧語. Su marca más visible en los verbos es la terminación **ます** (masu).\n\nAprender desde el principio con ます tiene una ventaja clara: puedes hablar con cualquier persona sin sonar brusco. El registro informal (forma diccionario o forma corta) se estudiará más adelante."
+  },
+  {
+    "type": "note",
+    "md": "En esta lección todos los verbos están en **forma ます**. Es el punto de partida recomendado para hablar con personas que no conoces."
+  },
+  {
+    "type": "text",
+    "md": "## Los tres grupos verbales\n\nTodos los verbos japoneses pertenecen a uno de tres grupos. El grupo determina cómo se forma la raíz y, por tanto, cómo se conjuga.\n\n- **Grupo 1 — Godan (五段)**: terminan en consonante + る, o en く、ぐ、す、つ、ぬ、む、ぶ、う.\n- **Grupo 2 — Ichidan (一段)**: terminan siempre en **る** precedido de vocal *e* o *i* (iru/eru).\n- **Grupo 3 — Irregulares**: solo dos verbos: **する** (hacer) y **来る/くる** (venir)."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Grupo",
+      "Ejemplo",
+      "Significado",
+      "Pista"
+    ],
+    "rows": [
+      [
+        "Godan",
+        "書く (かく)",
+        "escribir",
+        "termina en く"
+      ],
+      [
+        "Godan",
+        "飲む (のむ)",
+        "beber",
+        "termina en む"
+      ],
+      [
+        "Godan",
+        "買う (かう)",
+        "comprar",
+        "termina en う"
+      ],
+      [
+        "Ichidan",
+        "食べる (たべる)",
+        "comer",
+        "た + べ**る** → vocal e antes de る"
+      ],
+      [
+        "Ichidan",
+        "見る (みる)",
+        "ver",
+        "み**る** → vocal i antes de る"
+      ],
+      [
+        "Irregular",
+        "する",
+        "hacer",
+        "solo este verbo"
+      ],
+      [
+        "Irregular",
+        "来る (くる)",
+        "venir",
+        "solo este verbo"
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "md": "Atención: algunos verbos terminan en **る** pero son godan, porque la vocal antes de る es *a*, *o* o *u*. Ejemplos: 帰る (かえる, volver — godan), 走る (はしる, correr — godan). Hay que memorizarlos."
+  },
+  {
+    "type": "text",
+    "md": "## Cómo obtener la raíz verbal (ます-stem)\n\nPara conjugar con ます necesitas la **raíz** del verbo:\n\n**Ichidan**: se quita la terminación **る** directamente.\n- 食べ**る** → raíz: 食べ\n- 見**る** → raíz: 見\n\n**Godan**: la última consonante cambia de vocalizacion *u* a *i* (columna う → columna い en hiragana).\n- 書**く** → raíz: 書**き**\n- 飲**む** → raíz: 飲**み**\n- 買**う** → raíz: 買**い**"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Terminación godan",
+      "→ raíz ます",
+      "Ejemplo dict.",
+      "Ejemplo raíz"
+    ],
+    "rows": [
+      [
+        "く",
+        "き",
+        "書く (かく)",
+        "書き (かき)"
+      ],
+      [
+        "ぐ",
+        "ぎ",
+        "急ぐ (いそぐ)",
+        "急ぎ (いそぎ)"
+      ],
+      [
+        "す",
+        "し",
+        "話す (はなす)",
+        "話し (はなし)"
+      ],
+      [
+        "つ",
+        "ち",
+        "待つ (まつ)",
+        "待ち (まち)"
+      ],
+      [
+        "ぬ",
+        "に",
+        "—",
+        "—"
+      ],
+      [
+        "む",
+        "み",
+        "飲む (のむ)",
+        "飲み (のみ)"
+      ],
+      [
+        "ぶ",
+        "び",
+        "遊ぶ (あそぶ)",
+        "遊び (あそび)"
+      ],
+      [
+        "る (godan)",
+        "り",
+        "帰る (かえる)",
+        "帰り (かえり)"
+      ],
+      [
+        "う",
+        "い",
+        "買う (かう)",
+        "買い (かい)"
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "md": "Los verbos en ぬ son rarísimos en japonés moderno N5. La fila está para completar la tabla, no para memorizar ahora."
+  },
+  {
+    "type": "text",
+    "md": "## Los cuatro tiempos formales\n\nCon la raíz formada, añadir el sufijo correcto es mecánico:\n\n| Tiempo | Sufijo | Se usa para |\n|---|---|---|\n| Presente / futuro afirmativo | **ます** | acciones habituales o futuras |\n| Presente / futuro negativo | **ません** | negar acciones habituales o futuras |\n| Pasado afirmativo | **ました** | acciones terminadas |\n| Pasado negativo | **ませんでした** | negar acciones pasadas |"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Verbo",
+      "ます (pres.)",
+      "ません (neg.)",
+      "ました (pas.)",
+      "ませんでした (pas. neg.)"
+    ],
+    "rows": [
+      [
+        "食べる",
+        "食べます",
+        "食べません",
+        "食べました",
+        "食べませんでした"
+      ],
+      [
+        "見る",
+        "見ます",
+        "見ません",
+        "見ました",
+        "見ませんでした"
+      ],
+      [
+        "書く",
+        "書きます",
+        "書きません",
+        "書きました",
+        "書きませんでした"
+      ],
+      [
+        "飲む",
+        "飲みます",
+        "飲みません",
+        "飲みました",
+        "飲みませんでした"
+      ],
+      [
+        "話す",
+        "話します",
+        "話しません",
+        "話しました",
+        "話しませんでした"
+      ],
+      [
+        "待つ",
+        "待ちます",
+        "待ちません",
+        "待ちました",
+        "待ちませんでした"
+      ],
+      [
+        "帰る",
+        "帰ります",
+        "帰りません",
+        "帰りました",
+        "帰りませんでした"
+      ],
+      [
+        "買う",
+        "買います",
+        "買いません",
+        "買いました",
+        "買いませんでした"
+      ]
+    ]
+  },
+  {
+    "type": "text",
+    "md": "## Verbos irregulares: する y くる\n\nEstos dos verbos no siguen ninguna regla de raíz. Se memorizan como excepción:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Diccionario",
+      "ます",
+      "ません",
+      "ました",
+      "ませんでした"
+    ],
+    "rows": [
+      [
+        "する (hacer)",
+        "します",
+        "しません",
+        "しました",
+        "しませんでした"
+      ],
+      [
+        "来る・くる (venir)",
+        "きます",
+        "きません",
+        "きました",
+        "きませんでした"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "毎日、日本語を勉強します。",
+    "es": "Estudio japonés todos los días.",
+    "romaji": "Mainichi, nihongo wo benkyō shimasu."
+  },
+  {
+    "type": "example",
+    "jp": "友だちが来ます。",
+    "es": "Viene un amigo / vendrá un amigo.",
+    "romaji": "Tomodachi ga kimasu."
+  },
+  {
+    "type": "text",
+    "md": "## Verbos compuestos con する\n\nMuchos sustantivos de origen chino o extranjero se convierten en verbos añadiendo **する**. Su conjugación sigue exactamente la de します:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Sustantivo",
+      "+ する",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "勉強 (べんきょう)",
+        "勉強する",
+        "estudiar"
+      ],
+      [
+        "旅行 (りょこう)",
+        "旅行する",
+        "viajar"
+      ],
+      [
+        "運転 (うんてん)",
+        "運転する",
+        "conducir"
+      ],
+      [
+        "練習 (れんしゅう)",
+        "練習する",
+        "practicar"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "週末、友だちと料理します。",
+    "es": "El fin de semana cocino con un amigo.",
+    "romaji": "Shūmatsu, tomodachi to ryōri shimasu."
+  },
+  {
+    "type": "text",
+    "md": "## Negación de existencia: ありません / いません\n\nLos verbos **ある** (existir — cosas) e **いる** (existir — seres vivos) tienen su propio patrón negativo en forma ます:\n\n- ある → **あります** / **ありません** (no hay / no existe — cosas)\n- いる → **います** / **いません** (no hay / no existe — personas/animales)\n\nEl pasado sigue el patrón normal: ありました / ありませんでした."
+  },
+  {
+    "type": "example",
+    "jp": "机の上に本があります。",
+    "es": "Hay un libro encima de la mesa.",
+    "romaji": "Tsukue no ue ni hon ga arimasu."
+  },
+  {
+    "type": "example",
+    "jp": "今日、時間がありません。",
+    "es": "Hoy no tengo tiempo.",
+    "romaji": "Kyō, jikan ga arimasen."
+  },
+  {
+    "type": "example",
+    "jp": "教室に先生がいます。",
+    "es": "Hay un profesor en el aula.",
+    "romaji": "Kyōshitsu ni sensei ga imasu."
+  },
+  {
+    "type": "text",
+    "md": "## Orden de palabras SOV\n\nEl japonés es una lengua **SOV** (Sujeto – Objeto – Verbo). El verbo va **siempre al final** de la oración. Los complementos (tiempo, lugar, objeto) van antes del verbo, en el orden que prefieras, marcados con partículas.\n\nEsquema habitual:\n> [Tiempo] + [Sujeto が/は] + [Lugar に/で] + [Objeto を] + **Verbo-ます**"
+  },
+  {
+    "type": "example",
+    "jp": "明日、私はスーパーで食べ物を買います。",
+    "es": "Mañana compraré comida en el supermercado.",
+    "romaji": "Ashita, watashi wa sūpā de tabemono wo kaimasu."
+  },
+  {
+    "type": "example",
+    "jp": "昨日、図書館で本を読みました。",
+    "es": "Ayer leí un libro en la biblioteca.",
+    "romaji": "Kinō, toshokan de hon wo yomimashita."
+  },
+  {
+    "type": "text",
+    "md": "## La partícula を con verbos transitivos\n\nLos verbos **transitivos** (que tienen objeto directo) llevan la partícula **を** (wo) después del objeto. Ejemplos de verbos transitivos N5: 食べる, 飲む, 書く, 読む, 見る, 買う, 聞く, 使う, 教える, 覚える."
+  },
+  {
+    "type": "example",
+    "jp": "水を飲みます。",
+    "es": "Bebo agua.",
+    "romaji": "Mizu wo nomimasu."
+  },
+  {
+    "type": "example",
+    "jp": "手紙を書きました。",
+    "es": "Escribí una carta.",
+    "romaji": "Tegami wo kakimashita."
+  },
+  {
+    "type": "example",
+    "jp": "音楽を聞きます。",
+    "es": "Escucho música.",
+    "romaji": "Ongaku wo kikimasu."
+  },
+  {
+    "type": "text",
+    "md": "## Preguntas con verbos: ～ますか\n\nPara hacer una pregunta, añade la partícula **か** al final de la forma ます. La entonación sube ligeramente.\n\n- Respuesta afirmativa: **はい、～ます。**\n- Respuesta negativa: **いいえ、～ません。**"
+  },
+  {
+    "type": "example",
+    "jp": "日本語を話しますか。\nはい、少し話します。",
+    "es": "¿Habla usted japonés?\nSí, hablo un poco.",
+    "romaji": "Nihongo wo hanashimasu ka.\nHai, sukoshi hanashimasu."
+  },
+  {
+    "type": "example",
+    "jp": "昨日、学校に来ましたか。\nいいえ、来ませんでした。",
+    "es": "¿Vino a la escuela ayer?\nNo, no vine.",
+    "romaji": "Kinō, gakkō ni kimashita ka.\nIie, kimasendeshita."
+  },
+  {
+    "type": "text",
+    "md": "## Verbos de movimiento con に / へ\n\nLos verbos de desplazamiento (行く, 来る, 帰る) toman la partícula **に** o **へ** para marcar el destino. Ambas partículas son intercambiables en este contexto (に es más común en habla).\n\nPregunta de destino: **どこに/へ 行きますか** — ¿A dónde vas?"
+  },
+  {
+    "type": "example",
+    "jp": "学校に行きます。",
+    "es": "Voy a la escuela.",
+    "romaji": "Gakkō ni ikimasu."
+  },
+  {
+    "type": "example",
+    "jp": "週末、家に帰りました。",
+    "es": "El fin de semana volví a casa.",
+    "romaji": "Shūmatsu, ie ni kaerimashita."
+  },
+  {
+    "type": "example",
+    "jp": "どこに行きますか。\n公園に行きます。",
+    "es": "¿A dónde vas?\nVoy al parque.",
+    "romaji": "Doko ni ikimasu ka.\nKōen ni ikimasu."
+  },
+  {
+    "type": "text",
+    "md": "## Forma propuesta: ましょう / ましょうか\n\nCambiando ます por **ましょう** se propone hacer algo juntos: «vamos a…».\nCon la partícula **か** al final, se convierte en una propuesta más suave o una pregunta de confirmación: «¿hacemos…?»"
+  },
+  {
+    "type": "example",
+    "jp": "一緒に食べましょう！",
+    "es": "¡Comamos juntos!",
+    "romaji": "Issho ni tabemashō!"
+  },
+  {
+    "type": "example",
+    "jp": "少し休みましょうか。",
+    "es": "¿Descansamos un poco?",
+    "romaji": "Sukoshi yasumimashō ka."
+  },
+  {
+    "type": "example",
+    "jp": "図書館で勉強しましょう。",
+    "es": "Estudiemos en la biblioteca.",
+    "romaji": "Toshokan de benkyō shimashō."
+  },
+  {
+    "type": "text",
+    "md": "## Adverbios de frecuencia\n\nEstos adverbios van normalmente **al inicio de la oración** o justo antes del verbo. Los negativos (あまり、ぜんぜん) se combinan obligatoriamente con la forma negativa **ません**."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Adverbio",
+      "Romaji",
+      "Significado",
+      "Uso con ます"
+    ],
+    "rows": [
+      [
+        "いつも",
+        "itsumo",
+        "siempre",
+        "ます (afirmativo)"
+      ],
+      [
+        "よく",
+        "yoku",
+        "a menudo",
+        "ます (afirmativo)"
+      ],
+      [
+        "ときどき",
+        "tokidoki",
+        "a veces",
+        "ます (afirmativo)"
+      ],
+      [
+        "あまり",
+        "amari",
+        "no mucho",
+        "ません (negativo)"
+      ],
+      [
+        "ぜんぜん",
+        "zenzen",
+        "nada / en absoluto",
+        "ません (negativo)"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "いつも朝ごはんを食べます。",
+    "es": "Siempre desayuno.",
+    "romaji": "Itsumo asagohan wo tabemasu."
+  },
+  {
+    "type": "example",
+    "jp": "あまりテレビを見ません。",
+    "es": "No veo mucho la televisión.",
+    "romaji": "Amari terebi wo mimasen."
+  },
+  {
+    "type": "example",
+    "jp": "ぜんぜん分かりません。",
+    "es": "No entiendo nada.",
+    "romaji": "Zenzen wakarimasen."
+  },
+  {
+    "type": "example",
+    "jp": "ときどき公園を走ります。",
+    "es": "A veces corro en el parque.",
+    "romaji": "Tokidoki kōen wo hashirimasu."
+  },
+  {
+    "type": "note",
+    "md": "**Trampa frecuente**: あまり y ぜんぜん SIEMPRE van con negativo ません. Si dices あまり食べます suena agramatical."
+  },
+  {
+    "type": "text",
+    "md": "## Resumen visual de conjugación\n\nCon un verbo godan y uno ichidan como referencia:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "",
+      "Ichidan: 食べる",
+      "Godan: 書く"
+    ],
+    "rows": [
+      [
+        "Raíz ます",
+        "食べ",
+        "書き"
+      ],
+      [
+        "Presente/futuro",
+        "食べます",
+        "書きます"
+      ],
+      [
+        "Presente neg.",
+        "食べません",
+        "書きません"
+      ],
+      [
+        "Pasado",
+        "食べました",
+        "書きました"
+      ],
+      [
+        "Pasado neg.",
+        "食べませんでした",
+        "書きませんでした"
+      ],
+      [
+        "Propuesta",
+        "食べましょう",
+        "書きましょう"
+      ],
+      [
+        "Pregunta pres.",
+        "食べますか",
+        "書きますか"
+      ]
+    ]
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la raíz ます del verbo 飲む (のむ)?",
+    "options": [
+      "飲み",
+      "飲き",
+      "飲し",
+      "飲ち"
+    ],
+    "answer": "飲み"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se conjuga 来る (くる) en forma ます presente?",
+    "options": [
+      "きます",
+      "くます",
+      "こます",
+      "かます"
+    ],
+    "answer": "きます"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué adverbio de frecuencia exige siempre la forma ～ません?",
+    "options": [
+      "ぜんぜん",
+      "いつも",
+      "よく",
+      "ときどき"
+    ],
+    "answer": "ぜんぜん"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "昨日、友だちと映画を見___ 。(Ayer vi una película con un amigo)",
+    "options": [
+      "ました",
+      "ます",
+      "ません",
+      "ませんでした"
+    ],
+    "answer": "ました",
+    "hint": "pasado afirmativo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "一緒に公園を走り___ ！(¡Corramos juntos en el parque!)",
+    "options": [
+      "ましょう",
+      "ます",
+      "ました",
+      "ませんでした"
+    ],
+    "answer": "ましょう",
+    "hint": "forma propuesta"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "El adverbio よく (a menudo) siempre va acompañado de la forma negativa ません.",
+    "answer": false
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál de estas oraciones tiene el orden de palabras correcto en japonés?",
+    "options": [
+      "私は毎日日本語を勉強します。",
+      "私は勉強します毎日日本語を。",
+      "毎日を勉強日本語私はします。",
+      "します私は毎日日本語を。"
+    ],
+    "answer": "私は毎日日本語を勉強します。"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'como' (I eat) en forma ます?",
+    "options": [
+      "たべます",
+      "たべません",
+      "たべました",
+      "たべましょう"
+    ],
+    "answer": "たべます"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'no bebo' en forma ます negativa?",
+    "options": [
+      "のみません",
+      "のみます",
+      "のみました",
+      "のみませんでした"
+    ],
+    "answer": "のみません"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'estudié' (pasado afirmativo)?",
+    "options": [
+      "べんきょうしました",
+      "べんきょうします",
+      "べんきょうしません",
+      "べんきょうしませんでした"
+    ],
+    "answer": "べんきょうしました"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'no fui' (pasado negativo)?",
+    "options": [
+      "いきませんでした",
+      "いきません",
+      "いきました",
+      "いきます"
+    ],
+    "answer": "いきませんでした"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La raíz ます de 書く (かく) es:",
+    "options": [
+      "書き",
+      "書く",
+      "書か",
+      "書け"
+    ],
+    "answer": "書き"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La raíz ます de 食べる (たべる) es:",
+    "options": [
+      "食べ",
+      "食べる",
+      "食ば",
+      "食び"
+    ],
+    "answer": "食べ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La raíz ます de する (hacer) es:",
+    "options": [
+      "し",
+      "す",
+      "せ",
+      "さ"
+    ],
+    "answer": "し"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La raíz ます de 来る (くる) es:",
+    "options": [
+      "き",
+      "く",
+      "こ",
+      "か"
+    ],
+    "answer": "き"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué terminación indica propuesta ('vamos a…')?",
+    "options": [
+      "ましょう",
+      "ますか",
+      "ました",
+      "ません"
+    ],
+    "answer": "ましょう"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué terminación indica invitación ('¿vamos a…?')?",
+    "options": [
+      "ましょうか",
+      "ませんか",
+      "ましたか",
+      "ますか"
+    ],
+    "answer": "ましょうか"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué terminación indica invitación negativa ('¿por qué no…?')?",
+    "options": [
+      "ませんか",
+      "ましょうか",
+      "ませんでした",
+      "ません"
+    ],
+    "answer": "ませんか"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿A qué grupo pertenece 帰る (かえる, volver)?",
+    "options": [
+      "Godan",
+      "Ichidan",
+      "Irregular",
+      "Ninguno"
+    ],
+    "answer": "Godan"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿A qué grupo pertenece 起きる (おきる, levantarse)?",
+    "options": [
+      "Ichidan",
+      "Godan",
+      "Irregular",
+      "Ninguno"
+    ],
+    "answer": "Ichidan"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ます presente de 聞く (きく, escuchar) es:",
+    "options": [
+      "聞きます",
+      "聞します",
+      "聞ます",
+      "聞えます"
+    ],
+    "answer": "聞きます"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ます presente de 話す (はなす, hablar) es:",
+    "options": [
+      "話します",
+      "話きます",
+      "話ます",
+      "話めます"
+    ],
+    "answer": "話します"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma ます presente de 読む (よむ, leer) es:",
+    "options": [
+      "読みます",
+      "読きます",
+      "読ます",
+      "読えます"
+    ],
+    "answer": "読みます"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál de estos verbos es irregular?",
+    "options": [
+      "する",
+      "書く",
+      "食べる",
+      "飲む"
+    ],
+    "answer": "する"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「毎朝ジョギングを___。」(Hago jogging cada mañana.)",
+    "options": [
+      "します",
+      "しません",
+      "しました",
+      "しましょう"
+    ],
+    "answer": "します"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「昨日は何も___。」(Ayer no comí nada.)",
+    "options": [
+      "たべませんでした",
+      "たべません",
+      "たべました",
+      "たべます"
+    ],
+    "answer": "たべませんでした"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「一緒に映画を___か。」(¿Vemos una película juntos?)",
+    "options": [
+      "みませんか",
+      "みません",
+      "みましょう",
+      "みます"
+    ],
+    "answer": "みませんか"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuántos verbos irregulares hay en japonés?",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "10"
+    ],
+    "answer": "2"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué verbo significa 'venir' en japonés?",
+    "options": [
+      "来る（くる）",
+      "行く（いく）",
+      "帰る（かえる）",
+      "出る（でる）"
+    ],
+    "answer": "来る（くる）"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「飲む」es un verbo ichidan.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「見る」es un verbo ichidan.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "La forma ます negativa de します es しません.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「します」y「する」son dos verbos diferentes.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "En japonés el verbo siempre va al final de la oración.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "ましょう expresa un hecho pasado.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「来ます」es la forma ます de 来る.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「ませんか」es más directo que「ましょうか」.",
+    "answer": false
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "毎日日本語を___。(Estudio japonés todos los días.)",
+    "options": [
+      "べんきょうします",
+      "べんきょうしません",
+      "べんきょうしました",
+      "べんきょうしましょう"
+    ],
+    "answer": "べんきょうします",
+    "hint": "presente afirmativo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "明日は学校に___。(Mañana no voy a la escuela.)",
+    "options": [
+      "いきません",
+      "いきます",
+      "いきました",
+      "いきましょう"
+    ],
+    "answer": "いきません",
+    "hint": "presente negativo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "先週、本を三冊___。(La semana pasada leí tres libros.)",
+    "options": [
+      "よみました",
+      "よみます",
+      "よみません",
+      "よみましょう"
+    ],
+    "answer": "よみました",
+    "hint": "pasado afirmativo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "昨日はぜんぜんねません___。(Ayer no dormí nada.)",
+    "options": [
+      "でした",
+      "ました",
+      "です",
+      "ません"
+    ],
+    "answer": "でした",
+    "hint": "pasado negativo completo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "一緒に昼ご飯を食べ___か。(¿Comemos juntos el almuerzo?)",
+    "options": [
+      "ましょう",
+      "ません",
+      "ます",
+      "ました"
+    ],
+    "answer": "ましょう",
+    "hint": "propuesta"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "ピアノを___か。(¿Tocas el piano?)",
+    "options": [
+      "ひきます",
+      "ひきません",
+      "ひきました",
+      "ひきましょう"
+    ],
+    "answer": "ひきます",
+    "hint": "presente afirmativo interrogativo"
+  }
 ]

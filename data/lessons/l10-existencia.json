@@ -1,40 +1,643 @@
 [
-  {"type":"text","md":"## あります vs います: la distinción fundamental\n\nEn japonés, 'haber', 'estar' y 'existir' se expresan con dos verbos distintos según el tipo de entidad:\n\n- **あります**: objetos inanimados (cosas, lugares, hechos, eventos)\n- **います**: seres vivos (personas, animales)\n\nRegla práctica: si 'respira' o se mueve por voluntad propia → **います**; si no → **あります**."},
-  {"type":"note","md":"Un robot o un coche de control remoto son inanimados → **あります**. Una mascota, un niño o el profesor → **います**. Los árboles y plantas usan **あります** aunque estén vivos, porque no se mueven por voluntad propia."},
-  {"type":"text","md":"## あります — existencia de objetos\n\nEstructura básica: **[sustantivo]があります**\n\nEstructura con lugar: **[lugar]に[sustantivo]があります**"},
-  {"type":"example","jp":"本があります。","es":"Hay un libro. / Existe un libro.","romaji":"Hon ga arimasu."},
-  {"type":"example","jp":"つくえの上に本があります。","es":"Encima del escritorio hay un libro.","romaji":"Tsukue no ue ni hon ga arimasu."},
-  {"type":"example","jp":"ここにレストランがあります。","es":"Aquí hay un restaurante.","romaji":"Koko ni resutoran ga arimasu."},
-  {"type":"example","jp":"えきの近くにぎんこうがあります。","es":"Cerca de la estación hay un banco.","romaji":"Eki no chikaku ni ginkou ga arimasu."},
-  {"type":"text","md":"## います — existencia de seres vivos\n\nEstructura básica: **[sustantivo]がいます**\n\nEstructura con lugar: **[lugar]に[sustantivo]がいます**"},
-  {"type":"example","jp":"先生がいます。","es":"Hay un profesor. / El profesor está aquí.","romaji":"Sensei ga imasu."},
-  {"type":"example","jp":"そこに学生がいます。","es":"Ahí hay un estudiante.","romaji":"Soko ni gakusei ga imasu."},
-  {"type":"example","jp":"こうえんに犬がいます。","es":"En el parque hay un perro.","romaji":"Kouen ni inu ga imasu."},
-  {"type":"example","jp":"びょういんにともだちがいます。","es":"Mi amigo está en el hospital.","romaji":"Byouin ni tomodachi ga imasu."},
-  {"type":"text","md":"## Negación: ありません e いません\n\n- **ありません**: no hay / no está (objetos)\n- **いません**: no está / no hay (seres vivos)"},
-  {"type":"example","jp":"ここに本がありません。","es":"Aquí no hay libros.","romaji":"Koko ni hon ga arimasen."},
-  {"type":"example","jp":"公園に犬がいません。","es":"En el parque no hay perros.","romaji":"Kouen ni inu ga imasen."},
-  {"type":"example","jp":"先生はまだいません。","es":"El profesor aún no está.","romaji":"Sensei wa mada imasen."},
-  {"type":"text","md":"## Palabras de ubicación\n\nEstas palabras son indispensables para describir posiciones. Se usan con **の** seguido del sustantivo de referencia: **つくえの上に** (encima del escritorio)."},
-  {"type":"table","headers":["Japonés","Lectura","Significado"],"rows":[["上","うえ","encima / arriba"],["下","した","debajo / abajo"],["前","まえ","delante / antes"],["後ろ","うしろ","detrás"],["隣","となり","al lado"],["中","なか","dentro / en medio"],["外","そと","fuera"],["右","みぎ","derecha"],["左","ひだり","izquierda"],["近く","ちかく","cerca"]]},
-  {"type":"example","jp":"ねこはソファの下にいます。","es":"El gato está debajo del sofá.","romaji":"Neko wa sofa no shita ni imasu."},
-  {"type":"example","jp":"ドアの右にテレビがあります。","es":"A la derecha de la puerta hay un televisor.","romaji":"Doa no migi ni terebi ga arimasu."},
-  {"type":"text","md":"## Estructura [cosa]は[lugar]にあります/います\n\nCuando el tema ya es conocido, se usa **は** para el objeto/persona y se enuncia su ubicación. Es diferente a presentar algo nuevo (estructura con **が**)."},
-  {"type":"example","jp":"私の本はつくえの上にあります。","es":"Mi libro está encima del escritorio.","romaji":"Watashi no hon wa tsukue no ue ni arimasu."},
-  {"type":"example","jp":"ねこはソファの下にいます。","es":"El gato está debajo del sofá.","romaji":"Neko wa sofa no shita ni imasu."},
-  {"type":"note","md":"**は vs が con existencia**:\n- **[場所]に[もの]があります** → presenta algo nuevo ('en X hay Y')\n- **[もの]は[場所]にあります** → ubica algo ya conocido ('Y está en X')\n\nAmbas son correctas; la diferencia es qué información es nueva para el oyente."},
-  {"type":"text","md":"## Preguntar con どこ\n\n**どこ** (¿dónde?) se combina con **に** para preguntar ubicación."},
-  {"type":"example","jp":"本はどこにありますか？","es":"¿Dónde está el libro?","romaji":"Hon wa doko ni arimasu ka?"},
-  {"type":"example","jp":"つくえの上にあります。","es":"Está encima del escritorio.","romaji":"Tsukue no ue ni arimasu."},
-  {"type":"example","jp":"先生はどこにいますか？","es":"¿Dónde está el profesor?","romaji":"Sensei wa doko ni imasu ka?"},
-  {"type":"text","md":"## Combinar con demostrativos\n\nLos demostrativos de lugar (ここ、そこ、あそこ) funcionan perfectamente con あります e います."},
-  {"type":"example","jp":"ここにほんがあります。","es":"Aquí hay un libro.","romaji":"Koko ni hon ga arimasu."},
-  {"type":"example","jp":"そこにねこがいます。","es":"Ahí hay un gato.","romaji":"Soko ni neko ga imasu."},
-  {"type":"exercise-mc","prompt":"¿Cuál es la frase correcta para 'hay un gato'?","options":["ねこがいます","ねこがあります","ねこでいます","ねこにあります"],"answer":"ねこがいます"},
-  {"type":"exercise-mc","prompt":"'No hay libros' en japonés:","options":["本がありません","本がいません","本はありました","本はいます"],"answer":"本がありません"},
-  {"type":"exercise-mc","prompt":"¿Cómo se pregunta '¿Dónde está el banco?' en japonés?","options":["ぎんこうはどこにありますか","ぎんこうはどこにいますか","ぎんこうはなにがありますか","ぎんこうはだれですか"],"answer":"ぎんこうはどこにありますか"},
-  {"type":"exercise-tf","statement":"います se usa para personas y animales.","answer":true},
-  {"type":"exercise-tf","statement":"テーブルの上にあります describe la ubicación de algo encima de la mesa.","answer":true},
-  {"type":"exercise-gap","prompt":"ねこはソファの___にいます。(El gato está debajo del sofá.)","options":["した","うえ","まえ","となり"],"answer":"した","hint":"debajo / abajo"},
-  {"type":"exercise-gap","prompt":"えきの___にぎんこうがあります。(Hay un banco cerca de la estación.)","options":["ちかく","うしろ","なか","うえ"],"answer":"ちかく","hint":"indica proximidad"}
+  {
+    "type": "text",
+    "md": "## あります vs います: la distinción fundamental\n\nEn japonés, 'haber', 'estar' y 'existir' se expresan con dos verbos distintos según el tipo de entidad:\n\n- **あります**: objetos inanimados (cosas, lugares, hechos, eventos)\n- **います**: seres vivos (personas, animales)\n\nRegla práctica: si 'respira' o se mueve por voluntad propia → **います**; si no → **あります**."
+  },
+  {
+    "type": "note",
+    "md": "Un robot o un coche de control remoto son inanimados → **あります**. Una mascota, un niño o el profesor → **います**. Los árboles y plantas usan **あります** aunque estén vivos, porque no se mueven por voluntad propia."
+  },
+  {
+    "type": "text",
+    "md": "## あります — existencia de objetos\n\nEstructura básica: **[sustantivo]があります**\n\nEstructura con lugar: **[lugar]に[sustantivo]があります**"
+  },
+  {
+    "type": "example",
+    "jp": "本があります。",
+    "es": "Hay un libro. / Existe un libro.",
+    "romaji": "Hon ga arimasu."
+  },
+  {
+    "type": "example",
+    "jp": "つくえの上に本があります。",
+    "es": "Encima del escritorio hay un libro.",
+    "romaji": "Tsukue no ue ni hon ga arimasu."
+  },
+  {
+    "type": "example",
+    "jp": "ここにレストランがあります。",
+    "es": "Aquí hay un restaurante.",
+    "romaji": "Koko ni resutoran ga arimasu."
+  },
+  {
+    "type": "example",
+    "jp": "えきの近くにぎんこうがあります。",
+    "es": "Cerca de la estación hay un banco.",
+    "romaji": "Eki no chikaku ni ginkou ga arimasu."
+  },
+  {
+    "type": "text",
+    "md": "## います — existencia de seres vivos\n\nEstructura básica: **[sustantivo]がいます**\n\nEstructura con lugar: **[lugar]に[sustantivo]がいます**"
+  },
+  {
+    "type": "example",
+    "jp": "先生がいます。",
+    "es": "Hay un profesor. / El profesor está aquí.",
+    "romaji": "Sensei ga imasu."
+  },
+  {
+    "type": "example",
+    "jp": "そこに学生がいます。",
+    "es": "Ahí hay un estudiante.",
+    "romaji": "Soko ni gakusei ga imasu."
+  },
+  {
+    "type": "example",
+    "jp": "こうえんに犬がいます。",
+    "es": "En el parque hay un perro.",
+    "romaji": "Kouen ni inu ga imasu."
+  },
+  {
+    "type": "example",
+    "jp": "びょういんにともだちがいます。",
+    "es": "Mi amigo está en el hospital.",
+    "romaji": "Byouin ni tomodachi ga imasu."
+  },
+  {
+    "type": "text",
+    "md": "## Negación: ありません e いません\n\n- **ありません**: no hay / no está (objetos)\n- **いません**: no está / no hay (seres vivos)"
+  },
+  {
+    "type": "example",
+    "jp": "ここに本がありません。",
+    "es": "Aquí no hay libros.",
+    "romaji": "Koko ni hon ga arimasen."
+  },
+  {
+    "type": "example",
+    "jp": "公園に犬がいません。",
+    "es": "En el parque no hay perros.",
+    "romaji": "Kouen ni inu ga imasen."
+  },
+  {
+    "type": "example",
+    "jp": "先生はまだいません。",
+    "es": "El profesor aún no está.",
+    "romaji": "Sensei wa mada imasen."
+  },
+  {
+    "type": "text",
+    "md": "## Palabras de ubicación\n\nEstas palabras son indispensables para describir posiciones. Se usan con **の** seguido del sustantivo de referencia: **つくえの上に** (encima del escritorio)."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Japonés",
+      "Lectura",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "上",
+        "うえ",
+        "encima / arriba"
+      ],
+      [
+        "下",
+        "した",
+        "debajo / abajo"
+      ],
+      [
+        "前",
+        "まえ",
+        "delante / antes"
+      ],
+      [
+        "後ろ",
+        "うしろ",
+        "detrás"
+      ],
+      [
+        "隣",
+        "となり",
+        "al lado"
+      ],
+      [
+        "中",
+        "なか",
+        "dentro / en medio"
+      ],
+      [
+        "外",
+        "そと",
+        "fuera"
+      ],
+      [
+        "右",
+        "みぎ",
+        "derecha"
+      ],
+      [
+        "左",
+        "ひだり",
+        "izquierda"
+      ],
+      [
+        "近く",
+        "ちかく",
+        "cerca"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "ねこはソファの下にいます。",
+    "es": "El gato está debajo del sofá.",
+    "romaji": "Neko wa sofa no shita ni imasu."
+  },
+  {
+    "type": "example",
+    "jp": "ドアの右にテレビがあります。",
+    "es": "A la derecha de la puerta hay un televisor.",
+    "romaji": "Doa no migi ni terebi ga arimasu."
+  },
+  {
+    "type": "text",
+    "md": "## Estructura [cosa]は[lugar]にあります/います\n\nCuando el tema ya es conocido, se usa **は** para el objeto/persona y se enuncia su ubicación. Es diferente a presentar algo nuevo (estructura con **が**)."
+  },
+  {
+    "type": "example",
+    "jp": "私の本はつくえの上にあります。",
+    "es": "Mi libro está encima del escritorio.",
+    "romaji": "Watashi no hon wa tsukue no ue ni arimasu."
+  },
+  {
+    "type": "example",
+    "jp": "ねこはソファの下にいます。",
+    "es": "El gato está debajo del sofá.",
+    "romaji": "Neko wa sofa no shita ni imasu."
+  },
+  {
+    "type": "note",
+    "md": "**は vs が con existencia**:\n- **[場所]に[もの]があります** → presenta algo nuevo ('en X hay Y')\n- **[もの]は[場所]にあります** → ubica algo ya conocido ('Y está en X')\n\nAmbas son correctas; la diferencia es qué información es nueva para el oyente."
+  },
+  {
+    "type": "text",
+    "md": "## Preguntar con どこ\n\n**どこ** (¿dónde?) se combina con **に** para preguntar ubicación."
+  },
+  {
+    "type": "example",
+    "jp": "本はどこにありますか？",
+    "es": "¿Dónde está el libro?",
+    "romaji": "Hon wa doko ni arimasu ka?"
+  },
+  {
+    "type": "example",
+    "jp": "つくえの上にあります。",
+    "es": "Está encima del escritorio.",
+    "romaji": "Tsukue no ue ni arimasu."
+  },
+  {
+    "type": "example",
+    "jp": "先生はどこにいますか？",
+    "es": "¿Dónde está el profesor?",
+    "romaji": "Sensei wa doko ni imasu ka?"
+  },
+  {
+    "type": "text",
+    "md": "## Combinar con demostrativos\n\nLos demostrativos de lugar (ここ、そこ、あそこ) funcionan perfectamente con あります e います."
+  },
+  {
+    "type": "example",
+    "jp": "ここにほんがあります。",
+    "es": "Aquí hay un libro.",
+    "romaji": "Koko ni hon ga arimasu."
+  },
+  {
+    "type": "example",
+    "jp": "そこにねこがいます。",
+    "es": "Ahí hay un gato.",
+    "romaji": "Soko ni neko ga imasu."
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la frase correcta para 'hay un gato'?",
+    "options": [
+      "ねこがいます",
+      "ねこがあります",
+      "ねこでいます",
+      "ねこにあります"
+    ],
+    "answer": "ねこがいます"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "'No hay libros' en japonés:",
+    "options": [
+      "本がありません",
+      "本がいません",
+      "本はありました",
+      "本はいます"
+    ],
+    "answer": "本がありません"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se pregunta '¿Dónde está el banco?' en japonés?",
+    "options": [
+      "ぎんこうはどこにありますか",
+      "ぎんこうはどこにいますか",
+      "ぎんこうはなにがありますか",
+      "ぎんこうはだれですか"
+    ],
+    "answer": "ぎんこうはどこにありますか"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "います se usa para personas y animales.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "テーブルの上にあります describe la ubicación de algo encima de la mesa.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "ねこはソファの___にいます。(El gato está debajo del sofá.)",
+    "options": [
+      "した",
+      "うえ",
+      "まえ",
+      "となり"
+    ],
+    "answer": "した",
+    "hint": "debajo / abajo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "えきの___にぎんこうがあります。(Hay un banco cerca de la estación.)",
+    "options": [
+      "ちかく",
+      "うしろ",
+      "なか",
+      "うえ"
+    ],
+    "answer": "ちかく",
+    "hint": "indica proximidad"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál usas para decir que hay una silla (objeto)?",
+    "options": [
+      "あります",
+      "います",
+      "です",
+      "する"
+    ],
+    "answer": "あります"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál usas para decir que hay un perro?",
+    "options": [
+      "います",
+      "あります",
+      "です",
+      "ある"
+    ],
+    "answer": "います"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál usas para decir que hay un robot?",
+    "options": [
+      "あります",
+      "います",
+      "です",
+      "ある"
+    ],
+    "answer": "あります"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué significa うえ?",
+    "options": [
+      "arriba / encima",
+      "abajo / debajo",
+      "delante",
+      "detrás"
+    ],
+    "answer": "arriba / encima"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué significa した?",
+    "options": [
+      "abajo / debajo",
+      "arriba / encima",
+      "dentro",
+      "al lado"
+    ],
+    "answer": "abajo / debajo"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué significa まえ?",
+    "options": [
+      "delante",
+      "detrás",
+      "dentro",
+      "fuera"
+    ],
+    "answer": "delante"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué significa うしろ?",
+    "options": [
+      "detrás",
+      "delante",
+      "arriba",
+      "abajo"
+    ],
+    "answer": "detrás"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué significa となり?",
+    "options": [
+      "al lado",
+      "dentro",
+      "fuera",
+      "entre"
+    ],
+    "answer": "al lado"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué significa なか?",
+    "options": [
+      "dentro / en el interior",
+      "fuera",
+      "al lado",
+      "sobre"
+    ],
+    "answer": "dentro / en el interior"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「机の___に本があります。」(Hay un libro SOBRE la mesa.)",
+    "options": [
+      "うえ",
+      "した",
+      "まえ",
+      "なか"
+    ],
+    "answer": "うえ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「いすの___に猫がいます。」(Hay un gato DEBAJO de la silla.)",
+    "options": [
+      "した",
+      "うえ",
+      "となり",
+      "まえ"
+    ],
+    "answer": "した"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「冷蔵庫の___に牛乳があります。」(Hay leche DENTRO de la nevera.)",
+    "options": [
+      "なか",
+      "うえ",
+      "まえ",
+      "そと"
+    ],
+    "answer": "なか"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「本屋の___にコンビニがあります。」(Hay un conbini AL LADO de la librería.)",
+    "options": [
+      "となり",
+      "うしろ",
+      "まえ",
+      "した"
+    ],
+    "answer": "となり"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué partícula marca el sujeto de existencia?",
+    "options": [
+      "が",
+      "は",
+      "を",
+      "に"
+    ],
+    "answer": "が"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué partícula marca el lugar con あります/います?",
+    "options": [
+      "に",
+      "で",
+      "は",
+      "が"
+    ],
+    "answer": "に"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「どこに___がありますか。」(¿Dónde hay un banco?)",
+    "options": [
+      "銀行",
+      "本",
+      "学校",
+      "電車"
+    ],
+    "answer": "銀行"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué verbo de existencia usarías para un insecto?",
+    "options": [
+      "います",
+      "あります",
+      "ある",
+      "する"
+    ],
+    "answer": "います"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué verbo de existencia usarías para un árbol?",
+    "options": [
+      "あります",
+      "います",
+      "いる",
+      "する"
+    ],
+    "answer": "あります"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「トイレはどこに___か。」(¿Dónde está el baño?)",
+    "options": [
+      "ありますか",
+      "いますか",
+      "ですか",
+      "しますか"
+    ],
+    "answer": "ありますか"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la forma negativa de あります?",
+    "options": [
+      "ありません",
+      "いません",
+      "ないです",
+      "あります"
+    ],
+    "answer": "ありません"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la forma negativa de います?",
+    "options": [
+      "いません",
+      "ありません",
+      "いないです",
+      "います"
+    ],
+    "answer": "いません"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「駅の___に病院があります。」(Hay un hospital DETRÁS de la estación.)",
+    "options": [
+      "うしろ",
+      "まえ",
+      "となり",
+      "うえ"
+    ],
+    "answer": "うしろ"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "あります se usa tanto para objetos inanimados como para animales.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "います se usa para personas y animales.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「机の下に本があります。」significa 'Hay un libro debajo de la mesa'.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "La partícula に marca el lugar de existencia con あります/います.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「となり」significa exactamente lo mismo que「そば」(cerca de).",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "Un robot (ロボット) usaría います porque puede moverse.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「ここに」significa 'aquí (localización)'.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「そこ」se puede usar con la partícula に para indicar lugar.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "つくえの___に猫がいます。(Hay un gato encima de la mesa.)",
+    "options": [
+      "うえ",
+      "した",
+      "なか",
+      "まえ"
+    ],
+    "answer": "うえ",
+    "hint": "encima"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "部屋の___にテレビがあります。(Hay una televisión dentro de la habitación.)",
+    "options": [
+      "なか",
+      "うえ",
+      "そと",
+      "うしろ"
+    ],
+    "answer": "なか",
+    "hint": "dentro"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "学校の___に公園があります。(Hay un parque delante de la escuela.)",
+    "options": [
+      "まえ",
+      "うしろ",
+      "となり",
+      "した"
+    ],
+    "answer": "まえ",
+    "hint": "delante"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "冷蔵庫の___に卵があります。(Hay huevos dentro de la nevera.)",
+    "options": [
+      "なか",
+      "うえ",
+      "まえ",
+      "うしろ"
+    ],
+    "answer": "なか",
+    "hint": "dentro"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "猫は___にいます。(El gato está debajo.) ¿Debajo de qué? つくえの___。",
+    "options": [
+      "した",
+      "うえ",
+      "まえ",
+      "なか"
+    ],
+    "answer": "した",
+    "hint": "debajo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "本屋の___に花屋があります。(Hay una floristería al lado de la librería.)",
+    "options": [
+      "となり",
+      "うしろ",
+      "うえ",
+      "なか"
+    ],
+    "answer": "となり",
+    "hint": "al lado"
+  }
 ]

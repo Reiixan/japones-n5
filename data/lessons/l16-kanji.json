@@ -842,5 +842,381 @@
     ],
     "answer": "北",
     "hint": "salida norte = 北口"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la lectura kun de 日?",
+    "options": [
+      "ひ",
+      "にち",
+      "じつ",
+      "び"
+    ],
+    "answer": "ひ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la lectura on de 月?",
+    "options": [
+      "げつ / がつ",
+      "つき",
+      "にち",
+      "び"
+    ],
+    "answer": "げつ / がつ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'fuego'?",
+    "options": [
+      "火",
+      "水",
+      "木",
+      "土"
+    ],
+    "answer": "火"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'árbol / madera'?",
+    "options": [
+      "木",
+      "土",
+      "水",
+      "金"
+    ],
+    "answer": "木"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'tierra / sábado'?",
+    "options": [
+      "土",
+      "金",
+      "木",
+      "水"
+    ],
+    "answer": "土"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'dinero / metal / viernes'?",
+    "options": [
+      "金",
+      "土",
+      "木",
+      "火"
+    ],
+    "answer": "金"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'persona'?",
+    "options": [
+      "人",
+      "口",
+      "手",
+      "目"
+    ],
+    "answer": "人"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'boca'?",
+    "options": [
+      "口",
+      "手",
+      "目",
+      "耳"
+    ],
+    "answer": "口"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'mano'?",
+    "options": [
+      "手",
+      "目",
+      "耳",
+      "口"
+    ],
+    "answer": "手"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'ojo'?",
+    "options": [
+      "目",
+      "耳",
+      "口",
+      "手"
+    ],
+    "answer": "目"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'oreja'?",
+    "options": [
+      "耳",
+      "目",
+      "口",
+      "手"
+    ],
+    "answer": "耳"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la lectura kun de 山?",
+    "options": [
+      "やま",
+      "さん",
+      "ざん",
+      "やん"
+    ],
+    "answer": "やま"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la lectura kun de 川?",
+    "options": [
+      "かわ",
+      "せん",
+      "さん",
+      "がわ"
+    ],
+    "answer": "かわ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'grande'?",
+    "options": [
+      "大",
+      "小",
+      "中",
+      "上"
+    ],
+    "answer": "大"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'pequeño'?",
+    "options": [
+      "小",
+      "大",
+      "下",
+      "中"
+    ],
+    "answer": "小"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'dentro / mediano'?",
+    "options": [
+      "中",
+      "大",
+      "小",
+      "上"
+    ],
+    "answer": "中"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'arriba'?",
+    "options": [
+      "上",
+      "下",
+      "中",
+      "大"
+    ],
+    "answer": "上"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'abajo'?",
+    "options": [
+      "下",
+      "上",
+      "中",
+      "小"
+    ],
+    "answer": "下"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué kanji significa 'libro / raíz / base'?",
+    "options": [
+      "本",
+      "大",
+      "上",
+      "中"
+    ],
+    "answer": "本"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el kanji de 'lunes' (día de la luna)?",
+    "options": [
+      "月曜日",
+      "日曜日",
+      "火曜日",
+      "水曜日"
+    ],
+    "answer": "月曜日"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el kanji de 'martes' (día del fuego)?",
+    "options": [
+      "火曜日",
+      "水曜日",
+      "木曜日",
+      "月曜日"
+    ],
+    "answer": "火曜日"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el kanji de 'miércoles' (día del agua)?",
+    "options": [
+      "水曜日",
+      "火曜日",
+      "木曜日",
+      "金曜日"
+    ],
+    "answer": "水曜日"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el kanji de 'jueves' (día del árbol)?",
+    "options": [
+      "木曜日",
+      "水曜日",
+      "金曜日",
+      "土曜日"
+    ],
+    "answer": "木曜日"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el kanji de 'viernes' (día del oro/metal)?",
+    "options": [
+      "金曜日",
+      "木曜日",
+      "土曜日",
+      "日曜日"
+    ],
+    "answer": "金曜日"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "本 significa únicamente 'libro' en japonés.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "日 puede leerse tanto 'ひ' (kun) como 'にち' (on).",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "Los días de la semana en japonés se basan en los cinco elementos + sol y luna.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "上 y 下 son kanji opuestos (arriba y abajo).",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "人 (persona) se lee にん solo con el contador de personas.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "El kanji 中 puede leerse なか (kun) y ちゅう (on).",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "大 se lee おお en kun y だい en on.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "水曜日 es el miércoles.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___ようびはmonday. (lunes)",
+    "options": [
+      "月",
+      "日",
+      "火",
+      "水"
+    ],
+    "answer": "月",
+    "hint": "月 = luna = lunes"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___曜日はtuesday. (martes)",
+    "options": [
+      "火",
+      "月",
+      "水",
+      "木"
+    ],
+    "answer": "火",
+    "hint": "火 = fuego = martes"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "この___は大きいです。(Esta montaña es grande.)",
+    "options": [
+      "山",
+      "川",
+      "木",
+      "水"
+    ],
+    "answer": "山",
+    "hint": "やま = montaña"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___の上に本があります。(Hay un libro encima de la mesa.)",
+    "options": [
+      "つくえ",
+      "山",
+      "川",
+      "木"
+    ],
+    "answer": "つくえ",
+    "hint": "つくえ (mesa) no es kanji N5 elemental; la respuesta es つくえ"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "彼は___が大きい。(Él tiene la boca grande.)",
+    "options": [
+      "口",
+      "手",
+      "目",
+      "耳"
+    ],
+    "answer": "口",
+    "hint": "口 = boca"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___本語を勉強しています。(Estudio japonés.)",
+    "options": [
+      "日",
+      "月",
+      "火",
+      "水"
+    ],
+    "answer": "日",
+    "hint": "日本語 = japonés"
   }
 ]

@@ -1,42 +1,683 @@
 [
-  {"type":"text","md":"## El sistema こ-そ-あ-ど: distancia como principio organizador\n\nEl japonés organiza los demostrativos según la distancia entre el hablante, el oyente y el objeto referido. Son cuatro series paralelas que siguen siempre el mismo esquema:\n\n- **こ**: cerca del hablante\n- **そ**: cerca del oyente (o fuera del campo visual, mencionado antes)\n- **あ**: lejos de ambos, pero conocido por los dos\n- **ど**: forma interrogativa (¿cuál?, ¿dónde?, ¿cuál de ellos?)"},
-  {"type":"note","md":"Este sistema se llama **コソアド** (ko-so-a-do). Una vez que aprendes la serie, puedes predecir la forma de todos los demostrativos."},
-  {"type":"text","md":"## これ / それ / あれ / どれ — pronombres para objetos\n\nSe usan solos para referirse a un objeto, sin necesitar sustantivo a continuación."},
-  {"type":"table","headers":["Pronombre","Serie","Distancia","Significado"],"rows":[["これ","こ","Cerca del hablante","esto"],["それ","そ","Cerca del oyente","eso"],["あれ","あ","Lejos de ambos","aquello"],["どれ","ど","Interrogativo","¿cuál?"]]},
-  {"type":"example","jp":"これは本です。","es":"Esto es un libro.","romaji":"Kore wa hon desu."},
-  {"type":"example","jp":"それはだれのかばんですか？","es":"¿De quién es ese maletín?","romaji":"Sore wa dare no kaban desu ka?"},
-  {"type":"example","jp":"あれは私の犬です。","es":"Aquello es mi perro.","romaji":"Are wa watashi no inu desu."},
-  {"type":"example","jp":"どれがあなたのですか？","es":"¿Cuál es el tuyo?","romaji":"Dore ga anata no desu ka?"},
-  {"type":"text","md":"## ここ / そこ / あそこ / どこ — pronombres para lugares\n\nIndican un lugar, no un objeto. Se usan directamente sin sustantivo."},
-  {"type":"table","headers":["Pronombre","Serie","Distancia","Significado"],"rows":[["ここ","こ","Cerca del hablante","aquí"],["そこ","そ","Cerca del oyente","ahí"],["あそこ","あ","Lejos de ambos","allí"],["どこ","ど","Interrogativo","¿dónde?"]]},
-  {"type":"example","jp":"ここに本があります。","es":"Aquí hay un libro.","romaji":"Koko ni hon ga arimasu."},
-  {"type":"example","jp":"レストランはそこです。","es":"El restaurante está ahí.","romaji":"Resutoran wa soko desu."},
-  {"type":"example","jp":"えきはあそこです。","es":"La estación está allí.","romaji":"Eki wa asoko desu."},
-  {"type":"example","jp":"学校はどこですか？","es":"¿Dónde está la escuela?","romaji":"Gakkou wa doko desu ka?"},
-  {"type":"text","md":"## この / その / あの / どの — modificadores demostrativos\n\nEstas formas van **obligatoriamente** antes de un sustantivo; nunca aparecen solos. A diferencia de これ/それ/あれ, no son pronombres independientes sino modificadores."},
-  {"type":"table","headers":["Modificador","Serie","Significado"],"rows":[["この","こ","este/esta (+ sustantivo)"],["その","そ","ese/esa (+ sustantivo)"],["あの","あ","aquel/aquella (+ sustantivo)"],["どの","ど","¿qué/cuál? (+ sustantivo)"]]},
-  {"type":"example","jp":"この本は私のです。","es":"Este libro es mío.","romaji":"Kono hon wa watashi no desu."},
-  {"type":"example","jp":"そのかばんはだれのですか？","es":"¿De quién es ese maletín?","romaji":"Sono kaban wa dare no desu ka?"},
-  {"type":"example","jp":"あの先生はゆうめいです。","es":"Aquel profesor es famoso.","romaji":"Ano sensei wa yuumei desu."},
-  {"type":"example","jp":"どの本がむずかしいですか？","es":"¿Cuál de los libros es difícil?","romaji":"Dono hon ga muzukashii desu ka?"},
-  {"type":"note","md":"**Clave**: これ/それ/あれ son pronombres que funcionan solos como sujeto u objeto. この/その/あの siempre van pegados a un sustantivo: *このほん* (este libro), nunca *この* solo."},
-  {"type":"text","md":"## こちら / そちら / あちら / どちら — forma educada\n\n**こちら/そちら/あちら** son las versiones formales de ここ/そこ/あそこ para indicar dirección o presentar personas. **どちら** es también la forma educada de どれ (¿cuál de los dos?)."},
-  {"type":"example","jp":"こちらへどうぞ。","es":"Por aquí, por favor.","romaji":"Kochira e douzo."},
-  {"type":"example","jp":"こちらは田中さんです。","es":"Este es el señor Tanaka.","romaji":"Kochira wa Tanaka-san desu."},
-  {"type":"text","md":"## の: posesión y relación entre sustantivos\n\nLa partícula **の** enlaza dos sustantivos: **A の B** = 'B de A'. Funciona para posesión, material, tipo y descripción."},
-  {"type":"example","jp":"私のほん","es":"mi libro","romaji":"watashi no hon"},
-  {"type":"example","jp":"田中さんのかばん","es":"el maletín del señor Tanaka","romaji":"Tanaka-san no kaban"},
-  {"type":"example","jp":"日本語の先生","es":"profesor de japonés","romaji":"Nihongo no sensei"},
-  {"type":"text","md":"## Combinar demostrativos y の posesivo\n\nPuedes combinar これ/それ/あれ con の para expresar pertenencia, o hacer preguntas con だれ (¿quién?)."},
-  {"type":"example","jp":"これはだれのですか？","es":"¿De quién es esto?","romaji":"Kore wa dare no desu ka?"},
-  {"type":"example","jp":"あれは私のです。","es":"Aquello es mío.","romaji":"Are wa watashi no desu."},
-  {"type":"example","jp":"そのかばんはあなたのですか？","es":"¿Ese maletín es tuyo?","romaji":"Sono kaban wa anata no desu ka?"},
-  {"type":"text","md":"## これはです vs このは～です\n\nDiferencia importante:\n\n- **これはほんです** → Estás *identificando* qué es el objeto: 'Esto (que ves aquí) **es un libro**'.\n- **このほんはおもしろいです** → Das una *propiedad* del libro ya conocido: '**Este libro** es interesante'.\n\nEn el primer caso, 'esto' es el tema y 'libro' el predicado. En el segundo, 'este libro' ya es el tema conocido."},
-  {"type":"exercise-mc","prompt":"¿Cuál es el modificador demostrativo para 'ese (cerca del oyente) + sustantivo'?","options":["その","この","あの","どの"],"answer":"その"},
-  {"type":"exercise-mc","prompt":"¿Qué significa どれですか？","options":["¿Cuál es?","¿Dónde está?","¿Quién es?","¿Cuándo es?"],"answer":"¿Cuál es?"},
-  {"type":"exercise-mc","prompt":"'El libro del señor Tanaka' en japonés:","options":["田中さんのほん","田中さんはほん","田中さんがほん","田中さんとほん"],"answer":"田中さんのほん"},
-  {"type":"exercise-tf","statement":"この、その、あの siempre van seguidos de un sustantivo.","answer":true},
-  {"type":"exercise-tf","statement":"こちら es la forma informal de これ.","answer":false},
-  {"type":"exercise-gap","prompt":"___のかばんはきれいですね。(Ese maletín es bonito, ¿verdad?)","options":["その","この","あの","どの"],"answer":"その","hint":"el maletín está cerca del oyente"},
-  {"type":"exercise-gap","prompt":"これはだれ___ですか？(¿De quién es esto?)","options":["の","が","を","に"],"answer":"の","hint":"partícula de posesión"}
+  {
+    "type": "text",
+    "md": "## El sistema こ-そ-あ-ど: distancia como principio organizador\n\nEl japonés organiza los demostrativos según la distancia entre el hablante, el oyente y el objeto referido. Son cuatro series paralelas que siguen siempre el mismo esquema:\n\n- **こ**: cerca del hablante\n- **そ**: cerca del oyente (o fuera del campo visual, mencionado antes)\n- **あ**: lejos de ambos, pero conocido por los dos\n- **ど**: forma interrogativa (¿cuál?, ¿dónde?, ¿cuál de ellos?)"
+  },
+  {
+    "type": "note",
+    "md": "Este sistema se llama **コソアド** (ko-so-a-do). Una vez que aprendes la serie, puedes predecir la forma de todos los demostrativos."
+  },
+  {
+    "type": "text",
+    "md": "## これ / それ / あれ / どれ — pronombres para objetos\n\nSe usan solos para referirse a un objeto, sin necesitar sustantivo a continuación."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Pronombre",
+      "Serie",
+      "Distancia",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "これ",
+        "こ",
+        "Cerca del hablante",
+        "esto"
+      ],
+      [
+        "それ",
+        "そ",
+        "Cerca del oyente",
+        "eso"
+      ],
+      [
+        "あれ",
+        "あ",
+        "Lejos de ambos",
+        "aquello"
+      ],
+      [
+        "どれ",
+        "ど",
+        "Interrogativo",
+        "¿cuál?"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "これは本です。",
+    "es": "Esto es un libro.",
+    "romaji": "Kore wa hon desu."
+  },
+  {
+    "type": "example",
+    "jp": "それはだれのかばんですか？",
+    "es": "¿De quién es ese maletín?",
+    "romaji": "Sore wa dare no kaban desu ka?"
+  },
+  {
+    "type": "example",
+    "jp": "あれは私の犬です。",
+    "es": "Aquello es mi perro.",
+    "romaji": "Are wa watashi no inu desu."
+  },
+  {
+    "type": "example",
+    "jp": "どれがあなたのですか？",
+    "es": "¿Cuál es el tuyo?",
+    "romaji": "Dore ga anata no desu ka?"
+  },
+  {
+    "type": "text",
+    "md": "## ここ / そこ / あそこ / どこ — pronombres para lugares\n\nIndican un lugar, no un objeto. Se usan directamente sin sustantivo."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Pronombre",
+      "Serie",
+      "Distancia",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "ここ",
+        "こ",
+        "Cerca del hablante",
+        "aquí"
+      ],
+      [
+        "そこ",
+        "そ",
+        "Cerca del oyente",
+        "ahí"
+      ],
+      [
+        "あそこ",
+        "あ",
+        "Lejos de ambos",
+        "allí"
+      ],
+      [
+        "どこ",
+        "ど",
+        "Interrogativo",
+        "¿dónde?"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "ここに本があります。",
+    "es": "Aquí hay un libro.",
+    "romaji": "Koko ni hon ga arimasu."
+  },
+  {
+    "type": "example",
+    "jp": "レストランはそこです。",
+    "es": "El restaurante está ahí.",
+    "romaji": "Resutoran wa soko desu."
+  },
+  {
+    "type": "example",
+    "jp": "えきはあそこです。",
+    "es": "La estación está allí.",
+    "romaji": "Eki wa asoko desu."
+  },
+  {
+    "type": "example",
+    "jp": "学校はどこですか？",
+    "es": "¿Dónde está la escuela?",
+    "romaji": "Gakkou wa doko desu ka?"
+  },
+  {
+    "type": "text",
+    "md": "## この / その / あの / どの — modificadores demostrativos\n\nEstas formas van **obligatoriamente** antes de un sustantivo; nunca aparecen solos. A diferencia de これ/それ/あれ, no son pronombres independientes sino modificadores."
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Modificador",
+      "Serie",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "この",
+        "こ",
+        "este/esta (+ sustantivo)"
+      ],
+      [
+        "その",
+        "そ",
+        "ese/esa (+ sustantivo)"
+      ],
+      [
+        "あの",
+        "あ",
+        "aquel/aquella (+ sustantivo)"
+      ],
+      [
+        "どの",
+        "ど",
+        "¿qué/cuál? (+ sustantivo)"
+      ]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "この本は私のです。",
+    "es": "Este libro es mío.",
+    "romaji": "Kono hon wa watashi no desu."
+  },
+  {
+    "type": "example",
+    "jp": "そのかばんはだれのですか？",
+    "es": "¿De quién es ese maletín?",
+    "romaji": "Sono kaban wa dare no desu ka?"
+  },
+  {
+    "type": "example",
+    "jp": "あの先生はゆうめいです。",
+    "es": "Aquel profesor es famoso.",
+    "romaji": "Ano sensei wa yuumei desu."
+  },
+  {
+    "type": "example",
+    "jp": "どの本がむずかしいですか？",
+    "es": "¿Cuál de los libros es difícil?",
+    "romaji": "Dono hon ga muzukashii desu ka?"
+  },
+  {
+    "type": "note",
+    "md": "**Clave**: これ/それ/あれ son pronombres que funcionan solos como sujeto u objeto. この/その/あの siempre van pegados a un sustantivo: *このほん* (este libro), nunca *この* solo."
+  },
+  {
+    "type": "text",
+    "md": "## こちら / そちら / あちら / どちら — forma educada\n\n**こちら/そちら/あちら** son las versiones formales de ここ/そこ/あそこ para indicar dirección o presentar personas. **どちら** es también la forma educada de どれ (¿cuál de los dos?)."
+  },
+  {
+    "type": "example",
+    "jp": "こちらへどうぞ。",
+    "es": "Por aquí, por favor.",
+    "romaji": "Kochira e douzo."
+  },
+  {
+    "type": "example",
+    "jp": "こちらは田中さんです。",
+    "es": "Este es el señor Tanaka.",
+    "romaji": "Kochira wa Tanaka-san desu."
+  },
+  {
+    "type": "text",
+    "md": "## の: posesión y relación entre sustantivos\n\nLa partícula **の** enlaza dos sustantivos: **A の B** = 'B de A'. Funciona para posesión, material, tipo y descripción."
+  },
+  {
+    "type": "example",
+    "jp": "私のほん",
+    "es": "mi libro",
+    "romaji": "watashi no hon"
+  },
+  {
+    "type": "example",
+    "jp": "田中さんのかばん",
+    "es": "el maletín del señor Tanaka",
+    "romaji": "Tanaka-san no kaban"
+  },
+  {
+    "type": "example",
+    "jp": "日本語の先生",
+    "es": "profesor de japonés",
+    "romaji": "Nihongo no sensei"
+  },
+  {
+    "type": "text",
+    "md": "## Combinar demostrativos y の posesivo\n\nPuedes combinar これ/それ/あれ con の para expresar pertenencia, o hacer preguntas con だれ (¿quién?)."
+  },
+  {
+    "type": "example",
+    "jp": "これはだれのですか？",
+    "es": "¿De quién es esto?",
+    "romaji": "Kore wa dare no desu ka?"
+  },
+  {
+    "type": "example",
+    "jp": "あれは私のです。",
+    "es": "Aquello es mío.",
+    "romaji": "Are wa watashi no desu."
+  },
+  {
+    "type": "example",
+    "jp": "そのかばんはあなたのですか？",
+    "es": "¿Ese maletín es tuyo?",
+    "romaji": "Sono kaban wa anata no desu ka?"
+  },
+  {
+    "type": "text",
+    "md": "## これはです vs このは～です\n\nDiferencia importante:\n\n- **これはほんです** → Estás *identificando* qué es el objeto: 'Esto (que ves aquí) **es un libro**'.\n- **このほんはおもしろいです** → Das una *propiedad* del libro ya conocido: '**Este libro** es interesante'.\n\nEn el primer caso, 'esto' es el tema y 'libro' el predicado. En el segundo, 'este libro' ya es el tema conocido."
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el modificador demostrativo para 'ese (cerca del oyente) + sustantivo'?",
+    "options": [
+      "その",
+      "この",
+      "あの",
+      "どの"
+    ],
+    "answer": "その"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué significa どれですか？",
+    "options": [
+      "¿Cuál es?",
+      "¿Dónde está?",
+      "¿Quién es?",
+      "¿Cuándo es?"
+    ],
+    "answer": "¿Cuál es?"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "'El libro del señor Tanaka' en japonés:",
+    "options": [
+      "田中さんのほん",
+      "田中さんはほん",
+      "田中さんがほん",
+      "田中さんとほん"
+    ],
+    "answer": "田中さんのほん"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "この、その、あの siempre van seguidos de un sustantivo.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "こちら es la forma informal de これ.",
+    "answer": false
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___のかばんはきれいですね。(Ese maletín es bonito, ¿verdad?)",
+    "options": [
+      "その",
+      "この",
+      "あの",
+      "どの"
+    ],
+    "answer": "その",
+    "hint": "el maletín está cerca del oyente"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "これはだれ___ですか？(¿De quién es esto?)",
+    "options": [
+      "の",
+      "が",
+      "を",
+      "に"
+    ],
+    "answer": "の",
+    "hint": "partícula de posesión"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué serie (こ/そ/あ/ど) usa el hablante para algo cercano a él?",
+    "options": [
+      "こ-",
+      "そ-",
+      "あ-",
+      "ど-"
+    ],
+    "answer": "こ-"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué serie usa el oyente para algo cercano a él?",
+    "options": [
+      "そ-",
+      "こ-",
+      "あ-",
+      "ど-"
+    ],
+    "answer": "そ-"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué serie se usa para algo lejos de ambos?",
+    "options": [
+      "あ-",
+      "こ-",
+      "そ-",
+      "ど-"
+    ],
+    "answer": "あ-"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué serie se usa para preguntar?",
+    "options": [
+      "ど-",
+      "あ-",
+      "こ-",
+      "そ-"
+    ],
+    "answer": "ど-"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「___は何ですか？」(¿Qué es esto — cerca del hablante?)",
+    "options": [
+      "これ",
+      "それ",
+      "あれ",
+      "どれ"
+    ],
+    "answer": "これ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「___はあなたのですか？」(¿Es eso tuyo — cerca del oyente?)",
+    "options": [
+      "それ",
+      "これ",
+      "あれ",
+      "どれ"
+    ],
+    "answer": "それ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál se usa para preguntar por un lugar?",
+    "options": [
+      "どこ",
+      "どれ",
+      "どの",
+      "どう"
+    ],
+    "answer": "どこ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál se usa como pronombre para preguntar '¿cuál?'?",
+    "options": [
+      "どれ",
+      "どの",
+      "どこ",
+      "どう"
+    ],
+    "answer": "どれ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál se usa como modificador para preguntar '¿qué…?'?",
+    "options": [
+      "どの",
+      "どれ",
+      "どこ",
+      "どう"
+    ],
+    "answer": "どの"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「___本を読んでいますか？」(¿Qué libro estás leyendo?)",
+    "options": [
+      "どの",
+      "どこ",
+      "どれ",
+      "どう"
+    ],
+    "answer": "どの"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「図書館は___ですか？」(¿Dónde está la biblioteca?)",
+    "options": [
+      "どこ",
+      "どれ",
+      "どの",
+      "どう"
+    ],
+    "answer": "どこ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'esta persona' (cercana al hablante)?",
+    "options": [
+      "このひと",
+      "そのひと",
+      "あのひと",
+      "どのひと"
+    ],
+    "answer": "このひと"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'aquel edificio' (lejos de ambos)?",
+    "options": [
+      "あのビル",
+      "このビル",
+      "そのビル",
+      "どのビル"
+    ],
+    "answer": "あのビル"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'aquí' (lugar cercano al hablante)?",
+    "options": [
+      "ここ",
+      "そこ",
+      "あそこ",
+      "どこ"
+    ],
+    "answer": "ここ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'allí / ahí' (lugar cercano al oyente)?",
+    "options": [
+      "そこ",
+      "ここ",
+      "あそこ",
+      "どこ"
+    ],
+    "answer": "そこ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'allá' (lugar lejos de ambos)?",
+    "options": [
+      "あそこ",
+      "ここ",
+      "そこ",
+      "どこ"
+    ],
+    "answer": "あそこ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se expresa 'de quién' o posesión en japonés?",
+    "options": [
+      "Sustantivo + の + sustantivo",
+      "Sustantivo + が + sustantivo",
+      "Sustantivo + は + sustantivo",
+      "Sustantivo + を + sustantivo"
+    ],
+    "answer": "Sustantivo + の + sustantivo"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「これは___のですか。」(¿De quién es esto?)",
+    "options": [
+      "だれ",
+      "なに",
+      "どこ",
+      "いつ"
+    ],
+    "answer": "だれ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「わたしの___」significa:",
+    "options": [
+      "el/la mío/a",
+      "yo mismo",
+      "yo también",
+      "de mí"
+    ],
+    "answer": "el/la mío/a"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「___はやすいですか。」(¿Cuál es barato?) — pregunta por uno de una serie",
+    "options": [
+      "どれ",
+      "どこ",
+      "どの",
+      "どう"
+    ],
+    "answer": "どれ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「この___は日本語で何ですか。」(¿Cómo se dice esto en japonés?)",
+    "options": [
+      "もの / これ",
+      "どこ",
+      "どれ",
+      "それ"
+    ],
+    "answer": "もの / これ"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuándo usas あの vs. その?",
+    "options": [
+      "あの: lejos de ambos; その: cerca del oyente",
+      "あの: cerca del oyente; その: lejos de ambos",
+      "Son intercambiables",
+      "あの siempre es demostrativo de lugar"
+    ],
+    "answer": "あの: lejos de ambos; その: cerca del oyente"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "この、その、あの siempre preceden directamente a un sustantivo.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "これ、それ、あれ son modificadores que van antes de un sustantivo.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "どこ pregunta por un lugar.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "どの puede usarse solo sin sustantivo.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「あそこ」se refiere a un lugar lejano a todos los interlocutores.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「そこ」y「あそこ」son intercambiables cuando el lugar está lejos del hablante.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "の marca posesión entre dos sustantivos.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「どれ」puede referirse a uno de dos o más opciones.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___は私のかばんです。(Este es mi bolso — cerca del hablante.)",
+    "options": [
+      "これ",
+      "それ",
+      "あれ",
+      "どれ"
+    ],
+    "answer": "これ",
+    "hint": "cerca del hablante"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___の電話番号を教えてください。(Dime tu número de teléfono.)",
+    "options": [
+      "あなた",
+      "これ",
+      "それ",
+      "どこ"
+    ],
+    "answer": "あなた",
+    "hint": "posesivo con の"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "駅は___ですか。(¿Dónde está la estación?)",
+    "options": [
+      "どこ",
+      "どれ",
+      "どの",
+      "そこ"
+    ],
+    "answer": "どこ",
+    "hint": "pregunta de lugar"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___本は面白いですか。(¿Es interesante ese libro — cerca del oyente?)",
+    "options": [
+      "その",
+      "この",
+      "あの",
+      "どの"
+    ],
+    "answer": "その",
+    "hint": "serie そ- = cerca del oyente"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___に日本語の学校がありますか。(¿Hay una escuela de japonés allá?)",
+    "options": [
+      "あそこ",
+      "ここ",
+      "そこ",
+      "どこ"
+    ],
+    "answer": "あそこ",
+    "hint": "lejos de ambos"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "これはだれ___ですか。(¿De quién es esto?)",
+    "options": [
+      "の",
+      "は",
+      "が",
+      "を"
+    ],
+    "answer": "の",
+    "hint": "partícula posesiva"
+  }
 ]
