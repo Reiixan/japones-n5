@@ -9,8 +9,7 @@ export async function start(container, allItems) {
     title: 'Comprensión auditiva 聴解',
     subtitle: 'Escucha la frase y elige la respuesta correcta. Pulsa ▶ para escuchar las veces que quieras.',
     onStart: (size) => {
-      const items = selectSession(DECK, allItems, size);
-      runListening(container, items, allItems);
+      runListening(container, () => selectSession(DECK, allItems, size), allItems);
     },
   });
 }
@@ -107,10 +106,10 @@ export function examRenderer({ maxPlays } = {}) {
   };
 }
 
-function runListening(container, items, allItems) {
+function runListening(container, getItems, allItems) {
   startExercise(container, {
     deck: DECK,
-    items,
+    getItems,
     allItems,
     getItemId: it => it.id,
     ...examRenderer(),
