@@ -19,17 +19,16 @@ export async function start(container, deck, vocabItems) {
     title: 'Dictado de palabras',
     subtitle: `Ve la palabra en ${deck === 'hiragana' ? 'hiragana' : 'katakana'} con su significado y escribe su romaji.`,
     onStart: (size) => {
-      const items = selectSession(wordsDeck, filtered, size);
-      runWords(container, wordsDeck, items, filtered);
+      runWords(container, wordsDeck, () => selectSession(wordsDeck, filtered, size), filtered);
     },
   });
 }
 
-function runWords(container, deck, items, allItems) {
+function runWords(container, deck, getItems, allItems) {
   const kanaType = deck.replace('-words', '');
   startExercise(container, {
     deck,
-    items,
+    getItems,
     allItems,
     getItemId: it => it.id,
     renderPrompt(item, el) {
