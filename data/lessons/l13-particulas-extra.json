@@ -119,9 +119,9 @@
   },
   {
     "type": "example",
-    "jp": "うみへ いきたいです。",
-    "es": "Quiero ir al mar.",
-    "romaji": "Umi e ikitai desu."
+    "jp": "うみへ いきます。",
+    "es": "Voy al mar.",
+    "romaji": "Umi e ikimasu."
   },
   {
     "type": "text",
@@ -451,7 +451,7 @@
   },
   {
     "type": "exercise-mc",
-    "prompt": "「日本___行きたいです。」(Quiero ir a Japón.) ¿Qué partícula?",
+    "prompt": "「日本___行きます。」(Voy a Japón.) ¿Qué partícula?",
     "options": [
       "へ",
       "に",

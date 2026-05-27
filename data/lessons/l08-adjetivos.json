@@ -171,9 +171,9 @@
   },
   {
     "type": "example",
-    "jp": "早く起きてください。",
-    "es": "Por favor, levántate temprano.",
-    "romaji": "Hayaku okite kudasai."
+    "jp": "毎朝 早く起きます。",
+    "es": "Cada mañana me levanto temprano.",
+    "romaji": "Maiasa hayaku okimasu."
   },
   {
     "type": "text",
@@ -720,7 +720,7 @@
   },
   {
     "type": "exercise-gap",
-    "prompt": "___うみに行きたいです。(Quiero ir al mar bonito.)",
+    "prompt": "___うみに行きます。(Voy al mar bonito.)",
     "options": [
       "きれいな",
       "きれい",

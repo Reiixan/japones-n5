@@ -622,7 +622,7 @@
   },
   {
     "type": "exercise-gap",
-    "prompt": "___の電話番号を教えてください。(Dime tu número de teléfono.)",
+    "prompt": "これは ___ の本ですか。(¿Es este tu libro?)",
     "options": [
       "あなた",
       "これ",

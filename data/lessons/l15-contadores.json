@@ -444,9 +444,9 @@
   },
   {
     "type": "example",
-    "jp": "いぬを1匹かっています。",
-    "es": "Tengo un perro.",
-    "romaji": "Inu o ippiki katte imasu."
+    "jp": "いぬが1匹います。",
+    "es": "Hay un perro.",
+    "romaji": "Inu ga ippiki imasu."
   },
   {
     "type": "text",

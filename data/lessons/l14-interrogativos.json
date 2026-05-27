@@ -226,9 +226,9 @@
   },
   {
     "type": "example",
-    "jp": "いつから勉強していますか。",
-    "es": "¿Desde cuándo estudias?",
-    "romaji": "Itsu kara benkyou shite imasu ka."
+    "jp": "いつから日本語を勉強しますか。",
+    "es": "¿Desde cuándo vas a estudiar japonés?",
+    "romaji": "Itsu kara nihongo wo benkyou shimasu ka."
   },
   {
     "type": "example",
@@ -312,9 +312,9 @@
   },
   {
     "type": "example",
-    "jp": "どうして日本語を勉強していますか。",
+    "jp": "どうして日本語を勉強しますか。",
     "es": "¿Por qué estudias japonés?",
-    "romaji": "Doushite nihongo wo benkyou shite imasu ka."
+    "romaji": "Doushite nihongo wo benkyou shimasu ka."
   },
   {
     "type": "example",
@@ -774,7 +774,7 @@
   },
   {
     "type": "exercise-mc",
-    "prompt": "「___行きたいですか。」(¿A dónde quieres ir?)",
+    "prompt": "「___行きますか。」(¿A dónde vas?)",
     "options": [
       "どこに",
       "なにに",
