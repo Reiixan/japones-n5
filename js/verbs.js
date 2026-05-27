@@ -56,9 +56,10 @@ export async function start(container, allVerbs, mode) {
     title: 'Verbos 動詞',
     subtitle: 'Mira el verbo en diccionario, su grupo y la forma pedida. Elige la conjugación correcta.',
     onStart: (size) => {
-      const verbs = selectSession(DECK, allVerbs, size);
-      const items = verbs.map(v => buildItem(v, pickRandomForm()));
-      runVerbs(container, items, allVerbs);
+      runVerbs(container, () => {
+        const verbs = selectSession(DECK, allVerbs, size);
+        return verbs.map(v => buildItem(v, pickRandomForm()));
+      }, allVerbs);
     },
   });
 }
@@ -100,10 +101,10 @@ function renderModeMenu(container) {
   });
 }
 
-function runVerbs(container, items, allVerbs) {
+function runVerbs(container, getItems, allVerbs) {
   startExercise(container, {
     deck: DECK,
-    items,
+    getItems,
     allItems: allVerbs,
     getItemId: it => it.verb.id,
     renderPrompt(item, el) {

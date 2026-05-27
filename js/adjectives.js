@@ -50,9 +50,10 @@ export async function start(container, allAdj, mode) {
     title: 'Adjetivos 形容詞',
     subtitle: 'Mira el adjetivo, su tipo y la forma pedida. Elige la conjugación correcta.',
     onStart: (size) => {
-      const adjs = selectSession(DECK, allAdj, size);
-      const items = adjs.map(a => buildItem(a, pickRandomForm(a.type)));
-      runAdjectives(container, items, allAdj);
+      runAdjectives(container, () => {
+        const adjs = selectSession(DECK, allAdj, size);
+        return adjs.map(a => buildItem(a, pickRandomForm(a.type)));
+      }, allAdj);
     },
   });
 }
@@ -84,10 +85,10 @@ function renderModeMenu(container) {
   });
 }
 
-function runAdjectives(container, items, allAdj) {
+function runAdjectives(container, getItems, allAdj) {
   startExercise(container, {
     deck: DECK,
-    items,
+    getItems,
     allItems: allAdj,
     getItemId: it => it.adj.id,
     renderPrompt(item, el) {
