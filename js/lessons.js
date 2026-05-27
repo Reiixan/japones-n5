@@ -261,7 +261,9 @@ export async function renderLesson(container, id) {
   const nextLesson = index[currentIdx + 1] ?? null;
 
   const contentBlocks = blocks.filter(b => !b.type.startsWith('exercise-'));
-  const exerciseBlocks = blocks.filter(b => b.type.startsWith('exercise-'));
+  const allExercises = blocks.filter(b => b.type.startsWith('exercise-'));
+  const exerciseCount = meta.exerciseCount ?? 5;
+  const exerciseBlocks = shuffle(allExercises).slice(0, exerciseCount);
 
   container.innerHTML = `
     <div class="lesson-wrap">
@@ -513,4 +515,13 @@ function attachKanaModalHandlers(close, onKey) {
       attachKanaModalHandlers(close, onKey);
     });
   });
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
