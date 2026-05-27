@@ -17,9 +17,9 @@ export async function start(container, allItems, mode) {
       ? 'Ve la palabra japonesa y elige su significado en español.'
       : 'Ve el significado en español y elige la palabra japonesa.',
     onStart: (size) => {
-      const items = selectSession(DECK, allItems, size);
-      if (mode === 'jp-es') runJpEs(container, items, allItems);
-      else runEsJp(container, items, allItems);
+      const getItems = () => selectSession(DECK, allItems, size);
+      if (mode === 'jp-es') runJpEs(container, getItems, allItems);
+      else runEsJp(container, getItems, allItems);
     },
   });
 }
@@ -110,10 +110,10 @@ export function examRenderer() {
   };
 }
 
-function runJpEs(container, items, allItems) {
+function runJpEs(container, getItems, allItems) {
   startExercise(container, {
     deck: DECK,
-    items,
+    getItems,
     allItems,
     getItemId: it => it.id,
     ...examRenderer(),
@@ -123,10 +123,10 @@ function runJpEs(container, items, allItems) {
   });
 }
 
-function runEsJp(container, items, allItems) {
+function runEsJp(container, getItems, allItems) {
   startExercise(container, {
     deck: DECK,
-    items,
+    getItems,
     allItems,
     getItemId: it => it.id,
     renderPrompt(item, el) {
