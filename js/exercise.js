@@ -27,7 +27,8 @@ function withRomajiSuffix(text) {
 }
 
 export function startExercise(container, config) {
-  const { deck, items, allItems } = config;
+  const { deck, allItems } = config;
+  let items = config.getItems ? config.getItems() : [...(config.items ?? [])];
   let idx = 0;
   let streak = 0;
   let results = [];
@@ -205,6 +206,7 @@ export function startExercise(container, config) {
 
     document.getElementById('sum-home').addEventListener('click', () => window.navigate('/'));
     document.getElementById('sum-retry').addEventListener('click', () => {
+      items = config.getItems ? config.getItems() : shuffle(items);
       idx = 0; streak = 0; results = [];
       render();
     });
@@ -300,4 +302,13 @@ export function showSessionConfig(container, { title, subtitle, groups, toggles,
     }
     onStart(selectedSize, selectedGroups, hasToggles ? selectedToggles : null);
   });
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
