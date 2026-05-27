@@ -14,8 +14,7 @@ export async function start(container, allItems, mode) {
     title: 'Kanji N5',
     subtitle: 'Ve el kanji y elige su significado y lectura correctos.',
     onStart: (size) => {
-      const items = selectSession(DECK, allItems, size);
-      runKanji(container, items, allItems);
+      runKanji(container, () => selectSession(DECK, allItems, size), allItems);
     },
   });
 }
@@ -101,10 +100,10 @@ export function examRenderer() {
   };
 }
 
-function runKanji(container, items, allItems) {
+function runKanji(container, getItems, allItems) {
   startExercise(container, {
     deck: DECK,
-    items,
+    getItems,
     allItems,
     getItemId: it => it.id,
     ...examRenderer(),

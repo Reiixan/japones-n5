@@ -13,8 +13,7 @@ export async function start(container, allItems, mode) {
     title: 'Partículas',
     subtitle: 'Completa la oración con la partícula correcta.',
     onStart: (size) => {
-      const items = selectSession(DECK, allItems, size);
-      runParticles(container, items, allItems);
+      runParticles(container, () => selectSession(DECK, allItems, size), allItems);
     },
   });
 }
@@ -106,10 +105,10 @@ export function examRenderer() {
   };
 }
 
-function runParticles(container, items, allItems) {
+function runParticles(container, getItems, allItems) {
   startExercise(container, {
     deck: DECK,
-    items,
+    getItems,
     allItems,
     getItemId: it => it.id,
     ...examRenderer(),

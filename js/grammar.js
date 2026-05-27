@@ -13,8 +13,7 @@ export async function start(container, allItems, mode) {
     title: 'Gramática N5',
     subtitle: 'Aprende los patrones y pon a prueba tu comprensión.',
     onStart: (size) => {
-      const items = selectSession(DECK, allItems, size);
-      runGrammar(container, items, allItems);
+      runGrammar(container, () => selectSession(DECK, allItems, size), allItems);
     },
   });
 }
@@ -109,10 +108,10 @@ export function examRenderer() {
   };
 }
 
-function runGrammar(container, items, allItems) {
+function runGrammar(container, getItems, allItems) {
   startExercise(container, {
     deck: DECK,
-    items,
+    getItems,
     allItems,
     getItemId: it => it.id,
     ...examRenderer(),
