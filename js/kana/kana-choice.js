@@ -17,16 +17,15 @@ export async function start(container, deck, allItems) {
     onStart: (size, groups) => {
       const filtered = groups ? allItems.filter(it => groups.includes(it.group)) : allItems;
       if (filtered.length === 0) { alert('Selecciona al menos un grupo.'); return; }
-      const items = selectSession(deck, filtered, size);
-      runChoice(container, deck, items, allItems);
+      runChoice(container, deck, () => selectSession(deck, filtered, size), allItems);
     },
   });
 }
 
-function runChoice(container, deck, items, allItems) {
+function runChoice(container, deck, getItems, allItems) {
   startExercise(container, {
     deck,
-    items,
+    getItems,
     allItems,
     getItemId: it => it.id,
     renderPrompt(item, el) {
