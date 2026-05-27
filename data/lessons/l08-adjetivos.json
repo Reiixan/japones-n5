@@ -765,5 +765,110 @@
     ],
     "answer": "いい",
     "hint": "いい = bueno"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "El negativo pasado formal de おいしい (delicioso) es:",
+    "options": [
+      "おいしくありませんでした",
+      "おいしくなかった",
+      "おいしじゃなかったです",
+      "おいしいじゃなかった"
+    ],
+    "answer": "おいしくありませんでした"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se forma el modificador de adj-い 新しい (nuevo)?",
+    "options": [
+      "新しい本",
+      "新しな本",
+      "新しく本",
+      "新しの本"
+    ],
+    "answer": "新しい本"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se forma el modificador de adj-な 有名 (famoso)?",
+    "options": [
+      "有名な人",
+      "有名い人",
+      "有名く人",
+      "有名の人"
+    ],
+    "answer": "有名な人"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "La forma て de adj-い 寒い (frío) para enlazar es:",
+    "options": [
+      "寒くて",
+      "寒くして",
+      "寒いて",
+      "寒くに"
+    ],
+    "answer": "寒くて"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「この映画は面白くて、___です。」(Esta película es interesante y larga.) ¿Qué adjetivo completa?",
+    "options": [
+      "長い",
+      "長な",
+      "長く",
+      "長のい"
+    ],
+    "answer": "長い"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es el predicado formal de adj-な 元気 (sano, animado)?",
+    "options": [
+      "元気です",
+      "元気いです",
+      "元気くです",
+      "元気なです"
+    ],
+    "answer": "元気です"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "El pasado de いい (bueno) es いかった.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "El pasado de いい (bueno) es よかった.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "高くて es la forma て de 高い para enlazar adjetivos.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "この本は___くて、面白いです。(Este libro es nuevo e interesante.)",
+    "options": [
+      "新し",
+      "新しい",
+      "あたら",
+      "新"
+    ],
+    "answer": "新し",
+    "hint": "forma て de adj-い: quitar い + くて"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "きのうの天気は___かったです。(Ayer hizo calor — pasado formal.)",
+    "options": [
+      "あつ",
+      "あつい",
+      "あつく",
+      "あつな"
+    ],
+    "answer": "あつ",
+    "hint": "adj-い pasado: quitar い + かった"
   }
 ]
