@@ -4,9 +4,6 @@
   margin: 0 auto;
   padding: 0 1.5rem 3rem;
 }
-@media (max-width: 600px) {
-  .lesson-wrap { padding: 0 1rem 2rem; }
-}
 
 /* === Lesson header === */
 .lesson-header {
