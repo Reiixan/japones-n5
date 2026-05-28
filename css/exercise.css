@@ -13,7 +13,9 @@
   height: 100%; overflow: hidden;
 }
 @media (min-width: 900px) {
-  .ex-wrap { max-width: 640px; margin: 0 auto; }
+  .ex-wrap { max-width: 640px; margin: 0 auto; height: auto; overflow: visible; }
+  .ex-body { flex: none; overflow-y: visible; }
+  .ex-prompt { flex: none; min-height: 14rem; }
 }
 
 .ex-header {
