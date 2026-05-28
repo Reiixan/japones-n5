@@ -1,0 +1,350 @@
+[
+  {
+    "type": "text",
+    "md": "# Expresiones de tiempo relativo\n\nEl japonés tiene un sistema muy completo de adverbios temporales para situar acciones en el tiempo sin usar fechas absolutas. Dominarlos es esencial para conversar con fluidez sobre la vida cotidiana."
+  },
+  {
+    "type": "text",
+    "md": "## Hoy, ayer, mañana…\n\nEstas expresiones son **adverbios**: van al principio de la oración o antes del verbo, sin partícula (excepto con は para dar énfasis al tiempo)."
+  },
+  {
+    "type": "table",
+    "headers": ["Japonés", "Romaji", "Significado"],
+    "rows": [
+      ["おととい", "ototoi", "anteayer"],
+      ["きのう", "kinō", "ayer"],
+      ["きょう", "kyō", "hoy"],
+      ["あした", "ashita", "mañana"],
+      ["あさって", "asatte", "pasado mañana"]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "きのう、映画を見ました。",
+    "es": "Ayer vi una película.",
+    "romaji": "Kinō, eiga wo mimashita."
+  },
+  {
+    "type": "example",
+    "jp": "あした、友達に会います。",
+    "es": "Mañana quedaré con un amigo.",
+    "romaji": "Ashita, tomodachi ni aimasu."
+  },
+  {
+    "type": "note",
+    "md": "**きょう vs 今日**: ambas grafías son válidas; きょう es más informal, 今日 aparece en textos escritos. La lectura es idéntica."
+  },
+  {
+    "type": "text",
+    "md": "## Esta semana, el mes pasado…\n\nEl patrón es:\n- **今(こん/いま)** → este/a\n- **先(せん/さき)** → pasado/a (la semana/mes/año anterior)\n- **来(らい)** → próximo/a"
+  },
+  {
+    "type": "table",
+    "headers": ["Japonés", "Romaji", "Significado"],
+    "rows": [
+      ["先週", "senshū", "la semana pasada"],
+      ["今週", "konshū", "esta semana"],
+      ["来週", "raishū", "la semana que viene"],
+      ["先月", "sengetsu", "el mes pasado"],
+      ["今月", "kongetsu", "este mes"],
+      ["来月", "raigetsu", "el mes que viene"],
+      ["去年", "kyonen", "el año pasado"],
+      ["今年", "kotoshi", "este año"],
+      ["来年", "rainen", "el año que viene"]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "来週、テストがあります。",
+    "es": "La semana que viene hay un examen.",
+    "romaji": "Raishū, tesuto ga arimasu."
+  },
+  {
+    "type": "example",
+    "jp": "去年、日本語の勉強を始めました。",
+    "es": "El año pasado empecé a estudiar japonés.",
+    "romaji": "Kyonen, nihongo no benkyō wo hajimemashita."
+  },
+  {
+    "type": "note",
+    "md": "**去年** (kyonen) usa el kanji 去 («partir, irse»): el año que se fue. No sigue el patrón 先/今/来 de semana y mes."
+  },
+  {
+    "type": "text",
+    "md": "## Expresiones del mismo día\n\nPara hablar de momentos dentro del día actual:"
+  },
+  {
+    "type": "table",
+    "headers": ["Japonés", "Romaji", "Significado"],
+    "rows": [
+      ["けさ", "kesa", "esta mañana"],
+      ["きょうのひる", "kyō no hiru", "hoy al mediodía"],
+      ["こんや / こんばん", "konya / konban", "esta noche"],
+      ["さっき", "sakki", "hace un momento / antes (hoy)"],
+      ["あとで", "ato de", "después / más tarde"],
+      ["もうすぐ", "mōsugu", "pronto / enseguida"]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "けさ、コーヒーを飲みました。",
+    "es": "Esta mañana tomé café.",
+    "romaji": "Kesa, kōhī wo nomimashita."
+  },
+  {
+    "type": "example",
+    "jp": "あとで、電話します。",
+    "es": "Más tarde te llamo.",
+    "romaji": "Ato de, denwa shimasu."
+  },
+  {
+    "type": "example",
+    "jp": "もうすぐ春です。",
+    "es": "Pronto es primavera.",
+    "romaji": "Mōsugu haru desu."
+  },
+  {
+    "type": "text",
+    "md": "## もう y まだ\n\nDos palabras muy comunes que expresan la relación de una acción con el momento presente:"
+  },
+  {
+    "type": "table",
+    "headers": ["Palabra", "Con afirmativo", "Con negativo"],
+    "rows": [
+      ["もう (mō)", "ya (lo hice)", "ya no"],
+      ["まだ (mada)", "todavía (sigo)", "todavía no"]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "もう食べました。",
+    "es": "Ya comí.",
+    "romaji": "Mō tabemashita."
+  },
+  {
+    "type": "example",
+    "jp": "まだ食べていません。",
+    "es": "Todavía no he comido.",
+    "romaji": "Mada tabete imasen."
+  },
+  {
+    "type": "example",
+    "jp": "もう学生じゃありません。",
+    "es": "Ya no soy estudiante.",
+    "romaji": "Mō gakusei ja arimasen."
+  },
+  {
+    "type": "example",
+    "jp": "まだ学生です。",
+    "es": "Todavía soy estudiante.",
+    "romaji": "Mada gakusei desu."
+  },
+  {
+    "type": "note",
+    "md": "La combinación もう + negativo significa «ya no» (la acción que existía ha dejado de existir). まだ + negativo significa «todavía no» (la acción aún no ha ocurrido pero se espera)."
+  },
+  {
+    "type": "text",
+    "md": "## Frecuencia\n\nAdverbios para hablar de con qué frecuencia ocurre algo (ya vistos en la lección de verbos, aquí los consolidamos):"
+  },
+  {
+    "type": "table",
+    "headers": ["Japonés", "Romaji", "Significado", "Frecuencia aproximada"],
+    "rows": [
+      ["いつも", "itsumo", "siempre", "~100%"],
+      ["よく", "yoku", "frecuentemente", "~70–80%"],
+      ["ときどき", "tokidoki", "a veces", "~30–50%"],
+      ["たまに", "tama ni", "de vez en cuando", "~10–20%"],
+      ["あまり～ない", "amari ~ nai", "no mucho / casi nunca", "~10%"],
+      ["めったに～ない", "metta ni ~ nai", "raramente", "~5%"],
+      ["ぜんぜん～ない", "zenzen ~ nai", "nunca / para nada", "~0%"]
+    ]
+  },
+  {
+    "type": "example",
+    "jp": "毎朝、コーヒーを飲みます。",
+    "es": "Cada mañana bebo café.",
+    "romaji": "Maiasa, kōhī wo nomimasu."
+  },
+  {
+    "type": "example",
+    "jp": "ときどき、映画を見ます。",
+    "es": "A veces veo películas.",
+    "romaji": "Tokidoki, eiga wo mimasu."
+  },
+  {
+    "type": "example",
+    "jp": "あまり肉を食べません。",
+    "es": "No como mucha carne.",
+    "romaji": "Amari niku wo tabemasen."
+  },
+  {
+    "type": "note",
+    "md": "**毎～** (まい~) = «cada / todos los»: 毎日 (todos los días), 毎朝 (cada mañana), 毎週 (cada semana), 毎月 (cada mes), 毎年 (cada año). Muy productivo: solo cambia el kanji de tiempo."
+  },
+  {
+    "type": "text",
+    "md": "## Combinar tiempo relativo con fecha\n\nSe puede combinar una expresión relativa con el día de la semana:\n\n**先週の月曜日** — el lunes pasado\n**来月の十五日** — el quince del mes que viene\n**今年の夏** — el verano de este año"
+  },
+  {
+    "type": "example",
+    "jp": "来週の土曜日に映画を見ます。",
+    "es": "El sábado que viene veré una película.",
+    "romaji": "Raishū no doyōbi ni eiga wo mimasu."
+  },
+  {
+    "type": "example",
+    "jp": "先月の十日に日本に来ました。",
+    "es": "El día diez del mes pasado llegué a Japón.",
+    "romaji": "Sengetsu no tōka ni nihon ni kimashita."
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'el año pasado' en japonés?",
+    "options": ["去年", "今年", "来年", "先年"],
+    "answer": "去年"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'la semana que viene'?",
+    "options": ["来週", "今週", "先週", "毎週"],
+    "answer": "来週"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'ayer'?",
+    "options": ["きのう", "きょう", "あした", "おととい"],
+    "answer": "きのう"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'pasado mañana'?",
+    "options": ["あさって", "あした", "おととい", "きょう"],
+    "answer": "あさって"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「もう食べました」significa:",
+    "options": ["Ya comí", "Todavía no he comido", "Como a menudo", "No como"],
+    "answer": "Ya comí"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「まだ食べていません」significa:",
+    "options": ["Todavía no he comido", "Ya comí", "No como nunca", "Siempre como"],
+    "answer": "Todavía no he comido"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Qué adverbio indica frecuencia baja pero no cero?",
+    "options": ["たまに", "いつも", "よく", "ぜんぜん"],
+    "answer": "たまに"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'cada mañana'?",
+    "options": ["毎朝", "今朝", "先週", "あした"],
+    "answer": "毎朝"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "来月 significa 'el mes pasado'.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "先週, 先月 y 去年 siguen todos el mismo patrón de kanji.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "もう + negativo significa 'ya no'.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "まだ + negativo significa 'todavía no'.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "ぜんぜん siempre va acompañado de una forma negativa.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "けさ significa 'esta tarde'.",
+    "answer": false
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___、図書館で勉強しました。(Ayer estudié en la biblioteca.)",
+    "options": ["きのう", "あした", "来週", "先月"],
+    "answer": "きのう",
+    "hint": "ayer = きのう"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___、テストがあります。(La semana que viene hay un examen.)",
+    "options": ["来週", "先週", "今週", "毎週"],
+    "answer": "来週",
+    "hint": "semana que viene = 来週"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___映画を見ます。(A veces veo películas.)",
+    "options": ["ときどき", "いつも", "まだ", "もう"],
+    "answer": "ときどき",
+    "hint": "a veces = ときどき"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___、電話します。(Luego te llamo.)",
+    "options": ["あとで", "さっき", "もうすぐ", "まだ"],
+    "answer": "あとで",
+    "hint": "después = あとで"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___日本語を勉強していません。(Todavía no estudio japonés.)",
+    "options": ["まだ", "もう", "いつも", "よく"],
+    "answer": "まだ",
+    "hint": "todavía no = まだ + negativo"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'hace un momento' (hoy mismo, muy reciente)?",
+    "options": ["さっき", "あとで", "まだ", "もう"],
+    "answer": "さっき"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'este mes'?",
+    "options": ["今月", "来月", "先月", "毎月"],
+    "answer": "今月"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la lectura de 今年?",
+    "options": ["ことし", "こんねん", "らいねん", "きょねん"],
+    "answer": "ことし"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la lectura de 去年?",
+    "options": ["きょねん", "ことし", "らいねん", "さくねん"],
+    "answer": "きょねん"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "Completa: 「___よく映画を見ます。」(Frecuentemente veo películas.)",
+    "options": ["よく", "まだ", "もう", "あとで"],
+    "answer": "よく"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cómo se dice 'esta noche'?",
+    "options": ["こんや", "けさ", "きょう", "あした"],
+    "answer": "こんや"
+  }
+]

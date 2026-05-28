@@ -31,6 +31,25 @@
   {"type":"example","jp":"これはおもしろいですね。","es":"Esto es interesante, ¿verdad?","romaji":"Kore wa omoshiroi desu ne."},
   {"type":"example","jp":"田中さんは先生ですよ。","es":"El señor Tanaka es profesor, ¿sabes?","romaji":"Tanaka-san wa sensei desu yo."},
   {"type":"note","md":"**Nota cultural**: El japonés no distingue 'ser' de 'estar' como el español. **です** cubre ambos en la mayoría de los contextos. 'Soy alto' y 'estoy aquí' se expresan con distintas estructuras, pero la cópula des gestiona el predicado nominal en los dos casos."},
+
+  {"type":"text","md":"## Pronombres personales y su omisión\n\nEl japonés tiene pronombres personales, pero la norma es **omitirlos** cuando el referente se deduce del contexto. Esto no es opcional ni informal — es la forma natural de hablar."},
+  {"type":"table","headers":["Persona","Japonés","Romaji","Nota"],"rows":[
+    ["yo (formal)","わたし","watashi","el más neutro y seguro para estudiantes"],
+    ["yo (m. informal)","ぼく","boku","usado por hombres jóvenes o niños"],
+    ["yo (f. informal)","あたし","atashi","forma femenina relajada"],
+    ["tú","あなた","anata","suena frío o brusco; casi nunca se usa entre conocidos"],
+    ["él","かれ","kare","también significa 'novio'"],
+    ["ella","かのじょ","kanojo","también significa 'novia'"],
+    ["nosotros","わたしたち","watashitachi","formal"],
+    ["ellos/as","かれら","karera","poco frecuente; se prefiere repetir el nombre o añadir ～たち"]
+  ]},
+  {"type":"note","md":"**Regla práctica**: en cuanto el contexto deja claro de quién se habla, elimina el pronombre. En lugar de あなた, usa siempre el nombre con el sufijo de cortesía: **田中さんは学生ですか。** (¿El señor Tanaka es estudiante?) En lugar de あなたは, simplemente di **学生ですか。**"},
+  {"type":"example","jp":"（わたしは）学生です。","es":"(Yo) soy estudiante. — El pronombre se omite casi siempre.","romaji":"(Watashi wa) gakusei desu."},
+  {"type":"example","jp":"田中さんは先生ですか。","es":"¿El señor Tanaka es profesor? — Se usa el nombre, nunca あなた.","romaji":"Tanaka-san wa sensei desu ka."},
+  {"type":"exercise-mc","prompt":"¿Cuál es la forma más natural de decir '¿Eres estudiante?' en japonés cuando le hablas a Tanaka?","options":["田中さんは学生ですか","あなたは学生ですか","かれは学生ですか","わたしは学生ですか"],"answer":"田中さんは学生ですか"},
+  {"type":"exercise-tf","statement":"En japonés es incorrecto omitir わたし cuando el hablante queda claro por el contexto.","answer":false},
+  {"type":"exercise-mc","prompt":"¿Por qué se evita あなた en japonés cotidiano?","options":["Suena distante o brusco entre conocidos","Es demasiado formal","Solo existe en escritura formal","Es solo para hombres"],"answer":"Suena distante o brusco entre conocidos"},
+
   {"type":"exercise-mc","prompt":"¿Cuál es la negación FORMAL de ～です?","options":["ではありません","じゃない","だった","でした"],"answer":"ではありません"},
   {"type":"exercise-mc","prompt":"'Era un libro' en japonés:","options":["本でした","本です","本じゃない","本だった"],"answer":"本でした"},
   {"type":"exercise-mc","prompt":"'¿Eres estudiante?' en japonés:","options":["学生ですか","学生でした","学生ではありません","学生だった"],"answer":"学生ですか"},

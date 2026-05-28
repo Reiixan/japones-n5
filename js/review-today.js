@@ -1,5 +1,14 @@
 import { getProgress } from './storage.js?v=2';
 
+const DECK_LABELS = {
+  vocab:      { label: 'Vocabulario',  path: '/vocab/jp-es' },
+  kanji:      { label: 'Kanji N5',     path: '/kanji/practice' },
+  particles:  { label: 'Partículas',   path: '/particles/practice' },
+  grammar:    { label: 'Gramática',    path: '/grammar/practice' },
+  verbs:      { label: 'Verbos',       path: '/verbs/practice' },
+  adjectives: { label: 'Adjetivos',   path: '/adjectives/practice' },
+};
+
 const DATA_FILES = [
   { deck: 'vocab', file: 'vocab-n5.json' },
   { deck: 'kanji', file: 'kanji-n5.json' },
@@ -117,17 +126,22 @@ export async function start(container) {
       </header>
       <main class="review-body">
         <div class="review-summary">
-          <div class="review-total">${due.length} repasos vencidos</div>
+          <div class="review-total">${due.length} repaso${due.length === 1 ? '' : 's'} vencido${due.length === 1 ? '' : 's'}</div>
           <ul class="review-breakdown">
-            ${Object.entries(byDeck).map(([deck, count]) => `<li><strong>${deck}</strong>: ${count}</li>`).join('')}
+            ${Object.entries(byDeck).sort((a, b) => b[1] - a[1]).map(([deck, count]) => {
+              const info = DECK_LABELS[deck] || { label: deck, path: '/' + deck };
+              return `<li class="review-deck-row">
+                <span><strong>${info.label}</strong>: ${count}</span>
+                <button class="btn-secondary btn-sm review-deck-btn" data-path="${info.path}">Repasar →</button>
+              </li>`;
+            }).join('')}
           </ul>
-          <p class="review-note">
-            <small>El repaso unificado todavía no orquesta todos los tipos de ejercicio.
-            Por ahora ve al bloque que más vencidos tenga: arriba ${Object.entries(byDeck).sort((a,b) => b[1]-a[1])[0][0]}.</small>
-          </p>
         </div>
       </main>
     </div>
   `;
   document.getElementById('rev-back').addEventListener('click', () => window.navigate('/'));
+  container.querySelectorAll('.review-deck-btn').forEach(btn => {
+    btn.addEventListener('click', () => window.navigate(btn.dataset.path));
+  });
 }

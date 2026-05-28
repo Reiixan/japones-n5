@@ -1,0 +1,232 @@
+[
+  {
+    "type": "text",
+    "md": "# ～のとき、～前に、～後で\n\nEstas tres estructuras permiten situar una acción **en relación a otra**: «cuando hago X», «antes de hacer X», «después de hacer X». Son esenciales para narrar secuencias y describir rutinas."
+  },
+  {
+    "type": "text",
+    "md": "## ～のとき — «cuando»\n\n**とき** (時) significa literalmente «momento» o «tiempo». La estructura **[referencia] + のとき** equivale a «cuando…». El tipo de referencia cambia la forma que la precede."
+  },
+  {
+    "type": "table",
+    "headers": ["Tipo de referencia", "Forma", "Ejemplo"],
+    "rows": [
+      ["Sustantivo", "N + のとき", "子供のとき (cuando era niño)"],
+      ["Adjetivo-い", "adj-い + とき", "忙しいとき (cuando estoy ocupado)"],
+      ["Adjetivo-な", "adj-な + なとき", "暇なとき (cuando tengo tiempo)"],
+      ["Verbo (acción habitual/futura)", "V辞書形 + とき", "食べるとき (cuando como)"],
+      ["Verbo (acción ya completada)", "Vた + とき", "食べたとき (cuando (ya) comí)"]
+    ]
+  },
+  {
+    "type": "note",
+    "md": "**V辞書形 + とき vs Vた + とき**: la diferencia es si la acción del とき-clause ya ha terminado o no al producirse la acción principal.\n- 日本に**行く**とき、お土産を買います → *Cuando vaya* a Japón (todavía no he ido), compro souvenirs.\n- 日本に**行った**とき、お土産を買いました → *Cuando fui* a Japón (ya fui), compré souvenirs."
+  },
+  {
+    "type": "example",
+    "jp": "子供のとき、よく公園で遊びました。",
+    "es": "Cuando era niño, jugaba mucho en el parque.",
+    "romaji": "Kodomo no toki, yoku kōen de asobimashita."
+  },
+  {
+    "type": "example",
+    "jp": "暇なとき、本を読みます。",
+    "es": "Cuando tengo tiempo libre, leo libros.",
+    "romaji": "Hima na toki, hon wo yomimasu."
+  },
+  {
+    "type": "example",
+    "jp": "困ったとき、先生に聞いてください。",
+    "es": "Cuando tengas problemas, pregúntale al profesor.",
+    "romaji": "Komatta toki, sensei ni kiite kudasai."
+  },
+  {
+    "type": "example",
+    "jp": "日本に来たとき、富士山を見ました。",
+    "es": "Cuando vine a Japón, vi el monte Fuji.",
+    "romaji": "Nihon ni kita toki, Fujisan wo mimashita."
+  },
+  {
+    "type": "text",
+    "md": "## ～前に — «antes de»\n\n**前に** (まえに) significa «antes de». Lo que precede a 前に es siempre la **forma diccionario del verbo** (o un sustantivo + の).\n\nEstructura: **V辞書形 + 前に** / **N + の + 前に**"
+  },
+  {
+    "type": "example",
+    "jp": "寝る前に、歯を磨きます。",
+    "es": "Antes de dormir, me lavo los dientes.",
+    "romaji": "Neru mae ni, ha wo migakimasu."
+  },
+  {
+    "type": "example",
+    "jp": "食事の前に、手を洗ってください。",
+    "es": "Antes de la comida, lávese las manos.",
+    "romaji": "Shokuji no mae ni, te wo aratte kudasai."
+  },
+  {
+    "type": "example",
+    "jp": "旅行の前に、パスポートを確認しました。",
+    "es": "Antes del viaje, comprobé el pasaporte.",
+    "romaji": "Ryokō no mae ni, pasupōto wo kakunin shimashita."
+  },
+  {
+    "type": "note",
+    "md": "**Clave**: 前に siempre usa V辞書形 (forma presente/diccionario), aunque la oración principal esté en pasado. No se usa Vた前に — eso sería un error frecuente."
+  },
+  {
+    "type": "text",
+    "md": "## ～後で — «después de»\n\n**後で** (あとで) significa «después de». Lo que precede a 後で es el **verbo en forma た** (o un sustantivo + の).\n\nEstructura: **Vた + 後で** / **N + の + 後で**"
+  },
+  {
+    "type": "example",
+    "jp": "宿題をした後で、テレビを見ます。",
+    "es": "Después de hacer los deberes, veré la tele.",
+    "romaji": "Shukudai wo shita ato de, terebi wo mimasu."
+  },
+  {
+    "type": "example",
+    "jp": "授業の後で、友達とご飯を食べました。",
+    "es": "Después de clase, comí con amigos.",
+    "romaji": "Jugyō no ato de, tomodachi to gohan wo tabemashita."
+  },
+  {
+    "type": "example",
+    "jp": "シャワーを浴びた後で、寝ます。",
+    "es": "Después de ducharme, me voy a dormir.",
+    "romaji": "Shawā wo abita ato de, nemasu."
+  },
+  {
+    "type": "note",
+    "md": "**後で vs てから**: てから también expresa secuencia (hacer A y luego B), pero enfatiza que B es consecuencia directa o sigue inmediatamente a A. 後で es más neutro y permite más distancia temporal entre las dos acciones."
+  },
+  {
+    "type": "table",
+    "headers": ["Estructura", "Forma que precede", "Ejemplo"],
+    "rows": [
+      ["～のとき", "N/adj/V辞書形/Vた", "食べるとき / 食べたとき"],
+      ["～前に", "V辞書形 / N+の", "食べる前に / 食事の前に"],
+      ["～後で", "Vた / N+の", "食べた後で / 食事の後で"]
+    ]
+  },
+  {
+    "type": "text",
+    "md": "## ～てから — «después de (y luego)»\n\n**てから** sigue directamente a la **forma て** del verbo. Expresa que la acción B ocurre justo después o como resultado directo de la acción A. Más secuencial que 後で."
+  },
+  {
+    "type": "example",
+    "jp": "家に帰ってから、手を洗います。",
+    "es": "Después de llegar a casa, me lavo las manos.",
+    "romaji": "Ie ni kaette kara, te wo araimasu."
+  },
+  {
+    "type": "example",
+    "jp": "大学を卒業してから、日本に行きたいです。",
+    "es": "Después de graduarme en la universidad, quiero ir a Japón.",
+    "romaji": "Daigaku wo sotsugyō shite kara, nihon ni ikitai desu."
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la traducción de「寝る前に歯を磨きます」?",
+    "options": [
+      "Antes de dormir me lavo los dientes",
+      "Después de dormir me lavo los dientes",
+      "Cuando duermo me lavo los dientes",
+      "Me lavo los dientes y luego duermo"
+    ],
+    "answer": "Antes de dormir me lavo los dientes"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "Para decir 'cuando era niño' en japonés, ¿qué estructura usas?",
+    "options": ["子供のとき", "子供の前に", "子供の後で", "子供てから"],
+    "answer": "子供のとき"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "宿題を___後で、ゲームをしました。(Después de hacer los deberes, jugué.)",
+    "options": ["した", "する", "して", "しない"],
+    "answer": "した",
+    "hint": "後で → Vた"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___前に、手を洗います。(Antes de comer, me lavo las manos.)",
+    "options": ["食べる", "食べた", "食べて", "食べない"],
+    "answer": "食べる",
+    "hint": "前に → V辞書形"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "前に siempre usa la forma た del verbo.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "後で siempre usa la forma た del verbo.",
+    "answer": true
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「困ったとき」significa:",
+    "options": [
+      "Cuando hay problemas (ya ocurrió la dificultad)",
+      "Antes de tener problemas",
+      "Después de resolver el problema",
+      "Si no hay problemas"
+    ],
+    "answer": "Cuando hay problemas (ya ocurrió la dificultad)"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la forma correcta para 'antes de dormir'?",
+    "options": ["寝る前に", "寝た前に", "寝て前に", "寝ない前に"],
+    "answer": "寝る前に"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la forma correcta para 'después de comer'?",
+    "options": ["食べた後で", "食べる後で", "食べて後で", "食べない後で"],
+    "answer": "食べた後で"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "てから y 後で son completamente sinónimos en todos los contextos.",
+    "answer": false
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「暇なとき」usa la forma な porque 暇 es adjetivo-な.",
+    "answer": true
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "授業___後で、図書館に行きます。(Después de clase voy a la biblioteca.)",
+    "options": ["の", "に", "で", "が"],
+    "answer": "の",
+    "hint": "sustantivo + の後で"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「日本に行くとき」vs「日本に行ったとき」— ¿cuál implica que ya viajaste?",
+    "options": [
+      "行ったとき (forma た = acción completada)",
+      "行くとき (forma diccionario)",
+      "Ambas implican lo mismo",
+      "Ninguna implica que viajaste"
+    ],
+    "answer": "行ったとき (forma た = acción completada)"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "___とき、よく音楽を聴きます。(Cuando estoy triste, escucho música.)",
+    "options": ["悲しい", "悲しな", "悲しだ", "悲しく"],
+    "answer": "悲しい",
+    "hint": "adj-い + とき (sin の)"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "Completa: 「家に帰って___、宿題をします。」(Después de llegar a casa, haré los deberes.)",
+    "options": ["から", "前に", "後で", "とき"],
+    "answer": "から",
+    "hint": "帰って + から = てから"
+  }
+]

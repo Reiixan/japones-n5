@@ -1,4 +1,4 @@
-import { recordAnswer, recordTimings } from './storage.js?v=2';
+import { recordAnswer, recordTimings, recordRecentError } from './storage.js?v=2';
 import { speak } from './tts.js';
 import { isRomajiOn, kanaToRomaji } from './romaji.js';
 import { recordPracticeTick } from './daily.js';
@@ -113,6 +113,7 @@ export function startExercise(container, config) {
     } else {
       recordAnswer(deck, config.getItemId(item), correct);
     }
+    if (!correct) recordRecentError(deck, config.getItemId(item), config.getCorrectDisplay(item));
     results.push({ item, correct, answer, ms });
     if (correct) recordPracticeTick();
 

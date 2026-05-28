@@ -49,6 +49,10 @@ export async function renderStats(container) {
             <input type="checkbox" id="pref-romaji" ${romajiChecked}>
             <span>Mostrar romaji en vocabulario y kanji</span>
           </label>
+          <label class="pref-row">
+            <input type="checkbox" id="pref-dark" ${document.documentElement.dataset.theme === 'dark' ? 'checked' : ''}>
+            <span>Modo oscuro</span>
+          </label>
           <div class="pref-row pref-row-col">
             <label for="pref-goal">Meta diaria de respuestas</label>
             <select id="pref-goal" class="pref-select">
@@ -77,6 +81,15 @@ export async function renderStats(container) {
   const prefRomaji = document.getElementById('pref-romaji');
   if (prefRomaji) {
     prefRomaji.addEventListener('change', () => setRomajiOn(prefRomaji.checked));
+  }
+
+  const prefDark = document.getElementById('pref-dark');
+  if (prefDark) {
+    prefDark.addEventListener('change', () => {
+      const theme = prefDark.checked ? 'dark' : 'light';
+      document.documentElement.dataset.theme = theme;
+      localStorage.setItem('jp_n5_theme', theme);
+    });
   }
 
   const prefGoal = document.getElementById('pref-goal');

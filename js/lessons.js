@@ -1,5 +1,27 @@
 import { recordPracticeTick } from './daily.js';
 import { renderSpeakButton, attachSpeakHandler } from './tts.js';
+import { primeDeckNewItems } from './storage.js?v=2';
+
+const DECK_FILE = {
+  hiragana:   'hiragana.json',
+  katakana:   'katakana.json',
+  vocab:      'vocab-n5.json',
+  kanji:      'kanji-n5.json',
+  particles:  'particles.json',
+  grammar:    'grammar-n5.json',
+  verbs:      'verbs-n5.json',
+  adjectives: 'adjectives-n5.json',
+};
+
+async function primeBlockAfterLesson(blockId) {
+  const file = DECK_FILE[blockId];
+  if (!file) return;
+  try {
+    const items = await fetch(`./data/${file}`).then(r => r.json());
+    const filtered = blockId === 'grammar' ? items.filter(g => g.level === 'n5') : items;
+    primeDeckNewItems(blockId, filtered);
+  } catch (_) {}
+}
 
 // ─── parseMd ──────────────────────────────────────────────────────────────────
 // Markdown básico: **negrita**, *cursiva*, `código`, párrafos, listas con "- "
@@ -311,6 +333,7 @@ export async function renderLesson(container, id) {
 
   document.getElementById('lesson-mark-done').addEventListener('click', () => {
     setLessonCompleted(id);
+    primeBlockAfterLesson(meta.blockId);
     document.getElementById('lesson-mark-done').textContent = '✓ Completada';
     document.getElementById('lesson-mark-done').disabled = true;
   });

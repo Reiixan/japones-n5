@@ -9,10 +9,12 @@
   { "id": "l08-adjetivos",       "blockId": "adjectives", "title": "Adjetivos い y な",                      "topic": "gramática",   "estimatedMin": 9,  "exerciseCount": 7  },
   { "id": "l06-particulas",      "blockId": "particles",  "title": "Partículas は、が、を、に、で",              "topic": "gramática",   "estimatedMin": 12, "exerciseCount": 10 },
   { "id": "l10-existencia",      "blockId": "grammar",    "title": "Existencia: あります e います",              "topic": "gramática",   "estimatedMin": 9,  "exerciseCount": 5  },
+  { "id": "l17-tiempo-relativo", "blockId": "vocab",      "title": "Tiempo relativo: ayer, mañana, ya, todavía", "topic": "vocabulario", "estimatedMin": 10, "exerciseCount": 10 },
   { "id": "l15-contadores",      "blockId": "vocab",      "title": "Contadores: ~つ, 人, 枚, 本 y más",       "topic": "vocabulario", "estimatedMin": 10, "exerciseCount": 10 },
   { "id": "l13-particulas-extra","blockId": "particles",  "title": "Partículas も、と、から、まで、で、へ",     "topic": "gramática",   "estimatedMin": 10, "exerciseCount": 10 },
   { "id": "l14-interrogativos",  "blockId": "grammar",    "title": "Interrogativos: qué, quién, dónde…",     "topic": "gramática",   "estimatedMin": 10, "exerciseCount": 7  },
   { "id": "l11-forma-te",        "blockId": "verbs",      "title": "La forma て: enlazar y pedir",           "topic": "gramática",   "estimatedMin": 11, "exerciseCount": 10 },
   { "id": "l12-deseos-negacion", "blockId": "verbs",      "title": "Deseos (~たい) y negación informal",     "topic": "gramática",   "estimatedMin": 10, "exerciseCount": 7  },
-  { "id": "l16-kanji",           "blockId": "kanji",      "title": "Introducción a los kanji N5",           "topic": "escritura",   "estimatedMin": 12, "exerciseCount": 7  }
+  { "id": "l16-kanji",           "blockId": "kanji",      "title": "Introducción a los kanji N5",           "topic": "escritura",   "estimatedMin": 12, "exerciseCount": 7  },
+  { "id": "l18-toki-maeni-atode","blockId": "grammar",    "title": "～のとき、～前に y ～後で",                 "topic": "gramática",   "estimatedMin": 10, "exerciseCount": 8  }
 ]

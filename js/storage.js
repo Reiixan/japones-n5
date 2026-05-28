@@ -120,3 +120,34 @@ export function getAvgTiming(deck) {
   if (arr.length === 0) return null;
   return Math.round(arr.reduce((s, x) => s + x, 0) / arr.length);
 }
+
+// Marks all new (never-seen) items in a deck as due now, so the next SRS
+// session surfaces them immediately after completing a lesson.
+export function primeDeckNewItems(deck, items, now = Date.now()) {
+  for (const item of items) {
+    const p = getProgress(deck, item.id);
+    if (p.lastSeen === null && p.dueAt === null) {
+      p.dueAt = now;
+      localStorage.setItem(key(deck, item.id), JSON.stringify(p));
+    }
+  }
+}
+
+const ERRORS_KEY = `${NS}.recent_errors`;
+const ERRORS_MAX = 30;
+
+export function recordRecentError(deck, itemId, display) {
+  const list = JSON.parse(localStorage.getItem(ERRORS_KEY) || '[]');
+  // Remove existing entry for this item (avoid duplicates)
+  const filtered = list.filter(e => !(e.deck === deck && e.id === itemId));
+  filtered.unshift({ deck, id: itemId, display, ts: Date.now() });
+  localStorage.setItem(ERRORS_KEY, JSON.stringify(filtered.slice(0, ERRORS_MAX)));
+}
+
+export function getRecentErrors() {
+  return JSON.parse(localStorage.getItem(ERRORS_KEY) || '[]');
+}
+
+export function clearRecentErrors() {
+  localStorage.removeItem(ERRORS_KEY);
+}

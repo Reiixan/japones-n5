@@ -1,4 +1,4 @@
-import { getDeckStats } from './storage.js?v=2';
+import { getDeckStats, getRecentErrors } from './storage.js?v=2';
 import { collectDueItems } from './review-today.js';
 import { getDailyState } from './daily.js';
 
@@ -172,6 +172,7 @@ export async function renderHome(container) {
             <button class="btn-icon" id="home-theme" title="Tema">🌙</button>
           </div>
         </header>
+        <div id="errors-card-wrap"></div>
         <div class="review-card" data-path="/review" role="button" tabindex="0" aria-label="Repaso de hoy" style="animation-delay:.08s">
           <div class="review-card-icon">🌅</div>
           <div class="review-card-text">
@@ -205,6 +206,22 @@ export async function renderHome(container) {
 
   document.getElementById('home-stats').addEventListener('click', () => window.navigate('/stats'));
   document.getElementById('home-theme').addEventListener('click', toggleTheme);
+
+  const recentErrors = getRecentErrors();
+  const errWrap = document.getElementById('errors-card-wrap');
+  if (recentErrors.length > 0 && errWrap) {
+    errWrap.innerHTML = `
+      <div class="errors-card" style="animation-delay:.06s">
+        <div class="errors-card-icon">🔁</div>
+        <div class="errors-card-text">
+          <div class="errors-card-title">Para repasar</div>
+          <div class="errors-card-items">
+            ${recentErrors.slice(0, 10).map(e => `<span class="errors-tag">${e.display}</span>`).join('')}
+            ${recentErrors.length > 10 ? `<span class="errors-tag errors-tag-more">+${recentErrors.length - 10}</span>` : ''}
+          </div>
+        </div>
+      </div>`;
+  }
 
   const reviewCard = container.querySelector('.review-card');
   if (reviewCard) activate(reviewCard, () => window.navigate('/review'));

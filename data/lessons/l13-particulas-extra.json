@@ -219,6 +219,65 @@
     "type": "note",
     "md": "しか siempre exige una forma negativa en el predicado (ません / ない). Nunca aparece con una forma afirmativa."
   },
+
+  {
+    "type": "text",
+    "md": "## ので — «porque» (causa formal)\n\n**ので** expresa causa o razón igual que から, pero con un tono más **suave y formal**. Se prefiere en situaciones de cortesía, en textos escritos y cuando se quiere dar una explicación sin sonar brusco.\n\n| | から | ので |\n|---|---|---|\n| Tono | conversacional, directo | suave, formal |\n| Uso | habla cotidiana | situaciones formales, escritura |\n| Registro | informal→formal | formal→muy formal |\n\nEstructura: **[causa] ので、[resultado]**\n\nAtención gramatical: adj-な y sustantivos requieren **な** antes de ので: 好き**な**ので, 雨**な**ので."
+  },
+  {
+    "type": "example",
+    "jp": "雨が降っているので、傘を持ちます。",
+    "es": "Como está lloviendo, llevaré paraguas.",
+    "romaji": "Ame ga futte iru node, kasa wo mochimasu."
+  },
+  {
+    "type": "example",
+    "jp": "忙しいので、行けません。",
+    "es": "Como estoy ocupado/a, no puedo ir.",
+    "romaji": "Isogashii node, ikemasen."
+  },
+  {
+    "type": "example",
+    "jp": "日本語が好きなので、毎日勉強します。",
+    "es": "Como me gusta el japonés, estudio todos los días.",
+    "romaji": "Nihongo ga suki na node, mainichi benkyou shimasu."
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "¿Cuál es la diferencia principal entre から y ので al expresar causa?",
+    "options": [
+      "ので es más formal y suave; から es más directo",
+      "から es más formal; ので es informal",
+      "Son completamente sinónimos",
+      "ので solo se usa en preguntas"
+    ],
+    "answer": "ので es más formal y suave; から es más directo"
+  },
+  {
+    "type": "exercise-gap",
+    "prompt": "忙しい___、行けません。(Como estoy ocupado, no puedo ir — formal)",
+    "options": ["ので", "から", "まで", "より"],
+    "answer": "ので",
+    "hint": "formal = ので"
+  },
+  {
+    "type": "exercise-mc",
+    "prompt": "「日本語が好き___、毎日勉強します。」¿Qué partícula (adj-な)?",
+    "options": ["なので", "ので", "からで", "のため"],
+    "answer": "なので",
+    "hint": "adj-な → な + ので = なので"
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "ので puede usarse tanto en el habla cotidiana como en textos formales.",
+    "answer": true
+  },
+  {
+    "type": "exercise-tf",
+    "statement": "「暑いので」es incorrecto; debería ser「暑いなので」.",
+    "answer": false
+  },
+
   {
     "type": "table",
     "headers": [
