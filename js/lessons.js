@@ -331,11 +331,13 @@ export async function renderLesson(container, id) {
     document.getElementById('lesson-completion').classList.add('visible');
   }
 
-  document.getElementById('lesson-mark-done').addEventListener('click', () => {
+  document.getElementById('lesson-mark-done').addEventListener('click', async () => {
     setLessonCompleted(id);
     primeBlockAfterLesson(meta.blockId);
     document.getElementById('lesson-mark-done').textContent = '✓ Completada';
     document.getElementById('lesson-mark-done').disabled = true;
+    const { pushProgress } = await import('./auth.js');
+    pushProgress();
   });
 
   if (progress?.status === 'completed') {
