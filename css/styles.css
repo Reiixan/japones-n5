@@ -540,13 +540,13 @@ ul { list-style: none; }
 /* Botón de cuenta: se expande con texto cuando no hay sesión */
 #home-auth {
   position: relative;
-  display: flex;
-  align-items: center;
-  gap: .35rem;
-  padding: .35rem .6rem;
+  width: auto;
+  height: auto;
   border-radius: var(--radius-sm);
+  padding: .35rem .6rem;
   font-size: .8rem;
   font-weight: 500;
+  gap: .3rem;
   color: var(--text-muted);
   border: 1px solid var(--border);
   background: var(--bg);
@@ -554,9 +554,12 @@ ul { list-style: none; }
 }
 #home-auth:hover { background: var(--bg-hover); color: var(--text); }
 #home-auth.auth-logged-in {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  padding: 0;
   border-color: transparent;
-  background: none;
-  padding: .35rem .4rem;
+  background: var(--bg-hover);
 }
 #home-auth.auth-logged-in::after {
   content: '';
