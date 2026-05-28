@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 # Guía del proyecto japones-n5
 
-Webapp personal de Hugo para preparar el JLPT N5. Vanilla JS sin build, servida con `python3 -m http.server`. Pensada para usarse en escritorio y móvil (en LAN). Sin backend ni cuentas: el progreso vive en `localStorage` del navegador.
+Webapp personal de Hugo para preparar el JLPT N5. Vanilla JS sin build, desplegada en GitHub Pages. Sin backend ni cuentas: el progreso vive en `localStorage` del navegador.
 
 ## Arquitectura en 30 segundos
 
 Tres capas, todas viven en el navegador:
 
-1. **Datos** — `data/*.json`: un fichero por bloque (hiragana, katakana, vocab, kanji, partículas, gramática, listening, reading, verbs, adjectives). IDs estables; el SRS y los stats dependen de ellos.
+1. **Datos** — `data/*.json`: un fichero por bloque (hiragana, katakana, vocab, kanji, partículas, gramática, listening, reading, verbs, adjectives) y `data/lessons/*.json` para las lecciones estructuradas. IDs estables; el SRS y los stats dependen de ellos.
 2. **Módulo del bloque** — `js/<bloque>.js`: un módulo por bloque que expone `start(container, allItems)`. No implementa el motor; configura hooks y delega.
 3. **Motor compartido** — `js/exercise.js` (loop de pregunta/respuesta/feedback), `js/srs.js` (Leitner 5 cajas en `localStorage`), `js/tts.js` (audio japonés con fallback MP3). Lo reutilizan todos los bloques.
 
@@ -18,13 +18,17 @@ Añadir un bloque = añadir un `data/*.json` + un `js/<bloque>.js` + 3 ediciones
 
 ## Servir
 
+La app está desplegada en **GitHub Pages**: https://reiixan.github.io/japones-n5/
+
+- Repositorio: https://github.com/reiixan/japones-n5
+- Tests: `https://reiixan.github.io/japones-n5/test/`
+
+Para desarrollo local (opcional):
 ```bash
-cd /home/hugo/japones-n5 && python3 -m http.server 8765 --bind 0.0.0.0
+cd C:\Users\Hugo\japones-n5 && python3 -m http.server 8765 --bind 0.0.0.0
 ```
 
-- Local: `http://localhost:8765/`
-- LAN (móvil en la misma WiFi): `http://<IP-del-Latitude>:8765/`
-- Tests: `http://localhost:8765/test/`
+> **Importante**: cualquier cambio solo se refleja en la app pública tras hacer `git push`. Recordar hacer commit + push al terminar cada tarea.
 
 ## Restricciones canónicas
 
@@ -39,7 +43,7 @@ Estas son **inviolables salvo que el usuario lo pida explícitamente**:
 
 ## Patrón canónico de un bloque
 
-Cada bloque (hiragana, katakana, vocab, kanji, partículas, gramática, listening) sigue el mismo patrón:
+Cada bloque (hiragana, katakana, vocab, kanji, partículas, gramática, listening, reading, verbs, adjectives) sigue el mismo patrón:
 
 ```
 data/<deck>.json     ← array de objetos con id único
@@ -83,7 +87,7 @@ function runBlock(container, items, allItems) {
 
 Mira `js/listening.js` como referencia más reciente y completa, o `js/vocab.js` para el patrón de submenú de modos.
 
-Para integrar un bloque nuevo hay que tocar **4 archivos** además del nuevo módulo:
+Para integrar un bloque nuevo hay que tocar **3 archivos** además del nuevo módulo:
 - `js/app.js` → añadir ruta `else if (seg1 === '<deck>')`
 - `js/home.js` → añadir entry al array `BLOCKS` **y** añadir el `id` al array `SECTIONS` (que define las 4 columnas del home: Escritura / Vocabulario / Gramática / Comprensión)
 - `js/stats.js` → añadir entry al array `DECKS`
@@ -114,7 +118,7 @@ Script Python (stdlib only) idempotente que:
 
 **Ejecutar tras cualquier cambio de contenido JP**:
 ```bash
-cd /home/hugo/japones-n5 && python3 scripts/generate-audio.py
+python3 scripts/generate-audio.py
 ```
 
 Para incluir un JSON nuevo en la cobertura, editar `collect_texts()` en el script y añadir un bucle.
@@ -143,6 +147,28 @@ Vocab JP→ES y vocab ES→JP comparten clave por palabra (acertar en cualquier 
 
 `collectDueItems(deck, items, now)` devuelve los ítems de un deck cuyo `dueAt <= now`. El home lo usa en paralelo sobre todos los decks para calcular el total de vencidos que muestra la review-card. La ruta `/review` usa `renderReviewToday(container)` para listar vencidos por bloque.
 
+### `js/lessons.js` — lecciones estructuradas
+
+Sistema de lecciones teóricas con ejercicios intercalados. Independiente del motor SRS.
+
+- **`data/lessons/index.json`** — array de metadatos `{id, blockId, title, topic, estimatedMin, exerciseCount}` con el orden canónico de las 16 lecciones.
+- **`data/lessons/<id>.json`** — array de bloques de contenido con tipos: `text` (markdown), `example` (jp/es/romaji + botón TTS), `table`, `note`, `exercise-mc` (opción múltiple), `exercise-tf` (verdadero/falso), `exercise-gap` (rellenar hueco).
+- **`renderLesson(container, id)`** — renderiza la lección: contenido estático + pool de ejercicios aleatorizado (`exerciseCount` del total disponible), progreso con IntersectionObserver, botón de tabla kana, "Marcar como completada".
+- **`renderLessonIndex(container)`** — lista todas las lecciones con estado (pendiente/iniciada/completada).
+- **Progreso en `localStorage['jp_n5_lesson.<id>']`** → `{status: 'started'|'completed', lastBlock}`. No retrograde de completada a iniciada.
+- **`parseMd(text)`** — mini-parser Markdown (negrita, cursiva, código, párrafos, listas).
+- El home muestra una `lesson-home-card` que navega directamente a la próxima lección no completada.
+
+`scripts/add-lesson-exercises.py` — generador de ejercicios para `data/lessons/*.json`. Ejecutar tras añadir contenido a una lección o para ampliar su pool de ejercicios.
+
+### `js/viewport.js` — altura de viewport en móvil
+
+`initViewport()` ajusta `height` de `#app` usando `window.visualViewport.height` en cada resize/scroll del viewport. Resuelve el problema de que `dvh` no se actualiza con el teclado virtual en Chromium móvil. Se llama una vez en `app.js` al arrancar.
+
+### `js/adjective-forms.js` + `js/conjugation.js` — helpers de formas verbales/adjetivales
+
+Módulos auxiliares usados por `adjectives.js` y `verbs.js` respectivamente. Encapsulan las reglas de conjugación para generar distractores correctos en los ejercicios de forma. No exponen `start()`; son importados internamente por los módulos de bloque.
+
 ### `js/intervals.js` — intervalos de caja
 
 Exporta `INTERVALS` (array de 5 ms: 10min/1d/3d/7d/21d). Módulo aislado para romper el ciclo de importación circular entre `srs.js` y `storage.js`. Si en el futuro se cambian los intervalos, tocar solo este archivo.
@@ -165,7 +191,7 @@ Convenciones:
 - Para mockear globales como `window.speechSynthesis` (getter-only), usar `Object.defineProperty(window, 'speechSynthesis', { value: mock, configurable: true })`. La asignación directa `window.speechSynthesis = ...` falla en navegadores reales.
 - **Toda lógica que dependa de `window.*` / DOM / Web APIs debe verificarse en navegador real, no solo trazándola a mano** — un trace mental no detecta diferencias entre la especificación y la implementación de cada navegador.
 
-Estado actual: 145 tests pasando. Para ejecutar: servir y abrir `http://localhost:8765/test/`.
+Para ejecutar: abrir `https://reiixan.github.io/japones-n5/test/` (o `http://localhost:8765/test/` en local). El total exacto de tests pasando varía; verificar en navegador.
 
 **Cómo correr un test concreto**: el runner no soporta filtros desde la URL. Toda la suite se ejecuta al cargar `test/index.html`. Para enfocarte en uno, edita el `.test.js` correspondiente y comenta los `it(...)` o `describe(...)` que no quieres ejecutar (o renómbralos a `xit`/`xdescribe` — no existen como helpers nativos, así que comentar es lo más simple). Acuérdate de revertirlo antes de commitear.
 
@@ -186,20 +212,22 @@ Estado actual: 145 tests pasando. Para ejecutar: servir y abrir `http://localhos
 | 4-B — Infra: daily goal + racha | ✅ | `fase-4-daily` |
 | 4-C — Infra: métricas tiempo | ✅ | `fase-4-tiempo` |
 | 4-D — Modo examen JLPT | ✅ | `fase-4-examen` |
+| 5 — Lecciones estructuradas | ✅ | `aleatoriedad-ejercicios` |
 
 Planes de implementación detallados en `docs/superpowers/plans/`.
 
 ## Workflow recomendado en sesiones futuras
 
-1. **Para añadir contenido a un bloque existente**: editar el `data/*.json` correspondiente, ejecutar `scripts/generate-audio.py` si añadiste cadenas JP nuevas, commit.
-2. **Para añadir un bloque nuevo**: leer el spec maestro + el plan de un bloque similar (p.ej. el de Choukai). Seguir el patrón canónico de arriba. Plan de implementación nuevo en `docs/superpowers/plans/`.
-3. **Para una fase del roadmap**: brainstorming + spec breve (si el roadmap necesita matices) + plan en `docs/superpowers/plans/YYYY-MM-DD-fase-N-<nombre>.md` → ejecutar con subagent-driven-development y tag al final (`fase-N`).
-4. **Commits**: estilo conventional (feat / fix / style / docs / data). Cada commit pequeño y enfocado.
+1. **Para añadir contenido a un bloque existente**: editar el `data/*.json` correspondiente, ejecutar `scripts/generate-audio.py` si añadiste cadenas JP nuevas, commit + push.
+2. **Para añadir o editar una lección**: editar `data/lessons/<id>.json` (o crear uno nuevo y añadir su entrada en `index.json`). Ejecutar `scripts/add-lesson-exercises.py` para ampliar el pool de ejercicios. No se requiere tocar ningún JS.
+3. **Para añadir un bloque nuevo**: leer el spec maestro + el plan de un bloque similar (p.ej. el de Choukai). Seguir el patrón canónico de arriba. Plan de implementación nuevo en `docs/superpowers/plans/`.
+4. **Para una fase del roadmap**: brainstorming + spec breve (si el roadmap necesita matices) + plan en `docs/superpowers/plans/YYYY-MM-DD-fase-N-<nombre>.md` → ejecutar con subagent-driven-development y tag al final (`fase-N`).
+5. **Commits**: estilo conventional (feat / fix / style / docs / data). Cada commit pequeño y enfocado. Siempre hacer `git push` para publicar en GitHub Pages.
 
 ## Pendientes conocidos
 
 - **Modo examen JLPT (4-D)**: ✅ implementado (tag `fase-4-examen`). `js/exam.js` es un orquestador propio (no usa `startExercise`) que reúsa el `examRenderer()` exportado por cada bloque (vocab/kanji/particles/grammar/reading/listening; este último acepta `{maxPlays}` para el tope de audio). 3 secciones cronometradas (Moji-Goi 20', Bunpou-Dokkai 40', Choukai 30'), render perezoso con caché de nodos para prev/next, sin escritura SRS, y scoring fiel al N5 (≥44% global + ≥32% por grupo). Spec en `docs/superpowers/specs/2026-05-22-modo-examen-jlpt-design.md`, plan en `docs/superpowers/plans/2026-05-22-fase-4-examen.md`.
 - **PWA (4.4)**: fuera de alcance hasta nuevo aviso. Requeriría `manifest.webmanifest`, `service-worker.js` con cache-first, iconos 192/512, botón "Instalar app" en home tras `beforeinstallprompt`. Hugo prefiere usarla como webapp por LAN hasta valorar la inversión.
-- **Adaptación a móvil**: se intentó en sesión del 2026-05-16 con CSS media queries + `clamp(dvh)` + `:has()`, pero el kana se seguía cortando al abrir teclado en Brave/Chromium móvil. Se revirtió todo. Para retomar: usar Visual Viewport API + JS, no solo CSS dvh (en algunos Chromium móviles dvh no se actualiza con el teclado virtual).
+- **Adaptación a móvil**: el intento con CSS media queries + `clamp(dvh)` + `:has()` se revirtió (2026-05-16). `js/viewport.js` implementa la solución recomendada (Visual Viewport API + JS) para el problema de altura con teclado virtual; está activo. Si el kana sigue cortándose en algún dispositivo, profundizar en ese módulo antes de tocar CSS.
 - **iOS Safari y bloqueo de audio automático**: la primera pregunta de listening puede no sonar sola hasta que el usuario interactúe una vez con la página. Limitación del navegador, no del código.
 - **Cache de módulos ES**: los imports usan `?v=2` en `storage.js` para forzar refresh cuando el namespace cambie. Si en el futuro hay otro cambio incompatible al schema de storage, subir a `?v=3` en todos los imports. Documentado el incidente: tras cambiar `jp_n5_v1` → `jp_n5_v2`, los módulos cacheados sin query seguían usando v1 hasta el version-tag fix.
