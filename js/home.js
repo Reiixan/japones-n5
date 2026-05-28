@@ -1,6 +1,7 @@
 import { getDeckStats, getRecentErrors } from './storage.js?v=2';
 import { collectDueItems } from './review-today.js';
 import { getDailyState } from './daily.js';
+import { initAuthButton } from './auth.js';
 
 const BLOCKS = [
   {
@@ -170,6 +171,7 @@ export async function renderHome(container) {
           <div class="home-actions">
             <button class="btn-icon" id="home-stats" title="Estadísticas">📊</button>
             <button class="btn-icon" id="home-theme" title="Tema">🌙</button>
+            <button class="btn-icon" id="home-auth" title="Cuenta">👤</button>
           </div>
         </header>
         <div id="errors-card-wrap"></div>
@@ -206,6 +208,7 @@ export async function renderHome(container) {
 
   document.getElementById('home-stats').addEventListener('click', () => window.navigate('/stats'));
   document.getElementById('home-theme').addEventListener('click', toggleTheme);
+  initAuthButton();
 
   const recentErrors = getRecentErrors();
   const errWrap = document.getElementById('errors-card-wrap');

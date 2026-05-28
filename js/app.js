@@ -19,6 +19,7 @@ import { start as startExam } from './exam.js';
 import { renderLesson } from './lessons.js';
 import { migrateV1ToV2 } from './storage.js?v=2';
 import { initViewport } from './viewport.js';
+import { pushProgress } from './auth.js';
 
 const container = document.getElementById('app');
 const dataCache = {};
@@ -43,6 +44,7 @@ async function route() {
 
   try {
     if (!seg1) {
+      pushProgress(); // auto-sync silencioso al volver al home
       await renderHome(container);
     } else if (seg1 === 'stats') {
       await renderStats(container);
