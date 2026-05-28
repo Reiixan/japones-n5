@@ -645,15 +645,15 @@
   },
   {
     "type": "exercise-gap",
-    "prompt": "毎朝七時___起きます。(Me levanto A las 7 cada mañana.)",
+    "prompt": "毎朝七時___起きます。(Me levanto a las 7 cada mañana.)",
     "options": [
+      "に",
       "から",
       "まで",
-      "に",
       "で"
     ],
-    "answer": "から",
-    "hint": "punto de inicio = から"
+    "answer": "に",
+    "hint": "tiempo específico puntual = に (no から)"
   },
   {
     "type": "exercise-gap",
