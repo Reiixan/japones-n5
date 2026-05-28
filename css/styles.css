@@ -537,8 +537,27 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 
-/* Indicador de sesión activa en el botón 👤 */
-#home-auth { position: relative; }
+/* Botón de cuenta: se expande con texto cuando no hay sesión */
+#home-auth {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .35rem .6rem;
+  border-radius: var(--radius-sm);
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  transition: background .15s, color .15s;
+}
+#home-auth:hover { background: var(--bg-hover); color: var(--text); }
+#home-auth.auth-logged-in {
+  border-color: transparent;
+  background: none;
+  padding: .35rem .4rem;
+}
 #home-auth.auth-logged-in::after {
   content: '';
   position: absolute;

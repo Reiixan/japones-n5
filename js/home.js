@@ -171,7 +171,7 @@ export async function renderHome(container) {
           <div class="home-actions">
             <button class="btn-icon" id="home-stats" title="Estadísticas">📊</button>
             <button class="btn-icon" id="home-theme" title="Tema">🌙</button>
-            <button class="btn-icon" id="home-auth" title="Cuenta">👤</button>
+            <button class="btn-icon" id="home-auth" title="Cuenta">👤 <span class="auth-cta-text">Iniciar sesión</span></button>
           </div>
         </header>
         <div id="errors-card-wrap"></div>

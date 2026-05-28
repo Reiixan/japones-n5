@@ -254,5 +254,7 @@ function _updateAuthButton() {
   getSession().then(session => {
     btn.classList.toggle('auth-logged-in', !!session);
     btn.title = session ? `Cuenta: ${session.user.email}` : 'Cuenta';
+    const cta = btn.querySelector('.auth-cta-text');
+    if (cta) cta.style.display = session ? 'none' : '';
   });
 }
