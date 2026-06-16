@@ -41,7 +41,18 @@ export async function start(container, deck, allSentences) {
   showSessionConfig(container, {
     title: 'Lectura de oraciones',
     subtitle: buildSubtitle(deckId, deckItems, level),
-    onStart: (size) => runSentences(container, deckId, available, deckItems, size),
+    onStart: (size) => {
+      try {
+        runSentences(container, deckId, available, deckItems, size);
+      } catch (err) {
+        container.innerHTML = `
+          <div class="error-screen">
+            <h2>Error al iniciar</h2>
+            <p>${err.message}</p>
+            <button class="btn-primary" onclick="history.back()">Volver</button>
+          </div>`;
+      }
+    },
   });
 }
 
@@ -146,7 +157,13 @@ function renderTwoStep(item, all, el, onAnswer) {
   const submitHandler = e => {
     e.preventDefault();
     const val = form.querySelector('.typing-input').value.trim().toLowerCase();
-    if (!val) return;
+    if (!val) {
+      const inp = form.querySelector('.typing-input');
+      inp.classList.add('input-shake');
+      inp.placeholder = 'Escribe el romaji primero…';
+      setTimeout(() => inp.classList.remove('input-shake'), 500);
+      return;
+    }
 
     romajiCorrect = val === item.romaji.toLowerCase();
     const fbClass = romajiCorrect ? 'romaji-fb-ok' : 'romaji-fb-err';

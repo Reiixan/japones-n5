@@ -897,3 +897,16 @@
   display: block;
   margin-top: .25rem;
 }
+
+/* Shake del input cuando se intenta enviar vacío */
+@keyframes inputShake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
+.input-shake {
+  animation: inputShake .45s ease;
+  border-color: var(--c-red) !important;
+}
