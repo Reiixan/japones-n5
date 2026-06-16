@@ -24,3 +24,25 @@ export function applyProgress(data) {
     }
   }
 }
+
+const PAYLOAD_VERSION = 1;
+
+// Construye el objeto que se serializa al archivo.
+export function buildPayload(data, updatedAt) {
+  return { version: PAYLOAD_VERSION, updatedAt, data };
+}
+
+// Parsea y valida el texto del archivo. Lanza si es inválido.
+export function parsePayload(text) {
+  const obj = JSON.parse(text); // lanza con JSON corrupto
+  if (!obj || typeof obj !== 'object' || typeof obj.data !== 'object' || obj.data === null) {
+    throw new Error('Payload de sync inválido: falta data');
+  }
+  if (typeof obj.updatedAt !== 'number') obj.updatedAt = 0;
+  return obj;
+}
+
+// Last-write-wins a nivel de archivo: aplicar solo si el remoto es estrictamente más nuevo.
+export function shouldApplyRemote(remoteUpdatedAt, localLastSyncMs) {
+  return (remoteUpdatedAt || 0) > (localLastSyncMs || 0);
+}
