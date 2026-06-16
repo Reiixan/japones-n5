@@ -43,7 +43,7 @@ Estas son **inviolables salvo que el usuario lo pida explícitamente**:
 
 ## Patrón canónico de un bloque
 
-Cada bloque (hiragana, katakana, vocab, kanji, partículas, gramática, listening, reading, verbs, adjectives) sigue el mismo patrón:
+Cada bloque (vocab, kanji, partículas, gramática, listening, reading, verbs, adjectives) sigue el mismo patrón (hiragana/katakana son la excepción: tienen su propio subsistema multi-modo en `js/kana/`, ver más abajo):
 
 ```
 data/<deck>.json     ← array de objetos con id único
@@ -152,7 +152,7 @@ el export/import manual.
 
 ### `js/daily.js` — meta diaria y racha
 
-`getDailyState()` → `{todayCount, goal, streak, lastDate}`. `recordExercise(n)` suma `n` respuestas al contador del día y actualiza la racha. Goal configurable (20/30/50) persistido en `localStorage['jp_n5_daily_goal']`. El motor `exercise.js` llama a `recordExercise` al final de cada sesión; el widget del home lo lee para mostrar el arco de progreso y el 🔥.
+`getDailyState(now?)` → `{goal, todayCount, todayDate, streak, lastGoalDate}` (la racha visible se resetea a 0 si `lastGoalDate` no es hoy ni ayer). `recordPracticeTick(now?)` suma **1** al contador del día y, al alcanzar el goal por primera vez ese día, actualiza la racha. Goal por defecto 30, configurable vía `setGoal(n)` desde stats. Todo persistido en `localStorage['jp_n5_daily']`. `exercise.js`, `lessons.js` y `kana/kana-flash.js` llaman a `recordPracticeTick()` por cada **respuesta correcta**; el widget del home lo lee para mostrar el arco de progreso y el 🔥.
 
 ### `js/review-today.js` — vencidos del día
 
@@ -162,7 +162,7 @@ el export/import manual.
 
 Sistema de lecciones teóricas con ejercicios intercalados. Independiente del motor SRS.
 
-- **`data/lessons/index.json`** — array de metadatos `{id, blockId, title, topic, estimatedMin, exerciseCount}` con el orden canónico de las 16 lecciones.
+- **`data/lessons/index.json`** — array de metadatos `{id, blockId, title, topic, estimatedMin, exerciseCount}` con el orden canónico de las 18 lecciones.
 - **`data/lessons/<id>.json`** — array de bloques de contenido con tipos: `text` (markdown), `example` (jp/es/romaji + botón TTS), `table`, `note`, `exercise-mc` (opción múltiple), `exercise-tf` (verdadero/falso), `exercise-gap` (rellenar hueco).
 - **`renderLesson(container, id)`** — renderiza la lección: contenido estático + pool de ejercicios aleatorizado (`exerciseCount` del total disponible), progreso con IntersectionObserver, botón de tabla kana, "Marcar como completada".
 - **`renderLessonIndex(container)`** — lista todas las lecciones con estado (pendiente/iniciada/completada).
@@ -171,6 +171,19 @@ Sistema de lecciones teóricas con ejercicios intercalados. Independiente del mo
 - El home muestra una `lesson-home-card` que navega directamente a la próxima lección no completada.
 
 `scripts/add-lesson-exercises.py` — generador de ejercicios para `data/lessons/*.json`. Ejecutar tras añadir contenido a una lección o para ampliar su pool de ejercicios.
+
+### `js/kana/` — subsistema de hiragana/katakana (multi-modo)
+
+Hiragana y katakana NO usan un único `js/<bloque>.js`; tienen 6 modos de práctica, cada uno en su archivo dentro de `js/kana/`, todos sobre los mismos datos (`data/hiragana.json` / `data/katakana.json`):
+
+- `kana-typing.js` — escribir el romaji del kana mostrado.
+- `kana-choice.js` — kana → elegir romaji (opción múltiple).
+- `kana-reverse.js` — romaji → elegir kana.
+- `kana-audio.js` — escuchar y elegir el kana.
+- `kana-flash.js` — flash rápido con countdown; toggle de cronómetro persistido en `localStorage['jp_n5_flash_timer']`.
+- `kana-words.js` — leer palabras reales (usa `data/vocab-n5.json` en vez del deck de kana).
+
+Los modos usan una factory `getItems` para reseleccionar ítems al reintentar ronda. El menú de modos lo renderiza `renderKanaMenu(container, deck)` en `home.js`; el enrutado vive en `app.js` (`seg1 === 'hiragana' || seg1 === 'katakana'`, con `seg2` = modo).
 
 ### `js/viewport.js` — altura de viewport en móvil
 
@@ -182,7 +195,7 @@ Módulos auxiliares usados por `adjectives.js` y `verbs.js` respectivamente. Enc
 
 ### `js/intervals.js` — intervalos de caja
 
-Exporta `INTERVALS` (array de 5 ms: 10min/1d/3d/7d/21d). Módulo aislado para romper el ciclo de importación circular entre `srs.js` y `storage.js`. Si en el futuro se cambian los intervalos, tocar solo este archivo.
+Exporta `BOX_INTERVALS_MS` (array de 5 ms: 10min/1d/3d/7d/21d) y el helper `dueAtFor(box, fromTime)`. `srs.js` los reexporta. Módulo aislado para romper el ciclo de importación circular entre `srs.js` y `storage.js`. Si en el futuro se cambian los intervalos, tocar solo este archivo.
 
 ### `js/exercise.js` — motor compartido
 
