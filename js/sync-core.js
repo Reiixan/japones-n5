@@ -17,6 +17,8 @@ export function collectProgress() {
 }
 
 // Aplica un objeto {clave: valor} a localStorage, solo para claves jp_n5_*.
+// Es aditivo: sobrescribe las claves presentes en `data` pero no borra las
+// claves locales que no estén en él (el resultado es la unión, no un espejo).
 export function applyProgress(data) {
   for (const [key, value] of Object.entries(data || {})) {
     if (key.startsWith(PREFIX)) {

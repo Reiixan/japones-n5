@@ -46,11 +46,24 @@ async function ensurePermission(handle, mode) {
 }
 
 // Escribe el progreso local al archivo. Silencioso: no lanza modales.
+// Antes de sobrescribir, absorbe el remoto si es más nuevo que nuestro último
+// sync. Así push es seguro frente a la carrera con el pull de arranque y frente
+// a un "Subir" hecho tras reiniciar sin haber descargado: nunca pisa datos más
+// recientes de otro equipo (last-write-wins sin pérdida).
 export async function pushProgress() {
   try {
     const handle = await loadHandle();
     if (!handle) return false;
     if (!(await ensurePermission(handle, 'readwrite'))) return false;
+    try {
+      const file = await handle.getFile();
+      const remote = parsePayload(await file.text());
+      if (shouldApplyRemote(remote.updatedAt, getLastSyncMs())) {
+        applyProgress(remote.data);
+      }
+    } catch (_) {
+      // Archivo nuevo, vacío o corrupto: no hay remoto válido que absorber; seguimos.
+    }
     const now = Date.now();
     const payload = buildPayload(collectProgress(), now);
     const writable = await handle.createWritable();
