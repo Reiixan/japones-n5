@@ -866,3 +866,34 @@
 }
 [data-theme="dark"] .exam-input .choice-btn.selected { background: #1e1b4b; }
 
+/* === Kana sentences: display de oración/texto === */
+.kana-sentence-display {
+  font-family: var(--font-jp);
+  font-size: clamp(1.2rem, 4vw, 1.7rem);
+  line-height: 2;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Feedback inline del paso romaji (antes del MC) */
+.romaji-feedback {
+  padding: .45rem .8rem;
+  border-radius: .5rem;
+  font-size: .95rem;
+  margin-bottom: .75rem;
+  text-align: center;
+  font-family: var(--font-jp);
+}
+.romaji-fb-ok  { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.romaji-fb-err { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+[data-theme="dark"] .romaji-fb-ok  { background: #14532d; color: #bbf7d0; border-color: #166534; }
+[data-theme="dark"] .romaji-fb-err { background: #7f1d1d; color: #fecaca; border-color: #991b1b; }
+
+/* Barra de progreso de nivel en subtitle del config */
+.level-progress {
+  font-size: .82rem;
+  font-family: monospace;
+  color: var(--text-muted);
+  display: block;
+  margin-top: .25rem;
+}
