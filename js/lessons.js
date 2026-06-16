@@ -336,7 +336,7 @@ export async function renderLesson(container, id) {
     primeBlockAfterLesson(meta.blockId);
     document.getElementById('lesson-mark-done').textContent = '✓ Completada';
     document.getElementById('lesson-mark-done').disabled = true;
-    const { pushProgress } = await import('./auth.js');
+    const { pushProgress } = await import('./sync.js');
     pushProgress();
   });
 

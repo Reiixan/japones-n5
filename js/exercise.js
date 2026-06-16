@@ -2,7 +2,7 @@ import { recordAnswer, recordTimings, recordRecentError } from './storage.js?v=2
 import { speak } from './tts.js';
 import { isRomajiOn, kanaToRomaji } from './romaji.js';
 import { recordPracticeTick } from './daily.js';
-import { pushProgress } from './auth.js';
+import { pushProgress } from './sync.js';
 
 // config = {
 //   deck: string,

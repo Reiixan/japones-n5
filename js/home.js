@@ -1,7 +1,7 @@
 import { getDeckStats, getRecentErrors } from './storage.js?v=2';
 import { collectDueItems } from './review-today.js';
 import { getDailyState } from './daily.js';
-import { initAuthButton } from './auth.js';
+import { initSyncButton } from './sync.js';
 
 const BLOCKS = [
   {
@@ -171,7 +171,7 @@ export async function renderHome(container) {
           <div class="home-actions">
             <button class="btn-icon" id="home-stats" title="Estadísticas">📊</button>
             <button class="btn-icon" id="home-theme" title="Tema">🌙</button>
-            <button class="btn-icon" id="home-auth" title="Cuenta">👤 <span class="auth-cta-text">Iniciar sesión</span></button>
+            <button class="btn-icon" id="home-auth" title="Sincronización">☁️ <span class="auth-cta-text">Sync</span></button>
           </div>
         </header>
         <div id="errors-card-wrap"></div>
@@ -208,7 +208,7 @@ export async function renderHome(container) {
 
   document.getElementById('home-stats').addEventListener('click', () => window.navigate('/stats'));
   document.getElementById('home-theme').addEventListener('click', toggleTheme);
-  initAuthButton();
+  initSyncButton();
 
   const recentErrors = getRecentErrors();
   const errWrap = document.getElementById('errors-card-wrap');
