@@ -300,6 +300,7 @@ export function renderKanaMenu(container, deck) {
     { mode: 'audio',   icon: '🔊', label: 'Escuchar',         desc: 'Oye el sonido y elige el kana' },
     { mode: 'words',   icon: '📖', label: 'Dictado palabras', desc: 'Ve una palabra y escribe su romaji' },
     { mode: 'flash',   icon: '⚡', label: 'Flash rápido',     desc: 'Elige el romaji antes de que se acabe el tiempo' },
+    { mode: 'sentences', icon: '📝', label: 'Lectura',        desc: 'Lee oraciones y elige su significado' },
   ];
 
   container.innerHTML = `

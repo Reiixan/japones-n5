@@ -6,6 +6,7 @@ import { start as startKanaReverse } from './kana/kana-reverse.js';
 import { start as startKanaAudio } from './kana/kana-audio.js';
 import { start as startKanaWords } from './kana/kana-words.js';
 import { start as startKanaFlash } from './kana/kana-flash.js';
+import { start as startKanaSentences } from './kana/kana-sentences.js';
 import { start as startVocab } from './vocab.js';
 import { start as startKanji } from './kanji.js';
 import { start as startParticles } from './particles.js';
@@ -63,6 +64,10 @@ async function route() {
         else if (seg2 === 'words') {
           const vocabItems = await loadData('vocab-n5.json');
           await startKanaWords(container, deck, vocabItems);
+        }
+        else if (seg2 === 'sentences') {
+          const sentenceItems = await loadData('kana-sentences.json');
+          await startKanaSentences(container, deck, sentenceItems);
         }
         else window.navigate(`/${deck}`);
       }

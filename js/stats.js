@@ -16,6 +16,8 @@ const DECKS = [
   { id: 'reading', label: 'Comprensión lectora', file: 'reading-n5.json' },
   { id: 'verbs', label: 'Verbos', file: 'verbs-n5.json' },
   { id: 'adjectives', label: 'Adjetivos', file: 'adjectives-n5.json' },
+  { id: 'kana-sentences-hiragana', label: 'Lectura hiragana', file: 'kana-sentences.json', filter: i => i.deck === 'hiragana' },
+  { id: 'kana-sentences-katakana', label: 'Lectura katakana', file: 'kana-sentences.json', filter: i => i.deck === 'katakana' },
 ];
 
 const dataCache = {};
@@ -99,7 +101,8 @@ export async function renderStats(container) {
 
   // Load all decks
   const rows = await Promise.all(DECKS.map(async deck => {
-    let items = await loadData(deck.file);
+    const rawItems = await loadData(deck.file);
+    let items = deck.filter ? rawItems.filter(deck.filter) : rawItems;
     if (deck.id === 'grammar') items = items.filter(g => g.level === 'n5');
     const stats = getDeckStats(deck.id, items);
     return { deck, stats };
