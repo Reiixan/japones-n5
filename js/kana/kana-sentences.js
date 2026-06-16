@@ -43,7 +43,7 @@ export async function start(container, deck, allSentences) {
     subtitle: buildSubtitle(deckId, deckItems, level),
     onStart: (size) => {
       try {
-        runSentences(container, deckId, available, deckItems, size);
+        runSentences(container, deck, deckId, available, deckItems, size);
       } catch (err) {
         container.innerHTML = `
           <div class="error-screen">
@@ -56,7 +56,7 @@ export async function start(container, deck, allSentences) {
   });
 }
 
-function runSentences(container, deckId, available, deckItems, size) {
+function runSentences(container, deck, deckId, available, deckItems, size) {
   startExercise(container, {
     deck: deckId,
     getItems: () => selectSession(deckId, available, size),
