@@ -20,7 +20,7 @@ Añadir un bloque = añadir un `data/*.json` + un `js/<bloque>.js` + 3 ediciones
 
 La app está desplegada en **GitHub Pages**: https://reiixan.github.io/japones-n5/
 
-- Repositorio: https://github.com/reiixan/japones-n5
+- Repositorio: https://github.com/Reiixan/japones-n5
 - Tests: `https://reiixan.github.io/japones-n5/test/`
 
 Para desarrollo local (opcional):
