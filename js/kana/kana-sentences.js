@@ -41,15 +41,15 @@ export async function start(container, deck, allSentences) {
   showSessionConfig(container, {
     title: 'Lectura de oraciones',
     subtitle: buildSubtitle(deckId, deckItems, level),
-    onStart: (size) => runSentences(container, deckId, available, size),
+    onStart: (size) => runSentences(container, deckId, available, deckItems, size),
   });
 }
 
-function runSentences(container, deckId, available, size) {
+function runSentences(container, deckId, available, deckItems, size) {
   startExercise(container, {
     deck: deckId,
     getItems: () => selectSession(deckId, available, size),
-    allItems: available,
+    allItems: deckItems,
     getItemId: it => it.id,
     renderPrompt(item, el) {
       const jpHtml = item.jp.replace(/\n/g, '<br>');
