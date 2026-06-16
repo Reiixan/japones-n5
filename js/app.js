@@ -19,7 +19,7 @@ import { start as startExam } from './exam.js';
 import { renderLesson } from './lessons.js';
 import { migrateV1ToV2 } from './storage.js?v=2';
 import { initViewport } from './viewport.js';
-import { pushProgress } from './auth.js';
+import { pushProgress } from './sync.js';
 
 const container = document.getElementById('app');
 const dataCache = {};

@@ -35,7 +35,7 @@ cd C:\Users\Hugo\japones-n5 && python3 -m http.server 8765 --bind 0.0.0.0
 Estas son **inviolables salvo que el usuario lo pida explícitamente**:
 
 1. **Vanilla JS, sin build, sin npm**. ES modules nativos. Cero dependencias en runtime.
-2. **Sin backend, sin cuentas, sin sync**. Progreso solo en `localStorage`; export/import manual a JSON.
+2. **Sin backend, sin cuentas**. Progreso en `localStorage`. Sync opcional **local** mediante un archivo en una carpeta del usuario (p.ej. OneDrive) vía File System Access API; nunca una BD de terceros. Export/import manual a JSON sigue disponible.
 3. **Solo contenido N5**. Cualquier ítem nuevo (vocab, ejemplo, frase) debe usar exclusivamente léxico/patrones ya presentes en `data/vocab-n5.json`, `data/kanji-n5.json`, `data/grammar-n5.json`, `data/particles.json`.
 4. **Idioma de UI: español**. Sin i18n.
 5. **No IME ni reconocimiento de escritura**. Producción JP por opción múltiple.
@@ -138,6 +138,17 @@ Intervalos por caja: 10 min / 1 día / 3 días / 7 días / 21 días.
 `selectSession(deck, items, size, now?)` prioriza: (1) vencidos (`dueAt <= now`, los más viejos primero), (2) nuevos (`lastSeen == null`, shuffled), (3) resto por peso inverso a caja. Tras cada respuesta, `recordAnswer(deck, id, correct, now?)` actualiza caja, lastSeen y dueAt.
 
 Vocab JP→ES y vocab ES→JP comparten clave por palabra (acertar en cualquier modo sube la caja). Dokkai usa SRS por texto (`recordResult` en exercise.js).
+
+### `js/sync.js` + `js/sync-core.js` + `js/idb-handle.js` — sync de archivo local
+
+Sustituye al antiguo Supabase. El progreso (`localStorage`, claves `jp_n5_*`) se sincroniza entre
+equipos mediante un archivo `progreso.json` que el usuario coloca en una carpeta sincronizada por
+OneDrive. `sync-core.js` es lógica pura (recolección/aplicación de claves, payload, regla
+last-write-wins por `updatedAt` vs `jp_n5_last_sync_ms`). `idb-handle.js` persiste el
+`FileSystemFileHandle` en IndexedDB. `sync.js` orquesta picker, permisos, push silencioso (al
+terminar ejercicios/lección/volver al home) y pull (silencioso al abrir si hay permiso; manual si
+no). Solo Chromium de escritorio (Chrome/Edge); en navegadores sin la API, el panel avisa y queda
+el export/import manual.
 
 ### `js/daily.js` — meta diaria y racha
 
