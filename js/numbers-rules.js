@@ -157,3 +157,37 @@ export function counterReading(n, counterId) {
 }
 
 export { COUNTER_TABLES };
+
+const HOUR_KANA = [null,
+  'いちじ', 'にじ', 'さんじ', 'よじ', 'ごじ', 'ろくじ', 'しちじ', 'はちじ', 'くじ', 'じゅうじ', 'じゅういちじ', 'じゅうにじ',
+];
+const HOUR_ROMAJI = [null,
+  'ichiji', 'niji', 'sanji', 'yoji', 'goji', 'rokuji', 'shichiji', 'hachiji', 'kuji', 'juuji', 'juuichiji', 'juuniji',
+];
+
+export function hourReading(h) {
+  if (!Number.isInteger(h) || h < 1 || h > 12) {
+    throw new RangeError(`hourReading: h debe ser un entero entre 1 y 12, recibido ${h}`);
+  }
+  return { kana: HOUR_KANA[h], romaji: HOUR_ROMAJI[h] };
+}
+
+const DAY_KANA = [null,
+  'ついたち', 'ふつか', 'みっか', 'よっか', 'いつか', 'むいか', 'なのか', 'ようか', 'ここのか', 'とおか',
+  'じゅういちにち', 'じゅうににち', 'じゅうさんにち', 'じゅうよっか', 'じゅうごにち', 'じゅうろくにち', 'じゅうしちにち', 'じゅうはちにち', 'じゅうくにち', 'はつか',
+  'にじゅういちにち', 'にじゅうににち', 'にじゅうさんにち', 'にじゅうよっか', 'にじゅうごにち', 'にじゅうろくにち', 'にじゅうしちにち', 'にじゅうはちにち', 'にじゅうくにち', 'さんじゅうにち',
+  'さんじゅういちにち',
+];
+const DAY_ROMAJI = [null,
+  'tsuitachi', 'futsuka', 'mikka', 'yokka', 'itsuka', 'muika', 'nanoka', 'youka', 'kokonoka', 'tooka',
+  'juuichinichi', 'juuninichi', 'juusannichi', 'juuyokka', 'juugonichi', 'juurokunichi', 'juushichinichi', 'juuhachinichi', 'juukunichi', 'hatsuka',
+  'nijuuichinichi', 'nijuuninichi', 'nijuusannichi', 'nijuuyokka', 'nijuugonichi', 'nijuurokunichi', 'nijuushichinichi', 'nijuuhachinichi', 'nijuukunichi', 'sanjuunichi',
+  'sanjuuichinichi',
+];
+
+export function dayOfMonthReading(d) {
+  if (!Number.isInteger(d) || d < 1 || d > 31) {
+    throw new RangeError(`dayOfMonthReading: d debe ser un entero entre 1 y 31, recibido ${d}`);
+  }
+  return { kana: DAY_KANA[d], romaji: DAY_ROMAJI[d] };
+}

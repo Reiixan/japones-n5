@@ -1,6 +1,6 @@
 // test/numbers-rules.test.js
 import { describe, it, assertEqual } from './runner.js';
-import { cardinalToKana, counterReading } from '../js/numbers-rules.js?cache=numrules1';
+import { cardinalToKana, counterReading, hourReading, dayOfMonthReading } from '../js/numbers-rules.js?cache=numrules1';
 
 describe('cardinalToKana — dígitos y decenas', () => {
   it('1 → いち', () => {
@@ -148,6 +148,73 @@ describe('counterReading — contador desconocido', () => {
   it('lanza RangeError', () => {
     let threw = false;
     try { counterReading(1, 'nope'); } catch (e) { threw = e instanceof RangeError; }
+    assertEqual(threw, true);
+  });
+});
+
+describe('hourReading — excepciones 4/7/9', () => {
+  it('4時 → よじ (no よんじ)', () => {
+    assertEqual(hourReading(4).kana, 'よじ');
+  });
+  it('7時 → しちじ (no ななじ)', () => {
+    assertEqual(hourReading(7).kana, 'しちじ');
+  });
+  it('9時 → くじ (no きゅうじ)', () => {
+    assertEqual(hourReading(9).kana, 'くじ');
+  });
+  it('1時 → いちじ (regular)', () => {
+    assertEqual(hourReading(1).kana, 'いちじ');
+  });
+  it('12時 → じゅうにじ (regular)', () => {
+    assertEqual(hourReading(12).kana, 'じゅうにじ');
+  });
+  it('13 fuera de rango lanza RangeError', () => {
+    let threw = false;
+    try { hourReading(13); } catch (e) { threw = e instanceof RangeError; }
+    assertEqual(threw, true);
+  });
+});
+
+describe('dayOfMonthReading — 1-10 irregulares', () => {
+  it('1日 → ついたち', () => {
+    assertEqual(dayOfMonthReading(1).kana, 'ついたち');
+  });
+  it('2日 → ふつか', () => {
+    assertEqual(dayOfMonthReading(2).kana, 'ふつか');
+  });
+  it('10日 → とおか', () => {
+    assertEqual(dayOfMonthReading(10).kana, 'とおか');
+  });
+});
+
+describe('dayOfMonthReading — excepciones en decenas', () => {
+  it('14日 → じゅうよっか (no じゅうよんにち)', () => {
+    assertEqual(dayOfMonthReading(14).kana, 'じゅうよっか');
+  });
+  it('19日 → じゅうくにち (no じゅうきゅうにち)', () => {
+    assertEqual(dayOfMonthReading(19).kana, 'じゅうくにち');
+  });
+  it('20日 → はつか (irregular total)', () => {
+    assertEqual(dayOfMonthReading(20).kana, 'はつか');
+  });
+  it('24日 → にじゅうよっか', () => {
+    assertEqual(dayOfMonthReading(24).kana, 'にじゅうよっか');
+  });
+  it('29日 → にじゅうくにち', () => {
+    assertEqual(dayOfMonthReading(29).kana, 'にじゅうくにち');
+  });
+});
+
+describe('dayOfMonthReading — regulares', () => {
+  it('15日 → じゅうごにち', () => {
+    assertEqual(dayOfMonthReading(15).kana, 'じゅうごにち');
+  });
+  it('31日 → さんじゅういちにち', () => {
+    assertEqual(dayOfMonthReading(31).kana, 'さんじゅういちにち');
+  });
+  it('32 fuera de rango lanza RangeError', () => {
+    let threw = false;
+    try { dayOfMonthReading(32); } catch (e) { threw = e instanceof RangeError; }
     assertEqual(threw, true);
   });
 });
