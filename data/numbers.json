@@ -1,0 +1,12 @@
+[
+  { "id": "tsu", "kanji": "つ", "meaning_es": "genérico (objetos sin contador específico, solo 1-10)" },
+  { "id": "nin", "kanji": "人", "meaning_es": "personas" },
+  { "id": "mai", "kanji": "枚", "meaning_es": "objetos planos (papel, camisetas, platos)" },
+  { "id": "hon", "kanji": "本", "meaning_es": "objetos cilíndricos (botellas, bolígrafos, árboles)" },
+  { "id": "hiki", "kanji": "匹", "meaning_es": "animales pequeños" },
+  { "id": "dai", "kanji": "台", "meaning_es": "máquinas y vehículos" },
+  { "id": "satsu", "kanji": "冊", "meaning_es": "libros y revistas" },
+  { "id": "sai", "kanji": "歳", "meaning_es": "edad" },
+  { "id": "kai", "kanji": "階", "meaning_es": "pisos de un edificio" },
+  { "id": "en", "kanji": "円", "meaning_es": "yenes (precio)" }
+]

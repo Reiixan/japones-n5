@@ -68,6 +68,8 @@ def collect_texts() -> list[str]:
             item['answer'] if p == '[  ]' else p for p in item['parts']
         )
         texts.add(sentence)
+    for item in load_json('numbers.json'):
+        texts.add(item['kanji'])
     for item in load_json('listening-n5.json'):
         texts.add(item['audio_text'])
     return sorted(texts)
