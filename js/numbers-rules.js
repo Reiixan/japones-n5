@@ -120,8 +120,8 @@ const COUNTER_TABLES = {
   en: {
     maxN: 99,
     standalone: [null,
-      { kana: 'いちえん', romaji: 'ichien' }, { kana: 'にえん', romaji: 'nien' }, { kana: 'さんえん', romaji: 'sanen' },
-      { kana: 'よんえん', romaji: 'yonen' }, { kana: 'ごえん', romaji: 'goen' }, { kana: 'ろくえん', romaji: 'rokuen' },
+      { kana: 'いちえん', romaji: 'ichien' }, { kana: 'にえん', romaji: 'nien' }, { kana: 'さんえん', romaji: "san'en" },
+      { kana: 'よんえん', romaji: "yon'en" }, { kana: 'ごえん', romaji: 'goen' }, { kana: 'ろくえん', romaji: 'rokuen' },
       { kana: 'ななえん', romaji: 'nanaen' }, { kana: 'はちえん', romaji: 'hachien' }, { kana: 'きゅうえん', romaji: 'kyuuen' },
       { kana: 'じゅうえん', romaji: 'juuen' },
     ],
