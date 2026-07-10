@@ -14,3 +14,6 @@ Thumbs.db
 
 # Exports de progreso de usuario (no versionar datos personales)
 japones-n5-progreso-*.json
+
+# Git worktrees locales
+.claude/worktrees/
