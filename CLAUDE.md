@@ -193,6 +193,14 @@ Los modos usan una factory `getItems` para reseleccionar ítems al reintentar ro
 
 Módulos auxiliares usados por `adjectives.js` y `verbs.js` respectivamente. Encapsulan las reglas de conjugación para generar distractores correctos en los ejercicios de forma. No exponen `start()`; son importados internamente por los módulos de bloque.
 
+### `js/numbers-rules.js` — reglas fonéticas del bloque de números
+
+Módulo puro (sin estado, sin DOM) con las reglas de composición/lectura del sistema numérico japonés: `cardinalToKana(n)` (1–9999, con las excepciones de 百/千 en 3/6/8), `counterReading(n, counterId)` (1–99 por cada uno de los 10 contadores en `data/numbers.json`, con tabla de excepciones fonéticas por contador — incluye la dualidad standalone/compuesto de 人 y la excepción total de 20歳=はたち), `hourReading(h)` (1–12, excepciones 4/7/9) y `dayOfMonthReading(d)` (1–31, tabla completa por ser mayormente irregular). `formatExpression(item)` da la representación visual, `randomDistractors(item)` genera 3 alternativas plausibles, `generateSessionItems(categories, size, counters)` genera una sesión completa al vuelo.
+
+El bloque `js/numbers/` (3 modos: `numbers-reading.js`, `numbers-audio.js`, `numbers-recognize.js`) es la única excepción al patrón canónico de bloque: no tiene `data/numbers.json` con ítems de práctica (solo un catálogo de 10 contadores), no usa `selectSession`/SRS, y pasa `recordResult: () => {}` a `startExercise` para no escribir en el namespace SRS — los números se generan aleatoriamente en cada sesión y no tienen ID estable para repaso espaciado. Sí cuentan para la racha diaria (vía `recordPracticeTick()`, automático en `exercise.js`). No aparece en `js/stats.js` (`DECKS`).
+
+**Limitación conocida:** el modo "Escuchar" depende de que el navegador tenga una voz `ja-JP` instalada (Web Speech API) — con cardinales hasta 9999 el espacio de combinaciones es demasiado grande para pre-generar audio MP3 exhaustivo como el resto de la app (solo los 10 kanji de contador sueltos tienen MP3 pregrabado). En dispositivos sin voz ja-JP (típico en Linux) este modo específico sonará degradado o silencioso.
+
 ### `js/intervals.js` — intervalos de caja
 
 Exporta `BOX_INTERVALS_MS` (array de 5 ms: 10min/1d/3d/7d/21d) y el helper `dueAtFor(box, fromTime)`. `srs.js` los reexporta. Módulo aislado para romper el ciclo de importación circular entre `srs.js` y `storage.js`. Si en el futuro se cambian los intervalos, tocar solo este archivo.
@@ -237,6 +245,7 @@ Para ejecutar: abrir `https://reiixan.github.io/japones-n5/test/` (o `http://loc
 | 4-C — Infra: métricas tiempo | ✅ | `fase-4-tiempo` |
 | 4-D — Modo examen JLPT | ✅ | `fase-4-examen` |
 | 5 — Lecciones estructuradas | ✅ | `aleatoriedad-ejercicios` |
+| 6 — Bloque de números (cardinales, contadores, horas, fechas) | ✅ | `bloque-numeros` |
 
 Planes de implementación detallados en `docs/superpowers/plans/`.
 
