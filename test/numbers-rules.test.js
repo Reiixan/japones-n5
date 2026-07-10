@@ -1,6 +1,6 @@
 // test/numbers-rules.test.js
 import { describe, it, assertEqual } from './runner.js';
-import { cardinalToKana } from '../js/numbers-rules.js?cache=numrules1';
+import { cardinalToKana, counterReading } from '../js/numbers-rules.js?cache=numrules1';
 
 describe('cardinalToKana — dígitos y decenas', () => {
   it('1 → いち', () => {
@@ -60,6 +60,94 @@ describe('cardinalToKana — rango inválido', () => {
   it('10000 lanza RangeError', () => {
     let threw = false;
     try { cardinalToKana(10000); } catch (e) { threw = e instanceof RangeError; }
+    assertEqual(threw, true);
+  });
+});
+
+describe('counterReading — つ (genérico, irregular completo 1-10)', () => {
+  it('1つ → ひとつ', () => {
+    assertEqual(counterReading(1, 'tsu').kana, 'ひとつ');
+  });
+  it('10つ → とお', () => {
+    assertEqual(counterReading(10, 'tsu').kana, 'とお');
+  });
+  it('11 fuera de rango lanza RangeError', () => {
+    let threw = false;
+    try { counterReading(11, 'tsu'); } catch (e) { threw = e instanceof RangeError; }
+    assertEqual(threw, true);
+  });
+});
+
+describe('counterReading — 人 (standalone irregular vs compuesto regular)', () => {
+  it('1人 → ひとり (standalone irregular)', () => {
+    assertEqual(counterReading(1, 'nin').kana, 'ひとり');
+  });
+  it('2人 → ふたり (standalone irregular)', () => {
+    assertEqual(counterReading(2, 'nin').kana, 'ふたり');
+  });
+  it('4人 → よにん (no よんにん)', () => {
+    assertEqual(counterReading(4, 'nin').kana, 'よにん');
+  });
+  it('11人 → じゅういちにん (compuesto usa forma regular, no ひとり)', () => {
+    assertEqual(counterReading(11, 'nin').kana, 'じゅういちにん');
+  });
+  it('12人 → じゅうににん (compuesto usa forma regular, no ふたり)', () => {
+    assertEqual(counterReading(12, 'nin').kana, 'じゅうににん');
+  });
+  it('20人 → にじゅうにん', () => {
+    assertEqual(counterReading(20, 'nin').kana, 'にじゅうにん');
+  });
+});
+
+describe('counterReading — 本 (sokuon en 1,3,6,8,10)', () => {
+  it('1本 → いっぽん', () => {
+    assertEqual(counterReading(1, 'hon').kana, 'いっぽん');
+  });
+  it('3本 → さんぼん', () => {
+    assertEqual(counterReading(3, 'hon').kana, 'さんぼん');
+  });
+  it('6本 → ろっぽん', () => {
+    assertEqual(counterReading(6, 'hon').kana, 'ろっぽん');
+  });
+  it('8本 → はっぽん', () => {
+    assertEqual(counterReading(8, 'hon').kana, 'はっぽん');
+  });
+  it('10本 → じゅっぽん', () => {
+    assertEqual(counterReading(10, 'hon').kana, 'じゅっぽん');
+  });
+  it('20本 → にじゅっぽん (decena exacta reusa la irregularidad de 10)', () => {
+    assertEqual(counterReading(20, 'hon').kana, 'にじゅっぽん');
+  });
+  it('21本 → にじゅういっぽん (compuesto: decena regular + unidad irregular)', () => {
+    assertEqual(counterReading(21, 'hon').kana, 'にじゅういっぽん');
+  });
+});
+
+describe('counterReading — 歳 (20歳 = はたち, excepción total)', () => {
+  it('1歳 → いっさい', () => {
+    assertEqual(counterReading(1, 'sai').kana, 'いっさい');
+  });
+  it('20歳 → はたち', () => {
+    assertEqual(counterReading(20, 'sai').kana, 'はたち');
+  });
+  it('21歳 → にじゅういっさい (compuesto no usa はたち)', () => {
+    assertEqual(counterReading(21, 'sai').kana, 'にじゅういっさい');
+  });
+});
+
+describe('counterReading — 枚 (sin irregularidad fonética)', () => {
+  it('4枚 → よんまい', () => {
+    assertEqual(counterReading(4, 'mai').kana, 'よんまい');
+  });
+  it('99枚 → きゅうじゅうきゅうまい', () => {
+    assertEqual(counterReading(99, 'mai').kana, 'きゅうじゅうきゅうまい');
+  });
+});
+
+describe('counterReading — contador desconocido', () => {
+  it('lanza RangeError', () => {
+    let threw = false;
+    try { counterReading(1, 'nope'); } catch (e) { threw = e instanceof RangeError; }
     assertEqual(threw, true);
   });
 });
