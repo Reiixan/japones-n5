@@ -1,6 +1,9 @@
 // test/numbers-rules.test.js
 import { describe, it, assertEqual } from './runner.js';
-import { cardinalToKana, counterReading, hourReading, dayOfMonthReading } from '../js/numbers-rules.js?cache=numrules1';
+import {
+  cardinalToKana, counterReading, hourReading, dayOfMonthReading,
+  formatExpression, randomDistractors, generateSessionItems,
+} from '../js/numbers-rules.js?cache=numrules1';
 
 describe('cardinalToKana — dígitos y decenas', () => {
   it('1 → いち', () => {
@@ -216,5 +219,81 @@ describe('dayOfMonthReading — regulares', () => {
     let threw = false;
     try { dayOfMonthReading(32); } catch (e) { threw = e instanceof RangeError; }
     assertEqual(threw, true);
+  });
+});
+
+describe('formatExpression', () => {
+  it('cardinal → solo el número', () => {
+    assertEqual(formatExpression({ kind: 'cardinal', value: 35 }), '35');
+  });
+  it('counter → cantidad + kanji del contador', () => {
+    assertEqual(formatExpression({ kind: 'counter', value: 3, counterKanji: '本' }), '3本');
+  });
+  it('hour → cantidad + 時', () => {
+    assertEqual(formatExpression({ kind: 'hour', value: 4 }), '4時');
+  });
+  it('date → cantidad + 日', () => {
+    assertEqual(formatExpression({ kind: 'date', value: 2 }), '2日');
+  });
+});
+
+describe('randomDistractors', () => {
+  it('cardinal: devuelve 3 distractores con valor distinto al correcto', () => {
+    const item = { kind: 'cardinal', value: 35 };
+    const distractors = randomDistractors(item);
+    assertEqual(distractors.length, 3);
+    distractors.forEach(d => {
+      assertEqual(d.value === 35, false);
+      assertEqual(typeof d.kana, 'string');
+    });
+  });
+  it('counter: los distractores respetan el rango del contador', () => {
+    const item = { kind: 'counter', value: 1, counterId: 'tsu', counterKanji: 'つ' };
+    const distractors = randomDistractors(item);
+    distractors.forEach(d => {
+      assertEqual(d.value >= 1 && d.value <= 10, true);
+      assertEqual(d.counterId, 'tsu');
+    });
+  });
+  it('hour: los distractores están en 1-12', () => {
+    const item = { kind: 'hour', value: 4 };
+    const distractors = randomDistractors(item);
+    distractors.forEach(d => assertEqual(d.value >= 1 && d.value <= 12, true));
+  });
+  it('date: los distractores están en 1-31', () => {
+    const item = { kind: 'date', value: 20 };
+    const distractors = randomDistractors(item);
+    distractors.forEach(d => assertEqual(d.value >= 1 && d.value <= 31, true));
+  });
+});
+
+describe('generateSessionItems', () => {
+  const counters = [
+    { id: 'tsu', kanji: 'つ', meaning_es: 'genérico' },
+    { id: 'hon', kanji: '本', meaning_es: 'cilíndricos' },
+  ];
+
+  it('genera exactamente `size` ítems', () => {
+    const items = generateSessionItems(['cardinal'], 15, counters);
+    assertEqual(items.length, 15);
+  });
+  it('cada ítem tiene id único, kana, romaji y 3 distractores', () => {
+    const items = generateSessionItems(['cardinal', 'hour'], 10, counters);
+    const ids = new Set(items.map(it => it.id));
+    assertEqual(ids.size, items.length);
+    items.forEach(it => {
+      assertEqual(typeof it.kana, 'string');
+      assertEqual(typeof it.romaji, 'string');
+      assertEqual(it.distractors.length, 3);
+    });
+  });
+  it('solo genera las categorías pedidas', () => {
+    const items = generateSessionItems(['date'], 10, counters);
+    items.forEach(it => assertEqual(it.kind, 'date'));
+  });
+  it('sin categorías (null) usa las 4 por defecto', () => {
+    const items = generateSessionItems(null, 40, counters);
+    const kinds = new Set(items.map(it => it.kind));
+    assertEqual(kinds.size > 1, true);
   });
 });

@@ -191,3 +191,101 @@ export function dayOfMonthReading(d) {
   }
   return { kana: DAY_KANA[d], romaji: DAY_ROMAJI[d] };
 }
+
+export function formatExpression(item) {
+  if (item.kind === 'cardinal') return String(item.value);
+  if (item.kind === 'counter') return `${item.value}${item.counterKanji}`;
+  if (item.kind === 'hour') return `${item.value}時`;
+  if (item.kind === 'date') return `${item.value}日`;
+  throw new RangeError(`formatExpression: kind desconocido "${item.kind}"`);
+}
+
+function neighborValues(correctValue, min, max, count) {
+  const candidates = new Set();
+  const deltas = [1, -1, 2, -2, 10, -10, 5, -5];
+  for (const d of deltas) {
+    const v = correctValue + d;
+    if (v >= min && v <= max && v !== correctValue) candidates.add(v);
+  }
+  const arr = shuffle([...candidates]);
+  return arr.slice(0, count);
+}
+
+export function randomDistractors(item) {
+  const min = 1;
+  let max, readingFn;
+  if (item.kind === 'cardinal') {
+    max = 9999;
+    readingFn = cardinalToKana;
+  } else if (item.kind === 'counter') {
+    const table = COUNTER_TABLES[item.counterId];
+    max = table.maxN;
+    readingFn = v => counterReading(v, item.counterId);
+  } else if (item.kind === 'hour') {
+    max = 12;
+    readingFn = hourReading;
+  } else if (item.kind === 'date') {
+    max = 31;
+    readingFn = dayOfMonthReading;
+  } else {
+    throw new RangeError(`randomDistractors: kind desconocido "${item.kind}"`);
+  }
+
+  const neighborNs = neighborValues(item.value, min, max, 3);
+  while (neighborNs.length < 3) {
+    const v = min + Math.floor(Math.random() * max);
+    if (v !== item.value && !neighborNs.includes(v)) neighborNs.push(v);
+  }
+
+  return neighborNs.map(v => ({
+    kind: item.kind,
+    value: v,
+    counterId: item.counterId,
+    counterKanji: item.counterKanji,
+    ...readingFn(v),
+  }));
+}
+
+function randomCardinal() {
+  const r = Math.random();
+  if (r < 0.7) return 1 + Math.floor(Math.random() * 100);
+  if (r < 0.9) return 101 + Math.floor(Math.random() * 899);
+  return 1000 + Math.floor(Math.random() * 9000);
+}
+
+export function generateSessionItems(categories, size, counters) {
+  const cats = categories && categories.length > 0 ? categories : ['cardinal', 'counter', 'hour', 'date'];
+  const items = [];
+  for (let i = 0; i < size; i++) {
+    const kind = cats[Math.floor(Math.random() * cats.length)];
+    let item;
+    if (kind === 'cardinal') {
+      const n = randomCardinal();
+      item = { kind: 'cardinal', value: n, ...cardinalToKana(n) };
+    } else if (kind === 'counter') {
+      const counter = counters[Math.floor(Math.random() * counters.length)];
+      const table = COUNTER_TABLES[counter.id];
+      const n = 1 + Math.floor(Math.random() * table.maxN);
+      item = { kind: 'counter', value: n, counterId: counter.id, counterKanji: counter.kanji, ...counterReading(n, counter.id) };
+    } else if (kind === 'hour') {
+      const h = 1 + Math.floor(Math.random() * 12);
+      item = { kind: 'hour', value: h, ...hourReading(h) };
+    } else {
+      const d = 1 + Math.floor(Math.random() * 31);
+      item = { kind: 'date', value: d, ...dayOfMonthReading(d) };
+    }
+    item.id = `gen_${i}_${item.kind}_${item.value}${item.counterId ? '_' + item.counterId : ''}`;
+    item.distractors = randomDistractors(item);
+    items.push(item);
+  }
+  return items;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
