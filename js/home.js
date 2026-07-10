@@ -94,11 +94,22 @@ const BLOCKS = [
     color: 'var(--c-pink)',
     path: '/adjectives',
   },
+  {
+    id: 'numbers',
+    label: 'Números',
+    jp: '数字',
+    // Sin `file`: este bloque no tiene dataset con IDs estables ni caja SRS
+    // (los números se generan al vuelo), así que el home no intenta calcular
+    // un % de progreso para él — la tarjeta queda con el placeholder "—".
+    desc: 'Cardinales, contadores, horas y fechas',
+    color: 'var(--c-green)',
+    path: '/numbers',
+  },
 ];
 
 const SECTIONS = [
   { label: 'Escritura',    ids: ['hiragana', 'katakana'] },
-  { label: 'Vocabulario',  ids: ['vocab', 'kanji'] },
+  { label: 'Vocabulario',  ids: ['vocab', 'kanji', 'numbers'] },
   { label: 'Gramática',    ids: ['particles', 'grammar', 'verbs', 'adjectives'] },
   { label: 'Comprensión',  ids: ['listening', 'reading'] },
 ];
@@ -334,6 +345,39 @@ export function renderKanaMenu(container, deck) {
   container.querySelectorAll('.mode-card').forEach(card => {
     const path = card.dataset.path ?? `/${deck}/${card.dataset.mode}`;
     activate(card, () => window.navigate(path));
+  });
+}
+
+export function renderNumbersMenu(container) {
+  const MODES = [
+    { mode: 'reading', icon: '🔢', label: 'Número → Lectura', desc: 'Ve el número y elige su lectura' },
+    { mode: 'audio', icon: '🔊', label: 'Escuchar', desc: 'Oye la lectura y elige el número' },
+    { mode: 'recognize', icon: '🔄', label: 'Lectura → Número', desc: 'Ve la lectura y elige el número' },
+  ];
+
+  container.innerHTML = `
+    <div class="page">
+      <header class="page-header">
+        <button class="btn-icon" id="menu-back">←</button>
+        <h1>Números 数字</h1>
+      </header>
+      <main class="mode-grid">
+        ${MODES.map(m => `
+          <div class="mode-card" data-mode="${m.mode}" role="button" tabindex="0" aria-label="${m.label}">
+            <div class="mode-icon">${m.icon}</div>
+            <div>
+              <div class="mode-label">${m.label}</div>
+              <div class="mode-desc">${m.desc}</div>
+            </div>
+          </div>
+        `).join('')}
+      </main>
+    </div>
+  `;
+
+  document.getElementById('menu-back').addEventListener('click', () => window.navigate('/'));
+  container.querySelectorAll('.mode-card').forEach(card => {
+    activate(card, () => window.navigate(`/numbers/${card.dataset.mode}`));
   });
 }
 

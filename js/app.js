@@ -1,4 +1,4 @@
-import { renderHome, renderKanaMenu } from './home.js';
+import { renderHome, renderKanaMenu, renderNumbersMenu } from './home.js';
 import { renderStats } from './stats.js';
 import { start as startKanaTyping } from './kana/kana-typing.js';
 import { start as startKanaChoice } from './kana/kana-choice.js';
@@ -7,6 +7,9 @@ import { start as startKanaAudio } from './kana/kana-audio.js';
 import { start as startKanaWords } from './kana/kana-words.js';
 import { start as startKanaFlash } from './kana/kana-flash.js';
 import { start as startKanaSentences } from './kana/kana-sentences.js';
+import { start as startNumbersReading } from './numbers/numbers-reading.js';
+import { start as startNumbersAudio } from './numbers/numbers-audio.js';
+import { start as startNumbersRecognize } from './numbers/numbers-recognize.js';
 import { start as startVocab } from './vocab.js';
 import { start as startKanji } from './kanji.js';
 import { start as startParticles } from './particles.js';
@@ -112,6 +115,16 @@ async function route() {
       if (!seg2) await startAdjectives(container, allItems, null);
       else if (seg2 === 'practice') await startAdjectives(container, allItems, 'practice');
       else window.navigate('/adjectives');
+    } else if (seg1 === 'numbers') {
+      if (!seg2) {
+        renderNumbersMenu(container);
+      } else {
+        const allItems = await loadData('numbers.json');
+        if (seg2 === 'reading') await startNumbersReading(container, allItems);
+        else if (seg2 === 'audio') await startNumbersAudio(container, allItems);
+        else if (seg2 === 'recognize') await startNumbersRecognize(container, allItems);
+        else window.navigate('/numbers');
+      }
     } else if (seg1 === 'lessons') {
       if (seg2) await renderLesson(container, seg2);
       else window.navigate('/');
